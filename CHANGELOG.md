@@ -1,5 +1,11 @@
 # @stera/icons
 
+## 8.0.15
+
+### Patch Changes
+
+- b6c0075: fixed: removed explicit `aria-hidden?: boolean` from `IconProps` to inherit the wider `Booleanish | undefined` type from `SVGProps<SVGSVGElement>`, fixing TypeScript errors when spreading `ComponentProps<"svg">` onto icon components
+
 ## 8.0.14
 
 ### Patch Changes
