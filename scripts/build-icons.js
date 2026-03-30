@@ -464,7 +464,7 @@ ${wrapperExports.join('\n')}
     mkdirSync(distEsmDir, { recursive: true });
   }
   
-  // Generate dist/esm/stera-icons.js (main entry point with re-exports)
+  // Generate dist/esm/index.js (main entry point with re-exports)
   const indexDistContent = `// Auto-generated - ESM barrel with re-exports
 // Import paths use .js extension for ESM compatibility
 
@@ -480,7 +480,7 @@ ${baseNameExportsDist.join('\n')}
 // Direct variant exports
 ${directVariantExportsDist.join('\n')}
 `;
-  writeFileSync(join(distEsmDir, 'stera-icons.js'), indexDistContent);
+  writeFileSync(join(distEsmDir, 'index.js'), indexDistContent);
   
   // Generate dist/esm/dynamic-variants.js
   const dynamicVariantsDistContent = `// Auto-generated - ESM barrel with re-exports
@@ -699,9 +699,9 @@ export const iconNames = getIconNames(dynamicIconImports);
   // Update package.json with wildcard exports (ESM-only)
   // Preserve existing exports (./base, ./dynamic, etc.) and only update ./icons/*
   const existingExports = packageJson.exports?.['.'] || {
-    types: './dist/esm/stera-icons.d.ts',
-    import: './dist/esm/stera-icons.js',
-    default: './dist/esm/stera-icons.js'
+    types: './dist/esm/index.d.ts',
+    import: './dist/esm/index.js',
+    default: './dist/esm/index.js'
   };
   
   packageJson.exports = {

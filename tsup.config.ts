@@ -6,7 +6,7 @@ import { join } from 'path';
 // Modern bundlers and Node.js 18+ handle ESM natively
 //
 // NOTE: Only shared modules are built here. The main entry points
-// (stera-icons, dynamic, dynamic-variants) are generated as re-export
+// (index, dynamic, dynamic-variants) are generated as re-export
 // files by the build script to avoid bundling all icons inline.
 export default defineConfig({
   entry: {

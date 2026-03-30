@@ -226,6 +226,12 @@ Stera Icons is optimized for minimal bundle impact:
 
 All measurements are gzipped and minified. The default import pattern (`import { Search }`) is optimized for the smallest possible bundle size.
 
+## Finding Icons
+
+Each icon has JSDoc `@tags` listing keywords like its intent and common aliases. To find an icon, search `index.d.ts` (or `dist/esm/index.d.ts`) for a relevant keyword.
+
+Example: searching "kebab" or "overflow" will find `SiMore`.
+
 ## License
 
 MIT © [Chaz Giese](https://github.com/hauntedjpeg)
