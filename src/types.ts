@@ -57,7 +57,6 @@ export interface IconProps extends Omit<SVGProps<SVGSVGElement>, 'children'> {
   weight?: IconWeight;
   duotone?: boolean;
   'aria-label'?: string;
-  'aria-hidden'?: boolean;
   title?: string;
 }
 
