@@ -1,0 +1,68 @@
+# stera-icons
+
+700+ React icons in 6 variants (Regular, Bold, Fill x Standard/Duotone). Tree-shakeable, ESM-only.
+
+## Install
+
+npm install stera-icons
+
+Requires React 17+ and Node 18+.
+
+## Import Pattern
+
+Recommended: Si-prefixed explicit variant imports.
+
+Formula: Si + {Name} + {Bold|Fill|Regular} + {Duotone?}
+
+Examples:
+- SiHomeBold
+- SiSearchFill
+- SiUserRegularDuotone
+- SiSearch (shorthand for SiSearchRegular)
+
+```tsx
+import { SiHomeBold, SiSearchFill } from 'stera-icons';
+<SiHomeBold size={24} color="blue" />
+```
+
+Each icon also exports as: Search, SearchIcon, SiSearch (all equivalent).
+
+## Entry Points
+
+- stera-icons — all icons (~300 bytes each, tree-shakeable)
+- stera-icons/icons/{Name} — subpath import for a single icon
+- stera-icons/dynamic-variants — runtime weight/duotone switching (~1KB per icon)
+- stera-icons/dynamic — DynamicIcon component for loading by name (~2KB + lazy)
+- stera-icons/base — IconBase wrapper component
+- stera-icons/types — TypeScript interfaces
+
+## Props
+
+All icon components accept these props plus all standard SVG attributes:
+
+- size: number | string — sets SVG width/height. Omit to let CSS control sizing.
+- color: string — default 'currentColor'.
+- weight: 'regular' | 'bold' | 'fill' — default 'regular'. Only on dynamic-variants imports.
+- duotone: boolean — default false. Only on dynamic-variants imports.
+- aria-label: string — when provided, icon becomes accessible (no aria-hidden).
+- title: string — accessible title element.
+
+Icons automatically set aria-hidden="true" when no aria-label, role, or title is provided.
+
+## Variant Naming
+
+Each of the 768 icons has 6 variants:
+- {Name}Regular, {Name}Bold, {Name}Fill
+- {Name}RegularDuotone, {Name}BoldDuotone, {Name}FillDuotone
+
+{Name} alone resolves to {Name}Regular.
+
+## Bundle Size
+
+- Direct import (SiSearch): ~300 bytes gzipped
+- Dynamic variant (stera-icons/dynamic-variants): ~1 KB per icon gzipped
+- Dynamic loading (stera-icons/dynamic): ~2 KB + lazy-loaded gzipped
+
+## Finding Icons
+
+Search index.d.ts for keywords. Each icon has JSDoc @tags with intent and aliases (e.g. "kebab" or "overflow" finds SiMore).
