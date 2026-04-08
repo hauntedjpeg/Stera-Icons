@@ -41,7 +41,7 @@ jobs:
         run: pnpm install --frozen-lockfile
         
       - name: Build
-        run: pnpm build
+        run: pnpm --filter stera-icons build
         
       - name: Create Release Pull Request or Publish to npm
         id: changesets

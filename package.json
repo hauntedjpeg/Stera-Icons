@@ -1,117 +1,21 @@
 {
-  "name": "stera-icons",
-  "version": "8.0.16",
+  "name": "stera-icons-monorepo",
+  "private": true,
   "type": "module",
-  "description": "A lightweight, tree-shakeable React icon library (ESM-only)",
-  "module": "./dist/esm/index.js",
-  "types": "./dist/esm/index.d.ts",
-  "sideEffects": false,
-  "exports": {
-    ".": {
-      "types": "./dist/esm/index.d.ts",
-      "import": "./dist/esm/index.js",
-      "default": "./dist/esm/index.js"
-    },
-    "./package.json": "./package.json",
-    "./base": {
-      "types": "./dist/esm/base.d.ts",
-      "import": "./dist/esm/base.js",
-      "default": "./dist/esm/base.js"
-    },
-    "./types": {
-      "types": "./dist/esm/types.d.ts",
-      "import": "./dist/esm/types.js",
-      "default": "./dist/esm/types.js"
-    },
-    "./utils": {
-      "types": "./dist/esm/utils.d.ts",
-      "import": "./dist/esm/utils.js",
-      "default": "./dist/esm/utils.js"
-    },
-    "./dynamic": {
-      "types": "./dist/esm/dynamic.d.ts",
-      "import": "./dist/esm/dynamic.js",
-      "default": "./dist/esm/dynamic.js"
-    },
-    "./dynamic-variants": {
-      "types": "./dist/esm/dynamic-variants.d.ts",
-      "import": "./dist/esm/dynamic-variants.js",
-      "default": "./dist/esm/dynamic-variants.js"
-    },
-    "./dynamicIconImports": {
-      "types": "./dist/esm/dynamicIconImports.d.ts",
-      "import": "./dist/esm/dynamicIconImports.js",
-      "default": "./dist/esm/dynamicIconImports.js"
-    },
-    "./icons/*": {
-      "types": "./dist/esm/icons/*.d.ts",
-      "import": "./dist/esm/icons/*.js",
-      "default": "./dist/esm/icons/*.js"
-    }
-  },
-  "files": [
-    "dist",
-    "README.md",
-    "LICENSE",
-    "llms.txt"
-  ],
   "scripts": {
-    "build": "rm -f dist/*.cjs dist/*.mjs dist/*.d.ts dist/*.d.cts dist/esm/stera-icons.js dist/esm/stera-icons.d.ts && tsup && node scripts/build-icons.js icons-export.json && node scripts/generate-declarations.js",
-    "build:icons": "node scripts/build-icons.js icons-export.json",
-    "build:dev": "tsup --config tsup.config.dev.ts",
-    "dev": "NODE_OPTIONS='--max-old-space-size=8192' tsup --watch --config tsup.config.dev.ts",
-    "dev:demo": "pnpm --filter stera-icons-react-demo dev",
-    "test": "vitest",
-    "test:tree-shaking": "node scripts/verify-tree-shaking.js",
-    "analyze:bundle": "node scripts/analyze-bundle-size.js",
-    "benchmark": "node scripts/benchmark-build.js icons-export.json",
-    "lint": "eslint src/",
+    "build": "pnpm --filter stera-icons build",
+    "build:icons": "pnpm --filter stera-icons build:icons",
+    "dev": "pnpm --filter stera-icons dev",
+    "dev:docs": "pnpm --filter docs dev",
+    "test": "pnpm --filter stera-icons test",
+    "lint": "pnpm --filter stera-icons lint",
     "changeset": "changeset",
     "version-packages": "changeset version",
-    "release": "changeset publish",
-    "prepublishOnly": "pnpm run build"
-  },
-  "peerDependencies": {
-    "react": ">=17.0.2"
+    "release": "changeset publish"
   },
   "devDependencies": {
-    "@babel/plugin-transform-react-jsx": "^7.23.0",
-    "@changesets/cli": "^2.27.1",
-    "@eslint/js": "^9.35.0",
-    "@svgr/core": "^8.1.0",
-    "@svgr/plugin-jsx": "^8.1.0",
-    "@svgr/plugin-prettier": "^8.1.0",
-    "@testing-library/jest-dom": "^6.1.0",
-    "@testing-library/react": "^14.1.0",
-    "@types/node": "^20.10.0",
-    "@types/react": "^18.2.0",
-    "@typescript-eslint/eslint-plugin": "^8.43.0",
-    "@typescript-eslint/parser": "^8.43.0",
-    "@vitejs/plugin-react": "^4.2.0",
-    "esbuild": "^0.25.0",
-    "eslint": "^9.35.0",
-    "eslint-plugin-react": "^7.37.5",
-    "globals": "^16.4.0",
-    "jsdom": "^23.0.0",
-    "react": "^18.2.0",
-    "svgo": "^3.0.0",
-    "tsup": "^8.0.0",
-    "typescript": "^5.3.0",
-    "typescript-eslint": "^8.43.0",
-    "vitest": "^1.0.0"
+    "@changesets/cli": "^2.27.1"
   },
-  "keywords": [
-    "react",
-    "icons",
-    "svg",
-    "typescript",
-    "tree-shakeable"
-  ],
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/hauntedjpeg/Stera-Icons.git"
-  },
-  "license": "MIT",
   "packageManager": "pnpm@10.20.0",
   "engines": {
     "node": ">=18.0.0"

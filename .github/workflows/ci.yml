@@ -10,21 +10,21 @@ jobs:
   test:
     name: Test
     runs-on: ubuntu-latest
-    
+
     steps:
       - name: Checkout
         uses: actions/checkout@v4
-        
+
       - name: Setup Node.js
         uses: actions/setup-node@v4
         with:
           node-version: '18'
-          
+
       - name: Setup pnpm
         uses: pnpm/action-setup@v4
         with:
           version: 10.20.0
-          
+
       - name: Setup pnpm cache
         uses: actions/cache@v3
         with:
@@ -32,55 +32,55 @@ jobs:
           key: ${{ runner.os }}-pnpm-store-${{ hashFiles('**/pnpm-lock.yaml') }}
           restore-keys: |
             ${{ runner.os }}-pnpm-store-
-            
+
       - name: Install dependencies
         run: pnpm install --frozen-lockfile
-        
+
       - name: Lint
-        run: pnpm lint
-        
+        run: pnpm --filter stera-icons lint
+
       - name: Test
-        run: pnpm test
-        
+        run: pnpm --filter stera-icons test
+
       - name: Build
-        run: pnpm build
+        run: pnpm --filter stera-icons build
 
   build-icons:
     name: Build Icons
     runs-on: ubuntu-latest
     if: github.event_name == 'push' && github.ref == 'refs/heads/main'
-    
+
     steps:
       - name: Checkout
         uses: actions/checkout@v4
-        
+
       - name: Setup Node.js
         uses: actions/setup-node@v4
         with:
           node-version: '18'
-          
+
       - name: Setup pnpm
         uses: pnpm/action-setup@v4
         with:
           version: 10.20.0
-          
+
       - name: Verify pnpm version
         run: pnpm --version
-          
+
       - name: Install dependencies
         run: pnpm install --frozen-lockfile
-        
+
       - name: Build icons (if icons-export.json exists)
         run: |
-          if [ -f "icons-export.json" ]; then
-            pnpm build:icons
+          if [ -f "packages/icons/icons-export.json" ]; then
+            pnpm --filter stera-icons build:icons
           else
             echo "No icons-export.json found, skipping icon build"
           fi
-        
+
       - name: Upload build artifacts
         uses: actions/upload-artifact@v4
         with:
           name: built-icons
-          path: dist/
+          path: packages/icons/dist/
           if-no-files-found: warn
