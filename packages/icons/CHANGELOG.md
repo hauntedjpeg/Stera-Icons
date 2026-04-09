@@ -1,5 +1,11 @@
 # @stera/icons
 
+## 8.1.0
+
+### Minor Changes
+
+- c8806bb: Updated fill weight stroke (was 2px now 1.75px), removed brand icons, added a few icons
+
 ## 8.0.16
 
 ### Patch Changes
