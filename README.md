@@ -7,7 +7,7 @@ Monorepo for the Stera icon ecosystem.
 | Package | Description |
 |---------|-------------|
 | [stera-icons](packages/icons) | A lightweight, tree-shakeable React icon library (ESM-only) |
-| [docs](apps/docs) | Documentation site at [icons.stera.sh](https://icons.stera.sh) |
+| [docs](apps/docs) | Documentation site at [stera.site](https://stera.site) |
 
 ## Development
 
