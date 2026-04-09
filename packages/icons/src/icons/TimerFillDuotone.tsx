@@ -7,8 +7,8 @@ type TimerFillDuotoneProps = Omit<IconBaseProps, 'children'>;
 const TimerFillDuotone = memo(
   forwardRef<SVGSVGElement, TimerFillDuotoneProps>((props, ref) => (
     <IconBase ref={ref} iconName="timer-fill-duotone" {...props}>
-      <path d="M12 1.5a10.5 10.5 0 1 1-7.42 3.08A1.5 1.5 0 0 1 6.7 6.7a7.5 7.5 0 1 0 6.8-2.05V6.5a1.5 1.5 0 0 1-3 0V3c0-.83.67-1.5 1.5-1.5" opacity={.4} />
-        <path d="M7.58 7.58c.24-.24.6-.29.9-.12l4.95 2.83q.09.05.16.12a2.25 2.25 0 1 1-3.18 3.18l-.12-.16-2.83-4.95a.75.75 0 0 1 .12-.9" />
+      <path d="M12 1.75a10.25 10.25 0 1 1-7.25 3 1.25 1.25 0 0 1 1.77 1.77 7.75 7.75 0 1 0 6.73-2.17V6.5a1.25 1.25 0 1 1-2.5 0V3c0-.69.56-1.25 1.25-1.25" opacity={.4} />
+        <path d="M13.59 13.6c-.88.87-2.3.87-3.18 0l-.12-.17-2.83-4.95a.75.75 0 0 1 1.02-1.02l4.95 2.83q.09.04.16.12c.88.88.88 2.3 0 3.18" />
     </IconBase>
   ))
 );

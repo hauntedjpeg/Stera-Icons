@@ -7,7 +7,7 @@ type TextStrikethroughFillProps = Omit<IconBaseProps, 'children'>;
 const TextStrikethroughFill = memo(
   forwardRef<SVGSVGElement, TextStrikethroughFillProps>((props, ref) => (
     <IconBase ref={ref} iconName="text-strikethrough-fill" {...props}>
-      <path d="M17 2.5a1.5 1.5 0 0 1 0 3h-6a2.5 2.5 0 0 0 0 5h10a1.5 1.5 0 0 1 0 3h-2.1q.58 1.14.6 2.5a5.5 5.5 0 0 1-5.5 5.5H7a1.5 1.5 0 0 1 0-3h7a2.5 2.5 0 0 0 0-5H3a1.5 1.5 0 0 1 0-3h3.1Q5.52 9.36 5.5 8A5.5 5.5 0 0 1 11 2.5z" />
+      <path d="M17 2.75a1.25 1.25 0 1 1 0 2.5h-6a2.75 2.75 0 0 0 0 5.5h10a1.25 1.25 0 1 1 0 2.5h-2.53q.76 1.22.78 2.75c0 2.9-2.35 5.25-5.25 5.25H7a1.25 1.25 0 1 1 0-2.5h7a2.75 2.75 0 1 0 0-5.5H3a1.25 1.25 0 1 1 0-2.5h3.53Q5.77 9.53 5.75 8c0-2.9 2.35-5.25 5.25-5.25z" />
     </IconBase>
   ))
 );

@@ -7,8 +7,8 @@ type CloudFillDuotoneProps = Omit<IconBaseProps, 'children'>;
 const CloudFillDuotone = memo(
   forwardRef<SVGSVGElement, CloudFillDuotoneProps>((props, ref) => (
     <IconBase ref={ref} iconName="cloud-fill-duotone" {...props}>
-      <path d="M12 6a5 5 0 0 1 4.72 3.34 1 1 0 0 0 1 .67L18 10a4 4 0 0 1 0 8H5a3 3 0 1 1 .75-5.9 1 1 0 0 0 1.25-1V11a5 5 0 0 1 5-5" opacity={.4} />
-        <path fillRule="evenodd" d="M12 4a7 7 0 0 1 6.33 4A6 6 0 0 1 18 20H5a5 5 0 0 1 0-10h.07A7 7 0 0 1 12 4m0 2a5 5 0 0 0-5 5v.1a1 1 0 0 1-1.25 1A3 3 0 1 0 5 18h13a4 4 0 1 0-.27-7.99 1 1 0 0 1-1.01-.67A5 5 0 0 0 12 6" clipRule="evenodd" />
+      <path d="M12 5.88a5.1 5.1 0 0 1 4.84 3.42c.13.37.49.61.88.59l.28-.02a4.12 4.12 0 1 1 0 8.26H5a3.12 3.12 0 1 1 .78-6.16.88.88 0 0 0 1.1-.86V11c0-2.83 2.29-5.12 5.12-5.12" opacity={.4} />
+        <path fillRule="evenodd" d="M12 4.13a6.9 6.9 0 0 1 6.25 4A5.87 5.87 0 0 1 18 19.88H5a4.87 4.87 0 1 1 0-9.75h.18c.43-3.39 3.32-6 6.82-6m0 1.75A5.1 5.1 0 0 0 6.88 11v.1a.88.88 0 0 1-1.1.87A3.13 3.13 0 0 0 1.88 15c0 1.73 1.4 3.13 3.12 3.13h13a4.12 4.12 0 1 0-.28-8.24.9.9 0 0 1-.88-.59c-.7-2-2.6-3.43-4.84-3.43" clipRule="evenodd" />
     </IconBase>
   ))
 );

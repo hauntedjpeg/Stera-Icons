@@ -7,7 +7,7 @@ type FlowUpArrowFillProps = Omit<IconBaseProps, 'children'>;
 const FlowUpArrowFill = memo(
   forwardRef<SVGSVGElement, FlowUpArrowFillProps>((props, ref) => (
     <IconBase ref={ref} iconName="flow-up-arrow-fill" {...props}>
-      <path d="M6.3 7.7a1 1 0 0 1 0-1.4l5-5a1 1 0 0 1 1.4 0l5 5a1 1 0 0 1-1.4 1.4L13 4.42v8.7a5 5 0 1 1-2 0V4.4l-3.3 3.3a1 1 0 0 1-1.4 0" />
+      <path d="M11.38 1.38a.9.9 0 0 1 1.24 0l5 5a.88.88 0 0 1-1.24 1.24l-3.5-3.5v9.08a4.88 4.88 0 1 1-1.76 0V4.11l-3.5 3.5a.88.88 0 0 1-1.24-1.23z" />
     </IconBase>
   ))
 );

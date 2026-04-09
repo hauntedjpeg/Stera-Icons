@@ -7,8 +7,8 @@ type ChevronsUpFillProps = Omit<IconBaseProps, 'children'>;
 const ChevronsUpFill = memo(
   forwardRef<SVGSVGElement, ChevronsUpFillProps>((props, ref) => (
     <IconBase ref={ref} iconName="chevrons-up-fill" {...props}>
-      <path d="M12 10.5c.4 0 .78.16 1.06.44l7 7a1.5 1.5 0 1 1-2.12 2.12L12 14.12l-5.94 5.94a1.5 1.5 0 1 1-2.12-2.12l7-7A1.5 1.5 0 0 1 12 10.5" />
-        <path d="M12 2.5c.4 0 .78.16 1.06.44l7 7a1.5 1.5 0 0 1-2.12 2.12L12 6.12l-5.94 5.94a1.5 1.5 0 1 1-2.12-2.12l7-7A1.5 1.5 0 0 1 12 2.5" />
+      <path d="M12 10.75c.33 0 .65.13.88.37l7 7a1.25 1.25 0 0 1-1.76 1.76L12 13.77l-6.12 6.11a1.25 1.25 0 1 1-1.76-1.76l7-7q.37-.37.88-.37" />
+        <path d="M12 2.75c.33 0 .65.13.88.37l7 7a1.25 1.25 0 0 1-1.76 1.76L12 5.77l-6.12 6.11a1.25 1.25 0 1 1-1.76-1.76l7-7q.37-.37.88-.37" />
     </IconBase>
   ))
 );

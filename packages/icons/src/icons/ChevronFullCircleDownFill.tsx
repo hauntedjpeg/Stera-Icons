@@ -7,7 +7,7 @@ type ChevronFullCircleDownFillProps = Omit<IconBaseProps, 'children'>;
 const ChevronFullCircleDownFill = memo(
   forwardRef<SVGSVGElement, ChevronFullCircleDownFillProps>((props, ref) => (
     <IconBase ref={ref} iconName="chevron-full-circle-down-fill" {...props}>
-      <path fillRule="evenodd" d="M12 2a10 10 0 1 1 0 20 10 10 0 0 1 0-20M9.01 9.5a1.25 1.25 0 0 0-.99 2.02l3 3.84c.5.64 1.47.64 1.97 0l2.99-3.84c.63-.82.05-2.02-1-2.02z" clipRule="evenodd" />
+      <path fillRule="evenodd" d="M12 2.13a9.88 9.88 0 1 1 0 19.75 9.88 9.88 0 0 1 0-19.75m-2.99 7.5a1.12 1.12 0 0 0-.89 1.81l3 3.84c.44.58 1.32.58 1.77 0l2.99-3.84c.57-.74.04-1.81-.9-1.81z" clipRule="evenodd" />
     </IconBase>
   ))
 );

@@ -7,8 +7,8 @@ type ChevronCircleUpFillDuotoneProps = Omit<IconBaseProps, 'children'>;
 const ChevronCircleUpFillDuotone = memo(
   forwardRef<SVGSVGElement, ChevronCircleUpFillDuotoneProps>((props, ref) => (
     <IconBase ref={ref} iconName="chevron-circle-up-fill-duotone" {...props}>
-      <path fillRule="evenodd" d="M12 2a10 10 0 1 1 0 20 10 10 0 0 1 0-20m0 6.5a1 1 0 0 0-.7.3l-4 4a1 1 0 1 0 1.4 1.4l3.3-3.29 3.3 3.3a1 1 0 1 0 1.4-1.42l-4-4a1 1 0 0 0-.7-.29" clipRule="evenodd" opacity={.4} />
-        <path d="M12 8.5a1 1 0 0 1 .7.3l4 4a1 1 0 0 1-1.4 1.4L12 10.92l-3.3 3.3a1 1 0 1 1-1.4-1.42l4-4a1 1 0 0 1 .7-.29" />
+      <path fillRule="evenodd" d="M12 2.13a9.88 9.88 0 1 1 0 19.75 9.88 9.88 0 0 1 0-19.75m0 6.5q-.36 0-.62.25l-4 4a.88.88 0 0 0 1.24 1.24L12 10.74l3.38 3.38a.88.88 0 0 0 1.24-1.24l-4-4a1 1 0 0 0-.62-.26" clipRule="evenodd" opacity={.4} />
+        <path d="M12 8.63q.36 0 .62.25l4 4a.88.88 0 0 1-1.24 1.24L12 10.74l-3.38 3.38a.88.88 0 0 1-1.24-1.24l4-4a1 1 0 0 1 .62-.26" />
     </IconBase>
   ))
 );

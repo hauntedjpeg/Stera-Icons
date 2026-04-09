@@ -7,8 +7,8 @@ type RouteArrowFillDuotoneProps = Omit<IconBaseProps, 'children'>;
 const RouteArrowFillDuotone = memo(
   forwardRef<SVGSVGElement, RouteArrowFillDuotoneProps>((props, ref) => (
     <IconBase ref={ref} iconName="route-arrow-fill-duotone" {...props}>
-      <path d="M13.75 4.5a4.25 4.25 0 0 1 0 8.5h-4.5a2.25 2.25 0 0 0 0 4.5H16v2H9.25a4.25 4.25 0 0 1 0-8.5h4.5a2.25 2.25 0 0 0 0-4.5h-4.9a3.5 3.5 0 0 0 0-2z" opacity={.4} />
-        <path d="M16.62 14.58a1 1 0 0 1 1.09.21l3 3a1 1 0 0 1 0 1.42l-3 3A1 1 0 0 1 16 21.5v-6a1 1 0 0 1 .62-.92M5.5 2a3.5 3.5 0 1 1 0 7 3.5 3.5 0 0 1 0-7" />
+      <path d="M13.75 4.63a4.12 4.12 0 1 1 0 8.25h-4.5a2.37 2.37 0 1 0 0 4.74h6.88v1.75H9.25a4.12 4.12 0 1 1 0-8.25h4.5a2.37 2.37 0 1 0 0-4.74H8.76a3.4 3.4 0 0 0 0-1.75z" opacity={.4} />
+        <path d="M16.67 14.7c.32-.14.7-.07.95.18l3 3a.9.9 0 0 1 0 1.24l-3 3a.88.88 0 0 1-1.5-.62v-6c0-.35.22-.67.54-.8M5.5 2.13a3.38 3.38 0 1 1 0 6.75 3.38 3.38 0 0 1 0-6.76" />
     </IconBase>
   ))
 );

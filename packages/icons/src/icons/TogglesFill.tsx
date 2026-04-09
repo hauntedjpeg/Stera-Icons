@@ -7,8 +7,9 @@ type TogglesFillProps = Omit<IconBaseProps, 'children'>;
 const TogglesFill = memo(
   forwardRef<SVGSVGElement, TogglesFillProps>((props, ref) => (
     <IconBase ref={ref} iconName="toggles-fill" {...props}>
-      <path d="M8 15.75a2 2 0 1 1 0 4 2 2 0 0 1 0-4" />
-        <path fillRule="evenodd" d="M16 12.75a5 5 0 0 1 0 10H8a5 5 0 0 1 0-10zm-8 2a3 3 0 1 0 0 6h8a3 3 0 1 0 0-6zM16 1.25a5 5 0 0 1 0 10H8a5 5 0 0 1 0-10zm0 3a2 2 0 1 0 0 4 2 2 0 0 0 0-4" clipRule="evenodd" />
+      <path fillRule="evenodd" d="M16 12.88a4.87 4.87 0 1 1 0 9.74H8a4.87 4.87 0 1 1 0-9.75zm0 2.87a2 2 0 1 0 0 4 2 2 0 0 0 0-4" clipRule="evenodd" />
+        <path d="M8 4.25a2 2 0 1 1 0 4 2 2 0 0 1 0-4" />
+        <path fillRule="evenodd" d="M16 1.38a4.87 4.87 0 1 1 0 9.75H8a4.87 4.87 0 1 1 0-9.76zM8 3.13a3.12 3.12 0 1 0 0 6.25h8a3.12 3.12 0 1 0 0-6.26z" clipRule="evenodd" />
     </IconBase>
   ))
 );

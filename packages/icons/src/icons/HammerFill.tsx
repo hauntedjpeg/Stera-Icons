@@ -7,7 +7,7 @@ type HammerFillProps = Omit<IconBaseProps, 'children'>;
 const HammerFill = memo(
   forwardRef<SVGSVGElement, HammerFillProps>((props, ref) => (
     <IconBase ref={ref} iconName="hammer-fill" {...props}>
-      <path fillRule="evenodd" d="M14.5 2a1 1 0 0 1 .7.3l1 .98 1.35-.67.1-.05A1 1 0 0 1 18 2.5h2a1 1 0 0 1 1 1v5a1 1 0 0 1-1 1h-2a1 1 0 0 1-.45-.1l-1.35-.68-1 .99-.16.13.36 8.62a3.4 3.4 0 1 1-6.8 0L9 9c0-.11-.05-.24-.24-.37a2 2 0 0 0-1.06-.3 3.6 3.6 0 0 0-2.92 1.3 1 1 0 0 1-1.76-.82C4.1 3.4 7.47 2 9 2zm-3.9 16.54a1.4 1.4 0 1 0 2.8 0L13.04 10h-2.08z" clipRule="evenodd" />
+      <path fillRule="evenodd" d="M14.5 2.13q.36 0 .62.25l1.05 1.05 1.44-.71q.18-.1.39-.1h2c.48 0 .87.4.87.88v5c0 .48-.39.88-.87.88h-2a1 1 0 0 1-.4-.1l-1.43-.72-1.05 1.06-.21.15.36 8.7a3.27 3.27 0 1 1-6.54 0L9.13 9q.02-.26-.3-.48-.36-.27-1.12-.33a3.7 3.7 0 0 0-3.03 1.36.88.88 0 0 1-1.54-.72c1.07-5.36 4.4-6.7 5.86-6.7zm-4.02 16.4a1.52 1.52 0 1 0 3.04 0l-.36-8.66h-2.32z" clipRule="evenodd" />
     </IconBase>
   ))
 );

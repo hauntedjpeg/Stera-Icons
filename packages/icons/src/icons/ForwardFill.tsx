@@ -7,7 +7,7 @@ type ForwardFillProps = Omit<IconBaseProps, 'children'>;
 const ForwardFill = memo(
   forwardRef<SVGSVGElement, ForwardFillProps>((props, ref) => (
     <IconBase ref={ref} iconName="forward-fill" {...props}>
-      <path d="M12.62 3.08a1 1 0 0 1 1.09.21l8 8a1 1 0 0 1 0 1.42l-8 8A1 1 0 0 1 12 20v-4.5h-1a8 8 0 0 0-5.58 2 7 7 0 0 0-1.5 1.89v.02A1 1 0 0 1 2 19c0-3.8.62-6.56 2.51-8.3C6.21 9.14 8.73 8.6 12 8.51V4a1 1 0 0 1 .62-.92" />
+      <path d="M12.67 3.2c.32-.14.7-.07.95.18l8 8c.34.34.34.9 0 1.24l-8 8a.88.88 0 0 1-1.5-.62v-4.63H11a8.2 8.2 0 0 0-5.67 2.03 7 7 0 0 0-1.52 1.93l-.01.02A.88.88 0 0 1 2.13 19c0-3.8.61-6.5 2.46-8.2 1.69-1.56 4.2-2.09 7.54-2.16V4c0-.35.2-.67.53-.8" />
     </IconBase>
   ))
 );

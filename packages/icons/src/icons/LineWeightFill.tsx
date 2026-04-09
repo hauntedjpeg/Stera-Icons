@@ -7,7 +7,7 @@ type LineWeightFillProps = Omit<IconBaseProps, 'children'>;
 const LineWeightFill = memo(
   forwardRef<SVGSVGElement, LineWeightFillProps>((props, ref) => (
     <IconBase ref={ref} iconName="line-weight-fill" {...props}>
-      <path d="M18.75 14c1.24 0 2.25 1 2.25 2.25v2.5c0 1.24-1 2.25-2.25 2.25H5.25C4.01 21 3 20 3 18.75v-2.5C3 15.01 4 14 5.25 14zM19 7a2 2 0 0 1 2 2v1a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V9c0-1.1.9-2 2-2zM20 3a1 1 0 1 1 0 2H4a1 1 0 0 1 0-2z" />
+      <path d="M18.75 14.13c1.17 0 2.13.95 2.13 2.12v2.5c0 1.17-.96 2.13-2.13 2.13H5.25a2.13 2.13 0 0 1-2.12-2.13v-2.5c0-1.17.95-2.12 2.12-2.12zM19 7.13c1.04 0 1.88.83 1.88 1.87v1c0 1.04-.84 1.88-1.88 1.88H5A1.9 1.9 0 0 1 3.13 10V9c0-1.04.83-1.87 1.87-1.87zM20 3.13a.88.88 0 0 1 0 1.75H4a.87.87 0 1 1 0-1.75z" />
     </IconBase>
   ))
 );

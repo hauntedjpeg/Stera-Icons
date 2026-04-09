@@ -7,8 +7,8 @@ type MicFillDuotoneProps = Omit<IconBaseProps, 'children'>;
 const MicFillDuotone = memo(
   forwardRef<SVGSVGElement, MicFillDuotoneProps>((props, ref) => (
     <IconBase ref={ref} iconName="mic-fill-duotone" {...props}>
-      <path d="M4 11.03a1 1 0 0 1 1.22.72 7 7 0 0 0 13.56 0 1 1 0 0 1 1.94.5 9 9 0 0 1-7.72 6.7V20h2a1 1 0 0 1 0 2H9a1 1 0 0 1 0-2h2v-1.06a9 9 0 0 1-7.72-6.7 1 1 0 0 1 .72-1.2" opacity={.4} />
-        <path d="M12 2a5 5 0 0 1 5 5v3a5 5 0 0 1-10 0V7a5 5 0 0 1 5-5" />
+      <path d="M12 2.13c2.7 0 4.88 2.18 4.88 4.87v3a4.87 4.87 0 1 1-9.75 0V7c0-2.7 2.18-4.87 4.87-4.87" />
+        <path d="M4.03 11.15a.9.9 0 0 1 1.07.63 7.13 7.13 0 0 0 13.8 0 .88.88 0 0 1 1.7.44 8.9 8.9 0 0 1-7.73 6.61v1.3H15a.88.88 0 0 1 0 1.74H9a.88.88 0 0 1 0-1.75h2.12v-1.29a8.9 8.9 0 0 1-7.72-6.61.9.9 0 0 1 .63-1.07" opacity={.4} />
     </IconBase>
   ))
 );

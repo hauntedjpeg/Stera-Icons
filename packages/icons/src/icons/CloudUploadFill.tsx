@@ -7,7 +7,7 @@ type CloudUploadFillProps = Omit<IconBaseProps, 'children'>;
 const CloudUploadFill = memo(
   forwardRef<SVGSVGElement, CloudUploadFillProps>((props, ref) => (
     <IconBase ref={ref} iconName="cloud-upload-fill" {...props}>
-      <path d="M12 4a7 7 0 0 1 6.33 4A6 6 0 0 1 18 20h-5v-6.59l2.3 2.3a1 1 0 1 0 1.4-1.42l-4-4a1 1 0 0 0-1.4 0l-4 4a1 1 0 1 0 1.4 1.42l2.3-2.3V20H5a5 5 0 0 1 0-10h.07A7 7 0 0 1 12 4" />
+      <path d="M12 4.13a6.9 6.9 0 0 1 6.25 4A5.87 5.87 0 0 1 18 19.88h-5.12V13.1l2.5 2.5a.88.88 0 0 0 1.24-1.23l-4-4a.9.9 0 0 0-1.24 0l-4 4a.88.88 0 0 0 1.24 1.24l2.5-2.5v6.76H5a4.87 4.87 0 1 1 0-9.75h.18c.43-3.39 3.32-6 6.82-6" />
     </IconBase>
   ))
 );

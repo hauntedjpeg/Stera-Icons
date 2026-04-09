@@ -7,8 +7,8 @@ type SearchCircleFillProps = Omit<IconBaseProps, 'children'>;
 const SearchCircleFill = memo(
   forwardRef<SVGSVGElement, SearchCircleFillProps>((props, ref) => (
     <IconBase ref={ref} iconName="search-circle-fill" {...props}>
-      <path d="M11.12 8.75a2.37 2.37 0 1 1 0 4.74 2.37 2.37 0 0 1 0-4.74" />
-        <path fillRule="evenodd" d="M12 2a10 10 0 1 1 0 20 10 10 0 0 1 0-20m-.88 4.75a4.37 4.37 0 1 0 2.07 8.21l1.68 1.67a1.25 1.25 0 0 0 1.76-1.76l-1.67-1.68q.52-.93.53-2.07a4.37 4.37 0 0 0-4.37-4.37" clipRule="evenodd" />
+      <path d="M11.12 8.63a2.5 2.5 0 1 1 0 4.98 2.5 2.5 0 0 1 0-4.98" />
+        <path fillRule="evenodd" d="M12 2.13a9.88 9.88 0 1 1 0 19.75 9.88 9.88 0 0 1 0-19.75m-.88 4.75a4.24 4.24 0 1 0 2.1 7.93l1.73 1.73a1.12 1.12 0 1 0 1.6-1.59l-1.74-1.74q.54-.93.55-2.1c0-2.34-1.9-4.23-4.24-4.23" clipRule="evenodd" />
     </IconBase>
   ))
 );

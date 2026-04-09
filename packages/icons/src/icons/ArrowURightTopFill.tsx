@@ -7,7 +7,7 @@ type ArrowURightTopFillProps = Omit<IconBaseProps, 'children'>;
 const ArrowURightTopFill = memo(
   forwardRef<SVGSVGElement, ArrowURightTopFillProps>((props, ref) => (
     <IconBase ref={ref} iconName="arrow-u-right-top-fill" {...props}>
-      <path d="M15.62 3.08a1 1 0 0 1 1.09.21l4 4 .06.08a1 1 0 0 1-.06 1.34l-4 4A1 1 0 0 1 15 12V9h-4.5a4.5 4.5 0 0 0 0 9H15a1 1 0 1 1 0 2h-4.5a6.5 6.5 0 1 1 0-13H15V4a1 1 0 0 1 .62-.92" />
+      <path d="M15.67 3.2c.32-.14.7-.07.95.18l4 4 .06.07a.9.9 0 0 1-.06 1.17l-4 4a.88.88 0 0 1-1.5-.62V8.87H10.5a4.63 4.63 0 0 0 0 9.25H15a.88.88 0 0 1 0 1.75h-4.5a6.38 6.38 0 0 1 0-12.75h4.63V4c0-.35.2-.67.53-.8" />
     </IconBase>
   ))
 );

@@ -7,11 +7,11 @@ type RulersFillDuotoneProps = Omit<IconBaseProps, 'children'>;
 const RulersFillDuotone = memo(
   forwardRef<SVGSVGElement, RulersFillDuotoneProps>((props, ref) => (
     <IconBase ref={ref} iconName="rulers-fill-duotone" {...props}>
-      <path d="M17 6a1 1 0 0 0-1 1v3h-2V7a1 1 0 1 0-2 0v3h-2v2H7a1 1 0 1 0 0 2h3v2H7a1 1 0 1 0 0 2h3v1.75C10 20.99 9 22 7.75 22h-3.5C3.01 22 2 21 2 19.75V10h8V2h9.75C20.99 2 22 3 22 4.25v3.5C22 8.99 21 10 19.75 10H18V7a1 1 0 0 0-1-1" opacity={0.4} />
-        <path d="M8 4v4H4V4z" opacity={0.4} />
-        <path d="M10 18H7a1 1 0 1 1 0-2h3zM10 14H7a1 1 0 1 1 0-2h3z" />
-        <path fillRule="evenodd" d="M10 10H2V4c0-1.1.9-2 2-2h6zM4 8h4V4H4z" clipRule="evenodd" />
-        <path d="M13 6a1 1 0 0 1 1 1v3h-2V7a1 1 0 0 1 1-1M17 6a1 1 0 0 1 1 1v3h-2V7a1 1 0 0 1 1-1" />
+      <path d="M17 6.13c-.48 0-.87.39-.87.87v2.88h-2.25V7a.88.88 0 0 0-1.76 0v2.88H9.89v2.24H7a.88.88 0 0 0 0 1.76h2.88v2.24H7a.88.88 0 0 0 0 1.75h2.88v1.88c0 1.17-.96 2.13-2.13 2.13h-3.5a2.13 2.13 0 0 1-2.12-2.13V9.88h7.75V2.12h9.87c1.17 0 2.13.96 2.13 2.13v3.5c0 1.17-.96 2.12-2.13 2.13h-1.87V7c0-.48-.4-.87-.88-.87" opacity={0.4} />
+        <path d="M8.13 3.88v4.25H3.87V4q.01-.11.13-.12z" opacity={0.4} />
+        <path d="M9.88 17.88H7a.88.88 0 0 1 0-1.75h2.88zM9.88 13.88H7a.88.88 0 0 1 0-1.76h2.88z" />
+        <path fillRule="evenodd" d="M9.88 9.88H2.12V4c0-1.04.84-1.87 1.88-1.87h5.88zM4 3.88a.12.12 0 0 0-.12.12v4.13h4.25V3.87z" clipRule="evenodd" />
+        <path d="M13 6.13c.48 0 .88.39.88.87v2.88h-1.76V7c0-.48.4-.87.88-.87M17 6.13c.48 0 .88.39.88.87v2.88h-1.75V7c0-.48.39-.87.87-.87" />
     </IconBase>
   ))
 );

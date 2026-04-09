@@ -7,7 +7,7 @@ type ArrowDownRightFillProps = Omit<IconBaseProps, 'children'>;
 const ArrowDownRightFill = memo(
   forwardRef<SVGSVGElement, ArrowDownRightFillProps>((props, ref) => (
     <IconBase ref={ref} iconName="arrow-down-right-fill" {...props}>
-      <path d="M5.3 5.3a1 1 0 0 1 1.4 0l6.8 6.79 3.8-3.8A1 1 0 0 1 19 9v9a1 1 0 0 1-1 1H9a1 1 0 0 1-.7-1.7l3.79-3.8-6.8-6.8a1 1 0 0 1 0-1.4" />
+      <path d="M5.38 5.38a.9.9 0 0 1 1.24 0l6.88 6.88 3.88-3.88a.88.88 0 0 1 1.5.62v9a.9.9 0 0 1-.88.87H9a.88.88 0 0 1-.62-1.49l3.88-3.88-6.88-6.88a.9.9 0 0 1 0-1.24" />
     </IconBase>
   ))
 );

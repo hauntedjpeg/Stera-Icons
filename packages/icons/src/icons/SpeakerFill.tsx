@@ -7,7 +7,7 @@ type SpeakerFillProps = Omit<IconBaseProps, 'children'>;
 const SpeakerFill = memo(
   forwardRef<SVGSVGElement, SpeakerFillProps>((props, ref) => (
     <IconBase ref={ref} iconName="speaker-fill" {...props}>
-      <path d="M14.63 3.84c.98-.7 2.37 0 2.37 1.23v13.86a1.5 1.5 0 0 1-2.46 1.16l-4.83-4.03a.3.3 0 0 0-.16-.06h-2.3C6.01 16 5 15 5 13.75v-3.5C5 9.01 6 8 7.25 8h2.3q.09 0 .16-.06l4.83-4.02z" />
+      <path d="M14.7 3.95c.9-.64 2.17-.01 2.18 1.12v13.86c0 1.17-1.36 1.8-2.26 1.06l-4.83-4.03a.4.4 0 0 0-.24-.08h-2.3a2.13 2.13 0 0 1-2.12-2.13v-3.5c0-1.17.95-2.12 2.12-2.12h2.3q.14 0 .24-.1l4.83-4.02z" />
     </IconBase>
   ))
 );

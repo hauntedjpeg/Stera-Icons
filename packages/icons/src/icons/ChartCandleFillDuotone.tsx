@@ -7,8 +7,8 @@ type ChartCandleFillDuotoneProps = Omit<IconBaseProps, 'children'>;
 const ChartCandleFillDuotone = memo(
   forwardRef<SVGSVGElement, ChartCandleFillDuotoneProps>((props, ref) => (
     <IconBase ref={ref} iconName="chart-candle-fill-duotone" {...props}>
-      <path d="M8 22a1 1 0 1 1-2 0v-2h2zM18 20a1 1 0 1 1-2 0v-2h2zM17 3a1 1 0 0 1 1 1v2h-2V4a1 1 0 0 1 1-1M7 1a1 1 0 0 1 1 1v2H6V2a1 1 0 0 1 1-1" opacity={0.4} />
-        <path d="M9.2 4.01A2 2 0 0 1 11 6v12a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V6c0-1.1.9-2 2-2h4zM19.2 6.01A2 2 0 0 1 21 8v8a2 2 0 0 1-2 2h-4a2 2 0 0 1-2-2V8c0-1.1.9-2 2-2h4z" />
+      <path d="M7.88 22a.88.88 0 0 1-1.75 0v-2.12h1.75zM17.88 20a.88.88 0 0 1-1.75 0v-2.12h1.75zM17 3.13c.48 0 .88.39.88.87v2.13h-1.75V4c0-.48.39-.87.87-.87M7 1.13c.48 0 .88.39.88.87v2.13H6.13V2c0-.48.39-.87.87-.87" opacity={0.4} />
+        <path d="M9 4.13c1.04 0 1.88.83 1.88 1.87v12c0 1.04-.84 1.88-1.88 1.88H5A1.9 1.9 0 0 1 3.13 18V6c0-1.04.83-1.87 1.87-1.87zM19 6.13c1.04 0 1.88.83 1.88 1.87v8c0 1.04-.84 1.88-1.88 1.88h-4A1.9 1.9 0 0 1 13.13 16V8c0-1.04.83-1.87 1.87-1.87z" />
     </IconBase>
   ))
 );

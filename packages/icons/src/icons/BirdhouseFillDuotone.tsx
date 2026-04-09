@@ -7,9 +7,9 @@ type BirdhouseFillDuotoneProps = Omit<IconBaseProps, 'children'>;
 const BirdhouseFillDuotone = memo(
   forwardRef<SVGSVGElement, BirdhouseFillDuotoneProps>((props, ref) => (
     <IconBase ref={ref} iconName="birdhouse-fill-duotone" {...props}>
-      <path fillRule="evenodd" d="M11.67 4.63a.5.5 0 0 1 .66 0l7.15 6.35L17.95 19H6.05l-1.53-8.01zM12 10a2.5 2.5 0 1 0 0 5 2.5 2.5 0 0 0 0-5" clipRule="evenodd" opacity={.4} />
-        <path d="M19 19a1 1 0 0 1 0 2H5a1 1 0 0 1 0-2zM12 10a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5" />
-        <path d="M10.34 3.14a2.5 2.5 0 0 1 3.32 0l8 7.11a1 1 0 0 1-1.32 1.5l-8-7.12a.5.5 0 0 0-.67 0l-8 7.12a1 1 0 0 1-1.33-1.5z" />
+      <path fillRule="evenodd" d="M11.59 4.54c.23-.21.59-.21.83 0l7.2 6.4-1.56 8.19H5.94l-1.56-8.19zm.4 5.46a2.5 2.5 0 1 0 .01 5 2.5 2.5 0 0 0 0-5" clipRule="evenodd" opacity={.4} />
+        <path d="M12 10a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5M19 19.12a.88.88 0 0 1 0 1.75H5a.88.88 0 0 1 0-1.75z" />
+        <path d="M10.42 3.23c.9-.8 2.26-.8 3.16 0l8 7.12a.88.88 0 0 1-1.16 1.3l-8-7.11a.6.6 0 0 0-.83 0l-8 7.11a.88.88 0 0 1-1.17-1.3z" />
     </IconBase>
   ))
 );

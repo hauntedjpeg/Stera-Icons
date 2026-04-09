@@ -7,7 +7,7 @@ type PercentFillProps = Omit<IconBaseProps, 'children'>;
 const PercentFill = memo(
   forwardRef<SVGSVGElement, PercentFillProps>((props, ref) => (
     <IconBase ref={ref} iconName="percent-fill" {...props}>
-      <path d="M19.3 3.3a1 1 0 1 1 1.4 1.4l-16 16a1 1 0 1 1-1.4-1.4zM17.5 14a3.5 3.5 0 1 1 0 7 3.5 3.5 0 0 1 0-7M6.5 3a3.5 3.5 0 1 1 0 7 3.5 3.5 0 0 1 0-7" />
+      <path d="M19.38 3.38a.88.88 0 0 1 1.24 1.24l-16 16a.88.88 0 0 1-1.24-1.24zM17.5 14.12a3.38 3.38 0 1 1 0 6.76 3.38 3.38 0 0 1 0-6.76M6.5 3.12a3.38 3.38 0 1 1 0 6.76 3.38 3.38 0 0 1 0-6.76" />
     </IconBase>
   ))
 );

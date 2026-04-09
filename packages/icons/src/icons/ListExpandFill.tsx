@@ -7,7 +7,7 @@ type ListExpandFillProps = Omit<IconBaseProps, 'children'>;
 const ListExpandFill = memo(
   forwardRef<SVGSVGElement, ListExpandFillProps>((props, ref) => (
     <IconBase ref={ref} iconName="list-expand-fill" {...props}>
-      <path d="M21 14.5a1 1 0 0 1 .7 1.7l-3 3a1 1 0 0 1-1.4 0l-3-3a1 1 0 0 1 .7-1.7zM11 17a1 1 0 1 1 0 2H3a1 1 0 1 1 0-2zM11 11a1 1 0 1 1 0 2H3a1 1 0 1 1 0-2zM18 4.5a1 1 0 0 1 .7.3l3 3a1 1 0 0 1-.7 1.7h-6a1 1 0 0 1-.7-1.7l3-3a1 1 0 0 1 .7-.3M11 5a1 1 0 1 1 0 2H3a1 1 0 0 1 0-2z" />
+      <path d="M21 14.63a.88.88 0 0 1 .62 1.49l-3 3a.9.9 0 0 1-1.24 0l-3-3a.88.88 0 0 1 .62-1.5zM11 17.13a.88.88 0 0 1 0 1.75H3a.88.88 0 0 1 0-1.75zM11 11.13a.88.88 0 0 1 0 1.74H3a.88.88 0 0 1 0-1.74zM18 4.63q.36 0 .62.25l3 3a.88.88 0 0 1-.62 1.5h-6a.88.88 0 0 1-.62-1.5l3-3a1 1 0 0 1 .62-.25M11 5.13a.88.88 0 0 1 0 1.75H3a.87.87 0 1 1 0-1.75z" />
     </IconBase>
   ))
 );

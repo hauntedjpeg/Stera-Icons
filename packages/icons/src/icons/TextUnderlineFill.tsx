@@ -7,7 +7,7 @@ type TextUnderlineFillProps = Omit<IconBaseProps, 'children'>;
 const TextUnderlineFill = memo(
   forwardRef<SVGSVGElement, TextUnderlineFillProps>((props, ref) => (
     <IconBase ref={ref} iconName="text-underline-fill" {...props}>
-      <path d="M18 18.5a1.5 1.5 0 0 1 0 3H6a1.5 1.5 0 0 1 0-3zM17.5 2.5c.83 0 1.5.67 1.5 1.5v6.5a7 7 0 1 1-14 0V4a1.5 1.5 0 1 1 3 0v6.5a4 4 0 0 0 8 0V4c0-.83.67-1.5 1.5-1.5" />
+      <path d="M18 18.75a1.25 1.25 0 1 1 0 2.5H6a1.25 1.25 0 1 1 0-2.5zM17.5 2.75c.69 0 1.25.56 1.25 1.25v6.5a6.75 6.75 0 0 1-13.5 0V4a1.25 1.25 0 1 1 2.5 0v6.5a4.25 4.25 0 0 0 8.5 0V4c0-.69.56-1.25 1.25-1.25" />
     </IconBase>
   ))
 );

@@ -7,8 +7,8 @@ type ArrowCircleDownLeftFillDuotoneProps = Omit<IconBaseProps, 'children'>;
 const ArrowCircleDownLeftFillDuotone = memo(
   forwardRef<SVGSVGElement, ArrowCircleDownLeftFillDuotoneProps>((props, ref) => (
     <IconBase ref={ref} iconName="arrow-circle-down-left-fill-duotone" {...props}>
-      <path fillRule="evenodd" d="M4.93 4.93a10 10 0 1 1 14.14 14.14A10 10 0 0 1 4.93 4.93m10.6 3.53a1 1 0 0 0-1.4 0l-3.96 3.95V9.17a1 1 0 0 0-2 0v5.66a1 1 0 0 0 1 1h5.66a1 1 0 1 0 0-2h-3.24l3.95-3.95a1 1 0 0 0 0-1.42" clipRule="evenodd" opacity={.4} />
-        <path d="M14.12 8.46a1 1 0 1 1 1.42 1.42l-3.95 3.95h3.24a1 1 0 0 1 0 2H9.17a1 1 0 0 1-1-1V9.17a1 1 0 1 1 2 0v3.24z" />
+      <path fillRule="evenodd" d="M18.98 5.02A9.88 9.88 0 1 1 5.02 18.98 9.88 9.88 0 0 1 18.98 5.02m-3.53 3.53a.87.87 0 0 0-1.24 0l-4.16 4.17V9.17a.88.88 0 0 0-1.75 0v5.66a.9.9 0 0 0 .87.87h5.66a.88.88 0 0 0 0-1.75h-3.55l4.17-4.16a.87.87 0 0 0 0-1.24" clipRule="evenodd" opacity={.4} />
+        <path d="M15.45 8.55c.34.34.34.9 0 1.24l-4.17 4.16h3.55a.88.88 0 0 1 0 1.75H9.17a.9.9 0 0 1-.87-.87V9.17a.88.88 0 0 1 1.75 0v3.55l4.16-4.17a.9.9 0 0 1 1.24 0" />
     </IconBase>
   ))
 );

@@ -7,8 +7,8 @@ type CrosshairFillDuotoneProps = Omit<IconBaseProps, 'children'>;
 const CrosshairFillDuotone = memo(
   forwardRef<SVGSVGElement, CrosshairFillDuotoneProps>((props, ref) => (
     <IconBase ref={ref} iconName="crosshair-fill-duotone" {...props}>
-      <path d="M6.7 13.5a5.5 5.5 0 0 0 3.8 3.8v3.07a8.5 8.5 0 0 1-6.87-6.87zM20.37 13.5a8.5 8.5 0 0 1-6.87 6.87v-3.08a5.5 5.5 0 0 0 3.8-3.79zM13.5 3.63a8.5 8.5 0 0 1 6.87 6.87h-3.08a5.5 5.5 0 0 0-3.79-3.8zM10.5 6.7a5.5 5.5 0 0 0-3.8 3.8H3.64a8.5 8.5 0 0 1 6.87-6.87z" opacity={0.4} />
-        <path d="M12 .5c.83 0 1.5.67 1.5 1.5v8.5H22a1.5 1.5 0 0 1 0 3h-8.5V22a1.5 1.5 0 0 1-3 0v-8.5H2a1.5 1.5 0 0 1 0-3h8.5V2c0-.83.67-1.5 1.5-1.5" />
+      <path d="M11.13 12.88v6.94a7.9 7.9 0 0 1-6.96-6.94zM19.83 12.88a7.9 7.9 0 0 1-6.95 6.94v-6.94zM12.88 4.17c3.64.4 6.54 3.3 6.95 6.96h-6.95zM11.13 11.13H4.17a7.9 7.9 0 0 1 6.96-6.96z" opacity={0.4} />
+        <path d="M12 1.13c.48 0 .88.39.88.87v9.13H22a.88.88 0 0 1 0 1.74h-9.12V22a.88.88 0 0 1-1.76 0v-9.12H2a.88.88 0 0 1 0-1.76h9.13V2c0-.48.39-.87.87-.87" />
     </IconBase>
   ))
 );

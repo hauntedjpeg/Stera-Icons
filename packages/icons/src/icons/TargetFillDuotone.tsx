@@ -7,11 +7,11 @@ type TargetFillDuotoneProps = Omit<IconBaseProps, 'children'>;
 const TargetFillDuotone = memo(
   forwardRef<SVGSVGElement, TargetFillDuotoneProps>((props, ref) => (
     <IconBase ref={ref} iconName="target-fill-duotone" {...props}>
-      <path d="M12 7.5a4.5 4.5 0 1 1 0 9 4.5 4.5 0 0 1 0-9m0 1.88a2.63 2.63 0 1 0 0 5.25 2.63 2.63 0 0 0 0-5.26" opacity={0.4} />
-        <path d="M12 4a8 8 0 1 1 0 16 8 8 0 0 1 0-16m0 1.5a6.5 6.5 0 1 0 0 13 6.5 6.5 0 0 0 0-13" opacity={0.4} />
-        <path d="M12 9.38a2.63 2.63 0 1 1 0 5.25 2.63 2.63 0 0 1 0-5.26" />
-        <path fillRule="evenodd" d="M12 5.5a6.5 6.5 0 1 1 0 13 6.5 6.5 0 0 1 0-13m0 2a4.5 4.5 0 1 0 0 9 4.5 4.5 0 0 0 0-9" clipRule="evenodd" />
-        <path fillRule="evenodd" d="M12 2a10 10 0 1 1 0 20 10 10 0 0 1 0-20m0 2a8 8 0 1 0 0 16 8 8 0 0 0 0-16" clipRule="evenodd" />
+      <path d="M12 7.38a4.63 4.63 0 1 1 0 9.25 4.63 4.63 0 0 1 0-9.25m0 2.12a2.5 2.5 0 1 0 0 5 2.5 2.5 0 0 0 0-5" opacity={0.4} />
+        <path d="M12 3.88a8.13 8.13 0 1 1 0 16.25 8.13 8.13 0 0 1 0-16.25m0 1.75a6.37 6.37 0 1 0 0 12.74 6.37 6.37 0 0 0 0-12.74" opacity={0.4} />
+        <path d="M12 9.5a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5" />
+        <path fillRule="evenodd" d="M12 5.63a6.38 6.38 0 1 1 0 12.75 6.38 6.38 0 0 1 0-12.75m0 1.75a4.62 4.62 0 1 0 0 9.24 4.62 4.62 0 0 0 0-9.25" clipRule="evenodd" />
+        <path fillRule="evenodd" d="M12 2.13a9.88 9.88 0 1 1 0 19.75 9.88 9.88 0 0 1 0-19.75m0 1.75a8.13 8.13 0 1 0 0 16.25 8.13 8.13 0 0 0 0-16.25" clipRule="evenodd" />
     </IconBase>
   ))
 );

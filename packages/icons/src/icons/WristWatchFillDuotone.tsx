@@ -7,8 +7,8 @@ type WristWatchFillDuotoneProps = Omit<IconBaseProps, 'children'>;
 const WristWatchFillDuotone = memo(
   forwardRef<SVGSVGElement, WristWatchFillDuotoneProps>((props, ref) => (
     <IconBase ref={ref} iconName="wrist-watch-fill-duotone" {...props}>
-      <path fillRule="evenodd" d="M12 5a7 7 0 0 1 3.65 1.02l.11.08A7 7 0 0 1 19 12a7 7 0 0 1-3.3 5.94l-.04.02q-.4.26-.86.45l-.05.03a7 7 0 0 1-4.6.3q-.47-.12-.9-.3l-.06-.03q-.45-.2-.85-.45l-.05-.02A7 7 0 0 1 5 12a7 7 0 0 1 3.24-5.9l.11-.08A7 7 0 0 1 12 5m0 3.5a1 1 0 0 0-1 1V12q0 .42.3.7l1.5 1.5a1 1 0 1 0 1.4-1.4L13 11.58V9.5a1 1 0 0 0-1-1" clipRule="evenodd" opacity={.4} />
-        <path d="M17 19.5a3 3 0 0 1-3 3h-4a3 3 0 0 1-3-3v-2.6a7 7 0 0 0 10 0zM12 8.5a1 1 0 0 1 1 1v2.09l1.2 1.2a1 1 0 1 1-1.4 1.42l-1.5-1.5A1 1 0 0 1 11 12V9.5a1 1 0 0 1 1-1M14 1.5a3 3 0 0 1 3 3v2.6a7 7 0 0 0-10 0V4.5a3 3 0 0 1 3-3z" />
+      <path fillRule="evenodd" d="M12 5.13a6.87 6.87 0 1 1 0 13.74 6.87 6.87 0 0 1 0-13.74m0 3.5c-.48 0-.87.39-.87.87V12q0 .36.25.62l1.5 1.5a.88.88 0 0 0 1.24-1.24l-1.24-1.24V9.5c0-.48-.4-.87-.88-.87" clipRule="evenodd" opacity={.4} />
+        <path d="M16.88 19.5A2.9 2.9 0 0 1 14 22.38h-4a2.9 2.9 0 0 1-2.87-2.88v-2.65a6.85 6.85 0 0 0 9.75 0zM14 1.63a2.9 2.9 0 0 1 2.88 2.87v2.65a6.85 6.85 0 0 0-9.75 0V4.5A2.87 2.87 0 0 1 10 1.63zM12 8.63c.48 0 .88.39.88.87v2.14l1.24 1.24a.88.88 0 0 1-1.24 1.24l-1.5-1.5a1 1 0 0 1-.26-.62V9.5c0-.48.4-.87.88-.87" />
     </IconBase>
   ))
 );

@@ -7,9 +7,9 @@ type BankFillDuotoneProps = Omit<IconBaseProps, 'children'>;
 const BankFillDuotone = memo(
   forwardRef<SVGSVGElement, BankFillDuotoneProps>((props, ref) => (
     <IconBase ref={ref} iconName="bank-fill-duotone" {...props}>
-      <path d="M19 15.01c1.12.13 2 1.08 2 2.24V18H3v-.75c0-1.16.88-2.11 2-2.24V11h2v4h2v-4h2v4h2v-4h2v4h2v-4h2zM12 6.5a1 1 0 1 1 0 2 1 1 0 0 1 0-2" opacity={0.4} />
-        <path fillRule="evenodd" d="M11.58 3.1a1 1 0 0 1 .97.07l9 6A1 1 0 0 1 21 11H3a1 1 0 0 1-.55-1.83l9-6zM12 6.5a1 1 0 1 0 0 2 1 1 0 0 0 0-2" clipRule="evenodd" />
-        <path d="M21 18a1 1 0 1 1 0 2H3a1 1 0 1 1 0-2z" />
+      <path d="M18.88 15.13c1.11.07 2 .99 2 2.12v.88H3.13v-.88c0-1.13.88-2.05 2-2.12v-4.26h1.75v4.26h2.25v-4.26h1.74v4.26h2.26v-4.26h1.74v4.26h2.26v-4.26h1.75z" opacity={.4} />
+        <path d="M21 18.13a.87.87 0 1 1 0 1.75H3a.88.88 0 0 1 0-1.75z" />
+        <path fillRule="evenodd" d="M11.63 3.2c.27-.12.6-.1.86.07l9 6a.88.88 0 0 1-.49 1.6H3a.88.88 0 0 1-.49-1.6l9-6zM12 6.5a1 1 0 0 0-.92.61 1 1 0 0 0 1.22 1.35A1 1 0 0 0 12 6.5" clipRule="evenodd" />
     </IconBase>
   ))
 );

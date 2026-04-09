@@ -7,7 +7,7 @@ type GitPullRequestClosedFillProps = Omit<IconBaseProps, 'children'>;
 const GitPullRequestClosedFill = memo(
   forwardRef<SVGSVGElement, GitPullRequestClosedFillProps>((props, ref) => (
     <IconBase ref={ref} iconName="git-pull-request-closed-fill" {...props}>
-      <path d="M5.5 2a3.5 3.5 0 0 1 1 6.85v6.3a3.5 3.5 0 1 1-2 0v-6.3A3.5 3.5 0 0 1 5.5 2M18.5 10a1 1 0 0 1 1 1v4.15a3.5 3.5 0 1 1-2 0V11a1 1 0 0 1 1-1M20.3 2.3a1 1 0 1 1 1.4 1.4l-1.79 1.8 1.8 1.8a1 1 0 1 1-1.42 1.4L18.5 6.92l-1.8 1.8a1 1 0 1 1-1.4-1.42l1.79-1.79-1.8-1.8a1 1 0 1 1 1.42-1.4l1.79 1.79z" />
+      <path d="M5.5 2.12a3.38 3.38 0 0 1 .88 6.64v6.48a3.38 3.38 0 1 1-1.75 0V8.76a3.38 3.38 0 0 1 .87-6.64M18.5 10.12c.48 0 .87.4.88.88v4.24a3.38 3.38 0 1 1-1.75 0V11c0-.48.39-.88.87-.88M20.38 2.38a.88.88 0 0 1 1.24 1.24L19.74 5.5l1.88 1.88a.88.88 0 0 1-1.24 1.24L18.5 6.74l-1.88 1.88a.88.88 0 0 1-1.24-1.24l1.88-1.88-1.88-1.88a.88.88 0 0 1 1.24-1.24l1.88 1.88z" />
     </IconBase>
   ))
 );

@@ -7,7 +7,7 @@ type CliFillProps = Omit<IconBaseProps, 'children'>;
 const CliFill = memo(
   forwardRef<SVGSVGElement, CliFillProps>((props, ref) => (
     <IconBase ref={ref} iconName="cli-fill" {...props}>
-      <path d="M20 17a1.5 1.5 0 0 1 0 3h-9a1.5 1.5 0 0 1 0-3zM2.94 4.44a1.5 1.5 0 0 1 2.12 0l6 6a1.5 1.5 0 0 1 0 2.12l-6 6a1.5 1.5 0 0 1-2.12-2.12l4.94-4.94-4.94-4.94a1.5 1.5 0 0 1 0-2.12" />
+      <path d="M20 17.25a1.25 1.25 0 0 1 0 2.5h-9a1.25 1.25 0 0 1 0-2.5zM3.12 4.62a1.25 1.25 0 0 1 1.76 0l6 6c.5.48.5 1.28 0 1.76l-6 6a1.25 1.25 0 0 1-1.76-1.76l5.11-5.12-5.11-5.12a1.25 1.25 0 0 1 0-1.76" />
     </IconBase>
   ))
 );

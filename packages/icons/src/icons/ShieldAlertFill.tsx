@@ -7,7 +7,7 @@ type ShieldAlertFillProps = Omit<IconBaseProps, 'children'>;
 const ShieldAlertFill = memo(
   forwardRef<SVGSVGElement, ShieldAlertFillProps>((props, ref) => (
     <IconBase ref={ref} iconName="shield-alert-fill" {...props}>
-      <path fillRule="evenodd" d="M11.73 1.66a1 1 0 0 1 .62.03l7.5 2.81a1 1 0 0 1 .65.94v5.23c0 4.64-2.62 8.88-6.77 10.96l-1.28.64a1 1 0 0 1-.9 0l-1.28-.64A12.3 12.3 0 0 1 3.5 10.67V5.44a1 1 0 0 1 .65-.94l7.5-2.81zM12 14a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3m0-7.5a1 1 0 0 0-1 1v4a1 1 0 0 0 2 0v-4a1 1 0 0 0-1-1" clipRule="evenodd" />
+      <path fillRule="evenodd" d="M11.84 1.76a1 1 0 0 1 .47.05l7.5 2.8c.34.14.57.46.57.83v5.23c0 4.6-2.6 8.8-6.7 10.85l-1.29.64a.9.9 0 0 1-.78 0l-1.28-.64a12.1 12.1 0 0 1-6.7-10.85V5.44c0-.37.22-.7.56-.82l7.5-2.81zM12 14a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3m0-7.37c-.48 0-.87.39-.87.87v4a.88.88 0 0 0 1.74 0v-4c0-.48-.39-.87-.87-.87" clipRule="evenodd" />
     </IconBase>
   ))
 );

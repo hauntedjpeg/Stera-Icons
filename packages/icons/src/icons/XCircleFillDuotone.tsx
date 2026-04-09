@@ -7,8 +7,8 @@ type XCircleFillDuotoneProps = Omit<IconBaseProps, 'children'>;
 const XCircleFillDuotone = memo(
   forwardRef<SVGSVGElement, XCircleFillDuotoneProps>((props, ref) => (
     <IconBase ref={ref} iconName="x-circle-fill-duotone" {...props}>
-      <path fillRule="evenodd" d="M12 2a10 10 0 1 1 0 20 10 10 0 0 1 0-20M9.7 8.3a1 1 0 0 0-1.4 1.4l2.29 2.3-2.3 2.3a1 1 0 0 0 1.42 1.4l2.3-2.29 2.28 2.3a1 1 0 0 0 1.42-1.42L13.4 12l2.3-2.29a1 1 0 0 0-1.42-1.41L12 10.59z" clipRule="evenodd" opacity={.4} />
-        <path d="M8.3 8.3a1 1 0 0 1 1.4 0l2.3 2.29 2.3-2.29a1 1 0 0 1 1.4 1.41l-2.28 2.3 2.29 2.28a1 1 0 0 1-1.42 1.41L12 13.41l-2.3 2.3a1 1 0 0 1-1.4-1.42L10.58 12l-2.3-2.3a1 1 0 0 1 0-1.4" />
+      <path fillRule="evenodd" d="M12 2.13a9.88 9.88 0 1 1 0 19.75 9.88 9.88 0 0 1 0-19.75M9.62 8.38a.88.88 0 0 0-1.24 1.24L10.76 12l-2.38 2.38a.88.88 0 0 0 1.24 1.24L12 13.24l2.38 2.37a.88.88 0 0 0 1.24-1.24L13.24 12l2.38-2.37a.88.88 0 0 0-1.24-1.24L12 10.76z" clipRule="evenodd" opacity={.4} />
+        <path d="M8.38 8.38a.9.9 0 0 1 1.24 0L12 10.76l2.38-2.37a.87.87 0 1 1 1.24 1.24L13.24 12l2.38 2.37a.88.88 0 0 1-1.24 1.24L12 13.24l-2.38 2.38a.88.88 0 0 1-1.24-1.24L10.76 12 8.39 9.62a.9.9 0 0 1 0-1.24" />
     </IconBase>
   ))
 );

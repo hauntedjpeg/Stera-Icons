@@ -7,8 +7,8 @@ type Clock7FillDuotoneProps = Omit<IconBaseProps, 'children'>;
 const Clock7FillDuotone = memo(
   forwardRef<SVGSVGElement, Clock7FillDuotoneProps>((props, ref) => (
     <IconBase ref={ref} iconName="clock-7-fill-duotone" {...props}>
-      <path fillRule="evenodd" d="M12 2a10 10 0 1 1 0 20 10 10 0 0 1 0-20m0 4a1 1 0 0 0-1 1v4.73l-1.87 3.23a1 1 0 0 0 1.74 1l2-3.46.03-.07.01-.03.03-.06.01-.03.01-.05.02-.05.02-.2V7a1 1 0 0 0-1-1" clipRule="evenodd" opacity={.4} />
-        <path d="M12 6a1 1 0 0 1 1 1v5l-.02.2-.02.06-.01.05-.01.03-.03.06v.03l-.04.06v.01l-2 3.46a1 1 0 0 1-1.74-1L11 11.73V7a1 1 0 0 1 1-1" />
+      <path fillRule="evenodd" d="M12 2.13a9.88 9.88 0 1 1 0 19.75 9.88 9.88 0 0 1 0-19.75m0 4c-.48 0-.87.39-.87.87v4.76l-1.89 3.27a.88.88 0 0 0 1.52.87l2-3.46v-.01l.1-.24v-.09l.01-.1V7c0-.48-.39-.87-.87-.87" clipRule="evenodd" opacity={.4} />
+        <path d="M12 6.13c.48 0 .87.39.87.87v5.14l-.02.05-.09.24-2 3.47a.88.88 0 0 1-1.52-.87l1.88-3.27V7c0-.48.4-.87.88-.87" />
     </IconBase>
   ))
 );

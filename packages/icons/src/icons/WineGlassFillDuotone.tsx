@@ -7,8 +7,8 @@ type WineGlassFillDuotoneProps = Omit<IconBaseProps, 'children'>;
 const WineGlassFillDuotone = memo(
   forwardRef<SVGSVGElement, WineGlassFillDuotoneProps>((props, ref) => (
     <IconBase ref={ref} iconName="wine-glass-fill-duotone" {...props}>
-      <path d="M13 18c0 1.1.9 2 2 2h1.1a1 1 0 0 1-.1 2H8a1 1 0 1 1 0-2h1a2 2 0 0 0 2-2v-4.06a8 8 0 0 0 2 0z" opacity={.4} />
-        <path d="M17.5 2a1 1 0 0 1 .98.78v.04l.08.4q.08.4.18 1.1c.13.94.26 2.24.26 3.68 0 3.48-3.31 6-7 6s-7-2.52-7-6a27 27 0 0 1 .52-5.18v-.03A1 1 0 0 1 6.5 2z" />
+      <path d="M17.5 2.13c.41 0 .76.28.85.68l.01.03.08.4.18 1.1c.13.94.25 2.23.25 3.66 0 3.39-3.23 5.88-6.87 5.88S5.13 11.38 5.13 8a27 27 0 0 1 .52-5.19c.08-.4.44-.68.85-.68z" />
+        <path d="M12.88 18c0 1.17.95 2.13 2.12 2.13h1.09a.87.87 0 0 1-.09 1.75H8a.88.88 0 0 1 0-1.75h1c1.17 0 2.13-.96 2.13-2.13v-4.17a8 8 0 0 0 1.74 0z" opacity={.4} />
     </IconBase>
   ))
 );

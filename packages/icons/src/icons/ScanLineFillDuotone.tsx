@@ -7,8 +7,8 @@ type ScanLineFillDuotoneProps = Omit<IconBaseProps, 'children'>;
 const ScanLineFillDuotone = memo(
   forwardRef<SVGSVGElement, ScanLineFillDuotoneProps>((props, ref) => (
     <IconBase ref={ref} iconName="scan-line-fill-duotone" {...props}>
-      <path d="M21 17a4 4 0 0 1-4 4H7a4 4 0 0 1-4-4v-4h18zM17 3a4 4 0 0 1 4 4v4H3V7a4 4 0 0 1 4-4z" opacity={0.4} />
-        <path d="M21.5 11a1 1 0 1 1 0 2h-19a1 1 0 1 1 0-2z" />
+      <path d="M20.88 17A3.9 3.9 0 0 1 17 20.88H7A3.9 3.9 0 0 1 3.13 17v-4.12h17.75zM17 3.13A3.9 3.9 0 0 1 20.88 7v4.13H3.13V7A3.9 3.9 0 0 1 7 3.13z" opacity={0.4} />
+        <path d="M21.5 11.13a.88.88 0 0 1 0 1.74h-19a.88.88 0 0 1 0-1.74z" />
     </IconBase>
   ))
 );

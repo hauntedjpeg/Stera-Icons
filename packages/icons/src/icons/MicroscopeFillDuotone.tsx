@@ -7,8 +7,8 @@ type MicroscopeFillDuotoneProps = Omit<IconBaseProps, 'children'>;
 const MicroscopeFillDuotone = memo(
   forwardRef<SVGSVGElement, MicroscopeFillDuotoneProps>((props, ref) => (
     <IconBase ref={ref} iconName="microscope-fill-duotone" {...props}>
-      <path d="M12.13 5.5v2H11a6 6 0 0 0 0 12H5.71A8 8 0 0 1 11 5.5zM19 16.5a1 1 0 1 1 0 2h-6a1 1 0 1 1 0-2z" opacity={0.4} />
-        <path d="M20 19.5a1 1 0 1 1 0 2H4a1 1 0 1 1 0-2zM16 1.63a3.9 3.9 0 0 1 3.88 3.87v4.75c0 1.1-.83 1.99-1.89 2.1l.01.15a2 2 0 1 1-4 0v-.14a2.1 2.1 0 0 1-1.87-2.11V5.5A3.9 3.9 0 0 1 16 1.63" />
+      <path d="M12.13 7.38H11a6.13 6.13 0 0 0 0 12.25H6.05a7.86 7.86 0 0 1 4.95-14h1.13zM19 16.63a.88.88 0 0 1 0 1.75h-6a.88.88 0 0 1 0-1.75z" opacity={0.4} />
+        <path d="M20 19.63a.88.88 0 0 1 0 1.75H4a.88.88 0 0 1 0-1.75zM16 1.63a3.9 3.9 0 0 1 3.88 3.87v4.75c0 1.13-.9 2.06-2.01 2.12v.13a1.88 1.88 0 1 1-3.74-.13c-1.12-.06-2-.99-2-2.12V5.5A3.9 3.9 0 0 1 16 1.63" />
     </IconBase>
   ))
 );

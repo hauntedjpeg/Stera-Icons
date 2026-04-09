@@ -7,8 +7,8 @@ type TargetFillProps = Omit<IconBaseProps, 'children'>;
 const TargetFill = memo(
   forwardRef<SVGSVGElement, TargetFillProps>((props, ref) => (
     <IconBase ref={ref} iconName="target-fill" {...props}>
-      <path fillRule="evenodd" d="M12 5.5a6.5 6.5 0 1 1 0 13 6.5 6.5 0 0 1 0-13m0 3.88a2.63 2.63 0 1 0 0 5.25 2.63 2.63 0 0 0 0-5.26" clipRule="evenodd" />
-        <path fillRule="evenodd" d="M12 2a10 10 0 1 1 0 20 10 10 0 0 1 0-20m0 2a8 8 0 1 0 0 16 8 8 0 0 0 0-16" clipRule="evenodd" />
+      <path fillRule="evenodd" d="M12 5.5a6.5 6.5 0 1 1 0 13 6.5 6.5 0 0 1 0-13m0 4a2.5 2.5 0 1 0 0 5 2.5 2.5 0 0 0 0-5" clipRule="evenodd" />
+        <path fillRule="evenodd" d="M12 2.13a9.88 9.88 0 1 1 0 19.75 9.88 9.88 0 0 1 0-19.75m0 1.75a8.13 8.13 0 1 0 0 16.25 8.13 8.13 0 0 0 0-16.25" clipRule="evenodd" />
     </IconBase>
   ))
 );

@@ -7,7 +7,7 @@ type CircleNotchFillProps = Omit<IconBaseProps, 'children'>;
 const CircleNotchFill = memo(
   forwardRef<SVGSVGElement, CircleNotchFillProps>((props, ref) => (
     <IconBase ref={ref} iconName="circle-notch-fill" {...props}>
-      <path d="M17.3 4.58a1.5 1.5 0 0 1 2.13 0 10.5 10.5 0 1 1-14.85 0A1.5 1.5 0 0 1 6.7 6.7a7.5 7.5 0 1 0 10.6 0 1.5 1.5 0 0 1 0-2.12" />
+      <path d="M17.48 4.75a1.25 1.25 0 0 1 1.77 0 10.25 10.25 0 1 1-14.5 0 1.25 1.25 0 0 1 1.77 1.77 7.75 7.75 0 1 0 10.96 0 1.25 1.25 0 0 1 0-1.77" />
     </IconBase>
   ))
 );

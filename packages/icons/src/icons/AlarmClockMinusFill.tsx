@@ -7,8 +7,8 @@ type AlarmClockMinusFillProps = Omit<IconBaseProps, 'children'>;
 const AlarmClockMinusFill = memo(
   forwardRef<SVGSVGElement, AlarmClockMinusFillProps>((props, ref) => (
     <IconBase ref={ref} iconName="alarm-clock-minus-fill" {...props}>
-      <path fillRule="evenodd" d="M12 4a8.5 8.5 0 0 1 5.72 14.78l1.11 1.67a1 1 0 0 1-1.66 1.1l-1.07-1.6a8.5 8.5 0 0 1-8.2 0l-1.07 1.6a1 1 0 1 1-1.66-1.1l1.1-1.67A8.5 8.5 0 0 1 12 4m-3 7.5a1 1 0 0 0 0 2h6a1 1 0 1 0 0-2z" clipRule="evenodd" />
-        <path d="M5.5 1.24a2.5 2.5 0 0 1 3.42.92 1 1 0 0 1-.37 1.36l-2.6 1.5a1 1 0 0 1-1.37-.36 2.5 2.5 0 0 1 .92-3.42M15.09 2.16a2.5 2.5 0 1 1 4.32 2.5 1 1 0 0 1-1.36.36l-2.6-1.5a1 1 0 0 1-.36-1.36" />
+      <path fillRule="evenodd" d="M12 4.12a8.38 8.38 0 0 1 5.56 14.64l1.17 1.75a.88.88 0 0 1-1.46.98l-1.13-1.7a8.3 8.3 0 0 1-8.28 0l-1.13 1.7a.88.88 0 0 1-1.46-.98l1.17-1.75A8.38 8.38 0 0 1 12 4.12m-3 7.5a.88.88 0 0 0 0 1.75h6a.88.88 0 0 0 0-1.75z" clipRule="evenodd" />
+        <path d="M5.56 1.35a2.4 2.4 0 0 1 3.25.87c.24.42.1.95-.32 1.2l-2.6 1.5a.9.9 0 0 1-1.2-.33 2.4 2.4 0 0 1 .87-3.24M15.2 2.22a2.38 2.38 0 1 1 4.1 2.37.9.9 0 0 1-1.19.32l-2.6-1.5a.9.9 0 0 1-.32-1.19" />
     </IconBase>
   ))
 );

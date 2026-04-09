@@ -7,7 +7,7 @@ type FlowBranchFillProps = Omit<IconBaseProps, 'children'>;
 const FlowBranchFill = memo(
   forwardRef<SVGSVGElement, FlowBranchFillProps>((props, ref) => (
     <IconBase ref={ref} iconName="flow-branch-fill" {...props}>
-      <path d="M13.8 13.8a1 1 0 0 1 1.4 0l3.3 3.29 1.8-1.8A1 1 0 0 1 22 16v5a1 1 0 0 1-1 1h-5a1 1 0 0 1-.7-1.7l1.79-1.8-3.3-3.3a1 1 0 0 1 0-1.4M21 2a1 1 0 0 1 1 1v5a1 1 0 0 1-1.7.7l-1.8-1.79-4.04 4.04A7 7 0 0 1 9.51 13H2a1 1 0 1 1 0-2h7.51a5 5 0 0 0 3.54-1.46l4.04-4.04-1.8-1.8A1 1 0 0 1 16 2z" />
+      <path d="M13.88 13.88a.9.9 0 0 1 1.24 0l3.38 3.38 1.88-1.88a.88.88 0 0 1 1.5.62v5c0 .48-.4.88-.88.88h-5a.88.88 0 0 1-.62-1.5l1.88-1.88-3.38-3.38a.9.9 0 0 1 0-1.24M21 2.13c.48 0 .88.39.88.87v5a.88.88 0 0 1-1.5.62L18.5 6.74l-4.12 4.12a7 7 0 0 1-4.87 2.02H2a.88.88 0 0 1 0-1.76h7.51c1.36 0 2.67-.53 3.63-1.5l4.12-4.12-1.88-1.88a.88.88 0 0 1 .62-1.5z" />
     </IconBase>
   ))
 );

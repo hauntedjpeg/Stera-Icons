@@ -7,7 +7,7 @@ type ListSimpleFillProps = Omit<IconBaseProps, 'children'>;
 const ListSimpleFill = memo(
   forwardRef<SVGSVGElement, ListSimpleFillProps>((props, ref) => (
     <IconBase ref={ref} iconName="list-simple-fill" {...props}>
-      <path d="M6 13a1 1 0 0 1 1 1v3a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1v-3a1 1 0 0 1 1-1zM21 14a1.5 1.5 0 0 1 0 3H10a1.5 1.5 0 0 1 0-3zM6 6a1 1 0 0 1 1 1v3a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V7a1 1 0 0 1 1-1zM21 7a1.5 1.5 0 0 1 0 3H10a1.5 1.5 0 1 1 0-3z" />
+      <path d="M6 13.13c.48 0 .88.39.88.87v3c0 .48-.4.88-.88.88H3a.9.9 0 0 1-.87-.88v-3c0-.48.39-.87.87-.87zM21 14.25a1.25 1.25 0 1 1 0 2.5H10a1.25 1.25 0 1 1 0-2.5zM6 6.13c.48 0 .88.39.88.87v3c0 .48-.4.88-.88.88H3a.9.9 0 0 1-.87-.88V7c0-.48.39-.87.87-.87zM21 7.25a1.25 1.25 0 1 1 0 2.5H10a1.25 1.25 0 1 1 0-2.5z" />
     </IconBase>
   ))
 );

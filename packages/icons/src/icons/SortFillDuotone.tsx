@@ -7,8 +7,8 @@ type SortFillDuotoneProps = Omit<IconBaseProps, 'children'>;
 const SortFillDuotone = memo(
   forwardRef<SVGSVGElement, SortFillDuotoneProps>((props, ref) => (
     <IconBase ref={ref} iconName="sort-fill-duotone" {...props}>
-      <path d="M16 11a1 1 0 1 1 0 2h-6a1 1 0 1 1 0-2zM19 7a1 1 0 1 1 0 2h-9a1 1 0 0 1 0-2zM22 3a1 1 0 1 1 0 2H10a1 1 0 0 1 0-2z" opacity={0.4} />
-        <path d="M6 3a1 1 0 0 1 1 1v11h3a1 1 0 0 1 .7 1.7l-4 4-.07.07-.13.1H6.5a1 1 0 0 1-.66.11H5.8l-.05-.01-.04-.01a1 1 0 0 1-.42-.25l-4-4A1 1 0 0 1 2 15h3V4a1 1 0 0 1 1-1" />
+      <path d="M16 11.13a.88.88 0 0 1 0 1.74h-6a.88.88 0 0 1 0-1.74zM19 7.13a.88.88 0 0 1 0 1.75h-9a.87.87 0 1 1 0-1.76zM22 3.13a.88.88 0 0 1 0 1.75H10a.87.87 0 1 1 0-1.75z" opacity={0.4} />
+        <path d="M6 3.13c.48 0 .87.39.87.87v11.13H10a.88.88 0 0 1 .62 1.49l-4 4-.07.06-.11.08h-.01a1 1 0 0 1-.27.1h-.03a1 1 0 0 1-.3 0 1 1 0 0 1-.45-.24l-4-4a.88.88 0 0 1 .62-1.5h3.12V4c0-.48.4-.87.88-.87" />
     </IconBase>
   ))
 );

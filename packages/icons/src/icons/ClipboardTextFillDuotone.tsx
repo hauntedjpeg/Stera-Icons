@@ -7,8 +7,8 @@ type ClipboardTextFillDuotoneProps = Omit<IconBaseProps, 'children'>;
 const ClipboardTextFillDuotone = memo(
   forwardRef<SVGSVGElement, ClipboardTextFillDuotoneProps>((props, ref) => (
     <IconBase ref={ref} iconName="clipboard-text-fill-duotone" {...props}>
-      <path d="M15.5 13.88a.88.88 0 0 1 0 1.74h-7a.88.88 0 0 1 0-1.74zM15.5 10.38a.88.88 0 0 1 0 1.74h-7a.88.88 0 0 1 0-1.74zM14.75 1C15.99 1 17 2 17 3.25v1.5C17 5.99 16 7 14.75 7h-5.5C8.01 7 7 6 7 4.75v-1.5C7 2.01 8 1 9.25 1z" />
-        <path fillRule="evenodd" d="M17.75 3C19.55 3 21 4.46 21 6.25v13.5c0 1.8-1.46 3.25-3.25 3.25H6.25A3.25 3.25 0 0 1 3 19.75V6.25C3 4.45 4.46 3 6.25 3h.76L7 3.25v1.5C7 5.99 8 7 9.25 7h5.5C15.99 7 17 6 17 4.75v-1.5L16.99 3zM8.5 13.88a.88.88 0 0 0 0 1.74h7a.88.88 0 0 0 0-1.74zm0-3.5a.88.88 0 0 0 0 1.74h7a.88.88 0 0 0 0-1.74z" clipRule="evenodd" opacity={.4} />
+      <path fillRule="evenodd" d="M17.75 3.13c1.73 0 3.13 1.4 3.13 3.12v13.5c0 1.73-1.4 3.13-3.13 3.13H6.25a3.1 3.1 0 0 1-3.12-3.13V6.25c0-1.73 1.4-3.12 3.12-3.12h.88v1.62c0 1.17.95 2.13 2.12 2.13h5.5c1.17 0 2.13-.96 2.13-2.13v-1.5l-.01-.12zM8.5 13.88a.88.88 0 0 0 0 1.74h7a.88.88 0 0 0 0-1.74zm0-3.5a.88.88 0 0 0 0 1.74h7a.88.88 0 0 0 0-1.74z" clipRule="evenodd" opacity={.4} />
+        <path d="M15.5 13.88a.88.88 0 0 1 0 1.74h-7a.88.88 0 0 1 0-1.74zM15.5 10.38a.88.88 0 0 1 0 1.74h-7a.88.88 0 0 1 0-1.74zM14.75 1.13c1.17 0 2.13.95 2.13 2.12v1.5c0 1.17-.96 2.13-2.13 2.13h-5.5a2.13 2.13 0 0 1-2.12-2.13v-1.5c0-1.17.95-2.12 2.12-2.12z" />
     </IconBase>
   ))
 );

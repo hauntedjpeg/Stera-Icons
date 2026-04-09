@@ -20,14 +20,16 @@ const __dirname = dirname(__filename);
  */
 export class HashVersioning {
   constructor(projectRoot) {
-    this.projectRoot = projectRoot || join(__dirname, '..');
+    this.packageRoot = projectRoot || join(__dirname, '..');
+    // Changesets live at the monorepo root, two levels up from packages/icons
+    this.projectRoot = join(this.packageRoot, '../..');
   }
 
   /**
    * Get the current version from package.json
    */
   getCurrentVersion() {
-    const packageJsonPath = join(this.projectRoot, 'package.json');
+    const packageJsonPath = join(this.packageRoot, 'package.json');
     const packageJson = JSON.parse(readFileSync(packageJsonPath, 'utf8'));
     return packageJson.version;
   }

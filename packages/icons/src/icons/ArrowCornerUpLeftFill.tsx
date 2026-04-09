@@ -7,7 +7,7 @@ type ArrowCornerUpLeftFillProps = Omit<IconBaseProps, 'children'>;
 const ArrowCornerUpLeftFill = memo(
   forwardRef<SVGSVGElement, ArrowCornerUpLeftFillProps>((props, ref) => (
     <IconBase ref={ref} iconName="arrow-corner-up-left-fill" {...props}>
-      <path d="M7.3 3.3A1 1 0 0 1 9 4v3h7a4 4 0 0 1 4 4v8a1 1 0 1 1-2 0v-8a2 2 0 0 0-2-2H9v3a1 1 0 0 1-1.7.7l-4-4a1 1 0 0 1-.07-1.33l.06-.08z" />
+      <path d="M7.38 3.38a.88.88 0 0 1 1.5.62v3.12H16A3.9 3.9 0 0 1 19.88 11v8a.87.87 0 1 1-1.75 0v-8c0-1.17-.96-2.13-2.13-2.13H8.88V12a.88.88 0 0 1-1.5.62l-4-4a.9.9 0 0 1-.06-1.17l.06-.07z" />
     </IconBase>
   ))
 );

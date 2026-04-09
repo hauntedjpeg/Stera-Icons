@@ -7,7 +7,7 @@ type WaveTriangleFillProps = Omit<IconBaseProps, 'children'>;
 const WaveTriangleFill = memo(
   forwardRef<SVGSVGElement, WaveTriangleFillProps>((props, ref) => (
     <IconBase ref={ref} iconName="wave-triangle-fill" {...props}>
-      <path d="M7.5 3.5c.51 0 .99.26 1.26.69l7.74 12.03 3.24-5.03a1.5 1.5 0 0 1 2.52 1.62l-4.5 7a1.5 1.5 0 0 1-2.41.15l-.11-.15L7.5 7.77l-3.24 5.04a1.5 1.5 0 0 1-2.52-1.62l4.5-7 .11-.16c.28-.33.7-.53 1.15-.53" />
+      <path d="M7.5 3.75c.42 0 .82.21 1.05.57L16.5 16.7l3.45-5.37a1.25 1.25 0 0 1 2.1 1.35l-4.5 7a1.25 1.25 0 0 1-2.1 0L7.5 7.31l-3.45 5.36a1.25 1.25 0 0 1-2.1-1.35l4.5-7c.23-.36.62-.57 1.05-.57" />
     </IconBase>
   ))
 );

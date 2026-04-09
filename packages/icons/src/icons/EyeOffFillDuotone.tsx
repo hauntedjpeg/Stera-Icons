@@ -7,8 +7,8 @@ type EyeOffFillDuotoneProps = Omit<IconBaseProps, 'children'>;
 const EyeOffFillDuotone = memo(
   forwardRef<SVGSVGElement, EyeOffFillDuotoneProps>((props, ref) => (
     <IconBase ref={ref} iconName="eye-off-fill-duotone" {...props}>
-      <path d="M17.28 18.69A11 11 0 0 1 12 20c-4.92 0-9.1-3.17-10.93-7.62a1 1 0 0 1 0-.76A12.6 12.6 0 0 1 5 6.42zM12 4c4.92 0 9.1 3.17 10.93 7.62a1 1 0 0 1 0 .76 12.6 12.6 0 0 1-3.93 5.2L6.72 5.31A11 11 0 0 1 12 4" opacity={0.4} />
-        <path d="M3.3 3.3a1 1 0 0 1 1.4 0l16 16a1 1 0 0 1-1.4 1.4l-16-16a1 1 0 0 1 0-1.4" />
+      <path d="M17.3 18.54a11 11 0 0 1-5.3 1.34c-4.87 0-9-3.14-10.8-7.55a1 1 0 0 1 0-.66c.85-2.1 2.24-3.92 4-5.24zM12 4.13c4.87 0 9 3.13 10.81 7.54q.13.33 0 .66a12.5 12.5 0 0 1-4 5.24L6.7 5.47A11 11 0 0 1 12 4.12" opacity={0.4} />
+        <path d="M3.38 3.38a.9.9 0 0 1 1.24 0l16 16a.88.88 0 0 1-1.24 1.24l-16-16a.9.9 0 0 1 0-1.24" />
     </IconBase>
   ))
 );

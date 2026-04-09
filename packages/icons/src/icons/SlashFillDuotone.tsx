@@ -7,8 +7,8 @@ type SlashFillDuotoneProps = Omit<IconBaseProps, 'children'>;
 const SlashFillDuotone = memo(
   forwardRef<SVGSVGElement, SlashFillDuotoneProps>((props, ref) => (
     <IconBase ref={ref} iconName="slash-fill-duotone" {...props}>
-      <path d="m13.12 13-8 9a1.5 1.5 0 0 1-2.24-2l8-9z" opacity={.4} />
-        <path d="M18.88 2a1.5 1.5 0 0 1 2.24 2l-8 9-2.24-2z" />
+      <path d="m12.93 12.83-8 9a1.25 1.25 0 0 1-1.86-1.66l8-9z" opacity={.4} />
+        <path d="M19.07 2.17a1.25 1.25 0 0 1 1.86 1.66l-8 9-1.86-1.66z" />
     </IconBase>
   ))
 );

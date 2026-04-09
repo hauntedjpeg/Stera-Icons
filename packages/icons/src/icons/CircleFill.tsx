@@ -7,7 +7,7 @@ type CircleFillProps = Omit<IconBaseProps, 'children'>;
 const CircleFill = memo(
   forwardRef<SVGSVGElement, CircleFillProps>((props, ref) => (
     <IconBase ref={ref} iconName="circle-fill" {...props}>
-      <path d="M12 2a10 10 0 1 1 0 20 10 10 0 0 1 0-20" />
+      <path d="M12 2.13a9.88 9.88 0 1 1 0 19.75 9.88 9.88 0 0 1 0-19.75" />
     </IconBase>
   ))
 );

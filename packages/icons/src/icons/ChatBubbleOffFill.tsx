@@ -7,7 +7,7 @@ type ChatBubbleOffFillProps = Omit<IconBaseProps, 'children'>;
 const ChatBubbleOffFill = memo(
   forwardRef<SVGSVGElement, ChatBubbleOffFillProps>((props, ref) => (
     <IconBase ref={ref} iconName="chat-bubble-off-fill" {...props}>
-      <path d="M2.3 2.3a1 1 0 0 1 1.4 0l17 17a1 1 0 1 1-1.4 1.4l-2.06-2.04a10.8 10.8 0 0 1-7.48 1.11L6 21.27a2 2 0 0 1-2.72-2.15l.46-3.02-.02-.05A8.4 8.4 0 0 1 2 11c0-2.1.78-4 2.08-5.5L2.3 3.7a1 1 0 0 1 0-1.4M12 2c5.4 0 10 3.92 10 9 0 1.97-.7 3.77-1.86 5.23L7.08 3.17A11 11 0 0 1 12 2" />
+      <path d="M2.38 2.38a.9.9 0 0 1 1.24 0l17 17a.88.88 0 0 1-1.24 1.24l-2.11-2.12a10.7 10.7 0 0 1-7.52 1.14l-3.8 1.52a1.88 1.88 0 0 1-2.55-2.02l.47-3.02q.01-.05-.05-.15A8.2 8.2 0 0 1 2.12 11c0-2.1.8-4 2.13-5.5L2.38 3.61a.9.9 0 0 1 0-1.24M12 2.12c5.35 0 9.87 3.88 9.87 8.88 0 1.93-.68 3.7-1.82 5.14L7.17 3.26A11 11 0 0 1 12 2.12" />
     </IconBase>
   ))
 );

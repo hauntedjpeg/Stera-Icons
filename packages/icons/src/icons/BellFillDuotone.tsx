@@ -7,8 +7,8 @@ type BellFillDuotoneProps = Omit<IconBaseProps, 'children'>;
 const BellFillDuotone = memo(
   forwardRef<SVGSVGElement, BellFillDuotoneProps>((props, ref) => (
     <IconBase ref={ref} iconName="bell-fill-duotone" {...props}>
-      <path d="M12 2.25c3.76 0 6.75 3.2 6.75 7.05v.38c0 1.04.3 2.05.88 2.92l.92 1.37a2.75 2.75 0 0 1-2.29 4.28H5.74c-2.2 0-3.5-2.45-2.29-4.28l.92-1.37c.57-.87.88-1.88.88-2.92V9.3c0-3.86 2.99-7.05 6.75-7.05" />
-        <path d="M16.44 18.25a4.5 4.5 0 0 1-8.88 0z" opacity={.4} />
+      <path d="M12 2.13c3.84 0 6.87 3.25 6.87 7.17v.38c0 1.02.3 2 .86 2.85l.92 1.38a2.88 2.88 0 0 1-2.39 4.47H5.74a2.88 2.88 0 0 1-2.4-4.47l.92-1.38c.57-.85.86-1.83.86-2.85V9.3c0-3.92 3.04-7.17 6.88-7.18" />
+        <path d="M16.29 18.38a4.38 4.38 0 0 1-8.58 0z" opacity={.4} />
     </IconBase>
   ))
 );

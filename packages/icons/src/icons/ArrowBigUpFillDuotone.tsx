@@ -7,8 +7,8 @@ type ArrowBigUpFillDuotoneProps = Omit<IconBaseProps, 'children'>;
 const ArrowBigUpFillDuotone = memo(
   forwardRef<SVGSVGElement, ArrowBigUpFillDuotoneProps>((props, ref) => (
     <IconBase ref={ref} iconName="arrow-big-up-fill-duotone" {...props}>
-      <path fillRule="evenodd" d="M10.4 3.68c.89-.88 2.31-.88 3.2 0l8.25 8.26a1.5 1.5 0 0 1-1.06 2.56H17v4a2.5 2.5 0 0 1-2.5 2.5h-5A2.5 2.5 0 0 1 7 18.5v-4H3.2a1.5 1.5 0 0 1-1.05-2.56zm1.78 1.41a.25.25 0 0 0-.36 0l-7.4 7.41H8a1 1 0 0 1 1 1v5c0 .28.22.5.5.5h5a.5.5 0 0 0 .5-.5v-5a1 1 0 0 1 1-1h3.59z" clipRule="evenodd" />
-        <path d="M11.82 5.1c.1-.1.26-.1.36 0l7.4 7.4H16a1 1 0 0 0-1 1v5a.5.5 0 0 1-.5.5h-5a.5.5 0 0 1-.5-.5v-5a1 1 0 0 0-1-1H4.41z" opacity={.4} />
+      <path d="M11.73 5a.4.4 0 0 1 .54 0l7.62 7.62H16c-.48 0-.87.4-.87.88v5c0 .34-.28.62-.63.62h-5a.6.6 0 0 1-.62-.62v-5c0-.48-.4-.88-.88-.88H4.11z" opacity={.4} />
+        <path fillRule="evenodd" d="M10.5 3.77a2.13 2.13 0 0 1 3 0l8.27 8.26c.86.86.25 2.34-.98 2.34h-3.92v4.13a2.37 2.37 0 0 1-2.37 2.37h-5a2.4 2.4 0 0 1-2.38-2.37v-4.13H3.21a1.38 1.38 0 0 1-.98-2.34zM12.27 5a.4.4 0 0 0-.54 0l-7.62 7.62H8c.48 0 .87.4.87.88v5c0 .34.28.62.63.62h5c.35 0 .62-.28.62-.62v-5c0-.48.4-.88.88-.88h3.89z" clipRule="evenodd" />
     </IconBase>
   ))
 );

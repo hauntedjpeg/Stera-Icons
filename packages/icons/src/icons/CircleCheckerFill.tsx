@@ -7,7 +7,7 @@ type CircleCheckerFillProps = Omit<IconBaseProps, 'children'>;
 const CircleCheckerFill = memo(
   forwardRef<SVGSVGElement, CircleCheckerFillProps>((props, ref) => (
     <IconBase ref={ref} iconName="circle-checker-fill" {...props}>
-      <path fillRule="evenodd" d="M12 2a10 10 0 1 1 0 20 10 10 0 0 1 0-20m0 10H4a8 8 0 0 0 8 8zh8a8 8 0 0 0-8-8z" clipRule="evenodd" />
+      <path fillRule="evenodd" d="M12 2.13a9.88 9.88 0 1 1 0 19.75 9.88 9.88 0 0 1 0-19.75M12 12H3.88A8.13 8.13 0 0 0 12 20.13zh8.13A8.13 8.13 0 0 0 12 3.88z" clipRule="evenodd" />
     </IconBase>
   ))
 );

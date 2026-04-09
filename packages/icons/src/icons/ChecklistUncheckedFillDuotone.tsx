@@ -7,8 +7,8 @@ type ChecklistUncheckedFillDuotoneProps = Omit<IconBaseProps, 'children'>;
 const ChecklistUncheckedFillDuotone = memo(
   forwardRef<SVGSVGElement, ChecklistUncheckedFillDuotoneProps>((props, ref) => (
     <IconBase ref={ref} iconName="checklist-unchecked-fill-duotone" {...props}>
-      <path d="M20 15a1 1 0 1 1 0 2h-8a1 1 0 1 1 0-2zM20 7a1 1 0 1 1 0 2h-8a1 1 0 1 1 0-2z" opacity={0.4} />
-        <path d="M6 13a3 3 0 1 1 0 6 3 3 0 0 1 0-6M6 5a3 3 0 1 1 0 6 3 3 0 0 1 0-6" />
+      <path d="M20 15.13a.88.88 0 0 1 0 1.74h-8a.88.88 0 0 1 0-1.75zM20 7.13a.88.88 0 0 1 0 1.75h-8a.88.88 0 0 1 0-1.76z" opacity={0.4} />
+        <path d="M6 13.13a2.88 2.88 0 1 1 0 5.75 2.88 2.88 0 0 1 0-5.75M6 5.13a2.87 2.87 0 1 1 0 5.74 2.87 2.87 0 0 1 0-5.74" />
     </IconBase>
   ))
 );

@@ -7,8 +7,8 @@ type Home3dFillProps = Omit<IconBaseProps, 'children'>;
 const Home3dFill = memo(
   forwardRef<SVGSVGElement, Home3dFillProps>((props, ref) => (
     <IconBase ref={ref} iconName="home-3d-fill" {...props}>
-      <path d="M8.5 13a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1h-1a1 1 0 0 1-1-.9V14a1 1 0 0 1 1-1z" />
-        <path fillRule="evenodd" d="M15.38 4c.66 0 1.3.26 1.77.73l4.12 4.12c.47.47.73 1.1.73 1.77v6.88a2.5 2.5 0 0 1-2.5 2.5h-15A2.5 2.5 0 0 1 2 17.5v-6.88c0-.66.26-1.3.73-1.77l4.12-4.12A2.5 2.5 0 0 1 8.62 4zM4.15 10.27a.5.5 0 0 0-.15.35v6.88c0 .28.22.5.5.5H12v-7.59l-4-4zM13.4 9h5.18l-2.86-2.85a.5.5 0 0 0-.35-.15H10.4z" clipRule="evenodd" />
+      <path d="M8.5 13a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1h-1a1 1 0 0 1-1-1v-2a1 1 0 0 1 1-1z" />
+        <path fillRule="evenodd" d="M15.38 4.13c.63 0 1.23.25 1.68.69l4.12 4.12c.44.45.7 1.05.7 1.68v6.88a2.37 2.37 0 0 1-2.38 2.38h-15a2.37 2.37 0 0 1-2.37-2.38v-6.88c0-.63.25-1.23.69-1.68l4.12-4.12c.45-.44 1.05-.7 1.68-.7zM4.06 10.18a.6.6 0 0 0-.18.44v6.88c0 .35.27.63.62.63h7.63v-7.77L8 6.24zm9.3-1.05h5.53l-3.07-3.07a.6.6 0 0 0-.44-.18H10.1z" clipRule="evenodd" />
     </IconBase>
   ))
 );

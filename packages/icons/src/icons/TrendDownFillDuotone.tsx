@@ -7,8 +7,8 @@ type TrendDownFillDuotoneProps = Omit<IconBaseProps, 'children'>;
 const TrendDownFillDuotone = memo(
   forwardRef<SVGSVGElement, TrendDownFillDuotoneProps>((props, ref) => (
     <IconBase ref={ref} iconName="trend-down-fill-duotone" {...props}>
-      <path d="M1.79 5.05a1 1 0 0 1 1.41-.01l6.54 6.45 2.46-2.43a1 1 0 0 1 1.4 0l5.38 5.3-1.42 1.41-4.66-4.6-2.46 2.43a1 1 0 0 1-1.33.07l-.07-.07L1.8 6.46a1 1 0 0 1-.01-1.41" opacity={.4} />
-        <path d="M20.8 12.54a1 1 0 0 1 1.7.71v5a1 1 0 0 1-1 1h-5a1 1 0 0 1-.7-1.7z" />
+      <path d="M20.88 12.63a.88.88 0 0 1 1.5.62v5c0 .48-.4.87-.88.87h-5a.88.88 0 0 1-.62-1.49z" />
+        <path d="M1.88 5.14a.9.9 0 0 1 1.23-.01l6.63 6.53 2.55-2.51a.9.9 0 0 1 1.23 0l5.46 5.38-1.24 1.24L12.9 11l-2.55 2.52a.9.9 0 0 1-1.16.06l-.07-.06L1.9 6.37a.9.9 0 0 1-.01-1.23" opacity={.4} />
     </IconBase>
   ))
 );

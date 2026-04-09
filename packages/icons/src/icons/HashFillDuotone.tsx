@@ -7,8 +7,8 @@ type HashFillDuotoneProps = Omit<IconBaseProps, 'children'>;
 const HashFillDuotone = memo(
   forwardRef<SVGSVGElement, HashFillDuotoneProps>((props, ref) => (
     <IconBase ref={ref} iconName="hash-fill-duotone" {...props}>
-      <path d="M10.5 20.5a1.5 1.5 0 0 1-3 0v-4h3zM16.5 20.5a1.5 1.5 0 0 1-3 0v-4h3zM10.5 13.5h-3v-3h3zM16.5 13.5h-3v-3h3zM9 2c.83 0 1.5.67 1.5 1.5v4h-3v-4C7.5 2.67 8.17 2 9 2M15 2c.83 0 1.5.67 1.5 1.5v4h-3v-4c0-.83.67-1.5 1.5-1.5" opacity={0.4} />
-        <path d="M20.5 13.5a1.5 1.5 0 0 1 0 3h-17a1.5 1.5 0 0 1 0-3zM20.5 7.5a1.5 1.5 0 0 1 0 3h-17a1.5 1.5 0 0 1 0-3z" />
+      <path d="M10.25 20.5a1.25 1.25 0 1 1-2.5 0v-4.25h2.5zM16.25 20.5a1.25 1.25 0 1 1-2.5 0v-4.25h2.5zM10.25 13.75h-2.5v-3.5h2.5zM16.25 13.75h-2.5v-3.5h2.5zM9 2.25c.69 0 1.25.56 1.25 1.25v4.25h-2.5V3.5c0-.69.56-1.25 1.25-1.25M15 2.25c.69 0 1.25.56 1.25 1.25v4.25h-2.5V3.5c0-.69.56-1.25 1.25-1.25" opacity={0.4} />
+        <path d="M20.5 13.75a1.25 1.25 0 1 1 0 2.5h-17a1.25 1.25 0 1 1 0-2.5zM20.5 7.75a1.25 1.25 0 1 1 0 2.5h-17a1.25 1.25 0 0 1 0-2.5z" />
     </IconBase>
   ))
 );

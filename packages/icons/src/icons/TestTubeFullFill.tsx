@@ -7,7 +7,7 @@ type TestTubeFullFillProps = Omit<IconBaseProps, 'children'>;
 const TestTubeFullFill = memo(
   forwardRef<SVGSVGElement, TestTubeFullFillProps>((props, ref) => (
     <IconBase ref={ref} iconName="test-tube-full-fill" {...props}>
-      <path fillRule="evenodd" d="M16 2a1 1 0 0 1 .1 2H16a.5.5 0 0 0-.5.5v14a3.5 3.5 0 1 1-7 0v-14A.5.5 0 0 0 8 4a1 1 0 0 1 0-2zm-5.5 6.28c.98.27 2.02.27 3 0V4h-3z" clipRule="evenodd" />
+      <path fillRule="evenodd" d="M16 2.13a.88.88 0 0 1 .09 1.74H16a.6.6 0 0 0-.62.63v14a3.37 3.37 0 1 1-6.76 0v-14A.6.6 0 0 0 8 3.88a.87.87 0 1 1 0-1.75zm-5.62 6.25c1.06.3 2.18.3 3.24 0v-4.5h-3.24z" clipRule="evenodd" />
     </IconBase>
   ))
 );

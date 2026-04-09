@@ -7,7 +7,7 @@ type LayersSimpleFillProps = Omit<IconBaseProps, 'children'>;
 const LayersSimpleFill = memo(
   forwardRef<SVGSVGElement, LayersSimpleFillProps>((props, ref) => (
     <IconBase ref={ref} iconName="layers-simple-fill" {...props}>
-      <path fillRule="evenodd" d="M9.6 3.17a5 5 0 0 1 4.8 0l7.07 3.85a2.25 2.25 0 0 1 0 3.96L19.59 12l1.88 1.02a2.25 2.25 0 0 1 0 3.96l-7.08 3.85a5 5 0 0 1-4.78 0l-7.08-3.85a2.25 2.25 0 0 1 0-3.96L4.41 12l-1.88-1.02a2.25 2.25 0 0 1 0-3.96zm4.8 11.66a5 5 0 0 1-4.8 0l-3.1-1.7-3 1.65a.25.25 0 0 0 0 .44l7.06 3.86a3 3 0 0 0 2.88 0l7.07-3.86a.25.25 0 0 0 0-.44l-3.01-1.64z" clipRule="evenodd" />
+      <path fillRule="evenodd" d="M9.67 3.28c1.45-.8 3.2-.8 4.66 0l7.08 3.85a2.12 2.12 0 0 1 0 3.74L19.33 12l2.08 1.13a2.12 2.12 0 0 1 0 3.73l-7.08 3.86c-1.45.8-3.2.8-4.66 0l-7.08-3.86a2.12 2.12 0 0 1 0-3.73L4.67 12 2.6 10.87a2.12 2.12 0 0 1 0-3.74zm4.66 11.44c-1.45.8-3.2.8-4.66 0L6.5 13l-3.07 1.67a.38.38 0 0 0 0 .66l7.07 3.86c.94.5 2.06.5 3 0l7.07-3.86a.38.38 0 0 0 0-.66L17.5 13z" clipRule="evenodd" />
     </IconBase>
   ))
 );

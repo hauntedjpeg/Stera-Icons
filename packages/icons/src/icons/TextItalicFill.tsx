@@ -7,7 +7,7 @@ type TextItalicFillProps = Omit<IconBaseProps, 'children'>;
 const TextItalicFill = memo(
   forwardRef<SVGSVGElement, TextItalicFillProps>((props, ref) => (
     <IconBase ref={ref} iconName="text-italic-fill" {...props}>
-      <path d="M19 2.5a1.5 1.5 0 0 1 0 3h-1.92a1.5 1.5 0 0 0-1.4.97l-4.19 11.16-.07.2a.5.5 0 0 0 .47.67H14a1.5 1.5 0 0 1 0 3H5a1.5 1.5 0 0 1 0-3h1.92a1.5 1.5 0 0 0 1.4-.97L12.6 6.17a.5.5 0 0 0-.48-.67H10a1.5 1.5 0 0 1 0-3z" />
+      <path d="M19 2.75a1.25 1.25 0 1 1 0 2.5h-1.92c-.73 0-1.38.45-1.64 1.14l-4.26 11.35a.75.75 0 0 0 .7 1.01H14a1.25 1.25 0 1 1 0 2.5H5a1.25 1.25 0 1 1 0-2.5h1.92c.73 0 1.38-.45 1.64-1.14l4.26-11.35a.75.75 0 0 0-.7-1.01H10a1.25 1.25 0 0 1 0-2.5z" />
     </IconBase>
   ))
 );

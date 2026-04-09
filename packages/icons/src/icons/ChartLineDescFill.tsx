@@ -7,7 +7,7 @@ type ChartLineDescFillProps = Omit<IconBaseProps, 'children'>;
 const ChartLineDescFill = memo(
   forwardRef<SVGSVGElement, ChartLineDescFillProps>((props, ref) => (
     <IconBase ref={ref} iconName="chart-line-desc-fill" {...props}>
-      <path d="M21 17.5a1.5 1.5 0 0 1 0 3H3a1.5 1.5 0 0 1 0-3zM3.04 3.85a1.5 1.5 0 0 1 2.11.19l4.6 5.52 4.3-1.93a1.5 1.5 0 0 1 1.65.29l.09.08 5.33 6a1.5 1.5 0 0 1-2.24 2l-4.6-5.18-4.33 1.95a1.5 1.5 0 0 1-1.77-.4L2.85 5.95a1.5 1.5 0 0 1 .19-2.11" />
+      <path d="M21 17.75a1.25 1.25 0 1 1 0 2.5H3a1.25 1.25 0 0 1 0-2.5zM3.2 4.04a1.25 1.25 0 0 1 1.76.16l4.73 5.67 4.46-2a1.3 1.3 0 0 1 1.38.23l.07.07 5.33 6a1.25 1.25 0 0 1-1.86 1.66l-4.73-5.31-4.5 2.02c-.5.23-1.1.1-1.47-.34L3.04 5.8a1.25 1.25 0 0 1 .16-1.76" />
     </IconBase>
   ))
 );

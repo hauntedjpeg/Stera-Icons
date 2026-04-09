@@ -7,7 +7,7 @@ type FlashFillProps = Omit<IconBaseProps, 'children'>;
 const FlashFill = memo(
   forwardRef<SVGSVGElement, FlashFillProps>((props, ref) => (
     <IconBase ref={ref} iconName="flash-fill" {...props}>
-      <path d="M15.71 1.25a1 1 0 0 1 1.62 1.06L15 9.56l4.33 1.5a1 1 0 0 1 .33 1.7l-11.37 10a1 1 0 0 1-1.62-1.07L9 14.44l-4.33-1.5a1 1 0 0 1-.33-1.7z" />
+      <path d="M15.8 1.34a.88.88 0 0 1 1.4.93l-2.36 7.37 4.45 1.53a.88.88 0 0 1 .29 1.49l-11.38 10a.88.88 0 0 1-1.4-.93l2.36-7.37-4.45-1.53a.88.88 0 0 1-.29-1.49z" />
     </IconBase>
   ))
 );

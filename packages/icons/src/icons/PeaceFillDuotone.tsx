@@ -7,8 +7,8 @@ type PeaceFillDuotoneProps = Omit<IconBaseProps, 'children'>;
 const PeaceFillDuotone = memo(
   forwardRef<SVGSVGElement, PeaceFillDuotoneProps>((props, ref) => (
     <IconBase ref={ref} iconName="peace-fill-duotone" {...props}>
-      <path d="M13 2.05a10 10 0 1 1-2 0v9.54l-6.74 6.74q.64.78 1.41 1.41L11 14.41v7.54a10 10 0 0 0 2 0V14.4l5.33 5.33q.78-.64 1.41-1.41L13 11.59z" opacity={.4} />
-        <path d="M12 2q.5 0 1 .05v9.54l6.74 6.74q-.64.78-1.41 1.41L13 14.41v7.54a10 10 0 0 1-2 0V14.4l-5.33 5.33q-.78-.64-1.41-1.41L11 11.59V2.05Q11.5 2 12 2" />
+      <path d="M11.13 20.08a8 8 0 0 1-4.22-1.75l4.22-4.22zM17.1 18.33a8 8 0 0 1-4.23 1.75V14.1zM11.13 11.64l-5.46 5.45a8.13 8.13 0 0 1 5.46-13.17zM12.88 3.92a8.13 8.13 0 0 1 5.45 13.17l-5.45-5.45z" opacity={0.4} />
+        <path fillRule="evenodd" d="M12 2.13a9.88 9.88 0 1 1 0 19.75 9.88 9.88 0 0 1 0-19.75m-5.1 16.2a8 8 0 0 0 4.22 1.75V14.1zm5.98 1.75a8 8 0 0 0 4.21-1.75l-4.21-4.22zM11.12 3.92A8.13 8.13 0 0 0 5.68 17.1l5.46-5.45zm1.76 7.72 5.45 5.45a8.13 8.13 0 0 0-5.45-13.17z" clipRule="evenodd" />
     </IconBase>
   ))
 );

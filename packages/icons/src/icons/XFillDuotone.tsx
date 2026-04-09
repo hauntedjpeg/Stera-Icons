@@ -7,8 +7,8 @@ type XFillDuotoneProps = Omit<IconBaseProps, 'children'>;
 const XFillDuotone = memo(
   forwardRef<SVGSVGElement, XFillDuotoneProps>((props, ref) => (
     <IconBase ref={ref} iconName="x-fill-duotone" {...props}>
-      <path d="m12 14.12-5.94 5.94a1.5 1.5 0 0 1-2.12-2.12L9.88 12zM17.94 3.94a1.5 1.5 0 0 1 2.12 2.12L14.12 12 12 9.88z" opacity={0.4} />
-        <path d="M3.94 3.94a1.5 1.5 0 0 1 2.12 0l14 14a1.5 1.5 0 1 1-2.12 2.12l-14-14a1.5 1.5 0 0 1 0-2.12" />
+      <path d="m12 13.77-5.12 5.11a1.25 1.25 0 0 1-1.76-1.76L10.23 12zM17.12 5.12a1.25 1.25 0 1 1 1.76 1.76L13.77 12 12 10.23z" opacity={0.4} />
+        <path d="M5.12 5.12a1.25 1.25 0 0 1 1.76 0l12 12a1.25 1.25 0 0 1-1.76 1.76l-12-12a1.25 1.25 0 0 1 0-1.76" />
     </IconBase>
   ))
 );

@@ -7,7 +7,7 @@ type ListBulletFillProps = Omit<IconBaseProps, 'children'>;
 const ListBulletFill = memo(
   forwardRef<SVGSVGElement, ListBulletFillProps>((props, ref) => (
     <IconBase ref={ref} iconName="list-bullet-fill" {...props}>
-      <path d="M5 16a2 2 0 1 1 0 4 2 2 0 0 1 0-4M20 16.5a1.5 1.5 0 0 1 0 3H10a1.5 1.5 0 0 1 0-3zM5 10a2 2 0 1 1 0 4 2 2 0 0 1 0-4M20 10.5a1.5 1.5 0 0 1 0 3H10a1.5 1.5 0 0 1 0-3zM5 4a2 2 0 1 1 0 4 2 2 0 0 1 0-4M20 4.5a1.5 1.5 0 0 1 0 3H10a1.5 1.5 0 1 1 0-3z" />
+      <path d="M5 16.13a1.88 1.88 0 1 1 0 3.75 1.88 1.88 0 0 1 0-3.75M20 16.75a1.25 1.25 0 1 1 0 2.5H10a1.25 1.25 0 1 1 0-2.5zM5 10.13a1.88 1.88 0 1 1 0 3.75 1.88 1.88 0 0 1 0-3.76M20 10.75a1.25 1.25 0 0 1 0 2.5H10a1.25 1.25 0 1 1 0-2.5zM5 4.13a1.88 1.88 0 1 1 0 3.75 1.88 1.88 0 0 1 0-3.75M20 4.75a1.25 1.25 0 1 1 0 2.5H10a1.25 1.25 0 1 1 0-2.5z" />
     </IconBase>
   ))
 );

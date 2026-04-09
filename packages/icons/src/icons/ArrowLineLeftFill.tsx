@@ -7,7 +7,7 @@ type ArrowLineLeftFillProps = Omit<IconBaseProps, 'children'>;
 const ArrowLineLeftFill = memo(
   forwardRef<SVGSVGElement, ArrowLineLeftFillProps>((props, ref) => (
     <IconBase ref={ref} iconName="arrow-line-left-fill" {...props}>
-      <path d="M3 3a1 1 0 0 1 1 1v16a1 1 0 1 1-2 0V4a1 1 0 0 1 1-1M12.7 5.24a1.2 1.2 0 0 1 2.05.85V11H21a1 1 0 1 1 0 2h-6.25v4.91a1.2 1.2 0 0 1-2.05.85l-5.86-5.85c-.5-.5-.5-1.32 0-1.82z" />
+      <path d="M3 3.13c.48 0 .88.39.88.87v16a.88.88 0 0 1-1.75 0V4c0-.48.39-.87.87-.87M12.61 5.15a1.32 1.32 0 0 1 2.27.94v5.04H21a.88.88 0 0 1 0 1.74h-6.12v5.04a1.32 1.32 0 0 1-2.27.94L6.76 13a1.4 1.4 0 0 1 0-1.98z" />
     </IconBase>
   ))
 );

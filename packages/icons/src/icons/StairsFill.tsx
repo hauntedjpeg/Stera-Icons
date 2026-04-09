@@ -7,7 +7,7 @@ type StairsFillProps = Omit<IconBaseProps, 'children'>;
 const StairsFill = memo(
   forwardRef<SVGSVGElement, StairsFillProps>((props, ref) => (
     <IconBase ref={ref} iconName="stairs-fill" {...props}>
-      <path d="M21.5 3a1.5 1.5 0 0 1 0 3H18v4.5c0 .83-.67 1.5-1.5 1.5H12v4.5c0 .83-.67 1.5-1.5 1.5H6v3.5a1.5 1.5 0 0 1-3 0v-5c0-.83.67-1.5 1.5-1.5H9v-4.5c0-.83.67-1.5 1.5-1.5H15V4.5c0-.83.67-1.5 1.5-1.5z" />
+      <path d="M21.5 3.25a1.25 1.25 0 1 1 0 2.5h-3.75v4.75c0 .69-.56 1.25-1.25 1.25h-4.75v4.75c0 .69-.56 1.25-1.25 1.25H5.75v3.75a1.25 1.25 0 1 1-2.5 0v-5c0-.69.56-1.25 1.25-1.25h4.75V10.5c0-.69.56-1.25 1.25-1.25h4.75V4.5c0-.69.56-1.25 1.25-1.25z" />
     </IconBase>
   ))
 );

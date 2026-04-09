@@ -8,7 +8,7 @@ const ImagePanoramaFill = memo(
   forwardRef<SVGSVGElement, ImagePanoramaFillProps>((props, ref) => (
     <IconBase ref={ref} iconName="image-panorama-fill" {...props}>
       <path d="M17 8.5a1.5 1.5 0 1 1 0 3 1.5 1.5 0 0 1 0-3" />
-        <path fillRule="evenodd" d="M20.7 4.05A1 1 0 0 1 22 5v14a1 1 0 0 1-1.3.95 36 36 0 0 0-2.82-.77l-.21-.04q-.84-.19-1.66-.32a26 26 0 0 0-11.89.88l-.72.22-.1.03a1 1 0 0 1-.46.04A1 1 0 0 1 2 19V5a1 1 0 0 1 1.3-.95 26.8 26.8 0 0 0 17.4 0m-.7 2.3a28 28 0 0 1-16 0v3.74l.09-.09a2 2 0 0 1 2.82 0l3.59 3.59L12.09 12a2 2 0 0 1 2.82 0L20 17.09z" clipRule="evenodd" />
+        <path fillRule="evenodd" d="M20.74 4.17a.87.87 0 0 1 1.14.83v14a.87.87 0 0 1-1.14.83 34 34 0 0 0-3.52-.92 26.3 26.3 0 0 0-13.96.92l-.1.03A.88.88 0 0 1 2.12 19V5a.87.87 0 0 1 1.14-.83 27 27 0 0 0 17.48 0m-.61 2a28 28 0 0 1-16.25 0v4.22l.3-.3a1.9 1.9 0 0 1 2.65 0l3.58 3.58q.09.08.18 0l1.58-1.58a1.9 1.9 0 0 1 2.66 0l5.3 5.3z" clipRule="evenodd" />
     </IconBase>
   ))
 );

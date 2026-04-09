@@ -7,8 +7,8 @@ type MapPinMinusFillDuotoneProps = Omit<IconBaseProps, 'children'>;
 const MapPinMinusFillDuotone = memo(
   forwardRef<SVGSVGElement, MapPinMinusFillDuotoneProps>((props, ref) => (
     <IconBase ref={ref} iconName="map-pin-minus-fill-duotone" {...props}>
-      <path fillRule="evenodd" d="M12 2a8 8 0 0 1 8 8c0 3.37-1.95 6.35-3.75 8.4a25 25 0 0 1-3.64 3.4q-.2.14-.44.18h-.34a1 1 0 0 1-.4-.16h-.01l-.01-.01-.02-.02-.3-.23q-.32-.23-.83-.68c-.69-.58-1.6-1.43-2.51-2.47C5.95 16.35 4 13.37 4 10a8 8 0 0 1 8-8M9.5 9a1 1 0 0 0 0 2h5a1 1 0 1 0 0-2z" clipRule="evenodd" opacity={.4} />
-        <path d="M14.5 9a1 1 0 1 1 0 2h-5a1 1 0 1 1 0-2z" />
+      <path fillRule="evenodd" d="M12 2.13A7.9 7.9 0 0 1 19.88 10c0 3.32-1.93 6.28-3.72 8.33a25 25 0 0 1-3.56 3.31l-.06.05-.02.02h-.01l-.21.11-.22.05h-.14l-.1-.01h-.01l-.21-.07h-.01l-.03-.02-.08-.05-.01-.01-.03-.02-.06-.05a15 15 0 0 1-1.06-.85 25 25 0 0 1-2.5-2.46c-1.8-2.05-3.71-5-3.71-8.33A7.9 7.9 0 0 1 12 2.13m-2.5 7a.87.87 0 1 0 0 1.74h5a.88.88 0 0 0 0-1.74z" clipRule="evenodd" opacity={.4} />
+        <path d="M14.5 9.13a.88.88 0 0 1 0 1.74h-5a.88.88 0 0 1 0-1.74z" />
     </IconBase>
   ))
 );

@@ -7,8 +7,8 @@ type ChartPieAltFillDuotoneProps = Omit<IconBaseProps, 'children'>;
 const ChartPieAltFillDuotone = memo(
   forwardRef<SVGSVGElement, ChartPieAltFillDuotoneProps>((props, ref) => (
     <IconBase ref={ref} iconName="chart-pie-alt-fill-duotone" {...props}>
-      <path d="M8.11 2.79a1 1 0 0 1 .78 1.84 8 8 0 0 0 6.12 14.79 1 1 0 1 1 .75 1.85A10 10 0 0 1 8.11 2.79" opacity={.4} />
-        <path d="M20.6 9.53a1 1 0 0 1 1.26.8 10 10 0 0 1-2.79 8.74 1 1 0 0 1-1.41 0l-4.84-4.83a1 1 0 0 1 .33-1.63l7.34-3.04zM12 2a10 10 0 0 1 8.16 4.21 1 1 0 0 1-.44 1.5l-7.34 3.05A1 1 0 0 1 11 9.83V3a1 1 0 0 1 1-1" />
+      <path d="M8.16 2.9a.87.87 0 0 1 .68 1.61 8.13 8.13 0 0 0 6.22 15.02.88.88 0 0 1 .65 1.62q-1.73.72-3.71.73A9.88 9.88 0 0 1 8.16 2.9" opacity={.4} />
+        <path d="M20.54 9.68a.88.88 0 0 1 1.2.66q.13.82.14 1.66c0 2.73-1.11 5.2-2.9 6.98a.9.9 0 0 1-1.23 0l-4.84-4.83a.88.88 0 0 1 .29-1.43zM12 2.13a9.9 9.9 0 0 1 8.05 4.16.88.88 0 0 1-.37 1.31l-7.34 3.04a.88.88 0 0 1-1.21-.8V3c0-.48.39-.87.87-.87" />
     </IconBase>
   ))
 );

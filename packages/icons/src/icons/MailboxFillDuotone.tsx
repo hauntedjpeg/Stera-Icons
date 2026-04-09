@@ -7,10 +7,9 @@ type MailboxFillDuotoneProps = Omit<IconBaseProps, 'children'>;
 const MailboxFillDuotone = memo(
   forwardRef<SVGSVGElement, MailboxFillDuotoneProps>((props, ref) => (
     <IconBase ref={ref} iconName="mailbox-fill-duotone" {...props}>
-      <path fillRule="evenodd" d="M17.5 5a5.5 5.5 0 0 1 5.5 5.5V17a3 3 0 0 1-3 3h-9a1 1 0 0 0 1-1v-8.5A5.5 5.5 0 0 0 6.5 5zm-3 4a1 1 0 1 0 0 2h3v.5a1 1 0 1 0 2 0V10a1 1 0 0 0-1-1z" clipRule="evenodd" opacity={0.4} />
-        <path d="M7.25 10a1 1 0 1 1 0 2h-1.5a1 1 0 1 1 0-2z" opacity={0.4} />
-        <path fillRule="evenodd" d="M6.5 5a5.5 5.5 0 0 1 5.5 5.5V19a1 1 0 0 1-1 1H4a3 3 0 0 1-3-3v-6.5A5.5 5.5 0 0 1 6.5 5m-.75 5a1 1 0 1 0 0 2h1.5a1 1 0 1 0 0-2z" clipRule="evenodd" />
-        <path d="M18.5 9a1 1 0 0 1 1 1v1.5a1 1 0 1 1-2 0V11h-3a1 1 0 1 1 0-2z" />
+      <path fillRule="evenodd" d="M6.5 5.13c2.97 0 5.38 2.4 5.38 5.37V19c0 .48-.4.88-.88.88H4A2.9 2.9 0 0 1 1.13 17v-6.5c0-2.97 2.4-5.37 5.37-5.37m-.75 5a.88.88 0 0 0 0 1.74h1.5a.88.88 0 0 0 0-1.74z" clipRule="evenodd" opacity={.4} />
+        <path fillRule="evenodd" d="M17.5 5.13c2.97 0 5.38 2.4 5.38 5.37V17A2.9 2.9 0 0 1 20 19.88h-9c.48 0 .88-.4.88-.88v-8.5c0-2.97-2.41-5.37-5.38-5.37zm-3.5 4a.88.88 0 0 0 0 1.74h3.13v.63a.88.88 0 0 0 1.75 0V10c0-.48-.4-.87-.88-.87z" clipRule="evenodd" />
+        <path d="M7.25 10.13a.88.88 0 0 1 0 1.74h-1.5a.88.88 0 0 1 0-1.74z" />
     </IconBase>
   ))
 );

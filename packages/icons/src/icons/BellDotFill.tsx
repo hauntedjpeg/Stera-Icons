@@ -7,8 +7,8 @@ type BellDotFillProps = Omit<IconBaseProps, 'children'>;
 const BellDotFill = memo(
   forwardRef<SVGSVGElement, BellDotFillProps>((props, ref) => (
     <IconBase ref={ref} iconName="bell-dot-fill" {...props}>
-      <path fillRule="evenodd" d="M12 2.25q.81 0 1.58.2a5 5 0 0 0 5.31 8.44q.22.91.74 1.7l.92 1.38a2.75 2.75 0 0 1-2.29 4.28h-1.82a4.5 4.5 0 0 1-8.88 0H5.74c-2.2 0-3.5-2.45-2.3-4.28l.93-1.37c.57-.87.88-1.88.88-2.92V9.3c0-3.86 2.99-7.05 6.75-7.05m-2.38 16a2.5 2.5 0 0 0 4.76 0z" clipRule="evenodd" />
-        <path d="M16.5 3a3.5 3.5 0 1 1 0 7 3.5 3.5 0 0 1 0-7" />
+      <path fillRule="evenodd" d="M12 2.13q.9 0 1.71.22a5 5 0 0 0 5.3 8.48q.2.91.73 1.7l.92 1.38a2.88 2.88 0 0 1-2.4 4.47H16.3a4.38 4.38 0 0 1-8.58 0H5.74a2.88 2.88 0 0 1-2.4-4.47l.92-1.38c.57-.85.87-1.83.87-2.85V9.3c0-3.92 3.03-7.17 6.87-7.18M9.53 18.38a2.62 2.62 0 0 0 4.94 0z" clipRule="evenodd" />
+        <path d="M16.5 3.13a3.37 3.37 0 1 1 0 6.74 3.37 3.37 0 0 1 0-6.74" />
     </IconBase>
   ))
 );

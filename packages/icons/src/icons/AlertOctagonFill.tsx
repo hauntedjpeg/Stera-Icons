@@ -7,7 +7,7 @@ type AlertOctagonFillProps = Omit<IconBaseProps, 'children'>;
 const AlertOctagonFill = memo(
   forwardRef<SVGSVGElement, AlertOctagonFillProps>((props, ref) => (
     <IconBase ref={ref} iconName="alert-octagon-fill" {...props}>
-      <path fillRule="evenodd" d="M15.21 2c.6 0 1.17.24 1.6.66l4.53 4.54c.42.42.66 1 .66 1.59v6.42c0 .6-.24 1.17-.66 1.6l-4.54 4.53c-.42.42-1 .66-1.59.66H8.79c-.6 0-1.17-.24-1.6-.66L2.67 16.8c-.42-.42-.66-1-.66-1.59V8.79c0-.6.24-1.17.66-1.6L7.2 2.67c.42-.42 1-.66 1.59-.66zM12 14.5a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3m0-8a1 1 0 0 0-1 1V12a1 1 0 1 0 2 0V7.5a1 1 0 0 0-1-1" clipRule="evenodd" />
+      <path fillRule="evenodd" d="M15.21 2.13c.56 0 1.1.22 1.5.62l4.54 4.54c.4.4.63.94.63 1.5v6.42c0 .56-.23 1.1-.63 1.5l-4.54 4.54c-.4.4-.94.63-1.5.63H8.79c-.56 0-1.1-.23-1.5-.63l-4.54-4.54c-.4-.4-.62-.94-.62-1.5V8.79c0-.56.22-1.1.62-1.5l4.54-4.54c.4-.4.94-.62 1.5-.62zM12 14.5a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3m0-7.87c-.48 0-.87.39-.87.87V12a.88.88 0 0 0 1.74 0V7.5c0-.48-.39-.87-.87-.87" clipRule="evenodd" />
     </IconBase>
   ))
 );

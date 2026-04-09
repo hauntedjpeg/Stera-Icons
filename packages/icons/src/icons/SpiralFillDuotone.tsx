@@ -7,11 +7,11 @@ type SpiralFillDuotoneProps = Omit<IconBaseProps, 'children'>;
 const SpiralFillDuotone = memo(
   forwardRef<SVGSVGElement, SpiralFillDuotoneProps>((props, ref) => (
     <IconBase ref={ref} iconName="spiral-fill-duotone" {...props}>
-      <path d="M3.5 13a6.5 6.5 0 1 0 13 0h3a9.5 9.5 0 0 1-19 0z" opacity={0.4} />
-        <path d="M7.5 13a2.5 2.5 0 0 0 5 0h3a5.5 5.5 0 1 1-11 0z" opacity={0.4} />
-        <path d="M12 9.5a3.5 3.5 0 0 1 3.5 3.5h-3a.5.5 0 0 0-1 0 1.5 1.5 0 0 1-3 0A3.5 3.5 0 0 1 12 9.5" />
-        <path d="M12 1.5A11.5 11.5 0 0 1 23.5 13a1.5 1.5 0 0 1-3 0 8.5 8.5 0 0 0-17 0h-3A11.5 11.5 0 0 1 12 1.5" />
-        <path d="M12 5.5a7.5 7.5 0 0 1 7.5 7.5h-3a4.5 4.5 0 1 0-9 0h-3A7.5 7.5 0 0 1 12 5.5" />
+      <path d="M3.25 13a6.75 6.75 0 0 0 13.5 0h2.5a9.25 9.25 0 0 1-18.5 0z" opacity={0.4} />
+        <path d="M7.25 13a2.75 2.75 0 1 0 5.5 0h2.5a5.25 5.25 0 1 1-10.5 0z" opacity={0.4} />
+        <path d="M12 9.75c1.8 0 3.25 1.46 3.25 3.25h-2.5a.75.75 0 0 0-1.5 0 1.25 1.25 0 1 1-2.5 0c0-1.8 1.46-3.25 3.25-3.25" />
+        <path d="M12 1.75c6.21 0 11.25 5.04 11.25 11.25a1.25 1.25 0 1 1-2.5 0 8.75 8.75 0 1 0-17.5 0H.75C.75 6.79 5.79 1.75 12 1.75" />
+        <path d="M12 5.75c4 0 7.25 3.25 7.25 7.25h-2.5a4.75 4.75 0 1 0-9.5 0h-2.5C4.75 9 8 5.75 12 5.75" />
     </IconBase>
   ))
 );

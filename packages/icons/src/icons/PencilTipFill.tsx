@@ -7,7 +7,7 @@ type PencilTipFillProps = Omit<IconBaseProps, 'children'>;
 const PencilTipFill = memo(
   forwardRef<SVGSVGElement, PencilTipFillProps>((props, ref) => (
     <IconBase ref={ref} iconName="pencil-tip-fill" {...props}>
-      <path fillRule="evenodd" d="M12 1c.3 0 .6.14.79.39l6.37 8.18a4 4 0 0 1 .84 2.46V22a1 1 0 0 1-1 1h-6V12.72l-.5-.28a1 1 0 0 0-1 0l-.5.28V23H5a1 1 0 0 1-1-1v-9.97a4 4 0 0 1 .84-2.46l6.37-8.18.08-.09A1 1 0 0 1 12 1m2.03 5.24a3.8 3.8 0 0 1-4.06 0L6.5 10.7l1.5.86a1 1 0 0 0 1 0l1.51-.86a3 3 0 0 1 2.98 0l1.51.86a1 1 0 0 0 1 0l1.5-.86z" clipRule="evenodd" />
+      <path fillRule="evenodd" d="M12 1.13q.42 0 .69.33l6.37 8.19c.53.68.82 1.52.82 2.38V22c0 .48-.4.88-.88.88h-6.12V12.5l-.32-.18c-.35-.2-.77-.2-1.12 0l-.31.18v10.37H5a.9.9 0 0 1-.87-.88v-9.97c0-.86.28-1.7.81-2.38l6.37-8.19.07-.07a1 1 0 0 1 .62-.26m2.06 4.95a3.7 3.7 0 0 1-4.12 0l-3.62 4.64v.02l1.62.93c.35.2.77.2 1.12 0l1.51-.86.1-.05.04-.03.11-.05.03-.01.12-.05.04-.01a3 3 0 0 1 1.98 0l.04.01.11.05.04.01.1.05.06.03.09.05 1.51.86c.35.2.77.2 1.12 0l1.63-.93-.01-.02z" clipRule="evenodd" />
     </IconBase>
   ))
 );

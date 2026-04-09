@@ -7,7 +7,7 @@ type MapPinPlusFillProps = Omit<IconBaseProps, 'children'>;
 const MapPinPlusFill = memo(
   forwardRef<SVGSVGElement, MapPinPlusFillProps>((props, ref) => (
     <IconBase ref={ref} iconName="map-pin-plus-fill" {...props}>
-      <path fillRule="evenodd" d="M12 2a8 8 0 0 1 8 8c0 3.37-1.95 6.35-3.75 8.4a25 25 0 0 1-3.58 3.35q-.21.17-.5.23h-.34a1 1 0 0 1-.4-.16h-.01l-.01-.01-.02-.02-.3-.23q-.32-.23-.83-.68c-.69-.58-1.6-1.43-2.51-2.47C5.95 16.35 4 13.37 4 10a8 8 0 0 1 8-8m0 4.5a1 1 0 0 0-1 1V9H9.5a1 1 0 0 0 0 2H11v1.5a1 1 0 1 0 2 0V11h1.5a1 1 0 1 0 0-2H13V7.5a1 1 0 0 0-1-1" clipRule="evenodd" />
+      <path fillRule="evenodd" d="M12 2.13A7.9 7.9 0 0 1 19.88 10c0 3.32-1.93 6.28-3.72 8.33a25 25 0 0 1-3.56 3.31l-.06.05-.02.02h-.01l-.21.11-.22.05h-.14l-.1-.01h-.01l-.21-.07h-.01l-.03-.02-.08-.05-.01-.01-.03-.02-.06-.05a15 15 0 0 1-1.06-.85 25 25 0 0 1-2.5-2.46c-1.8-2.05-3.71-5-3.71-8.33A7.9 7.9 0 0 1 12 2.13m0 4.5c-.48 0-.87.39-.87.87v1.63H9.5a.87.87 0 1 0 0 1.74h1.63v1.63a.88.88 0 0 0 1.74 0v-1.62h1.63a.88.88 0 0 0 0-1.76h-1.62V7.5c0-.48-.4-.87-.88-.87" clipRule="evenodd" />
     </IconBase>
   ))
 );

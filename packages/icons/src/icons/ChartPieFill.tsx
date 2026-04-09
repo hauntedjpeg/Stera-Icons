@@ -7,8 +7,8 @@ type ChartPieFillProps = Omit<IconBaseProps, 'children'>;
 const ChartPieFill = memo(
   forwardRef<SVGSVGElement, ChartPieFillProps>((props, ref) => (
     <IconBase ref={ref} iconName="chart-pie-fill" {...props}>
-      <path d="M8.7 2.56a1 1 0 0 1 .66 1.88 8 8 0 1 0 10.2 10.2 1 1 0 0 1 1.88.65A10 10 0 1 1 8.71 2.56" />
-        <path d="m13.1 2.06.36.05a10 10 0 0 1 8.48 8.78A1.92 1.92 0 0 1 20 13h-7a2 2 0 0 1-2-2V4c0-1 .78-1.95 1.88-1.95z" />
+      <path d="M8.75 2.67a.87.87 0 1 1 .57 1.66 8.13 8.13 0 1 0 10.35 10.35.88.88 0 0 1 1.66.57A9.88 9.88 0 1 1 8.75 2.67" />
+        <path d="m13.1 2.19.34.04a9.9 9.9 0 0 1 8.37 8.68A1.8 1.8 0 0 1 20 12.88h-7A1.9 1.9 0 0 1 11.13 11V4c0-.94.73-1.82 1.76-1.83z" />
     </IconBase>
   ))
 );

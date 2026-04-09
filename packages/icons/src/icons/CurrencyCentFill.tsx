@@ -7,7 +7,7 @@ type CurrencyCentFillProps = Omit<IconBaseProps, 'children'>;
 const CurrencyCentFill = memo(
   forwardRef<SVGSVGElement, CurrencyCentFillProps>((props, ref) => (
     <IconBase ref={ref} iconName="currency-cent-fill" {...props}>
-      <path fillRule="evenodd" d="M12 .5c.83 0 1.5.67 1.5 1.5v2.06a8 8 0 0 1 4.52 2.15 1.5 1.5 0 0 1-2.07 2.17A5 5 0 0 0 13.5 7.1v9.8a5 5 0 0 0 2.83-1.69 1.5 1.5 0 0 1 2.3 1.93 8 8 0 0 1-5.13 2.8V22a1.5 1.5 0 0 1-3 0v-2.25a8 8 0 0 1-4.36-2.9 8 8 0 0 1 4.36-12.6V2c0-.83.67-1.5 1.5-1.5m-1.6 6.96a5 5 0 0 0 .1 9.12V7.42z" clipRule="evenodd" />
+      <path fillRule="evenodd" d="M12 .75c.69 0 1.25.56 1.25 1.25v2.29a7.8 7.8 0 0 1 4.6 2.1 1.25 1.25 0 0 1-1.73 1.8 5.3 5.3 0 0 0-2.76-1.37l-.11-.01v10.38a5.3 5.3 0 0 0 3.27-1.82 1.25 1.25 0 0 1 1.92 1.61 7.8 7.8 0 0 1-5.19 2.73V22a1.25 1.25 0 0 1-2.5 0v-2.45a7.75 7.75 0 0 1-5.99-7.12 7.75 7.75 0 0 1 5.99-7.98V2c0-.69.56-1.25 1.25-1.25m-1.25 6.3A5.3 5.3 0 0 0 8 9.3a5.25 5.25 0 0 0 2.75 7.65z" clipRule="evenodd" />
     </IconBase>
   ))
 );

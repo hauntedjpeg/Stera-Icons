@@ -7,8 +7,8 @@ type DragHandleFillDuotoneProps = Omit<IconBaseProps, 'children'>;
 const DragHandleFillDuotone = memo(
   forwardRef<SVGSVGElement, DragHandleFillDuotoneProps>((props, ref) => (
     <IconBase ref={ref} iconName="drag-handle-fill-duotone" {...props}>
-      <path fillRule="evenodd" d="M16 1a4 4 0 0 1 4 4v14a4 4 0 0 1-4 4H8a4 4 0 0 1-4-4V5a4 4 0 0 1 4-4zM9 16a2 2 0 1 0 0 4 2 2 0 0 0 0-4m6 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4m-6-6a2 2 0 1 0 0 4 2 2 0 0 0 0-4m6 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4M9 4a2 2 0 1 0 0 4 2 2 0 0 0 0-4m6 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4" clipRule="evenodd" opacity={.4} />
-        <path d="M9 16a2 2 0 1 1 0 4 2 2 0 0 1 0-4M15 16a2 2 0 1 1 0 4 2 2 0 0 1 0-4M9 10a2 2 0 1 1 0 4 2 2 0 0 1 0-4M15 10a2 2 0 1 1 0 4 2 2 0 0 1 0-4M9 4a2 2 0 1 1 0 4 2 2 0 0 1 0-4M15 4a2 2 0 1 1 0 4 2 2 0 0 1 0-4" />
+      <path fillRule="evenodd" d="M15.5 1.5a4 4 0 0 1 4 4v13a4 4 0 0 1-4 4h-7a4 4 0 0 1-4-4v-13a4 4 0 0 1 4-4zM9 16.5a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3m6 0a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3m-6-6a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3m6 0a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3m-6-6a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3m6 0a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3" clipRule="evenodd" opacity={.4} />
+        <path d="M10.5 6a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0M16.5 6a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0M10.5 12a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0M16.5 12a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0M10.5 18a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0M16.5 18a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0" />
     </IconBase>
   ))
 );

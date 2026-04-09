@@ -7,7 +7,7 @@ type CollapseSimpleAltFillProps = Omit<IconBaseProps, 'children'>;
 const CollapseSimpleAltFill = memo(
   forwardRef<SVGSVGElement, CollapseSimpleAltFillProps>((props, ref) => (
     <IconBase ref={ref} iconName="collapse-simple-alt-fill" {...props}>
-      <path d="M15 14a1 1 0 0 0-1 1v5a1 1 0 0 0 1.7.7l1.8-1.79 2.8 2.8a1 1 0 0 0 1.4-1.42l-2.79-2.79 1.8-1.8A1 1 0 0 0 20 14zM3.7 2.3a1 1 0 1 0-1.4 1.4l2.79 2.8-1.8 1.8A1 1 0 0 0 4 10h5a1 1 0 0 0 1-1V4a1 1 0 0 0-1.7-.7L6.5 5.08z" />
+      <path d="M20 14.12a.88.88 0 0 1 .62 1.5l-1.88 1.88 2.88 2.88a.88.88 0 0 1-1.24 1.24l-2.88-2.88-1.88 1.88a.88.88 0 0 1-1.5-.62v-5c0-.48.4-.88.88-.88zM2.38 2.38a.9.9 0 0 1 1.24 0L6.5 5.26l1.88-1.88a.88.88 0 0 1 1.5.62v5c0 .48-.4.87-.88.87H4a.88.88 0 0 1-.62-1.49L5.26 6.5 2.38 3.62a.9.9 0 0 1 0-1.24" />
     </IconBase>
   ))
 );

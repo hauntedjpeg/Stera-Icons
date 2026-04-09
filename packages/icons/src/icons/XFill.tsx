@@ -7,7 +7,7 @@ type XFillProps = Omit<IconBaseProps, 'children'>;
 const XFill = memo(
   forwardRef<SVGSVGElement, XFillProps>((props, ref) => (
     <IconBase ref={ref} iconName="x-fill" {...props}>
-      <path d="M17.94 3.94a1.5 1.5 0 1 1 2.12 2.12L14.12 12l5.94 5.94a1.5 1.5 0 1 1-2.12 2.12L12 14.12l-5.94 5.94a1.5 1.5 0 1 1-2.12-2.12L9.88 12 3.94 6.06a1.5 1.5 0 1 1 2.12-2.12L12 9.88z" />
+      <path d="M17.12 5.12a1.25 1.25 0 1 1 1.76 1.76L13.77 12l5.11 5.12a1.25 1.25 0 0 1-1.76 1.76L12 13.77l-5.12 5.11a1.25 1.25 0 0 1-1.76-1.76L10.23 12 5.12 6.88a1.25 1.25 0 1 1 1.76-1.76L12 10.23z" />
     </IconBase>
   ))
 );

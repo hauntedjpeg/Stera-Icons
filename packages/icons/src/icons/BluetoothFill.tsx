@@ -7,7 +7,7 @@ type BluetoothFillProps = Omit<IconBaseProps, 'children'>;
 const BluetoothFill = memo(
   forwardRef<SVGSVGElement, BluetoothFillProps>((props, ref) => (
     <IconBase ref={ref} iconName="bluetooth-fill" {...props}>
-      <path fillRule="evenodd" d="M11.33 1.66a1.5 1.5 0 0 1 1.57.14l6 4.5a1.5 1.5 0 0 1 0 2.4L14.5 12l4.4 3.3a1.5 1.5 0 0 1 0 2.4l-6 4.5a1.5 1.5 0 0 1-2.4-1.2v-6l-3.6 2.7a1.5 1.5 0 0 1-1.8-2.4L9.5 12 5.1 8.7a1.5 1.5 0 0 1 1.8-2.4L10.5 9V3c0-.57.32-1.09.83-1.34M13.5 18l2-1.5-2-1.5zm0-9 2-1.5-2-1.5z" clipRule="evenodd" />
+      <path d="M11.6 2.22c.3-.15.66-.12.93.08l6 4.5a.88.88 0 0 1 0 1.4L13.46 12l5.07 3.8a.88.88 0 0 1 0 1.4l-6 4.5a.88.88 0 0 1-1.4-.7v-7.25l-4.6 3.45a.88.88 0 0 1-1.06-1.4l5.07-3.8-5.07-3.8a.88.88 0 0 1 1.06-1.4l4.6 3.45V3c0-.33.18-.63.48-.78" />
     </IconBase>
   ))
 );

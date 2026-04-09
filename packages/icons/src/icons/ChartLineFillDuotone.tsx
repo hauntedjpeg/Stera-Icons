@@ -7,8 +7,8 @@ type ChartLineFillDuotoneProps = Omit<IconBaseProps, 'children'>;
 const ChartLineFillDuotone = memo(
   forwardRef<SVGSVGElement, ChartLineFillDuotoneProps>((props, ref) => (
     <IconBase ref={ref} iconName="chart-line-fill-duotone" {...props}>
-      <path d="M21 17.5a1.5 1.5 0 0 1 0 3H3a1.5 1.5 0 0 1 0-3z" opacity={.4} />
-        <path d="M18.85 4.04a1.5 1.5 0 0 1 2.3 1.92l-5.33 6.4a1.5 1.5 0 0 1-1.77.4l-4.33-1.94L5.12 16a1.5 1.5 0 0 1-2.24-2L8.2 8l.09-.08a1.5 1.5 0 0 1 1.65-.29l4.3 1.93z" />
+      <path d="M21 17.75a1.25 1.25 0 1 1 0 2.5H3a1.25 1.25 0 1 1 0-2.5z" opacity={.4} />
+        <path d="M19.04 4.2a1.25 1.25 0 1 1 1.92 1.6l-5.33 6.4c-.36.43-.96.57-1.48.34l-4.5-2.02-4.72 5.31a1.25 1.25 0 0 1-1.86-1.66l5.33-6 .07-.07c.37-.35.91-.45 1.38-.24l4.46 2.01z" />
     </IconBase>
   ))
 );

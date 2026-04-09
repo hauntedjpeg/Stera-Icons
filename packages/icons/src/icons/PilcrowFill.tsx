@@ -7,7 +7,7 @@ type PilcrowFillProps = Omit<IconBaseProps, 'children'>;
 const PilcrowFill = memo(
   forwardRef<SVGSVGElement, PilcrowFillProps>((props, ref) => (
     <IconBase ref={ref} iconName="pilcrow-fill" {...props}>
-      <path d="M19 3a1 1 0 1 1 0 2h-1v15a1 1 0 1 1-2 0V5h-2v15a1 1 0 1 1-2 0v-5h-2a6 6 0 0 1 0-12z" />
+      <path d="M19 3.13a.88.88 0 0 1 0 1.75h-1.12V20a.88.88 0 0 1-1.75 0V4.88h-2.25V20a.88.88 0 0 1-1.76 0v-5.12H10a5.87 5.87 0 1 1 0-11.75z" />
     </IconBase>
   ))
 );

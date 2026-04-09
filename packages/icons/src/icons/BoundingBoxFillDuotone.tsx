@@ -7,8 +7,8 @@ type BoundingBoxFillDuotoneProps = Omit<IconBaseProps, 'children'>;
 const BoundingBoxFillDuotone = memo(
   forwardRef<SVGSVGElement, BoundingBoxFillDuotoneProps>((props, ref) => (
     <IconBase ref={ref} iconName="bounding-box-fill-duotone" {...props}>
-      <path d="M15 19H9v-2h6zM19 15h-2V9h2zM7 15H5V9h2zM15 7H9V5h6z" opacity={0.4} />
-        <path d="M8 15a1 1 0 0 1 1 1v4a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1v-4a1 1 0 0 1 1-1zM20 15a1 1 0 0 1 1 1v4a1 1 0 0 1-1 1h-4a1 1 0 0 1-1-1v-4a1 1 0 0 1 1-1zM8 3a1 1 0 0 1 1 1v4a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1zM20 3a1 1 0 0 1 1 1v4a1 1 0 0 1-1 1h-4a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1z" />
+      <path d="M15.13 18.88H8.87v-1.75h6.26zM18.88 15.13h-1.75V8.87h1.75zM6.88 15.13H5.13V8.87h1.75zM15.13 6.88H8.87V5.13h6.26z" opacity={0.4} />
+        <path d="M8 15.13c.48 0 .88.39.88.87v4c0 .48-.4.88-.88.88H4a.9.9 0 0 1-.87-.88v-4c0-.48.39-.87.87-.87zM20 15.13c.48 0 .88.39.88.87v4c0 .48-.4.88-.88.88h-4a.9.9 0 0 1-.87-.88v-4c0-.48.39-.87.87-.87zM8 3.13c.48 0 .88.39.88.87v4c0 .48-.4.88-.88.88H4A.87.87 0 0 1 3.13 8V4c0-.48.39-.87.87-.87zM20 3.13c.48 0 .88.39.88.87v4c0 .48-.4.88-.88.88h-4a.9.9 0 0 1-.87-.88V4c0-.48.39-.87.87-.87z" />
     </IconBase>
   ))
 );

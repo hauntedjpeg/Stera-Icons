@@ -7,8 +7,8 @@ type RepeatFillDuotoneProps = Omit<IconBaseProps, 'children'>;
 const RepeatFillDuotone = memo(
   forwardRef<SVGSVGElement, RepeatFillDuotoneProps>((props, ref) => (
     <IconBase ref={ref} iconName="repeat-fill-duotone" {...props}>
-      <path d="M21 10.5a1 1 0 0 1 1 1V13a6 6 0 0 1-6 6H7v2a1 1 0 0 1-1.7.7l-3-3a1 1 0 0 1 0-1.4l3-3A1 1 0 0 1 7 15v2h9a4 4 0 0 0 4-4v-1.5a1 1 0 0 1 1-1" opacity={.4} />
-        <path d="M17.62 2.08a1 1 0 0 1 1.09.21l3 3a1 1 0 0 1 0 1.42l-3 3A1 1 0 0 1 17 9V7H8a4 4 0 0 0-4 4v1.5a1 1 0 0 1-2 0V11a6 6 0 0 1 6-6h9V3a1 1 0 0 1 .62-.92" />
+      <path d="M21 10.63c.48 0 .88.39.88.87V13A5.9 5.9 0 0 1 16 18.88H6.88V21a.88.88 0 0 1-1.5.62l-3-3a.9.9 0 0 1 0-1.24l3-3a.88.88 0 0 1 1.5.62v2.13H16A4.13 4.13 0 0 0 20.13 13v-1.5c0-.48.39-.87.87-.87" opacity={.4} />
+        <path d="M17.67 2.2c.32-.14.7-.07.95.18l3 3a.9.9 0 0 1 0 1.24l-3 3a.88.88 0 0 1-1.5-.62V6.87H8A4.13 4.13 0 0 0 3.88 11v1.5a.87.87 0 1 1-1.75 0V11A5.9 5.9 0 0 1 8 5.12h9.13V3c0-.35.2-.67.54-.8" />
     </IconBase>
   ))
 );

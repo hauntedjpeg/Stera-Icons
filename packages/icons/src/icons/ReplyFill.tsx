@@ -7,7 +7,7 @@ type ReplyFillProps = Omit<IconBaseProps, 'children'>;
 const ReplyFill = memo(
   forwardRef<SVGSVGElement, ReplyFillProps>((props, ref) => (
     <IconBase ref={ref} iconName="reply-fill" {...props}>
-      <path d="M10.3 3.3A1 1 0 0 1 12 4v4.51c3.27.09 5.8.63 7.49 2.2C21.39 12.43 22 15.2 22 19a1 1 0 0 1-1.91.4l-.01-.01a3 3 0 0 0-.32-.54 7 7 0 0 0-1.18-1.36A8 8 0 0 0 13 15.5h-1V20a1 1 0 0 1-1.7.7l-8-8a1 1 0 0 1 0-1.4z" />
+      <path d="M10.38 3.38a.88.88 0 0 1 1.5.62v4.64c3.32.07 5.84.6 7.53 2.15 1.85 1.7 2.46 4.42 2.46 8.21a.87.87 0 0 1-1.67.36l-.01-.03a4 4 0 0 0-.32-.55 7 7 0 0 0-1.2-1.38A8.2 8.2 0 0 0 13 15.37h-1.13V20a.88.88 0 0 1-1.49.62l-8-8a.9.9 0 0 1 0-1.24z" />
     </IconBase>
   ))
 );

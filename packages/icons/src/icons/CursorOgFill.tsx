@@ -7,7 +7,7 @@ type CursorOgFillProps = Omit<IconBaseProps, 'children'>;
 const CursorOgFill = memo(
   forwardRef<SVGSVGElement, CursorOgFillProps>((props, ref) => (
     <IconBase ref={ref} iconName="cursor-og-fill" {...props}>
-      <path d="M6.59 2.09a1 1 0 0 1 1.07.16l12 10.62a1 1 0 0 1-.53 1.74l-3.53.48 1.77 3.94a1 1 0 0 1-.5 1.32l-3.43 1.56a1 1 0 0 1-1.32-.5l-1.77-3.94-2.69 2.35A1 1 0 0 1 6 19.07V3a1 1 0 0 1 .59-.91" />
+      <path d="M6.64 2.2a.9.9 0 0 1 .94.14l12 10.63a.88.88 0 0 1-.46 1.52l-3.7.5 1.84 4.1c.2.43 0 .95-.44 1.15l-3.43 1.56a.9.9 0 0 1-1.16-.44l-1.84-4.1-2.81 2.47a.88.88 0 0 1-1.45-.66V3c0-.34.2-.66.51-.8" />
     </IconBase>
   ))
 );

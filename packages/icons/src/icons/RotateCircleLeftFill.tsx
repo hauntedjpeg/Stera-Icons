@@ -7,7 +7,7 @@ type RotateCircleLeftFillProps = Omit<IconBaseProps, 'children'>;
 const RotateCircleLeftFill = memo(
   forwardRef<SVGSVGElement, RotateCircleLeftFillProps>((props, ref) => (
     <IconBase ref={ref} iconName="rotate-circle-left-fill" {...props}>
-      <path fillRule="evenodd" d="M12 2a10 10 0 1 1 0 20 10 10 0 0 1 0-20m-.8 4.3a1 1 0 0 0-1.4 0L7.35 8.71a1.1 1.1 0 0 0 0 1.56L9.8 12.7a1 1 0 1 0 1.42-1.42l-.8-.79h1.84A2.75 2.75 0 1 1 10 14.84a1 1 0 0 0-1.63 1.15 4.75 4.75 0 1 0 3.88-7.49h-1.84l.8-.8a1 1 0 0 0 0-1.4" clipRule="evenodd" />
+      <path fillRule="evenodd" d="M12 2.13a9.88 9.88 0 1 1 0 19.75 9.88 9.88 0 0 1 0-19.75m-.88 4.25a.9.9 0 0 0-1.24 0L7.45 8.81a1 1 0 0 0 0 1.38l2.43 2.43a.88.88 0 0 0 1.24-1.24l-1-1h2.13A2.88 2.88 0 1 1 9.9 14.9a.88.88 0 0 0-1.43 1 4.62 4.62 0 1 0 3.78-7.28h-2.14l1-1.01a.9.9 0 0 0 0-1.24" clipRule="evenodd" />
     </IconBase>
   ))
 );

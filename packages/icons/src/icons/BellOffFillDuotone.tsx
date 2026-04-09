@@ -7,9 +7,9 @@ type BellOffFillDuotoneProps = Omit<IconBaseProps, 'children'>;
 const BellOffFillDuotone = memo(
   forwardRef<SVGSVGElement, BellOffFillDuotoneProps>((props, ref) => (
     <IconBase ref={ref} iconName="bell-off-fill-duotone" {...props}>
-      <path fillRule="evenodd" d="M16.84 18.25h-.4a4.5 4.5 0 0 1-8.88 0H5.74c-2.2 0-3.5-2.45-2.29-4.28l.92-1.37c.57-.87.88-1.88.88-2.92V9.3q0-1.2.36-2.27zm-7.22 0a2.5 2.5 0 0 0 4.77 0z" clipRule="evenodd" opacity={0.4} />
-        <path d="M12 2.25c3.76 0 6.75 3.2 6.75 7.05v.38c0 1.04.3 2.05.88 2.92l.92 1.37A2.75 2.75 0 0 1 19.42 18L6.55 5.14A6.6 6.6 0 0 1 12 2.25" opacity={0.4} />
-        <path d="M3.3 3.3a1 1 0 0 1 1.4 0l16 16a1 1 0 0 1-1.4 1.4l-16-16a1 1 0 0 1 0-1.4" />
+      <path fillRule="evenodd" d="M17.14 18.38h-.85a4.38 4.38 0 0 1-8.58 0H5.74a2.88 2.88 0 0 1-2.4-4.47l.92-1.38c.57-.85.87-1.83.87-2.85V9.3q0-1.33.43-2.5zm-7.61 0a2.62 2.62 0 0 0 4.94 0z" clipRule="evenodd" opacity={0.4} />
+        <path d="M12 2.13c3.84 0 6.88 3.25 6.88 7.17v.38c0 1.02.3 2 .86 2.85l.92 1.38a2.88 2.88 0 0 1-1.27 4.24l-13-13A6.8 6.8 0 0 1 12 2.12" opacity={0.4} />
+        <path d="M3.38 3.38a.9.9 0 0 1 1.24 0l16 16a.88.88 0 0 1-1.24 1.24l-16-16a.9.9 0 0 1 0-1.24" />
     </IconBase>
   ))
 );

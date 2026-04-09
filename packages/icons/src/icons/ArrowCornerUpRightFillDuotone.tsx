@@ -7,8 +7,8 @@ type ArrowCornerUpRightFillDuotoneProps = Omit<IconBaseProps, 'children'>;
 const ArrowCornerUpRightFillDuotone = memo(
   forwardRef<SVGSVGElement, ArrowCornerUpRightFillDuotoneProps>((props, ref) => (
     <IconBase ref={ref} iconName="arrow-corner-up-right-fill-duotone" {...props}>
-      <path d="M15 9H8a2 2 0 0 0-2 2v8a1 1 0 1 1-2 0v-8a4 4 0 0 1 4-4h7z" opacity={.4} />
-        <path d="M15.62 3.08a1 1 0 0 1 1.09.21l4 4 .06.08a1 1 0 0 1-.06 1.34l-4 4A1 1 0 0 1 15 12V4a1 1 0 0 1 .62-.92" />
+      <path d="M15.13 8.88H8c-1.17 0-2.12.95-2.12 2.12v8a.88.88 0 0 1-1.75 0v-8A3.9 3.9 0 0 1 8 7.13h7.13z" opacity={.4} />
+        <path d="M15.67 3.2c.32-.14.7-.07.95.18l4 4 .06.07a.9.9 0 0 1-.06 1.17l-4 4a.88.88 0 0 1-1.5-.62V4c0-.35.22-.67.54-.8" />
     </IconBase>
   ))
 );

@@ -7,7 +7,7 @@ type RotateCircleRightFillProps = Omit<IconBaseProps, 'children'>;
 const RotateCircleRightFill = memo(
   forwardRef<SVGSVGElement, RotateCircleRightFillProps>((props, ref) => (
     <IconBase ref={ref} iconName="rotate-circle-right-fill" {...props}>
-      <path fillRule="evenodd" d="M12 2a10 10 0 1 1 0 20 10 10 0 0 1 0-20m2.2 4.3a1 1 0 1 0-1.4 1.4l.79.8h-1.84a4.75 4.75 0 1 0 3.88 7.5A1 1 0 0 0 14 14.83a2.75 2.75 0 1 1-2.25-4.34h1.84l-.8.8a1 1 0 1 0 1.42 1.4l2.43-2.42a1.1 1.1 0 0 0 0-1.56z" clipRule="evenodd" />
+      <path fillRule="evenodd" d="M12 2.13a9.88 9.88 0 1 0 0 19.75 9.88 9.88 0 0 0 0-19.75m.88 4.25a.9.9 0 0 1 1.24 0l2.43 2.43c.38.38.38 1 0 1.38l-2.43 2.43a.88.88 0 0 1-1.24-1.24l1-1h-2.13a2.88 2.88 0 1 0 2.35 4.53.88.88 0 0 1 1.43 1 4.62 4.62 0 1 1-3.78-7.28h2.14l-1-1.01a.9.9 0 0 1 0-1.24" clipRule="evenodd" />
     </IconBase>
   ))
 );

@@ -7,7 +7,7 @@ type CommentBubbleFillProps = Omit<IconBaseProps, 'children'>;
 const CommentBubbleFill = memo(
   forwardRef<SVGSVGElement, CommentBubbleFillProps>((props, ref) => (
     <IconBase ref={ref} iconName="comment-bubble-fill" {...props}>
-      <path d="M12 2.5a9.5 9.5 0 0 1 0 19H5.93q-.53.01-.93-.04A3 3 0 0 1 2.54 19q-.05-.4-.04-.93V12A9.5 9.5 0 0 1 12 2.5" />
+      <path d="M12 2.63a9.38 9.38 0 0 1 0 18.75H5.93q-.53.01-.91-.05a2.9 2.9 0 0 1-2.35-2.35q-.06-.38-.05-.9V12c0-5.18 4.2-9.37 9.38-9.37" />
     </IconBase>
   ))
 );

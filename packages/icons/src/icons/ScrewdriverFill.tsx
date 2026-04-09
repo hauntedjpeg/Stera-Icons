@@ -7,7 +7,7 @@ type ScrewdriverFillProps = Omit<IconBaseProps, 'children'>;
 const ScrewdriverFill = memo(
   forwardRef<SVGSVGElement, ScrewdriverFillProps>((props, ref) => (
     <IconBase ref={ref} iconName="screwdriver-fill" {...props}>
-      <path fillRule="evenodd" d="M14.33 3.52a4.35 4.35 0 0 1 6.15 6.15l-3.82 3.81a.8.8 0 0 1-.53.22h-1.08l-.3 1.52a1 1 0 0 1-.2.38l-1.7 1.7c-.3.29-.77.29-1.06 0l-1.83-1.84L3.7 21.7a1 1 0 0 1-1.42-1.42l6.25-6.25-1.83-1.83a.75.75 0 0 1 0-1.06l1.7-1.7.07-.07q.15-.09.3-.13l1.52-.3V7.87q0-.32.22-.53zm3.78 2.37a1 1 0 0 0-1.41 0l-2.54 2.54a1 1 0 1 0 1.41 1.41l2.54-2.54a1 1 0 0 0 0-1.41" clipRule="evenodd" />
+      <path fillRule="evenodd" d="M14.24 3.44a4.47 4.47 0 1 1 6.33 6.32l-3.82 3.81a1 1 0 0 1-.62.26h-.97l-.29 1.41a1 1 0 0 1-.24.45l-1.69 1.7a.9.9 0 0 1-1.24 0l-1.92-1.93-6.16 6.16a.88.88 0 0 1-1.24-1.24l6.16-6.16-1.92-1.92a.9.9 0 0 1 0-1.24l1.7-1.7.09-.08q.15-.11.35-.15l1.42-.29v-.97q0-.37.25-.62zm3.78 2.54a.9.9 0 0 0-1.23 0l-2.55 2.54a.88.88 0 0 0 1.24 1.24l2.54-2.55a.9.9 0 0 0 0-1.23" clipRule="evenodd" />
     </IconBase>
   ))
 );

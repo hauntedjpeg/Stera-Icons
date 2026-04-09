@@ -7,7 +7,7 @@ type KeyholeFillProps = Omit<IconBaseProps, 'children'>;
 const KeyholeFill = memo(
   forwardRef<SVGSVGElement, KeyholeFillProps>((props, ref) => (
     <IconBase ref={ref} iconName="keyhole-fill" {...props}>
-      <path d="M12 2a6.5 6.5 0 0 1 4.64 11.05l2.53 5.06A2 2 0 0 1 17.38 21H6.62a2 2 0 0 1-1.8-2.9l2.54-5.05A6.5 6.5 0 0 1 12 2" />
+      <path d="M12 2.13a6.38 6.38 0 0 1 4.49 10.9l2.57 5.13a1.88 1.88 0 0 1-1.68 2.72H6.62c-1.4 0-2.3-1.47-1.68-2.72l2.57-5.14A6.36 6.36 0 0 1 12 2.12" />
     </IconBase>
   ))
 );

@@ -7,8 +7,8 @@ type GitPullRequestFillDuotoneProps = Omit<IconBaseProps, 'children'>;
 const GitPullRequestFillDuotone = memo(
   forwardRef<SVGSVGElement, GitPullRequestFillDuotoneProps>((props, ref) => (
     <IconBase ref={ref} iconName="git-pull-request-fill-duotone" {...props}>
-      <path d="M6.5 15.15a3.5 3.5 0 0 0-2 0v-6.3a3.5 3.5 0 0 0 2 0zM15.5 4.5a4 4 0 0 1 4 4v6.65a3.5 3.5 0 0 0-2 0V8.5a2 2 0 0 0-2-2h-1.59l-1-1 1-1z" opacity={0.4} />
-        <path d="M5.5 15a3.5 3.5 0 1 1 0 7 3.5 3.5 0 0 1 0-7M18.5 15a3.5 3.5 0 1 1 0 7 3.5 3.5 0 0 1 0-7M13.8 1.8a1 1 0 1 1 1.4 1.4l-2.29 2.3 2.3 2.3a1 1 0 1 1-1.42 1.4l-3-3a1 1 0 0 1 0-1.4zM5.5 2a3.5 3.5 0 1 1 0 7 3.5 3.5 0 0 1 0-7" />
+      <path d="M5.5 2.13a3.38 3.38 0 0 1 .88 6.63v6.48a3.38 3.38 0 1 1-1.75 0V8.76a3.38 3.38 0 0 1 .87-6.63" opacity={.4} />
+        <path d="M13.88 1.88a.88.88 0 0 1 1.24 1.24l-1.5 1.5h1.88a3.9 3.9 0 0 1 3.87 3.88v6.74a3.38 3.38 0 1 1-1.75 0V8.5c0-1.17-.95-2.13-2.12-2.13H13.6l1.5 1.51a.88.88 0 0 1-1.23 1.24l-3-3a.9.9 0 0 1 0-1.24z" />
     </IconBase>
   ))
 );

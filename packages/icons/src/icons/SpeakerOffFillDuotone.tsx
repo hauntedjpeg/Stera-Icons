@@ -7,8 +7,8 @@ type SpeakerOffFillDuotoneProps = Omit<IconBaseProps, 'children'>;
 const SpeakerOffFillDuotone = memo(
   forwardRef<SVGSVGElement, SpeakerOffFillDuotoneProps>((props, ref) => (
     <IconBase ref={ref} iconName="speaker-off-fill-duotone" {...props}>
-      <path d="M17 18.41v.52a1.5 1.5 0 0 1-2.46 1.15l-4.83-4.02a.3.3 0 0 0-.16-.06h-2.3C6.01 16 5 15 5 13.75v-3.5c0-1.04.7-1.91 1.66-2.17zM14.63 3.84c.98-.7 2.37 0 2.37 1.23v10.52l-7.59-7.6h.14q.09 0 .16-.05l4.83-4.03z" opacity={0.4} />
-        <path d="M3.3 3.3a1 1 0 0 1 1.4 0l16 16a1 1 0 0 1-1.4 1.4l-16-16a1 1 0 0 1 0-1.4" />
+      <path d="M16.88 18.11v.82c0 1.17-1.36 1.8-2.26 1.06l-4.83-4.03a.4.4 0 0 0-.24-.09h-2.3a2.13 2.13 0 0 1-2.12-2.12v-3.5c0-1.06.77-1.94 1.78-2.1zM14.7 3.94c.9-.64 2.17 0 2.18 1.13v10.57L9.36 8.12h.19q.14 0 .24-.08L14.62 4z" opacity={0.4} />
+        <path d="M3.38 3.38a.9.9 0 0 1 1.24 0l16 16a.88.88 0 0 1-1.24 1.24l-16-16a.9.9 0 0 1 0-1.24" />
     </IconBase>
   ))
 );

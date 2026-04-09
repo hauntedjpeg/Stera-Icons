@@ -7,8 +7,8 @@ type FlowRightArrowFillDuotoneProps = Omit<IconBaseProps, 'children'>;
 const FlowRightArrowFillDuotone = memo(
   forwardRef<SVGSVGElement, FlowRightArrowFillDuotoneProps>((props, ref) => (
     <IconBase ref={ref} iconName="flow-right-arrow-fill-duotone" {...props}>
-      <path d="m20.59 12-1 1h-8.7a5 5 0 0 0 0-2h8.7z" opacity={.4} />
-        <path d="M16.3 6.3a1 1 0 0 1 1.4 0l5 5a1 1 0 0 1 0 1.4l-5 5a1 1 0 0 1-1.4-1.4l4.29-4.3-4.3-4.3a1 1 0 0 1 0-1.4M6 7a5 5 0 1 1 0 10A5 5 0 0 1 6 7" />
+      <path d="M6 7.13a4.87 4.87 0 1 1 0 9.74 4.87 4.87 0 0 1 0-9.75" opacity={.4} />
+        <path d="M16.38 6.38a.9.9 0 0 1 1.24 0l5 5a.9.9 0 0 1 0 1.24l-5 5a.88.88 0 0 1-1.24-1.24l3.5-3.5H10.8a5 5 0 0 0 0-1.76h9.1l-3.5-3.5a.9.9 0 0 1 0-1.24" />
     </IconBase>
   ))
 );

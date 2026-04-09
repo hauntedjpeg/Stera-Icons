@@ -7,11 +7,8 @@ type GitCompareBoldDuotoneProps = Omit<IconBaseProps, 'children'>;
 const GitCompareBoldDuotone = memo(
   forwardRef<SVGSVGElement, GitCompareBoldDuotoneProps>((props, ref) => (
     <IconBase ref={ref} iconName="git-compare-bold-duotone" {...props}>
-      <path d="M20 16a4 4 0 0 1-4 4h-2.59l-1-1 1-1H16a2 2 0 0 0 2-2V8.35a3.5 3.5 0 0 0 2 0zM11.59 5l-1 1H8a2 2 0 0 0-2 2v7.65a3.5 3.5 0 0 0-2 0V8a4 4 0 0 1 4-4h2.59z" opacity={0.4} />
-        <path d="M13.3 15.3a1 1 0 1 1 1.4 1.4L12.42 19l2.3 2.3a1 1 0 0 1-1.42 1.4l-3-3a1 1 0 0 1 0-1.4z" />
-        <path fillRule="evenodd" d="M5 15.5a3.5 3.5 0 1 1 0 7 3.5 3.5 0 0 1 0-7m0 2a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3" clipRule="evenodd" />
-        <path d="M9.3 1.3a1 1 0 0 1 1.4 0l3 3a1 1 0 0 1 0 1.4l-3 3a1 1 0 1 1-1.4-1.4L11.58 5l-2.3-2.3a1 1 0 0 1 0-1.4" />
-        <path fillRule="evenodd" d="M19 1.5a3.5 3.5 0 1 1 0 7 3.5 3.5 0 0 1 0-7m0 2a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3" clipRule="evenodd" />
+      <path fillRule="evenodd" d="M19 1.5a3.5 3.5 0 0 1 1 6.85V16a4 4 0 0 1-4 4h-2.59l1.3 1.3a1 1 0 1 1-1.42 1.4l-3-3a1 1 0 0 1-.2-.28 1 1 0 0 1-.06-.65l.01-.06a1 1 0 0 1 .25-.42l3-3a1 1 0 1 1 1.42 1.42L13.4 18H16a2 2 0 0 0 2-2V8.35a3.5 3.5 0 0 1 1-6.85m0 2a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3" clipRule="evenodd" opacity={.4} />
+        <path fillRule="evenodd" d="M9.3 1.3a1 1 0 0 1 1.4 0l3 3a1 1 0 0 1 .26.4l.01.07a1 1 0 0 1 0 .47l-.01.05a1 1 0 0 1-.25.42l-3 3a1 1 0 1 1-1.42-1.42L10.6 6H8a2 2 0 0 0-2 2v7.65a3.5 3.5 0 1 1-2 0V8a4 4 0 0 1 4-4h2.59l-1.3-1.3a1 1 0 0 1 0-1.4M5 17.5a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3" clipRule="evenodd" />
     </IconBase>
   ))
 );

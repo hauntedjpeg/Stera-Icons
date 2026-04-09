@@ -7,8 +7,8 @@ type GhostFillDuotoneProps = Omit<IconBaseProps, 'children'>;
 const GhostFillDuotone = memo(
   forwardRef<SVGSVGElement, GhostFillDuotoneProps>((props, ref) => (
     <IconBase ref={ref} iconName="ghost-fill-duotone" {...props}>
-      <path fillRule="evenodd" d="M12 2a9 9 0 0 1 9 9v10a1 1 0 0 1-1.55.83l-2.4-1.6-1.93 1.55a1 1 0 0 1-1.24 0L12 20.28l-1.87 1.5a1 1 0 0 1-1.26 0l-1.92-1.54-2.4 1.6A1 1 0 0 1 3 21V11a9 9 0 0 1 9-9M9 9a2 2 0 1 0 0 4 2 2 0 0 0 0-4m6 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4" clipRule="evenodd" opacity={.4} />
-        <path d="M9 9a2 2 0 1 1 0 4 2 2 0 0 1 0-4M15 9a2 2 0 1 1 0 4 2 2 0 0 1 0-4" />
+      <path fillRule="evenodd" d="M12 2.13c4.9 0 8.88 3.97 8.88 8.87v10a.88.88 0 0 1-1.37.73l-2.46-1.65-2 1.6a.9.9 0 0 1-1.1 0L12 20.12l-1.95 1.56a.9.9 0 0 1-1.1 0l-2-1.6-2.46 1.65A.88.88 0 0 1 3.12 21V11c0-4.9 3.98-8.87 8.88-8.87M9 9a2 2 0 1 0 0 4 2 2 0 0 0 0-4m6 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4" clipRule="evenodd" opacity={.4} />
+        <path d="M11 11a2 2 0 1 1-4 0 2 2 0 0 1 4 0M17 11a2 2 0 1 1-4 0 2 2 0 0 1 4 0" />
     </IconBase>
   ))
 );

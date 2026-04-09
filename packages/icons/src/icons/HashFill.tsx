@@ -7,7 +7,7 @@ type HashFillProps = Omit<IconBaseProps, 'children'>;
 const HashFill = memo(
   forwardRef<SVGSVGElement, HashFillProps>((props, ref) => (
     <IconBase ref={ref} iconName="hash-fill" {...props}>
-      <path fillRule="evenodd" d="M15 2c.83 0 1.5.67 1.5 1.5v4h4a1.5 1.5 0 0 1 0 3h-4v3h4a1.5 1.5 0 0 1 0 3h-4v4a1.5 1.5 0 0 1-3 0v-4h-3v4a1.5 1.5 0 0 1-3 0v-4h-4a1.5 1.5 0 0 1 0-3h4v-3h-4a1.5 1.5 0 0 1 0-3h4v-4a1.5 1.5 0 1 1 3 0v4h3v-4c0-.83.67-1.5 1.5-1.5m-4.5 11.5h3v-3h-3z" clipRule="evenodd" />
+      <path fillRule="evenodd" d="M15 2.25c.69 0 1.25.56 1.25 1.25v4.25h4.25a1.25 1.25 0 1 1 0 2.5h-4.25v3.5h4.25a1.25 1.25 0 1 1 0 2.5h-4.25v4.25a1.25 1.25 0 1 1-2.5 0v-4.25h-3.5v4.25a1.25 1.25 0 1 1-2.5 0v-4.25H3.5a1.25 1.25 0 1 1 0-2.5h4.25v-3.5H3.5a1.25 1.25 0 0 1 0-2.5h4.25V3.5a1.25 1.25 0 1 1 2.5 0v4.25h3.5V3.5c0-.69.56-1.25 1.25-1.25m-4.75 11.5h3.5v-3.5h-3.5z" clipRule="evenodd" />
     </IconBase>
   ))
 );

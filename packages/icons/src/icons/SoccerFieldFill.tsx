@@ -7,8 +7,8 @@ type SoccerFieldFillProps = Omit<IconBaseProps, 'children'>;
 const SoccerFieldFill = memo(
   forwardRef<SVGSVGElement, SoccerFieldFillProps>((props, ref) => (
     <IconBase ref={ref} iconName="soccer-field-fill" {...props}>
-      <path d="M11 8.65a3.5 3.5 0 0 0 0 6.7V21H4a3 3 0 0 1-3-3v-2h4a1 1 0 0 0 1-1V9a1 1 0 0 0-1-1H1V6a3 3 0 0 1 3-3h7zM20 3a3 3 0 0 1 3 3v2h-4a1 1 0 0 0-1 1v6a1 1 0 0 0 1 1h4v2a3 3 0 0 1-3 3h-7v-5.65a3.5 3.5 0 0 0 0-6.7V3z" />
-        <path d="M4 14H1v-4h3zM23 14h-3v-4h3zM12 10.5a1.5 1.5 0 1 1 0 3 1.5 1.5 0 0 1 0-3" />
+      <path d="M11.13 8.74a3.38 3.38 0 0 0 0 6.52v5.62H4A2.9 2.9 0 0 1 1.13 18v-2.12H5c.48 0 .88-.4.88-.88V9c0-.48-.4-.87-.88-.87H1.13V6A2.87 2.87 0 0 1 4 3.13h7.13zM20 3.13A2.9 2.9 0 0 1 22.88 6v2.13H19c-.48 0-.87.39-.87.87v6c0 .48.39.88.87.88h3.88V18A2.9 2.9 0 0 1 20 20.88h-7.12v-5.62a3.38 3.38 0 0 0 0-6.52V3.13z" />
+        <path d="M22.88 14.13h-3V9.87h3zM4.13 14.13h-3V9.87h3zM12 10.38a1.62 1.62 0 1 1 0 3.24 1.62 1.62 0 0 1 0-3.24" />
     </IconBase>
   ))
 );
