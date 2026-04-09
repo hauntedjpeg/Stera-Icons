@@ -57,7 +57,7 @@
   ],
   "scripts": {
     "build": "rm -f dist/*.cjs dist/*.mjs dist/*.d.ts dist/*.d.cts dist/esm/stera-icons.js dist/esm/stera-icons.d.ts && tsup && node scripts/build-icons.js icons-export.json && node scripts/generate-declarations.js",
-    "build:icons": "node scripts/build-icons.js icons-export.json",
+    "build:icons": "node scripts/build-icons.js icons-export.json && node scripts/generate-declarations.js",
     "build:dev": "tsup --config tsup.config.dev.ts",
     "dev": "NODE_OPTIONS='--max-old-space-size=8192' tsup --watch --config tsup.config.dev.ts",
     "dev:demo": "pnpm --filter stera-icons-react-demo dev",
