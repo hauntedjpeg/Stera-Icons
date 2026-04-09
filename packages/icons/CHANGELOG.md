@@ -1,5 +1,11 @@
 # @stera/icons
 
+## 8.1.1
+
+### Patch Changes
+
+- a527381: fix: `build:icons` now regenerates TypeScript declarations so new icons appear in `index.d.ts`
+
 ## 8.1.0
 
 ### Minor Changes
