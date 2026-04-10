@@ -2,7 +2,7 @@
 name: Request
 about: New icon request
 title: ''
-labels: "✨ icon request"
+labels: request
 assignees: hauntedjpeg
 
 ---
