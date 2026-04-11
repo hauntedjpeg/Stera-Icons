@@ -1,6 +1,8 @@
-"use client";
+"use client"
 
-import { useState } from "react";
+import { useState } from "react"
+import { Button } from "@/components/ui/button"
+import { SiCheckCircleFill, SiCopy } from "stera-icons"
 
 interface CodeBlockProps {
   code: string;
@@ -23,12 +25,9 @@ export function CodeBlock({ code, language }: CodeBlockProps) {
           {code}
         </code>
       </pre>
-      <button
-        onClick={handleCopy}
-        className="absolute top-2 right-2 rounded-md border border-border bg-bg-surface px-2 py-1 st-body-sm text-text-secondary opacity-0 group-hover:opacity-100 hover:bg-bg-surface-secondary transition-all"
-      >
-        {copied ? "Copied!" : "Copy"}
-      </button>
+      <Button size="icon-sm" variant="ghost" onClick={handleCopy} className="absolute top-2 right-2 opacity-0 group-hover:opacity-100">
+        {copied ? <SiCheckCircleFill /> : <SiCopy />}
+      </Button>
     </div>
   );
 }
