@@ -6,7 +6,7 @@ type SoccerFieldFillDuotoneProps = Omit<IconBaseProps, 'children'>;
 
 const SoccerFieldFillDuotone = memo(
   forwardRef<SVGSVGElement, SoccerFieldFillDuotoneProps>((props, ref) => (
-    <IconBase ref={ref} iconName="soccer-field-fill-duotone" {...props}>
+    <IconBase ref={ref} {...props}>
       <path d="M11.13 3.13v5.6a3.38 3.38 0 0 0 0 6.53v5.62H4A2.9 2.9 0 0 1 1.13 18v-2.12H5c.48 0 .88-.4.88-.88V9c0-.48-.4-.87-.88-.87H1.13V6A2.87 2.87 0 0 1 4 3.13z" opacity={0.4} />
         <path d="M1.13 9.88h3v4.24h-3zM22.88 14.13h-3V9.87h3zM12 10.38a1.62 1.62 0 1 1 0 3.24 1.62 1.62 0 0 1 0-3.24" opacity={0.4} />
         <path d="M20 3.13A2.9 2.9 0 0 1 22.88 6v2.13H19c-.48 0-.87.39-.87.87v6c0 .48.39.88.87.88h3.88V18A2.9 2.9 0 0 1 20 20.88h-7.12v-5.62a3.38 3.38 0 0 0 0-6.52V3.13z" opacity={0.4} />

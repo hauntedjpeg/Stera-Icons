@@ -6,7 +6,7 @@ type PlugBoldDuotoneProps = Omit<IconBaseProps, 'children'>;
 
 const PlugBoldDuotone = memo(
   forwardRef<SVGSVGElement, PlugBoldDuotoneProps>((props, ref) => (
-    <IconBase ref={ref} iconName="plug-bold-duotone" {...props}>
+    <IconBase ref={ref} {...props}>
       <path fillRule="evenodd" d="M4.94 10.6c.88-.83 2.26-.81 3.12.05l5.3 5.3c.85.85.88 2.23.05 3.11l-.14.16-.03.02a6 6 0 1 1-8.46-8.5zm1.7 1.46a.25.25 0 0 0-.34 0l-.13.11a4 4 0 0 0 5.66 5.66l.12-.13c.09-.1.08-.25-.01-.35z" clipRule="evenodd" opacity={0.4} />
         <path d="M21.3 1.3a1 1 0 0 1 1.4 1.4L19.9 5.53a6 6 0 0 0-1.41-1.4z" opacity={0.4} />
         <path d="M4.1 18.48a6 6 0 0 0 1.42 1.41l-2.81 2.82a1 1 0 0 1-1.42-1.42z" />

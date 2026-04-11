@@ -6,7 +6,7 @@ type DotFillDuotoneProps = Omit<IconBaseProps, 'children'>;
 
 const DotFillDuotone = memo(
   forwardRef<SVGSVGElement, DotFillDuotoneProps>((props, ref) => (
-    <IconBase ref={ref} iconName="dot-fill-duotone" {...props}>
+    <IconBase ref={ref} {...props}>
       <path d="M12 8.88a3.12 3.12 0 1 1 0 6.24 3.12 3.12 0 0 1 0-6.24" opacity={.4} />
         <path fillRule="evenodd" d="M12 7.13a4.87 4.87 0 1 1 0 9.74 4.87 4.87 0 0 1 0-9.75m0 1.75a3.12 3.12 0 1 0 0 6.24 3.12 3.12 0 0 0 0-6.24" clipRule="evenodd" />
     </IconBase>

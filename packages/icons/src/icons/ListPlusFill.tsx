@@ -6,7 +6,7 @@ type ListPlusFillProps = Omit<IconBaseProps, 'children'>;
 
 const ListPlusFill = memo(
   forwardRef<SVGSVGElement, ListPlusFillProps>((props, ref) => (
-    <IconBase ref={ref} iconName="list-plus-fill" {...props}>
+    <IconBase ref={ref} {...props}>
       <path fillRule="evenodd" d="M17.5 9a5.5 5.5 0 1 1 0 11 5.5 5.5 0 0 1 0-11m0 2.1c-.5 0-.9.4-.9.9v1.6H15a.9.9 0 0 0 0 1.8h1.6V17a.9.9 0 0 0 1.8 0v-1.6H20a.9.9 0 0 0 0-1.8h-1.6V12c0-.5-.4-.9-.9-.9" clipRule="evenodd" />
         <path d="M9 14.75a1.25 1.25 0 1 1 0 2.5H2a1.25 1.25 0 1 1 0-2.5zM9 9.75a1.25 1.25 0 1 1 0 2.5H2a1.25 1.25 0 1 1 0-2.5zM22 4.75a1.25 1.25 0 1 1 0 2.5H2a1.25 1.25 0 1 1 0-2.5z" />
     </IconBase>

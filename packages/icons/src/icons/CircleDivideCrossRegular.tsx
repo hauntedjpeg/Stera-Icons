@@ -6,7 +6,7 @@ type CircleDivideCrossRegularProps = Omit<IconBaseProps, 'children'>;
 
 const CircleDivideCrossRegular = memo(
   forwardRef<SVGSVGElement, CircleDivideCrossRegularProps>((props, ref) => (
-    <IconBase ref={ref} iconName="circle-divide-cross" {...props}>
+    <IconBase ref={ref} {...props}>
       <path fillRule="evenodd" d="M12 2.25a9.75 9.75 0 1 1 0 19.5 9.75 9.75 0 0 1 0-19.5m-8.21 10.5a8.25 8.25 0 0 0 7.46 7.46v-7.46zm8.96 0v7.46a8.25 8.25 0 0 0 7.46-7.46zm0-1.5h7.46a8.25 8.25 0 0 0-7.46-7.46zm-1.5-7.46a8.25 8.25 0 0 0-7.46 7.46h7.46z" clipRule="evenodd" />
     </IconBase>
   ))

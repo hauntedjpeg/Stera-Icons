@@ -6,7 +6,7 @@ type PauseCircleFillDuotoneProps = Omit<IconBaseProps, 'children'>;
 
 const PauseCircleFillDuotone = memo(
   forwardRef<SVGSVGElement, PauseCircleFillDuotoneProps>((props, ref) => (
-    <IconBase ref={ref} iconName="pause-circle-fill-duotone" {...props}>
+    <IconBase ref={ref} {...props}>
       <path fillRule="evenodd" d="M12 2.13a9.88 9.88 0 1 1 0 19.75 9.88 9.88 0 0 1 0-19.75M9 8a1 1 0 0 0-1 1v6a1 1 0 0 0 1 1h1a1 1 0 0 0 1-1V9a1 1 0 0 0-1-1zm5 0a1 1 0 0 0-1 1v6a1 1 0 0 0 1 1h1a1 1 0 0 0 1-1V9a1 1 0 0 0-1-1z" clipRule="evenodd" opacity={.4} />
         <path d="M8 9a1 1 0 0 1 1-1h1a1 1 0 0 1 1 1v6a1 1 0 0 1-1 1H9a1 1 0 0 1-1-1zM13 9a1 1 0 0 1 1-1h1a1 1 0 0 1 1 1v6a1 1 0 0 1-1 1h-1a1 1 0 0 1-1-1z" />
     </IconBase>

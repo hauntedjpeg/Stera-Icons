@@ -6,7 +6,7 @@ type ChevronFullOutwardFillProps = Omit<IconBaseProps, 'children'>;
 
 const ChevronFullOutwardFill = memo(
   forwardRef<SVGSVGElement, ChevronFullOutwardFillProps>((props, ref) => (
-    <IconBase ref={ref} iconName="chevron-full-outward-fill" {...props}>
+    <IconBase ref={ref} {...props}>
       <path d="M18 15.12a.88.88 0 0 1 .62 1.5l-6 6a.9.9 0 0 1-1.24 0l-6-6a.88.88 0 0 1 .62-1.5zM11.38 1.38a.9.9 0 0 1 1.24 0l6 6a.88.88 0 0 1-.62 1.5H6a.88.88 0 0 1-.62-1.5z" />
     </IconBase>
   ))

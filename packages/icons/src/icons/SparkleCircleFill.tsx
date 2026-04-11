@@ -6,7 +6,7 @@ type SparkleCircleFillProps = Omit<IconBaseProps, 'children'>;
 
 const SparkleCircleFill = memo(
   forwardRef<SVGSVGElement, SparkleCircleFillProps>((props, ref) => (
-    <IconBase ref={ref} iconName="sparkle-circle-fill" {...props}>
+    <IconBase ref={ref} {...props}>
       <path fillRule="evenodd" d="M12 2.13a9.88 9.88 0 1 1 0 19.75 9.88 9.88 0 0 1 0-19.75m.62 5.45c-.18-.62-1.06-.62-1.24 0l-.26.86a4 4 0 0 1-2.68 2.68l-.86.26c-.62.18-.62 1.06 0 1.24l.86.26a4 4 0 0 1 2.68 2.68l.26.86c.18.62 1.06.62 1.24 0l.26-.86a4 4 0 0 1 2.68-2.68l.86-.26c.62-.18.62-1.06 0-1.24l-.86-.26a4 4 0 0 1-2.68-2.68z" clipRule="evenodd" />
     </IconBase>
   ))

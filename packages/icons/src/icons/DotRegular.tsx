@@ -6,7 +6,7 @@ type DotRegularProps = Omit<IconBaseProps, 'children'>;
 
 const DotRegular = memo(
   forwardRef<SVGSVGElement, DotRegularProps>((props, ref) => (
-    <IconBase ref={ref} iconName="dot" {...props}>
+    <IconBase ref={ref} {...props}>
       <path fillRule="evenodd" d="M12 7.25a4.75 4.75 0 1 1 0 9.5 4.75 4.75 0 0 1 0-9.5m0 1.5a3.25 3.25 0 1 0 0 6.5 3.25 3.25 0 0 0 0-6.5" clipRule="evenodd" />
     </IconBase>
   ))

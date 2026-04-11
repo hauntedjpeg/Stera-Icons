@@ -6,7 +6,7 @@ type ScrollTextFillDuotoneProps = Omit<IconBaseProps, 'children'>;
 
 const ScrollTextFillDuotone = memo(
   forwardRef<SVGSVGElement, ScrollTextFillDuotoneProps>((props, ref) => (
-    <IconBase ref={ref} iconName="scroll-text-fill-duotone" {...props}>
+    <IconBase ref={ref} {...props}>
       <path fillRule="evenodd" d="M16.5 4.88c.62 0 1.13.5 1.13 1.12v9.13h-6.38c-.9 0-1.62.72-1.62 1.62V18a1.13 1.13 0 0 1-2.26 0V6q0-.6-.22-1.12zM10 10.63a.88.88 0 0 0 0 1.74h3.5a.88.88 0 0 0 0-1.74zm0-3.5a.87.87 0 1 0 0 1.75h5a.88.88 0 0 0 0-1.76z" clipRule="evenodd" opacity={0.4} />
         <path d="M20.63 16.88V18c0 .62-.5 1.13-1.13 1.13h-8.35q.21-.53.22-1.13v-1.12zM4.5 4.88c.62 0 1.13.5 1.13 1.12v2.63H3.38V6c0-.62.5-1.12 1.12-1.12" opacity={0.4} />
         <path d="M13.5 10.63a.88.88 0 0 1 0 1.74H10a.88.88 0 0 1 0-1.74zM15 7.13a.88.88 0 0 1 0 1.75h-5a.87.87 0 1 1 0-1.76z" />

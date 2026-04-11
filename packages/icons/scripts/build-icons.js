@@ -208,13 +208,9 @@ async function buildIcons(iconsExportPath) {
       const paths = extractPathsFromSvg(optimizedSvg);
       const pathJsx = generatePathJsx(paths);
       
-      // Generate kebab-case icon name for CSS classes
-      const kebabIconName = uniqueSlug + (weight !== 'regular' ? `-${weight}` : '') + (duotone ? '-duotone' : '');
-      
-      // Generate thin variant component using IconBase
+      // Generate variant component using IconBase
       const componentCode = generateVariantComponent({
         componentName,
-        kebabIconName,
         pathJsx
       });
       

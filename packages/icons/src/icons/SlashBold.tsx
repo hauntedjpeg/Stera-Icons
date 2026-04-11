@@ -6,7 +6,7 @@ type SlashBoldProps = Omit<IconBaseProps, 'children'>;
 
 const SlashBold = memo(
   forwardRef<SVGSVGElement, SlashBoldProps>((props, ref) => (
-    <IconBase ref={ref} iconName="slash-bold" {...props}>
+    <IconBase ref={ref} {...props}>
       <path d="M19.25 2.34a1 1 0 0 1 1.5 1.32l-16 18a1 1 0 0 1-1.5-1.32z" />
     </IconBase>
   ))

@@ -6,7 +6,7 @@ type Clock12BoldProps = Omit<IconBaseProps, 'children'>;
 
 const Clock12Bold = memo(
   forwardRef<SVGSVGElement, Clock12BoldProps>((props, ref) => (
-    <IconBase ref={ref} iconName="clock-12-bold" {...props}>
+    <IconBase ref={ref} {...props}>
       <path d="M12 6a1 1 0 0 1 1 1v5a1 1 0 1 1-2 0V7a1 1 0 0 1 1-1" />
         <path fillRule="evenodd" d="M12 2a10 10 0 1 1 0 20 10 10 0 0 1 0-20m0 2a8 8 0 1 0 0 16 8 8 0 0 0 0-16" clipRule="evenodd" />
     </IconBase>

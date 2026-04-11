@@ -6,7 +6,7 @@ type RobotFillDuotoneProps = Omit<IconBaseProps, 'children'>;
 
 const RobotFillDuotone = memo(
   forwardRef<SVGSVGElement, RobotFillDuotoneProps>((props, ref) => (
-    <IconBase ref={ref} iconName="robot-fill-duotone" {...props}>
+    <IconBase ref={ref} {...props}>
       <path fillRule="evenodd" d="M14.2 5q1.23-.01 2.05.04a4 4 0 0 1 1.57.4 4 4 0 0 1 1.74 1.74c.25.49.35 1 .4 1.57q.05.82.04 2.05v2.4q.01 1.23-.04 2.05a4 4 0 0 1-.4 1.57 4 4 0 0 1-1.74 1.74c-.49.25-1 .35-1.57.4q-.82.05-2.05.04H9.8q-1.23.01-2.05-.04a4 4 0 0 1-1.57-.4 4 4 0 0 1-1.74-1.74 4 4 0 0 1-.4-1.57Q4 14.43 4 13.2v-2.4q-.01-1.23.04-2.05a4 4 0 0 1 .4-1.57 4 4 0 0 1 1.74-1.74c.49-.25 1-.35 1.57-.4Q8.57 5 9.8 5zM9.5 9a1 1 0 0 0-1 1v2a1 1 0 1 0 2 0v-2a1 1 0 0 0-1-1m5 0a1 1 0 0 0-1 1v2a1 1 0 1 0 2 0v-2a1 1 0 0 0-1-1" clipRule="evenodd" opacity={.4} />
         <path d="M16 20v.1a1 1 0 0 1-1 .9H9a1 1 0 0 1-1-1v-1h8zM4 13h-.5a1.5 1.5 0 0 1 0-3H4zM20.5 10a1.5 1.5 0 0 1 0 3H20v-3zM12 1a1.5 1.5 0 0 1 1 2.62V5h-2V3.62A1.5 1.5 0 0 1 12 1M9.5 9a1 1 0 0 1 1 1v2a1 1 0 1 1-2 0v-2a1 1 0 0 1 1-1M14.5 9a1 1 0 0 1 1 1v2a1 1 0 1 1-2 0v-2a1 1 0 0 1 1-1" />
     </IconBase>

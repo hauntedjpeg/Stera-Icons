@@ -6,7 +6,7 @@ type TextQuoteRegularDuotoneProps = Omit<IconBaseProps, 'children'>;
 
 const TextQuoteRegularDuotone = memo(
   forwardRef<SVGSVGElement, TextQuoteRegularDuotoneProps>((props, ref) => (
-    <IconBase ref={ref} iconName="text-quote-duotone" {...props}>
+    <IconBase ref={ref} {...props}>
       <path d="M3 11.25c.41 0 .75.34.75.75v6a.75.75 0 0 1-1.5 0v-6c0-.41.34-.75.75-.75" opacity={.4} />
         <path d="M21 17.25a.75.75 0 0 1 0 1.5H8a.75.75 0 0 1 0-1.5zM21 11.25a.75.75 0 0 1 0 1.5H8a.75.75 0 0 1 0-1.5zM16 5.25a.75.75 0 0 1 0 1.5H3a.75.75 0 0 1 0-1.5z" />
     </IconBase>

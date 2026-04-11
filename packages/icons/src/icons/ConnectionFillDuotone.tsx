@@ -6,7 +6,7 @@ type ConnectionFillDuotoneProps = Omit<IconBaseProps, 'children'>;
 
 const ConnectionFillDuotone = memo(
   forwardRef<SVGSVGElement, ConnectionFillDuotoneProps>((props, ref) => (
-    <IconBase ref={ref} iconName="connection-fill-duotone" {...props}>
+    <IconBase ref={ref} {...props}>
       <path d="M7 13a4 4 0 1 1 0 8 4 4 0 0 1 0-8M17 3a4 4 0 1 1 0 8 4 4 0 0 1 0-8" opacity={0.4} />
         <path d="M7 3a4 4 0 0 1 3.45 6.03l4.52 4.52q.91-.54 2.03-.55a4 4 0 1 1-3.45 1.97l-4.52-4.52q-.91.54-2.03.55a4 4 0 1 1 0-8" />
     </IconBase>

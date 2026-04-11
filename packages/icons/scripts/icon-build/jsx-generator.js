@@ -36,7 +36,7 @@ export function generatePathJsx(paths) {
  * @param {string} params.pathJsx - JSX code for paths
  * @returns {string} - Complete component code
  */
-export function generateVariantComponent({ componentName, kebabIconName, pathJsx }) {
+export function generateVariantComponent({ componentName, pathJsx }) {
   // Import with .js extension for ESM compatibility
   // TypeScript resolves .js to .ts during compilation
   return `import { memo, forwardRef } from 'react';
@@ -47,7 +47,7 @@ type ${componentName}Props = Omit<IconBaseProps, 'children'>;
 
 const ${componentName} = memo(
   forwardRef<SVGSVGElement, ${componentName}Props>((props, ref) => (
-    <IconBase ref={ref} iconName="${kebabIconName}" {...props}>
+    <IconBase ref={ref} {...props}>
       ${pathJsx}
     </IconBase>
   ))

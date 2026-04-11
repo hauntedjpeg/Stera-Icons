@@ -6,7 +6,7 @@ type BirdhouseBoldDuotoneProps = Omit<IconBaseProps, 'children'>;
 
 const BirdhouseBoldDuotone = memo(
   forwardRef<SVGSVGElement, BirdhouseBoldDuotoneProps>((props, ref) => (
-    <IconBase ref={ref} iconName="birdhouse-bold-duotone" {...props}>
+    <IconBase ref={ref} {...props}>
       <path d="m5.8 19-1.5-7.82 1.74-1.55L7.83 19zM17.96 9.63l1.74 1.55L18.2 19h-2.03z" opacity={0.4} />
         <path d="M19 19a1 1 0 0 1 0 2H5a1 1 0 0 1 0-2z" />
         <path fillRule="evenodd" d="M12 9a3.5 3.5 0 1 1 0 7 3.5 3.5 0 0 1 0-7m0 2a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3" clipRule="evenodd" />

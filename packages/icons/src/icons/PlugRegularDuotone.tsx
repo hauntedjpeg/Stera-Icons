@@ -6,7 +6,7 @@ type PlugRegularDuotoneProps = Omit<IconBaseProps, 'children'>;
 
 const PlugRegularDuotone = memo(
   forwardRef<SVGSVGElement, PlugRegularDuotoneProps>((props, ref) => (
-    <IconBase ref={ref} iconName="plug-duotone" {...props}>
+    <IconBase ref={ref} {...props}>
       <path fillRule="evenodd" d="M5.1 10.77a2 2 0 0 1 2.78.05l5.3 5.3a2 2 0 0 1 .05 2.77l-.15.16-.01.02a5.75 5.75 0 0 1-8.14-8.14l.02-.01zm1.72 1.11a.5.5 0 0 0-.7 0l-.14.12A4.25 4.25 0 0 0 12 18.01l.14-.14a.5.5 0 0 0-.01-.7z" clipRule="evenodd" opacity={0.4} />
         <path d="M21.47 1.47a.75.75 0 0 1 1.06 1.06L19.56 5.5a6 6 0 0 0-1.06-1.06z" opacity={0.4} />
         <path d="M4.44 18.5a6 6 0 0 0 1.06 1.06l-2.97 2.97a.75.75 0 1 1-1.06-1.06z" />

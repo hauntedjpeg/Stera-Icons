@@ -6,7 +6,7 @@ type VideoFillDuotoneProps = Omit<IconBaseProps, 'children'>;
 
 const VideoFillDuotone = memo(
   forwardRef<SVGSVGElement, VideoFillDuotoneProps>((props, ref) => (
-    <IconBase ref={ref} iconName="video-fill-duotone" {...props}>
+    <IconBase ref={ref} {...props}>
       <path d="M21.45 6.32a.88.88 0 0 1 1.43.68v10a.88.88 0 0 1-1.43.68l-3.72-2.97q.02-.64.02-1.51v-2.4q0-.87-.02-1.51z" opacity={.4} />
         <path d="M12.2 5.25q1.24-.01 2.03.04c.55.05 1.03.14 1.47.37.7.36 1.28.93 1.64 1.64.23.44.32.92.37 1.47q.05.8.04 2.03v2.4q.01 1.24-.04 2.03a4 4 0 0 1-.37 1.47c-.36.7-.93 1.28-1.64 1.64-.44.23-.92.32-1.47.37q-.8.05-2.03.04H6.8q-1.24.01-2.03-.04a4 4 0 0 1-1.47-.37 3.8 3.8 0 0 1-1.64-1.64 4 4 0 0 1-.37-1.47q-.05-.8-.04-2.03v-2.4q-.01-1.24.04-2.03c.05-.55.14-1.03.37-1.47.36-.7.93-1.28 1.64-1.64.44-.23.92-.32 1.47-.37q.8-.05 2.03-.04z" />
     </IconBase>

@@ -6,7 +6,7 @@ type MinusFillProps = Omit<IconBaseProps, 'children'>;
 
 const MinusFill = memo(
   forwardRef<SVGSVGElement, MinusFillProps>((props, ref) => (
-    <IconBase ref={ref} iconName="minus-fill" {...props}>
+    <IconBase ref={ref} {...props}>
       <path d="M21 10.75a1.25 1.25 0 1 1 0 2.5H3a1.25 1.25 0 1 1 0-2.5z" />
     </IconBase>
   ))

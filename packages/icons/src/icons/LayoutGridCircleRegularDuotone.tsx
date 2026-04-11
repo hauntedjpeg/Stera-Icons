@@ -6,7 +6,7 @@ type LayoutGridCircleRegularDuotoneProps = Omit<IconBaseProps, 'children'>;
 
 const LayoutGridCircleRegularDuotone = memo(
   forwardRef<SVGSVGElement, LayoutGridCircleRegularDuotoneProps>((props, ref) => (
-    <IconBase ref={ref} iconName="layout-grid-circle-duotone" {...props}>
+    <IconBase ref={ref} {...props}>
       <path d="M6.88 13a4.12 4.12 0 1 1 0 8.25 4.12 4.12 0 0 1 0-8.25m0 1.5a2.63 2.63 0 1 0 0 5.25 2.63 2.63 0 0 0 0-5.25M17.13 2.75a4.12 4.12 0 1 1 0 8.25 4.12 4.12 0 0 1 0-8.25m0 1.5a2.63 2.63 0 1 0 0 5.25 2.63 2.63 0 0 0 0-5.25" opacity={0.4} />
         <path fillRule="evenodd" d="M17.13 13a4.12 4.12 0 1 1 0 8.25 4.12 4.12 0 0 1 0-8.25m0 1.5a2.63 2.63 0 1 0 0 5.25 2.63 2.63 0 0 0 0-5.25M6.88 2.75a4.13 4.13 0 1 1 0 8.25 4.13 4.13 0 0 1 0-8.25m0 1.5a2.62 2.62 0 1 0 0 5.25 2.62 2.62 0 0 0 0-5.25" clipRule="evenodd" />
     </IconBase>

@@ -6,7 +6,7 @@ type TextAlignLeftRegularDuotoneProps = Omit<IconBaseProps, 'children'>;
 
 const TextAlignLeftRegularDuotone = memo(
   forwardRef<SVGSVGElement, TextAlignLeftRegularDuotoneProps>((props, ref) => (
-    <IconBase ref={ref} iconName="text-align-left-duotone" {...props}>
+    <IconBase ref={ref} {...props}>
       <path d="M13 11.25a.75.75 0 0 1 0 1.5H3a.75.75 0 0 1 0-1.5z" opacity={.4} />
         <path d="M17 17.25a.75.75 0 0 1 0 1.5H3a.75.75 0 0 1 0-1.5zM21 5.25a.75.75 0 0 1 0 1.5H3a.75.75 0 0 1 0-1.5z" />
     </IconBase>

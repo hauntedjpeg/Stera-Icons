@@ -6,7 +6,7 @@ type DeviceLaptopFillProps = Omit<IconBaseProps, 'children'>;
 
 const DeviceLaptopFill = memo(
   forwardRef<SVGSVGElement, DeviceLaptopFillProps>((props, ref) => (
-    <IconBase ref={ref} iconName="device-laptop-fill" {...props}>
+    <IconBase ref={ref} {...props}>
       <path fillRule="evenodd" d="M16.3 3.63q.82 0 1.38.03.6.03 1.13.28.83.42 1.25 1.25.25.54.28 1.13.05.56.04 1.38v6.75q.1.16.18.35l1.2 3a1.87 1.87 0 0 1-1.74 2.57H3.98a1.87 1.87 0 0 1-1.74-2.57l1.2-3q.07-.18.19-.35V7.7q0-.82.03-1.38.03-.6.28-1.13.42-.83 1.25-1.25.54-.25 1.13-.28.56-.05 1.38-.04zM5.18 15.38q-.08 0-.12.07l-1.2 3q-.03.15.12.18h16.04c.1 0 .15-.1.12-.18l-1.2-3a.1.1 0 0 0-.12-.07z" clipRule="evenodd" />
     </IconBase>
   ))

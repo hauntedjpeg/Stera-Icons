@@ -6,7 +6,7 @@ type RotateRightFillDuotoneProps = Omit<IconBaseProps, 'children'>;
 
 const RotateRightFillDuotone = memo(
   forwardRef<SVGSVGElement, RotateRightFillDuotoneProps>((props, ref) => (
-    <IconBase ref={ref} iconName="rotate-right-fill-duotone" {...props}>
+    <IconBase ref={ref} {...props}>
       <path d="M12.63 5.13v1.75H12a6.62 6.62 0 1 0 6.63 6.62.88.88 0 0 1 1.75 0A8.37 8.37 0 1 1 12 5.13z" opacity={.4} />
         <path d="M13.17 1.7c.32-.14.7-.07.95.18l3.5 3.5a.9.9 0 0 1 0 1.24l-3.5 3.5a.88.88 0 0 1-1.5-.62v-7c0-.35.22-.67.54-.8" />
     </IconBase>

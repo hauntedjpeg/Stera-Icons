@@ -66,16 +66,26 @@ describe('IconBase', () => {
     expect(svg).toHaveAttribute('fill', 'red');
   });
 
-  it('merges className properly', () => {
+  it('passes className through to svg', () => {
     const { container } = render(
       <IconBase className="custom-class">
         <path d="M10 10" />
       </IconBase>
     );
-    
+
     const svg = container.querySelector('svg');
-    expect(svg).toHaveClass('stera');
     expect(svg).toHaveClass('custom-class');
+  });
+
+  it('does not add default classes when no className is provided', () => {
+    const { container } = render(
+      <IconBase>
+        <path d="M10 10" />
+      </IconBase>
+    );
+
+    const svg = container.querySelector('svg');
+    expect(svg).not.toHaveAttribute('class');
   });
 
   it('auto sets aria-hidden when no a11y props present', () => {
@@ -135,30 +145,6 @@ describe('IconBase', () => {
     expect(screen.getByTestId('test-circle')).toBeInTheDocument();
   });
 
-  it('generates icon-specific CSS classes from iconName prop', () => {
-    const { container } = render(
-      <IconBase iconName="search-bold">
-        <path d="M10 10" />
-      </IconBase>
-    );
-    
-    const svg = container.querySelector('svg');
-    expect(svg).toHaveClass('stera');
-    expect(svg).toHaveClass('stera-search-bold');
-  });
-
-  it('merges icon-specific classes with custom className', () => {
-    const { container } = render(
-      <IconBase iconName="home" className="my-icon">
-        <path d="M10 10" />
-      </IconBase>
-    );
-    
-    const svg = container.querySelector('svg');
-    expect(svg).toHaveClass('stera');
-    expect(svg).toHaveClass('stera-home');
-    expect(svg).toHaveClass('my-icon');
-  });
 
   it('forwards standard SVG props', () => {
     render(

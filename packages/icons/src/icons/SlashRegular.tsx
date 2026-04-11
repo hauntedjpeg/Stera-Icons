@@ -6,7 +6,7 @@ type SlashRegularProps = Omit<IconBaseProps, 'children'>;
 
 const SlashRegular = memo(
   forwardRef<SVGSVGElement, SlashRegularProps>((props, ref) => (
-    <IconBase ref={ref} iconName="slash" {...props}>
+    <IconBase ref={ref} {...props}>
       <path d="M19.44 2.5a.75.75 0 0 1 1.12 1l-16 18a.75.75 0 0 1-1.12-1z" />
     </IconBase>
   ))

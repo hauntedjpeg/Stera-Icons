@@ -6,7 +6,7 @@ type ListCheckSimpleRegularDuotoneProps = Omit<IconBaseProps, 'children'>;
 
 const ListCheckSimpleRegularDuotone = memo(
   forwardRef<SVGSVGElement, ListCheckSimpleRegularDuotoneProps>((props, ref) => (
-    <IconBase ref={ref} iconName="list-check-simple-duotone" {...props}>
+    <IconBase ref={ref} {...props}>
       <path d="M21 14.75a.75.75 0 0 1 0 1.5h-9a.75.75 0 0 1 0-1.5zM21 7.75a.75.75 0 0 1 0 1.5h-9a.75.75 0 0 1 0-1.5z" opacity={0.4} />
         <path d="M8.48 12.96a.75.75 0 0 1 1.04 1.08l-4.2 4a.75.75 0 0 1-1.1-.08l-1.8-2.28a.75.75 0 0 1 1.17-.93l1.29 1.64zM8.48 5.96a.75.75 0 0 1 1.04 1.08l-4.2 4a.75.75 0 0 1-1.1-.08l-1.8-2.28a.75.75 0 0 1 1.17-.93l1.29 1.64z" />
     </IconBase>

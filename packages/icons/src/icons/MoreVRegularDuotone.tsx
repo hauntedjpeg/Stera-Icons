@@ -6,7 +6,7 @@ type MoreVRegularDuotoneProps = Omit<IconBaseProps, 'children'>;
 
 const MoreVRegularDuotone = memo(
   forwardRef<SVGSVGElement, MoreVRegularDuotoneProps>((props, ref) => (
-    <IconBase ref={ref} iconName="more-v-duotone" {...props}>
+    <IconBase ref={ref} {...props}>
       <path d="M12 13.5a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3" opacity={.4} />
         <path d="M12 21a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3M12 6a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3" />
     </IconBase>

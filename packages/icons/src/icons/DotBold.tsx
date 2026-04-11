@@ -6,7 +6,7 @@ type DotBoldProps = Omit<IconBaseProps, 'children'>;
 
 const DotBold = memo(
   forwardRef<SVGSVGElement, DotBoldProps>((props, ref) => (
-    <IconBase ref={ref} iconName="dot-bold" {...props}>
+    <IconBase ref={ref} {...props}>
       <path fillRule="evenodd" d="M12 7a5 5 0 1 1 0 10 5 5 0 0 1 0-10m0 2a3 3 0 1 0 0 6 3 3 0 0 0 0-6" clipRule="evenodd" />
     </IconBase>
   ))

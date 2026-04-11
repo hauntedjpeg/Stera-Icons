@@ -6,7 +6,7 @@ type PlayCircleFillProps = Omit<IconBaseProps, 'children'>;
 
 const PlayCircleFill = memo(
   forwardRef<SVGSVGElement, PlayCircleFillProps>((props, ref) => (
-    <IconBase ref={ref} iconName="play-circle-fill" {...props}>
+    <IconBase ref={ref} {...props}>
       <path fillRule="evenodd" d="M12 2.13a9.88 9.88 0 1 1 0 19.75 9.88 9.88 0 0 1 0-19.75m-1.56 5.74a1 1 0 0 0-.74.4c-.2.26-.2.75-.2 1.72V14c0 .97 0 1.46.2 1.72a1 1 0 0 0 .74.4c.34.02.74-.25 1.55-.79l3.01-2c.67-.45 1-.68 1.12-.96a1 1 0 0 0 0-.76c-.12-.28-.45-.5-1.12-.95L12 8.66c-.81-.54-1.21-.81-1.55-.79" clipRule="evenodd" />
     </IconBase>
   ))

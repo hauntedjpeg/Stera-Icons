@@ -6,7 +6,7 @@ type TextAlignLeftRegularProps = Omit<IconBaseProps, 'children'>;
 
 const TextAlignLeftRegular = memo(
   forwardRef<SVGSVGElement, TextAlignLeftRegularProps>((props, ref) => (
-    <IconBase ref={ref} iconName="text-align-left" {...props}>
+    <IconBase ref={ref} {...props}>
       <path d="M17 17.25a.75.75 0 0 1 0 1.5H3a.75.75 0 0 1 0-1.5zM13 11.25a.75.75 0 0 1 0 1.5H3a.75.75 0 0 1 0-1.5zM21 5.25a.75.75 0 0 1 0 1.5H3a.75.75 0 0 1 0-1.5z" />
     </IconBase>
   ))

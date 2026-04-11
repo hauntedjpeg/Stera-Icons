@@ -6,7 +6,7 @@ type GitCommitFillDuotoneProps = Omit<IconBaseProps, 'children'>;
 
 const GitCommitFillDuotone = memo(
   forwardRef<SVGSVGElement, GitCommitFillDuotoneProps>((props, ref) => (
-    <IconBase ref={ref} iconName="git-commit-fill-duotone" {...props}>
+    <IconBase ref={ref} {...props}>
       <path d="M7.2 11.13a5 5 0 0 0 0 1.74H2a.88.88 0 0 1 0-1.74zM22 11.13a.88.88 0 0 1 0 1.74h-5.2a5 5 0 0 0 0-1.74z" opacity={0.4} />
         <path d="M12 7.13a4.87 4.87 0 1 1 0 9.74 4.87 4.87 0 0 1 0-9.75" />
     </IconBase>

@@ -6,7 +6,7 @@ type TextAlignJustifyBoldProps = Omit<IconBaseProps, 'children'>;
 
 const TextAlignJustifyBold = memo(
   forwardRef<SVGSVGElement, TextAlignJustifyBoldProps>((props, ref) => (
-    <IconBase ref={ref} iconName="text-align-justify-bold" {...props}>
+    <IconBase ref={ref} {...props}>
       <path d="M21 17a1 1 0 1 1 0 2H3a1 1 0 1 1 0-2zM21 11a1 1 0 1 1 0 2H3a1 1 0 1 1 0-2zM21 5a1 1 0 1 1 0 2H3a1 1 0 0 1 0-2z" />
     </IconBase>
   ))

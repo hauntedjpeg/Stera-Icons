@@ -6,7 +6,7 @@ type QrCodeRegularDuotoneProps = Omit<IconBaseProps, 'children'>;
 
 const QrCodeRegularDuotone = memo(
   forwardRef<SVGSVGElement, QrCodeRegularDuotoneProps>((props, ref) => (
-    <IconBase ref={ref} iconName="qr-code-duotone" {...props}>
+    <IconBase ref={ref} {...props}>
       <path fillRule="evenodd" d="M8.75 13.25a2 2 0 0 1 2 2v4.5a2 2 0 0 1-2 2h-4.5a2 2 0 0 1-2-2v-4.5c0-1.1.9-2 2-2zm-4.5 1.5a.5.5 0 0 0-.5.5v4.5c0 .28.22.5.5.5h4.5a.5.5 0 0 0 .5-.5v-4.5a.5.5 0 0 0-.5-.5zM19.75 2.25a2 2 0 0 1 2 2v4.5a2 2 0 0 1-2 2h-4.5a2 2 0 0 1-2-2v-4.5c0-1.1.9-2 2-2zm-4.5 1.5a.5.5 0 0 0-.5.5v4.5c0 .28.22.5.5.5h4.5a.5.5 0 0 0 .5-.5v-4.5a.5.5 0 0 0-.5-.5z" clipRule="evenodd" opacity={0.4} />
         <path d="M6.5 5.25a1.25 1.25 0 1 1 0 2.5 1.25 1.25 0 0 1 0-2.5" opacity={0.4} />
         <path fillRule="evenodd" d="M8.75 2.25a2 2 0 0 1 2 2v4.5a2 2 0 0 1-2 2h-4.5a2 2 0 0 1-2-2v-4.5c0-1.1.9-2 2-2zm-4.5 1.5a.5.5 0 0 0-.5.5v4.5c0 .28.22.5.5.5h4.5a.5.5 0 0 0 .5-.5v-4.5a.5.5 0 0 0-.5-.5z" clipRule="evenodd" />

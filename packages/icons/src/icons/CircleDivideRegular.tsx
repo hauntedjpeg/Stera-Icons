@@ -6,7 +6,7 @@ type CircleDivideRegularProps = Omit<IconBaseProps, 'children'>;
 
 const CircleDivideRegular = memo(
   forwardRef<SVGSVGElement, CircleDivideRegularProps>((props, ref) => (
-    <IconBase ref={ref} iconName="circle-divide" {...props}>
+    <IconBase ref={ref} {...props}>
       <path fillRule="evenodd" d="M12 2.25a9.75 9.75 0 1 1 0 19.5 9.75 9.75 0 0 1 0-19.5m-.75 1.54a8.25 8.25 0 0 0 0 16.42zm1.5 16.42a8.25 8.25 0 0 0 0-16.42z" clipRule="evenodd" />
     </IconBase>
   ))

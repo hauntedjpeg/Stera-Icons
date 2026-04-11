@@ -6,7 +6,7 @@ type SpeakerHighBoldDuotoneProps = Omit<IconBaseProps, 'children'>;
 
 const SpeakerHighBoldDuotone = memo(
   forwardRef<SVGSVGElement, SpeakerHighBoldDuotoneProps>((props, ref) => (
-    <IconBase ref={ref} iconName="speaker-high-bold-duotone" {...props}>
+    <IconBase ref={ref} {...props}>
       <path d="M19.77 3.22a1 1 0 0 1 1.4.2A14.3 14.3 0 0 1 24 12c0 3.23-1.05 6.2-2.83 8.58a1 1 0 0 1-1.6-1.2A12.3 12.3 0 0 0 22 12c0-2.79-.91-5.34-2.43-7.38a1 1 0 0 1 .2-1.4" opacity={0.4} />
         <path d="M17 5.35a1 1 0 0 1 1.4.2 10.2 10.2 0 0 1-.27 12.75 1 1 0 0 1-1.54-1.28 8.2 8.2 0 0 0 .22-10.27 1 1 0 0 1 .2-1.4" opacity={0.4} />
         <path d="M14.15 7.55a1 1 0 0 1 1.4.18 7 7 0 0 1 0 8.54 1 1 0 0 1-1.59-1.22 5 5 0 0 0 0-6.1 1 1 0 0 1 .19-1.4" opacity={0.4} />

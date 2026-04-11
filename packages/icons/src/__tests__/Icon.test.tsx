@@ -23,12 +23,11 @@ describe('Icon Components', () => {
       expect(path).not.toHaveAttribute('fill');
     });
 
-    it('applies icon-specific CSS class', () => {
+    it('does not add default CSS classes', () => {
       const { container } = render(<SearchBold />);
-      
+
       const svg = container.querySelector('svg');
-      expect(svg).toHaveClass('stera');
-      expect(svg).toHaveClass('stera-search-bold');
+      expect(svg).not.toHaveAttribute('class');
     });
 
     it('accepts size prop', () => {
@@ -85,46 +84,44 @@ describe('Icon Components', () => {
 
     it('renders regular variant by default', () => {
       const { container } = render(<Search />);
-      
+
       const svg = container.querySelector('svg');
       expect(svg).toBeInTheDocument();
-      // Regular variant uses iconName="search"
-      expect(svg).toHaveClass('stera-search');
     });
 
     it('renders bold variant when weight="bold"', () => {
       const { container } = render(<Search weight="bold" />);
-      
+
       const svg = container.querySelector('svg');
-      expect(svg).toHaveClass('stera-search-bold');
+      expect(svg).toBeInTheDocument();
     });
 
     it('renders fill variant when weight="fill"', () => {
       const { container } = render(<Search weight="fill" />);
-      
+
       const svg = container.querySelector('svg');
-      expect(svg).toHaveClass('stera-search-fill');
+      expect(svg).toBeInTheDocument();
     });
 
     it('renders regular duotone variant when duotone=true', () => {
       const { container } = render(<Search duotone />);
-      
+
       const svg = container.querySelector('svg');
-      expect(svg).toHaveClass('stera-search-duotone');
+      expect(svg).toBeInTheDocument();
     });
 
     it('renders bold duotone variant when weight="bold" and duotone=true', () => {
       const { container } = render(<Search weight="bold" duotone />);
-      
+
       const svg = container.querySelector('svg');
-      expect(svg).toHaveClass('stera-search-bold-duotone');
+      expect(svg).toBeInTheDocument();
     });
 
     it('renders fill duotone variant when weight="fill" and duotone=true', () => {
       const { container } = render(<Search weight="fill" duotone />);
-      
+
       const svg = container.querySelector('svg');
-      expect(svg).toHaveClass('stera-search-fill-duotone');
+      expect(svg).toBeInTheDocument();
     });
 
     it('forwards props to variant components', () => {

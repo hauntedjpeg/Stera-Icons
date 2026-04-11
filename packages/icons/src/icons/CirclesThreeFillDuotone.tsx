@@ -6,7 +6,7 @@ type CirclesThreeFillDuotoneProps = Omit<IconBaseProps, 'children'>;
 
 const CirclesThreeFillDuotone = memo(
   forwardRef<SVGSVGElement, CirclesThreeFillDuotoneProps>((props, ref) => (
-    <IconBase ref={ref} iconName="circles-three-fill-duotone" {...props}>
+    <IconBase ref={ref} {...props}>
       <path d="M6.5 11.65a4.38 4.38 0 1 1 0 8.75 4.38 4.38 0 0 1 0-8.75M17.5 11.65a4.38 4.38 0 1 1 0 8.75 4.38 4.38 0 0 1 0-8.75" />
         <path d="M12 2.13a4.38 4.38 0 1 1 0 8.75 4.38 4.38 0 0 1 0-8.76" opacity={.4} />
     </IconBase>

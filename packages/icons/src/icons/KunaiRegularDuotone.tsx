@@ -6,7 +6,7 @@ type KunaiRegularDuotoneProps = Omit<IconBaseProps, 'children'>;
 
 const KunaiRegularDuotone = memo(
   forwardRef<SVGSVGElement, KunaiRegularDuotoneProps>((props, ref) => (
-    <IconBase ref={ref} iconName="kunai-duotone" {...props}>
+    <IconBase ref={ref} {...props}>
       <path fillRule="evenodd" d="m14.3 11.76-.66 3.96a.8.8 0 0 1-.38.54l-9.9 5.4a.75.75 0 0 1-1.02-1.02l5.4-9.9q.18-.31.54-.38l3.96-.66zm-5.42.02-4 7.34 7.34-4 .67-4z" clipRule="evenodd" opacity={0.4} />
         <path d="M16.95 6q.37.67 1.06 1.05l-3.15 3.15-1.06-1.06z" opacity={0.4} />
         <path d="M11.92 8.32c.3-.3.77-.3 1.06 0l2.7 2.7a.75.75 0 0 1-1.06 1.06l-2.7-2.7a.75.75 0 0 1 0-1.06" />

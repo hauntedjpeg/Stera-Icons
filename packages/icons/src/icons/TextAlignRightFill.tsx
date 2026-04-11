@@ -6,7 +6,7 @@ type TextAlignRightFillProps = Omit<IconBaseProps, 'children'>;
 
 const TextAlignRightFill = memo(
   forwardRef<SVGSVGElement, TextAlignRightFillProps>((props, ref) => (
-    <IconBase ref={ref} iconName="text-align-right-fill" {...props}>
+    <IconBase ref={ref} {...props}>
       <path d="M21 16.75a1.25 1.25 0 1 1 0 2.5H7a1.25 1.25 0 1 1 0-2.5zM21 10.75a1.25 1.25 0 1 1 0 2.5H11a1.25 1.25 0 1 1 0-2.5zM21 4.75a1.25 1.25 0 1 1 0 2.5H3a1.25 1.25 0 1 1 0-2.5z" />
     </IconBase>
   ))

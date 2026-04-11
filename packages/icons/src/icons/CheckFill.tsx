@@ -6,7 +6,7 @@ type CheckFillProps = Omit<IconBaseProps, 'children'>;
 
 const CheckFill = memo(
   forwardRef<SVGSVGElement, CheckFillProps>((props, ref) => (
-    <IconBase ref={ref} iconName="check-fill" {...props}>
+    <IconBase ref={ref} {...props}>
       <path d="M19.09 5.15a1.25 1.25 0 0 1 1.82 1.7L10.4 18.13c-.1.1-.23.25-.36.36-.13.12-.35.3-.68.4a1.8 1.8 0 0 1-1.84-.58l-.3-.4-4.23-6.05a1.25 1.25 0 0 1 2.04-1.43l3.92 5.59z" />
     </IconBase>
   ))

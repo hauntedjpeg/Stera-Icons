@@ -6,7 +6,7 @@ type CircleDivideAltFillDuotoneProps = Omit<IconBaseProps, 'children'>;
 
 const CircleDivideAltFillDuotone = memo(
   forwardRef<SVGSVGElement, CircleDivideAltFillDuotoneProps>((props, ref) => (
-    <IconBase ref={ref} iconName="circle-divide-alt-fill-duotone" {...props}>
+    <IconBase ref={ref} {...props}>
       <path d="M21.95 13a10 10 0 0 1-19.9 0zM12 2a10 10 0 0 1 9.95 9H2.05A10 10 0 0 1 12 2" opacity={0.4} />
         <path d="M21.95 11a10 10 0 0 1 0 2H2.05a10 10 0 0 1 0-2z" />
     </IconBase>

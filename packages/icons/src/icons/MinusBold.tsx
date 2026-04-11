@@ -6,7 +6,7 @@ type MinusBoldProps = Omit<IconBaseProps, 'children'>;
 
 const MinusBold = memo(
   forwardRef<SVGSVGElement, MinusBoldProps>((props, ref) => (
-    <IconBase ref={ref} iconName="minus-bold" {...props}>
+    <IconBase ref={ref} {...props}>
       <path d="M21 11a1 1 0 1 1 0 2H3a1 1 0 1 1 0-2z" />
     </IconBase>
   ))

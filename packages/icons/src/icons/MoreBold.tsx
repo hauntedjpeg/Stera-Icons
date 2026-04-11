@@ -6,7 +6,7 @@ type MoreBoldProps = Omit<IconBaseProps, 'children'>;
 
 const MoreBold = memo(
   forwardRef<SVGSVGElement, MoreBoldProps>((props, ref) => (
-    <IconBase ref={ref} iconName="more-bold" {...props}>
+    <IconBase ref={ref} {...props}>
       <path d="M7 12a2 2 0 1 1-4 0 2 2 0 0 1 4 0M14 12a2 2 0 1 1-4 0 2 2 0 0 1 4 0M21 12a2 2 0 1 1-4 0 2 2 0 0 1 4 0" />
     </IconBase>
   ))
