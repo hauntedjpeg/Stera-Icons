@@ -1,3 +1,4 @@
+import { Suspense } from "react";
 import { getAllIcons } from "@/lib/icons";
 import { IconGrid } from "@/components/icon-grid";
 
@@ -13,7 +14,9 @@ export default function Home() {
           details and usage.
         </p>
       </div>
-      <IconGrid icons={icons} />
+      <Suspense>
+        <IconGrid icons={icons} />
+      </Suspense>
     </main>
   );
 }

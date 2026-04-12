@@ -8,7 +8,7 @@ const buttonVariants = cva(
     // Group
     "group/button",
     // Base
-    "inline-flex shrink-0 items-center justify-center rounded-xl border border-transparent transition-all outline-none select-none",
+    "inline-flex shrink-0 items-center justify-center rounded-full border border-transparent transition-all outline-none select-none",
     // Text
     "whitespace-nowrap",
     // Focus
@@ -39,7 +39,7 @@ const buttonVariants = cva(
       },
       size: {
         xs:
-          "h-6 gap-1.5 rounded-lg px-2 st-body-sm-strong in-data-[slot=button-group]:rounded-lg has-data-[icon=inline-end]:pr-1 has-data-[icon=inline-start]:pl-1 has-data-[kbd=inline-end]:pr-1 has-data-[kbd=inline-start]:pl-1 [&_svg:not([class*='size-'])]:size-3",
+          "h-6 gap-1.5 px-2 st-body-sm-strong in-data-[slot=button-group]:rounded-lg has-data-[icon=inline-end]:pr-1 has-data-[icon=inline-start]:pl-1 has-data-[kbd=inline-end]:pr-1 has-data-[kbd=inline-start]:pl-1 [&_svg:not([class*='size-'])]:size-3",
         sm:
           "h-8 gap-2 px-3 st-body-sm-strong has-data-[icon=inline-end]:pr-1.5 has-data-[icon=inline-start]:pl-1.5 has-data-[kbd=inline-end]:pr-1.5 has-data-[kbd=inline-start]:pl-1.5 data-[variant=link]:gap-1",
         md:
@@ -49,7 +49,7 @@ const buttonVariants = cva(
         icon:
           "size-9 [&_svg:not([class*='size-'])]:size-5",
         "icon-xs":
-          "size-6 rounded-lg in-data-[slot=button-group]:rounded-md [&_svg:not([class*='size-'])]:size-3",
+          "size-6 in-data-[slot=button-group]:rounded-md [&_svg:not([class*='size-'])]:size-3",
         "icon-sm":
           "size-8",
         "icon-lg":

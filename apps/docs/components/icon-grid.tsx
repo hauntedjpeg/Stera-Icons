@@ -1,6 +1,7 @@
 "use client";
 
-import { useState, useMemo } from "react";
+import { useMemo } from "react";
+import { useSearchParams } from "next/navigation";
 import { IconCard } from "@/components/icon-card";
 
 interface IconEntry {
@@ -14,7 +15,8 @@ interface IconGridProps {
 }
 
 export function IconGrid({ icons }: IconGridProps) {
-  const [query, setQuery] = useState("");
+  const searchParams = useSearchParams();
+  const query = searchParams.get("q") ?? "";
 
   const filtered = useMemo(() => {
     if (!query) return icons;
@@ -27,15 +29,6 @@ export function IconGrid({ icons }: IconGridProps) {
 
   return (
     <div className="flex flex-col gap-6">
-      <div className="sticky top-14 z-40 bg-bg-surface/80 backdrop-blur-sm py-4 -mx-4 px-4 sm:-mx-6 sm:px-6">
-        <input
-          type="text"
-          placeholder={`Search ${icons.length} icons...`}
-          value={query}
-          onChange={(e) => setQuery(e.target.value)}
-          className="w-full max-w-md rounded-lg border border-border bg-bg-surface px-4 py-2 st-body-md text-text placeholder:text-text-tertiary outline-none focus:border-border-secondary focus:ring-1 focus:ring-ring transition-colors"
-        />
-      </div>
       {filtered.length === 0 ? (
         <p className="st-body-md text-text-secondary py-12 text-center">
           No icons found for &ldquo;{query}&rdquo;
