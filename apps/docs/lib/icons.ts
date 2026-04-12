@@ -1,44 +1,42 @@
 import "server-only";
-import { readFileSync } from "fs";
-import { resolve } from "path";
+import iconData from "@/data/icons.json";
 
-interface IconVariantMeta {
-  variant: { weight: "Regular" | "Bold" | "Fill"; duotone: boolean };
-  svg: string;
-}
-
-interface RawIcon {
+interface IconEntry {
   name: string;
+  kebabName: string;
+  componentName: string;
   tags: string[];
-  variants: IconVariantMeta[];
+  weights: string[];
+  supportsDuotone: boolean;
+  variants: Record<
+    string,
+    { version: string; componentName: string; fileName: string }
+  >;
 }
 
-interface IconsExport {
-  icons: RawIcon[];
-}
-
-const data: IconsExport = JSON.parse(
-  readFileSync(
-    resolve(process.cwd(), "../../packages/icons/icons-export.json"),
-    "utf-8"
-  )
-);
+const data = iconData as IconEntry[];
 
 export interface IconSummary {
   name: string;
+  kebabName: string;
   tags: string[];
-  defaultSvg: string;
 }
 
 export interface IconDetail {
   name: string;
+  kebabName: string;
   tags: string[];
-  variants: { label: string; svg: string }[];
+  variants: {
+    label: string;
+    weight: "regular" | "bold" | "fill";
+    duotone: boolean;
+  }[];
 }
 
-function variantLabel(v: IconVariantMeta["variant"]): string {
-  if (v.duotone) return `${v.weight} Duotone`;
-  return v.weight;
+function variantLabel(weight: string, duotone: boolean): string {
+  const w = weight.charAt(0).toUpperCase() + weight.slice(1);
+  if (duotone) return `${w} Duotone`;
+  return w;
 }
 
 export function toPascalCase(kebab: string): string {
@@ -49,31 +47,39 @@ export function toPascalCase(kebab: string): string {
 }
 
 export function getAllIcons(): IconSummary[] {
-  return data.icons.map((icon) => {
-    const defaultVariant = icon.variants.find(
-      (v) => v.variant.weight === "Regular" && !v.variant.duotone
-    );
-    return {
-      name: icon.name,
-      tags: icon.tags,
-      defaultSvg: defaultVariant?.svg ?? icon.variants[0].svg,
-    };
-  });
+  return data.map((icon) => ({
+    name: icon.name,
+    kebabName: icon.kebabName,
+    tags: icon.tags,
+  }));
 }
 
-export function getIconByName(name: string): IconDetail | null {
-  const icon = data.icons.find((i) => i.name === name);
+export function getIconByName(kebabName: string): IconDetail | null {
+  const icon = data.find((i) => i.kebabName === kebabName);
   if (!icon) return null;
+
+  const variants: IconDetail["variants"] = [];
+  for (const [key, _info] of Object.entries(icon.variants)) {
+    const isDuotone = key.endsWith("-duotone");
+    const weight = (isDuotone ? key.replace("-duotone", "") : key) as
+      | "regular"
+      | "bold"
+      | "fill";
+    variants.push({
+      label: variantLabel(weight, isDuotone),
+      weight,
+      duotone: isDuotone,
+    });
+  }
+
   return {
     name: icon.name,
+    kebabName: icon.kebabName,
     tags: icon.tags,
-    variants: icon.variants.map((v) => ({
-      label: variantLabel(v.variant),
-      svg: v.svg,
-    })),
+    variants,
   };
 }
 
 export function getAllIconNames(): string[] {
-  return data.icons.map((i) => i.name);
+  return data.map((i) => i.kebabName);
 }

@@ -5,8 +5,8 @@ import { IconCard } from "@/components/icon-card";
 
 interface IconEntry {
   name: string;
+  kebabName: string;
   tags: string[];
-  defaultSvg: string;
 }
 
 interface IconGridProps {
@@ -21,7 +21,7 @@ export function IconGrid({ icons }: IconGridProps) {
     const q = query.toLowerCase();
     return icons.filter(
       (icon) =>
-        icon.name.includes(q) || icon.tags.some((tag) => tag.includes(q))
+        icon.kebabName.includes(q) || icon.tags.some((tag) => tag.includes(q))
     );
   }, [icons, query]);
 
@@ -43,7 +43,7 @@ export function IconGrid({ icons }: IconGridProps) {
       ) : (
         <div className="grid grid-cols-3 sm:grid-cols-4 md:grid-cols-6 lg:grid-cols-8 xl:grid-cols-10 gap-3">
           {filtered.map((icon) => (
-            <IconCard key={icon.name} name={icon.name} svg={icon.defaultSvg} />
+            <IconCard key={icon.kebabName} name={icon.name} kebabName={icon.kebabName} />
           ))}
         </div>
       )}

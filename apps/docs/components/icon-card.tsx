@@ -1,20 +1,20 @@
 import Link from "next/link";
+import { IconRenderer } from "@/components/icon-renderer";
 
 interface IconCardProps {
   name: string;
-  svg: string;
+  kebabName: string;
 }
 
-export function IconCard({ name, svg }: IconCardProps) {
+export function IconCard({ name, kebabName }: IconCardProps) {
   return (
     <Link
-      href={`/icons/${name}`}
-      className="group flex flex-col items-center gap-2 rounded-lg border border-border p-4 transition-colors hover:bg-bg-surface-secondary hover:border-border-secondary"
-      style={{ contentVisibility: "auto", containIntrinsicSize: "0 120px" }}
+      href={`/icons/${kebabName}`}
+      className="group flex flex-col items-center gap-2 border border-border p-4 transition-colors hover:bg-bg-surface-secondary hover:border-border-secondary"
     >
-      <div
-        className="flex h-10 w-10 items-center justify-center text-text [&>svg]:h-6 [&>svg]:w-6"
-        dangerouslySetInnerHTML={{ __html: svg }}
+      <IconRenderer
+        iconName={kebabName}
+        className="h-6 w-6"
       />
       <span className="st-body-sm text-text-secondary text-center truncate w-full">
         {name}

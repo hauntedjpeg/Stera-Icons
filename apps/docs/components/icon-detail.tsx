@@ -1,13 +1,14 @@
 import type { IconDetail } from "@/lib/icons";
 import { toPascalCase } from "@/lib/icons";
 import { CodeBlock } from "@/components/code-block";
+import { IconRenderer } from "@/components/icon-renderer";
 
 interface IconDetailContentProps {
   icon: IconDetail;
 }
 
 export function IconDetailContent({ icon }: IconDetailContentProps) {
-  const pascal = toPascalCase(icon.name);
+  const pascal = toPascalCase(icon.kebabName);
 
   return (
     <>
@@ -35,9 +36,11 @@ export function IconDetailContent({ icon }: IconDetailContentProps) {
               key={v.label}
               className="flex flex-col items-center gap-3 rounded-lg border border-border p-6"
             >
-              <div
-                className="flex h-12 w-12 items-center justify-center text-text [&>svg]:h-8 [&>svg]:w-8"
-                dangerouslySetInnerHTML={{ __html: v.svg }}
+              <IconRenderer
+                iconName={icon.kebabName}
+                weight={v.weight}
+                duotone={v.duotone}
+                className="h-8 w-8"
               />
               <span className="st-body-sm text-text-secondary">{v.label}</span>
             </div>

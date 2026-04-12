@@ -3,8 +3,9 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "next dev",
-    "build": "pnpm --filter stera-icons build && next build",
+    "generate-icons": "node scripts/generate-icons.mjs",
+    "dev": "pnpm generate-icons && next dev",
+    "build": "pnpm --filter stera-icons build && pnpm generate-icons && next build",
     "start": "next start",
     "lint": "eslint"
   },
