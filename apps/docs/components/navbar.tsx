@@ -1,6 +1,6 @@
 import Link from "next/link"
 import { Button } from "@/components/ui/button"
-import { SiAstriskAlt } from "stera-icons/icons/AstriskAlt"
+import { SiAsteriskAlt } from "stera-icons/icons/AsteriskAlt"
 import { SearchInput } from "@/components/search-input"
 import { getAllIcons } from "@/lib/icons"
 import { Suspense } from "react"
@@ -14,7 +14,7 @@ export function Navbar() {
 
         <div className="flex gap-2">
           <Button nativeButton={false} render={<a href="/" />}>
-            <SiAstriskAlt data-icon="inline-start" />Stera Icons
+            <SiAsteriskAlt data-icon="inline-start" />Stera Icons
           </Button>
         </div>
 

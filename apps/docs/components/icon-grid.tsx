@@ -1,20 +1,26 @@
-"use client";
+"use client"
 
-import { useMemo } from "react";
-import { useSearchParams } from "next/navigation";
-import { IconCard } from "@/components/icon-card";
-
-interface IconEntry {
-  name: string;
-  kebabName: string;
-  tags: string[];
-}
+import { useMemo } from "react"
+import { useSearchParams } from "next/navigation"
+import type { IconData } from "@/lib/types"
+import { IconCard } from "@/components/icon-card"
+import { Button } from "@/components/ui/button"
+import {
+  Empty,
+  EmptyHeader,
+  EmptyMedia,
+  EmptyTitle,
+  EmptyDescription,
+  EmptyContent
+} from "@/components/ui/empty"
+import { SiSquareDashed } from "stera-icons"
 
 interface IconGridProps {
-  icons: IconEntry[];
+  icons: IconData[];
+  onIconClick: (icon: IconData) => void;
 }
 
-export function IconGrid({ icons }: IconGridProps) {
+export function IconGrid({ icons, onIconClick }: IconGridProps) {
   const searchParams = useSearchParams();
   const query = searchParams.get("q") ?? "";
 
@@ -30,13 +36,22 @@ export function IconGrid({ icons }: IconGridProps) {
   return (
     <div className="flex flex-col gap-6">
       {filtered.length === 0 ? (
-        <p className="st-body-md text-text-secondary py-12 text-center">
-          No icons found for &ldquo;{query}&rdquo;
-        </p>
+        <Empty>
+          <EmptyHeader>
+            <EmptyMedia variant="icon">
+              <SiSquareDashed />
+            </EmptyMedia>
+            <EmptyTitle>No icons found</EmptyTitle>
+            <EmptyDescription>Try adjusting your search term or request an icon by creating an issue on GitHub.</EmptyDescription>
+          </EmptyHeader>
+          <EmptyContent>
+            <Button variant="brand" nativeButton={false} render={<a href="https://github.com/hauntedjpeg/Stera-Icons/issues/new?template=request.md" />}>Request an icon</Button>
+          </EmptyContent>
+        </Empty>
       ) : (
         <div className="grid grid-cols-3 sm:grid-cols-4 md:grid-cols-6 lg:grid-cols-8 xl:grid-cols-10 gap-3">
           {filtered.map((icon) => (
-            <IconCard key={icon.kebabName} name={icon.name} kebabName={icon.kebabName} />
+            <IconCard key={icon.kebabName} icon={icon} onIconClick={onIconClick} />
           ))}
         </div>
       )}

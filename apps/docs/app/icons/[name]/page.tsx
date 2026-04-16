@@ -1,8 +1,8 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { notFound } from "next/navigation";
-import { getAllIconNames, getIconByName, toPascalCase } from "@/lib/icons";
-import { IconDetailContent } from "@/components/icon-detail";
+import { getAllIconNames, getIconData, toPascalCase } from "@/lib/icons";
+import { IconDetailPage } from "@/components/icon-detail-page";
 
 export function generateStaticParams() {
   return getAllIconNames().map((name) => ({ name }));
@@ -27,7 +27,7 @@ export default async function IconPage({
   params: Promise<{ name: string }>;
 }) {
   const { name } = await params;
-  const icon = getIconByName(name);
+  const icon = getIconData(name);
   if (!icon) notFound();
 
   return (
@@ -39,7 +39,7 @@ export default async function IconPage({
         &larr; All icons
       </Link>
       <div className="mt-6">
-        <IconDetailContent icon={icon} />
+        <IconDetailPage icon={icon} />
       </div>
     </main>
   );

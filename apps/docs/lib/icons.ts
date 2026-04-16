@@ -1,20 +1,10 @@
 import "server-only";
 import iconData from "@/data/icons.json";
+import type { IconData } from "@/lib/types";
 
-interface IconEntry {
-  name: string;
-  kebabName: string;
-  componentName: string;
-  tags: string[];
-  weights: string[];
-  supportsDuotone: boolean;
-  variants: Record<
-    string,
-    { version: string; componentName: string; fileName: string }
-  >;
-}
+export type { IconData };
 
-const data = iconData as IconEntry[];
+const data = iconData as IconData[];
 
 export interface IconSummary {
   name: string;
@@ -78,6 +68,14 @@ export function getIconByName(kebabName: string): IconDetail | null {
     tags: icon.tags,
     variants,
   };
+}
+
+export function getAllIconData(): IconData[] {
+  return data;
+}
+
+export function getIconData(kebabName: string): IconData | null {
+  return data.find((i) => i.kebabName === kebabName) ?? null;
 }
 
 export function getAllIconNames(): string[] {

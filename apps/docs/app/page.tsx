@@ -1,9 +1,9 @@
 import { Suspense } from "react";
-import { getAllIcons } from "@/lib/icons";
-import { IconGrid } from "@/components/icon-grid";
+import { getAllIconData } from "@/lib/icons";
+import { IconExplorer } from "@/components/icon-explorer";
 
 export default function Home() {
-  const icons = getAllIcons();
+  const icons = getAllIconData();
 
   return (
     <main className="mx-auto w-full max-w-7xl flex-1 px-4 py-8 sm:px-6">
@@ -15,7 +15,7 @@ export default function Home() {
         </p>
       </div>
       <Suspense>
-        <IconGrid icons={icons} />
+        <IconExplorer icons={icons} />
       </Suspense>
     </main>
   );

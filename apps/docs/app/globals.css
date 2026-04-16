@@ -1,2 +1,31 @@
 @import "tailwindcss";
 @import './stera-ui.css';
+
+.syntax-keyword {
+  color: #71717A;
+}
+
+.syntax-component {
+  color: #D4D4D8;
+}
+
+.syntax-string {
+  color: #D4D4D8;
+}
+
+.syntax-prop {
+  color: #71717A;
+}
+
+.syntax-value {
+  color: #71717A;
+}
+
+.syntax-comment {
+  color: #3F3F46;
+  font-style: italic;
+}
+
+.syntax-punctuation {
+  color: #3F3F46;
+}
