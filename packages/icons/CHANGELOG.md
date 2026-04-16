@@ -1,5 +1,11 @@
 # @stera/icons
 
+## 8.2.0
+
+### Minor Changes
+
+- 528c977: Added new icons and updated existing icons
+
 ## 8.1.2
 
 ### Patch Changes
