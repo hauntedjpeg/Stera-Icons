@@ -6,6 +6,9 @@
 
 import { generateTripleExport } from '../helpers.js';
 
+// JS restricted names that trigger eslint no-shadow-restricted-names
+const RESTRICTED_GLOBALS = new Set(['undefined', 'NaN', 'Infinity', 'arguments', 'eval']);
+
 /**
  * Generate JSX for path elements
  * @param {Array<Object>} paths - Array of path objects with attributes
@@ -81,6 +84,7 @@ export function generateWrapperComponent({
   defaultComponent,
   regularVariantName
 }) {
+  const eslintDisable = RESTRICTED_GLOBALS.has(baseComponentName) ? '// eslint-disable-next-line no-shadow-restricted-names\n' : '';
   return `import { forwardRef, memo } from 'react';
 import type { IconProps } from '../types.js';
 ${imports.join('\n')}
@@ -96,7 +100,7 @@ export interface ${baseComponentName}Props extends IconProps {
  * For smaller bundle size, import specific variants directly:
  * import { ${regularVariantName} } from 'stera-icons/icons/${regularVariantName}';
  */
-const ${baseComponentName} = memo(forwardRef<SVGSVGElement, ${baseComponentName}Props>(({ 
+${eslintDisable}const ${baseComponentName} = memo(forwardRef<SVGSVGElement, ${baseComponentName}Props>(({ 
   weight = 'regular',
   duotone = false,
   ...rest 

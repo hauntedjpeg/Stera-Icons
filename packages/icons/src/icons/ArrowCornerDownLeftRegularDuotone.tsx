@@ -7,8 +7,8 @@ type ArrowCornerDownLeftRegularDuotoneProps = Omit<IconBaseProps, 'children'>;
 const ArrowCornerDownLeftRegularDuotone = memo(
   forwardRef<SVGSVGElement, ArrowCornerDownLeftRegularDuotoneProps>((props, ref) => (
     <IconBase ref={ref} {...props}>
-      <path d="M19 4.25c.41 0 .75.34.75.75v8A3.75 3.75 0 0 1 16 16.75H5.81L5.06 16l.75-.75H16c1.24 0 2.25-1 2.25-2.25V5c0-.41.34-.75.75-.75" opacity={.4} />
-        <path d="M7.47 11.47a.75.75 0 1 1 1.06 1.06L5.06 16l3.47 3.47a.75.75 0 1 1-1.06 1.06l-4-4-.1-.11a.75.75 0 0 1 .1-.95z" />
+      <path d="M20 5.25c.41 0 .75.34.75.75 0 1.8 0 2.88-.28 3.78a5.8 5.8 0 0 1-3.7 3.69c-.89.29-1.97.28-3.77.28H5.81L5.06 13l.75-.75H13c1.92 0 2.7 0 3.31-.2a4.3 4.3 0 0 0 2.73-2.74c.2-.6.21-1.39.21-3.31 0-.41.34-.75.75-.75" opacity={.4} />
+        <path d="M8.47 7.47a.75.75 0 1 1 1.06 1.06L5.06 13l4.47 4.47a.75.75 0 1 1-1.06 1.06l-5-5-.1-.11a.75.75 0 0 1 .1-.95z" />
     </IconBase>
   ))
 );
