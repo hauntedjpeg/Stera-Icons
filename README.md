@@ -1,32 +1,19 @@
 # Stera Icons
 
-Monorepo for the Stera icon ecosystem.
+An icon library with personality and discipline. Available for Figma and React.
 
-## Packages
+Browse icons and documentation at [stera.sh](https://stera.sh).
 
-| Package | Description |
-|---------|-------------|
-| [stera-icons](packages/icons) | A lightweight, tree-shakeable React icon library (ESM-only) |
-| [docs](apps/docs) | Documentation site at [stera.site](https://stera.site) |
+## Stats
 
-## Development
-
-```bash
-# Install dependencies
-pnpm install
-
-# Build the icons package
-pnpm build
-
-# Run the docs site
-pnpm dev:docs
-
-# Run tests
-pnpm test
-
-# Lint
-pnpm lint
-```
+| Stat | Value |
+|------|-------|
+| Icons | 784 |
+| Variants per icon | 6 (Regular, Bold, Fill + Duotone) |
+| Total variants | 4,704 |
+| Avg size per icon | ~0.9 KB (minified, pre-gzip) |
+| Tree-shakeable | Yes |
+| Format | ESM-only |
 
 ## License
 
