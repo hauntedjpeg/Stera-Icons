@@ -1,5 +1,11 @@
 # @stera/icons
 
+## 8.3.1
+
+### Patch Changes
+
+- b62da07: fix: AgentWorkflow icon opacity
+
 ## 8.3.0
 
 ### Minor Changes
