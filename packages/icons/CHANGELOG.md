@@ -1,5 +1,11 @@
 # @stera/icons
 
+## 8.4.0
+
+### Minor Changes
+
+- 36235ad: Added message-circle-sparkle, message-square-sparkle, power, and radar icons (all 6 weights each). Renamed the chat-box-_ family to message-square-_ (alert, check, dashed, dot, dots, off, plus, question, text) and the chat-bubble-_ family to message-circle-_ (alert, check, dashed, dot, dots, off, plus, question, text); chat-messages renamed to message-messages. SVG path edits to existing icons.
+
 ## 8.3.1
 
 ### Patch Changes
