@@ -1,5 +1,11 @@
 # @stera/icons
 
+## 8.5.0
+
+### Minor Changes
+
+- 7e080fc: Add 6 new icons: contrast-circle, pen-nib-alt, pyramid, shapes, shapes-plus, stethoscope
+
 ## 8.4.0
 
 ### Minor Changes
