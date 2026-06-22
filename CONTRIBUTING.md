@@ -2,7 +2,7 @@
 
 ## Prerequisites
 
-- Node.js >= 18
+- Node.js >= 22 (Node 24 LTS recommended — see `.nvmrc`)
 - pnpm (`corepack enable` to use the version pinned in package.json)
 
 ```bash

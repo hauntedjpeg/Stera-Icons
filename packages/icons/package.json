@@ -79,7 +79,7 @@
     "@svgr/plugin-prettier": "^8.1.0",
     "@testing-library/jest-dom": "^6.1.0",
     "@testing-library/react": "^14.1.0",
-    "@types/node": "^20.10.0",
+    "@types/node": "^24.0.0",
     "@types/react": "^18.2.0",
     "@typescript-eslint/eslint-plugin": "^8.43.0",
     "@typescript-eslint/parser": "^8.43.0",
@@ -110,6 +110,6 @@
   },
   "license": "MIT",
   "engines": {
-    "node": ">=18.0.0"
+    "node": ">=22.0.0"
   }
 }
