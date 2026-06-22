@@ -8,9 +8,9 @@ Browse icons and documentation at [stera.sh](https://stera.sh).
 
 | Stat | Value |
 |------|-------|
-| Icons | 794 |
+| Icons | 800 |
 | Variants per icon | 6 (Regular, Bold, Fill + Duotone) |
-| Total variants | 4,764 |
+| Total variants | 4,800 |
 | Avg size per icon | ~0.9 KB (minified, pre-gzip) |
 | Tree-shakeable | Yes |
 | Format | ESM-only |
