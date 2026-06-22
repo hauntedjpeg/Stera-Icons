@@ -7,8 +7,8 @@ type SearchFillDuotoneProps = Omit<IconBaseProps, 'children'>;
 const SearchFillDuotone = memo(
   forwardRef<SVGSVGElement, SearchFillDuotoneProps>((props, ref) => (
     <IconBase ref={ref} {...props}>
-      <path d="M22.24 19.76a1.75 1.75 0 1 1-2.48 2.48l-3.57-3.58a9 9 0 0 0 2.47-2.47z" opacity={.4} />
-        <path fillRule="evenodd" d="M11 1.75a9.25 9.25 0 1 1 0 18.5 9.25 9.25 0 0 1 0-18.5m0 2.5a6.75 6.75 0 1 0 0 13.5 6.75 6.75 0 0 0 0-13.5" clipRule="evenodd" />
+      <path d="M21.74 19.26a1.75 1.75 0 1 1-2.48 2.48l-3.44-3.44a9 9 0 0 0 2.48-2.48z" opacity={.4} />
+        <path fillRule="evenodd" d="M11 2.25a8.75 8.75 0 1 1 0 17.5 8.75 8.75 0 0 1 0-17.5m0 2.5a6.25 6.25 0 1 0 0 12.5 6.25 6.25 0 0 0 0-12.5" clipRule="evenodd" />
     </IconBase>
   ))
 );

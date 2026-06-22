@@ -7,8 +7,8 @@ type TogglesFillDuotoneProps = Omit<IconBaseProps, 'children'>;
 const TogglesFillDuotone = memo(
   forwardRef<SVGSVGElement, TogglesFillDuotoneProps>((props, ref) => (
     <IconBase ref={ref} {...props}>
-      <path d="M16 12.88a4.87 4.87 0 1 1 0 9.74H8a4.87 4.87 0 1 1 0-9.75zm0 2.87a2 2 0 1 0 0 4 2 2 0 0 0 0-4M16 1.38a4.87 4.87 0 1 1 0 9.75H8a4.87 4.87 0 1 1 0-9.76zM8 3.13a3.12 3.12 0 1 0 0 6.25h8a3.12 3.12 0 1 0 0-6.26z" opacity={0.4} />
-        <path d="M16 15.75a2 2 0 1 1 0 4 2 2 0 0 1 0-4M8 4.25a2 2 0 1 1 0 4 2 2 0 0 1 0-4" />
+      <path d="M16 12.63a4.87 4.87 0 1 1 0 9.74H8a4.87 4.87 0 1 1 0-9.75zm-2 3a1.88 1.88 0 0 0 0 3.74h2a1.88 1.88 0 0 0 0-3.75zM16 1.63a4.87 4.87 0 1 1 0 9.75H8a4.87 4.87 0 1 1 0-9.76zm-8 3a1.88 1.88 0 0 0 0 3.75h2a1.88 1.88 0 0 0 0-3.76z" opacity={0.4} />
+        <path d="M16 15.63a1.88 1.88 0 0 1 0 3.74h-2a1.88 1.88 0 0 1 0-3.75zM10 4.63a1.88 1.88 0 0 1 0 3.75H8a1.88 1.88 0 0 1 0-3.76z" />
     </IconBase>
   ))
 );

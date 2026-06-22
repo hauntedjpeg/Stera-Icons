@@ -7,7 +7,7 @@ type SearchBoldProps = Omit<IconBaseProps, 'children'>;
 const SearchBold = memo(
   forwardRef<SVGSVGElement, SearchBoldProps>((props, ref) => (
     <IconBase ref={ref} {...props}>
-      <path fillRule="evenodd" d="M10.75 1.75a9 9 0 0 1 7.33 14.21l3.73 3.73a1.5 1.5 0 1 1-2.12 2.12l-3.73-3.73a9 9 0 1 1-5.21-16.33m0 2a7 7 0 1 0 0 14 7 7 0 0 0 0-14" clipRule="evenodd" />
+      <path fillRule="evenodd" d="M11 2.5a8.5 8.5 0 0 1 6.97 13.35l3.6 3.59a1.5 1.5 0 1 1-2.13 2.12l-3.59-3.59A8.5 8.5 0 1 1 11 2.5m0 2a6.5 6.5 0 1 0 0 13 6.5 6.5 0 0 0 0-13" clipRule="evenodd" />
     </IconBase>
   ))
 );

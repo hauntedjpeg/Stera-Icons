@@ -7,8 +7,8 @@ type SearchRegularDuotoneProps = Omit<IconBaseProps, 'children'>;
 const SearchRegularDuotone = memo(
   forwardRef<SVGSVGElement, SearchRegularDuotoneProps>((props, ref) => (
     <IconBase ref={ref} {...props}>
-      <path d="M21.7 20.3a1 1 0 1 1-1.4 1.4l-3.86-3.85q.79-.62 1.41-1.41z" opacity={.4} />
-        <path fillRule="evenodd" d="M11 2.25a8.75 8.75 0 1 1 0 17.5 8.75 8.75 0 0 1 0-17.5m0 1.5a7.25 7.25 0 1 0 0 14.5 7.25 7.25 0 0 0 0-14.5" clipRule="evenodd" />
+      <path d="M21.38 19.62a1.25 1.25 0 0 1-1.76 1.76l-3.74-3.73q1.02-.76 1.77-1.77z" opacity={.4} />
+        <path fillRule="evenodd" d="M11 2.75a8.25 8.25 0 1 1 0 16.5 8.25 8.25 0 0 1 0-16.5m0 1.5a6.75 6.75 0 1 0 0 13.5 6.75 6.75 0 0 0 0-13.5" clipRule="evenodd" />
     </IconBase>
   ))
 );
