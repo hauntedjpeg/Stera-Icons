@@ -2,10 +2,10 @@ import { memo, forwardRef } from 'react';
 import { IconBase } from '../base.js';
 import type { IconBaseProps } from '../base.js';
 
-type KeyAltFillDuotoneProps = Omit<IconBaseProps, 'children'>;
+type KeyHFillDuotoneProps = Omit<IconBaseProps, 'children'>;
 
-const KeyAltFillDuotone = memo(
-  forwardRef<SVGSVGElement, KeyAltFillDuotoneProps>((props, ref) => (
+const KeyHFillDuotone = memo(
+  forwardRef<SVGSVGElement, KeyHFillDuotoneProps>((props, ref) => (
     <IconBase ref={ref} {...props}>
       <path fillRule="evenodd" d="M17 6.5a5.5 5.5 0 1 1-4.9 8H9.7l-1.75 1.76-.35-.46-1.15-1.54L5 15.71 1.3 12l2.5-2.5h8.3a5.5 5.5 0 0 1 4.9-3m1.5 4a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3" clipRule="evenodd" opacity={.4} />
         <path d="M18.5 10.5a1.5 1.5 0 1 1 0 3 1.5 1.5 0 0 1 0-3" />
@@ -13,9 +13,9 @@ const KeyAltFillDuotone = memo(
   ))
 );
 
-KeyAltFillDuotone.displayName = 'KeyAltFillDuotone';
+KeyHFillDuotone.displayName = 'KeyHFillDuotone';
 
 // Triple export pattern (lucide-react style)
-export { KeyAltFillDuotone, KeyAltFillDuotone as KeyAltFillDuotoneIcon, KeyAltFillDuotone as SiKeyAltFillDuotone };
-export default KeyAltFillDuotone;
-export type { KeyAltFillDuotoneProps };
+export { KeyHFillDuotone, KeyHFillDuotone as KeyHFillDuotoneIcon, KeyHFillDuotone as SiKeyHFillDuotone };
+export default KeyHFillDuotone;
+export type { KeyHFillDuotoneProps };

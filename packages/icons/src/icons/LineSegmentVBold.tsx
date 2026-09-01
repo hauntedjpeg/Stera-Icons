@@ -7,7 +7,7 @@ type LineSegmentVBoldProps = Omit<IconBaseProps, 'children'>;
 const LineSegmentVBold = memo(
   forwardRef<SVGSVGElement, LineSegmentVBoldProps>((props, ref) => (
     <IconBase ref={ref} {...props}>
-      <path fillRule="evenodd" d="M12 1a3.5 3.5 0 0 1 1 6.85v8.3a3.5 3.5 0 1 1-2 0v-8.3A3.5 3.5 0 0 1 12 1m0 17a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3m0-15a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3" clipRule="evenodd" />
+      <path fillRule="evenodd" d="M12 0a4 4 0 0 1 1 7.87v8.26a4 4 0 1 1-2 0V7.87A4 4 0 0 1 12 0m0 18a2 2 0 1 0 0 4 2 2 0 0 0 0-4m0-16a2 2 0 1 0 0 4 2 2 0 0 0 0-4" clipRule="evenodd" />
     </IconBase>
   ))
 );

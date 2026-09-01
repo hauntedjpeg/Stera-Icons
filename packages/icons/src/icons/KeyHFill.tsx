@@ -2,19 +2,19 @@ import { memo, forwardRef } from 'react';
 import { IconBase } from '../base.js';
 import type { IconBaseProps } from '../base.js';
 
-type KeyAltFillProps = Omit<IconBaseProps, 'children'>;
+type KeyHFillProps = Omit<IconBaseProps, 'children'>;
 
-const KeyAltFill = memo(
-  forwardRef<SVGSVGElement, KeyAltFillProps>((props, ref) => (
+const KeyHFill = memo(
+  forwardRef<SVGSVGElement, KeyHFillProps>((props, ref) => (
     <IconBase ref={ref} {...props}>
       <path fillRule="evenodd" d="M17 6.5a5.5 5.5 0 1 1-4.9 8H9.7l-1.75 1.76-.35-.46-1.15-1.54L5 15.71 1.3 12l2.5-2.5h8.3a5.5 5.5 0 0 1 4.9-3m1.5 4a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3" clipRule="evenodd" />
     </IconBase>
   ))
 );
 
-KeyAltFill.displayName = 'KeyAltFill';
+KeyHFill.displayName = 'KeyHFill';
 
 // Triple export pattern (lucide-react style)
-export { KeyAltFill, KeyAltFill as KeyAltFillIcon, KeyAltFill as SiKeyAltFill };
-export default KeyAltFill;
-export type { KeyAltFillProps };
+export { KeyHFill, KeyHFill as KeyHFillIcon, KeyHFill as SiKeyHFill };
+export default KeyHFill;
+export type { KeyHFillProps };

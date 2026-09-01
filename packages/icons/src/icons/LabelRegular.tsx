@@ -7,7 +7,7 @@ type LabelRegularProps = Omit<IconBaseProps, 'children'>;
 const LabelRegular = memo(
   forwardRef<SVGSVGElement, LabelRegularProps>((props, ref) => (
     <IconBase ref={ref} {...props}>
-      <path fillRule="evenodd" d="M17 4.25A4.75 4.75 0 0 1 21.75 9v6A4.75 4.75 0 0 1 17 19.75H9.06a4.8 4.8 0 0 1-3.87-1.99L2.22 13.6a2.75 2.75 0 0 1 0-3.2l2.97-4.16a4.8 4.8 0 0 1 3.87-1.99zm-7.94 1.5c-1.05 0-2.04.5-2.65 1.36l-2.97 4.16a1.25 1.25 0 0 0 0 1.46l2.97 4.16c.61.85 1.6 1.36 2.65 1.36H17c1.8 0 3.25-1.46 3.25-3.25V9c0-1.8-1.45-3.25-3.25-3.25z" clipRule="evenodd" />
+      <path fillRule="evenodd" d="M15.46 4.25c1.2 0 2.34.58 3.05 1.57l3.27 4.58c.68.96.68 2.24 0 3.2l-3.27 4.58a3.8 3.8 0 0 1-3.05 1.57H6A3.75 3.75 0 0 1 2.25 16V8A3.75 3.75 0 0 1 6 4.25zM6 5.75c-1.24 0-2.25 1-2.25 2.25v8c0 1.24 1 2.25 2.25 2.25h9.46c.72 0 1.4-.35 1.83-.94l3.27-4.58c.31-.44.31-1.02 0-1.46L17.29 6.7c-.43-.59-1.1-.94-1.83-.94z" clipRule="evenodd" />
     </IconBase>
   ))
 );

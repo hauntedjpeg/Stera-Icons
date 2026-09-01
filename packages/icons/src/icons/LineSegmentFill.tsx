@@ -7,7 +7,7 @@ type LineSegmentFillProps = Omit<IconBaseProps, 'children'>;
 const LineSegmentFill = memo(
   forwardRef<SVGSVGElement, LineSegmentFillProps>((props, ref) => (
     <IconBase ref={ref} {...props}>
-      <path d="M18.5 2.13a3.37 3.37 0 1 1-1.69 6.3L8.42 16.8q.45.76.46 1.69a3.37 3.37 0 1 1-1.7-2.92l8.4-8.4a3.37 3.37 0 0 1 2.92-5.06" />
+      <path d="M18 2.13a3.88 3.88 0 1 1-2.05 7.16l-6.66 6.66q.57.91.59 2.05a3.88 3.88 0 1 1-1.83-3.29l6.66-6.66q-.57-.91-.59-2.05A3.9 3.9 0 0 1 18 2.13" />
     </IconBase>
   ))
 );

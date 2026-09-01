@@ -7,7 +7,7 @@ type KeyFillProps = Omit<IconBaseProps, 'children'>;
 const KeyFill = memo(
   forwardRef<SVGSVGElement, KeyFillProps>((props, ref) => (
     <IconBase ref={ref} {...props}>
-      <path fillRule="evenodd" d="M11.9 1.4a5.5 5.5 0 0 1 2.5 10.4v2.39l1.76 1.76-.46.35-1.54 1.15 1.44 1.45-3.7 3.7-2.5-2.5v-8.3a5.5 5.5 0 0 1 2.5-10.4m0 2.5a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3" clipRule="evenodd" />
+      <path fillRule="evenodd" d="M10.63 4.16A6.52 6.52 0 1 1 13.33 15l-1.83 1.83v2.13a.75.75 0 0 1-.86.74l-2-.28V21c0 .41-.33.75-.75.75H3a.75.75 0 0 1-.75-.75v-3.26q0-.32.22-.53L9 10.68a6.5 6.5 0 0 1 1.63-6.52m6.94 2.27a1.6 1.6 0 0 0-2.1-.11l-.13.1-.1.13a1.58 1.58 0 1 0 2.44 0z" clipRule="evenodd" />
     </IconBase>
   ))
 );

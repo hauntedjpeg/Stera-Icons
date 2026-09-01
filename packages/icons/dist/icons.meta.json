@@ -2227,9 +2227,9 @@
     "fileName": "AlignHorizontalCenterFillDuotone.tsx",
     "versionAdded": "6.2.1",
     "dateAdded": "2026-01-18T11:27:56.526Z",
-    "lastModified": "2026-04-09T12:41:31.630Z",
-    "versionLastModified": "8.1.0",
-    "svgHash": "30273318"
+    "lastModified": "2026-09-01T04:56:34.589Z",
+    "versionLastModified": "8.6.0",
+    "svgHash": "4f91a623"
   },
   {
     "name": "align-horizontal-left",
@@ -11424,9 +11424,9 @@
     "fileName": "AudioBarsSquareRegular.tsx",
     "versionAdded": "6.2.1",
     "dateAdded": "2026-01-18T11:27:58.614Z",
-    "lastModified": "2026-02-18T20:19:30.740Z",
-    "versionLastModified": "8.0.11",
-    "svgHash": "1e859046"
+    "lastModified": "2026-09-01T04:56:34.589Z",
+    "versionLastModified": "8.6.0",
+    "svgHash": "34b8b1a0"
   },
   {
     "name": "audio-bars-square",
@@ -11447,9 +11447,9 @@
     "fileName": "AudioBarsSquareRegularDuotone.tsx",
     "versionAdded": "6.2.1",
     "dateAdded": "2026-01-18T11:27:58.620Z",
-    "lastModified": "2026-02-18T20:19:30.740Z",
-    "versionLastModified": "8.0.11",
-    "svgHash": "75407cc6"
+    "lastModified": "2026-09-01T04:56:34.589Z",
+    "versionLastModified": "8.6.0",
+    "svgHash": "756a45a0"
   },
   {
     "name": "audio-bars-square",
@@ -11470,9 +11470,9 @@
     "fileName": "AudioBarsSquareBold.tsx",
     "versionAdded": "6.2.1",
     "dateAdded": "2026-01-18T11:27:58.625Z",
-    "lastModified": "2026-02-18T20:19:30.740Z",
-    "versionLastModified": "8.0.11",
-    "svgHash": "7213e661"
+    "lastModified": "2026-09-01T04:56:34.589Z",
+    "versionLastModified": "8.6.0",
+    "svgHash": "0ec8339d"
   },
   {
     "name": "audio-bars-square",
@@ -11493,9 +11493,9 @@
     "fileName": "AudioBarsSquareBoldDuotone.tsx",
     "versionAdded": "6.2.1",
     "dateAdded": "2026-01-18T11:27:58.631Z",
-    "lastModified": "2026-02-18T20:19:30.740Z",
-    "versionLastModified": "8.0.11",
-    "svgHash": "09653b29"
+    "lastModified": "2026-09-01T04:56:34.589Z",
+    "versionLastModified": "8.6.0",
+    "svgHash": "1168d6b3"
   },
   {
     "name": "audio-bars-square",
@@ -11516,9 +11516,9 @@
     "fileName": "AudioBarsSquareFill.tsx",
     "versionAdded": "6.2.1",
     "dateAdded": "2026-01-18T11:27:58.635Z",
-    "lastModified": "2026-02-18T20:19:30.740Z",
-    "versionLastModified": "8.0.11",
-    "svgHash": "6b9b76e2"
+    "lastModified": "2026-09-01T04:56:34.589Z",
+    "versionLastModified": "8.6.0",
+    "svgHash": "5be1694f"
   },
   {
     "name": "audio-bars-square",
@@ -11539,9 +11539,9 @@
     "fileName": "AudioBarsSquareFillDuotone.tsx",
     "versionAdded": "6.2.1",
     "dateAdded": "2026-01-18T11:27:58.641Z",
-    "lastModified": "2026-02-18T20:19:30.740Z",
-    "versionLastModified": "8.0.11",
-    "svgHash": "5b374158"
+    "lastModified": "2026-09-01T04:56:34.589Z",
+    "versionLastModified": "8.6.0",
+    "svgHash": "2a040a33"
   },
   {
     "name": "award-star",
@@ -14856,6 +14856,150 @@
     "svgHash": "1e746321"
   },
   {
+    "name": "bone",
+    "weight": "regular",
+    "duotone": false,
+    "tags": [
+      "animal",
+      "bone",
+      "dog",
+      "food",
+      "pet",
+      "reward",
+      "skeleton",
+      "treat",
+      "veterinary"
+    ],
+    "componentName": "Bone",
+    "variantComponentName": "BoneRegular",
+    "fileName": "BoneRegular.tsx",
+    "versionAdded": "8.6.0",
+    "dateAdded": "2026-09-01T04:56:34.589Z",
+    "lastModified": "2026-09-01T04:56:34.589Z",
+    "versionLastModified": "8.6.0",
+    "svgHash": "15d905e5"
+  },
+  {
+    "name": "bone",
+    "weight": "regular",
+    "duotone": true,
+    "tags": [
+      "animal",
+      "bone",
+      "dog",
+      "food",
+      "pet",
+      "reward",
+      "skeleton",
+      "treat",
+      "veterinary"
+    ],
+    "componentName": "Bone",
+    "variantComponentName": "BoneRegularDuotone",
+    "fileName": "BoneRegularDuotone.tsx",
+    "versionAdded": "8.6.0",
+    "dateAdded": "2026-09-01T04:56:34.589Z",
+    "lastModified": "2026-09-01T04:56:34.589Z",
+    "versionLastModified": "8.6.0",
+    "svgHash": "2b726c50"
+  },
+  {
+    "name": "bone",
+    "weight": "bold",
+    "duotone": false,
+    "tags": [
+      "animal",
+      "bone",
+      "dog",
+      "food",
+      "pet",
+      "reward",
+      "skeleton",
+      "treat",
+      "veterinary"
+    ],
+    "componentName": "Bone",
+    "variantComponentName": "BoneBold",
+    "fileName": "BoneBold.tsx",
+    "versionAdded": "8.6.0",
+    "dateAdded": "2026-09-01T04:56:34.589Z",
+    "lastModified": "2026-09-01T04:56:34.589Z",
+    "versionLastModified": "8.6.0",
+    "svgHash": "45f37db7"
+  },
+  {
+    "name": "bone",
+    "weight": "bold",
+    "duotone": true,
+    "tags": [
+      "animal",
+      "bone",
+      "dog",
+      "food",
+      "pet",
+      "reward",
+      "skeleton",
+      "treat",
+      "veterinary"
+    ],
+    "componentName": "Bone",
+    "variantComponentName": "BoneBoldDuotone",
+    "fileName": "BoneBoldDuotone.tsx",
+    "versionAdded": "8.6.0",
+    "dateAdded": "2026-09-01T04:56:34.589Z",
+    "lastModified": "2026-09-01T04:56:34.589Z",
+    "versionLastModified": "8.6.0",
+    "svgHash": "5e6c1fe8"
+  },
+  {
+    "name": "bone",
+    "weight": "fill",
+    "duotone": false,
+    "tags": [
+      "animal",
+      "bone",
+      "dog",
+      "food",
+      "pet",
+      "reward",
+      "skeleton",
+      "treat",
+      "veterinary"
+    ],
+    "componentName": "Bone",
+    "variantComponentName": "BoneFill",
+    "fileName": "BoneFill.tsx",
+    "versionAdded": "8.6.0",
+    "dateAdded": "2026-09-01T04:56:34.589Z",
+    "lastModified": "2026-09-01T04:56:34.589Z",
+    "versionLastModified": "8.6.0",
+    "svgHash": "7cfb91a6"
+  },
+  {
+    "name": "bone",
+    "weight": "fill",
+    "duotone": true,
+    "tags": [
+      "animal",
+      "bone",
+      "dog",
+      "food",
+      "pet",
+      "reward",
+      "skeleton",
+      "treat",
+      "veterinary"
+    ],
+    "componentName": "Bone",
+    "variantComponentName": "BoneFillDuotone",
+    "fileName": "BoneFillDuotone.tsx",
+    "versionAdded": "8.6.0",
+    "dateAdded": "2026-09-01T04:56:34.589Z",
+    "lastModified": "2026-09-01T04:56:34.589Z",
+    "versionLastModified": "8.6.0",
+    "svgHash": "35095f8c"
+  },
+  {
     "name": "book-closed",
     "weight": "regular",
     "duotone": false,
@@ -16422,9 +16566,9 @@
     "fileName": "BracketsCurlySquareRegular.tsx",
     "versionAdded": "6.2.1",
     "dateAdded": "2026-01-18T11:27:59.746Z",
-    "lastModified": "2026-02-18T20:19:30.740Z",
-    "versionLastModified": "8.0.11",
-    "svgHash": "4b6bbb6e"
+    "lastModified": "2026-09-01T04:56:34.589Z",
+    "versionLastModified": "8.6.0",
+    "svgHash": "3e4d638c"
   },
   {
     "name": "brackets-curly-square",
@@ -16445,9 +16589,9 @@
     "fileName": "BracketsCurlySquareRegularDuotone.tsx",
     "versionAdded": "6.2.1",
     "dateAdded": "2026-01-18T11:27:59.752Z",
-    "lastModified": "2026-02-18T20:19:30.740Z",
-    "versionLastModified": "8.0.11",
-    "svgHash": "1bb68cca"
+    "lastModified": "2026-09-01T04:56:34.589Z",
+    "versionLastModified": "8.6.0",
+    "svgHash": "5b6e085c"
   },
   {
     "name": "brackets-curly-square",
@@ -16468,9 +16612,9 @@
     "fileName": "BracketsCurlySquareBold.tsx",
     "versionAdded": "6.2.1",
     "dateAdded": "2026-01-18T11:27:59.757Z",
-    "lastModified": "2026-02-18T20:19:30.740Z",
-    "versionLastModified": "8.0.11",
-    "svgHash": "2f50c13e"
+    "lastModified": "2026-09-01T04:56:34.589Z",
+    "versionLastModified": "8.6.0",
+    "svgHash": "71d6fdde"
   },
   {
     "name": "brackets-curly-square",
@@ -16491,9 +16635,9 @@
     "fileName": "BracketsCurlySquareBoldDuotone.tsx",
     "versionAdded": "6.2.1",
     "dateAdded": "2026-01-18T11:27:59.762Z",
-    "lastModified": "2026-02-18T20:19:30.740Z",
-    "versionLastModified": "8.0.11",
-    "svgHash": "2aeedbf2"
+    "lastModified": "2026-09-01T04:56:34.589Z",
+    "versionLastModified": "8.6.0",
+    "svgHash": "55363116"
   },
   {
     "name": "brackets-curly-square",
@@ -16514,9 +16658,9 @@
     "fileName": "BracketsCurlySquareFill.tsx",
     "versionAdded": "6.2.1",
     "dateAdded": "2026-01-18T11:27:59.767Z",
-    "lastModified": "2026-02-18T20:19:30.740Z",
-    "versionLastModified": "8.0.11",
-    "svgHash": "4fa5fd3f"
+    "lastModified": "2026-09-01T04:56:34.589Z",
+    "versionLastModified": "8.6.0",
+    "svgHash": "0af08a34"
   },
   {
     "name": "brackets-curly-square",
@@ -16537,9 +16681,9 @@
     "fileName": "BracketsCurlySquareFillDuotone.tsx",
     "versionAdded": "6.2.1",
     "dateAdded": "2026-01-18T11:27:59.772Z",
-    "lastModified": "2026-02-18T20:19:30.740Z",
-    "versionLastModified": "8.0.11",
-    "svgHash": "06ba2447"
+    "lastModified": "2026-09-01T04:56:34.589Z",
+    "versionLastModified": "8.6.0",
+    "svgHash": "0610d3a2"
   },
   {
     "name": "brackets-square",
@@ -16836,9 +16980,9 @@
     "fileName": "BracketsSquareSquareRegular.tsx",
     "versionAdded": "6.2.1",
     "dateAdded": "2026-01-18T11:27:59.831Z",
-    "lastModified": "2026-02-18T20:19:30.740Z",
-    "versionLastModified": "8.0.11",
-    "svgHash": "518b0cf1"
+    "lastModified": "2026-09-01T04:56:34.589Z",
+    "versionLastModified": "8.6.0",
+    "svgHash": "20ab57cb"
   },
   {
     "name": "brackets-square-square",
@@ -16859,9 +17003,9 @@
     "fileName": "BracketsSquareSquareRegularDuotone.tsx",
     "versionAdded": "6.2.1",
     "dateAdded": "2026-01-18T11:27:59.836Z",
-    "lastModified": "2026-02-18T20:19:30.740Z",
-    "versionLastModified": "8.0.11",
-    "svgHash": "4230b245"
+    "lastModified": "2026-09-01T04:56:34.589Z",
+    "versionLastModified": "8.6.0",
+    "svgHash": "2a0a9dd5"
   },
   {
     "name": "brackets-square-square",
@@ -16882,9 +17026,9 @@
     "fileName": "BracketsSquareSquareBold.tsx",
     "versionAdded": "6.2.1",
     "dateAdded": "2026-01-18T11:27:59.841Z",
-    "lastModified": "2026-02-18T20:19:30.740Z",
-    "versionLastModified": "8.0.11",
-    "svgHash": "2d77ce98"
+    "lastModified": "2026-09-01T04:56:34.589Z",
+    "versionLastModified": "8.6.0",
+    "svgHash": "60f2c1fc"
   },
   {
     "name": "brackets-square-square",
@@ -16905,9 +17049,9 @@
     "fileName": "BracketsSquareSquareBoldDuotone.tsx",
     "versionAdded": "6.2.1",
     "dateAdded": "2026-01-18T11:27:59.846Z",
-    "lastModified": "2026-02-18T20:19:30.740Z",
-    "versionLastModified": "8.0.11",
-    "svgHash": "27ab754c"
+    "lastModified": "2026-09-01T04:56:34.589Z",
+    "versionLastModified": "8.6.0",
+    "svgHash": "4c374fd8"
   },
   {
     "name": "brackets-square-square",
@@ -16928,9 +17072,9 @@
     "fileName": "BracketsSquareSquareFill.tsx",
     "versionAdded": "6.2.1",
     "dateAdded": "2026-01-18T11:27:59.850Z",
-    "lastModified": "2026-04-09T12:41:31.630Z",
-    "versionLastModified": "8.1.0",
-    "svgHash": "28918787"
+    "lastModified": "2026-09-01T04:56:34.589Z",
+    "versionLastModified": "8.6.0",
+    "svgHash": "01f8417a"
   },
   {
     "name": "brackets-square-square",
@@ -16951,9 +17095,9 @@
     "fileName": "BracketsSquareSquareFillDuotone.tsx",
     "versionAdded": "6.2.1",
     "dateAdded": "2026-01-18T11:27:59.855Z",
-    "lastModified": "2026-04-09T12:41:31.630Z",
-    "versionLastModified": "8.1.0",
-    "svgHash": "08aa2810"
+    "lastModified": "2026-09-01T04:56:34.589Z",
+    "versionLastModified": "8.6.0",
+    "svgHash": "1b117bab"
   },
   {
     "name": "brain",
@@ -18786,9 +18930,9 @@
     "fileName": "CalendarRegular.tsx",
     "versionAdded": "6.2.1",
     "dateAdded": "2026-01-18T11:28:00.237Z",
-    "lastModified": "2026-04-25T02:07:54.433Z",
-    "versionLastModified": "8.3.0",
-    "svgHash": "29f6718f"
+    "lastModified": "2026-09-01T04:56:34.589Z",
+    "versionLastModified": "8.6.0",
+    "svgHash": "62bc50c2"
   },
   {
     "name": "calendar",
@@ -18809,9 +18953,9 @@
     "fileName": "CalendarRegularDuotone.tsx",
     "versionAdded": "6.2.1",
     "dateAdded": "2026-01-18T11:28:00.242Z",
-    "lastModified": "2026-04-25T02:07:54.433Z",
-    "versionLastModified": "8.3.0",
-    "svgHash": "6ec402fe"
+    "lastModified": "2026-09-01T04:56:34.589Z",
+    "versionLastModified": "8.6.0",
+    "svgHash": "7e6e4c80"
   },
   {
     "name": "calendar",
@@ -18832,9 +18976,9 @@
     "fileName": "CalendarBold.tsx",
     "versionAdded": "6.2.1",
     "dateAdded": "2026-01-18T11:28:00.247Z",
-    "lastModified": "2026-02-10T06:12:54.419Z",
-    "versionLastModified": "8.0.9",
-    "svgHash": "267ec1c3"
+    "lastModified": "2026-09-01T04:56:34.589Z",
+    "versionLastModified": "8.6.0",
+    "svgHash": "012dd27b"
   },
   {
     "name": "calendar",
@@ -18855,9 +18999,9 @@
     "fileName": "CalendarBoldDuotone.tsx",
     "versionAdded": "6.2.1",
     "dateAdded": "2026-01-18T11:28:00.255Z",
-    "lastModified": "2026-02-10T06:12:54.419Z",
-    "versionLastModified": "8.0.9",
-    "svgHash": "6db74f1a"
+    "lastModified": "2026-09-01T04:56:34.589Z",
+    "versionLastModified": "8.6.0",
+    "svgHash": "4b9018e7"
   },
   {
     "name": "calendar",
@@ -18878,9 +19022,9 @@
     "fileName": "CalendarFill.tsx",
     "versionAdded": "6.2.1",
     "dateAdded": "2026-01-18T11:28:00.260Z",
-    "lastModified": "2026-04-09T12:41:31.630Z",
-    "versionLastModified": "8.1.0",
-    "svgHash": "0cc322d7"
+    "lastModified": "2026-09-01T04:56:34.589Z",
+    "versionLastModified": "8.6.0",
+    "svgHash": "3ba598d6"
   },
   {
     "name": "calendar",
@@ -18901,9 +19045,9 @@
     "fileName": "CalendarFillDuotone.tsx",
     "versionAdded": "6.2.1",
     "dateAdded": "2026-01-18T11:28:00.264Z",
-    "lastModified": "2026-04-09T12:41:31.630Z",
-    "versionLastModified": "8.1.0",
-    "svgHash": "06495e0e"
+    "lastModified": "2026-09-01T04:56:34.589Z",
+    "versionLastModified": "8.6.0",
+    "svgHash": "4f6038cd"
   },
   {
     "name": "calendar-blank",
@@ -18924,9 +19068,9 @@
     "fileName": "CalendarBlankRegular.tsx",
     "versionAdded": "6.2.1",
     "dateAdded": "2026-01-18T11:28:00.268Z",
-    "lastModified": "2026-02-10T06:12:54.419Z",
-    "versionLastModified": "8.0.9",
-    "svgHash": "3391f915"
+    "lastModified": "2026-09-01T04:56:34.589Z",
+    "versionLastModified": "8.6.0",
+    "svgHash": "4677b0f5"
   },
   {
     "name": "calendar-blank",
@@ -18947,9 +19091,9 @@
     "fileName": "CalendarBlankRegularDuotone.tsx",
     "versionAdded": "6.2.1",
     "dateAdded": "2026-01-18T11:28:00.274Z",
-    "lastModified": "2026-02-10T06:12:54.419Z",
-    "versionLastModified": "8.0.9",
-    "svgHash": "7edba7ed"
+    "lastModified": "2026-09-01T04:56:34.589Z",
+    "versionLastModified": "8.6.0",
+    "svgHash": "0e9eda1e"
   },
   {
     "name": "calendar-blank",
@@ -18970,9 +19114,9 @@
     "fileName": "CalendarBlankBold.tsx",
     "versionAdded": "6.2.1",
     "dateAdded": "2026-01-18T11:28:00.278Z",
-    "lastModified": "2026-02-10T06:12:54.419Z",
-    "versionLastModified": "8.0.9",
-    "svgHash": "3af6e95d"
+    "lastModified": "2026-09-01T04:56:34.589Z",
+    "versionLastModified": "8.6.0",
+    "svgHash": "7b808e59"
   },
   {
     "name": "calendar-blank",
@@ -18993,9 +19137,9 @@
     "fileName": "CalendarBlankBoldDuotone.tsx",
     "versionAdded": "6.2.1",
     "dateAdded": "2026-01-18T11:28:00.282Z",
-    "lastModified": "2026-02-10T06:12:54.419Z",
-    "versionLastModified": "8.0.9",
-    "svgHash": "0d64cd79"
+    "lastModified": "2026-09-01T04:56:34.589Z",
+    "versionLastModified": "8.6.0",
+    "svgHash": "5fce5cbc"
   },
   {
     "name": "calendar-blank",
@@ -19016,9 +19160,9 @@
     "fileName": "CalendarBlankFill.tsx",
     "versionAdded": "6.2.1",
     "dateAdded": "2026-01-18T11:28:00.287Z",
-    "lastModified": "2026-04-09T12:41:31.630Z",
-    "versionLastModified": "8.1.0",
-    "svgHash": "38acefe2"
+    "lastModified": "2026-09-01T04:56:34.589Z",
+    "versionLastModified": "8.6.0",
+    "svgHash": "5febe0b2"
   },
   {
     "name": "calendar-blank",
@@ -19039,9 +19183,9 @@
     "fileName": "CalendarBlankFillDuotone.tsx",
     "versionAdded": "6.2.1",
     "dateAdded": "2026-01-18T11:28:00.291Z",
-    "lastModified": "2026-04-09T12:41:31.630Z",
-    "versionLastModified": "8.1.0",
-    "svgHash": "7794ab2f"
+    "lastModified": "2026-09-01T04:56:34.589Z",
+    "versionLastModified": "8.6.0",
+    "svgHash": "394e6652"
   },
   {
     "name": "calendar-clock",
@@ -19063,9 +19207,9 @@
     "fileName": "CalendarClockRegular.tsx",
     "versionAdded": "6.2.1",
     "dateAdded": "2026-01-18T11:28:00.297Z",
-    "lastModified": "2026-04-25T02:07:54.433Z",
-    "versionLastModified": "8.3.0",
-    "svgHash": "3f9a4c69"
+    "lastModified": "2026-09-01T04:56:34.589Z",
+    "versionLastModified": "8.6.0",
+    "svgHash": "6ce7aa8a"
   },
   {
     "name": "calendar-clock",
@@ -19087,9 +19231,9 @@
     "fileName": "CalendarClockRegularDuotone.tsx",
     "versionAdded": "6.2.1",
     "dateAdded": "2026-01-18T11:28:00.302Z",
-    "lastModified": "2026-04-25T02:07:54.433Z",
-    "versionLastModified": "8.3.0",
-    "svgHash": "6f6ee835"
+    "lastModified": "2026-09-01T04:56:34.589Z",
+    "versionLastModified": "8.6.0",
+    "svgHash": "2c42a551"
   },
   {
     "name": "calendar-clock",
@@ -19111,9 +19255,9 @@
     "fileName": "CalendarClockBold.tsx",
     "versionAdded": "6.2.1",
     "dateAdded": "2026-01-18T11:28:00.306Z",
-    "lastModified": "2026-04-25T02:07:54.433Z",
-    "versionLastModified": "8.3.0",
-    "svgHash": "00d88ae7"
+    "lastModified": "2026-09-01T04:56:34.589Z",
+    "versionLastModified": "8.6.0",
+    "svgHash": "0ac4cc87"
   },
   {
     "name": "calendar-clock",
@@ -19135,9 +19279,9 @@
     "fileName": "CalendarClockBoldDuotone.tsx",
     "versionAdded": "6.2.1",
     "dateAdded": "2026-01-18T11:28:00.311Z",
-    "lastModified": "2026-04-25T02:07:54.433Z",
-    "versionLastModified": "8.3.0",
-    "svgHash": "3794cc15"
+    "lastModified": "2026-09-01T04:56:34.589Z",
+    "versionLastModified": "8.6.0",
+    "svgHash": "0c9703c3"
   },
   {
     "name": "calendar-clock",
@@ -19159,9 +19303,9 @@
     "fileName": "CalendarClockFill.tsx",
     "versionAdded": "6.2.1",
     "dateAdded": "2026-01-18T11:28:00.315Z",
-    "lastModified": "2026-04-25T02:07:54.433Z",
-    "versionLastModified": "8.3.0",
-    "svgHash": "2e78fc94"
+    "lastModified": "2026-09-01T04:56:34.589Z",
+    "versionLastModified": "8.6.0",
+    "svgHash": "4469e7b3"
   },
   {
     "name": "calendar-clock",
@@ -19183,9 +19327,9 @@
     "fileName": "CalendarClockFillDuotone.tsx",
     "versionAdded": "6.2.1",
     "dateAdded": "2026-01-18T11:28:00.320Z",
-    "lastModified": "2026-04-25T02:07:54.433Z",
-    "versionLastModified": "8.3.0",
-    "svgHash": "4309e4f0"
+    "lastModified": "2026-09-01T04:56:34.589Z",
+    "versionLastModified": "8.6.0",
+    "svgHash": "65089073"
   },
   {
     "name": "calendar-fold",
@@ -19206,9 +19350,9 @@
     "fileName": "CalendarFoldRegular.tsx",
     "versionAdded": "6.2.1",
     "dateAdded": "2026-01-18T11:28:00.325Z",
-    "lastModified": "2026-02-10T06:12:54.419Z",
-    "versionLastModified": "8.0.9",
-    "svgHash": "24478360"
+    "lastModified": "2026-09-01T04:56:34.589Z",
+    "versionLastModified": "8.6.0",
+    "svgHash": "774574d7"
   },
   {
     "name": "calendar-fold",
@@ -19229,9 +19373,9 @@
     "fileName": "CalendarFoldRegularDuotone.tsx",
     "versionAdded": "6.2.1",
     "dateAdded": "2026-01-18T11:28:00.330Z",
-    "lastModified": "2026-02-10T06:12:54.419Z",
-    "versionLastModified": "8.0.9",
-    "svgHash": "5af584db"
+    "lastModified": "2026-09-01T04:56:34.589Z",
+    "versionLastModified": "8.6.0",
+    "svgHash": "7f9e1b49"
   },
   {
     "name": "calendar-fold",
@@ -19252,9 +19396,9 @@
     "fileName": "CalendarFoldBold.tsx",
     "versionAdded": "6.2.1",
     "dateAdded": "2026-01-18T11:28:00.334Z",
-    "lastModified": "2026-02-10T06:12:54.419Z",
-    "versionLastModified": "8.0.9",
-    "svgHash": "2b2666b5"
+    "lastModified": "2026-09-01T04:56:34.589Z",
+    "versionLastModified": "8.6.0",
+    "svgHash": "50e555f0"
   },
   {
     "name": "calendar-fold",
@@ -19275,9 +19419,9 @@
     "fileName": "CalendarFoldBoldDuotone.tsx",
     "versionAdded": "6.2.1",
     "dateAdded": "2026-01-18T11:28:00.339Z",
-    "lastModified": "2026-02-10T06:12:54.419Z",
-    "versionLastModified": "8.0.9",
-    "svgHash": "449ce3ab"
+    "lastModified": "2026-09-01T04:56:34.589Z",
+    "versionLastModified": "8.6.0",
+    "svgHash": "6ece698f"
   },
   {
     "name": "calendar-fold",
@@ -19298,9 +19442,9 @@
     "fileName": "CalendarFoldFill.tsx",
     "versionAdded": "6.2.1",
     "dateAdded": "2026-01-18T11:28:00.344Z",
-    "lastModified": "2026-04-09T12:41:31.630Z",
-    "versionLastModified": "8.1.0",
-    "svgHash": "28055730"
+    "lastModified": "2026-09-01T04:56:34.589Z",
+    "versionLastModified": "8.6.0",
+    "svgHash": "3979e9b1"
   },
   {
     "name": "calendar-fold",
@@ -19321,9 +19465,9 @@
     "fileName": "CalendarFoldFillDuotone.tsx",
     "versionAdded": "6.2.1",
     "dateAdded": "2026-01-18T11:28:00.348Z",
-    "lastModified": "2026-04-09T12:41:31.630Z",
-    "versionLastModified": "8.1.0",
-    "svgHash": "03c1dbe2"
+    "lastModified": "2026-09-01T04:56:34.589Z",
+    "versionLastModified": "8.6.0",
+    "svgHash": "78de6720"
   },
   {
     "name": "calendar-minus",
@@ -19344,9 +19488,9 @@
     "fileName": "CalendarMinusRegular.tsx",
     "versionAdded": "6.2.1",
     "dateAdded": "2026-01-18T11:28:00.352Z",
-    "lastModified": "2026-02-10T06:12:54.419Z",
-    "versionLastModified": "8.0.9",
-    "svgHash": "6e5919ca"
+    "lastModified": "2026-09-01T04:56:34.589Z",
+    "versionLastModified": "8.6.0",
+    "svgHash": "29403f8b"
   },
   {
     "name": "calendar-minus",
@@ -19367,9 +19511,9 @@
     "fileName": "CalendarMinusRegularDuotone.tsx",
     "versionAdded": "6.2.1",
     "dateAdded": "2026-01-18T11:28:00.358Z",
-    "lastModified": "2026-02-10T06:12:54.419Z",
-    "versionLastModified": "8.0.9",
-    "svgHash": "37949e20"
+    "lastModified": "2026-09-01T04:56:34.589Z",
+    "versionLastModified": "8.6.0",
+    "svgHash": "6bd8e953"
   },
   {
     "name": "calendar-minus",
@@ -19390,9 +19534,9 @@
     "fileName": "CalendarMinusBold.tsx",
     "versionAdded": "6.2.1",
     "dateAdded": "2026-01-18T11:28:00.362Z",
-    "lastModified": "2026-02-10T06:12:54.419Z",
-    "versionLastModified": "8.0.9",
-    "svgHash": "20eb6d8d"
+    "lastModified": "2026-09-01T04:56:34.589Z",
+    "versionLastModified": "8.6.0",
+    "svgHash": "46342c75"
   },
   {
     "name": "calendar-minus",
@@ -19413,9 +19557,9 @@
     "fileName": "CalendarMinusBoldDuotone.tsx",
     "versionAdded": "6.2.1",
     "dateAdded": "2026-01-18T11:28:00.367Z",
-    "lastModified": "2026-02-10T06:12:54.419Z",
-    "versionLastModified": "8.0.9",
-    "svgHash": "1b51e271"
+    "lastModified": "2026-09-01T04:56:34.589Z",
+    "versionLastModified": "8.6.0",
+    "svgHash": "73babb46"
   },
   {
     "name": "calendar-minus",
@@ -19436,9 +19580,9 @@
     "fileName": "CalendarMinusFill.tsx",
     "versionAdded": "6.2.1",
     "dateAdded": "2026-01-18T11:28:00.372Z",
-    "lastModified": "2026-04-09T12:41:31.630Z",
-    "versionLastModified": "8.1.0",
-    "svgHash": "165cbc24"
+    "lastModified": "2026-09-01T04:56:34.589Z",
+    "versionLastModified": "8.6.0",
+    "svgHash": "294feab5"
   },
   {
     "name": "calendar-minus",
@@ -19459,9 +19603,9 @@
     "fileName": "CalendarMinusFillDuotone.tsx",
     "versionAdded": "6.2.1",
     "dateAdded": "2026-01-18T11:28:00.377Z",
-    "lastModified": "2026-04-09T12:41:31.630Z",
-    "versionLastModified": "8.1.0",
-    "svgHash": "545908c3"
+    "lastModified": "2026-09-01T04:56:34.589Z",
+    "versionLastModified": "8.6.0",
+    "svgHash": "663f4819"
   },
   {
     "name": "calendar-off",
@@ -19644,9 +19788,9 @@
     "fileName": "CalendarPlusRegular.tsx",
     "versionAdded": "6.2.1",
     "dateAdded": "2026-01-18T11:28:00.416Z",
-    "lastModified": "2026-02-10T06:12:54.419Z",
-    "versionLastModified": "8.0.9",
-    "svgHash": "088b9ff6"
+    "lastModified": "2026-09-01T04:56:34.589Z",
+    "versionLastModified": "8.6.0",
+    "svgHash": "4cf358e0"
   },
   {
     "name": "calendar-plus",
@@ -19667,9 +19811,9 @@
     "fileName": "CalendarPlusRegularDuotone.tsx",
     "versionAdded": "6.2.1",
     "dateAdded": "2026-01-18T11:28:00.421Z",
-    "lastModified": "2026-02-10T06:12:54.419Z",
-    "versionLastModified": "8.0.9",
-    "svgHash": "1f23e094"
+    "lastModified": "2026-09-01T04:56:34.589Z",
+    "versionLastModified": "8.6.0",
+    "svgHash": "066e8cf9"
   },
   {
     "name": "calendar-plus",
@@ -19690,9 +19834,9 @@
     "fileName": "CalendarPlusBold.tsx",
     "versionAdded": "6.2.1",
     "dateAdded": "2026-01-18T11:28:00.426Z",
-    "lastModified": "2026-02-10T06:12:54.419Z",
-    "versionLastModified": "8.0.9",
-    "svgHash": "2b7d21e1"
+    "lastModified": "2026-09-01T04:56:34.589Z",
+    "versionLastModified": "8.6.0",
+    "svgHash": "33f4fd63"
   },
   {
     "name": "calendar-plus",
@@ -19713,9 +19857,9 @@
     "fileName": "CalendarPlusBoldDuotone.tsx",
     "versionAdded": "6.2.1",
     "dateAdded": "2026-01-18T11:28:00.431Z",
-    "lastModified": "2026-02-10T06:12:54.419Z",
-    "versionLastModified": "8.0.9",
-    "svgHash": "28aacf1e"
+    "lastModified": "2026-09-01T04:56:34.589Z",
+    "versionLastModified": "8.6.0",
+    "svgHash": "4f45e0eb"
   },
   {
     "name": "calendar-plus",
@@ -19736,9 +19880,9 @@
     "fileName": "CalendarPlusFill.tsx",
     "versionAdded": "6.2.1",
     "dateAdded": "2026-01-18T11:28:00.435Z",
-    "lastModified": "2026-04-09T12:41:31.630Z",
-    "versionLastModified": "8.1.0",
-    "svgHash": "4f16bc9a"
+    "lastModified": "2026-09-01T04:56:34.589Z",
+    "versionLastModified": "8.6.0",
+    "svgHash": "596e621d"
   },
   {
     "name": "calendar-plus",
@@ -19759,9 +19903,9 @@
     "fileName": "CalendarPlusFillDuotone.tsx",
     "versionAdded": "6.2.1",
     "dateAdded": "2026-01-18T11:28:00.441Z",
-    "lastModified": "2026-04-09T12:41:31.630Z",
-    "versionLastModified": "8.1.0",
-    "svgHash": "7f4fed97"
+    "lastModified": "2026-09-01T04:56:34.589Z",
+    "versionLastModified": "8.6.0",
+    "svgHash": "089e734b"
   },
   {
     "name": "calendar-slash",
@@ -19782,9 +19926,9 @@
     "fileName": "CalendarSlashRegular.tsx",
     "versionAdded": "6.2.1",
     "dateAdded": "2026-01-18T11:28:00.445Z",
-    "lastModified": "2026-02-10T06:12:54.419Z",
-    "versionLastModified": "8.0.9",
-    "svgHash": "62f5fcfc"
+    "lastModified": "2026-09-01T04:56:34.589Z",
+    "versionLastModified": "8.6.0",
+    "svgHash": "37448c9b"
   },
   {
     "name": "calendar-slash",
@@ -19805,9 +19949,9 @@
     "fileName": "CalendarSlashRegularDuotone.tsx",
     "versionAdded": "6.2.1",
     "dateAdded": "2026-01-18T11:28:00.450Z",
-    "lastModified": "2026-02-10T06:12:54.419Z",
-    "versionLastModified": "8.0.9",
-    "svgHash": "33489533"
+    "lastModified": "2026-09-01T04:56:34.589Z",
+    "versionLastModified": "8.6.0",
+    "svgHash": "7d00f0d3"
   },
   {
     "name": "calendar-slash",
@@ -19828,9 +19972,9 @@
     "fileName": "CalendarSlashBold.tsx",
     "versionAdded": "6.2.1",
     "dateAdded": "2026-01-18T11:28:00.456Z",
-    "lastModified": "2026-04-25T02:07:54.433Z",
-    "versionLastModified": "8.3.0",
-    "svgHash": "19e8c405"
+    "lastModified": "2026-09-01T04:56:34.589Z",
+    "versionLastModified": "8.6.0",
+    "svgHash": "4631b3be"
   },
   {
     "name": "calendar-slash",
@@ -19851,9 +19995,9 @@
     "fileName": "CalendarSlashBoldDuotone.tsx",
     "versionAdded": "6.2.1",
     "dateAdded": "2026-01-18T11:28:00.461Z",
-    "lastModified": "2026-04-25T02:07:54.433Z",
-    "versionLastModified": "8.3.0",
-    "svgHash": "00643f1d"
+    "lastModified": "2026-09-01T04:56:34.589Z",
+    "versionLastModified": "8.6.0",
+    "svgHash": "2d3d9629"
   },
   {
     "name": "calendar-slash",
@@ -19874,9 +20018,9 @@
     "fileName": "CalendarSlashFill.tsx",
     "versionAdded": "6.2.1",
     "dateAdded": "2026-01-18T11:28:00.466Z",
-    "lastModified": "2026-04-09T12:41:31.630Z",
-    "versionLastModified": "8.1.0",
-    "svgHash": "51819ac6"
+    "lastModified": "2026-09-01T04:56:34.589Z",
+    "versionLastModified": "8.6.0",
+    "svgHash": "43f501c6"
   },
   {
     "name": "calendar-slash",
@@ -19897,9 +20041,9 @@
     "fileName": "CalendarSlashFillDuotone.tsx",
     "versionAdded": "6.2.1",
     "dateAdded": "2026-01-18T11:28:00.471Z",
-    "lastModified": "2026-04-09T12:41:31.630Z",
-    "versionLastModified": "8.1.0",
-    "svgHash": "40a0d292"
+    "lastModified": "2026-09-01T04:56:34.589Z",
+    "versionLastModified": "8.6.0",
+    "svgHash": "085c6c07"
   },
   {
     "name": "calendar-x",
@@ -19920,9 +20064,9 @@
     "fileName": "CalendarXRegular.tsx",
     "versionAdded": "6.2.1",
     "dateAdded": "2026-01-18T11:28:00.476Z",
-    "lastModified": "2026-02-10T06:12:54.419Z",
-    "versionLastModified": "8.0.9",
-    "svgHash": "503b40ee"
+    "lastModified": "2026-09-01T04:56:34.589Z",
+    "versionLastModified": "8.6.0",
+    "svgHash": "0b7e8ac4"
   },
   {
     "name": "calendar-x",
@@ -19943,9 +20087,9 @@
     "fileName": "CalendarXRegularDuotone.tsx",
     "versionAdded": "6.2.1",
     "dateAdded": "2026-01-18T11:28:00.481Z",
-    "lastModified": "2026-02-10T06:12:54.419Z",
-    "versionLastModified": "8.0.9",
-    "svgHash": "0a301770"
+    "lastModified": "2026-09-01T04:56:34.589Z",
+    "versionLastModified": "8.6.0",
+    "svgHash": "249ca623"
   },
   {
     "name": "calendar-x",
@@ -19966,9 +20110,9 @@
     "fileName": "CalendarXBold.tsx",
     "versionAdded": "6.2.1",
     "dateAdded": "2026-01-18T11:28:00.486Z",
-    "lastModified": "2026-02-10T06:12:54.419Z",
-    "versionLastModified": "8.0.9",
-    "svgHash": "471bea27"
+    "lastModified": "2026-09-01T04:56:34.589Z",
+    "versionLastModified": "8.6.0",
+    "svgHash": "4411c75b"
   },
   {
     "name": "calendar-x",
@@ -19989,9 +20133,9 @@
     "fileName": "CalendarXBoldDuotone.tsx",
     "versionAdded": "6.2.1",
     "dateAdded": "2026-01-18T11:28:00.492Z",
-    "lastModified": "2026-02-10T06:12:54.419Z",
-    "versionLastModified": "8.0.9",
-    "svgHash": "5daf0a6e"
+    "lastModified": "2026-09-01T04:56:34.589Z",
+    "versionLastModified": "8.6.0",
+    "svgHash": "7a6c1aa5"
   },
   {
     "name": "calendar-x",
@@ -20012,9 +20156,9 @@
     "fileName": "CalendarXFill.tsx",
     "versionAdded": "6.2.1",
     "dateAdded": "2026-01-18T11:28:00.496Z",
-    "lastModified": "2026-04-09T12:41:31.630Z",
-    "versionLastModified": "8.1.0",
-    "svgHash": "28614172"
+    "lastModified": "2026-09-01T04:56:34.589Z",
+    "versionLastModified": "8.6.0",
+    "svgHash": "41da03b0"
   },
   {
     "name": "calendar-x",
@@ -20035,9 +20179,9 @@
     "fileName": "CalendarXFillDuotone.tsx",
     "versionAdded": "6.2.1",
     "dateAdded": "2026-01-18T11:28:00.500Z",
-    "lastModified": "2026-04-09T12:41:31.630Z",
-    "versionLastModified": "8.1.0",
-    "svgHash": "1ec266ca"
+    "lastModified": "2026-09-01T04:56:34.589Z",
+    "versionLastModified": "8.6.0",
+    "svgHash": "7b28dfb9"
   },
   {
     "name": "camera",
@@ -20328,9 +20472,9 @@
     "fileName": "CandleRegular.tsx",
     "versionAdded": "6.2.1",
     "dateAdded": "2026-01-18T11:28:00.617Z",
-    "lastModified": "2026-04-25T02:07:54.433Z",
-    "versionLastModified": "8.3.0",
-    "svgHash": "0b8efe81"
+    "lastModified": "2026-09-01T04:56:34.589Z",
+    "versionLastModified": "8.6.0",
+    "svgHash": "670a04f5"
   },
   {
     "name": "candle",
@@ -20351,9 +20495,9 @@
     "fileName": "CandleRegularDuotone.tsx",
     "versionAdded": "6.2.1",
     "dateAdded": "2026-01-18T11:28:00.622Z",
-    "lastModified": "2026-04-25T02:07:54.433Z",
-    "versionLastModified": "8.3.0",
-    "svgHash": "13786df2"
+    "lastModified": "2026-09-01T04:56:34.589Z",
+    "versionLastModified": "8.6.0",
+    "svgHash": "0fecfabe"
   },
   {
     "name": "candle",
@@ -20374,9 +20518,9 @@
     "fileName": "CandleBold.tsx",
     "versionAdded": "6.2.1",
     "dateAdded": "2026-01-18T11:28:00.626Z",
-    "lastModified": "2026-04-25T02:07:54.433Z",
-    "versionLastModified": "8.3.0",
-    "svgHash": "78d88535"
+    "lastModified": "2026-09-01T04:56:34.589Z",
+    "versionLastModified": "8.6.0",
+    "svgHash": "364a2d01"
   },
   {
     "name": "candle",
@@ -20397,9 +20541,9 @@
     "fileName": "CandleBoldDuotone.tsx",
     "versionAdded": "6.2.1",
     "dateAdded": "2026-01-18T11:28:00.631Z",
-    "lastModified": "2026-04-25T02:07:54.433Z",
-    "versionLastModified": "8.3.0",
-    "svgHash": "129e9bba"
+    "lastModified": "2026-09-01T04:56:34.589Z",
+    "versionLastModified": "8.6.0",
+    "svgHash": "7bbdaf03"
   },
   {
     "name": "candle",
@@ -20420,9 +20564,9 @@
     "fileName": "CandleFill.tsx",
     "versionAdded": "6.2.1",
     "dateAdded": "2026-01-18T11:28:00.637Z",
-    "lastModified": "2026-04-09T12:41:31.630Z",
-    "versionLastModified": "8.1.0",
-    "svgHash": "16a9f88a"
+    "lastModified": "2026-09-01T04:56:34.589Z",
+    "versionLastModified": "8.6.0",
+    "svgHash": "2c329550"
   },
   {
     "name": "candle",
@@ -20443,9 +20587,9 @@
     "fileName": "CandleFillDuotone.tsx",
     "versionAdded": "6.2.1",
     "dateAdded": "2026-01-18T11:28:00.641Z",
-    "lastModified": "2026-04-09T12:41:31.630Z",
-    "versionLastModified": "8.1.0",
-    "svgHash": "00a77cb2"
+    "lastModified": "2026-09-01T04:56:34.589Z",
+    "versionLastModified": "8.6.0",
+    "svgHash": "5558cbdf"
   },
   {
     "name": "caps-lock",
@@ -20884,6 +21028,156 @@
     "lastModified": "2026-04-25T02:07:54.433Z",
     "versionLastModified": "8.3.0",
     "svgHash": "23c9e64c"
+  },
+  {
+    "name": "certificate",
+    "weight": "regular",
+    "duotone": false,
+    "tags": [
+      "achievement",
+      "award",
+      "badge",
+      "certificate",
+      "credential",
+      "diploma",
+      "document",
+      "license",
+      "seal",
+      "verified"
+    ],
+    "componentName": "Certificate",
+    "variantComponentName": "CertificateRegular",
+    "fileName": "CertificateRegular.tsx",
+    "versionAdded": "8.6.0",
+    "dateAdded": "2026-09-01T04:56:34.589Z",
+    "lastModified": "2026-09-01T04:56:34.589Z",
+    "versionLastModified": "8.6.0",
+    "svgHash": "048d28b5"
+  },
+  {
+    "name": "certificate",
+    "weight": "regular",
+    "duotone": true,
+    "tags": [
+      "achievement",
+      "award",
+      "badge",
+      "certificate",
+      "credential",
+      "diploma",
+      "document",
+      "license",
+      "seal",
+      "verified"
+    ],
+    "componentName": "Certificate",
+    "variantComponentName": "CertificateRegularDuotone",
+    "fileName": "CertificateRegularDuotone.tsx",
+    "versionAdded": "8.6.0",
+    "dateAdded": "2026-09-01T04:56:34.589Z",
+    "lastModified": "2026-09-01T04:56:34.589Z",
+    "versionLastModified": "8.6.0",
+    "svgHash": "196b5870"
+  },
+  {
+    "name": "certificate",
+    "weight": "bold",
+    "duotone": false,
+    "tags": [
+      "achievement",
+      "award",
+      "badge",
+      "certificate",
+      "credential",
+      "diploma",
+      "document",
+      "license",
+      "seal",
+      "verified"
+    ],
+    "componentName": "Certificate",
+    "variantComponentName": "CertificateBold",
+    "fileName": "CertificateBold.tsx",
+    "versionAdded": "8.6.0",
+    "dateAdded": "2026-09-01T04:56:34.589Z",
+    "lastModified": "2026-09-01T04:56:34.589Z",
+    "versionLastModified": "8.6.0",
+    "svgHash": "1bceb160"
+  },
+  {
+    "name": "certificate",
+    "weight": "bold",
+    "duotone": true,
+    "tags": [
+      "achievement",
+      "award",
+      "badge",
+      "certificate",
+      "credential",
+      "diploma",
+      "document",
+      "license",
+      "seal",
+      "verified"
+    ],
+    "componentName": "Certificate",
+    "variantComponentName": "CertificateBoldDuotone",
+    "fileName": "CertificateBoldDuotone.tsx",
+    "versionAdded": "8.6.0",
+    "dateAdded": "2026-09-01T04:56:34.589Z",
+    "lastModified": "2026-09-01T04:56:34.589Z",
+    "versionLastModified": "8.6.0",
+    "svgHash": "38f9c859"
+  },
+  {
+    "name": "certificate",
+    "weight": "fill",
+    "duotone": false,
+    "tags": [
+      "achievement",
+      "award",
+      "badge",
+      "certificate",
+      "credential",
+      "diploma",
+      "document",
+      "license",
+      "seal",
+      "verified"
+    ],
+    "componentName": "Certificate",
+    "variantComponentName": "CertificateFill",
+    "fileName": "CertificateFill.tsx",
+    "versionAdded": "8.6.0",
+    "dateAdded": "2026-09-01T04:56:34.589Z",
+    "lastModified": "2026-09-01T04:56:34.589Z",
+    "versionLastModified": "8.6.0",
+    "svgHash": "704c3204"
+  },
+  {
+    "name": "certificate",
+    "weight": "fill",
+    "duotone": true,
+    "tags": [
+      "achievement",
+      "award",
+      "badge",
+      "certificate",
+      "credential",
+      "diploma",
+      "document",
+      "license",
+      "seal",
+      "verified"
+    ],
+    "componentName": "Certificate",
+    "variantComponentName": "CertificateFillDuotone",
+    "fileName": "CertificateFillDuotone.tsx",
+    "versionAdded": "8.6.0",
+    "dateAdded": "2026-09-01T04:56:34.589Z",
+    "lastModified": "2026-09-01T04:56:34.589Z",
+    "versionLastModified": "8.6.0",
+    "svgHash": "5a8d5dc3"
   },
   {
     "name": "chart-area",
@@ -27114,9 +27408,9 @@
     "fileName": "ChevronFullSquareDownRegular.tsx",
     "versionAdded": "6.2.1",
     "dateAdded": "2026-01-18T11:28:02.531Z",
-    "lastModified": "2026-02-18T20:19:30.740Z",
-    "versionLastModified": "8.0.11",
-    "svgHash": "2a5224f5"
+    "lastModified": "2026-09-01T04:56:34.589Z",
+    "versionLastModified": "8.6.0",
+    "svgHash": "745a3150"
   },
   {
     "name": "chevron-full-square-down",
@@ -27137,9 +27431,9 @@
     "fileName": "ChevronFullSquareDownRegularDuotone.tsx",
     "versionAdded": "6.2.1",
     "dateAdded": "2026-01-18T11:28:02.535Z",
-    "lastModified": "2026-06-22T16:04:39.656Z",
-    "versionLastModified": "8.5.0",
-    "svgHash": "425c9f1a"
+    "lastModified": "2026-09-01T04:56:34.589Z",
+    "versionLastModified": "8.6.0",
+    "svgHash": "25f2d780"
   },
   {
     "name": "chevron-full-square-down",
@@ -27160,9 +27454,9 @@
     "fileName": "ChevronFullSquareDownBold.tsx",
     "versionAdded": "6.2.1",
     "dateAdded": "2026-01-18T11:28:02.540Z",
-    "lastModified": "2026-02-18T20:19:30.740Z",
-    "versionLastModified": "8.0.11",
-    "svgHash": "1094b1a3"
+    "lastModified": "2026-09-01T04:56:34.589Z",
+    "versionLastModified": "8.6.0",
+    "svgHash": "788d4422"
   },
   {
     "name": "chevron-full-square-down",
@@ -27183,9 +27477,9 @@
     "fileName": "ChevronFullSquareDownBoldDuotone.tsx",
     "versionAdded": "6.2.1",
     "dateAdded": "2026-01-18T11:28:02.544Z",
-    "lastModified": "2026-02-18T20:19:30.740Z",
-    "versionLastModified": "8.0.11",
-    "svgHash": "707f8a46"
+    "lastModified": "2026-09-01T04:56:34.589Z",
+    "versionLastModified": "8.6.0",
+    "svgHash": "4689fe6a"
   },
   {
     "name": "chevron-full-square-down",
@@ -27206,9 +27500,9 @@
     "fileName": "ChevronFullSquareDownFill.tsx",
     "versionAdded": "6.2.1",
     "dateAdded": "2026-01-18T11:28:02.548Z",
-    "lastModified": "2026-04-09T12:41:31.630Z",
-    "versionLastModified": "8.1.0",
-    "svgHash": "5e9d08d1"
+    "lastModified": "2026-09-01T04:56:34.589Z",
+    "versionLastModified": "8.6.0",
+    "svgHash": "0a80b802"
   },
   {
     "name": "chevron-full-square-down",
@@ -27229,9 +27523,9 @@
     "fileName": "ChevronFullSquareDownFillDuotone.tsx",
     "versionAdded": "6.2.1",
     "dateAdded": "2026-01-18T11:28:02.554Z",
-    "lastModified": "2026-06-22T16:04:39.656Z",
-    "versionLastModified": "8.5.0",
-    "svgHash": "0aaae20f"
+    "lastModified": "2026-09-01T04:56:34.589Z",
+    "versionLastModified": "8.6.0",
+    "svgHash": "6b77d305"
   },
   {
     "name": "chevron-full-square-left",
@@ -27252,9 +27546,9 @@
     "fileName": "ChevronFullSquareLeftRegular.tsx",
     "versionAdded": "6.2.1",
     "dateAdded": "2026-01-18T11:28:02.566Z",
-    "lastModified": "2026-02-18T20:19:30.740Z",
-    "versionLastModified": "8.0.11",
-    "svgHash": "6f27e8ef"
+    "lastModified": "2026-09-01T04:56:34.589Z",
+    "versionLastModified": "8.6.0",
+    "svgHash": "1820df2c"
   },
   {
     "name": "chevron-full-square-left",
@@ -27275,9 +27569,9 @@
     "fileName": "ChevronFullSquareLeftRegularDuotone.tsx",
     "versionAdded": "6.2.1",
     "dateAdded": "2026-01-18T11:28:02.571Z",
-    "lastModified": "2026-06-22T16:04:39.656Z",
-    "versionLastModified": "8.5.0",
-    "svgHash": "6af6af68"
+    "lastModified": "2026-09-01T04:56:34.589Z",
+    "versionLastModified": "8.6.0",
+    "svgHash": "1f3fe1fe"
   },
   {
     "name": "chevron-full-square-left",
@@ -27298,9 +27592,9 @@
     "fileName": "ChevronFullSquareLeftBold.tsx",
     "versionAdded": "6.2.1",
     "dateAdded": "2026-01-18T11:28:02.578Z",
-    "lastModified": "2026-02-18T20:19:30.740Z",
-    "versionLastModified": "8.0.11",
-    "svgHash": "4fc90b73"
+    "lastModified": "2026-09-01T04:56:34.589Z",
+    "versionLastModified": "8.6.0",
+    "svgHash": "49e788d3"
   },
   {
     "name": "chevron-full-square-left",
@@ -27321,9 +27615,9 @@
     "fileName": "ChevronFullSquareLeftBoldDuotone.tsx",
     "versionAdded": "6.2.1",
     "dateAdded": "2026-01-18T11:28:02.582Z",
-    "lastModified": "2026-06-22T16:04:39.656Z",
-    "versionLastModified": "8.5.0",
-    "svgHash": "2ded6d18"
+    "lastModified": "2026-09-01T04:56:34.589Z",
+    "versionLastModified": "8.6.0",
+    "svgHash": "0b93231a"
   },
   {
     "name": "chevron-full-square-left",
@@ -27344,9 +27638,9 @@
     "fileName": "ChevronFullSquareLeftFill.tsx",
     "versionAdded": "6.2.1",
     "dateAdded": "2026-01-18T11:28:02.587Z",
-    "lastModified": "2026-04-09T12:41:31.630Z",
-    "versionLastModified": "8.1.0",
-    "svgHash": "6e052347"
+    "lastModified": "2026-09-01T04:56:34.589Z",
+    "versionLastModified": "8.6.0",
+    "svgHash": "4bb212cf"
   },
   {
     "name": "chevron-full-square-left",
@@ -27367,9 +27661,9 @@
     "fileName": "ChevronFullSquareLeftFillDuotone.tsx",
     "versionAdded": "6.2.1",
     "dateAdded": "2026-01-18T11:28:02.594Z",
-    "lastModified": "2026-06-22T16:04:39.656Z",
-    "versionLastModified": "8.5.0",
-    "svgHash": "5b47197f"
+    "lastModified": "2026-09-01T04:56:34.589Z",
+    "versionLastModified": "8.6.0",
+    "svgHash": "11ed1b1b"
   },
   {
     "name": "chevron-full-square-right",
@@ -27388,9 +27682,9 @@
     "fileName": "ChevronFullSquareRightRegular.tsx",
     "versionAdded": "6.2.1",
     "dateAdded": "2026-01-18T11:28:02.598Z",
-    "lastModified": "2026-02-18T20:19:30.740Z",
-    "versionLastModified": "8.0.11",
-    "svgHash": "26412fc6"
+    "lastModified": "2026-09-01T04:56:34.589Z",
+    "versionLastModified": "8.6.0",
+    "svgHash": "689f2e74"
   },
   {
     "name": "chevron-full-square-right",
@@ -27409,9 +27703,9 @@
     "fileName": "ChevronFullSquareRightRegularDuotone.tsx",
     "versionAdded": "6.2.1",
     "dateAdded": "2026-01-18T11:28:02.602Z",
-    "lastModified": "2026-04-09T12:41:31.630Z",
-    "versionLastModified": "8.1.0",
-    "svgHash": "2baa8a7c"
+    "lastModified": "2026-09-01T04:56:34.589Z",
+    "versionLastModified": "8.6.0",
+    "svgHash": "6f95ca35"
   },
   {
     "name": "chevron-full-square-right",
@@ -27430,9 +27724,9 @@
     "fileName": "ChevronFullSquareRightBold.tsx",
     "versionAdded": "6.2.1",
     "dateAdded": "2026-01-18T11:28:02.607Z",
-    "lastModified": "2026-02-18T20:19:30.740Z",
-    "versionLastModified": "8.0.11",
-    "svgHash": "4053db71"
+    "lastModified": "2026-09-01T04:56:34.589Z",
+    "versionLastModified": "8.6.0",
+    "svgHash": "2e883ece"
   },
   {
     "name": "chevron-full-square-right",
@@ -27451,9 +27745,9 @@
     "fileName": "ChevronFullSquareRightBoldDuotone.tsx",
     "versionAdded": "6.2.1",
     "dateAdded": "2026-01-18T11:28:02.614Z",
-    "lastModified": "2026-02-18T20:19:30.740Z",
-    "versionLastModified": "8.0.11",
-    "svgHash": "38f9a6e7"
+    "lastModified": "2026-09-01T04:56:34.589Z",
+    "versionLastModified": "8.6.0",
+    "svgHash": "62ef32c3"
   },
   {
     "name": "chevron-full-square-right",
@@ -27472,9 +27766,9 @@
     "fileName": "ChevronFullSquareRightFill.tsx",
     "versionAdded": "6.2.1",
     "dateAdded": "2026-01-18T11:28:02.618Z",
-    "lastModified": "2026-04-09T12:41:31.630Z",
-    "versionLastModified": "8.1.0",
-    "svgHash": "239e4021"
+    "lastModified": "2026-09-01T04:56:34.589Z",
+    "versionLastModified": "8.6.0",
+    "svgHash": "396d7acf"
   },
   {
     "name": "chevron-full-square-right",
@@ -27493,9 +27787,9 @@
     "fileName": "ChevronFullSquareRightFillDuotone.tsx",
     "versionAdded": "6.2.1",
     "dateAdded": "2026-01-18T11:28:02.623Z",
-    "lastModified": "2026-04-09T12:41:31.630Z",
-    "versionLastModified": "8.1.0",
-    "svgHash": "338c24fa"
+    "lastModified": "2026-09-01T04:56:34.589Z",
+    "versionLastModified": "8.6.0",
+    "svgHash": "22c71dd5"
   },
   {
     "name": "chevron-full-square-up",
@@ -27514,9 +27808,9 @@
     "fileName": "ChevronFullSquareUpRegular.tsx",
     "versionAdded": "6.2.1",
     "dateAdded": "2026-01-18T11:28:02.629Z",
-    "lastModified": "2026-02-18T20:19:30.740Z",
-    "versionLastModified": "8.0.11",
-    "svgHash": "2fd60d04"
+    "lastModified": "2026-09-01T04:56:34.589Z",
+    "versionLastModified": "8.6.0",
+    "svgHash": "6dc92169"
   },
   {
     "name": "chevron-full-square-up",
@@ -27535,9 +27829,9 @@
     "fileName": "ChevronFullSquareUpRegularDuotone.tsx",
     "versionAdded": "6.2.1",
     "dateAdded": "2026-01-18T11:28:02.634Z",
-    "lastModified": "2026-06-22T16:04:39.656Z",
-    "versionLastModified": "8.5.0",
-    "svgHash": "31d8faf9"
+    "lastModified": "2026-09-01T04:56:34.589Z",
+    "versionLastModified": "8.6.0",
+    "svgHash": "6283dead"
   },
   {
     "name": "chevron-full-square-up",
@@ -27556,9 +27850,9 @@
     "fileName": "ChevronFullSquareUpBold.tsx",
     "versionAdded": "6.2.1",
     "dateAdded": "2026-01-18T11:28:02.642Z",
-    "lastModified": "2026-02-18T20:19:30.740Z",
-    "versionLastModified": "8.0.11",
-    "svgHash": "21d74af4"
+    "lastModified": "2026-09-01T04:56:34.589Z",
+    "versionLastModified": "8.6.0",
+    "svgHash": "19fe7355"
   },
   {
     "name": "chevron-full-square-up",
@@ -27577,9 +27871,9 @@
     "fileName": "ChevronFullSquareUpBoldDuotone.tsx",
     "versionAdded": "6.2.1",
     "dateAdded": "2026-01-18T11:28:02.647Z",
-    "lastModified": "2026-06-22T16:04:39.656Z",
-    "versionLastModified": "8.5.0",
-    "svgHash": "5ca5c5ff"
+    "lastModified": "2026-09-01T04:56:34.589Z",
+    "versionLastModified": "8.6.0",
+    "svgHash": "4f3bb2e3"
   },
   {
     "name": "chevron-full-square-up",
@@ -27598,9 +27892,9 @@
     "fileName": "ChevronFullSquareUpFill.tsx",
     "versionAdded": "6.2.1",
     "dateAdded": "2026-01-18T11:28:02.651Z",
-    "lastModified": "2026-04-09T12:41:31.630Z",
-    "versionLastModified": "8.1.0",
-    "svgHash": "0ea117eb"
+    "lastModified": "2026-09-01T04:56:34.589Z",
+    "versionLastModified": "8.6.0",
+    "svgHash": "6708a342"
   },
   {
     "name": "chevron-full-square-up",
@@ -27619,9 +27913,9 @@
     "fileName": "ChevronFullSquareUpFillDuotone.tsx",
     "versionAdded": "6.2.1",
     "dateAdded": "2026-01-18T11:28:02.657Z",
-    "lastModified": "2026-06-22T16:04:39.656Z",
-    "versionLastModified": "8.5.0",
-    "svgHash": "0f311e23"
+    "lastModified": "2026-09-01T04:56:34.589Z",
+    "versionLastModified": "8.6.0",
+    "svgHash": "4616ef84"
   },
   {
     "name": "chevron-full-up",
@@ -30648,6 +30942,174 @@
     "svgHash": "267f74e0"
   },
   {
+    "name": "circle-dot",
+    "weight": "regular",
+    "duotone": false,
+    "tags": [
+      "choice",
+      "circle",
+      "code",
+      "coding",
+      "dot",
+      "git",
+      "issue",
+      "option",
+      "pending",
+      "progress",
+      "radio",
+      "select",
+      "status"
+    ],
+    "componentName": "CircleDot",
+    "variantComponentName": "CircleDotRegular",
+    "fileName": "CircleDotRegular.tsx",
+    "versionAdded": "8.6.0",
+    "dateAdded": "2026-09-01T04:56:34.589Z",
+    "lastModified": "2026-09-01T04:56:34.589Z",
+    "versionLastModified": "8.6.0",
+    "svgHash": "144adfbb"
+  },
+  {
+    "name": "circle-dot",
+    "weight": "regular",
+    "duotone": true,
+    "tags": [
+      "choice",
+      "circle",
+      "code",
+      "coding",
+      "dot",
+      "git",
+      "issue",
+      "option",
+      "pending",
+      "progress",
+      "radio",
+      "select",
+      "status"
+    ],
+    "componentName": "CircleDot",
+    "variantComponentName": "CircleDotRegularDuotone",
+    "fileName": "CircleDotRegularDuotone.tsx",
+    "versionAdded": "8.6.0",
+    "dateAdded": "2026-09-01T04:56:34.589Z",
+    "lastModified": "2026-09-01T04:56:34.589Z",
+    "versionLastModified": "8.6.0",
+    "svgHash": "6b340901"
+  },
+  {
+    "name": "circle-dot",
+    "weight": "bold",
+    "duotone": false,
+    "tags": [
+      "choice",
+      "circle",
+      "code",
+      "coding",
+      "dot",
+      "git",
+      "issue",
+      "option",
+      "pending",
+      "progress",
+      "radio",
+      "select",
+      "status"
+    ],
+    "componentName": "CircleDot",
+    "variantComponentName": "CircleDotBold",
+    "fileName": "CircleDotBold.tsx",
+    "versionAdded": "8.6.0",
+    "dateAdded": "2026-09-01T04:56:34.589Z",
+    "lastModified": "2026-09-01T04:56:34.589Z",
+    "versionLastModified": "8.6.0",
+    "svgHash": "7a9cdb48"
+  },
+  {
+    "name": "circle-dot",
+    "weight": "bold",
+    "duotone": true,
+    "tags": [
+      "choice",
+      "circle",
+      "code",
+      "coding",
+      "dot",
+      "git",
+      "issue",
+      "option",
+      "pending",
+      "progress",
+      "radio",
+      "select",
+      "status"
+    ],
+    "componentName": "CircleDot",
+    "variantComponentName": "CircleDotBoldDuotone",
+    "fileName": "CircleDotBoldDuotone.tsx",
+    "versionAdded": "8.6.0",
+    "dateAdded": "2026-09-01T04:56:34.589Z",
+    "lastModified": "2026-09-01T04:56:34.589Z",
+    "versionLastModified": "8.6.0",
+    "svgHash": "6acad5be"
+  },
+  {
+    "name": "circle-dot",
+    "weight": "fill",
+    "duotone": false,
+    "tags": [
+      "choice",
+      "circle",
+      "code",
+      "coding",
+      "dot",
+      "git",
+      "issue",
+      "option",
+      "pending",
+      "progress",
+      "radio",
+      "select",
+      "status"
+    ],
+    "componentName": "CircleDot",
+    "variantComponentName": "CircleDotFill",
+    "fileName": "CircleDotFill.tsx",
+    "versionAdded": "8.6.0",
+    "dateAdded": "2026-09-01T04:56:34.589Z",
+    "lastModified": "2026-09-01T04:56:34.589Z",
+    "versionLastModified": "8.6.0",
+    "svgHash": "0850a906"
+  },
+  {
+    "name": "circle-dot",
+    "weight": "fill",
+    "duotone": true,
+    "tags": [
+      "choice",
+      "circle",
+      "code",
+      "coding",
+      "dot",
+      "git",
+      "issue",
+      "option",
+      "pending",
+      "progress",
+      "radio",
+      "select",
+      "status"
+    ],
+    "componentName": "CircleDot",
+    "variantComponentName": "CircleDotFillDuotone",
+    "fileName": "CircleDotFillDuotone.tsx",
+    "versionAdded": "8.6.0",
+    "dateAdded": "2026-09-01T04:56:34.589Z",
+    "lastModified": "2026-09-01T04:56:34.589Z",
+    "versionLastModified": "8.6.0",
+    "svgHash": "58d51584"
+  },
+  {
     "name": "circle-dots",
     "weight": "regular",
     "duotone": false,
@@ -31765,9 +32227,9 @@
     "fileName": "CliSquareRegular.tsx",
     "versionAdded": "6.2.1",
     "dateAdded": "2026-01-18T11:28:03.621Z",
-    "lastModified": "2026-02-18T20:19:30.740Z",
-    "versionLastModified": "8.0.11",
-    "svgHash": "6cb24aef"
+    "lastModified": "2026-09-01T04:56:34.589Z",
+    "versionLastModified": "8.6.0",
+    "svgHash": "774cc7eb"
   },
   {
     "name": "cli-square",
@@ -31789,9 +32251,9 @@
     "fileName": "CliSquareRegularDuotone.tsx",
     "versionAdded": "6.2.1",
     "dateAdded": "2026-01-18T11:28:03.625Z",
-    "lastModified": "2026-04-25T02:07:54.433Z",
-    "versionLastModified": "8.3.0",
-    "svgHash": "1ca9c858"
+    "lastModified": "2026-09-01T04:56:34.589Z",
+    "versionLastModified": "8.6.0",
+    "svgHash": "4977d38e"
   },
   {
     "name": "cli-square",
@@ -31813,9 +32275,9 @@
     "fileName": "CliSquareBold.tsx",
     "versionAdded": "6.2.1",
     "dateAdded": "2026-01-18T11:28:03.630Z",
-    "lastModified": "2026-02-18T20:19:30.740Z",
-    "versionLastModified": "8.0.11",
-    "svgHash": "5f96a2eb"
+    "lastModified": "2026-09-01T04:56:34.589Z",
+    "versionLastModified": "8.6.0",
+    "svgHash": "74007db9"
   },
   {
     "name": "cli-square",
@@ -31837,9 +32299,9 @@
     "fileName": "CliSquareBoldDuotone.tsx",
     "versionAdded": "6.2.1",
     "dateAdded": "2026-01-18T11:28:03.634Z",
-    "lastModified": "2026-06-22T16:04:39.656Z",
-    "versionLastModified": "8.5.0",
-    "svgHash": "0617db28"
+    "lastModified": "2026-09-01T04:56:34.589Z",
+    "versionLastModified": "8.6.0",
+    "svgHash": "14a99434"
   },
   {
     "name": "cli-square",
@@ -31861,9 +32323,9 @@
     "fileName": "CliSquareFill.tsx",
     "versionAdded": "6.2.1",
     "dateAdded": "2026-01-18T11:28:03.639Z",
-    "lastModified": "2026-02-18T20:19:30.740Z",
-    "versionLastModified": "8.0.11",
-    "svgHash": "5872fa26"
+    "lastModified": "2026-09-01T04:56:34.589Z",
+    "versionLastModified": "8.6.0",
+    "svgHash": "6112885e"
   },
   {
     "name": "cli-square",
@@ -31885,9 +32347,9 @@
     "fileName": "CliSquareFillDuotone.tsx",
     "versionAdded": "6.2.1",
     "dateAdded": "2026-01-18T11:28:03.643Z",
-    "lastModified": "2026-06-22T16:04:39.656Z",
-    "versionLastModified": "8.5.0",
-    "svgHash": "208ab92a"
+    "lastModified": "2026-09-01T04:56:34.589Z",
+    "versionLastModified": "8.6.0",
+    "svgHash": "77fe3eab"
   },
   {
     "name": "clipboard",
@@ -38104,6 +38566,156 @@
     "lastModified": "2026-04-09T12:41:31.630Z",
     "versionLastModified": "8.1.0",
     "svgHash": "5aca8a3a"
+  },
+  {
+    "name": "crown",
+    "weight": "regular",
+    "duotone": false,
+    "tags": [
+      "achievement",
+      "admin",
+      "owner",
+      "plan",
+      "premium",
+      "pro",
+      "reward",
+      "subscription",
+      "upgrade",
+      "vip"
+    ],
+    "componentName": "Crown",
+    "variantComponentName": "CrownRegular",
+    "fileName": "CrownRegular.tsx",
+    "versionAdded": "8.6.0",
+    "dateAdded": "2026-09-01T04:56:34.589Z",
+    "lastModified": "2026-09-01T04:56:34.589Z",
+    "versionLastModified": "8.6.0",
+    "svgHash": "689355ab"
+  },
+  {
+    "name": "crown",
+    "weight": "regular",
+    "duotone": true,
+    "tags": [
+      "achievement",
+      "admin",
+      "owner",
+      "plan",
+      "premium",
+      "pro",
+      "reward",
+      "subscription",
+      "upgrade",
+      "vip"
+    ],
+    "componentName": "Crown",
+    "variantComponentName": "CrownRegularDuotone",
+    "fileName": "CrownRegularDuotone.tsx",
+    "versionAdded": "8.6.0",
+    "dateAdded": "2026-09-01T04:56:34.589Z",
+    "lastModified": "2026-09-01T04:56:34.589Z",
+    "versionLastModified": "8.6.0",
+    "svgHash": "2a612641"
+  },
+  {
+    "name": "crown",
+    "weight": "bold",
+    "duotone": false,
+    "tags": [
+      "achievement",
+      "admin",
+      "owner",
+      "plan",
+      "premium",
+      "pro",
+      "reward",
+      "subscription",
+      "upgrade",
+      "vip"
+    ],
+    "componentName": "Crown",
+    "variantComponentName": "CrownBold",
+    "fileName": "CrownBold.tsx",
+    "versionAdded": "8.6.0",
+    "dateAdded": "2026-09-01T04:56:34.589Z",
+    "lastModified": "2026-09-01T04:56:34.589Z",
+    "versionLastModified": "8.6.0",
+    "svgHash": "6e4252a1"
+  },
+  {
+    "name": "crown",
+    "weight": "bold",
+    "duotone": true,
+    "tags": [
+      "achievement",
+      "admin",
+      "owner",
+      "plan",
+      "premium",
+      "pro",
+      "reward",
+      "subscription",
+      "upgrade",
+      "vip"
+    ],
+    "componentName": "Crown",
+    "variantComponentName": "CrownBoldDuotone",
+    "fileName": "CrownBoldDuotone.tsx",
+    "versionAdded": "8.6.0",
+    "dateAdded": "2026-09-01T04:56:34.589Z",
+    "lastModified": "2026-09-01T04:56:34.589Z",
+    "versionLastModified": "8.6.0",
+    "svgHash": "4f753cbf"
+  },
+  {
+    "name": "crown",
+    "weight": "fill",
+    "duotone": false,
+    "tags": [
+      "achievement",
+      "admin",
+      "owner",
+      "plan",
+      "premium",
+      "pro",
+      "reward",
+      "subscription",
+      "upgrade",
+      "vip"
+    ],
+    "componentName": "Crown",
+    "variantComponentName": "CrownFill",
+    "fileName": "CrownFill.tsx",
+    "versionAdded": "8.6.0",
+    "dateAdded": "2026-09-01T04:56:34.589Z",
+    "lastModified": "2026-09-01T04:56:34.589Z",
+    "versionLastModified": "8.6.0",
+    "svgHash": "498a37a9"
+  },
+  {
+    "name": "crown",
+    "weight": "fill",
+    "duotone": true,
+    "tags": [
+      "achievement",
+      "admin",
+      "owner",
+      "plan",
+      "premium",
+      "pro",
+      "reward",
+      "subscription",
+      "upgrade",
+      "vip"
+    ],
+    "componentName": "Crown",
+    "variantComponentName": "CrownFillDuotone",
+    "fileName": "CrownFillDuotone.tsx",
+    "versionAdded": "8.6.0",
+    "dateAdded": "2026-09-01T04:56:34.589Z",
+    "lastModified": "2026-09-01T04:56:34.589Z",
+    "versionLastModified": "8.6.0",
+    "svgHash": "765e8cee"
   },
   {
     "name": "cube",
@@ -52317,9 +52929,9 @@
     "fileName": "Gauge0Fill.tsx",
     "versionAdded": "8.2.0",
     "dateAdded": "2026-04-16T02:48:20.159Z",
-    "lastModified": "2026-04-16T02:48:20.159Z",
-    "versionLastModified": "8.2.0",
-    "svgHash": "1e0f2dcc"
+    "lastModified": "2026-09-01T04:56:34.589Z",
+    "versionLastModified": "8.6.0",
+    "svgHash": "7c10b064"
   },
   {
     "name": "gauge-0",
@@ -52345,9 +52957,9 @@
     "fileName": "Gauge0FillDuotone.tsx",
     "versionAdded": "8.2.0",
     "dateAdded": "2026-04-16T02:48:20.159Z",
-    "lastModified": "2026-04-16T02:48:20.159Z",
-    "versionLastModified": "8.2.0",
-    "svgHash": "5279bd1d"
+    "lastModified": "2026-09-01T04:56:34.589Z",
+    "versionLastModified": "8.6.0",
+    "svgHash": "66b839bf"
   },
   {
     "name": "gauge-100",
@@ -52485,9 +53097,9 @@
     "fileName": "Gauge100Fill.tsx",
     "versionAdded": "8.2.0",
     "dateAdded": "2026-04-16T02:48:20.159Z",
-    "lastModified": "2026-04-16T02:48:20.159Z",
-    "versionLastModified": "8.2.0",
-    "svgHash": "289ade9e"
+    "lastModified": "2026-09-01T04:56:34.589Z",
+    "versionLastModified": "8.6.0",
+    "svgHash": "7eb40c7e"
   },
   {
     "name": "gauge-100",
@@ -52513,9 +53125,9 @@
     "fileName": "Gauge100FillDuotone.tsx",
     "versionAdded": "8.2.0",
     "dateAdded": "2026-04-16T02:48:20.159Z",
-    "lastModified": "2026-04-16T02:48:20.159Z",
-    "versionLastModified": "8.2.0",
-    "svgHash": "0d53fb6b"
+    "lastModified": "2026-09-01T04:56:34.589Z",
+    "versionLastModified": "8.6.0",
+    "svgHash": "5f9f02cb"
   },
   {
     "name": "gauge-15",
@@ -52648,9 +53260,9 @@
     "fileName": "Gauge15Fill.tsx",
     "versionAdded": "8.2.0",
     "dateAdded": "2026-04-16T02:48:20.159Z",
-    "lastModified": "2026-04-16T02:48:20.159Z",
-    "versionLastModified": "8.2.0",
-    "svgHash": "3c4ec0fc"
+    "lastModified": "2026-09-01T04:56:34.589Z",
+    "versionLastModified": "8.6.0",
+    "svgHash": "1d0ee204"
   },
   {
     "name": "gauge-15",
@@ -52675,9 +53287,9 @@
     "fileName": "Gauge15FillDuotone.tsx",
     "versionAdded": "8.2.0",
     "dateAdded": "2026-04-16T02:48:20.159Z",
-    "lastModified": "2026-04-16T02:48:20.159Z",
-    "versionLastModified": "8.2.0",
-    "svgHash": "572682db"
+    "lastModified": "2026-09-01T04:56:34.589Z",
+    "versionLastModified": "8.6.0",
+    "svgHash": "3d6bdb7b"
   },
   {
     "name": "gauge-33",
@@ -52810,9 +53422,9 @@
     "fileName": "Gauge33Fill.tsx",
     "versionAdded": "8.2.0",
     "dateAdded": "2026-04-16T02:48:20.159Z",
-    "lastModified": "2026-04-16T02:48:20.159Z",
-    "versionLastModified": "8.2.0",
-    "svgHash": "44619583"
+    "lastModified": "2026-09-01T04:56:34.589Z",
+    "versionLastModified": "8.6.0",
+    "svgHash": "288c866f"
   },
   {
     "name": "gauge-33",
@@ -52837,9 +53449,9 @@
     "fileName": "Gauge33FillDuotone.tsx",
     "versionAdded": "8.2.0",
     "dateAdded": "2026-04-16T02:48:20.159Z",
-    "lastModified": "2026-04-16T02:48:20.159Z",
-    "versionLastModified": "8.2.0",
-    "svgHash": "7fc9cd2a"
+    "lastModified": "2026-09-01T04:56:34.589Z",
+    "versionLastModified": "8.6.0",
+    "svgHash": "61067cd3"
   },
   {
     "name": "gauge-50",
@@ -52972,9 +53584,9 @@
     "fileName": "Gauge50Fill.tsx",
     "versionAdded": "8.2.0",
     "dateAdded": "2026-04-16T02:48:20.159Z",
-    "lastModified": "2026-04-16T02:48:20.159Z",
-    "versionLastModified": "8.2.0",
-    "svgHash": "7528110f"
+    "lastModified": "2026-09-01T04:56:34.589Z",
+    "versionLastModified": "8.6.0",
+    "svgHash": "50a9e83c"
   },
   {
     "name": "gauge-50",
@@ -52999,9 +53611,9 @@
     "fileName": "Gauge50FillDuotone.tsx",
     "versionAdded": "8.2.0",
     "dateAdded": "2026-04-16T02:48:20.159Z",
-    "lastModified": "2026-04-16T02:48:20.159Z",
-    "versionLastModified": "8.2.0",
-    "svgHash": "47d393c1"
+    "lastModified": "2026-09-01T04:56:34.589Z",
+    "versionLastModified": "8.6.0",
+    "svgHash": "3986da00"
   },
   {
     "name": "gauge-66",
@@ -53134,9 +53746,9 @@
     "fileName": "Gauge66Fill.tsx",
     "versionAdded": "8.2.0",
     "dateAdded": "2026-04-16T02:48:20.159Z",
-    "lastModified": "2026-04-16T02:48:20.159Z",
-    "versionLastModified": "8.2.0",
-    "svgHash": "2cb2ac6d"
+    "lastModified": "2026-09-01T04:56:34.589Z",
+    "versionLastModified": "8.6.0",
+    "svgHash": "41f0d0b3"
   },
   {
     "name": "gauge-66",
@@ -53161,9 +53773,9 @@
     "fileName": "Gauge66FillDuotone.tsx",
     "versionAdded": "8.2.0",
     "dateAdded": "2026-04-16T02:48:20.159Z",
-    "lastModified": "2026-04-16T02:48:20.159Z",
-    "versionLastModified": "8.2.0",
-    "svgHash": "48e513b4"
+    "lastModified": "2026-09-01T04:56:34.589Z",
+    "versionLastModified": "8.6.0",
+    "svgHash": "07842d41"
   },
   {
     "name": "gauge-85",
@@ -53323,9 +53935,9 @@
     "fileName": "Gauge85FillDuotone.tsx",
     "versionAdded": "8.2.0",
     "dateAdded": "2026-04-16T02:48:20.159Z",
-    "lastModified": "2026-04-16T02:48:20.159Z",
-    "versionLastModified": "8.2.0",
-    "svgHash": "0cd98429"
+    "lastModified": "2026-09-01T04:56:34.589Z",
+    "versionLastModified": "8.6.0",
+    "svgHash": "43fcc302"
   },
   {
     "name": "gauge-dots-0",
@@ -58110,6 +58722,168 @@
     "svgHash": "0ce209e0"
   },
   {
+    "name": "history",
+    "weight": "regular",
+    "duotone": false,
+    "tags": [
+      "activity",
+      "backup",
+      "history",
+      "log",
+      "recent",
+      "refresh",
+      "restore",
+      "revert",
+      "rewind",
+      "timer",
+      "undo",
+      "version"
+    ],
+    "componentName": "History",
+    "variantComponentName": "HistoryRegular",
+    "fileName": "HistoryRegular.tsx",
+    "versionAdded": "8.6.0",
+    "dateAdded": "2026-09-01T04:56:34.589Z",
+    "lastModified": "2026-09-01T04:56:34.589Z",
+    "versionLastModified": "8.6.0",
+    "svgHash": "74e77776"
+  },
+  {
+    "name": "history",
+    "weight": "regular",
+    "duotone": true,
+    "tags": [
+      "activity",
+      "backup",
+      "history",
+      "log",
+      "recent",
+      "refresh",
+      "restore",
+      "revert",
+      "rewind",
+      "timer",
+      "undo",
+      "version"
+    ],
+    "componentName": "History",
+    "variantComponentName": "HistoryRegularDuotone",
+    "fileName": "HistoryRegularDuotone.tsx",
+    "versionAdded": "8.6.0",
+    "dateAdded": "2026-09-01T04:56:34.589Z",
+    "lastModified": "2026-09-01T04:56:34.589Z",
+    "versionLastModified": "8.6.0",
+    "svgHash": "0346da29"
+  },
+  {
+    "name": "history",
+    "weight": "bold",
+    "duotone": false,
+    "tags": [
+      "activity",
+      "backup",
+      "history",
+      "log",
+      "recent",
+      "refresh",
+      "restore",
+      "revert",
+      "rewind",
+      "timer",
+      "undo",
+      "version"
+    ],
+    "componentName": "History",
+    "variantComponentName": "HistoryBold",
+    "fileName": "HistoryBold.tsx",
+    "versionAdded": "8.6.0",
+    "dateAdded": "2026-09-01T04:56:34.589Z",
+    "lastModified": "2026-09-01T04:56:34.589Z",
+    "versionLastModified": "8.6.0",
+    "svgHash": "6f36ebb5"
+  },
+  {
+    "name": "history",
+    "weight": "bold",
+    "duotone": true,
+    "tags": [
+      "activity",
+      "backup",
+      "history",
+      "log",
+      "recent",
+      "refresh",
+      "restore",
+      "revert",
+      "rewind",
+      "timer",
+      "undo",
+      "version"
+    ],
+    "componentName": "History",
+    "variantComponentName": "HistoryBoldDuotone",
+    "fileName": "HistoryBoldDuotone.tsx",
+    "versionAdded": "8.6.0",
+    "dateAdded": "2026-09-01T04:56:34.589Z",
+    "lastModified": "2026-09-01T04:56:34.589Z",
+    "versionLastModified": "8.6.0",
+    "svgHash": "6c2bb29d"
+  },
+  {
+    "name": "history",
+    "weight": "fill",
+    "duotone": false,
+    "tags": [
+      "activity",
+      "backup",
+      "history",
+      "log",
+      "recent",
+      "refresh",
+      "restore",
+      "revert",
+      "rewind",
+      "timer",
+      "undo",
+      "version"
+    ],
+    "componentName": "History",
+    "variantComponentName": "HistoryFill",
+    "fileName": "HistoryFill.tsx",
+    "versionAdded": "8.6.0",
+    "dateAdded": "2026-09-01T04:56:34.589Z",
+    "lastModified": "2026-09-01T04:56:34.589Z",
+    "versionLastModified": "8.6.0",
+    "svgHash": "4ff4017b"
+  },
+  {
+    "name": "history",
+    "weight": "fill",
+    "duotone": true,
+    "tags": [
+      "activity",
+      "backup",
+      "history",
+      "log",
+      "recent",
+      "refresh",
+      "restore",
+      "revert",
+      "rewind",
+      "timer",
+      "undo",
+      "version"
+    ],
+    "componentName": "History",
+    "variantComponentName": "HistoryFillDuotone",
+    "fileName": "HistoryFillDuotone.tsx",
+    "versionAdded": "8.6.0",
+    "dateAdded": "2026-09-01T04:56:34.589Z",
+    "lastModified": "2026-09-01T04:56:34.589Z",
+    "versionLastModified": "8.6.0",
+    "svgHash": "77aee5a4"
+  },
+  {
     "name": "home",
     "weight": "regular",
     "duotone": false,
@@ -60089,9 +60863,9 @@
     "fileName": "ImageSquareRegular.tsx",
     "versionAdded": "6.2.1",
     "dateAdded": "2026-01-18T11:28:09.073Z",
-    "lastModified": "2026-02-18T20:19:30.740Z",
-    "versionLastModified": "8.0.11",
-    "svgHash": "4f91af88"
+    "lastModified": "2026-09-01T04:56:34.589Z",
+    "versionLastModified": "8.6.0",
+    "svgHash": "64b8d6e6"
   },
   {
     "name": "image-square",
@@ -60111,9 +60885,9 @@
     "fileName": "ImageSquareRegularDuotone.tsx",
     "versionAdded": "6.2.1",
     "dateAdded": "2026-01-18T11:28:09.077Z",
-    "lastModified": "2026-04-09T12:41:31.630Z",
-    "versionLastModified": "8.1.0",
-    "svgHash": "21959257"
+    "lastModified": "2026-09-01T04:56:34.589Z",
+    "versionLastModified": "8.6.0",
+    "svgHash": "6cf2656b"
   },
   {
     "name": "image-square",
@@ -60133,9 +60907,9 @@
     "fileName": "ImageSquareBold.tsx",
     "versionAdded": "6.2.1",
     "dateAdded": "2026-01-18T11:28:09.081Z",
-    "lastModified": "2026-02-18T20:19:30.740Z",
-    "versionLastModified": "8.0.11",
-    "svgHash": "07d1e41a"
+    "lastModified": "2026-09-01T04:56:34.589Z",
+    "versionLastModified": "8.6.0",
+    "svgHash": "472fb6c7"
   },
   {
     "name": "image-square",
@@ -60155,9 +60929,9 @@
     "fileName": "ImageSquareBoldDuotone.tsx",
     "versionAdded": "6.2.1",
     "dateAdded": "2026-01-18T11:28:09.086Z",
-    "lastModified": "2026-02-18T20:19:30.740Z",
-    "versionLastModified": "8.0.11",
-    "svgHash": "4923349b"
+    "lastModified": "2026-09-01T04:56:34.589Z",
+    "versionLastModified": "8.6.0",
+    "svgHash": "60eef916"
   },
   {
     "name": "image-square",
@@ -60177,9 +60951,9 @@
     "fileName": "ImageSquareFill.tsx",
     "versionAdded": "6.2.1",
     "dateAdded": "2026-01-18T11:28:09.090Z",
-    "lastModified": "2026-04-09T12:41:31.630Z",
-    "versionLastModified": "8.1.0",
-    "svgHash": "20cc3d3e"
+    "lastModified": "2026-09-01T04:56:34.589Z",
+    "versionLastModified": "8.6.0",
+    "svgHash": "2c507248"
   },
   {
     "name": "image-square",
@@ -60199,9 +60973,9 @@
     "fileName": "ImageSquareFillDuotone.tsx",
     "versionAdded": "6.2.1",
     "dateAdded": "2026-01-18T11:28:09.095Z",
-    "lastModified": "2026-04-09T12:41:31.630Z",
-    "versionLastModified": "8.1.0",
-    "svgHash": "0da50d77"
+    "lastModified": "2026-09-01T04:56:34.589Z",
+    "versionLastModified": "8.6.0",
+    "svgHash": "6fbcfdbc"
   },
   {
     "name": "image-stack",
@@ -60222,9 +60996,9 @@
     "fileName": "ImageStackRegular.tsx",
     "versionAdded": "6.2.1",
     "dateAdded": "2026-01-18T11:28:09.099Z",
-    "lastModified": "2026-01-18T11:28:09.099Z",
-    "versionLastModified": "6.2.1",
-    "svgHash": "09594616"
+    "lastModified": "2026-09-01T04:56:34.589Z",
+    "versionLastModified": "8.6.0",
+    "svgHash": "32f88dd3"
   },
   {
     "name": "image-stack",
@@ -60245,9 +61019,9 @@
     "fileName": "ImageStackRegularDuotone.tsx",
     "versionAdded": "6.2.1",
     "dateAdded": "2026-01-18T11:28:09.104Z",
-    "lastModified": "2026-01-18T11:28:09.104Z",
-    "versionLastModified": "6.2.1",
-    "svgHash": "5a3224d6"
+    "lastModified": "2026-09-01T04:56:34.589Z",
+    "versionLastModified": "8.6.0",
+    "svgHash": "2875011d"
   },
   {
     "name": "image-stack",
@@ -60268,9 +61042,9 @@
     "fileName": "ImageStackBold.tsx",
     "versionAdded": "6.2.1",
     "dateAdded": "2026-01-18T11:28:09.109Z",
-    "lastModified": "2026-01-18T11:28:09.109Z",
-    "versionLastModified": "6.2.1",
-    "svgHash": "53bd61b2"
+    "lastModified": "2026-09-01T04:56:34.589Z",
+    "versionLastModified": "8.6.0",
+    "svgHash": "2e9d4e10"
   },
   {
     "name": "image-stack",
@@ -60291,9 +61065,9 @@
     "fileName": "ImageStackBoldDuotone.tsx",
     "versionAdded": "6.2.1",
     "dateAdded": "2026-01-18T11:28:09.113Z",
-    "lastModified": "2026-06-22T16:04:39.656Z",
-    "versionLastModified": "8.5.0",
-    "svgHash": "5984e486"
+    "lastModified": "2026-09-01T04:56:34.589Z",
+    "versionLastModified": "8.6.0",
+    "svgHash": "5338fe7f"
   },
   {
     "name": "image-stack",
@@ -60314,9 +61088,9 @@
     "fileName": "ImageStackFill.tsx",
     "versionAdded": "6.2.1",
     "dateAdded": "2026-01-18T11:28:09.117Z",
-    "lastModified": "2026-04-09T12:41:31.630Z",
-    "versionLastModified": "8.1.0",
-    "svgHash": "49eeba4e"
+    "lastModified": "2026-09-01T04:56:34.589Z",
+    "versionLastModified": "8.6.0",
+    "svgHash": "5ec5b39f"
   },
   {
     "name": "image-stack",
@@ -60337,9 +61111,9 @@
     "fileName": "ImageStackFillDuotone.tsx",
     "versionAdded": "6.2.1",
     "dateAdded": "2026-01-18T11:28:09.122Z",
-    "lastModified": "2026-04-09T12:41:31.630Z",
-    "versionLastModified": "8.1.0",
-    "svgHash": "7d6c8ded"
+    "lastModified": "2026-09-01T04:56:34.589Z",
+    "versionLastModified": "8.6.0",
+    "svgHash": "59142e1d"
   },
   {
     "name": "inbox",
@@ -60905,9 +61679,9 @@
     "fileName": "KeyRegular.tsx",
     "versionAdded": "6.2.1",
     "dateAdded": "2026-01-18T11:28:09.177Z",
-    "lastModified": "2026-01-18T11:28:09.177Z",
-    "versionLastModified": "6.2.1",
-    "svgHash": "3bb66db7"
+    "lastModified": "2026-09-01T04:56:34.589Z",
+    "versionLastModified": "8.6.0",
+    "svgHash": "4b6b170f"
   },
   {
     "name": "key",
@@ -60927,9 +61701,9 @@
     "fileName": "KeyRegularDuotone.tsx",
     "versionAdded": "6.2.1",
     "dateAdded": "2026-01-18T11:28:09.181Z",
-    "lastModified": "2026-01-18T11:28:09.181Z",
-    "versionLastModified": "6.2.1",
-    "svgHash": "6e2c2c1b"
+    "lastModified": "2026-09-01T04:56:34.589Z",
+    "versionLastModified": "8.6.0",
+    "svgHash": "2ac24d40"
   },
   {
     "name": "key",
@@ -60949,9 +61723,9 @@
     "fileName": "KeyBold.tsx",
     "versionAdded": "6.2.1",
     "dateAdded": "2026-01-18T11:28:09.185Z",
-    "lastModified": "2026-01-18T11:28:09.185Z",
-    "versionLastModified": "6.2.1",
-    "svgHash": "2bfcf4b8"
+    "lastModified": "2026-09-01T04:56:34.589Z",
+    "versionLastModified": "8.6.0",
+    "svgHash": "5516780d"
   },
   {
     "name": "key",
@@ -60971,9 +61745,9 @@
     "fileName": "KeyBoldDuotone.tsx",
     "versionAdded": "6.2.1",
     "dateAdded": "2026-01-18T11:28:09.190Z",
-    "lastModified": "2026-01-18T11:28:09.190Z",
-    "versionLastModified": "6.2.1",
-    "svgHash": "636b2fca"
+    "lastModified": "2026-09-01T04:56:34.589Z",
+    "versionLastModified": "8.6.0",
+    "svgHash": "6d8f7848"
   },
   {
     "name": "key",
@@ -60993,9 +61767,9 @@
     "fileName": "KeyFill.tsx",
     "versionAdded": "6.2.1",
     "dateAdded": "2026-01-18T11:28:09.194Z",
-    "lastModified": "2026-01-18T11:28:09.194Z",
-    "versionLastModified": "6.2.1",
-    "svgHash": "6fe38987"
+    "lastModified": "2026-09-01T04:56:34.589Z",
+    "versionLastModified": "8.6.0",
+    "svgHash": "02cd2417"
   },
   {
     "name": "key",
@@ -61015,12 +61789,12 @@
     "fileName": "KeyFillDuotone.tsx",
     "versionAdded": "6.2.1",
     "dateAdded": "2026-01-18T11:28:09.198Z",
-    "lastModified": "2026-01-18T11:28:09.198Z",
-    "versionLastModified": "6.2.1",
-    "svgHash": "36f1fd62"
+    "lastModified": "2026-09-01T04:56:34.589Z",
+    "versionLastModified": "8.6.0",
+    "svgHash": "08be2e4a"
   },
   {
-    "name": "key-alt",
+    "name": "key-h",
     "weight": "regular",
     "duotone": false,
     "tags": [
@@ -61032,17 +61806,17 @@
       "security",
       "unlock"
     ],
-    "componentName": "KeyAlt",
-    "variantComponentName": "KeyAltRegular",
-    "fileName": "KeyAltRegular.tsx",
-    "versionAdded": "6.2.1",
-    "dateAdded": "2026-01-18T11:28:09.202Z",
-    "lastModified": "2026-06-22T16:04:39.656Z",
-    "versionLastModified": "8.5.0",
+    "componentName": "KeyH",
+    "variantComponentName": "KeyHRegular",
+    "fileName": "KeyHRegular.tsx",
+    "versionAdded": "8.6.0",
+    "dateAdded": "2026-09-01T04:56:34.589Z",
+    "lastModified": "2026-09-01T04:56:34.589Z",
+    "versionLastModified": "8.6.0",
     "svgHash": "2b74acd0"
   },
   {
-    "name": "key-alt",
+    "name": "key-h",
     "weight": "regular",
     "duotone": true,
     "tags": [
@@ -61054,17 +61828,17 @@
       "security",
       "unlock"
     ],
-    "componentName": "KeyAlt",
-    "variantComponentName": "KeyAltRegularDuotone",
-    "fileName": "KeyAltRegularDuotone.tsx",
-    "versionAdded": "6.2.1",
-    "dateAdded": "2026-01-18T11:28:09.206Z",
-    "lastModified": "2026-06-22T16:04:39.656Z",
-    "versionLastModified": "8.5.0",
+    "componentName": "KeyH",
+    "variantComponentName": "KeyHRegularDuotone",
+    "fileName": "KeyHRegularDuotone.tsx",
+    "versionAdded": "8.6.0",
+    "dateAdded": "2026-09-01T04:56:34.589Z",
+    "lastModified": "2026-09-01T04:56:34.589Z",
+    "versionLastModified": "8.6.0",
     "svgHash": "4c95454b"
   },
   {
-    "name": "key-alt",
+    "name": "key-h",
     "weight": "bold",
     "duotone": false,
     "tags": [
@@ -61076,17 +61850,17 @@
       "security",
       "unlock"
     ],
-    "componentName": "KeyAlt",
-    "variantComponentName": "KeyAltBold",
-    "fileName": "KeyAltBold.tsx",
-    "versionAdded": "6.2.1",
-    "dateAdded": "2026-01-18T11:28:09.212Z",
-    "lastModified": "2026-06-22T16:04:39.656Z",
-    "versionLastModified": "8.5.0",
+    "componentName": "KeyH",
+    "variantComponentName": "KeyHBold",
+    "fileName": "KeyHBold.tsx",
+    "versionAdded": "8.6.0",
+    "dateAdded": "2026-09-01T04:56:34.589Z",
+    "lastModified": "2026-09-01T04:56:34.589Z",
+    "versionLastModified": "8.6.0",
     "svgHash": "0e136245"
   },
   {
-    "name": "key-alt",
+    "name": "key-h",
     "weight": "bold",
     "duotone": true,
     "tags": [
@@ -61098,17 +61872,17 @@
       "security",
       "unlock"
     ],
-    "componentName": "KeyAlt",
-    "variantComponentName": "KeyAltBoldDuotone",
-    "fileName": "KeyAltBoldDuotone.tsx",
-    "versionAdded": "6.2.1",
-    "dateAdded": "2026-01-18T11:28:09.217Z",
-    "lastModified": "2026-06-22T16:04:39.656Z",
-    "versionLastModified": "8.5.0",
+    "componentName": "KeyH",
+    "variantComponentName": "KeyHBoldDuotone",
+    "fileName": "KeyHBoldDuotone.tsx",
+    "versionAdded": "8.6.0",
+    "dateAdded": "2026-09-01T04:56:34.589Z",
+    "lastModified": "2026-09-01T04:56:34.589Z",
+    "versionLastModified": "8.6.0",
     "svgHash": "652000a1"
   },
   {
-    "name": "key-alt",
+    "name": "key-h",
     "weight": "fill",
     "duotone": false,
     "tags": [
@@ -61120,17 +61894,17 @@
       "security",
       "unlock"
     ],
-    "componentName": "KeyAlt",
-    "variantComponentName": "KeyAltFill",
-    "fileName": "KeyAltFill.tsx",
-    "versionAdded": "6.2.1",
-    "dateAdded": "2026-01-18T11:28:09.221Z",
-    "lastModified": "2026-01-18T11:28:09.221Z",
-    "versionLastModified": "6.2.1",
+    "componentName": "KeyH",
+    "variantComponentName": "KeyHFill",
+    "fileName": "KeyHFill.tsx",
+    "versionAdded": "8.6.0",
+    "dateAdded": "2026-09-01T04:56:34.589Z",
+    "lastModified": "2026-09-01T04:56:34.589Z",
+    "versionLastModified": "8.6.0",
     "svgHash": "77133c21"
   },
   {
-    "name": "key-alt",
+    "name": "key-h",
     "weight": "fill",
     "duotone": true,
     "tags": [
@@ -61142,14 +61916,146 @@
       "security",
       "unlock"
     ],
-    "componentName": "KeyAlt",
-    "variantComponentName": "KeyAltFillDuotone",
-    "fileName": "KeyAltFillDuotone.tsx",
-    "versionAdded": "6.2.1",
-    "dateAdded": "2026-01-18T11:28:09.225Z",
-    "lastModified": "2026-01-18T11:28:09.225Z",
-    "versionLastModified": "6.2.1",
+    "componentName": "KeyH",
+    "variantComponentName": "KeyHFillDuotone",
+    "fileName": "KeyHFillDuotone.tsx",
+    "versionAdded": "8.6.0",
+    "dateAdded": "2026-09-01T04:56:34.589Z",
+    "lastModified": "2026-09-01T04:56:34.589Z",
+    "versionLastModified": "8.6.0",
     "svgHash": "512c9e3d"
+  },
+  {
+    "name": "key-v",
+    "weight": "regular",
+    "duotone": false,
+    "tags": [
+      "access",
+      "key",
+      "lock",
+      "login",
+      "password",
+      "security",
+      "unlock"
+    ],
+    "componentName": "KeyV",
+    "variantComponentName": "KeyVRegular",
+    "fileName": "KeyVRegular.tsx",
+    "versionAdded": "8.6.0",
+    "dateAdded": "2026-09-01T04:56:34.589Z",
+    "lastModified": "2026-09-01T04:56:34.589Z",
+    "versionLastModified": "8.6.0",
+    "svgHash": "3bb66db7"
+  },
+  {
+    "name": "key-v",
+    "weight": "regular",
+    "duotone": true,
+    "tags": [
+      "access",
+      "key",
+      "lock",
+      "login",
+      "password",
+      "security",
+      "unlock"
+    ],
+    "componentName": "KeyV",
+    "variantComponentName": "KeyVRegularDuotone",
+    "fileName": "KeyVRegularDuotone.tsx",
+    "versionAdded": "8.6.0",
+    "dateAdded": "2026-09-01T04:56:34.589Z",
+    "lastModified": "2026-09-01T04:56:34.589Z",
+    "versionLastModified": "8.6.0",
+    "svgHash": "6e2c2c1b"
+  },
+  {
+    "name": "key-v",
+    "weight": "bold",
+    "duotone": false,
+    "tags": [
+      "access",
+      "key",
+      "lock",
+      "login",
+      "password",
+      "security",
+      "unlock"
+    ],
+    "componentName": "KeyV",
+    "variantComponentName": "KeyVBold",
+    "fileName": "KeyVBold.tsx",
+    "versionAdded": "8.6.0",
+    "dateAdded": "2026-09-01T04:56:34.589Z",
+    "lastModified": "2026-09-01T04:56:34.589Z",
+    "versionLastModified": "8.6.0",
+    "svgHash": "2bfcf4b8"
+  },
+  {
+    "name": "key-v",
+    "weight": "bold",
+    "duotone": true,
+    "tags": [
+      "access",
+      "key",
+      "lock",
+      "login",
+      "password",
+      "security",
+      "unlock"
+    ],
+    "componentName": "KeyV",
+    "variantComponentName": "KeyVBoldDuotone",
+    "fileName": "KeyVBoldDuotone.tsx",
+    "versionAdded": "8.6.0",
+    "dateAdded": "2026-09-01T04:56:34.589Z",
+    "lastModified": "2026-09-01T04:56:34.589Z",
+    "versionLastModified": "8.6.0",
+    "svgHash": "636b2fca"
+  },
+  {
+    "name": "key-v",
+    "weight": "fill",
+    "duotone": false,
+    "tags": [
+      "access",
+      "key",
+      "lock",
+      "login",
+      "password",
+      "security",
+      "unlock"
+    ],
+    "componentName": "KeyV",
+    "variantComponentName": "KeyVFill",
+    "fileName": "KeyVFill.tsx",
+    "versionAdded": "8.6.0",
+    "dateAdded": "2026-09-01T04:56:34.589Z",
+    "lastModified": "2026-09-01T04:56:34.589Z",
+    "versionLastModified": "8.6.0",
+    "svgHash": "6fe38987"
+  },
+  {
+    "name": "key-v",
+    "weight": "fill",
+    "duotone": true,
+    "tags": [
+      "access",
+      "key",
+      "lock",
+      "login",
+      "password",
+      "security",
+      "unlock"
+    ],
+    "componentName": "KeyV",
+    "variantComponentName": "KeyVFillDuotone",
+    "fileName": "KeyVFillDuotone.tsx",
+    "versionAdded": "8.6.0",
+    "dateAdded": "2026-09-01T04:56:34.589Z",
+    "lastModified": "2026-09-01T04:56:34.589Z",
+    "versionLastModified": "8.6.0",
+    "svgHash": "36f1fd62"
   },
   {
     "name": "keyboard",
@@ -61577,9 +62483,9 @@
     "fileName": "LabelRegular.tsx",
     "versionAdded": "6.2.1",
     "dateAdded": "2026-01-18T11:28:09.279Z",
-    "lastModified": "2026-06-22T16:04:39.656Z",
-    "versionLastModified": "8.5.0",
-    "svgHash": "3730358d"
+    "lastModified": "2026-09-01T04:56:34.589Z",
+    "versionLastModified": "8.6.0",
+    "svgHash": "668136cc"
   },
   {
     "name": "label",
@@ -61599,9 +62505,9 @@
     "fileName": "LabelRegularDuotone.tsx",
     "versionAdded": "6.2.1",
     "dateAdded": "2026-01-18T11:28:09.283Z",
-    "lastModified": "2026-06-22T16:04:39.656Z",
-    "versionLastModified": "8.5.0",
-    "svgHash": "63dc4189"
+    "lastModified": "2026-09-01T04:56:34.589Z",
+    "versionLastModified": "8.6.0",
+    "svgHash": "3d36cf85"
   },
   {
     "name": "label",
@@ -61621,9 +62527,9 @@
     "fileName": "LabelBold.tsx",
     "versionAdded": "6.2.1",
     "dateAdded": "2026-01-18T11:28:09.288Z",
-    "lastModified": "2026-06-22T16:04:39.656Z",
-    "versionLastModified": "8.5.0",
-    "svgHash": "2448e954"
+    "lastModified": "2026-09-01T04:56:34.589Z",
+    "versionLastModified": "8.6.0",
+    "svgHash": "693217f7"
   },
   {
     "name": "label",
@@ -61643,9 +62549,9 @@
     "fileName": "LabelBoldDuotone.tsx",
     "versionAdded": "6.2.1",
     "dateAdded": "2026-01-18T11:28:09.292Z",
-    "lastModified": "2026-06-22T16:04:39.656Z",
-    "versionLastModified": "8.5.0",
-    "svgHash": "500a9a69"
+    "lastModified": "2026-09-01T04:56:34.589Z",
+    "versionLastModified": "8.6.0",
+    "svgHash": "266072fd"
   },
   {
     "name": "label",
@@ -61665,9 +62571,9 @@
     "fileName": "LabelFill.tsx",
     "versionAdded": "6.2.1",
     "dateAdded": "2026-01-18T11:28:09.295Z",
-    "lastModified": "2026-06-22T16:04:39.656Z",
-    "versionLastModified": "8.5.0",
-    "svgHash": "746de212"
+    "lastModified": "2026-09-01T04:56:34.589Z",
+    "versionLastModified": "8.6.0",
+    "svgHash": "413a1404"
   },
   {
     "name": "label",
@@ -61687,9 +62593,9 @@
     "fileName": "LabelFillDuotone.tsx",
     "versionAdded": "6.2.1",
     "dateAdded": "2026-01-18T11:28:09.299Z",
-    "lastModified": "2026-06-22T16:04:39.656Z",
-    "versionLastModified": "8.5.0",
-    "svgHash": "2ab3184d"
+    "lastModified": "2026-09-01T04:56:34.589Z",
+    "versionLastModified": "8.6.0",
+    "svgHash": "24f58113"
   },
   {
     "name": "label-alt",
@@ -61709,9 +62615,9 @@
     "fileName": "LabelAltRegular.tsx",
     "versionAdded": "6.2.1",
     "dateAdded": "2026-01-18T11:28:09.303Z",
-    "lastModified": "2026-06-22T16:04:39.656Z",
-    "versionLastModified": "8.5.0",
-    "svgHash": "524a794e"
+    "lastModified": "2026-09-01T04:56:34.589Z",
+    "versionLastModified": "8.6.0",
+    "svgHash": "0a7b9baa"
   },
   {
     "name": "label-alt",
@@ -61731,9 +62637,9 @@
     "fileName": "LabelAltRegularDuotone.tsx",
     "versionAdded": "6.2.1",
     "dateAdded": "2026-01-18T11:28:09.308Z",
-    "lastModified": "2026-06-22T16:04:39.656Z",
-    "versionLastModified": "8.5.0",
-    "svgHash": "70f9d91c"
+    "lastModified": "2026-09-01T04:56:34.589Z",
+    "versionLastModified": "8.6.0",
+    "svgHash": "5fe3c2de"
   },
   {
     "name": "label-alt",
@@ -61753,9 +62659,9 @@
     "fileName": "LabelAltBold.tsx",
     "versionAdded": "6.2.1",
     "dateAdded": "2026-01-18T11:28:09.312Z",
-    "lastModified": "2026-06-22T16:04:39.656Z",
-    "versionLastModified": "8.5.0",
-    "svgHash": "1e3373cc"
+    "lastModified": "2026-09-01T04:56:34.589Z",
+    "versionLastModified": "8.6.0",
+    "svgHash": "62500bb9"
   },
   {
     "name": "label-alt",
@@ -61775,9 +62681,9 @@
     "fileName": "LabelAltBoldDuotone.tsx",
     "versionAdded": "6.2.1",
     "dateAdded": "2026-01-18T11:28:09.315Z",
-    "lastModified": "2026-06-22T16:04:39.656Z",
-    "versionLastModified": "8.5.0",
-    "svgHash": "7f9140af"
+    "lastModified": "2026-09-01T04:56:34.589Z",
+    "versionLastModified": "8.6.0",
+    "svgHash": "55cbf74d"
   },
   {
     "name": "label-alt",
@@ -61797,9 +62703,9 @@
     "fileName": "LabelAltFill.tsx",
     "versionAdded": "6.2.1",
     "dateAdded": "2026-01-18T11:28:09.319Z",
-    "lastModified": "2026-06-22T16:04:39.656Z",
-    "versionLastModified": "8.5.0",
-    "svgHash": "2dce4a9a"
+    "lastModified": "2026-09-01T04:56:34.589Z",
+    "versionLastModified": "8.6.0",
+    "svgHash": "4cc6069c"
   },
   {
     "name": "label-alt",
@@ -61819,9 +62725,9 @@
     "fileName": "LabelAltFillDuotone.tsx",
     "versionAdded": "6.2.1",
     "dateAdded": "2026-01-18T11:28:09.324Z",
-    "lastModified": "2026-06-22T16:04:39.656Z",
-    "versionLastModified": "8.5.0",
-    "svgHash": "7df65e5b"
+    "lastModified": "2026-09-01T04:56:34.589Z",
+    "versionLastModified": "8.6.0",
+    "svgHash": "373af134"
   },
   {
     "name": "lamp",
@@ -64207,9 +65113,9 @@
     "fileName": "LineSegmentRegular.tsx",
     "versionAdded": "6.2.1",
     "dateAdded": "2026-01-18T11:28:09.779Z",
-    "lastModified": "2026-01-18T11:28:09.779Z",
-    "versionLastModified": "6.2.1",
-    "svgHash": "709e8b84"
+    "lastModified": "2026-09-01T04:56:34.589Z",
+    "versionLastModified": "8.6.0",
+    "svgHash": "316f7d78"
   },
   {
     "name": "line-segment",
@@ -64231,9 +65137,9 @@
     "fileName": "LineSegmentRegularDuotone.tsx",
     "versionAdded": "6.2.1",
     "dateAdded": "2026-01-18T11:28:09.783Z",
-    "lastModified": "2026-01-18T11:28:09.783Z",
-    "versionLastModified": "6.2.1",
-    "svgHash": "30b85eb3"
+    "lastModified": "2026-09-01T04:56:34.589Z",
+    "versionLastModified": "8.6.0",
+    "svgHash": "48cdc7d8"
   },
   {
     "name": "line-segment",
@@ -64255,9 +65161,9 @@
     "fileName": "LineSegmentBold.tsx",
     "versionAdded": "6.2.1",
     "dateAdded": "2026-01-18T11:28:09.788Z",
-    "lastModified": "2026-01-18T11:28:09.788Z",
-    "versionLastModified": "6.2.1",
-    "svgHash": "1b57082d"
+    "lastModified": "2026-09-01T04:56:34.589Z",
+    "versionLastModified": "8.6.0",
+    "svgHash": "73ad5beb"
   },
   {
     "name": "line-segment",
@@ -64279,9 +65185,9 @@
     "fileName": "LineSegmentBoldDuotone.tsx",
     "versionAdded": "6.2.1",
     "dateAdded": "2026-01-18T11:28:09.792Z",
-    "lastModified": "2026-01-18T11:28:09.792Z",
-    "versionLastModified": "6.2.1",
-    "svgHash": "61c5d353"
+    "lastModified": "2026-09-01T04:56:34.589Z",
+    "versionLastModified": "8.6.0",
+    "svgHash": "3cc6c380"
   },
   {
     "name": "line-segment",
@@ -64303,9 +65209,9 @@
     "fileName": "LineSegmentFill.tsx",
     "versionAdded": "6.2.1",
     "dateAdded": "2026-01-18T11:28:09.796Z",
-    "lastModified": "2026-04-09T12:41:31.630Z",
-    "versionLastModified": "8.1.0",
-    "svgHash": "05c04270"
+    "lastModified": "2026-09-01T04:56:34.589Z",
+    "versionLastModified": "8.6.0",
+    "svgHash": "52ba963e"
   },
   {
     "name": "line-segment",
@@ -64327,9 +65233,9 @@
     "fileName": "LineSegmentFillDuotone.tsx",
     "versionAdded": "6.2.1",
     "dateAdded": "2026-01-18T11:28:09.800Z",
-    "lastModified": "2026-04-09T12:41:31.630Z",
-    "versionLastModified": "8.1.0",
-    "svgHash": "2eed95ec"
+    "lastModified": "2026-09-01T04:56:34.589Z",
+    "versionLastModified": "8.6.0",
+    "svgHash": "712a2474"
   },
   {
     "name": "line-segment-h",
@@ -64351,9 +65257,9 @@
     "fileName": "LineSegmentHRegular.tsx",
     "versionAdded": "6.2.1",
     "dateAdded": "2026-01-18T11:28:09.805Z",
-    "lastModified": "2026-01-18T11:28:09.805Z",
-    "versionLastModified": "6.2.1",
-    "svgHash": "32dba11d"
+    "lastModified": "2026-09-01T04:56:34.589Z",
+    "versionLastModified": "8.6.0",
+    "svgHash": "1eb0438b"
   },
   {
     "name": "line-segment-h",
@@ -64375,9 +65281,9 @@
     "fileName": "LineSegmentHRegularDuotone.tsx",
     "versionAdded": "6.2.1",
     "dateAdded": "2026-01-18T11:28:09.809Z",
-    "lastModified": "2026-01-18T11:28:09.809Z",
-    "versionLastModified": "6.2.1",
-    "svgHash": "1fc9cee5"
+    "lastModified": "2026-09-01T04:56:34.589Z",
+    "versionLastModified": "8.6.0",
+    "svgHash": "72429559"
   },
   {
     "name": "line-segment-h",
@@ -64399,9 +65305,9 @@
     "fileName": "LineSegmentHBold.tsx",
     "versionAdded": "6.2.1",
     "dateAdded": "2026-01-18T11:28:09.813Z",
-    "lastModified": "2026-01-18T11:28:09.813Z",
-    "versionLastModified": "6.2.1",
-    "svgHash": "6611c84c"
+    "lastModified": "2026-09-01T04:56:34.589Z",
+    "versionLastModified": "8.6.0",
+    "svgHash": "3a7831cc"
   },
   {
     "name": "line-segment-h",
@@ -64423,9 +65329,9 @@
     "fileName": "LineSegmentHBoldDuotone.tsx",
     "versionAdded": "6.2.1",
     "dateAdded": "2026-01-18T11:28:09.818Z",
-    "lastModified": "2026-01-18T11:28:09.818Z",
-    "versionLastModified": "6.2.1",
-    "svgHash": "2982e377"
+    "lastModified": "2026-09-01T04:56:34.589Z",
+    "versionLastModified": "8.6.0",
+    "svgHash": "649a6dd3"
   },
   {
     "name": "line-segment-h",
@@ -64447,9 +65353,9 @@
     "fileName": "LineSegmentHFill.tsx",
     "versionAdded": "6.2.1",
     "dateAdded": "2026-01-18T11:28:09.822Z",
-    "lastModified": "2026-04-09T12:41:31.630Z",
-    "versionLastModified": "8.1.0",
-    "svgHash": "193893a4"
+    "lastModified": "2026-09-01T04:56:34.589Z",
+    "versionLastModified": "8.6.0",
+    "svgHash": "7c630fee"
   },
   {
     "name": "line-segment-h",
@@ -64471,9 +65377,9 @@
     "fileName": "LineSegmentHFillDuotone.tsx",
     "versionAdded": "6.2.1",
     "dateAdded": "2026-01-18T11:28:09.827Z",
-    "lastModified": "2026-04-09T12:41:31.630Z",
-    "versionLastModified": "8.1.0",
-    "svgHash": "1fc83853"
+    "lastModified": "2026-09-01T04:56:34.589Z",
+    "versionLastModified": "8.6.0",
+    "svgHash": "2a47046f"
   },
   {
     "name": "line-segment-v",
@@ -64495,9 +65401,9 @@
     "fileName": "LineSegmentVRegular.tsx",
     "versionAdded": "6.2.1",
     "dateAdded": "2026-01-18T11:28:09.831Z",
-    "lastModified": "2026-01-18T11:28:09.831Z",
-    "versionLastModified": "6.2.1",
-    "svgHash": "68d23afc"
+    "lastModified": "2026-09-01T04:56:34.589Z",
+    "versionLastModified": "8.6.0",
+    "svgHash": "32d0bd03"
   },
   {
     "name": "line-segment-v",
@@ -64519,9 +65425,9 @@
     "fileName": "LineSegmentVRegularDuotone.tsx",
     "versionAdded": "6.2.1",
     "dateAdded": "2026-01-18T11:28:09.835Z",
-    "lastModified": "2026-01-18T11:28:09.835Z",
-    "versionLastModified": "6.2.1",
-    "svgHash": "66561ddb"
+    "lastModified": "2026-09-01T04:56:34.589Z",
+    "versionLastModified": "8.6.0",
+    "svgHash": "11f2580e"
   },
   {
     "name": "line-segment-v",
@@ -64543,9 +65449,9 @@
     "fileName": "LineSegmentVBold.tsx",
     "versionAdded": "6.2.1",
     "dateAdded": "2026-01-18T11:28:09.841Z",
-    "lastModified": "2026-01-18T11:28:09.841Z",
-    "versionLastModified": "6.2.1",
-    "svgHash": "08360e7a"
+    "lastModified": "2026-09-01T04:56:34.589Z",
+    "versionLastModified": "8.6.0",
+    "svgHash": "583cf3a1"
   },
   {
     "name": "line-segment-v",
@@ -64567,9 +65473,9 @@
     "fileName": "LineSegmentVBoldDuotone.tsx",
     "versionAdded": "6.2.1",
     "dateAdded": "2026-01-18T11:28:09.845Z",
-    "lastModified": "2026-01-18T11:28:09.845Z",
-    "versionLastModified": "6.2.1",
-    "svgHash": "25d10e96"
+    "lastModified": "2026-09-01T04:56:34.589Z",
+    "versionLastModified": "8.6.0",
+    "svgHash": "0b630dc0"
   },
   {
     "name": "line-segment-v",
@@ -64591,9 +65497,9 @@
     "fileName": "LineSegmentVFill.tsx",
     "versionAdded": "6.2.1",
     "dateAdded": "2026-01-18T11:28:09.849Z",
-    "lastModified": "2026-04-09T12:41:31.630Z",
-    "versionLastModified": "8.1.0",
-    "svgHash": "31981def"
+    "lastModified": "2026-09-01T04:56:34.589Z",
+    "versionLastModified": "8.6.0",
+    "svgHash": "1b8b478f"
   },
   {
     "name": "line-segment-v",
@@ -64615,9 +65521,9 @@
     "fileName": "LineSegmentVFillDuotone.tsx",
     "versionAdded": "6.2.1",
     "dateAdded": "2026-01-18T11:28:09.854Z",
-    "lastModified": "2026-04-09T12:41:31.630Z",
-    "versionLastModified": "8.1.0",
-    "svgHash": "19cbc214"
+    "lastModified": "2026-09-01T04:56:34.589Z",
+    "versionLastModified": "8.6.0",
+    "svgHash": "06e37396"
   },
   {
     "name": "line-weight",
@@ -75491,9 +76397,9 @@
     "fileName": "MoreSquareRegular.tsx",
     "versionAdded": "6.2.1",
     "dateAdded": "2026-01-18T11:28:11.255Z",
-    "lastModified": "2026-04-09T12:41:31.630Z",
-    "versionLastModified": "8.1.0",
-    "svgHash": "5e993a33"
+    "lastModified": "2026-09-01T04:56:34.589Z",
+    "versionLastModified": "8.6.0",
+    "svgHash": "4770a18d"
   },
   {
     "name": "more-square",
@@ -75513,9 +76419,9 @@
     "fileName": "MoreSquareRegularDuotone.tsx",
     "versionAdded": "6.2.1",
     "dateAdded": "2026-01-18T11:28:11.259Z",
-    "lastModified": "2026-04-09T12:41:31.630Z",
-    "versionLastModified": "8.1.0",
-    "svgHash": "37374226"
+    "lastModified": "2026-09-01T04:56:34.589Z",
+    "versionLastModified": "8.6.0",
+    "svgHash": "385bfb27"
   },
   {
     "name": "more-square",
@@ -75535,9 +76441,9 @@
     "fileName": "MoreSquareBold.tsx",
     "versionAdded": "6.2.1",
     "dateAdded": "2026-01-18T11:28:11.264Z",
-    "lastModified": "2026-02-18T20:19:30.740Z",
-    "versionLastModified": "8.0.11",
-    "svgHash": "5818af18"
+    "lastModified": "2026-09-01T04:56:34.589Z",
+    "versionLastModified": "8.6.0",
+    "svgHash": "514547b4"
   },
   {
     "name": "more-square",
@@ -75557,9 +76463,9 @@
     "fileName": "MoreSquareBoldDuotone.tsx",
     "versionAdded": "6.2.1",
     "dateAdded": "2026-01-18T11:28:11.271Z",
-    "lastModified": "2026-02-18T20:19:30.740Z",
-    "versionLastModified": "8.0.11",
-    "svgHash": "2b9b2beb"
+    "lastModified": "2026-09-01T04:56:34.589Z",
+    "versionLastModified": "8.6.0",
+    "svgHash": "0c7eaa92"
   },
   {
     "name": "more-square",
@@ -75579,9 +76485,9 @@
     "fileName": "MoreSquareFill.tsx",
     "versionAdded": "6.2.1",
     "dateAdded": "2026-01-18T11:28:11.275Z",
-    "lastModified": "2026-04-09T12:41:31.630Z",
-    "versionLastModified": "8.1.0",
-    "svgHash": "58c4c705"
+    "lastModified": "2026-09-01T04:56:34.589Z",
+    "versionLastModified": "8.6.0",
+    "svgHash": "725c6b98"
   },
   {
     "name": "more-square",
@@ -75601,9 +76507,9 @@
     "fileName": "MoreSquareFillDuotone.tsx",
     "versionAdded": "6.2.1",
     "dateAdded": "2026-01-18T11:28:11.279Z",
-    "lastModified": "2026-04-09T12:41:31.630Z",
-    "versionLastModified": "8.1.0",
-    "svgHash": "55634f6d"
+    "lastModified": "2026-09-01T04:56:34.589Z",
+    "versionLastModified": "8.6.0",
+    "svgHash": "1358fb0b"
   },
   {
     "name": "more-square-v",
@@ -75623,9 +76529,9 @@
     "fileName": "MoreSquareVRegular.tsx",
     "versionAdded": "6.2.1",
     "dateAdded": "2026-01-18T11:28:11.283Z",
-    "lastModified": "2026-04-09T12:41:31.630Z",
-    "versionLastModified": "8.1.0",
-    "svgHash": "1620e849"
+    "lastModified": "2026-09-01T04:56:34.589Z",
+    "versionLastModified": "8.6.0",
+    "svgHash": "52edf7c1"
   },
   {
     "name": "more-square-v",
@@ -75645,9 +76551,9 @@
     "fileName": "MoreSquareVRegularDuotone.tsx",
     "versionAdded": "6.2.1",
     "dateAdded": "2026-01-18T11:28:11.288Z",
-    "lastModified": "2026-04-09T12:41:31.630Z",
-    "versionLastModified": "8.1.0",
-    "svgHash": "44542fa3"
+    "lastModified": "2026-09-01T04:56:34.589Z",
+    "versionLastModified": "8.6.0",
+    "svgHash": "4117b819"
   },
   {
     "name": "more-square-v",
@@ -75667,9 +76573,9 @@
     "fileName": "MoreSquareVBold.tsx",
     "versionAdded": "6.2.1",
     "dateAdded": "2026-01-18T11:28:11.292Z",
-    "lastModified": "2026-04-09T12:41:31.630Z",
-    "versionLastModified": "8.1.0",
-    "svgHash": "4c2c058c"
+    "lastModified": "2026-09-01T04:56:34.589Z",
+    "versionLastModified": "8.6.0",
+    "svgHash": "196ef156"
   },
   {
     "name": "more-square-v",
@@ -75689,9 +76595,9 @@
     "fileName": "MoreSquareVBoldDuotone.tsx",
     "versionAdded": "6.2.1",
     "dateAdded": "2026-01-18T11:28:11.296Z",
-    "lastModified": "2026-04-09T12:41:31.630Z",
-    "versionLastModified": "8.1.0",
-    "svgHash": "1bbf9cba"
+    "lastModified": "2026-09-01T04:56:34.589Z",
+    "versionLastModified": "8.6.0",
+    "svgHash": "798aa4a4"
   },
   {
     "name": "more-square-v",
@@ -75711,9 +76617,9 @@
     "fileName": "MoreSquareVFill.tsx",
     "versionAdded": "6.2.1",
     "dateAdded": "2026-01-18T11:28:11.300Z",
-    "lastModified": "2026-04-09T12:41:31.630Z",
-    "versionLastModified": "8.1.0",
-    "svgHash": "1d45d55b"
+    "lastModified": "2026-09-01T04:56:34.589Z",
+    "versionLastModified": "8.6.0",
+    "svgHash": "00e2a420"
   },
   {
     "name": "more-square-v",
@@ -75733,9 +76639,9 @@
     "fileName": "MoreSquareVFillDuotone.tsx",
     "versionAdded": "6.2.1",
     "dateAdded": "2026-01-18T11:28:11.305Z",
-    "lastModified": "2026-04-09T12:41:31.630Z",
-    "versionLastModified": "8.1.0",
-    "svgHash": "77163ced"
+    "lastModified": "2026-09-01T04:56:34.589Z",
+    "versionLastModified": "8.6.0",
+    "svgHash": "2c951655"
   },
   {
     "name": "more-v",
@@ -75868,6 +76774,150 @@
     "lastModified": "2026-04-09T12:41:31.630Z",
     "versionLastModified": "8.1.0",
     "svgHash": "687a4ba2"
+  },
+  {
+    "name": "mountain",
+    "weight": "regular",
+    "duotone": false,
+    "tags": [
+      "elevation",
+      "goal",
+      "hiking",
+      "milestone",
+      "mountain",
+      "nature",
+      "outdoor",
+      "peak",
+      "summit"
+    ],
+    "componentName": "Mountain",
+    "variantComponentName": "MountainRegular",
+    "fileName": "MountainRegular.tsx",
+    "versionAdded": "8.6.0",
+    "dateAdded": "2026-09-01T04:56:34.589Z",
+    "lastModified": "2026-09-01T04:56:34.589Z",
+    "versionLastModified": "8.6.0",
+    "svgHash": "46f253bd"
+  },
+  {
+    "name": "mountain",
+    "weight": "regular",
+    "duotone": true,
+    "tags": [
+      "elevation",
+      "goal",
+      "hiking",
+      "milestone",
+      "mountain",
+      "nature",
+      "outdoor",
+      "peak",
+      "summit"
+    ],
+    "componentName": "Mountain",
+    "variantComponentName": "MountainRegularDuotone",
+    "fileName": "MountainRegularDuotone.tsx",
+    "versionAdded": "8.6.0",
+    "dateAdded": "2026-09-01T04:56:34.589Z",
+    "lastModified": "2026-09-01T04:56:34.589Z",
+    "versionLastModified": "8.6.0",
+    "svgHash": "2a2810ef"
+  },
+  {
+    "name": "mountain",
+    "weight": "bold",
+    "duotone": false,
+    "tags": [
+      "elevation",
+      "goal",
+      "hiking",
+      "milestone",
+      "mountain",
+      "nature",
+      "outdoor",
+      "peak",
+      "summit"
+    ],
+    "componentName": "Mountain",
+    "variantComponentName": "MountainBold",
+    "fileName": "MountainBold.tsx",
+    "versionAdded": "8.6.0",
+    "dateAdded": "2026-09-01T04:56:34.589Z",
+    "lastModified": "2026-09-01T04:56:34.589Z",
+    "versionLastModified": "8.6.0",
+    "svgHash": "01d0b03d"
+  },
+  {
+    "name": "mountain",
+    "weight": "bold",
+    "duotone": true,
+    "tags": [
+      "elevation",
+      "goal",
+      "hiking",
+      "milestone",
+      "mountain",
+      "nature",
+      "outdoor",
+      "peak",
+      "summit"
+    ],
+    "componentName": "Mountain",
+    "variantComponentName": "MountainBoldDuotone",
+    "fileName": "MountainBoldDuotone.tsx",
+    "versionAdded": "8.6.0",
+    "dateAdded": "2026-09-01T04:56:34.589Z",
+    "lastModified": "2026-09-01T04:56:34.589Z",
+    "versionLastModified": "8.6.0",
+    "svgHash": "20cdaeae"
+  },
+  {
+    "name": "mountain",
+    "weight": "fill",
+    "duotone": false,
+    "tags": [
+      "elevation",
+      "goal",
+      "hiking",
+      "milestone",
+      "mountain",
+      "nature",
+      "outdoor",
+      "peak",
+      "summit"
+    ],
+    "componentName": "Mountain",
+    "variantComponentName": "MountainFill",
+    "fileName": "MountainFill.tsx",
+    "versionAdded": "8.6.0",
+    "dateAdded": "2026-09-01T04:56:34.589Z",
+    "lastModified": "2026-09-01T04:56:34.589Z",
+    "versionLastModified": "8.6.0",
+    "svgHash": "2efe5cd9"
+  },
+  {
+    "name": "mountain",
+    "weight": "fill",
+    "duotone": true,
+    "tags": [
+      "elevation",
+      "goal",
+      "hiking",
+      "milestone",
+      "mountain",
+      "nature",
+      "outdoor",
+      "peak",
+      "summit"
+    ],
+    "componentName": "Mountain",
+    "variantComponentName": "MountainFillDuotone",
+    "fileName": "MountainFillDuotone.tsx",
+    "versionAdded": "8.6.0",
+    "dateAdded": "2026-09-01T04:56:34.589Z",
+    "lastModified": "2026-09-01T04:56:34.589Z",
+    "versionLastModified": "8.6.0",
+    "svgHash": "56fefc24"
   },
   {
     "name": "move",
@@ -76334,9 +77384,9 @@
     "fileName": "NoteRegular.tsx",
     "versionAdded": "6.2.1",
     "dateAdded": "2026-01-18T11:28:11.413Z",
-    "lastModified": "2026-02-10T06:12:54.419Z",
-    "versionLastModified": "8.0.9",
-    "svgHash": "6339454a"
+    "lastModified": "2026-09-01T04:56:34.589Z",
+    "versionLastModified": "8.6.0",
+    "svgHash": "5ff073e6"
   },
   {
     "name": "note",
@@ -76359,9 +77409,9 @@
     "fileName": "NoteRegularDuotone.tsx",
     "versionAdded": "6.2.1",
     "dateAdded": "2026-01-18T11:28:11.417Z",
-    "lastModified": "2026-02-10T06:12:54.419Z",
-    "versionLastModified": "8.0.9",
-    "svgHash": "09d7057e"
+    "lastModified": "2026-09-01T04:56:34.589Z",
+    "versionLastModified": "8.6.0",
+    "svgHash": "018ebcfa"
   },
   {
     "name": "note",
@@ -76384,9 +77434,9 @@
     "fileName": "NoteBold.tsx",
     "versionAdded": "6.2.1",
     "dateAdded": "2026-01-18T11:28:11.422Z",
-    "lastModified": "2026-02-10T06:12:54.419Z",
-    "versionLastModified": "8.0.9",
-    "svgHash": "28b26e9b"
+    "lastModified": "2026-09-01T04:56:34.589Z",
+    "versionLastModified": "8.6.0",
+    "svgHash": "609f8811"
   },
   {
     "name": "note",
@@ -76409,9 +77459,9 @@
     "fileName": "NoteBoldDuotone.tsx",
     "versionAdded": "6.2.1",
     "dateAdded": "2026-01-18T11:28:11.426Z",
-    "lastModified": "2026-02-10T06:12:54.419Z",
-    "versionLastModified": "8.0.9",
-    "svgHash": "1cf64c9a"
+    "lastModified": "2026-09-01T04:56:34.589Z",
+    "versionLastModified": "8.6.0",
+    "svgHash": "6abc8d69"
   },
   {
     "name": "note",
@@ -76434,9 +77484,9 @@
     "fileName": "NoteFill.tsx",
     "versionAdded": "6.2.1",
     "dateAdded": "2026-01-18T11:28:11.430Z",
-    "lastModified": "2026-04-09T12:41:31.630Z",
-    "versionLastModified": "8.1.0",
-    "svgHash": "721fb275"
+    "lastModified": "2026-09-01T04:56:34.589Z",
+    "versionLastModified": "8.6.0",
+    "svgHash": "1b477edb"
   },
   {
     "name": "note",
@@ -76459,9 +77509,9 @@
     "fileName": "NoteFillDuotone.tsx",
     "versionAdded": "6.2.1",
     "dateAdded": "2026-01-18T11:28:11.439Z",
-    "lastModified": "2026-04-09T12:41:31.630Z",
-    "versionLastModified": "8.1.0",
-    "svgHash": "2391e62e"
+    "lastModified": "2026-09-01T04:56:34.589Z",
+    "versionLastModified": "8.6.0",
+    "svgHash": "73cadf54"
   },
   {
     "name": "note-text",
@@ -76485,9 +77535,9 @@
     "fileName": "NoteTextRegular.tsx",
     "versionAdded": "6.2.1",
     "dateAdded": "2026-01-18T11:28:11.444Z",
-    "lastModified": "2026-02-10T06:12:54.419Z",
-    "versionLastModified": "8.0.9",
-    "svgHash": "535c334f"
+    "lastModified": "2026-09-01T04:56:34.589Z",
+    "versionLastModified": "8.6.0",
+    "svgHash": "41869b34"
   },
   {
     "name": "note-text",
@@ -76511,9 +77561,9 @@
     "fileName": "NoteTextRegularDuotone.tsx",
     "versionAdded": "6.2.1",
     "dateAdded": "2026-01-18T11:28:11.449Z",
-    "lastModified": "2026-02-10T06:12:54.419Z",
-    "versionLastModified": "8.0.9",
-    "svgHash": "2f8badbd"
+    "lastModified": "2026-09-01T04:56:34.589Z",
+    "versionLastModified": "8.6.0",
+    "svgHash": "3ab7375f"
   },
   {
     "name": "note-text",
@@ -76537,9 +77587,9 @@
     "fileName": "NoteTextBold.tsx",
     "versionAdded": "6.2.1",
     "dateAdded": "2026-01-18T11:28:11.453Z",
-    "lastModified": "2026-02-10T06:12:54.419Z",
-    "versionLastModified": "8.0.9",
-    "svgHash": "2753cdfe"
+    "lastModified": "2026-09-01T04:56:34.589Z",
+    "versionLastModified": "8.6.0",
+    "svgHash": "1e501c78"
   },
   {
     "name": "note-text",
@@ -76563,9 +77613,9 @@
     "fileName": "NoteTextBoldDuotone.tsx",
     "versionAdded": "6.2.1",
     "dateAdded": "2026-01-18T11:28:11.458Z",
-    "lastModified": "2026-02-10T06:12:54.419Z",
-    "versionLastModified": "8.0.9",
-    "svgHash": "348a1f2e"
+    "lastModified": "2026-09-01T04:56:34.589Z",
+    "versionLastModified": "8.6.0",
+    "svgHash": "682653d0"
   },
   {
     "name": "note-text",
@@ -76589,9 +77639,9 @@
     "fileName": "NoteTextFill.tsx",
     "versionAdded": "6.2.1",
     "dateAdded": "2026-01-18T11:28:11.462Z",
-    "lastModified": "2026-04-09T12:41:31.630Z",
-    "versionLastModified": "8.1.0",
-    "svgHash": "09534c8f"
+    "lastModified": "2026-09-01T04:56:34.589Z",
+    "versionLastModified": "8.6.0",
+    "svgHash": "7b3e8d0a"
   },
   {
     "name": "note-text",
@@ -76615,9 +77665,9 @@
     "fileName": "NoteTextFillDuotone.tsx",
     "versionAdded": "6.2.1",
     "dateAdded": "2026-01-18T11:28:11.466Z",
-    "lastModified": "2026-04-09T12:41:31.630Z",
-    "versionLastModified": "8.1.0",
-    "svgHash": "35289cbc"
+    "lastModified": "2026-09-01T04:56:34.589Z",
+    "versionLastModified": "8.6.0",
+    "svgHash": "1d87bbbe"
   },
   {
     "name": "notebook",
@@ -79662,9 +80712,9 @@
     "fileName": "PenNibAltRegular.tsx",
     "versionAdded": "8.5.0",
     "dateAdded": "2026-06-22T16:04:39.656Z",
-    "lastModified": "2026-06-22T16:04:39.656Z",
-    "versionLastModified": "8.5.0",
-    "svgHash": "37ba952e"
+    "lastModified": "2026-09-01T04:56:34.589Z",
+    "versionLastModified": "8.6.0",
+    "svgHash": "455a2d4f"
   },
   {
     "name": "pen-nib-alt",
@@ -79685,9 +80735,9 @@
     "fileName": "PenNibAltRegularDuotone.tsx",
     "versionAdded": "8.5.0",
     "dateAdded": "2026-06-22T16:04:39.656Z",
-    "lastModified": "2026-06-22T16:04:39.656Z",
-    "versionLastModified": "8.5.0",
-    "svgHash": "46acdf2b"
+    "lastModified": "2026-09-01T04:56:34.589Z",
+    "versionLastModified": "8.6.0",
+    "svgHash": "2d407096"
   },
   {
     "name": "pen-nib-alt",
@@ -80652,9 +81702,9 @@
     "fileName": "PercentSquareRegular.tsx",
     "versionAdded": "6.2.1",
     "dateAdded": "2026-01-18T11:28:12.312Z",
-    "lastModified": "2026-04-09T12:41:31.630Z",
-    "versionLastModified": "8.1.0",
-    "svgHash": "4c2e452b"
+    "lastModified": "2026-09-01T04:56:34.589Z",
+    "versionLastModified": "8.6.0",
+    "svgHash": "7f6b3bd9"
   },
   {
     "name": "percent-square",
@@ -80675,9 +81725,9 @@
     "fileName": "PercentSquareRegularDuotone.tsx",
     "versionAdded": "6.2.1",
     "dateAdded": "2026-01-18T11:28:12.316Z",
-    "lastModified": "2026-04-09T12:41:31.630Z",
-    "versionLastModified": "8.1.0",
-    "svgHash": "030ce15f"
+    "lastModified": "2026-09-01T04:56:34.589Z",
+    "versionLastModified": "8.6.0",
+    "svgHash": "21aa2bbb"
   },
   {
     "name": "percent-square",
@@ -80698,9 +81748,9 @@
     "fileName": "PercentSquareBold.tsx",
     "versionAdded": "6.2.1",
     "dateAdded": "2026-01-18T11:28:12.321Z",
-    "lastModified": "2026-02-18T20:19:30.740Z",
-    "versionLastModified": "8.0.11",
-    "svgHash": "6599e5f8"
+    "lastModified": "2026-09-01T04:56:34.589Z",
+    "versionLastModified": "8.6.0",
+    "svgHash": "73f97694"
   },
   {
     "name": "percent-square",
@@ -80721,9 +81771,9 @@
     "fileName": "PercentSquareBoldDuotone.tsx",
     "versionAdded": "6.2.1",
     "dateAdded": "2026-01-18T11:28:12.326Z",
-    "lastModified": "2026-06-22T16:04:39.656Z",
-    "versionLastModified": "8.5.0",
-    "svgHash": "063f5884"
+    "lastModified": "2026-09-01T04:56:34.589Z",
+    "versionLastModified": "8.6.0",
+    "svgHash": "4deaf6e0"
   },
   {
     "name": "percent-square",
@@ -80744,9 +81794,9 @@
     "fileName": "PercentSquareFill.tsx",
     "versionAdded": "6.2.1",
     "dateAdded": "2026-01-18T11:28:12.330Z",
-    "lastModified": "2026-02-18T20:19:30.740Z",
-    "versionLastModified": "8.0.11",
-    "svgHash": "4e9e84b2"
+    "lastModified": "2026-09-01T04:56:34.589Z",
+    "versionLastModified": "8.6.0",
+    "svgHash": "71ec3cbf"
   },
   {
     "name": "percent-square",
@@ -80767,9 +81817,9 @@
     "fileName": "PercentSquareFillDuotone.tsx",
     "versionAdded": "6.2.1",
     "dateAdded": "2026-01-18T11:28:12.334Z",
-    "lastModified": "2026-06-22T16:04:39.656Z",
-    "versionLastModified": "8.5.0",
-    "svgHash": "0d93186d"
+    "lastModified": "2026-09-01T04:56:34.589Z",
+    "versionLastModified": "8.6.0",
+    "svgHash": "4eb3da17"
   },
   {
     "name": "phone",
@@ -81544,6 +82594,150 @@
     "lastModified": "2026-04-09T12:41:31.630Z",
     "versionLastModified": "8.1.0",
     "svgHash": "54bc1787"
+  },
+  {
+    "name": "pill",
+    "weight": "regular",
+    "duotone": false,
+    "tags": [
+      "capsule",
+      "dose",
+      "drug",
+      "health",
+      "medication",
+      "medicine",
+      "pharmacy",
+      "pill",
+      "prescription"
+    ],
+    "componentName": "Pill",
+    "variantComponentName": "PillRegular",
+    "fileName": "PillRegular.tsx",
+    "versionAdded": "8.6.0",
+    "dateAdded": "2026-09-01T04:56:34.589Z",
+    "lastModified": "2026-09-01T04:56:34.589Z",
+    "versionLastModified": "8.6.0",
+    "svgHash": "6345a0dd"
+  },
+  {
+    "name": "pill",
+    "weight": "regular",
+    "duotone": true,
+    "tags": [
+      "capsule",
+      "dose",
+      "drug",
+      "health",
+      "medication",
+      "medicine",
+      "pharmacy",
+      "pill",
+      "prescription"
+    ],
+    "componentName": "Pill",
+    "variantComponentName": "PillRegularDuotone",
+    "fileName": "PillRegularDuotone.tsx",
+    "versionAdded": "8.6.0",
+    "dateAdded": "2026-09-01T04:56:34.589Z",
+    "lastModified": "2026-09-01T04:56:34.589Z",
+    "versionLastModified": "8.6.0",
+    "svgHash": "139550d8"
+  },
+  {
+    "name": "pill",
+    "weight": "bold",
+    "duotone": false,
+    "tags": [
+      "capsule",
+      "dose",
+      "drug",
+      "health",
+      "medication",
+      "medicine",
+      "pharmacy",
+      "pill",
+      "prescription"
+    ],
+    "componentName": "Pill",
+    "variantComponentName": "PillBold",
+    "fileName": "PillBold.tsx",
+    "versionAdded": "8.6.0",
+    "dateAdded": "2026-09-01T04:56:34.589Z",
+    "lastModified": "2026-09-01T04:56:34.589Z",
+    "versionLastModified": "8.6.0",
+    "svgHash": "3bbb8d0c"
+  },
+  {
+    "name": "pill",
+    "weight": "bold",
+    "duotone": true,
+    "tags": [
+      "capsule",
+      "dose",
+      "drug",
+      "health",
+      "medication",
+      "medicine",
+      "pharmacy",
+      "pill",
+      "prescription"
+    ],
+    "componentName": "Pill",
+    "variantComponentName": "PillBoldDuotone",
+    "fileName": "PillBoldDuotone.tsx",
+    "versionAdded": "8.6.0",
+    "dateAdded": "2026-09-01T04:56:34.589Z",
+    "lastModified": "2026-09-01T04:56:34.589Z",
+    "versionLastModified": "8.6.0",
+    "svgHash": "0222bdce"
+  },
+  {
+    "name": "pill",
+    "weight": "fill",
+    "duotone": false,
+    "tags": [
+      "capsule",
+      "dose",
+      "drug",
+      "health",
+      "medication",
+      "medicine",
+      "pharmacy",
+      "pill",
+      "prescription"
+    ],
+    "componentName": "Pill",
+    "variantComponentName": "PillFill",
+    "fileName": "PillFill.tsx",
+    "versionAdded": "8.6.0",
+    "dateAdded": "2026-09-01T04:56:34.589Z",
+    "lastModified": "2026-09-01T04:56:34.589Z",
+    "versionLastModified": "8.6.0",
+    "svgHash": "2250e384"
+  },
+  {
+    "name": "pill",
+    "weight": "fill",
+    "duotone": true,
+    "tags": [
+      "capsule",
+      "dose",
+      "drug",
+      "health",
+      "medication",
+      "medicine",
+      "pharmacy",
+      "pill",
+      "prescription"
+    ],
+    "componentName": "Pill",
+    "variantComponentName": "PillFillDuotone",
+    "fileName": "PillFillDuotone.tsx",
+    "versionAdded": "8.6.0",
+    "dateAdded": "2026-09-01T04:56:34.589Z",
+    "lastModified": "2026-09-01T04:56:34.589Z",
+    "versionLastModified": "8.6.0",
+    "svgHash": "3dfbd0c8"
   },
   {
     "name": "pipette",
@@ -82625,9 +83819,9 @@
     "fileName": "PlusSquareRegular.tsx",
     "versionAdded": "6.2.1",
     "dateAdded": "2026-01-18T11:28:12.681Z",
-    "lastModified": "2026-04-09T12:41:31.630Z",
-    "versionLastModified": "8.1.0",
-    "svgHash": "4dad7a85"
+    "lastModified": "2026-09-01T04:56:34.589Z",
+    "versionLastModified": "8.6.0",
+    "svgHash": "2d06912b"
   },
   {
     "name": "plus-square",
@@ -82647,9 +83841,9 @@
     "fileName": "PlusSquareRegularDuotone.tsx",
     "versionAdded": "6.2.1",
     "dateAdded": "2026-01-18T11:28:12.685Z",
-    "lastModified": "2026-04-09T12:41:31.630Z",
-    "versionLastModified": "8.1.0",
-    "svgHash": "65ada015"
+    "lastModified": "2026-09-01T04:56:34.589Z",
+    "versionLastModified": "8.6.0",
+    "svgHash": "42aca111"
   },
   {
     "name": "plus-square",
@@ -82669,9 +83863,9 @@
     "fileName": "PlusSquareBold.tsx",
     "versionAdded": "6.2.1",
     "dateAdded": "2026-01-18T11:28:12.689Z",
-    "lastModified": "2026-02-18T20:19:30.740Z",
-    "versionLastModified": "8.0.11",
-    "svgHash": "53c5b895"
+    "lastModified": "2026-09-01T04:56:34.589Z",
+    "versionLastModified": "8.6.0",
+    "svgHash": "30f746c7"
   },
   {
     "name": "plus-square",
@@ -82691,9 +83885,9 @@
     "fileName": "PlusSquareBoldDuotone.tsx",
     "versionAdded": "6.2.1",
     "dateAdded": "2026-01-18T11:28:12.694Z",
-    "lastModified": "2026-02-18T20:19:30.740Z",
-    "versionLastModified": "8.0.11",
-    "svgHash": "5b70126b"
+    "lastModified": "2026-09-01T04:56:34.589Z",
+    "versionLastModified": "8.6.0",
+    "svgHash": "7c2682b9"
   },
   {
     "name": "plus-square",
@@ -82713,9 +83907,9 @@
     "fileName": "PlusSquareFill.tsx",
     "versionAdded": "6.2.1",
     "dateAdded": "2026-01-18T11:28:12.698Z",
-    "lastModified": "2026-02-18T20:19:30.740Z",
-    "versionLastModified": "8.0.11",
-    "svgHash": "777b5e30"
+    "lastModified": "2026-09-01T04:56:34.589Z",
+    "versionLastModified": "8.6.0",
+    "svgHash": "3677da1d"
   },
   {
     "name": "plus-square",
@@ -82735,9 +83929,9 @@
     "fileName": "PlusSquareFillDuotone.tsx",
     "versionAdded": "6.2.1",
     "dateAdded": "2026-01-18T11:28:12.702Z",
-    "lastModified": "2026-02-18T20:19:30.740Z",
-    "versionLastModified": "8.0.11",
-    "svgHash": "20791340"
+    "lastModified": "2026-09-01T04:56:34.589Z",
+    "versionLastModified": "8.6.0",
+    "svgHash": "1befa885"
   },
   {
     "name": "polaris",
@@ -84898,9 +86092,9 @@
     "fileName": "RectangleRegular.tsx",
     "versionAdded": "6.2.1",
     "dateAdded": "2026-01-18T11:28:12.987Z",
-    "lastModified": "2026-02-10T06:12:54.419Z",
-    "versionLastModified": "8.0.9",
-    "svgHash": "140aa404"
+    "lastModified": "2026-09-01T04:56:34.589Z",
+    "versionLastModified": "8.6.0",
+    "svgHash": "5b1eaa28"
   },
   {
     "name": "rectangle",
@@ -84919,9 +86113,9 @@
     "fileName": "RectangleRegularDuotone.tsx",
     "versionAdded": "6.2.1",
     "dateAdded": "2026-01-18T11:28:12.991Z",
-    "lastModified": "2026-02-10T06:12:54.419Z",
-    "versionLastModified": "8.0.9",
-    "svgHash": "5010e5e7"
+    "lastModified": "2026-09-01T04:56:34.589Z",
+    "versionLastModified": "8.6.0",
+    "svgHash": "6d84c07b"
   },
   {
     "name": "rectangle",
@@ -84940,9 +86134,9 @@
     "fileName": "RectangleBold.tsx",
     "versionAdded": "6.2.1",
     "dateAdded": "2026-01-18T11:28:12.995Z",
-    "lastModified": "2026-02-10T06:12:54.419Z",
-    "versionLastModified": "8.0.9",
-    "svgHash": "502d2d07"
+    "lastModified": "2026-09-01T04:56:34.589Z",
+    "versionLastModified": "8.6.0",
+    "svgHash": "7b0c1c35"
   },
   {
     "name": "rectangle",
@@ -84961,9 +86155,9 @@
     "fileName": "RectangleBoldDuotone.tsx",
     "versionAdded": "6.2.1",
     "dateAdded": "2026-01-18T11:28:12.999Z",
-    "lastModified": "2026-02-10T06:12:54.419Z",
-    "versionLastModified": "8.0.9",
-    "svgHash": "3bf8cd8d"
+    "lastModified": "2026-09-01T04:56:34.589Z",
+    "versionLastModified": "8.6.0",
+    "svgHash": "50b074b5"
   },
   {
     "name": "rectangle",
@@ -84982,9 +86176,9 @@
     "fileName": "RectangleFill.tsx",
     "versionAdded": "6.2.1",
     "dateAdded": "2026-01-18T11:28:13.002Z",
-    "lastModified": "2026-04-09T12:41:31.630Z",
-    "versionLastModified": "8.1.0",
-    "svgHash": "77a7ebf4"
+    "lastModified": "2026-09-01T04:56:34.589Z",
+    "versionLastModified": "8.6.0",
+    "svgHash": "29ebae4d"
   },
   {
     "name": "rectangle",
@@ -85003,9 +86197,9 @@
     "fileName": "RectangleFillDuotone.tsx",
     "versionAdded": "6.2.1",
     "dateAdded": "2026-01-18T11:28:13.007Z",
-    "lastModified": "2026-04-09T12:41:31.630Z",
-    "versionLastModified": "8.1.0",
-    "svgHash": "33db41df"
+    "lastModified": "2026-09-01T04:56:34.589Z",
+    "versionLastModified": "8.6.0",
+    "svgHash": "6dbd05af"
   },
   {
     "name": "rectangle-dashed",
@@ -85029,9 +86223,9 @@
     "fileName": "RectangleDashedRegular.tsx",
     "versionAdded": "6.2.1",
     "dateAdded": "2026-01-18T11:28:13.011Z",
-    "lastModified": "2026-02-10T06:12:54.419Z",
-    "versionLastModified": "8.0.9",
-    "svgHash": "6eac7e1c"
+    "lastModified": "2026-09-01T04:56:34.589Z",
+    "versionLastModified": "8.6.0",
+    "svgHash": "73909454"
   },
   {
     "name": "rectangle-dashed",
@@ -85055,9 +86249,9 @@
     "fileName": "RectangleDashedRegularDuotone.tsx",
     "versionAdded": "6.2.1",
     "dateAdded": "2026-01-18T11:28:13.016Z",
-    "lastModified": "2026-02-10T06:12:54.419Z",
-    "versionLastModified": "8.0.9",
-    "svgHash": "7d3954bd"
+    "lastModified": "2026-09-01T04:56:34.589Z",
+    "versionLastModified": "8.6.0",
+    "svgHash": "19d0ac47"
   },
   {
     "name": "rectangle-dashed",
@@ -85081,9 +86275,9 @@
     "fileName": "RectangleDashedBold.tsx",
     "versionAdded": "6.2.1",
     "dateAdded": "2026-01-18T11:28:13.020Z",
-    "lastModified": "2026-02-10T06:12:54.419Z",
-    "versionLastModified": "8.0.9",
-    "svgHash": "3f9e4b74"
+    "lastModified": "2026-09-01T04:56:34.589Z",
+    "versionLastModified": "8.6.0",
+    "svgHash": "3bc1cf38"
   },
   {
     "name": "rectangle-dashed",
@@ -85107,9 +86301,9 @@
     "fileName": "RectangleDashedBoldDuotone.tsx",
     "versionAdded": "6.2.1",
     "dateAdded": "2026-01-18T11:28:13.025Z",
-    "lastModified": "2026-02-10T06:12:54.419Z",
-    "versionLastModified": "8.0.9",
-    "svgHash": "7ec01a59"
+    "lastModified": "2026-09-01T04:56:34.589Z",
+    "versionLastModified": "8.6.0",
+    "svgHash": "19ceab55"
   },
   {
     "name": "rectangle-dashed",
@@ -85133,9 +86327,9 @@
     "fileName": "RectangleDashedFill.tsx",
     "versionAdded": "6.2.1",
     "dateAdded": "2026-01-18T11:28:13.030Z",
-    "lastModified": "2026-04-09T12:41:31.630Z",
-    "versionLastModified": "8.1.0",
-    "svgHash": "71139078"
+    "lastModified": "2026-09-01T04:56:34.589Z",
+    "versionLastModified": "8.6.0",
+    "svgHash": "68e0ad34"
   },
   {
     "name": "rectangle-dashed",
@@ -85159,9 +86353,9 @@
     "fileName": "RectangleDashedFillDuotone.tsx",
     "versionAdded": "6.2.1",
     "dateAdded": "2026-01-18T11:28:13.035Z",
-    "lastModified": "2026-04-09T12:41:31.630Z",
-    "versionLastModified": "8.1.0",
-    "svgHash": "2c1cb794"
+    "lastModified": "2026-09-01T04:56:34.589Z",
+    "versionLastModified": "8.6.0",
+    "svgHash": "63d78bd7"
   },
   {
     "name": "repeat",
@@ -85645,9 +86839,9 @@
     "fileName": "RobotRegular.tsx",
     "versionAdded": "6.2.1",
     "dateAdded": "2026-01-18T11:28:13.169Z",
-    "lastModified": "2026-02-18T20:19:30.740Z",
-    "versionLastModified": "8.0.11",
-    "svgHash": "0de0e3c4"
+    "lastModified": "2026-09-01T04:56:34.589Z",
+    "versionLastModified": "8.6.0",
+    "svgHash": "70b8b160"
   },
   {
     "name": "robot",
@@ -85669,9 +86863,9 @@
     "fileName": "RobotRegularDuotone.tsx",
     "versionAdded": "6.2.1",
     "dateAdded": "2026-01-18T11:28:13.174Z",
-    "lastModified": "2026-02-18T20:19:30.740Z",
-    "versionLastModified": "8.0.11",
-    "svgHash": "2bb8838c"
+    "lastModified": "2026-09-01T04:56:34.589Z",
+    "versionLastModified": "8.6.0",
+    "svgHash": "64b7323f"
   },
   {
     "name": "robot",
@@ -85693,9 +86887,9 @@
     "fileName": "RobotBold.tsx",
     "versionAdded": "6.2.1",
     "dateAdded": "2026-01-18T11:28:13.178Z",
-    "lastModified": "2026-02-18T20:19:30.740Z",
-    "versionLastModified": "8.0.11",
-    "svgHash": "7f00cf02"
+    "lastModified": "2026-09-01T04:56:34.589Z",
+    "versionLastModified": "8.6.0",
+    "svgHash": "64f54391"
   },
   {
     "name": "robot",
@@ -85717,9 +86911,9 @@
     "fileName": "RobotBoldDuotone.tsx",
     "versionAdded": "6.2.1",
     "dateAdded": "2026-01-18T11:28:13.183Z",
-    "lastModified": "2026-02-18T20:19:30.740Z",
-    "versionLastModified": "8.0.11",
-    "svgHash": "5d4840fa"
+    "lastModified": "2026-09-01T04:56:34.589Z",
+    "versionLastModified": "8.6.0",
+    "svgHash": "32aca93c"
   },
   {
     "name": "robot",
@@ -85741,9 +86935,9 @@
     "fileName": "RobotFill.tsx",
     "versionAdded": "6.2.1",
     "dateAdded": "2026-01-18T11:28:13.188Z",
-    "lastModified": "2026-02-18T20:19:30.740Z",
-    "versionLastModified": "8.0.11",
-    "svgHash": "077d8ca1"
+    "lastModified": "2026-09-01T04:56:34.589Z",
+    "versionLastModified": "8.6.0",
+    "svgHash": "25356614"
   },
   {
     "name": "robot",
@@ -85765,9 +86959,9 @@
     "fileName": "RobotFillDuotone.tsx",
     "versionAdded": "6.2.1",
     "dateAdded": "2026-01-18T11:28:13.192Z",
-    "lastModified": "2026-02-18T20:19:30.740Z",
-    "versionLastModified": "8.0.11",
-    "svgHash": "06cf8d16"
+    "lastModified": "2026-09-01T04:56:34.589Z",
+    "versionLastModified": "8.6.0",
+    "svgHash": "5b67ff16"
   },
   {
     "name": "robot-humanoid",
@@ -85790,9 +86984,9 @@
     "fileName": "RobotHumanoidRegular.tsx",
     "versionAdded": "6.2.1",
     "dateAdded": "2026-01-18T11:28:13.196Z",
-    "lastModified": "2026-01-18T11:28:13.196Z",
-    "versionLastModified": "6.2.1",
-    "svgHash": "124f170d"
+    "lastModified": "2026-09-01T04:56:34.589Z",
+    "versionLastModified": "8.6.0",
+    "svgHash": "70d0dbcc"
   },
   {
     "name": "robot-humanoid",
@@ -85815,9 +87009,9 @@
     "fileName": "RobotHumanoidRegularDuotone.tsx",
     "versionAdded": "6.2.1",
     "dateAdded": "2026-01-18T11:28:13.200Z",
-    "lastModified": "2026-01-18T11:28:13.200Z",
-    "versionLastModified": "6.2.1",
-    "svgHash": "1300bae2"
+    "lastModified": "2026-09-01T04:56:34.589Z",
+    "versionLastModified": "8.6.0",
+    "svgHash": "4ecbd729"
   },
   {
     "name": "robot-humanoid",
@@ -85840,9 +87034,9 @@
     "fileName": "RobotHumanoidBold.tsx",
     "versionAdded": "6.2.1",
     "dateAdded": "2026-01-18T11:28:13.205Z",
-    "lastModified": "2026-01-18T11:28:13.205Z",
-    "versionLastModified": "6.2.1",
-    "svgHash": "5266f95b"
+    "lastModified": "2026-09-01T04:56:34.589Z",
+    "versionLastModified": "8.6.0",
+    "svgHash": "3e2df4a8"
   },
   {
     "name": "robot-humanoid",
@@ -85865,9 +87059,9 @@
     "fileName": "RobotHumanoidBoldDuotone.tsx",
     "versionAdded": "6.2.1",
     "dateAdded": "2026-01-18T11:28:13.209Z",
-    "lastModified": "2026-01-18T11:28:13.209Z",
-    "versionLastModified": "6.2.1",
-    "svgHash": "08859b56"
+    "lastModified": "2026-09-01T04:56:34.589Z",
+    "versionLastModified": "8.6.0",
+    "svgHash": "76d24c1f"
   },
   {
     "name": "robot-humanoid",
@@ -85890,9 +87084,9 @@
     "fileName": "RobotHumanoidFill.tsx",
     "versionAdded": "6.2.1",
     "dateAdded": "2026-01-18T11:28:13.214Z",
-    "lastModified": "2026-01-18T11:28:13.214Z",
-    "versionLastModified": "6.2.1",
-    "svgHash": "2b5cfbf3"
+    "lastModified": "2026-09-01T04:56:34.589Z",
+    "versionLastModified": "8.6.0",
+    "svgHash": "0dafc43d"
   },
   {
     "name": "robot-humanoid",
@@ -85915,9 +87109,9 @@
     "fileName": "RobotHumanoidFillDuotone.tsx",
     "versionAdded": "6.2.1",
     "dateAdded": "2026-01-18T11:28:13.218Z",
-    "lastModified": "2026-01-18T11:28:13.218Z",
-    "versionLastModified": "6.2.1",
-    "svgHash": "3357fe92"
+    "lastModified": "2026-09-01T04:56:34.589Z",
+    "versionLastModified": "8.6.0",
+    "svgHash": "521073fb"
   },
   {
     "name": "rocket",
@@ -90578,9 +91772,9 @@
     "fileName": "SearchSquareRegular.tsx",
     "versionAdded": "6.2.1",
     "dateAdded": "2026-01-18T11:28:14.016Z",
-    "lastModified": "2026-04-09T12:41:31.630Z",
-    "versionLastModified": "8.1.0",
-    "svgHash": "2ecfe852"
+    "lastModified": "2026-09-01T04:56:34.589Z",
+    "versionLastModified": "8.6.0",
+    "svgHash": "6b1dfd8e"
   },
   {
     "name": "search-square",
@@ -90603,9 +91797,9 @@
     "fileName": "SearchSquareRegularDuotone.tsx",
     "versionAdded": "6.2.1",
     "dateAdded": "2026-01-18T11:28:14.021Z",
-    "lastModified": "2026-04-09T12:41:31.630Z",
-    "versionLastModified": "8.1.0",
-    "svgHash": "391c6d46"
+    "lastModified": "2026-09-01T04:56:34.589Z",
+    "versionLastModified": "8.6.0",
+    "svgHash": "00f46206"
   },
   {
     "name": "search-square",
@@ -90628,9 +91822,9 @@
     "fileName": "SearchSquareBold.tsx",
     "versionAdded": "6.2.1",
     "dateAdded": "2026-01-18T11:28:14.026Z",
-    "lastModified": "2026-02-18T20:19:30.740Z",
-    "versionLastModified": "8.0.11",
-    "svgHash": "739922fe"
+    "lastModified": "2026-09-01T04:56:34.589Z",
+    "versionLastModified": "8.6.0",
+    "svgHash": "392a69c3"
   },
   {
     "name": "search-square",
@@ -90653,9 +91847,9 @@
     "fileName": "SearchSquareBoldDuotone.tsx",
     "versionAdded": "6.2.1",
     "dateAdded": "2026-01-18T11:28:14.030Z",
-    "lastModified": "2026-02-18T20:19:30.740Z",
-    "versionLastModified": "8.0.11",
-    "svgHash": "676e0474"
+    "lastModified": "2026-09-01T04:56:34.589Z",
+    "versionLastModified": "8.6.0",
+    "svgHash": "56b81fa9"
   },
   {
     "name": "search-square",
@@ -90678,9 +91872,9 @@
     "fileName": "SearchSquareFill.tsx",
     "versionAdded": "6.2.1",
     "dateAdded": "2026-01-18T11:28:14.035Z",
-    "lastModified": "2026-04-09T12:41:31.630Z",
-    "versionLastModified": "8.1.0",
-    "svgHash": "11c62d5a"
+    "lastModified": "2026-09-01T04:56:34.589Z",
+    "versionLastModified": "8.6.0",
+    "svgHash": "34ca00e7"
   },
   {
     "name": "search-square",
@@ -90703,9 +91897,9 @@
     "fileName": "SearchSquareFillDuotone.tsx",
     "versionAdded": "6.2.1",
     "dateAdded": "2026-01-18T11:28:14.040Z",
-    "lastModified": "2026-04-09T12:41:31.630Z",
-    "versionLastModified": "8.1.0",
-    "svgHash": "48a30ae2"
+    "lastModified": "2026-09-01T04:56:34.589Z",
+    "versionLastModified": "8.6.0",
+    "svgHash": "03f85409"
   },
   {
     "name": "seedling",
@@ -91810,9 +93004,9 @@
     "fileName": "ShapesFill.tsx",
     "versionAdded": "8.5.0",
     "dateAdded": "2026-06-22T16:04:39.656Z",
-    "lastModified": "2026-06-22T16:04:39.656Z",
-    "versionLastModified": "8.5.0",
-    "svgHash": "244d935b"
+    "lastModified": "2026-09-01T04:56:34.589Z",
+    "versionLastModified": "8.6.0",
+    "svgHash": "6ac503fa"
   },
   {
     "name": "shapes",
@@ -91837,9 +93031,9 @@
     "fileName": "ShapesFillDuotone.tsx",
     "versionAdded": "8.5.0",
     "dateAdded": "2026-06-22T16:04:39.656Z",
-    "lastModified": "2026-06-22T16:04:39.656Z",
-    "versionLastModified": "8.5.0",
-    "svgHash": "35a7b63a"
+    "lastModified": "2026-09-01T04:56:34.589Z",
+    "versionLastModified": "8.6.0",
+    "svgHash": "031416e5"
   },
   {
     "name": "shapes-plus",
@@ -91921,9 +93115,9 @@
     "fileName": "ShapesPlusBold.tsx",
     "versionAdded": "8.5.0",
     "dateAdded": "2026-06-22T16:04:39.656Z",
-    "lastModified": "2026-06-22T16:04:39.656Z",
-    "versionLastModified": "8.5.0",
-    "svgHash": "3e7aaa95"
+    "lastModified": "2026-09-01T04:56:34.589Z",
+    "versionLastModified": "8.6.0",
+    "svgHash": "1e14438a"
   },
   {
     "name": "shapes-plus",
@@ -91949,9 +93143,9 @@
     "fileName": "ShapesPlusBoldDuotone.tsx",
     "versionAdded": "8.5.0",
     "dateAdded": "2026-06-22T16:04:39.656Z",
-    "lastModified": "2026-06-22T16:04:39.656Z",
-    "versionLastModified": "8.5.0",
-    "svgHash": "3bad0f83"
+    "lastModified": "2026-09-01T04:56:34.589Z",
+    "versionLastModified": "8.6.0",
+    "svgHash": "22e3a27c"
   },
   {
     "name": "shapes-plus",
@@ -91977,9 +93171,9 @@
     "fileName": "ShapesPlusFill.tsx",
     "versionAdded": "8.5.0",
     "dateAdded": "2026-06-22T16:04:39.656Z",
-    "lastModified": "2026-06-22T16:04:39.656Z",
-    "versionLastModified": "8.5.0",
-    "svgHash": "060a3040"
+    "lastModified": "2026-09-01T04:56:34.589Z",
+    "versionLastModified": "8.6.0",
+    "svgHash": "2063d8e9"
   },
   {
     "name": "shapes-plus",
@@ -92005,9 +93199,9 @@
     "fileName": "ShapesPlusFillDuotone.tsx",
     "versionAdded": "8.5.0",
     "dateAdded": "2026-06-22T16:04:39.656Z",
-    "lastModified": "2026-06-22T16:04:39.656Z",
-    "versionLastModified": "8.5.0",
-    "svgHash": "07ed673a"
+    "lastModified": "2026-09-01T04:56:34.589Z",
+    "versionLastModified": "8.6.0",
+    "svgHash": "6f688123"
   },
   {
     "name": "share",
@@ -97525,9 +98719,9 @@
     "fileName": "SparkleSquareRegular.tsx",
     "versionAdded": "6.2.1",
     "dateAdded": "2026-01-18T11:28:15.158Z",
-    "lastModified": "2026-02-18T20:19:30.740Z",
-    "versionLastModified": "8.0.11",
-    "svgHash": "69d6e802"
+    "lastModified": "2026-09-01T04:56:34.589Z",
+    "versionLastModified": "8.6.0",
+    "svgHash": "3eb943ab"
   },
   {
     "name": "sparkle-square",
@@ -97549,9 +98743,9 @@
     "fileName": "SparkleSquareRegularDuotone.tsx",
     "versionAdded": "6.2.1",
     "dateAdded": "2026-01-18T11:28:15.162Z",
-    "lastModified": "2026-04-25T02:07:54.433Z",
-    "versionLastModified": "8.3.0",
-    "svgHash": "39f29507"
+    "lastModified": "2026-09-01T04:56:34.589Z",
+    "versionLastModified": "8.6.0",
+    "svgHash": "2d2d5e87"
   },
   {
     "name": "sparkle-square",
@@ -97573,9 +98767,9 @@
     "fileName": "SparkleSquareBold.tsx",
     "versionAdded": "6.2.1",
     "dateAdded": "2026-01-18T11:28:15.167Z",
-    "lastModified": "2026-02-18T20:19:30.740Z",
-    "versionLastModified": "8.0.11",
-    "svgHash": "5976fde5"
+    "lastModified": "2026-09-01T04:56:34.589Z",
+    "versionLastModified": "8.6.0",
+    "svgHash": "57ff51bc"
   },
   {
     "name": "sparkle-square",
@@ -97597,9 +98791,9 @@
     "fileName": "SparkleSquareBoldDuotone.tsx",
     "versionAdded": "6.2.1",
     "dateAdded": "2026-01-18T11:28:15.172Z",
-    "lastModified": "2026-04-25T02:07:54.433Z",
-    "versionLastModified": "8.3.0",
-    "svgHash": "77f2c522"
+    "lastModified": "2026-09-01T04:56:34.589Z",
+    "versionLastModified": "8.6.0",
+    "svgHash": "1cb70652"
   },
   {
     "name": "sparkle-square",
@@ -97621,9 +98815,9 @@
     "fileName": "SparkleSquareFill.tsx",
     "versionAdded": "6.2.1",
     "dateAdded": "2026-01-18T11:28:15.176Z",
-    "lastModified": "2026-02-18T20:19:30.740Z",
-    "versionLastModified": "8.0.11",
-    "svgHash": "0885afaf"
+    "lastModified": "2026-09-01T04:56:34.589Z",
+    "versionLastModified": "8.6.0",
+    "svgHash": "51adc25d"
   },
   {
     "name": "sparkle-square",
@@ -97645,9 +98839,9 @@
     "fileName": "SparkleSquareFillDuotone.tsx",
     "versionAdded": "6.2.1",
     "dateAdded": "2026-01-18T11:28:15.181Z",
-    "lastModified": "2026-04-25T02:07:54.433Z",
-    "versionLastModified": "8.3.0",
-    "svgHash": "1370a16c"
+    "lastModified": "2026-09-01T04:56:34.589Z",
+    "versionLastModified": "8.6.0",
+    "svgHash": "2ec2b310"
   },
   {
     "name": "sparkles",

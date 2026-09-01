@@ -7,8 +7,8 @@ type LineSegmentBoldDuotoneProps = Omit<IconBaseProps, 'children'>;
 const LineSegmentBoldDuotone = memo(
   forwardRef<SVGSVGElement, LineSegmentBoldDuotoneProps>((props, ref) => (
     <IconBase ref={ref} {...props}>
-      <path d="M15.42 7.16c.32.6.82 1.1 1.42 1.42l-8.26 8.26a3.5 3.5 0 0 0-1.42-1.42z" opacity={.4} />
-        <path fillRule="evenodd" d="M5.5 15a3.5 3.5 0 1 1 0 7 3.5 3.5 0 0 1 0-7m0 2a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3M18.5 2a3.5 3.5 0 1 1 0 7 3.5 3.5 0 0 1 0-7m0 2a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3" clipRule="evenodd" />
+      <path d="M14.55 8.03q.54.88 1.42 1.42l-6.52 6.52a4 4 0 0 0-1.42-1.42z" opacity={.4} />
+        <path fillRule="evenodd" d="M6 14a4 4 0 1 1 0 8 4 4 0 0 1 0-8m0 2a2 2 0 1 0 0 4 2 2 0 0 0 0-4M18 2a4 4 0 1 1 0 8 4 4 0 0 1 0-8m0 2a2 2 0 1 0 0 4 2 2 0 0 0 0-4" clipRule="evenodd" />
     </IconBase>
   ))
 );
