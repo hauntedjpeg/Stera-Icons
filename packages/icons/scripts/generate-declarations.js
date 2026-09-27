@@ -128,7 +128,6 @@ import type { MemoExoticComponent, ForwardRefExoticComponent, RefAttributes } fr
 
 export interface IconBaseProps extends Omit<IconProps, 'weight' | 'duotone'> {
   children: ReactNode;
-  iconName?: string;
 }
 
 export declare const IconBase: MemoExoticComponent<ForwardRefExoticComponent<IconBaseProps & RefAttributes<SVGSVGElement>>>;

@@ -355,8 +355,7 @@ Examples:
       console.log('═'.repeat(60));
       console.log('\n💡 Tips:');
       console.log('  - Use --icon <name> to analyze a specific icon');
-      console.log('  - Use --compare to see size comparison across icons');
-      console.log('  - Run pnpm test:tree-shaking for detailed tree-shaking tests\n');
+      console.log('  - Use --compare to see size comparison across icons\n');
     }
   } finally {
     // Cleanup

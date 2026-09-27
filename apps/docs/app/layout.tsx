@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import { Navbar } from "@/components/navbar";
 import { ThemeProvider } from "@/components/theme-provider";
+import { getAllIconNames } from "@/lib/icons";
 import "./globals.css";
 
 const geistSans = Geist({
@@ -16,8 +17,7 @@ const geistMono = Geist_Mono({
 
 export const metadata: Metadata = {
   title: "Stera Icons",
-  description:
-    "A collection of 774 hand-crafted icons in 6 variants for React applications.",
+  description: `A collection of ${getAllIconNames().length} hand-crafted icons in 6 variants for React applications.`,
 };
 
 export default function RootLayout({

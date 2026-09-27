@@ -11,7 +11,10 @@ export interface IconBaseProps extends Omit<IconProps, 'weight' | 'duotone'> {
  * Handles common SVG wrapper logic to reduce bundle size.
  *
  * Features:
- * - Auto aria-hidden="true" for decorative icons (when no a11y props present)
+ * - Decorative icons (no a11y props) get aria-hidden="true"
+ * - Icons with an accessible name (aria-label, aria-labelledby, title)
+ *   are exposed with role="img"
+ * - title renders a <title> element as the first child of the svg
  * - Consistent sizing and color handling
  */
 const IconBase = memo(
@@ -21,18 +24,27 @@ const IconBase = memo(
         size,
         color = 'currentColor',
         className,
-        'aria-label': ariaLabel,
+        title,
+        role,
         'aria-hidden': ariaHidden,
         children,
         ...props
       },
       ref
     ) => {
-      // Automatically set aria-hidden="true" for decorative icons
-      // (when no accessibility props are provided)
+      // Labelled: the caller supplied an accessible name
+      const isLabelled = hasA11yProp({
+        'aria-label': props['aria-label'],
+        'aria-labelledby': props['aria-labelledby'],
+        title,
+      });
+      // Decorative: no accessible name and no other a11y props (role or aria-*)
+      const isDecorative = !isLabelled && !hasA11yProp({ role, ...props });
+
+      // An explicit aria-hidden always wins
       const computedAriaHidden = ariaHidden !== undefined
         ? ariaHidden
-        : !hasA11yProp({ 'aria-label': ariaLabel, ...props });
+        : isDecorative ? true : undefined;
 
       return (
         <svg
@@ -40,11 +52,12 @@ const IconBase = memo(
           viewBox="0 0 24 24"
           {...(size !== undefined ? { width: size, height: size } : {})}
           className={className}
-          aria-label={ariaLabel}
+          role={role ?? (isLabelled ? 'img' : undefined)}
           aria-hidden={computedAriaHidden}
           ref={ref}
           {...props}
         >
+          {title != null ? <title>{title}</title> : null}
           {children}
         </svg>
       );

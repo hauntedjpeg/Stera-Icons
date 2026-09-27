@@ -1,4 +1,4 @@
-# @stera/icons
+# stera-icons
 
 ## 8.6.0
 

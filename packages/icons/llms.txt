@@ -1,68 +1,135 @@
 # stera-icons
 
-700+ React icons in 6 variants (Regular, Bold, Fill x Standard/Duotone). Tree-shakeable, ESM-only.
+800+ React icons in 6 variants (Regular, Bold, Fill x Standard/Duotone). Tree-shakeable, ESM-only, TypeScript types included.
+
+Browse icons: https://stera.sh
+Full icon index for LLMs (every icon name with tags): https://stera.sh/llms-full.txt
 
 ## Install
 
 npm install stera-icons
 
-Requires React 17+ and Node 18+.
+Requires React 17+ and Node 22+. ESM-only: there is no CommonJS build, so `require('stera-icons')` does not work.
 
 ## Import Pattern
 
-Recommended: Si-prefixed explicit variant imports.
+Recommended: Si-prefixed explicit variant imports from the package root.
 
-Formula: Si + {Name} + {Bold|Fill|Regular} + {Duotone?}
+Formula: Si + {Name} + {Regular|Bold|Fill} + {Duotone?}
 
 Examples:
 - SiHomeBold
 - SiSearchFill
 - SiUserRegularDuotone
 - SiSearch (shorthand for SiSearchRegular)
+- SiSearchDuotone (shorthand for SiSearchRegularDuotone)
 
 ```tsx
 import { SiHomeBold, SiSearchFill } from 'stera-icons';
+
 <SiHomeBold size={24} color="blue" />
+<SiSearchFill className="h-5 w-5 text-gray-500" />
 ```
 
-Each icon also exports as: Search, SearchIcon, SiSearch (all equivalent).
+Every export has three equivalent aliases: Search, SearchIcon, SiSearch. Prefer the Si prefix to avoid name collisions with your own components.
+
+{Name} is the icon's kebab-case name in PascalCase: arrow-right -> ArrowRight -> SiArrowRight.
+
+## Do Not Guess Icon Names
+
+Names do not always match other icon libraries. Verify a name before using it (see Finding Icons). Examples:
+- There is no SiClose: use SiX.
+- There is no SiEdit: use SiPencil.
+- There is no SiGear or SiCog: use SiSettings.
+- There are no brand or logo icons (no GitHub, Figma, Google, etc.).
 
 ## Entry Points
 
-- stera-icons — all icons (~300 bytes each, tree-shakeable)
-- stera-icons/icons/{Name} — subpath import for a single icon
-- stera-icons/dynamic-variants — runtime weight/duotone switching (~1KB per icon)
-- stera-icons/dynamic — DynamicIcon component for loading by name (~2KB + lazy)
-- stera-icons/base — IconBase wrapper component
-- stera-icons/types — TypeScript interfaces
+- stera-icons — every icon and variant as a named export. Tree-shakeable.
+- stera-icons/icons/{ComponentName} — one file per component, e.g. stera-icons/icons/SearchBold.
+- stera-icons/dynamic-variants — wrapper components that take weight and duotone props.
+- stera-icons/dynamic — DynamicIcon, for loading an icon by name at runtime.
+- stera-icons/base — IconBase, the shared svg wrapper, for building custom icons.
+- stera-icons/utils — mergeClasses, hasA11yProp, toKebabCase, toCamelCase, toPascalCase.
+- stera-icons/types — TypeScript types (IconProps, IconWeight, SteraIcon, ...). Also exported from the root.
+
+Important: the same name means different components depending on the entry point.
+- `import { Search } from 'stera-icons'` is the Regular variant. It has no weight or duotone prop.
+- `import { Search } from 'stera-icons/dynamic-variants'` and `import { Search } from 'stera-icons/icons/Search'` are the wrapper. It accepts weight and duotone, and bundles all 6 variants.
+
+For the smallest bundle with a subpath import, import the variant file, not the wrapper:
+
+```tsx
+import { SiSearchBold } from 'stera-icons/icons/SearchBold';
+```
 
 ## Props
 
-All icon components accept these props plus all standard SVG attributes:
+All icon components accept these props plus every standard SVG attribute. The ref is forwarded to the svg element.
 
-- size: number | string — sets SVG width/height. Omit to let CSS control sizing.
-- color: string — default 'currentColor'.
-- weight: 'regular' | 'bold' | 'fill' — default 'regular'. Only on dynamic-variants imports.
-- duotone: boolean — default false. Only on dynamic-variants imports.
-- aria-label: string — when provided, icon becomes accessible (no aria-hidden).
-- title: string — accessible title element.
+- size: number | string — sets SVG width and height. No default: omit it to size the icon with CSS or className.
+- color: string — default 'currentColor'. Applied as the svg fill.
+- className: string — passed to the svg. No default classes are added.
+- title: string — renders a <title> element inside the svg and makes the icon accessible.
+- weight: 'regular' | 'bold' | 'fill' — default 'regular'. Wrapper components and DynamicIcon only.
+- duotone: boolean — default false. Wrapper components and DynamicIcon only.
 
-Icons automatically set aria-hidden="true" when no aria-label, role, or title is provided.
+Icons are filled shapes, not strokes. There is no strokeWidth prop to change line thickness: pick a weight instead.
 
-## Variant Naming
+## Accessibility
 
-Each of the 768 icons has 6 variants:
-- {Name}Regular, {Name}Bold, {Name}Fill
-- {Name}RegularDuotone, {Name}BoldDuotone, {Name}FillDuotone
+- Decorative by default: with no aria-label, aria-labelledby, title, or role, the icon renders aria-hidden="true". Use this when the icon sits next to visible text.
+- Meaningful icons: pass aria-label, aria-labelledby, or title. The icon is then exposed to assistive tech with role="img" and no aria-hidden.
+- An explicit aria-hidden or role prop always wins.
+- For an icon-only button, label the button rather than the icon:
 
-{Name} alone resolves to {Name}Regular.
+```tsx
+<button aria-label="Close"><SiX /></button>
+```
+
+## Dynamic Variants
+
+Use when weight or duotone is decided at runtime.
+
+```tsx
+import { SiSearch } from 'stera-icons/dynamic-variants';
+
+<SiSearch weight="bold" duotone />
+```
+
+## Dynamic Loading
+
+Use only when the icon name comes from runtime data (CMS, database, user input). Do not use it for icons known at build time or for rendering many icons at once.
+
+```tsx
+import { DynamicIcon, iconNames } from 'stera-icons/dynamic';
+
+<DynamicIcon name="arrow-right" weight="bold" duotone fallback={<Spinner />} onError={(err) => console.error(err)} />
+```
+
+- name: kebab-case icon name, e.g. 'arrow-right'. Required.
+- fallback: component or node shown while loading and on error. Renders nothing if omitted.
+- onError: called with an Error if the icon does not exist.
+- iconNames: string[] of every valid key, e.g. 'search', 'search-bold', 'search-duotone', 'search-bold-duotone', 'search-fill', 'search-fill-duotone'.
+
+## Server Components
+
+Icons work in React Server Components and the Next.js App Router with no extra setup. The package marks its client boundary internally, so you do not need to add "use client" to import an icon.
 
 ## Bundle Size
 
-- Direct import (SiSearch): ~300 bytes gzipped
-- Dynamic variant (stera-icons/dynamic-variants): ~1 KB per icon gzipped
-- Dynamic loading (stera-icons/dynamic): ~2 KB + lazy-loaded gzipped
+Measured with esbuild, minified, React external:
+
+- Root or subpath import: about 0.6 KB gzipped for the first icon (includes the shared base), then about 0.2 to 0.3 KB gzipped for each additional icon.
+- Wrapper (dynamic-variants): about 1.1 KB gzipped for the first icon, then about 0.7 KB gzipped for each additional icon.
+- DynamicIcon (stera-icons/dynamic): about 68 KB gzipped up front for the import map, plus one small lazy-loaded chunk per icon rendered.
 
 ## Finding Icons
 
-Search index.d.ts for keywords. Each icon has JSDoc @tags with intent and aliases (e.g. "kebab" or "overflow" finds SiMore).
+- Online: https://stera.sh/llms-full.txt lists every icon as `kebab-name | component | tags`.
+- In an installed project: search node_modules/stera-icons/dist/esm/index.d.ts. Each export has JSDoc @tags with intent and aliases, e.g. searching "kebab" or "overflow" finds SiMore, and "gear" finds SiSettings.
+- Machine-readable: node_modules/stera-icons/dist/icons.meta.json is an array with one entry per variant (name, componentName, variantComponentName, weight, duotone, tags, versionAdded). Read it from disk: it is not an importable entry point.
+
+## Versioning
+
+Icons are occasionally renamed or removed. If an import fails after an upgrade, check the changelog: https://github.com/hauntedjpeg/Stera-Icons/blob/main/packages/icons/CHANGELOG.md

@@ -122,8 +122,26 @@ export function App() {
                 <td className="py-2 pr-4 font-mono st-body-sm">
                   number | string
                 </td>
-                <td className="py-2 pr-4 font-mono st-body-sm">24</td>
-                <td className="py-2">Width and height of the SVG</td>
+                <td className="py-2 pr-4">—</td>
+                <td className="py-2">
+                  Width and height of the SVG. Omit to size with CSS
+                </td>
+              </tr>
+              <tr className="border-b border-border">
+                <td className="py-2 pr-4 font-mono st-body-sm">color</td>
+                <td className="py-2 pr-4 font-mono st-body-sm">string</td>
+                <td className="py-2 pr-4 font-mono st-body-sm">
+                  currentColor
+                </td>
+                <td className="py-2">Fill color of the icon</td>
+              </tr>
+              <tr className="border-b border-border">
+                <td className="py-2 pr-4 font-mono st-body-sm">title</td>
+                <td className="py-2 pr-4 font-mono st-body-sm">string</td>
+                <td className="py-2 pr-4">—</td>
+                <td className="py-2">
+                  Accessible name, rendered as a title element
+                </td>
               </tr>
               <tr>
                 <td className="py-2 pr-4 font-mono st-body-sm">...rest</td>
@@ -138,6 +156,39 @@ export function App() {
             </tbody>
           </table>
         </div>
+      </section>
+
+      <section className="mb-10">
+        <h2 className="st-heading-md text-text mb-4">Accessibility</h2>
+        <p className="st-body-md text-text-secondary mb-4">
+          Icons are decorative by default and hidden from assistive technology.
+          To make an icon meaningful, give it a name with aria-label or title.
+          For icon-only buttons, label the button instead.
+        </p>
+        <CodeBlock
+          code={`<SiSearch />                     // decorative: aria-hidden="true"
+<SiSearch aria-label="Search" /> // meaningful: role="img"
+
+<button aria-label="Close">
+  <SiX />
+</button>`}
+          language="tsx"
+        />
+      </section>
+
+      <section className="mb-10">
+        <h2 className="st-heading-md text-text mb-4">For LLMs</h2>
+        <p className="st-body-md text-text-secondary">
+          A usage guide for AI coding tools is available at{" "}
+          <a href="/llms.txt" className="text-text underline">
+            /llms.txt
+          </a>
+          . A full index of every icon name with tags is at{" "}
+          <a href="/llms-full.txt" className="text-text underline">
+            /llms-full.txt
+          </a>
+          .
+        </p>
       </section>
 
       <section>

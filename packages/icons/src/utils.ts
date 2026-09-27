@@ -36,20 +36,25 @@ export const mergeClasses = (...classes: (string | undefined | null | false)[]):
 /**
  * Checks if the props object contains any accessibility-related properties.
  * Used to determine if aria-hidden should be automatically applied.
- * 
+ * Props whose value is undefined or null are treated as not provided.
+ *
  * @param props - Props object to check
- * @returns true if any a11y prop is present, false otherwise
- * 
+ * @returns true if any a11y prop is provided, false otherwise
+ *
  * @example
  * hasA11yProp({ 'aria-label': 'Search' }) // true
  * hasA11yProp({ className: 'icon' }) // false
  * hasA11yProp({ role: 'img' }) // true
+ * hasA11yProp({ 'aria-label': undefined }) // false
  */
 export const hasA11yProp = (props: Record<string, unknown>): boolean => {
   for (const prop in props) {
     // Check for aria-* attributes, role, or title
     if (prop.startsWith('aria-') || prop === 'role' || prop === 'title') {
-      return true;
+      const value = props[prop];
+      if (value !== undefined && value !== null) {
+        return true;
+      }
     }
   }
   return false;

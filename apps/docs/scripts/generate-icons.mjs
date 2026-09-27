@@ -81,6 +81,19 @@ const iconsJsonPath = path.join(dataDir, 'icons.json');
 fs.writeFileSync(iconsJsonPath, JSON.stringify(icons, null, 2));
 console.log(`✅ Generated ${iconsJsonPath}`);
 
+// Write llms.json (served at /llms.txt and /llms-full.txt)
+// The source of truth is packages/icons/llms.txt, which also ships in the npm package
+const llmsPath = path.resolve(__dirname, '../../../packages/icons/llms.txt');
+
+if (!fs.existsSync(llmsPath)) {
+  console.error('❌ packages/icons/llms.txt not found.');
+  process.exit(1);
+}
+
+const llmsJsonPath = path.join(dataDir, 'llms.json');
+fs.writeFileSync(llmsJsonPath, JSON.stringify({ guide: fs.readFileSync(llmsPath, 'utf8') }));
+console.log(`✅ Generated ${llmsJsonPath}`);
+
 // Generate icon-components.tsx (static icon map)
 const mappingEntries = icons.map(icon =>
   `  '${icon.kebabName}': Icons.${icon.componentName}`

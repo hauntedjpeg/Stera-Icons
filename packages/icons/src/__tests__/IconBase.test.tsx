@@ -88,15 +88,41 @@ describe('IconBase', () => {
     expect(svg).not.toHaveAttribute('class');
   });
 
-  it('auto sets aria-hidden when no a11y props present', () => {
+  it('auto sets aria-hidden="true" when no a11y props present', () => {
     const { container } = render(
       <IconBase>
         <path d="M10 10" />
       </IconBase>
     );
-    
+
     const svg = container.querySelector('svg');
-    expect(svg).toHaveAttribute('aria-hidden');
+    expect(svg).toHaveAttribute('aria-hidden', 'true');
+    expect(svg).not.toHaveAttribute('role');
+  });
+
+  it('treats undefined a11y props as not provided', () => {
+    const { container } = render(
+      <IconBase aria-label={undefined} title={undefined}>
+        <path d="M10 10" />
+      </IconBase>
+    );
+
+    const svg = container.querySelector('svg');
+    expect(svg).toHaveAttribute('aria-hidden', 'true');
+    expect(svg).not.toHaveAttribute('role');
+    expect(svg).not.toHaveAttribute('aria-label');
+    expect(container.querySelector('title')).toBeNull();
+  });
+
+  it('explicit aria-hidden wins over an accessible name', () => {
+    const { container } = render(
+      <IconBase aria-hidden={true} aria-label="Search icon">
+        <path d="M10 10" />
+      </IconBase>
+    );
+
+    const svg = container.querySelector('svg');
+    expect(svg).toHaveAttribute('aria-hidden', 'true');
   });
 
   it('respects explicit aria-hidden="false"', () => {
@@ -120,6 +146,43 @@ describe('IconBase', () => {
     const svg = screen.getByLabelText('Search icon');
     expect(svg).toBeInTheDocument();
     expect(svg).toHaveAttribute('aria-label', 'Search icon');
+    expect(svg).not.toHaveAttribute('aria-hidden');
+    expect(svg).toHaveAttribute('role', 'img');
+  });
+
+  it('exposes icons labelled with aria-labelledby', () => {
+    const { container } = render(
+      <IconBase aria-labelledby="label-id">
+        <path d="M10 10" />
+      </IconBase>
+    );
+
+    const svg = container.querySelector('svg');
+    expect(svg).not.toHaveAttribute('aria-hidden');
+    expect(svg).toHaveAttribute('role', 'img');
+  });
+
+  it('keeps a caller-supplied role when an accessible name is given', () => {
+    const { container } = render(
+      <IconBase role="presentation" aria-label="Search icon">
+        <path d="M10 10" />
+      </IconBase>
+    );
+
+    const svg = container.querySelector('svg');
+    expect(svg).toHaveAttribute('role', 'presentation');
+  });
+
+  it('does not hide or assign a role when only another aria-* prop is given', () => {
+    const { container } = render(
+      <IconBase aria-describedby="desc-id">
+        <path d="M10 10" />
+      </IconBase>
+    );
+
+    const svg = container.querySelector('svg');
+    expect(svg).not.toHaveAttribute('aria-hidden');
+    expect(svg).not.toHaveAttribute('role');
   });
 
   it('forwards ref correctly', () => {
@@ -166,16 +229,36 @@ describe('IconBase', () => {
     
     const svg = screen.getByRole('img');
     expect(svg).toBeInTheDocument();
+    expect(svg).not.toHaveAttribute('aria-hidden');
   });
 
-  it('handles title attribute', () => {
+  it('renders title as a <title> element', () => {
     const { container } = render(
       <IconBase title="Icon title">
         <path d="M10 10" />
       </IconBase>
     );
-    
+
     const svg = container.querySelector('svg');
-    expect(svg).toHaveAttribute('title', 'Icon title');
+    expect(svg).not.toHaveAttribute('title');
+    expect(svg?.firstElementChild?.tagName.toLowerCase()).toBe('title');
+    expect(svg?.firstElementChild).toHaveTextContent('Icon title');
+    expect(svg).toHaveAttribute('role', 'img');
+    expect(svg).not.toHaveAttribute('aria-hidden');
+    expect(screen.getByRole('img', { name: 'Icon title' })).toBe(svg);
+  });
+
+  it('renders <title> before other children', () => {
+    const { container } = render(
+      <IconBase title="Icon title">
+        <path d="M10 10" />
+        <circle cx="12" cy="12" r="5" />
+      </IconBase>
+    );
+
+    const svg = container.querySelector('svg');
+    expect(svg?.children[0].tagName.toLowerCase()).toBe('title');
+    expect(svg?.children[1].tagName.toLowerCase()).toBe('path');
+    expect(svg?.children[2].tagName.toLowerCase()).toBe('circle');
   });
 });

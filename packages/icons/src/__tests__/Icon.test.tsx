@@ -54,9 +54,16 @@ describe('Icon Components', () => {
 
     it('forwards standard SVG props', () => {
       render(<SearchBold data-testid="search-icon" className="custom" />);
-      
+
       const svg = screen.getByTestId('search-icon');
       expect(svg).toHaveClass('custom');
+    });
+
+    it('is hidden from assistive tech by default', () => {
+      const { container } = render(<SearchBold />);
+
+      const svg = container.querySelector('svg');
+      expect(svg).toHaveAttribute('aria-hidden', 'true');
     });
   });
 
@@ -146,6 +153,16 @@ describe('Icon Components', () => {
       
       const svg = screen.getByLabelText('Search');
       expect(svg).toBeInTheDocument();
+      expect(svg).toHaveAttribute('role', 'img');
+      expect(svg).not.toHaveAttribute('aria-hidden');
+    });
+
+    it('renders title as a <title> element through the wrapper', () => {
+      const { container } = render(<Search weight="bold" title="Find" />);
+
+      const svg = container.querySelector('svg');
+      expect(svg?.firstElementChild?.tagName.toLowerCase()).toBe('title');
+      expect(svg?.firstElementChild).toHaveTextContent('Find');
     });
   });
 });

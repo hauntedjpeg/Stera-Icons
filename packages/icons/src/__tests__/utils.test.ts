@@ -101,6 +101,19 @@ describe('Utility Functions', () => {
       })).toBe(false);
     });
 
+    it('treats undefined and null values as not provided', () => {
+      expect(hasA11yProp({ 'aria-label': undefined })).toBe(false);
+      expect(hasA11yProp({ title: null, role: undefined })).toBe(false);
+    });
+
+    it('treats false as a provided value', () => {
+      expect(hasA11yProp({ 'aria-hidden': false })).toBe(true);
+    });
+
+    it('returns true when a provided a11y prop sits next to an undefined one', () => {
+      expect(hasA11yProp({ 'aria-label': undefined, role: 'img' })).toBe(true);
+    });
+
     it('returns true if at least one a11y prop exists among others', () => {
       expect(hasA11yProp({ 
         className: 'icon', 

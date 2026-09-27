@@ -45,11 +45,11 @@ export type ElementAttributes = RefAttributes<SVGSVGElement> & SVGAttributes;
  * Base props interface for all Stera Icon components.
  * Extends standard SVG props with icon-specific properties.
  * 
- * @property size - Icon size in pixels or CSS unit (default: 24)
+ * @property size - Sets SVG width and height, in pixels or any CSS unit. No default: omit to size with CSS
  * @property color - Icon color, any valid CSS color (default: 'currentColor')
  * @property weight - Icon weight variant (wrapper components only)
  * @property duotone - Enable duotone variant (wrapper components only)
- * @property title - Accessible title for the icon
+ * @property title - Accessible name, rendered as a <title> element inside the svg
  */
 export interface IconProps extends Omit<SVGProps<SVGSVGElement>, 'children'> {
   size?: number | string;
