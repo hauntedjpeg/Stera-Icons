@@ -1,41 +1,41 @@
 'use client';
 
-import clsx from 'clsx';
+import { ToggleGroup, ToggleGroupItem } from '@/components/ui/toggle-group';
+
+type Weight = 'regular' | 'bold' | 'fill';
 
 interface WeightSelectorProps {
-  selectedWeight: 'regular' | 'bold' | 'fill';
-  onWeightChange: (weight: 'regular' | 'bold' | 'fill') => void;
+  selectedWeight: Weight;
+  onWeightChange: (weight: Weight) => void;
 }
+
+const weights: { key: Weight; label: string }[] = [
+  { key: 'regular', label: 'Regular' },
+  { key: 'bold', label: 'Bold' },
+  { key: 'fill', label: 'Fill' },
+];
 
 export function WeightSelector({
   selectedWeight,
   onWeightChange,
 }: WeightSelectorProps) {
-  const weights = [
-    { key: 'regular' as const, label: 'Regular' },
-    { key: 'bold' as const, label: 'Bold' },
-    { key: 'fill' as const, label: 'Fill' },
-  ];
-
   return (
-    <div className="relative flex flex-1 min-w-0 items-center bg-zinc-900 dark:bg-zinc-950 rounded-full p-1">
+    <ToggleGroup
+      variant="outline"
+      aria-label="Icon weight"
+      className="flex-1 min-w-0"
+      value={[selectedWeight]}
+      onValueChange={(value) => {
+        // Pressing the active item sends an empty array; keep one weight selected
+        const next = value[0] as Weight | undefined;
+        if (next) onWeightChange(next);
+      }}
+    >
       {weights.map((weight) => (
-        <button
-          key={weight.key}
-          onClick={() => onWeightChange(weight.key)}
-          className={clsx(
-            'relative flex-1 p-2 text-xs/4 font-medium rounded-full transition-all',
-            'focus:outline-none focus:ring-2 focus:ring-zinc-500 focus:ring-offset-2 focus:ring-offset-zinc-900',
-            selectedWeight === weight.key
-              ? 'bg-zinc-50 dark:bg-zinc-800 text-zinc-900 dark:text-zinc-300'
-              : 'text-zinc-50 dark:text-zinc-500 dark:hover:text-zinc-400'
-          )}
-          role="radio"
-          aria-checked={selectedWeight === weight.key}
-        >
+        <ToggleGroupItem key={weight.key} value={weight.key} className="flex-1">
           {weight.label}
-        </button>
+        </ToggleGroupItem>
       ))}
-    </div>
+    </ToggleGroup>
   );
 }

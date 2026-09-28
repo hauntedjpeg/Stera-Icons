@@ -1,0 +1,179 @@
+/* Type tokens and typography utilities. Font variables are patched here on init. */
+
+:root {
+  --font-heading: var(--font-geist-sans);
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+  --font-weight-subtle: 300;
+  --font-weight-regular: 400;
+  --font-weight-medium: 500;
+  --font-weight-strong: 550;
+  --font-weight-heavy: 700;
+  --font-weight-ultra: 800;
+  --letter-spacing-tightest: -0.075rem;
+  --letter-spacing-tighter: -0.05rem;
+  --letter-spacing-tight: -0.025rem;
+  --letter-spacing-normal: 0rem;
+  --letter-spacing-wide: 0.0063rem;
+  --font-size-body-sm: 0.75rem;
+  --font-size-body-md: 0.875rem;
+  --font-size-body-lg: 1rem;
+  --font-size-heading-sm: 1.25rem;
+  --font-size-heading-md: 1.5rem;
+  --font-size-heading-lg: 2rem;
+  --font-size-display-sm: 2.25rem;
+  --font-size-display-md: 2.5rem;
+  --font-size-display-lg: 3rem;
+  --font-size-hero-sm: 3.75rem;
+  --font-size-hero-md: 4.5rem;
+  --font-size-hero-lg: 6rem;
+  --font-size-hero-xl: 7rem;
+  --line-height-snug: 1rem;
+  --line-height-normal: 1.25rem;
+  --line-height-relaxed: 1.5rem;
+  --line-height-28: 1.75rem;
+  --line-height-32: 2rem;
+  --line-height-40: 2.5rem;
+  --line-height-48: 3rem;
+  --line-height-56: 3.5rem;
+  --line-height-72: 4.5rem;
+  --line-height-80: 5rem;
+  --line-height-104: 6.5rem;
+  --line-height-120: 7.5rem;
+}
+
+@utility st-body-sm {
+  font-family: var(--font-sans);
+  font-size: var(--font-size-body-sm);
+  line-height: var(--line-height-snug);
+  font-weight: var(--font-weight-regular);
+  letter-spacing: var(--letter-spacing-wide);
+}
+
+@utility st-body-sm-strong {
+  font-family: var(--font-sans);
+  font-size: var(--font-size-body-sm);
+  line-height: var(--line-height-snug);
+  font-weight: var(--font-weight-strong);
+  letter-spacing: var(--letter-spacing-wide);
+}
+
+@utility st-body-md {
+  font-family: var(--font-sans);
+  font-size: var(--font-size-body-md);
+  line-height: var(--line-height-normal);
+  font-weight: var(--font-weight-regular);
+  letter-spacing: var(--letter-spacing-normal);
+}
+
+@utility st-body-md-compact {
+  font-family: var(--font-sans);
+  font-size: var(--font-size-body-md);
+  line-height: var(--line-height-snug);
+  font-weight: var(--font-weight-regular);
+  letter-spacing: var(--letter-spacing-normal);
+}
+
+@utility st-body-md-strong {
+  font-family: var(--font-sans);
+  font-size: var(--font-size-body-md);
+  line-height: var(--line-height-snug);
+  font-weight: var(--font-weight-strong);
+  letter-spacing: var(--letter-spacing-normal);
+}
+
+@utility st-body-lg {
+  font-family: var(--font-sans);
+  font-size: var(--font-size-body-lg);
+  line-height: var(--line-height-relaxed);
+  font-weight: var(--font-weight-regular);
+  letter-spacing: var(--letter-spacing-normal);
+}
+
+@utility st-body-lg-strong {
+  font-family: var(--font-sans);
+  font-size: var(--font-size-body-lg);
+  line-height: var(--line-height-relaxed);
+  font-weight: var(--font-weight-strong);
+  letter-spacing: var(--letter-spacing-normal);
+}
+
+@utility st-heading-sm {
+  font-family: var(--font-sans);
+  font-size: var(--font-size-heading-sm);
+  line-height: var(--line-height-28);
+  font-weight: var(--font-weight-medium);
+  letter-spacing: var(--letter-spacing-tight);
+}
+
+@utility st-heading-md {
+  font-family: var(--font-sans);
+  font-size: var(--font-size-heading-md);
+  line-height: var(--line-height-32);
+  font-weight: var(--font-weight-medium);
+  letter-spacing: var(--letter-spacing-tight);
+}
+
+@utility st-heading-lg {
+  font-family: var(--font-sans);
+  font-size: var(--font-size-heading-lg);
+  line-height: var(--line-height-40);
+  font-weight: var(--font-weight-medium);
+  letter-spacing: var(--letter-spacing-tight);
+}
+
+@utility st-display-sm {
+  font-family: var(--font-heading);
+  font-size: var(--font-size-display-sm);
+  line-height: var(--line-height-40);
+  font-weight: var(--font-weight-medium);
+  letter-spacing: var(--letter-spacing-tighter);
+}
+
+@utility st-display-md {
+  font-family: var(--font-heading);
+  font-size: var(--font-size-display-md);
+  line-height: var(--line-height-48);
+  font-weight: var(--font-weight-medium);
+  letter-spacing: var(--letter-spacing-tighter);
+}
+
+@utility st-display-lg {
+  font-family: var(--font-heading);
+  font-size: var(--font-size-display-lg);
+  line-height: var(--line-height-56);
+  font-weight: var(--font-weight-medium);
+  letter-spacing: var(--letter-spacing-tighter);
+}
+
+@utility st-hero-sm {
+  font-family: var(--font-heading);
+  font-size: var(--font-size-hero-sm);
+  line-height: var(--line-height-72);
+  font-weight: var(--font-weight-medium);
+  letter-spacing: var(--letter-spacing-tightest);
+}
+
+@utility st-hero-md {
+  font-family: var(--font-heading);
+  font-size: var(--font-size-hero-md);
+  line-height: var(--line-height-80);
+  font-weight: var(--font-weight-medium);
+  letter-spacing: var(--letter-spacing-tightest);
+}
+
+@utility st-hero-lg {
+  font-family: var(--font-heading);
+  font-size: var(--font-size-hero-lg);
+  line-height: var(--line-height-104);
+  font-weight: var(--font-weight-medium);
+  letter-spacing: var(--letter-spacing-tightest);
+}
+
+@utility st-hero-xl {
+  font-family: var(--font-heading);
+  font-size: var(--font-size-hero-xl);
+  line-height: var(--line-height-120);
+  font-weight: var(--font-weight-medium);
+  letter-spacing: var(--letter-spacing-tightest);
+}

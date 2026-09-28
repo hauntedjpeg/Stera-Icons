@@ -2,7 +2,9 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import { getAllIconNames, getIconData, toPascalCase } from "@/lib/icons";
-import { IconDetailPage } from "@/components/icon-detail-page";
+import { IconDetail } from "@/components/icon-detail";
+import { Button } from "@/components/ui/button";
+import { SiArrowLeft } from "stera-icons/icons/ArrowLeft";
 
 export function generateStaticParams() {
   return getAllIconNames().map((name) => ({ name }));
@@ -32,14 +34,11 @@ export default async function IconPage({
 
   return (
     <main className="mx-auto w-full max-w-4xl flex-1 px-4 py-8 sm:px-6">
-      <Link
-        href="/"
-        className="text-sm text-zinc-500 dark:text-zinc-400 hover:text-zinc-900 dark:hover:text-zinc-100 transition-colors"
-      >
-        &larr; All icons
-      </Link>
+      <Button variant="ghost" size="sm" nativeButton={false} render={<Link href="/" />}>
+        <SiArrowLeft data-icon="inline-start" />All icons
+      </Button>
       <div className="mt-6">
-        <IconDetailPage icon={icon} />
+        <IconDetail icon={icon} variant="page" />
       </div>
     </main>
   );

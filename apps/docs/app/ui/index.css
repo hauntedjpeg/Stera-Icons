@@ -1,0 +1,9 @@
+/* Entry point for the design system styles. Imported from your globals.css. */
+
+@import "./colors.css";
+@import "./typography.css";
+@import "./scrollbar.css";
+@import "./scroll-fade.css";
+@import "./base.css";
+
+@custom-variant dark (&:is(.dark *));

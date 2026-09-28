@@ -1,6 +1,12 @@
 "use client"
 
 import { useState } from "react"
+import { Button } from "@/components/ui/button"
+import {
+  Tooltip,
+  TooltipContent,
+  TooltipTrigger,
+} from "@/components/ui/tooltip"
 import { SiCheckCircleFill, SiCopy } from "stera-icons"
 
 interface CodeBlockProps {
@@ -19,19 +25,27 @@ export function CodeBlock({ code, language }: CodeBlockProps) {
 
   return (
     <div className="relative group">
-      <pre className="rounded-lg border border-zinc-100 dark:border-zinc-700 bg-zinc-100 dark:bg-zinc-800 p-4 overflow-x-auto">
-        <code className="text-xs font-mono text-zinc-900 dark:text-zinc-100" data-language={language}>
+      <pre className="rounded-xl border border-border bg-surface-subtle p-4 overflow-x-auto">
+        <code className="font-mono text-xs text-text" data-language={language}>
           {code}
         </code>
       </pre>
-      <button
-        type="button"
-        aria-label="Copy code"
-        onClick={handleCopy}
-        className="absolute top-2 right-2 inline-flex size-8 items-center justify-center rounded-full opacity-0 transition-all group-hover:opacity-100 focus-visible:opacity-100 hover:bg-white dark:hover:bg-zinc-900"
-      >
-        {copied ? <SiCheckCircleFill className="size-4" /> : <SiCopy className="size-4" />}
-      </button>
+      <Tooltip>
+        <TooltipTrigger
+          render={
+            <Button
+              size="icon-sm"
+              variant="ghost"
+              aria-label="Copy code"
+              onClick={handleCopy}
+              className="absolute top-2 right-2 opacity-0 group-hover:opacity-100 focus-visible:opacity-100"
+            />
+          }
+        >
+          {copied ? <SiCheckCircleFill /> : <SiCopy />}
+        </TooltipTrigger>
+        <TooltipContent>{copied ? "Copied" : "Copy"}</TooltipContent>
+      </Tooltip>
     </div>
   );
 }

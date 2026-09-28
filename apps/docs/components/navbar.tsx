@@ -1,11 +1,9 @@
 import Link from "next/link"
+import { Button } from "@/components/ui/button"
 import { SiAsteriskAlt } from "stera-icons/icons/AsteriskAlt"
 import { SearchInput } from "@/components/search-input"
 import { getAllIcons } from "@/lib/icons"
 import { Suspense } from "react"
-
-const navLinkClass =
-  "inline-flex h-9 shrink-0 items-center gap-2 rounded-full border border-zinc-100 bg-white px-3 text-sm font-medium whitespace-nowrap text-zinc-900 transition-colors hover:bg-zinc-100 dark:border-zinc-700 dark:bg-zinc-900 dark:text-zinc-100 dark:hover:bg-zinc-800"
 
 export function Navbar() {
   const icons = getAllIcons();
@@ -15,9 +13,9 @@ export function Navbar() {
       <div className="mx-auto flex h-14 max-w-7xl items-center justify-between px-4 sm:px-6">
 
         <div className="flex gap-2">
-          <Link href="/" className={navLinkClass}>
-            <SiAsteriskAlt className="size-4" />Stera Icons
-          </Link>
+          <Button nativeButton={false} render={<Link href="/" />}>
+            <SiAsteriskAlt data-icon="inline-start" />Stera Icons
+          </Button>
         </div>
 
         <Suspense>
@@ -25,17 +23,17 @@ export function Navbar() {
         </Suspense>
 
         <div className="flex gap-2">
-            <Link href="/docs" className={navLinkClass}>
+            <Button nativeButton={false} render={<Link href="/docs" />}>
               Docs
-            </Link>
+            </Button>
 
-            <a href="https://github.com/hauntedjpeg/Stera-Icons" className={navLinkClass}>
+            <Button nativeButton={false} render={<a href="https://github.com/hauntedjpeg/Stera-Icons" />}>
               GitHub
-            </a>
+            </Button>
 
-            <a href="https://www.figma.com/community/file/1548871823641702097/stera-icons-8-1-0" className={navLinkClass}>
+            <Button nativeButton={false} render={<a href="https://www.figma.com/community/file/1548871823641702097/stera-icons-8-1-0" />}>
               Figma
-            </a>
+            </Button>
         </div>
 
       </div>

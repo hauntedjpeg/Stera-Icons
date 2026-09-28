@@ -1,0 +1,15 @@
+{
+  "$schema": "https://ui.stera.sh/schema.json",
+  "version": 1,
+  "css": "app/globals.css",
+  "aliases": {
+    "components": "@/components",
+    "utils": "@/lib/utils",
+    "ui": "@/components/ui",
+    "lib": "@/lib",
+    "hooks": "@/hooks"
+  },
+  "fonts": {
+    "strategy": "keep-existing"
+  }
+}

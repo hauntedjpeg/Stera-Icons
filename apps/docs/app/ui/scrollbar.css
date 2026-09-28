@@ -1,0 +1,6 @@
+/* Scrollbar utilities. */
+
+@utility scrollbar-hide {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}

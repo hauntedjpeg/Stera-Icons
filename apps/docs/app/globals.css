@@ -1,38 +1,32 @@
 @import "tailwindcss";
-
-@custom-variant dark (&:where(.dark, .dark *));
-
-@layer base {
-  body {
-    @apply bg-white text-zinc-900 antialiased dark:bg-black dark:text-zinc-100;
-  }
-}
+@import "tw-animate-css";
+@import "./ui/index.css";
 
 .syntax-keyword {
-  color: #71717A;
+  color: var(--text-subtle);
 }
 
 .syntax-component {
-  color: #D4D4D8;
+  color: var(--text);
 }
 
 .syntax-string {
-  color: #D4D4D8;
+  color: var(--text);
 }
 
 .syntax-prop {
-  color: #71717A;
+  color: var(--text-subtle);
 }
 
 .syntax-value {
-  color: #71717A;
+  color: var(--text-subtle);
 }
 
 .syntax-comment {
-  color: #3F3F46;
+  color: var(--text-subtlest);
   font-style: italic;
 }
 
 .syntax-punctuation {
-  color: #3F3F46;
+  color: var(--text-subtlest);
 }

@@ -1,6 +1,12 @@
 'use client';
 
 import { SiCopy, SiCheckCircleFill } from 'stera-icons';
+import { Button } from '@/components/ui/button';
+import {
+  Tooltip,
+  TooltipContent,
+  TooltipTrigger,
+} from '@/components/ui/tooltip';
 
 export interface CodeSectionProps {
   title: string;
@@ -12,19 +18,30 @@ export interface CodeSectionProps {
 }
 
 export function CodeSection({ title, copyText, copyId, copied, onCopy, children }: CodeSectionProps) {
+  const isCopied = copied === copyId;
+
   return (
-    <div>
-      <div className="flex items-center justify-between pl-6 pr-4 py-2">
-        <h3 className="text-xs font-medium text-zinc-900 dark:text-zinc-400">{title}</h3>
-        <button
-          onClick={() => onCopy(copyText, copyId)}
-          className="flex items-center gap-1 px-2 py-2 text-xs text-zinc-900 dark:text-zinc-50 hover:bg-black/4 dark:hover:bg-black/32 rounded-lg transition-colors"
-        >
-          {copied === copyId ? <SiCheckCircleFill className="w-4 h-4" /> : <SiCopy className="w-4 h-4" />}
-        </button>
+    <div className="flex flex-col gap-1">
+      <div className="flex items-center justify-between">
+        <h3 className="st-body-sm-strong text-text-subtle">{title}</h3>
+        <Tooltip>
+          <TooltipTrigger
+            render={
+              <Button
+                variant="ghost"
+                size="icon-sm"
+                aria-label={`Copy ${title}`}
+                onClick={() => onCopy(copyText, copyId)}
+              />
+            }
+          >
+            {isCopied ? <SiCheckCircleFill /> : <SiCopy />}
+          </TooltipTrigger>
+          <TooltipContent>{isCopied ? 'Copied' : 'Copy'}</TooltipContent>
+        </Tooltip>
       </div>
-      <pre className="flex px-4">
-        <code className="w-full text-sm bg-zinc-900 dark:bg-zinc-950 p-3 overflow-y-scroll rounded-xl">{children}</code>
+      <pre className="overflow-x-auto rounded-xl border border-border bg-surface-subtle p-3">
+        <code className="font-mono text-xs">{children}</code>
       </pre>
     </div>
   );
