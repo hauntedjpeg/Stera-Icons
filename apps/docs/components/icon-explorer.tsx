@@ -1,7 +1,7 @@
 "use client"
 
-import { useState, useEffect, useCallback } from "react"
-import { useSearchParams, useRouter } from "next/navigation"
+import { useMemo, useCallback } from "react"
+import { useSearchParams } from "next/navigation"
 import type { IconData } from "@/lib/types"
 import { IconGrid } from "@/components/icon-grid"
 import { IconDetailModal } from "@/components/icon-detail-modal"
@@ -12,45 +12,37 @@ interface IconExplorerProps {
 
 export function IconExplorer({ icons }: IconExplorerProps) {
   const searchParams = useSearchParams();
-  const router = useRouter();
-  const [selectedIcon, setSelectedIcon] = useState<IconData | null>(null);
-  const [isModalOpen, setIsModalOpen] = useState(false);
 
-  // Restore modal from URL query param on mount
-  useEffect(() => {
-    const iconParam = searchParams.get("icon");
-    if (iconParam) {
-      const icon = icons.find((i) => i.kebabName === iconParam);
-      if (icon) {
-        setSelectedIcon(icon);
-        setIsModalOpen(true);
-      }
-    }
-  }, []); // eslint-disable-line react-hooks/exhaustive-deps
+  // The URL query param is the source of truth for the open modal
+  const iconParam = searchParams.get("icon");
+  const selectedIcon = useMemo(
+    () => (iconParam ? icons.find((i) => i.kebabName === iconParam) ?? null : null),
+    [icons, iconParam]
+  );
 
+  // history.replaceState updates useSearchParams without a server round trip,
+  // so the modal opens and closes immediately
   const handleIconClick = useCallback((icon: IconData) => {
-    setSelectedIcon(icon);
-    setIsModalOpen(true);
     const params = new URLSearchParams(searchParams.toString());
     params.set("icon", icon.kebabName);
-    router.replace(`?${params.toString()}`, { scroll: false });
-  }, [searchParams, router]);
+    window.history.replaceState(null, "", `?${params.toString()}`);
+  }, [searchParams]);
 
   const handleModalClose = useCallback(() => {
-    setIsModalOpen(false);
-    setSelectedIcon(null);
     const params = new URLSearchParams(searchParams.toString());
     params.delete("icon");
     const qs = params.toString();
-    router.replace(qs ? `?${qs}` : "/", { scroll: false });
-  }, [searchParams, router]);
+    window.history.replaceState(null, "", qs ? `?${qs}` : window.location.pathname);
+  }, [searchParams]);
 
   return (
     <>
       <IconGrid icons={icons} onIconClick={handleIconClick} />
+      {/* Keyed by icon so weight/duotone reset when a different icon is opened */}
       <IconDetailModal
+        key={selectedIcon?.kebabName}
         icon={selectedIcon}
-        isOpen={isModalOpen}
+        isOpen={selectedIcon !== null}
         onClose={handleModalClose}
       />
     </>

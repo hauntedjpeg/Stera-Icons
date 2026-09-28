@@ -43,11 +43,6 @@ export function IconDetailModal({
   }, [isOpen]);
 
   useEffect(() => {
-    setCurrentWeight(initialWeight);
-    setCurrentDuotone(initialDuotone);
-  }, [initialWeight, initialDuotone]);
-
-  useEffect(() => {
     if (!isOpen) return;
     function onKeyDown(e: KeyboardEvent) {
       if (e.key === 'Escape') onClose();

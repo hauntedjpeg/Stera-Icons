@@ -49,7 +49,7 @@ export function getIconByName(kebabName: string): IconDetail | null {
   if (!icon) return null;
 
   const variants: IconDetail["variants"] = [];
-  for (const [key, _info] of Object.entries(icon.variants)) {
+  for (const key of Object.keys(icon.variants)) {
     const isDuotone = key.endsWith("-duotone");
     const weight = (isDuotone ? key.replace("-duotone", "") : key) as
       | "regular"

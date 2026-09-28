@@ -13,7 +13,7 @@ export function Navbar() {
       <div className="mx-auto flex h-14 max-w-7xl items-center justify-between px-4 sm:px-6">
 
         <div className="flex gap-2">
-          <Button nativeButton={false} render={<a href="/" />}>
+          <Button nativeButton={false} render={<Link href="/" />}>
             <SiAsteriskAlt data-icon="inline-start" />Stera Icons
           </Button>
         </div>

@@ -18,7 +18,7 @@ const metadata = JSON.parse(fs.readFileSync(metadataPath, 'utf8'));
 const iconGroups = new Map();
 
 metadata.forEach(entry => {
-  const { componentName, name: kebabName, weight, duotone, tags, variantComponentName, fileName, versionAdded, versionLastModified } = entry;
+  const { componentName, name: kebabName, weight, duotone, tags, variantComponentName, fileName, versionAdded } = entry;
 
   if (!iconGroups.has(componentName)) {
     iconGroups.set(componentName, {
