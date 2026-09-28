@@ -1,5 +1,12 @@
 @import "tailwindcss";
-@import './stera-ui.css';
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+@layer base {
+  body {
+    @apply bg-white text-zinc-900 antialiased dark:bg-black dark:text-zinc-100;
+  }
+}
 
 .syntax-keyword {
   color: #71717A;

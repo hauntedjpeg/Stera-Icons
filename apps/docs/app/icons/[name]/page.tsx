@@ -34,7 +34,7 @@ export default async function IconPage({
     <main className="mx-auto w-full max-w-4xl flex-1 px-4 py-8 sm:px-6">
       <Link
         href="/"
-        className="st-body-md text-text-secondary hover:text-text transition-colors"
+        className="text-sm text-zinc-500 dark:text-zinc-400 hover:text-zinc-900 dark:hover:text-zinc-100 transition-colors"
       >
         &larr; All icons
       </Link>

@@ -28,7 +28,7 @@ export function SearchInput({ totalIcons }: { totalIcons?: number }) {
       placeholder={totalIcons ? `Search ${totalIcons} icons...` : "Search icons..."}
       value={query}
       onChange={handleChange}
-      className="w-48 sm:w-64 rounded-lg border border-border bg-bg-surface px-3 py-1.5 st-body-sm text-text placeholder:text-text-tertiary outline-none focus:border-border-secondary focus:ring-1 focus:ring-ring transition-colors"
+      className="w-48 sm:w-64 rounded-lg border border-zinc-100 dark:border-zinc-700 bg-white dark:bg-zinc-900 px-3 py-1.5 text-xs text-zinc-900 dark:text-zinc-100 placeholder:text-zinc-400 dark:placeholder:text-zinc-500 outline-none focus:border-zinc-300 dark:focus:border-zinc-600 focus:ring-1 focus:ring-black/15 dark:focus:ring-white/30 transition-colors"
     />
   );
 }

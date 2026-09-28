@@ -1,7 +1,6 @@
 "use client"
 
 import { useState } from "react"
-import { Button } from "@/components/ui/button"
 import { SiCheckCircleFill, SiCopy } from "stera-icons"
 
 interface CodeBlockProps {
@@ -20,14 +19,19 @@ export function CodeBlock({ code, language }: CodeBlockProps) {
 
   return (
     <div className="relative group">
-      <pre className="rounded-lg border border-border bg-bg-surface-secondary p-4 overflow-x-auto">
-        <code className="st-body-sm font-mono text-text" data-language={language}>
+      <pre className="rounded-lg border border-zinc-100 dark:border-zinc-700 bg-zinc-100 dark:bg-zinc-800 p-4 overflow-x-auto">
+        <code className="text-xs font-mono text-zinc-900 dark:text-zinc-100" data-language={language}>
           {code}
         </code>
       </pre>
-      <Button size="icon-sm" variant="ghost" onClick={handleCopy} className="absolute top-2 right-2 opacity-0 group-hover:opacity-100">
-        {copied ? <SiCheckCircleFill /> : <SiCopy />}
-      </Button>
+      <button
+        type="button"
+        aria-label="Copy code"
+        onClick={handleCopy}
+        className="absolute top-2 right-2 inline-flex size-8 items-center justify-center rounded-full opacity-0 transition-all group-hover:opacity-100 focus-visible:opacity-100 hover:bg-white dark:hover:bg-zinc-900"
+      >
+        {copied ? <SiCheckCircleFill className="size-4" /> : <SiCopy className="size-4" />}
+      </button>
     </div>
   );
 }

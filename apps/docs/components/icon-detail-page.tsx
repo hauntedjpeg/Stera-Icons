@@ -37,18 +37,18 @@ export function IconDetailPage({ icon }: IconDetailPageProps) {
     <div className="flex flex-col gap-8">
       {/* Header */}
       <div className="flex items-center gap-4">
-        <h1 className="st-display-sm text-text flex-1">{prettyName}</h1>
+        <h1 className="text-4xl font-medium tracking-tight text-zinc-900 dark:text-zinc-100 flex-1">{prettyName}</h1>
         <div className="flex items-center gap-2">
           <button
             onClick={() => copyToClipboard(handleGetSVGData(), 'svg')}
-            className="p-2 hover:bg-bg-surface-secondary rounded-lg transition-colors text-text-secondary hover:text-text"
+            className="p-2 hover:bg-zinc-100 dark:hover:bg-zinc-800 rounded-lg transition-colors text-zinc-500 dark:text-zinc-400 hover:text-zinc-900 dark:hover:text-zinc-100"
             title="Copy SVG"
           >
             {copied === 'svg' ? <SiCheckCircleFill className="w-5 h-5" /> : <SiCopy className="w-5 h-5" />}
           </button>
           <button
             onClick={handleDownloadSVG}
-            className="p-2 hover:bg-bg-surface-secondary rounded-lg transition-colors text-text-secondary hover:text-text"
+            className="p-2 hover:bg-zinc-100 dark:hover:bg-zinc-800 rounded-lg transition-colors text-zinc-500 dark:text-zinc-400 hover:text-zinc-900 dark:hover:text-zinc-100"
             title="Download SVG"
           >
             <SiDownload className="w-5 h-5" />
@@ -59,7 +59,7 @@ export function IconDetailPage({ icon }: IconDetailPageProps) {
       {/* Preview */}
       <div
         id="icon-preview"
-        className="flex items-center justify-center py-12 rounded-xl border border-border text-text"
+        className="flex items-center justify-center py-12 rounded-xl border border-zinc-100 dark:border-zinc-700 text-zinc-900 dark:text-zinc-100"
       >
         <IconRenderer
           iconName={icon.kebabName}
@@ -87,7 +87,7 @@ export function IconDetailPage({ icon }: IconDetailPageProps) {
           {icon.tags.map((tag) => (
             <span
               key={tag}
-              className="rounded-md bg-bg-surface-secondary px-2 py-0.5 st-body-sm text-text-secondary"
+              className="rounded-md bg-zinc-100 dark:bg-zinc-800 px-2 py-0.5 text-xs text-zinc-500 dark:text-zinc-400"
             >
               {tag}
             </span>
