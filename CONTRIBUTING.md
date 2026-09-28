@@ -25,12 +25,31 @@ node packages/icons/scripts/hash-versioning.js info
 # 4. Build icons
 pnpm build:icons
 
-# 5. Commit everything, including the generated files in packages/icons/src
+# 5. Update the hand-written docs (see "Docs to Update" below)
+
+# 6. Run the tests — they fail if a doc is stale
+pnpm --filter stera-icons exec vitest run
+
+# 7. Commit everything, including the generated files in packages/icons/src
 #    and packages/icons/dist/icons.meta.json
 git add .
 git commit -m "feat: add new icons"
 git push
 ```
+
+### Docs to Update
+
+Most icon docs regenerate on their own: the `@tags` in `index.d.ts`, `icons.meta.json`, the icon index at stera.sh/llms-full.txt, and every count shown on the docs site. Only these are hand-written:
+
+| When | Update |
+|------|--------|
+| Icons added or removed | Root `README.md` stats table: `Icons` and `Total variants` (icons × 6) |
+| Count crosses a hundred (e.g. 900) | The `800+` figure in `packages/icons/llms.txt` and `packages/icons/README.md` |
+| An icon used as a doc example is renamed or removed | Every mention in `packages/icons/llms.txt`, `packages/icons/README.md` and `apps/docs/components/docs-content.tsx` |
+| An icon is added whose name the docs say does not exist (`SiClose`, `SiEdit`, `SiGear`, `SiCog`) | The "do not guess" examples in the same files, and `DOCUMENTED_AS_MISSING` in the test |
+| Any rename or removal | A migration note in the changeset (old name → new name) |
+
+`packages/icons/src/__tests__/docs.test.ts` checks the first four rows.
 
 ## Generated Files
 
@@ -108,7 +127,7 @@ Changes to anything that ships in the npm package need a changeset, including `p
 
 ## Keeping Docs in Sync
 
-When the public API or behavior of `stera-icons` changes, update `packages/icons/README.md`, `packages/icons/llms.txt` and `apps/docs/components/docs-content.tsx` together. Update the icon count in the root `README.md` when icons are added or removed.
+When the public API or behavior of `stera-icons` changes, update `packages/icons/README.md`, `packages/icons/llms.txt` and `apps/docs/components/docs-content.tsx` together. For icon changes, see [Docs to Update](#docs-to-update).
 
 ## Troubleshooting
 

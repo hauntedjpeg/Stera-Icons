@@ -54,7 +54,23 @@ Order matters. The changeset must exist before the build, because the build read
 2. `node packages/icons/scripts/hash-versioning.js info` — confirm `Has pending changesets: true`
 3. Update `packages/icons/icons-export.json`
 4. `pnpm build:icons`
-5. Commit everything, including the generated `src/` files and `packages/icons/dist/icons.meta.json`
+5. Update the hand-written docs (see below)
+6. `pnpm --filter stera-icons exec vitest run`
+7. Commit everything, including the generated `src/` files and `packages/icons/dist/icons.meta.json`
+
+### Docs to update after an icon change
+
+Most icon docs regenerate on their own: the `@tags` JSDoc in `index.d.ts`, `dist/icons.meta.json`, the icon index at `stera.sh/llms-full.txt`, and every count shown on the docs site. Only these are hand-written:
+
+| When | Update |
+|------|--------|
+| Icons added or removed | `README.md` stats table: `Icons` and `Total variants` (icons × 6) |
+| Count crosses a hundred (e.g. 900) | The `800+` figure in `packages/icons/llms.txt` and `packages/icons/README.md` |
+| An icon used as a doc example is renamed or removed | Every mention in `packages/icons/llms.txt`, `packages/icons/README.md` and `apps/docs/components/docs-content.tsx` |
+| An icon is added whose name the docs say does not exist (`SiClose`, `SiEdit`, `SiGear`, `SiCog`) | The "do not guess" examples in the same files, and `DOCUMENTED_AS_MISSING` in the test |
+| Any rename or removal | A migration note in the changeset body (old name → new name). Bump is `major` |
+
+`packages/icons/src/__tests__/docs.test.ts` enforces the first four rows, so a failing test there means a doc is stale, not that the test is wrong.
 
 ## Versioning and release
 
@@ -67,14 +83,14 @@ Order matters. The changeset must exist before the build, because the build read
 - Any change that affects what ships to npm (`src/`, `scripts/`, `README.md`, `llms.txt` in `packages/icons`) needs a changeset. Changes to `apps/docs` do not.
 - Releases are automated by `.github/workflows/release.yml`. **Never run `pnpm changeset version`, `pnpm version-packages`, `pnpm release` or `npm publish`.**
 
-## Docs that must stay in sync
+## Docs to update after an API change
 
-When the public API, icon count, requirements or behavior of `stera-icons` changes, update all of:
+When the public API, requirements or behavior of `stera-icons` changes, update all of:
 
 - `packages/icons/llms.txt` — LLM usage guide. Ships to npm and is served at `stera.sh/llms.txt`
 - `packages/icons/README.md` — ships to npm
 - `apps/docs/components/docs-content.tsx` — the docs page on stera.sh
-- `README.md` — icon count in the stats table
+- `packages/icons/src/types.ts` JSDoc and the templates in `scripts/generate-declarations.js`
 
 ## Conventions
 
