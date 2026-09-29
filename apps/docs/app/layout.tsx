@@ -16,9 +16,46 @@ const geistMono = Geist_Mono({
   subsets: ["latin"],
 });
 
+const title = "Stera Icons";
+const description = `A collection of ${getAllIconNames().length} hand-crafted icons in 6 variants for React applications.`;
+
+const faviconSizes = [16, 32, 96];
+const favicons = (scheme: "light" | "dark") =>
+  faviconSizes.map((size) => ({
+    url: `/favicon-${scheme}-${size}x${size}.png`,
+    sizes: `${size}x${size}`,
+    type: "image/png",
+    media: `(prefers-color-scheme: ${scheme})`,
+  }));
+
+const socialImage = {
+  url: "/social-image.png",
+  width: 1920,
+  height: 1080,
+  alt: "Stera",
+};
+
 export const metadata: Metadata = {
-  title: "Stera Icons",
-  description: `A collection of ${getAllIconNames().length} hand-crafted icons in 6 variants for React applications.`,
+  metadataBase: new URL("https://stera.sh"),
+  title,
+  description,
+  icons: {
+    icon: [...favicons("light"), ...favicons("dark")],
+  },
+  openGraph: {
+    title,
+    description,
+    url: "/",
+    siteName: title,
+    type: "website",
+    images: [socialImage],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title,
+    description,
+    images: [socialImage],
+  },
 };
 
 export default function RootLayout({
