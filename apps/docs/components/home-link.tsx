@@ -8,15 +8,29 @@ import { SiAsteriskAlt } from "stera-icons";
 // Returns to the full icon grid, so it also clears the search
 export function HomeLink() {
   const setQuery = useSetSearchQuery();
+  const link = <Link href="/" onClick={() => setQuery("")} />;
 
   return (
-    <Button
-      variant="subtle"
-      size="lg"
-      nativeButton={false}
-      render={<Link href="/" onClick={() => setQuery("")} />}
-    >
-      <SiAsteriskAlt data-icon="inline-start" />Stera Icons
-    </Button>
+    <>
+      <Button
+        variant="subtle"
+        size="icon-lg"
+        className="sm:hidden"
+        aria-label="Stera Icons"
+        nativeButton={false}
+        render={link}
+      >
+        <SiAsteriskAlt />
+      </Button>
+      <Button
+        variant="subtle"
+        size="lg"
+        className="max-sm:hidden"
+        nativeButton={false}
+        render={link}
+      >
+        <SiAsteriskAlt data-icon="inline-start" />Stera Icons
+      </Button>
+    </>
   );
 }
