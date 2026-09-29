@@ -49,7 +49,7 @@ export function IconGrid({ icons, onIconClick }: IconGridProps) {
           </EmptyContent>
         </Empty>
       ) : (
-        <div className="grid grid-cols-3 sm:grid-cols-4 md:grid-cols-6 lg:grid-cols-8 xl:grid-cols-10 gap-3">
+        <div className="grid grid-cols-4 sm:grid-cols-4 md:grid-cols-6 lg:grid-cols-8 xl:grid-cols-10 gap-3">
           {filtered.map((icon) => (
             <IconCard key={icon.kebabName} icon={icon} onIconClick={onIconClick} />
           ))}

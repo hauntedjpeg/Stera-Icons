@@ -10,15 +10,12 @@ export function IconCard({ icon, onIconClick }: IconCardProps) {
   return (
     <button
       onClick={() => onIconClick(icon)}
-      className="group flex flex-col items-center gap-2 border border-border p-4 transition-colors hover:bg-surface-subtle hover:border-border-strong cursor-pointer"
+      className="group flex flex-col justify-center items-center gap-2 p-2 aspect-square rounded-2xl transition-colors hover:bg-surface-subtle cursor-pointer text-text-subtle"
     >
       <IconRenderer
         iconName={icon.kebabName}
         className="h-6 w-6"
       />
-      <span className="st-body-sm text-text-subtle text-center truncate w-full">
-        {icon.name}
-      </span>
     </button>
   );
 }

@@ -60,9 +60,9 @@ function DrawerBackdrop({
       data-slot="drawer-backdrop"
       className={cn(
         // Base
-        "fixed inset-0 z-50 bg-black/20 dark:bg-black/60",
+        "fixed inset-0 z-50",
         // Blur
-        "supports-backdrop-filter:backdrop-blur-xs",
+        "",
         // Swipe-driven opacity
         "opacity-[calc(1-var(--drawer-swipe-progress,0))]",
         // Open/close transition
@@ -214,7 +214,7 @@ function DrawerPopup({
             className={cn(
               // Base — clips its contents; scrolling lives on DrawerContent
               // (Drawer.Content).
-              "relative flex min-h-0 min-w-0 flex-col overflow-hidden rounded-xl bg-surface text-sm text-text shadow-lg ring-1 ring-border",
+              "relative flex min-h-0 min-w-0 flex-col overflow-hidden rounded-xl bg-surface-muted rounded-[30px]e text-sm text-text shadow-lg",
               // Interactive only while open, so it goes inert during the exit
               "group-data-open/drawer:pointer-events-auto",
               // Sizing
@@ -253,7 +253,7 @@ function DrawerContent({ className, ...props }: DrawerPrimitive.Content.Props) {
     <DrawerPrimitive.Content
       data-slot="drawer-content"
       className={cn(
-        "min-h-0 flex-1 overflow-y-auto overscroll-contain",
+        "min-h-0 flex-1 overflow-y-auto overscroll-contain scroll-fade-t",
         className
       )}
       {...props}
@@ -311,7 +311,7 @@ function DrawerTitle({ className, ...props }: DrawerPrimitive.Title.Props) {
       data-slot="drawer-title"
       className={cn(
         // Other
-        "st-body-lg-strong text-text",
+        "st-body-lg-strong text-text-subtle",
         className
       )}
       {...props}

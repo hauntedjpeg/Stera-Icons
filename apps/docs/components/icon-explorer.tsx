@@ -35,10 +35,23 @@ export function IconExplorer({ icons }: IconExplorerProps) {
     window.history.replaceState(null, "", qs ? `?${qs}` : window.location.pathname);
   }, [searchParams]);
 
+  // Closes the drawer and searches for the tag in a single URL update
+  const handleTagClick = useCallback((tag: string) => {
+    const params = new URLSearchParams(searchParams.toString());
+    params.set("q", tag);
+    params.delete("icon");
+    window.history.replaceState(null, "", `?${params.toString()}`);
+    window.scrollTo({ top: 0 });
+  }, [searchParams]);
+
   return (
     <>
       <IconGrid icons={icons} onIconClick={handleIconClick} />
-      <IconDetailDrawer icon={selectedIcon} onClose={handleDrawerClose} />
+      <IconDetailDrawer
+        icon={selectedIcon}
+        onClose={handleDrawerClose}
+        onTagClick={handleTagClick}
+      />
     </>
   );
 }

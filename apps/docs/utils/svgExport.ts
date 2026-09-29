@@ -1,10 +1,9 @@
 export function getSVGData(
-  selector: string,
+  svgElement: Element | null | undefined,
   prettyName: string,
   weight: string,
   duotone: boolean
 ): string {
-  const svgElement = document.querySelector(selector);
   if (svgElement) {
     const clonedSvg = svgElement.cloneNode(true) as SVGElement;
     const weightLabel = weight.charAt(0).toUpperCase() + weight.slice(1);

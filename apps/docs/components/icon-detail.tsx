@@ -1,130 +1,119 @@
 'use client';
 
-import { useState } from 'react';
+import { useRef, useState } from 'react';
+import Link from 'next/link';
 import type { IconData } from '@/lib/types';
 import { useCopyToClipboard } from '@/hooks/useCopyToClipboard';
 import { getSVGData, downloadSVG, getSVGFilename } from '@/utils/svgExport';
-import { getIconNames, generateCodeSnippets, type IconWeight } from '@/utils/iconCodeSnippets';
-import { IconRenderer } from '@/components/icon-renderer';
-import { WeightSelector } from '@/components/weight-selector';
-import { DuotoneToggle } from '@/components/duotone-toggle';
+import { getIconNames, getUsageSnippet } from '@/utils/iconCodeSnippets';
+import { VariantGrid, VARIANTS, type VariantKey } from '@/components/variant-grid';
 import { CodeSection } from '@/components/code-section';
-import { Badge } from '@/components/ui/badge';
 import { Button } from '@/components/ui/button';
-import { DrawerTitle } from '@/components/ui/drawer';
+import { Chip } from '@/components/ui/chip';
+import {
+  DrawerClose,
+  DrawerContent,
+  DrawerHeader,
+  DrawerTitle,
+} from '@/components/ui/drawer';
 import {
   Tooltip,
   TooltipContent,
   TooltipTrigger,
 } from '@/components/ui/tooltip';
-import { SiCopy, SiDownload, SiCheckCircleFill } from 'stera-icons';
+import { SiCopyDuotone, SiDownloadDuotone, SiCheckCircleFill, SiX } from 'stera-icons';
 
 interface IconDetailProps {
   icon: IconData;
-  // "drawer" must be rendered inside a Drawer; it titles the dialog
+  // "drawer" must be rendered directly inside a DrawerPopup; it renders the
+  // DrawerHeader (which titles the dialog) and the DrawerContent
   variant: 'page' | 'drawer';
+  // Without a handler, tags link to the filtered icon grid
+  onTagClick?: (tag: string) => void;
 }
 
-export function IconDetail({ icon, variant }: IconDetailProps) {
+export function IconDetail({ icon, variant, onTagClick }: IconDetailProps) {
   const { copied, copyToClipboard } = useCopyToClipboard();
-  const [iconSize] = useState(64);
-  const [currentWeight, setCurrentWeight] = useState<IconWeight>('regular');
-  const [currentDuotone, setCurrentDuotone] = useState(false);
+  const [selectedVariant, setSelectedVariant] = useState<VariantKey>('regular');
+  const gridRef = useRef<HTMLDivElement>(null);
 
-  const names = getIconNames(icon, currentWeight, currentDuotone);
-  const snippets = generateCodeSnippets(names, currentWeight, currentDuotone, iconSize);
-  const { baseName, fileName, prettyName, displayVariantName, prefixedName, suffixedName } = names;
-  const { recommendedCode, aliasesCode, dynamicVariantsCode, subpathImportCode } = snippets;
+  const { weight, duotone } = VARIANTS.find((v) => v.key === selectedVariant) ?? VARIANTS[0];
+  const { prettyName, prefixedName } = getIconNames(icon, weight, duotone);
+  const usageCode = getUsageSnippet(prefixedName);
 
-  const handleGetSVGData = () => getSVGData('#icon-preview svg', prettyName, currentWeight, currentDuotone);
+  // The generator adds the icon's own name as a tag; it's already the title
+  const tags = icon.tags.filter((tag) => tag !== icon.name);
+
+  const handleGetSVGData = () =>
+    getSVGData(
+      gridRef.current?.querySelector('[aria-pressed="true"] svg'),
+      prettyName,
+      weight,
+      duotone
+    );
   const handleDownloadSVG = () => {
     const svgData = handleGetSVGData();
-    const filename = getSVGFilename(icon.name, currentWeight, currentDuotone);
+    const filename = getSVGFilename(icon.name, weight, duotone);
     downloadSVG(svgData, filename);
   };
 
-  return (
-    <div className={variant === 'page' ? 'flex flex-col gap-8' : 'flex flex-col gap-6'}>
-      {/* Header */}
-      <div className={variant === 'page' ? 'flex items-center gap-4' : 'flex items-center gap-4 pr-10'}>
-        {variant === 'page' ? (
-          <h1 className="st-display-sm text-text flex-1">{prettyName}</h1>
-        ) : (
-          <DrawerTitle className="flex-1">{prettyName}</DrawerTitle>
-        )}
-        <div className="flex items-center gap-1">
-          <Tooltip>
-            <TooltipTrigger
-              render={
-                <Button
-                  variant="ghost"
-                  size="icon-sm"
-                  aria-label="Copy SVG"
-                  onClick={() => copyToClipboard(handleGetSVGData(), 'svg')}
-                />
-              }
-            >
-              {copied === 'svg' ? <SiCheckCircleFill /> : <SiCopy />}
-            </TooltipTrigger>
-            <TooltipContent>{copied === 'svg' ? 'Copied' : 'Copy SVG'}</TooltipContent>
-          </Tooltip>
-          <Tooltip>
-            <TooltipTrigger
-              render={
-                <Button
-                  variant="ghost"
-                  size="icon-sm"
-                  aria-label="Download SVG"
-                  onClick={handleDownloadSVG}
-                />
-              }
-            >
-              <SiDownload />
-            </TooltipTrigger>
-            <TooltipContent>Download SVG</TooltipContent>
-          </Tooltip>
-        </div>
-      </div>
-
-      {/* Preview */}
-      <div
-        id="icon-preview"
-        className="flex items-center justify-center py-12 rounded-xl border border-border text-text"
-      >
-        <IconRenderer
-          iconName={icon.kebabName}
-          weight={currentWeight}
-          duotone={currentDuotone}
-          className="h-16 w-16"
-        />
-      </div>
-
-      {/* Controls */}
-      <div className="flex gap-3">
-        <WeightSelector
-          selectedWeight={currentWeight}
-          onWeightChange={setCurrentWeight}
-        />
-        <DuotoneToggle
-          enabled={currentDuotone}
-          onToggle={setCurrentDuotone}
-        />
-      </div>
-
-      {/* Tags */}
-      {icon.tags.length > 0 && (
-        <div className="flex flex-wrap gap-2">
-          {icon.tags.map((tag) => (
-            <Badge key={tag}>{tag}</Badge>
-          ))}
-        </div>
+  const actions = (
+    <div className="flex items-center text-text-subtle bg-surface-muted rounded-full p-1">
+      <Tooltip>
+        <TooltipTrigger
+          render={
+            <Button
+              variant="ghost"
+              size="icon"
+              aria-label="Copy SVG"
+              onClick={() => copyToClipboard(handleGetSVGData(), 'svg')}
+            />
+          }
+        >
+          {copied === 'svg' ? <SiCheckCircleFill /> : <SiCopyDuotone />}
+        </TooltipTrigger>
+        <TooltipContent>{copied === 'svg' ? 'Copied' : 'Copy SVG'}</TooltipContent>
+      </Tooltip>
+      <Tooltip>
+        <TooltipTrigger
+          render={
+            <Button
+              variant="ghost"
+              size="icon"
+              aria-label="Download SVG"
+              onClick={handleDownloadSVG}
+            />
+          }
+        >
+          <SiDownloadDuotone />
+        </TooltipTrigger>
+        <TooltipContent>Download SVG</TooltipContent>
+      </Tooltip>
+      {variant === 'drawer' && (
+        <DrawerClose render={<Button variant="ghost" size="icon" aria-label="Close" />}>
+          <SiX />
+        </DrawerClose>
       )}
+    </div>
+  );
 
-      {/* Code Sections */}
+  const body = (
+    <>
+      {/* Variants */}
+      <VariantGrid
+        ref={gridRef}
+        icon={icon}
+        selected={selectedVariant}
+        onSelect={setSelectedVariant}
+        // The page is wide enough to show all six in one row
+        className={variant === 'page' ? 'sm:grid-cols-6' : undefined}
+      />
+
+      {/* Usage */}
       <CodeSection
-        title="Recommended Usage"
-        copyText={recommendedCode}
-        copyId="recommended"
+        title="Usage"
+        copyText={usageCode}
+        copyId="usage"
         copied={copied}
         onCopy={copyToClipboard}
       >
@@ -135,112 +124,57 @@ export function IconDetail({ icon, variant }: IconDetailProps) {
         <span className="syntax-keyword">from</span>
         <span className="syntax-punctuation">{' '}</span>
         <span className="syntax-string">&apos;stera-icons&apos;</span>
-        <span className="syntax-punctuation">;</span>
         {'\n\n'}
         <span className="syntax-punctuation">{'<'}</span>
         <span className="syntax-component">{prefixedName}</span>
-        <span className="syntax-punctuation">{' '}</span>
-        <span className="syntax-prop">size</span>
-        <span className="syntax-punctuation">=</span>
-        <span className="syntax-punctuation">{'{'}</span>
-        <span className="syntax-value">{iconSize}</span>
-        <span className="syntax-punctuation">{'}'}</span>
         <span className="syntax-punctuation">{' />'}</span>
       </CodeSection>
 
-      <CodeSection
-        title="Aliases"
-        copyText={aliasesCode}
-        copyId="aliases"
-        copied={copied}
-        onCopy={copyToClipboard}
-      >
-        <span className="syntax-comment">{'// Base'}</span>
-        {'\n'}
-        <span className="syntax-punctuation">{'<'}</span>
-        <span className="syntax-component">{displayVariantName}</span>
-        <span className="syntax-punctuation">{' />'}</span>
-        {'\n\n'}
-        <span className="syntax-comment">{'// Prefix (Recommended)'}</span>
-        {'\n'}
-        <span className="syntax-punctuation">{'<'}</span>
-        <span className="syntax-component">{prefixedName}</span>
-        <span className="syntax-punctuation">{' />'}</span>
-        {'\n\n'}
-        <span className="syntax-comment">{'// Suffix'}</span>
-        {'\n'}
-        <span className="syntax-punctuation">{'<'}</span>
-        <span className="syntax-component">{suffixedName}</span>
-        <span className="syntax-punctuation">{' />'}</span>
-      </CodeSection>
+      {/* Tags */}
+      {tags.length > 0 && (
+        <div className="flex flex-wrap gap-x-1.5 gap-y-2">
+          {tags.map((tag) =>
+            onTagClick ? (
+              <Chip key={tag} size="sm" className="bg-surface-muted st-body-md-compact text-text-subtle" onClick={() => onTagClick(tag)}>
+                {tag}
+              </Chip>
+            ) : (
+              <Chip
+                key={tag}
+                size="sm"
+                nativeButton={false}
+                render={<Link href={`/?q=${encodeURIComponent(tag)}`} />}
+              >
+                {tag}
+              </Chip>
+            )
+          )}
+        </div>
+      )}
+    </>
+  );
 
-      <CodeSection
-        title="Dynamic Variants"
-        copyText={dynamicVariantsCode}
-        copyId="dynamic"
-        copied={copied}
-        onCopy={copyToClipboard}
-      >
-        <span className="syntax-keyword">import</span>
-        <span className="syntax-punctuation">{' { '}</span>
-        <span className="syntax-component">Si{baseName}</span>
-        <span className="syntax-punctuation">{' } '}</span>
-        <span className="syntax-keyword">from</span>
-        <span className="syntax-punctuation">{' '}</span>
-        <span className="syntax-string">&apos;stera-icons/dynamic-variants&apos;</span>
-        <span className="syntax-punctuation">;</span>
-        {'\n\n'}
-        <span className="syntax-punctuation">{'<'}</span>
-        <span className="syntax-component">Si{baseName}</span>
-        {currentWeight !== 'regular' && (
-          <>
-            <span className="syntax-punctuation">{' '}</span>
-            <span className="syntax-prop">weight</span>
-            <span className="syntax-punctuation">=</span>
-            <span className="syntax-string">&quot;{currentWeight}&quot;</span>
-          </>
-        )}
-        {currentDuotone && (
-          <>
-            <span className="syntax-punctuation">{' '}</span>
-            <span className="syntax-prop">duotone</span>
-          </>
-        )}
-        <span className="syntax-punctuation">{' '}</span>
-        <span className="syntax-prop">size</span>
-        <span className="syntax-punctuation">=</span>
-        <span className="syntax-punctuation">{'{'}</span>
-        <span className="syntax-value">{iconSize}</span>
-        <span className="syntax-punctuation">{'}'}</span>
-        <span className="syntax-punctuation">{' />'}</span>
-      </CodeSection>
+  if (variant === 'drawer') {
+    return (
+      <>
+        <DrawerHeader className="flex-row items-center gap-4 pl-5 pr-2.5 py-2.5">
+          <DrawerTitle className="flex-1">{prettyName}</DrawerTitle>
+          {actions}
+        </DrawerHeader>
+        <DrawerContent className="px-5 pt-4 pb-5">
+          <div className="flex flex-col gap-6">{body}</div>
+        </DrawerContent>
+      </>
+    );
+  }
 
-      <CodeSection
-        title="Subpath Import"
-        copyText={subpathImportCode}
-        copyId="subpath"
-        copied={copied}
-        onCopy={copyToClipboard}
-      >
-        <span className="syntax-keyword">import</span>
-        <span className="syntax-punctuation">{' { '}</span>
-        <span className="syntax-component">{prefixedName}</span>
-        <span className="syntax-punctuation">{' } '}</span>
-        <span className="syntax-keyword">from</span>
-        <span className="syntax-punctuation">{' '}</span>
-        <span className="syntax-string">&apos;stera-icons/icons/{fileName}&apos;</span>
-        <span className="syntax-punctuation">;</span>
-        {'\n\n'}
-        <span className="syntax-punctuation">{'<'}</span>
-        <span className="syntax-component">{prefixedName}</span>
-        <span className="syntax-punctuation">{' '}</span>
-        <span className="syntax-prop">size</span>
-        <span className="syntax-punctuation">=</span>
-        <span className="syntax-punctuation">{'{'}</span>
-        <span className="syntax-value">{iconSize}</span>
-        <span className="syntax-punctuation">{'}'}</span>
-        <span className="syntax-punctuation">{' />'}</span>
-      </CodeSection>
+  return (
+    <div className="flex flex-col gap-8">
+      <div className="flex items-center gap-4 pr-2.5 py-2.5">
+        <h1 className="st-display-sm text-text flex-1">{prettyName}</h1>
+        {actions}
+      </div>
+      {body}
     </div>
   );
 }

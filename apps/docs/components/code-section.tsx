@@ -21,9 +21,9 @@ export function CodeSection({ title, copyText, copyId, copied, onCopy, children 
   const isCopied = copied === copyId;
 
   return (
-    <div className="flex flex-col gap-1">
-      <div className="flex items-center justify-between">
-        <h3 className="st-body-sm-strong text-text-subtle">{title}</h3>
+    <div className="flex flex-col overflow-hidden rounded-[20] bg-surface-muted">
+      <div className="flex items-center justify-between border-b border-border-strong py-1.5 pr-2 pl-4">
+        <h3 className="font-mono text-xs text-text-subtle">{title}</h3>
         <Tooltip>
           <TooltipTrigger
             render={
@@ -31,6 +31,7 @@ export function CodeSection({ title, copyText, copyId, copied, onCopy, children 
                 variant="ghost"
                 size="icon-sm"
                 aria-label={`Copy ${title}`}
+                className="text-text-subtle"
                 onClick={() => onCopy(copyText, copyId)}
               />
             }
@@ -40,7 +41,7 @@ export function CodeSection({ title, copyText, copyId, copied, onCopy, children 
           <TooltipContent>{isCopied ? 'Copied' : 'Copy'}</TooltipContent>
         </Tooltip>
       </div>
-      <pre className="overflow-x-auto rounded-xl border border-border bg-surface-subtle p-3">
+      <pre className="overflow-x-auto p-4">
         <code className="font-mono text-xs">{children}</code>
       </pre>
     </div>

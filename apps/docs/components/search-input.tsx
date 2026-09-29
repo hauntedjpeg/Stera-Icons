@@ -29,13 +29,13 @@ export function SearchInput({ totalIcons }: { totalIcons?: number }) {
   );
 
   return (
-    <InputGroup className="w-48 sm:w-64 bg-surface">
+    <InputGroup className="w-48 sm:w-64 bg-surface-muted hover:bg-surface-muted-hover border-none rounded-full">
       <InputGroupAddon>
         <SiSearch />
       </InputGroupAddon>
       <InputGroupInput
         type="text"
-        size="sm"
+        size="lg"
         aria-label="Search icons"
         placeholder={totalIcons ? `Search ${totalIcons} icons...` : "Search icons..."}
         value={query}

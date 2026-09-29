@@ -1,8 +1,8 @@
 /* Type tokens and typography utilities. Font variables are patched here on init. */
 
 :root {
-  --font-heading: var(--font-geist-sans);
-  --font-sans: var(--font-geist-sans);
+  --font-heading: var(--font-host-grotesk);
+  --font-sans: var(--font-host-grotesk);
   --font-mono: var(--font-geist-mono);
   --font-weight-subtle: 300;
   --font-weight-regular: 400;
@@ -10,11 +10,6 @@
   --font-weight-strong: 550;
   --font-weight-heavy: 700;
   --font-weight-ultra: 800;
-  --letter-spacing-tightest: -0.075rem;
-  --letter-spacing-tighter: -0.05rem;
-  --letter-spacing-tight: -0.025rem;
-  --letter-spacing-normal: 0rem;
-  --letter-spacing-wide: 0.0063rem;
   --font-size-body-sm: 0.75rem;
   --font-size-body-md: 0.875rem;
   --font-size-body-lg: 1rem;
@@ -47,7 +42,7 @@
   font-size: var(--font-size-body-sm);
   line-height: var(--line-height-snug);
   font-weight: var(--font-weight-regular);
-  letter-spacing: var(--letter-spacing-wide);
+  letter-spacing: var(--tracking-wide);
 }
 
 @utility st-body-sm-strong {
@@ -55,7 +50,7 @@
   font-size: var(--font-size-body-sm);
   line-height: var(--line-height-snug);
   font-weight: var(--font-weight-strong);
-  letter-spacing: var(--letter-spacing-wide);
+  letter-spacing: var(--tracking-wide);
 }
 
 @utility st-body-md {
@@ -63,7 +58,7 @@
   font-size: var(--font-size-body-md);
   line-height: var(--line-height-normal);
   font-weight: var(--font-weight-regular);
-  letter-spacing: var(--letter-spacing-normal);
+  letter-spacing: var(--tracking-normal);
 }
 
 @utility st-body-md-compact {
@@ -71,7 +66,7 @@
   font-size: var(--font-size-body-md);
   line-height: var(--line-height-snug);
   font-weight: var(--font-weight-regular);
-  letter-spacing: var(--letter-spacing-normal);
+  letter-spacing: var(--tracking-normal);
 }
 
 @utility st-body-md-strong {
@@ -79,7 +74,7 @@
   font-size: var(--font-size-body-md);
   line-height: var(--line-height-snug);
   font-weight: var(--font-weight-strong);
-  letter-spacing: var(--letter-spacing-normal);
+  letter-spacing: var(--tracking-normal);
 }
 
 @utility st-body-lg {
@@ -87,7 +82,7 @@
   font-size: var(--font-size-body-lg);
   line-height: var(--line-height-relaxed);
   font-weight: var(--font-weight-regular);
-  letter-spacing: var(--letter-spacing-normal);
+  letter-spacing: var(--tracking-normal);
 }
 
 @utility st-body-lg-strong {
@@ -95,31 +90,31 @@
   font-size: var(--font-size-body-lg);
   line-height: var(--line-height-relaxed);
   font-weight: var(--font-weight-strong);
-  letter-spacing: var(--letter-spacing-normal);
+  letter-spacing: var(--tracking-normal);
 }
 
 @utility st-heading-sm {
   font-family: var(--font-sans);
   font-size: var(--font-size-heading-sm);
   line-height: var(--line-height-28);
-  font-weight: var(--font-weight-medium);
-  letter-spacing: var(--letter-spacing-tight);
+  font-weight: var(--font-weight-strong);
+  letter-spacing: var(--tracking-tight);
 }
 
 @utility st-heading-md {
   font-family: var(--font-sans);
   font-size: var(--font-size-heading-md);
   line-height: var(--line-height-32);
-  font-weight: var(--font-weight-medium);
-  letter-spacing: var(--letter-spacing-tight);
+  font-weight: var(--font-weight-strong);
+  letter-spacing: var(--tracking-tight);
 }
 
 @utility st-heading-lg {
   font-family: var(--font-sans);
   font-size: var(--font-size-heading-lg);
   line-height: var(--line-height-40);
-  font-weight: var(--font-weight-medium);
-  letter-spacing: var(--letter-spacing-tight);
+  font-weight: var(--font-weight-strong);
+  letter-spacing: var(--tracking-tight);
 }
 
 @utility st-display-sm {
@@ -127,7 +122,7 @@
   font-size: var(--font-size-display-sm);
   line-height: var(--line-height-40);
   font-weight: var(--font-weight-medium);
-  letter-spacing: var(--letter-spacing-tighter);
+  letter-spacing: var(--tracking-tighter);
 }
 
 @utility st-display-md {
@@ -135,7 +130,7 @@
   font-size: var(--font-size-display-md);
   line-height: var(--line-height-48);
   font-weight: var(--font-weight-medium);
-  letter-spacing: var(--letter-spacing-tighter);
+  letter-spacing: var(--tracking-tighter);
 }
 
 @utility st-display-lg {
@@ -143,7 +138,7 @@
   font-size: var(--font-size-display-lg);
   line-height: var(--line-height-56);
   font-weight: var(--font-weight-medium);
-  letter-spacing: var(--letter-spacing-tighter);
+  letter-spacing: var(--tracking-tighter);
 }
 
 @utility st-hero-sm {
@@ -151,7 +146,7 @@
   font-size: var(--font-size-hero-sm);
   line-height: var(--line-height-72);
   font-weight: var(--font-weight-medium);
-  letter-spacing: var(--letter-spacing-tightest);
+  letter-spacing: var(--tracking-tighter);
 }
 
 @utility st-hero-md {
@@ -159,7 +154,7 @@
   font-size: var(--font-size-hero-md);
   line-height: var(--line-height-80);
   font-weight: var(--font-weight-medium);
-  letter-spacing: var(--letter-spacing-tightest);
+  letter-spacing: var(--tracking-tighter);
 }
 
 @utility st-hero-lg {
@@ -167,7 +162,7 @@
   font-size: var(--font-size-hero-lg);
   line-height: var(--line-height-104);
   font-weight: var(--font-weight-medium);
-  letter-spacing: var(--letter-spacing-tightest);
+  letter-spacing: var(--tracking-tighter);
 }
 
 @utility st-hero-xl {
@@ -175,5 +170,29 @@
   font-size: var(--font-size-hero-xl);
   line-height: var(--line-height-120);
   font-weight: var(--font-weight-medium);
-  letter-spacing: var(--letter-spacing-tightest);
+  letter-spacing: var(--tracking-tighter);
+}
+
+@utility st-mono-sm {
+  font-family: var(--font-mono);
+  font-size: var(--font-size-body-sm);
+  line-height: var(--line-height-snug);
+  font-weight: var(--font-weight-regular);
+  letter-spacing: var(--tracking-wide);
+}
+
+@utility st-mono-md {
+  font-family: var(--font-mono);
+  font-size: var(--font-size-body-md);
+  line-height: var(--line-height-snug);
+  font-weight: var(--font-weight-regular);
+  letter-spacing: var(--tracking-normal);
+}
+
+@utility st-mono-lg {
+  font-family: var(--font-mono);
+  font-size: var(--font-size-body-lg);
+  line-height: var(--line-height-relaxed);
+  font-weight: var(--font-weight-regular);
+  letter-spacing: var(--tracking-normal);
 }

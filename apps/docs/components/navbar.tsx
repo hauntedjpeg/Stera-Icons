@@ -1,6 +1,6 @@
 import Link from "next/link"
 import { Button } from "@/components/ui/button"
-import { SiAsteriskAlt } from "stera-icons/icons/AsteriskAlt"
+import { SiAsteriskAlt, SiBookOpen } from "stera-icons"
 import { SearchInput } from "@/components/search-input"
 import { getAllIcons } from "@/lib/icons"
 import { Suspense } from "react"
@@ -10,10 +10,10 @@ export function Navbar() {
 
   return (
     <nav className="sticky top-0 z-50">
-      <div className="mx-auto flex h-14 max-w-7xl items-center justify-between px-4 sm:px-6">
+      <div className="mx-auto flex items-center justify-between p-4 sm:px-4">
 
         <div className="flex gap-2">
-          <Button nativeButton={false} render={<Link href="/" />}>
+          <Button variant="subtle" size="lg" nativeButton={false} render={<Link href="/" />}>
             <SiAsteriskAlt data-icon="inline-start" />Stera Icons
           </Button>
         </div>
@@ -22,17 +22,21 @@ export function Navbar() {
           <SearchInput totalIcons={icons.length} />
         </Suspense>
 
-        <div className="flex gap-2">
-            <Button nativeButton={false} render={<Link href="/docs" />}>
-              Docs
+        <div className="flex bg-surface-muted rounded-full p-1">
+            <Button variant="subtle" size="icon" nativeButton={false} render={<Link href="/docs" />}>
+              <SiBookOpen />
             </Button>
 
-            <Button nativeButton={false} render={<a href="https://github.com/hauntedjpeg/Stera-Icons" />}>
-              GitHub
+            <Button variant="subtle" size="icon" nativeButton={false} render={<a href="https://github.com/hauntedjpeg/Stera-Icons" />}>
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M12 2.2475C6.475 2.2475 2 6.725 2 12.2475C2 16.6667 4.865 20.4142 8.8375 21.735C9.3375 21.8292 9.52083 21.52 9.52083 21.2542C9.52083 21.0167 9.5125 20.3875 9.50833 19.5542C6.72667 20.1575 6.14 18.2125 6.14 18.2125C5.685 17.0583 5.0275 16.75 5.0275 16.75C4.12167 16.13 5.0975 16.1425 5.0975 16.1425C6.10167 16.2125 6.62917 17.1725 6.62917 17.1725C7.52083 18.7017 8.97 18.26 9.54167 18.0042C9.63167 17.3575 9.88917 16.9167 10.175 16.6667C7.95417 16.4167 5.62 15.5567 5.62 11.725C5.62 10.6333 6.0075 9.74166 6.64917 9.04166C6.53667 8.78916 6.19917 7.7725 6.73667 6.395C6.73667 6.395 7.57417 6.12666 9.48667 7.42C10.2867 7.1975 11.1367 7.0875 11.9867 7.0825C12.8367 7.0875 13.6867 7.1975 14.4867 7.42C16.3867 6.12666 17.2242 6.395 17.2242 6.395C17.7617 7.7725 17.4242 8.78916 17.3242 9.04166C17.9617 9.74166 18.3492 10.6333 18.3492 11.725C18.3492 15.5667 16.0117 16.4125 13.7867 16.6583C14.1367 16.9583 14.4617 17.5717 14.4617 18.5083C14.4617 19.8467 14.4492 20.9217 14.4492 21.2467C14.4492 21.5092 14.6242 21.8217 15.1367 21.7217C19.1375 20.41 22 16.66 22 12.2475C22 6.725 17.5225 2.2475 12 2.2475Z" fill="currentColor"/>
+              </svg>
             </Button>
 
-            <Button nativeButton={false} render={<a href="https://www.figma.com/community/file/1548871823641702097/stera-icons-8-1-0" />}>
-              Figma
+            <Button variant="subtle" size="icon" nativeButton={false} render={<a href="https://www.figma.com/community/file/1548871823641702097/" />}>
+              <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M12.4075 8.11312H9.54002V2.5H12.4075C13.955 2.5 15.2138 3.75875 15.2138 5.30625C15.2138 6.85375 13.955 8.11312 12.4075 8.11312ZM10.4594 7.19375H12.4075C13.4481 7.19375 14.2944 6.34688 14.2944 5.30688C14.2944 4.26688 13.4475 3.42 12.4075 3.42H10.4594V7.19375ZM10.4594 8.11312H7.59252C6.04502 8.11312 4.78627 6.85438 4.78627 5.30688C4.78627 3.75938 6.04502 2.5 7.59252 2.5H10.46V8.11312H10.4594ZM7.59252 3.41937C6.55189 3.41937 5.70564 4.26625 5.70564 5.30625C5.70564 6.34625 6.55189 7.19375 7.59252 7.19375H9.54065V3.41937H7.59252ZM10.4594 12.8062H7.59252C6.04502 12.8062 4.78627 11.5475 4.78627 10C4.78627 8.4525 6.04502 7.19375 7.59252 7.19375H10.46V12.8062H10.4594ZM7.59252 8.11312C6.55189 8.11312 5.70564 8.96 5.70564 10C5.70564 11.04 6.55252 11.8869 7.59252 11.8869H9.54065V8.11312H7.59252ZM7.60752 17.5C6.05189 17.5 4.78564 16.2413 4.78564 14.6938C4.78564 13.1463 6.04439 11.8875 7.59189 11.8875H10.4594V14.6631C10.4594 16.2275 9.18002 17.5 7.60752 17.5ZM7.59252 12.8062C7.09229 12.8069 6.61274 13.0059 6.25903 13.3596C5.90531 13.7133 5.70631 14.1929 5.70564 14.6931C5.70564 15.7338 6.55877 16.58 7.60814 16.58C8.67377 16.58 9.54127 15.72 9.54127 14.6625V12.8062H7.59252ZM12.4075 12.8062H12.3463C10.7988 12.8062 9.54002 11.5475 9.54002 10C9.54002 8.4525 10.7988 7.19375 12.3463 7.19375H12.4075C13.955 7.19375 15.2138 8.4525 15.2138 10C15.2138 11.5475 13.955 12.8062 12.4075 12.8062ZM12.3469 8.11312C11.3063 8.11312 10.46 8.96 10.46 10C10.46 11.04 11.3069 11.8869 12.3469 11.8869H12.4081C13.4488 11.8869 14.295 11.04 14.295 10C14.295 8.96 13.4475 8.11312 12.4075 8.11312H12.3469Z" fill="currentColor"/>
+              </svg>
             </Button>
         </div>
 
