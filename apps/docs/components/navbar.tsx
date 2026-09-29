@@ -2,6 +2,7 @@ import Link from "next/link"
 import { Button } from "@/components/ui/button"
 import { SiAsteriskAlt, SiBookOpen } from "stera-icons"
 import { SearchInput } from "@/components/search-input"
+import { VariantMenu } from "@/components/variant-menu"
 import { getAllIcons } from "@/lib/icons"
 import { Suspense } from "react"
 
@@ -19,7 +20,10 @@ export function Navbar() {
         </div>
 
         <Suspense>
-          <SearchInput totalIcons={icons.length} />
+          <div className="flex items-center gap-2">
+            <SearchInput totalIcons={icons.length} />
+            <VariantMenu />
+          </div>
         </Suspense>
 
         <div className="flex bg-surface-muted rounded-full p-1">

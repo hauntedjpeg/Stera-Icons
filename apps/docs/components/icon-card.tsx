@@ -1,12 +1,15 @@
 import type { IconData } from "@/lib/types";
+import type { IconWeight } from "@/utils/iconCodeSnippets";
 import { IconRenderer } from "@/components/icon-renderer";
 
 interface IconCardProps {
   icon: IconData;
+  weight?: IconWeight;
+  duotone?: boolean;
   onIconClick: (icon: IconData) => void;
 }
 
-export function IconCard({ icon, onIconClick }: IconCardProps) {
+export function IconCard({ icon, weight, duotone, onIconClick }: IconCardProps) {
   return (
     <button
       onClick={() => onIconClick(icon)}
@@ -14,6 +17,8 @@ export function IconCard({ icon, onIconClick }: IconCardProps) {
     >
       <IconRenderer
         iconName={icon.kebabName}
+        weight={weight}
+        duotone={duotone}
         className="h-6 w-6"
       />
     </button>

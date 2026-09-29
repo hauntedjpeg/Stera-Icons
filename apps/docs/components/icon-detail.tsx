@@ -30,11 +30,15 @@ interface IconDetailProps {
   variant: 'page' | 'drawer';
   // Without a handler, tags link to the filtered icon grid
   onTagClick?: (tag: string) => void;
+  // The icon variant selected when the detail first renders
+  initialVariant?: VariantKey;
 }
 
-export function IconDetail({ icon, variant, onTagClick }: IconDetailProps) {
+export function IconDetail({ icon, variant, onTagClick, initialVariant = 'regular' }: IconDetailProps) {
   const { copied, copyToClipboard } = useCopyToClipboard();
-  const [selectedVariant, setSelectedVariant] = useState<VariantKey>('regular');
+  const [selectedVariant, setSelectedVariant] = useState<VariantKey>(
+    icon.variants[initialVariant] ? initialVariant : 'regular'
+  );
   const gridRef = useRef<HTMLDivElement>(null);
 
   const { weight, duotone } = VARIANTS.find((v) => v.key === selectedVariant) ?? VARIANTS[0];

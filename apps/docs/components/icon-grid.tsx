@@ -4,6 +4,7 @@ import { useMemo } from "react"
 import { useSearchParams } from "next/navigation"
 import type { IconData } from "@/lib/types"
 import { IconCard } from "@/components/icon-card"
+import { useIconVariant } from "@/hooks/useIconVariant"
 import { Button } from "@/components/ui/button"
 import {
   Empty,
@@ -23,6 +24,7 @@ interface IconGridProps {
 export function IconGrid({ icons, onIconClick }: IconGridProps) {
   const searchParams = useSearchParams();
   const query = searchParams.get("q") ?? "";
+  const { weight, duotone } = useIconVariant();
 
   const filtered = useMemo(() => {
     if (!query) return icons;
@@ -51,7 +53,13 @@ export function IconGrid({ icons, onIconClick }: IconGridProps) {
       ) : (
         <div className="grid grid-cols-4 sm:grid-cols-4 md:grid-cols-6 lg:grid-cols-8 xl:grid-cols-10 gap-3">
           {filtered.map((icon) => (
-            <IconCard key={icon.kebabName} icon={icon} onIconClick={onIconClick} />
+            <IconCard
+              key={icon.kebabName}
+              icon={icon}
+              weight={weight}
+              duotone={duotone}
+              onIconClick={onIconClick}
+            />
           ))}
         </div>
       )}
