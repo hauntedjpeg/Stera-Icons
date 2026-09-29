@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Geist_Mono, Host_Grotesk } from "next/font/google";
 import { Navbar } from "@/components/navbar";
 import { ThemeProvider } from "@/components/theme-provider";
+import { SearchProvider } from "@/components/search-provider";
 import { getAllIconNames } from "@/lib/icons";
 import "./globals.css";
 
@@ -35,9 +36,11 @@ export default function RootLayout({
     >
       <body className="min-h-full flex flex-col">
         <ThemeProvider>
-          <Navbar />
-          {children}
-          {modal}
+          <SearchProvider>
+            <Navbar />
+            {children}
+            {modal}
+          </SearchProvider>
         </ThemeProvider>
       </body>
     </html>

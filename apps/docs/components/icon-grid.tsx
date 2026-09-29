@@ -1,10 +1,11 @@
 "use client"
 
-import { useMemo } from "react"
-import { useSearchParams } from "next/navigation"
-import type { IconData } from "@/lib/types"
+import { memo, useDeferredValue, useMemo } from "react"
+import type { IconEntry } from "@/lib/types"
+import type { IconWeight } from "@/utils/iconCodeSnippets"
 import { IconCard } from "@/components/icon-card"
 import { useIconVariant } from "@/hooks/useIconVariant"
+import { useSearchQuery } from "@/components/search-provider"
 import { Button } from "@/components/ui/button"
 import {
   Empty,
@@ -17,27 +18,58 @@ import {
 import { SiSquareDashed } from "stera-icons"
 
 interface IconGridProps {
-  icons: IconData[];
-  onIconClick: (icon: IconData) => void;
+  icons: IconEntry[];
+  onIconClick: (icon: IconEntry) => void;
 }
 
 export function IconGrid({ icons, onIconClick }: IconGridProps) {
-  const searchParams = useSearchParams();
-  const query = searchParams.get("q") ?? "";
+  // Deferred so rendering the results never blocks typing in the search input
+  const query = useDeferredValue(useSearchQuery());
   const { weight, duotone } = useIconVariant();
 
+  // Lowercased once, rather than on every keystroke
+  const searchable = useMemo(
+    () =>
+      icons.map((icon) => ({
+        icon,
+        text: [icon.kebabName, ...icon.tags].join("\n").toLowerCase(),
+      })),
+    [icons]
+  );
+
   const filtered = useMemo(() => {
-    if (!query) return icons;
-    const q = query.toLowerCase();
-    return icons.filter(
-      (icon) =>
-        icon.kebabName.includes(q) || icon.tags.some((tag) => tag.includes(q))
-    );
-  }, [icons, query]);
+    const q = query.trim().toLowerCase();
+    if (!q) return icons;
+    return searchable
+      .filter(({ text }) => text.includes(q))
+      .map(({ icon }) => icon);
+  }, [icons, searchable, query]);
 
   return (
+    <IconGridResults
+      icons={filtered}
+      weight={weight}
+      duotone={duotone}
+      onIconClick={onIconClick}
+    />
+  );
+}
+
+interface IconGridResultsProps extends IconGridProps {
+  weight: IconWeight;
+  duotone: boolean;
+}
+
+// Memoized so a keystroke skips the grid until the deferred query catches up
+const IconGridResults = memo(function IconGridResults({
+  icons,
+  weight,
+  duotone,
+  onIconClick,
+}: IconGridResultsProps) {
+  return (
     <div className="flex flex-col gap-6">
-      {filtered.length === 0 ? (
+      {icons.length === 0 ? (
         <Empty>
           <EmptyHeader>
             <EmptyMedia variant="icon">
@@ -52,7 +84,7 @@ export function IconGrid({ icons, onIconClick }: IconGridProps) {
         </Empty>
       ) : (
         <div className="grid grid-cols-4 sm:grid-cols-4 md:grid-cols-6 lg:grid-cols-8 xl:grid-cols-10 gap-3">
-          {filtered.map((icon) => (
+          {icons.map((icon) => (
             <IconCard
               key={icon.kebabName}
               icon={icon}
@@ -65,4 +97,4 @@ export function IconGrid({ icons, onIconClick }: IconGridProps) {
       )}
     </div>
   );
-}
+});

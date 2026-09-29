@@ -1,13 +1,13 @@
 'use client';
 
 import { useState } from 'react';
-import type { IconData } from '@/lib/types';
+import type { IconEntry } from '@/lib/types';
 import { IconDetail } from '@/components/icon-detail';
 import { useIconVariant } from '@/hooks/useIconVariant';
 import { Drawer, DrawerPopup } from '@/components/ui/drawer';
 
 interface IconDetailDrawerProps {
-  icon: IconData | null;
+  icon: IconEntry | null;
   onClose: () => void;
   onTagClick: (tag: string) => void;
 }

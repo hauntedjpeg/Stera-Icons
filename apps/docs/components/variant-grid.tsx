@@ -1,7 +1,7 @@
 'use client';
 
 import type { Ref } from 'react';
-import type { IconData } from '@/lib/types';
+import type { IconEntry } from '@/lib/types';
 import type { IconWeight } from '@/utils/iconCodeSnippets';
 import { IconRenderer } from '@/components/icon-renderer';
 import { cn } from '@/lib/utils';
@@ -32,7 +32,7 @@ export const VARIANTS: Variant[] = [
 ];
 
 interface VariantGridProps {
-  icon: IconData;
+  icon: IconEntry;
   selected: VariantKey;
   onSelect: (variant: VariantKey) => void;
   className?: string;

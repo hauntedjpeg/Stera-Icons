@@ -1,8 +1,8 @@
 import "server-only";
 import iconData from "@/data/icons.json";
-import type { IconData } from "@/lib/types";
+import type { IconData, IconEntry } from "@/lib/types";
 
-export type { IconData };
+export type { IconData, IconEntry };
 
 const data = iconData as IconData[];
 
@@ -70,8 +70,19 @@ export function getIconByName(kebabName: string): IconDetail | null {
   };
 }
 
-export function getAllIconData(): IconData[] {
-  return data;
+// Slim enough to pass to a Client Component for every icon at once
+export function getAllIconEntries(): IconEntry[] {
+  return data.map((icon) => ({
+    name: icon.name,
+    kebabName: icon.kebabName,
+    tags: icon.tags,
+    variants: Object.fromEntries(
+      Object.entries(icon.variants).map(([key, variant]) => [
+        key,
+        { componentName: variant.componentName },
+      ])
+    ),
+  }));
 }
 
 export function getIconData(kebabName: string): IconData | null {

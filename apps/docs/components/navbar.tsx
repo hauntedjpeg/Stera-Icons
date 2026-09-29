@@ -1,32 +1,28 @@
 import Link from "next/link"
 import { Button } from "@/components/ui/button"
-import { SiAsteriskAlt, SiBookOpen } from "stera-icons"
+import { SiBookOpen } from "stera-icons"
+import { HomeLink } from "@/components/home-link"
 import { SearchInput } from "@/components/search-input"
 import { VariantMenu } from "@/components/variant-menu"
-import { getAllIcons } from "@/lib/icons"
 import { Suspense } from "react"
 
 export function Navbar() {
-  const icons = getAllIcons();
-
   return (
     <nav className="sticky top-0 z-50">
       <div className="mx-auto flex items-center justify-between p-4 sm:px-4">
 
         <div className="flex gap-2">
-          <Button variant="subtle" size="lg" nativeButton={false} render={<Link href="/" />}>
-            <SiAsteriskAlt data-icon="inline-start" />Stera Icons
-          </Button>
+          <HomeLink />
         </div>
 
-        <Suspense>
-          <div className="flex items-center gap-2">
-            <SearchInput totalIcons={icons.length} />
+        <div className="flex items-center gap-2">
+          <SearchInput />
+          <Suspense>
             <VariantMenu />
-          </div>
-        </Suspense>
+          </Suspense>
+        </div>
 
-        <div className="flex bg-surface-muted rounded-full p-1">
+        <div className="flex bg-surface-subtle rounded-full p-1">
             <Button variant="subtle" size="icon" nativeButton={false} render={<Link href="/docs" />}>
               <SiBookOpen />
             </Button>

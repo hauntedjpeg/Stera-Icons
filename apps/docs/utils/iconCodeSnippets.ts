@@ -1,4 +1,4 @@
-import type { IconData } from '@/lib/types';
+import type { IconEntry } from '@/lib/types';
 
 export type IconWeight = 'regular' | 'bold' | 'fill';
 
@@ -8,14 +8,15 @@ export interface IconNames {
 }
 
 export function getIconNames(
-  icon: IconData,
+  icon: IconEntry,
   weight: IconWeight,
   duotone: boolean
 ): IconNames {
   const variantKey = duotone ? `${weight}-duotone` : weight;
   const variantInfo = icon.variants[variantKey];
 
-  const baseName = icon.componentName || icon.name;
+  // The generator writes the same value to componentName and name
+  const baseName = icon.name;
 
   let displayVariantName: string;
   if (weight === 'regular') {

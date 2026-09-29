@@ -1,46 +1,50 @@
 "use client";
 
-import { useRouter, useSearchParams, usePathname } from "next/navigation";
-import { useCallback } from "react";
+import { useRef } from "react";
 import {
   InputGroup,
   InputGroupAddon,
+  InputGroupButton,
   InputGroupInput,
 } from "@/components/ui/input-group";
-import { SiSearch } from "stera-icons";
+import { useSearchQuery, useSetSearchQuery } from "@/components/search-provider";
+import { SiSearch, SiX } from "stera-icons";
 
-export function SearchInput({ totalIcons }: { totalIcons?: number }) {
-  const router = useRouter();
-  const pathname = usePathname();
-  const searchParams = useSearchParams();
-  const query = searchParams.get("q") ?? "";
-
-  const handleChange = useCallback(
-    (e: React.ChangeEvent<HTMLInputElement>) => {
-      const params = new URLSearchParams(searchParams.toString());
-      if (e.target.value) {
-        params.set("q", e.target.value);
-      } else {
-        params.delete("q");
-      }
-      router.replace(`${pathname}?${params.toString()}`, { scroll: false });
-    },
-    [router, pathname, searchParams]
-  );
+export function SearchInput() {
+  const query = useSearchQuery();
+  const setQuery = useSetSearchQuery();
+  const inputRef = useRef<HTMLInputElement>(null);
 
   return (
-    <InputGroup className="w-48 sm:w-64 bg-surface-muted hover:bg-surface-muted-hover border-none rounded-full">
+    <InputGroup className="w-48 sm:w-64 bg-surface-subtle hover:bg-surface-subtle-hover border-none rounded-full shadow-none has-[[data-slot=input-group-control]:focus-visible]:ring-0 has-[[data-slot=input-group-control]:focus-visible]:bg-surface-subtle-hover">
       <InputGroupAddon>
         <SiSearch />
       </InputGroupAddon>
       <InputGroupInput
+        ref={inputRef}
         type="text"
         size="lg"
         aria-label="Search icons"
-        placeholder={totalIcons ? `Search ${totalIcons} icons...` : "Search icons..."}
+        placeholder="Search icons"
         value={query}
-        onChange={handleChange}
+        onChange={(e) => setQuery(e.target.value)}
       />
+      {query && (
+        <InputGroupAddon align="inline-end" className="pr-3!">
+          <InputGroupButton
+            variant="ghost"
+            size="icon-sm"
+            className="rounded-full hover:bg-surface-muted-hover"
+            aria-label="Clear search"
+            onClick={() => {
+              setQuery("");
+              inputRef.current?.focus();
+            }}
+          >
+            <SiX />
+          </InputGroupButton>
+        </InputGroupAddon>
+      )}
     </InputGroup>
   );
 }

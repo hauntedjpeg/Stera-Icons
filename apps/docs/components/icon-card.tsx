@@ -1,15 +1,16 @@
-import type { IconData } from "@/lib/types";
+import { memo } from "react";
+import type { IconEntry } from "@/lib/types";
 import type { IconWeight } from "@/utils/iconCodeSnippets";
 import { IconRenderer } from "@/components/icon-renderer";
 
 interface IconCardProps {
-  icon: IconData;
+  icon: IconEntry;
   weight?: IconWeight;
   duotone?: boolean;
-  onIconClick: (icon: IconData) => void;
+  onIconClick: (icon: IconEntry) => void;
 }
 
-export function IconCard({ icon, weight, duotone, onIconClick }: IconCardProps) {
+export const IconCard = memo(function IconCard({ icon, weight, duotone, onIconClick }: IconCardProps) {
   return (
     <button
       onClick={() => onIconClick(icon)}
@@ -23,4 +24,4 @@ export function IconCard({ icon, weight, duotone, onIconClick }: IconCardProps) 
       />
     </button>
   );
-}
+});

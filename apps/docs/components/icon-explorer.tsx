@@ -2,16 +2,31 @@
 
 import { useMemo, useCallback } from "react"
 import { useSearchParams } from "next/navigation"
-import type { IconData } from "@/lib/types"
+import type { IconEntry } from "@/lib/types"
 import { IconGrid } from "@/components/icon-grid"
 import { IconDetailDrawer } from "@/components/icon-detail-drawer"
+import { useSetSearchQuery } from "@/components/search-provider"
 
 interface IconExplorerProps {
-  icons: IconData[];
+  icons: IconEntry[];
+}
+
+// Reads the URL when called rather than from useSearchParams, so the handlers
+// below keep a stable identity and don't re-render the memoized icon cards
+function setIconParam(kebabName: string | null) {
+  const params = new URLSearchParams(window.location.search);
+  if (kebabName) {
+    params.set("icon", kebabName);
+  } else {
+    params.delete("icon");
+  }
+  const qs = params.toString();
+  window.history.replaceState(null, "", qs ? `?${qs}` : window.location.pathname);
 }
 
 export function IconExplorer({ icons }: IconExplorerProps) {
   const searchParams = useSearchParams();
+  const setQuery = useSetSearchQuery();
 
   // The URL query param is the source of truth for the open drawer
   const iconParam = searchParams.get("icon");
@@ -22,27 +37,20 @@ export function IconExplorer({ icons }: IconExplorerProps) {
 
   // history.replaceState updates useSearchParams without a server round trip,
   // so the drawer opens and closes immediately
-  const handleIconClick = useCallback((icon: IconData) => {
-    const params = new URLSearchParams(searchParams.toString());
-    params.set("icon", icon.kebabName);
-    window.history.replaceState(null, "", `?${params.toString()}`);
-  }, [searchParams]);
+  const handleIconClick = useCallback((icon: IconEntry) => {
+    setIconParam(icon.kebabName);
+  }, []);
 
   const handleDrawerClose = useCallback(() => {
-    const params = new URLSearchParams(searchParams.toString());
-    params.delete("icon");
-    const qs = params.toString();
-    window.history.replaceState(null, "", qs ? `?${qs}` : window.location.pathname);
-  }, [searchParams]);
+    setIconParam(null);
+  }, []);
 
-  // Closes the drawer and searches for the tag in a single URL update
+  // Closes the drawer and searches for the tag
   const handleTagClick = useCallback((tag: string) => {
-    const params = new URLSearchParams(searchParams.toString());
-    params.set("q", tag);
-    params.delete("icon");
-    window.history.replaceState(null, "", `?${params.toString()}`);
+    setQuery(tag);
+    setIconParam(null);
     window.scrollTo({ top: 0 });
-  }, [searchParams]);
+  }, [setQuery]);
 
   return (
     <>

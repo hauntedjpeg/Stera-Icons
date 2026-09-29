@@ -15,13 +15,14 @@ export function useIconVariant() {
   const variant: Variant =
     VARIANTS.find((v) => v.key === variantParam) ?? DEFAULT_VARIANT;
 
-  // history.replaceState updates useSearchParams without a server round trip
+  // history.replaceState updates useSearchParams without a server round trip.
+  // The URL is read when called, so setVariant keeps a stable identity
   const setVariant = useCallback(
     (weight: IconWeight, duotone: boolean) => {
       const next =
         VARIANTS.find((v) => v.weight === weight && v.duotone === duotone) ??
         DEFAULT_VARIANT;
-      const params = new URLSearchParams(searchParams.toString());
+      const params = new URLSearchParams(window.location.search);
       if (next.key === DEFAULT_VARIANT.key) {
         params.delete('variant');
       } else {
@@ -30,7 +31,7 @@ export function useIconVariant() {
       const qs = params.toString();
       window.history.replaceState(null, '', qs ? `?${qs}` : window.location.pathname);
     },
-    [searchParams]
+    []
   );
 
   return { ...variant, setVariant };

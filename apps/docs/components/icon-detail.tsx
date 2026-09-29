@@ -2,7 +2,7 @@
 
 import { useRef, useState } from 'react';
 import Link from 'next/link';
-import type { IconData } from '@/lib/types';
+import type { IconEntry } from '@/lib/types';
 import { useCopyToClipboard } from '@/hooks/useCopyToClipboard';
 import { getSVGData, downloadSVG, getSVGFilename } from '@/utils/svgExport';
 import { getIconNames, getUsageSnippet } from '@/utils/iconCodeSnippets';
@@ -10,6 +10,7 @@ import { VariantGrid, VARIANTS, type VariantKey } from '@/components/variant-gri
 import { CodeSection } from '@/components/code-section';
 import { Button } from '@/components/ui/button';
 import { Chip } from '@/components/ui/chip';
+import { useSetSearchQuery } from '@/components/search-provider';
 import {
   DrawerClose,
   DrawerContent,
@@ -24,7 +25,7 @@ import {
 import { SiCopyDuotone, SiDownloadDuotone, SiCheckCircleFill, SiX } from 'stera-icons';
 
 interface IconDetailProps {
-  icon: IconData;
+  icon: IconEntry;
   // "drawer" must be rendered directly inside a DrawerPopup; it renders the
   // DrawerHeader (which titles the dialog) and the DrawerContent
   variant: 'page' | 'drawer';
@@ -36,6 +37,7 @@ interface IconDetailProps {
 
 export function IconDetail({ icon, variant, onTagClick, initialVariant = 'regular' }: IconDetailProps) {
   const { copied, copyToClipboard } = useCopyToClipboard();
+  const setQuery = useSetSearchQuery();
   const [selectedVariant, setSelectedVariant] = useState<VariantKey>(
     icon.variants[initialVariant] ? initialVariant : 'regular'
   );
@@ -147,7 +149,7 @@ export function IconDetail({ icon, variant, onTagClick, initialVariant = 'regula
                 key={tag}
                 size="sm"
                 nativeButton={false}
-                render={<Link href={`/?q=${encodeURIComponent(tag)}`} />}
+                render={<Link href="/" onClick={() => setQuery(tag)} />}
               >
                 {tag}
               </Chip>

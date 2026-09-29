@@ -32,7 +32,7 @@ const buttonVariants = cva(
         outline:
           "border border-border bg-surface text-text hover:bg-surface-hover aria-expanded:bg-surface-hover aria-expanded:text-text",
         subtle:
-          "border-none bg-surface-muted text-text-subtle hover:bg-surface-muted-hover aria-expanded:bg-surface-muted-hover aria-expanded:text-text",
+          "border-none bg-surface-subtle text-text-subtle hover:bg-surface-subtle-hover aria-expanded:bg-surface-subtle-hover aria-expanded:text-text",
         ghost:
           "hover:bg-surface-muted-hover hover:text-text aria-expanded:bg-surface-muted-hover aria-expanded:text-text",
         danger:
