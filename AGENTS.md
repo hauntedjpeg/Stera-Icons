@@ -31,6 +31,7 @@ Never hand-edit a generated file. Change the source or the generator, then rebui
 | File | Kind | In git |
 |------|------|--------|
 | `packages/icons/icons-export.json` | **Source.** Figma export; the only source of icon artwork, names and tags | yes |
+| `packages/icons/icon-aliases.json` | **Source.** Deprecated aliases that keep the old names of renamed icons working | yes |
 | `packages/icons/src/{IconBase,DynamicIcon}.tsx`, `src/{base,dynamic,types,utils}.ts`, `src/__tests__/` | **Source** | yes |
 | `packages/icons/scripts/` | **Source.** The build pipeline | yes |
 | `packages/icons/src/icons/*.tsx` | Generated | yes |
@@ -57,6 +58,18 @@ Order matters. The changeset must exist before the build, because the build read
 5. Update the hand-written docs (see below)
 6. `pnpm --filter stera-icons exec vitest run`
 7. Commit everything, including the generated `src/` files and `packages/icons/dist/icons.meta.json`
+
+### Renaming an icon
+
+To keep the old name working for a grace period, add it to `packages/icons/icon-aliases.json` before the build:
+
+```json
+"old-name": { "to": "new-name", "since": "8.8.0", "removeIn": "9.0.0" }
+```
+
+- `since` is the version the rename ships in. `removeIn` is the next major.
+- The build re-exports the new icon under every old export name (marked `@deprecated`), writes `stera-icons/icons/<OldName>` files, and makes `DynamicIcon` accept the old name. Aliases are left out of `icons.meta.json`, `iconNames` and the docs site.
+- The build fails once the version being built reaches `removeIn`. Delete the entry then, and list the removed name in that release's changeset.
 
 ### Docs to update after an icon change
 

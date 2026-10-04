@@ -16,14 +16,14 @@
  */
 
 import { createDynamicIcon, getIconNames } from './DynamicIcon';
-import { dynamicIconImports } from './dynamicIconImports';
+import { dynamicIconImports, dynamicIconAliases } from './dynamicIconImports';
 
 /**
  * DynamicIcon component for runtime icon loading.
  * 
  * @see {@link DynamicIcon} for detailed documentation and examples.
  */
-export const DynamicIcon = createDynamicIcon(dynamicIconImports);
+export const DynamicIcon = createDynamicIcon(dynamicIconImports, dynamicIconAliases);
 
 /**
  * Map of all available icon names to their dynamic import functions.

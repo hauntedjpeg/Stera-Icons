@@ -1,0 +1,6 @@
+{
+  "device-desktop": { "to": "monitor", "since": "8.8.0", "removeIn": "9.0.0" },
+  "device-laptop": { "to": "laptop", "since": "8.8.0", "removeIn": "9.0.0" },
+  "device-phone": { "to": "smartphone", "since": "8.8.0", "removeIn": "9.0.0" },
+  "device-tablet": { "to": "tablet", "since": "8.8.0", "removeIn": "9.0.0" }
+}

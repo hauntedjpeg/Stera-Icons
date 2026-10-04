@@ -37,6 +37,16 @@ git commit -m "feat: add new icons"
 git push
 ```
 
+### Renaming Icons
+
+To keep the old name of a renamed icon working for a grace period, add it to `packages/icons/icon-aliases.json` before building:
+
+```json
+"old-name": { "to": "new-name", "since": "8.8.0", "removeIn": "9.0.0" }
+```
+
+`since` is the version the rename ships in and `removeIn` is the next major. The build re-exports the new icon under every old export name, marked `@deprecated`, and `DynamicIcon` keeps accepting the old name. The build fails once the version being built reaches `removeIn`: delete the entry then, and list the removed name in that release's changeset.
+
 ### Docs to Update
 
 Most icon docs regenerate on their own: the `@tags` in `index.d.ts`, `icons.meta.json`, the icon index at stera.sh/llms-full.txt, and every count shown on the docs site. Only these are hand-written:
@@ -119,6 +129,7 @@ Changes to anything that ships in the npm package need a changeset, including `p
 | File | Purpose |
 |------|---------|
 | `packages/icons/icons-export.json` | Icon definitions (SVG data from Figma) |
+| `packages/icons/icon-aliases.json` | Deprecated aliases for renamed icons |
 | `packages/icons/dist/icons.meta.json` | Version history per icon — **must be committed** |
 | `.changeset/*.md` | Pending version bumps |
 | `.github/workflows/release.yml` | Automated release pipeline |

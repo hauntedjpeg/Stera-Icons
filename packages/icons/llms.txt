@@ -132,4 +132,9 @@ Measured with esbuild, minified, React external:
 
 ## Versioning
 
-Icons are occasionally renamed or removed. If an import fails after an upgrade, check the changelog: https://github.com/hauntedjpeg/Stera-Icons/blob/main/packages/icons/CHANGELOG.md
+Icons are occasionally renamed or removed. A renamed icon keeps its old name as a deprecated alias until the next major version:
+- The old exports still work from every entry point and are marked @deprecated in the types. The JSDoc names the replacement and the version the alias is removed in.
+- DynamicIcon still accepts the old kebab-case name and logs a warning outside production. iconNames lists current names only.
+- Do not use a deprecated name in new code. Use the replacement.
+
+If an import fails after an upgrade, check the changelog: https://github.com/hauntedjpeg/Stera-Icons/blob/main/packages/icons/CHANGELOG.md

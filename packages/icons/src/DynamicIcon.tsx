@@ -1,6 +1,6 @@
 "use client";
 
-import { forwardRef, useState, useEffect, ComponentType, ReactNode } from 'react';
+import { forwardRef, useState, useEffect, ComponentType, ReactNode, Ref } from 'react';
 import type { IconProps } from './types';
 
 /**
@@ -22,10 +22,54 @@ export interface DynamicIconProps extends Omit<IconProps, 'weight' | 'duotone' |
 }
 
 /**
+ * Type of a lazily loaded icon component.
+ * Narrows `ref` to a plain `Ref`, which is what forwardRef components accept.
+ */
+export type DynamicIconComponent = ComponentType<Omit<IconProps, 'ref'> & { ref?: Ref<SVGSVGElement> }>;
+
+/**
  * Type for the dynamic icon imports map.
  * Maps kebab-case icon names to dynamic import functions.
  */
-export type DynamicIconImports = Record<string, () => Promise<{ default: ComponentType<IconProps> }>>;
+export type DynamicIconImports = Record<string, () => Promise<{ default: DynamicIconComponent }>>;
+
+/**
+ * Type for the deprecated icon names map.
+ * Maps the old kebab-case name of a renamed icon to its new name.
+ */
+export type DynamicIconAliases = Record<string, { to: string; removeIn: string }>;
+
+const warnedAliases = new Set<string>();
+
+function isDevelopment(): boolean {
+  try {
+    return process.env.NODE_ENV !== 'production';
+  } catch {
+    // No process global (e.g. unbundled in a browser)
+    return false;
+  }
+}
+
+/**
+ * Resolves a deprecated icon name to its new name.
+ * Warns once per name outside production.
+ */
+function resolveAlias(name: string, aliases: DynamicIconAliases): string {
+  if (!Object.prototype.hasOwnProperty.call(aliases, name)) {
+    return name;
+  }
+  
+  const { to, removeIn } = aliases[name];
+  if (isDevelopment() && !warnedAliases.has(name)) {
+    warnedAliases.add(name);
+    // eslint-disable-next-line no-console
+    console.warn(
+      `[stera-icons]: Icon "${name}" was renamed to "${to}". ` +
+      `The old name will stop working in ${removeIn}.`
+    );
+  }
+  return to;
+}
 
 /**
  * Gets an icon component by name using dynamic imports.
@@ -34,6 +78,7 @@ export type DynamicIconImports = Record<string, () => Promise<{ default: Compone
  * @param weight - Icon weight variant
  * @param duotone - Whether to use duotone variant
  * @param dynamicIconImports - Map of icon names to import functions
+ * @param aliases - Map of deprecated icon names to their new names
  * @returns Promise resolving to the icon component
  * @throws Error if icon name is not found
  */
@@ -41,8 +86,12 @@ export async function getIconComponent(
   name: string,
   weight: 'regular' | 'bold' | 'fill' = 'regular',
   duotone: boolean = false,
-  dynamicIconImports: DynamicIconImports
-): Promise<ComponentType<IconProps>> {
+  dynamicIconImports: DynamicIconImports,
+  aliases: DynamicIconAliases = {}
+): Promise<DynamicIconComponent> {
+  const requestedName = name;
+  name = resolveAlias(name, aliases);
+  
   // Build the variant suffix: regular weight uses no suffix, others use -weight
   const weightSuffix = weight === 'regular' ? '' : `-${weight}`;
   const duotoneSuffix = duotone ? '-duotone' : '';
@@ -61,7 +110,7 @@ export async function getIconComponent(
   }
   
   throw new Error(
-    `[stera-icons]: Icon "${name}" with weight "${weight}"${duotone ? ' (duotone)' : ''} not found. ` +
+    `[stera-icons]: Icon "${requestedName}" with weight "${weight}"${duotone ? ' (duotone)' : ''} not found. ` +
     `Available icons can be found at https://github.com/hauntedjpeg/Stera-Icons`
   );
 }
@@ -96,10 +145,10 @@ export async function getIconComponent(
  *   color="blue"
  * />
  */
-export const createDynamicIcon = (dynamicIconImports: DynamicIconImports) => {
+export const createDynamicIcon = (dynamicIconImports: DynamicIconImports, aliases: DynamicIconAliases = {}) => {
   const DynamicIcon = forwardRef<SVGSVGElement, DynamicIconProps>(
     ({ name, fallback: Fallback, weight = 'regular', duotone = false, onError, ...props }, ref) => {
-      const [IconComponent, setIconComponent] = useState<ComponentType<IconProps> | null>(null);
+      const [IconComponent, setIconComponent] = useState<DynamicIconComponent | null>(null);
       const [error, setError] = useState<Error | null>(null);
 
       useEffect(() => {
@@ -108,7 +157,7 @@ export const createDynamicIcon = (dynamicIconImports: DynamicIconImports) => {
         setIconComponent(null);
         setError(null);
 
-        getIconComponent(name, weight, duotone, dynamicIconImports)
+        getIconComponent(name, weight, duotone, dynamicIconImports, aliases)
           .then(component => {
             if (!cancelled) setIconComponent(component);
           })

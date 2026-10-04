@@ -16,6 +16,7 @@
 import { readFileSync, writeFileSync, existsSync, mkdirSync } from 'fs';
 import { join, dirname } from 'path';
 import { fileURLToPath } from 'url';
+import { loadAliases, getDeprecatedExports, deprecationMessage } from './icon-build/aliases.js';
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = dirname(__filename);
@@ -23,6 +24,32 @@ const __dirname = dirname(__filename);
 const PACKAGE_DIR = join(__dirname, '..');
 const SRC_DIR = join(PACKAGE_DIR, 'src');
 const DIST_DIR = join(PACKAGE_DIR, 'dist', 'esm');
+
+// Old export names of renamed icons, from icon-aliases.json
+const DEPRECATED_EXPORTS = getDeprecatedExports(loadAliases(PACKAGE_DIR));
+
+/**
+ * Declare the exports of a re-export line as @deprecated constants.
+ * A plain re-export cannot carry a deprecation, so each name is declared separately.
+ * e.g. "LaptopBold as DeviceLaptopBold, ..." from "./icons/LaptopBold"
+ * @param {string} exportNames
+ * @param {string} importPath
+ * @returns {string[]|null} - Declaration lines, or null if the line exports no deprecated name
+ */
+function generateDeprecatedDeclarations(exportNames, importPath) {
+  const specifiers = exportNames.split(',').map(specifier => specifier.trim().split(/\s+as\s+/));
+  if (!specifiers.some(([source, name]) => DEPRECATED_EXPORTS.has(name || source))) {
+    return null;
+  }
+
+  const lines = [];
+  for (const [source, name = source] of specifiers) {
+    const { replacement, removeIn } = DEPRECATED_EXPORTS.get(name);
+    lines.push(`/** @deprecated ${deprecationMessage(replacement, removeIn)} */`);
+    lines.push(`export declare const ${name}: typeof import('${importPath}').${source};`);
+  }
+  return lines;
+}
 
 /**
  * Generate types.d.ts from src/types.ts (enhanced with new types)
@@ -154,7 +181,7 @@ export type { IconBaseProps } from './IconBase';
  * Generate dynamic.d.ts - dynamic icon loading entry point
  */
 function generateDynamicDeclaration() {
-  const dynamicContent = `import type { ComponentType, ReactNode } from 'react';
+  const dynamicContent = `import type { ComponentType, ReactNode, Ref } from 'react';
 import type { IconProps } from './types';
 import type { ForwardRefExoticComponent, RefAttributes } from 'react';
 
@@ -166,7 +193,11 @@ export interface DynamicIconProps extends Omit<IconProps, 'weight' | 'duotone'> 
   onError?: (error: Error) => void;
 }
 
-export type DynamicIconImports = Record<string, () => Promise<{ default: ComponentType<IconProps> }>>;
+export type DynamicIconComponent = ComponentType<Omit<IconProps, 'ref'> & { ref?: Ref<SVGSVGElement> }>;
+
+export type DynamicIconImports = Record<string, () => Promise<{ default: DynamicIconComponent }>>;
+
+export type DynamicIconAliases = Record<string, { to: string; removeIn: string }>;
 
 export declare const DynamicIcon: ForwardRefExoticComponent<
   DynamicIconProps & RefAttributes<SVGSVGElement>
@@ -186,14 +217,20 @@ export type { DynamicIconProps as DynamicIconPropsType };
  * Generate dynamicIconImports.d.ts - dynamic icon imports map
  */
 function generateDynamicIconImportsDeclaration() {
-  const dynamicIconImportsContent = `import type { ComponentType } from 'react';
+  const dynamicIconImportsContent = `import type { ComponentType, Ref } from 'react';
 import type { IconProps } from './types';
 
-export type DynamicIconImports = Record<string, () => Promise<{ default: ComponentType<IconProps> }>>;
+export type DynamicIconComponent = ComponentType<Omit<IconProps, 'ref'> & { ref?: Ref<SVGSVGElement> }>;
+
+export type DynamicIconImports = Record<string, () => Promise<{ default: DynamicIconComponent }>>;
 
 export declare const dynamicIconImports: DynamicIconImports;
 
 export declare const iconNames: string[];
+
+export type DynamicIconAliases = Record<string, { to: string; removeIn: string }>;
+
+export declare const dynamicIconAliases: DynamicIconAliases;
 
 export default dynamicIconImports;
 `;
@@ -242,6 +279,11 @@ function generateDynamicVariantsDeclaration() {
     const reExportMatch = trimmedLine.match(/^export\s*\{\s*([^}]+)\s*\}\s*from\s*['"]([^'"]+)['"]\s*;?$/);
     if (reExportMatch) {
       const [, exportNames, importPath] = reExportMatch;
+      const deprecatedDeclarations = generateDeprecatedDeclarations(exportNames, importPath);
+      if (deprecatedDeclarations) {
+        declarationLines.push(...deprecatedDeclarations);
+        continue;
+      }
       declarationLines.push(`export { ${exportNames} } from '${importPath}';`);
     }
   }
@@ -314,7 +356,7 @@ function generateIndexDeclaration() {
     // Skip empty lines and comments in source, but preserve section comments
     if (trimmedLine === '' || trimmedLine.startsWith('//')) {
       // Preserve section divider comments
-      if (trimmedLine.includes('===') || trimmedLine.includes('BASE ICON') || trimmedLine.includes('DIRECT VARIANT')) {
+      if (trimmedLine.includes('===') || trimmedLine.includes('BASE ICON') || trimmedLine.includes('DIRECT VARIANT') || trimmedLine.includes('DEPRECATED ALIASES')) {
         declarationLines.push(line);
       }
       continue;
@@ -343,6 +385,13 @@ function generateIndexDeclaration() {
     const reExportMatch = trimmedLine.match(/^export\s*\{\s*([^}]+)\s*\}\s*from\s*['"]([^'"]+)['"]\s*;?$/);
     if (reExportMatch) {
       const [, exportNames, importPath] = reExportMatch;
+
+      // Old names of renamed icons are declared as @deprecated
+      const deprecatedDeclarations = generateDeprecatedDeclarations(exportNames, importPath);
+      if (deprecatedDeclarations) {
+        declarationLines.push(...deprecatedDeclarations);
+        continue;
+      }
 
       // Add JSDoc with @component and @tags for icon exports
       if (importPath.startsWith('./icons/')) {

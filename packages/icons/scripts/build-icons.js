@@ -11,6 +11,7 @@ import {
   getFileName, 
   parseTags,
   parseIconName,
+  toPascalCase,
   mapWeightName,
   validateVariantData,
   isValidWeight,
@@ -24,6 +25,7 @@ import { extractPathsFromSvg } from './icon-build/svg-parser.js';
 import { generatePathJsx, generateVariantComponent, generateWrapperComponent, buildSelectionLogic } from './icon-build/jsx-generator.js';
 import { compileIcons, generateWrapperDeclarations, generateVariantDeclarations, collectEntryPoints } from './icon-build/compiler.js';
 import { PROGRESS_INTERVAL } from './icon-build/config.js';
+import { ALIASES_FILE, loadAliases, validateAliases, generateAliasDeclaration, generateAliasModule } from './icon-build/aliases.js';
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = dirname(__filename);
@@ -55,6 +57,23 @@ async function buildIcons(iconsExportPath) {
   }
   console.log(`📅 Build date: ${currentDate}`);
   
+  // Load deprecated aliases for renamed icons, and stop before touching any
+  // files if one is invalid or has reached the version it is removed in
+  const aliases = loadAliases(join(__dirname, '..'));
+  const aliasErrors = validateAliases(
+    aliases,
+    new Set(iconsExport.icons.map(icon => normalizeSlug(parseIconName(icon.name)))),
+    currentVersion
+  );
+  if (aliasErrors.length > 0) {
+    console.error(`\n❌ BUILD FAILED: Found ${aliasErrors.length} problem(s) in ${ALIASES_FILE}:`);
+    aliasErrors.forEach((error, index) => console.error(`  ${index + 1}. ${error}`));
+    process.exit(1);
+  }
+  if (aliases.length > 0) {
+    console.log(`🔀 Loaded ${aliases.length} deprecated alias(es) from ${ALIASES_FILE}`);
+  }
+  
   const iconsDir = join(__dirname, '..', 'src', 'icons');
   const distDir = join(__dirname, '..', 'dist');
   
@@ -79,6 +98,12 @@ async function buildIcons(iconsExportPath) {
   const wrapperExportsDist = [];
   const baseNameExportsDist = [];
   const directVariantExportsDist = [];
+  // Deprecated aliases for renamed icons (old names re-exported from the new icons)
+  const aliasExports = [];             // For index.ts
+  const aliasExportsDist = [];
+  const aliasWrapperExports = [];      // For dynamic-variants.ts
+  const aliasWrapperExportsDist = [];
+  const aliasFiles = [];               // Per-icon files for dist/esm/icons
   const namingConflicts = [];
   
   // Load existing metadata to track version history
@@ -394,6 +419,32 @@ async function buildIcons(iconsExportPath) {
   console.log(''); // Newline after progress indicator
   console.log(`  ✅ Generated ${wrapperExports.length} wrapper components`);
   
+  // Generate deprecated alias exports: every export of the old name points at the renamed icon
+  for (const alias of aliases) {
+    const iconData = iconsByBaseName.get(alias.to);
+    const aliasBaseName = toPascalCase(alias.name);
+    const targetBaseName = toPascalCase(alias.to);
+    
+    aliasWrapperExports.push(generateAliasedReExport(aliasBaseName, targetBaseName, `./icons/${targetBaseName}`));
+    aliasWrapperExportsDist.push(generateAliasedReExportDist(aliasBaseName, targetBaseName, `./icons/${targetBaseName}`));
+    aliasFiles.push({ aliasName: aliasBaseName, targetName: targetBaseName, removeIn: alias.removeIn });
+    
+    for (const { weight, duotone, componentName } of iconData.variants) {
+      const aliasComponentName = getComponentName(alias.name, weight, duotone);
+      // The regular variants are also exported under the base name and the duotone shorthand
+      const exportNames = [aliasComponentName];
+      if (weight === 'regular') {
+        exportNames.unshift(`${aliasBaseName}${duotone ? 'Duotone' : ''}`);
+      }
+      
+      for (const exportName of exportNames) {
+        aliasExports.push(generateAliasedReExport(exportName, componentName, `./icons/${componentName}`));
+        aliasExportsDist.push(generateAliasedReExportDist(exportName, componentName, `./icons/${componentName}`));
+      }
+      aliasFiles.push({ aliasName: aliasComponentName, targetName: componentName, removeIn: alias.removeIn });
+    }
+  }
+  
   // Generate main index file with efficient defaults
   // Base names (Search) → Regular variants (SearchRegular) for optimal bundle size
   const indexContent = `// Auto-generated file - do not edit manually
@@ -432,6 +483,12 @@ ${baseNameExports.join('\n')}
 // Example: import { SearchBold, SearchFillDuotone } from 'stera-icons';
 // =============================================================================
 ${directVariantExports.join('\n')}
+
+// =============================================================================
+// DEPRECATED ALIASES (old names of renamed icons, see icon-aliases.json)
+// These keep working until the version they are marked for removal in
+// =============================================================================
+${aliasExports.join('\n')}
 `;
   
   writeFileSync(join(__dirname, '..', 'src', 'index.ts'), indexContent);
@@ -448,6 +505,9 @@ ${directVariantExports.join('\n')}
 //   <Search weight="bold" duotone />
 
 ${wrapperExports.join('\n')}
+
+// Deprecated aliases (old names of renamed icons, see icon-aliases.json)
+${aliasWrapperExports.join('\n')}
 `;
   
   writeFileSync(join(__dirname, '..', 'src', 'dynamic-variants.ts'), dynamicVariantsContent);
@@ -475,12 +535,18 @@ ${baseNameExportsDist.join('\n')}
 
 // Direct variant exports
 ${directVariantExportsDist.join('\n')}
+
+// Deprecated aliases
+${aliasExportsDist.join('\n')}
 `;
   writeFileSync(join(distEsmDir, 'index.js'), indexDistContent);
   
   // Generate dist/esm/dynamic-variants.js
   const dynamicVariantsDistContent = `// Auto-generated - ESM barrel with re-exports
 ${wrapperExportsDist.join('\n')}
+
+// Deprecated aliases
+${aliasWrapperExportsDist.join('\n')}
 `;
   writeFileSync(join(distEsmDir, 'dynamic-variants.js'), dynamicVariantsDistContent);
   
@@ -572,10 +638,16 @@ ${wrapperExportsDist.join('\n')}
     .map(([key, componentName]) => `  '${key}': () => import('./icons/${componentName}')`)
     .join(',\n');
   
+  // Deprecated names DynamicIcon still accepts. Kept out of the imports map so
+  // they do not show up in iconNames
+  const dynamicAliasesEntries = aliases
+    .map(alias => `  '${alias.name}': { to: '${alias.to}', removeIn: '${alias.removeIn}' }`)
+    .join(',\n');
+  
   const dynamicImportsContent = `// Auto-generated file - do not edit manually
 // Dynamic icon imports map for lazy loading icons at runtime
 
-import type { DynamicIconImports } from './DynamicIcon';
+import type { DynamicIconImports, DynamicIconAliases } from './DynamicIcon';
 
 /**
  * Map of icon names to dynamic import functions.
@@ -594,6 +666,14 @@ ${dynamicImportsEntries}
  * Useful for building icon pickers or validating icon names.
  */
 export const iconNames = Object.keys(dynamicIconImports);
+
+/**
+ * Deprecated icon names that DynamicIcon resolves to their new names.
+ * Generated from icon-aliases.json.
+ */
+export const dynamicIconAliases: DynamicIconAliases = {
+${dynamicAliasesEntries}
+};
 
 export default dynamicIconImports;
 `;
@@ -615,6 +695,9 @@ ${dynamicImportsEntriesDist}
 };
 
 export const iconNames = Object.keys(dynamicIconImports);
+export const dynamicIconAliases = {
+${dynamicAliasesEntries}
+};
 export default dynamicIconImports;
 `;
   writeFileSync(join(distEsmDir, 'dynamicIconImports.js'), dynamicImportsDistContent);
@@ -622,9 +705,9 @@ export default dynamicIconImports;
   // Generate dist version of dynamic.js
   const dynamicDistContent = `// Auto-generated - ESM entry point for dynamic icon loading
 import { createDynamicIcon, getIconNames } from './DynamicIcon.js';
-import { dynamicIconImports } from './dynamicIconImports.js';
+import { dynamicIconImports, dynamicIconAliases } from './dynamicIconImports.js';
 
-export const DynamicIcon = createDynamicIcon(dynamicIconImports);
+export const DynamicIcon = createDynamicIcon(dynamicIconImports, dynamicIconAliases);
 export { dynamicIconImports };
 export const iconNames = getIconNames(dynamicIconImports);
 `;
@@ -692,6 +775,15 @@ export const iconNames = getIconNames(dynamicIconImports);
   
   console.log(`  ✅ Generated ${totalComponents} TypeScript definitions`)
   
+  // Write per-icon files for deprecated aliases, so 'stera-icons/icons/<OldName>' keeps resolving
+  for (const { aliasName, targetName, removeIn } of aliasFiles) {
+    writeFileSync(join(distEsmIconsDir, `${aliasName}.js`), generateAliasModule(aliasName, targetName));
+    writeFileSync(join(distEsmIconsDir, `${aliasName}.d.ts`), generateAliasDeclaration(aliasName, targetName, removeIn));
+  }
+  if (aliasFiles.length > 0) {
+    console.log(`  ✅ Generated ${aliasFiles.length} deprecated alias files`);
+  }
+  
   // Update package.json with wildcard exports (ESM-only)
   // Preserve existing exports (./base, ./dynamic, etc.) and only update ./icons/*
   const existingExports = packageJson.exports?.['.'] || {
@@ -725,6 +817,7 @@ export const iconNames = getIconNames(dynamicIconImports);
   console.log(`\n📊 Build Summary:`);
   console.log(`  ✅ Generated ${metadata.length} direct variant components (IconBase-based)`);
   console.log(`  🔗 Generated ${wrapperExports.length} dynamic wrapper components (in dynamic-variants.ts)`);
+  console.log(`  🔀 Deprecated aliases: ${aliases.length}`);
   console.log(`  📦 Using wildcard exports (./icons/*) for ${totalComponents} components`);
   console.log(`  🆕 New icons: ${newIcons}`);
   console.log(`  🔄 Modified icons: ${modifiedIcons}`);

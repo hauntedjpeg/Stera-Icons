@@ -7,7 +7,7 @@ type BoneFillProps = Omit<IconBaseProps, 'children'>;
 const BoneFill = memo(
   forwardRef<SVGSVGElement, BoneFillProps>((props, ref) => (
     <IconBase ref={ref} {...props}>
-      <path d="M13 3.23a3.34 3.34 0 0 1 5.68 2.09 3.34 3.34 0 1 1-2.04 6.16l-5.17 5.16a3.34 3.34 0 1 1-6.15 2.04 3.34 3.34 0 1 1 2.05-6.16l5.16-5.16A3.34 3.34 0 0 1 13 3.23" />
+      <path d="M13.17 3.4a3.09 3.09 0 0 1 5.28 2.15 3.08 3.08 0 0 1 2.14 5.28 3.1 3.1 0 0 1-3.98.32l-5.46 5.46a3.09 3.09 0 1 1-5.6 1.84 3.08 3.08 0 0 1-2.14-5.28 3.1 3.1 0 0 1 3.98-.32l5.46-5.46c-.87-1.2-.76-2.9.32-3.98" />
     </IconBase>
   ))
 );

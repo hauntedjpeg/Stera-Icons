@@ -99,6 +99,10 @@ Browse [stera.sh](https://stera.sh), or search `index.d.ts` for keywords — eac
 
 Names don't always match other libraries: it's `SiX` (not `SiClose`), `SiPencil` (not `SiEdit`), `SiSettings` (not `SiGear`). There are no brand or logo icons.
 
+## Renamed Icons
+
+When an icon is renamed, the old name stays available as a deprecated alias until the next major version. Old exports are marked `@deprecated` in the types with the name to use instead, and `DynamicIcon` logs a warning in development when it is given an old name. Renames are listed in the [changelog](https://github.com/hauntedjpeg/Stera-Icons/blob/main/packages/icons/CHANGELOG.md).
+
 ## For LLMs and coding agents
 
 This package ships an [`llms.txt`](./llms.txt) usage guide. A full index of every icon name with tags is at [stera.sh/llms-full.txt](https://stera.sh/llms-full.txt).
