@@ -41,7 +41,7 @@ function DropdownMenuContent({
           data-slot="dropdown-menu-content"
           className={cn(
             // Base
-            "overflow-x-hidden overflow-y-auto rounded-xl bg-surface p-1 text-text shadow-md ring-1 ring-border duration-100 outline-none",
+            "overflow-x-hidden overflow-y-auto rounded-xl p-1 text-text bg-surface-subtle/60 bg-origin-border bg-linear-to-b from-alpha-1 to-alpha-2 border-none inset-ring inset-ring-alpha-1 inset-shadow-2xs inset-shadow-alpha-3 backdrop-blur-sm duration-100 outline-none",
             // Position
             "origin-(--transform-origin)",
             // Sizing

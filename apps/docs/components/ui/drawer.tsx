@@ -214,7 +214,7 @@ function DrawerPopup({
             className={cn(
               // Base — clips its contents; scrolling lives on DrawerContent
               // (Drawer.Content).
-              "relative flex min-h-0 min-w-0 flex-col overflow-hidden rounded-xl bg-surface-muted rounded-[30px]e text-sm text-text",
+              "relative flex min-h-0 min-w-0 flex-col overflow-hidden rounded-xl bg-surface-subtle bg-origin-border border-none inset-ring inset-ring-alpha-1 inset-shadow-2xs inset-shadow-alpha-3 text-sm text-text",
               // Interactive only while open, so it goes inert during the exit
               "group-data-open/drawer:pointer-events-auto",
               // Sizing

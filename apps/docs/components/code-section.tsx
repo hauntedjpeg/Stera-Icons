@@ -21,8 +21,8 @@ export function CodeSection({ title, copyText, copyId, copied, onCopy, children 
   const isCopied = copied === copyId;
 
   return (
-    <div className="flex flex-col overflow-hidden rounded-[20] bg-surface-subtle">
-      <div className="flex items-center justify-between border-b border-border py-1.5 pr-2 pl-4">
+    <div className="flex flex-col overflow-hidden rounded-[20] bg-surface-muted">
+      <div className="flex items-center justify-between border-b border-border-strong py-1.5 pr-2 pl-4">
         <h3 className="font-mono text-xs text-text-subtle">{title}</h3>
         <Tooltip>
           <TooltipTrigger

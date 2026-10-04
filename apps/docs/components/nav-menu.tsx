@@ -19,7 +19,7 @@ export function NavMenu() {
   return (
     <DropdownMenu>
       <DropdownMenuTrigger
-        render={<Button variant="subtle" size="icon-lg" aria-label="Menu" />}
+        render={<Button variant="ghost" size="icon-lg" aria-label="Menu" />}
       >
         <SiMenuSimple />
       </DropdownMenuTrigger>

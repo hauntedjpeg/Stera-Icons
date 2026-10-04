@@ -1,10 +1,16 @@
-import type { Metadata } from "next";
+import type { Metadata, Viewport } from "next";
 import { Geist_Mono, Host_Grotesk } from "next/font/google";
 import { Navbar } from "@/components/navbar";
 import { ThemeProvider } from "@/components/theme-provider";
 import { SearchProvider } from "@/components/search-provider";
 import { getAllIconNames } from "@/lib/icons";
 import "./globals.css";
+
+export const viewport: Viewport = {
+  width: "device-width",
+  initialScale: 1,
+  maximumScale: 1,
+};
 
 const hostGrotesk = Host_Grotesk({
   variable: "--font-host-grotesk",
@@ -17,7 +23,7 @@ const geistMono = Geist_Mono({
 });
 
 const title = "Stera Icons";
-const description = `A collection of ${getAllIconNames().length} hand-crafted icons in 6 variants for React applications.`;
+const description = `A collection of ${getAllIconNames().length} hand-crafted icons in 6 variants for Figma and React.`;
 
 const faviconSizes = [16, 32, 96];
 const favicons = (scheme: "light" | "dark") =>

@@ -26,7 +26,7 @@ export function IconDetailDrawer({ icon, onClose, onTagClick }: IconDetailDrawer
       onOpenChange={(open) => { if (!open) onClose(); }}
     >
       {/* IconDetail renders the DrawerHeader (with the close button) and DrawerContent */}
-      <DrawerPopup showCloseButton={false} className="w-[min(90vw,28rem)] bg-surface-muted rounded-[30px]">
+      <DrawerPopup showCloseButton={false} className="w-[min(90vw,28rem)] rounded-[30px]">
         {/* Keyed by icon so the selected variant resets to the grid's when a different icon is opened */}
         {shown && (
           <IconDetail

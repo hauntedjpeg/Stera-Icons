@@ -29,14 +29,14 @@ export function VariantMenu() {
   return (
     <DropdownMenu>
       <DropdownMenuTrigger
-        render={<Button variant="subtle" size="icon-lg" aria-label="Icon variant" />}
+        render={<Button variant="outline" size="icon-lg" aria-label="Icon variant" />}
       >
         <SiLayoutGridCircle weight={weight} duotone={duotone} />
       </DropdownMenuTrigger>
       <DropdownMenuContent
         align="end"
         sideOffset={8}
-        className="min-w-52 rounded-3xl bg-surface-muted p-1.5 shadow-none ring-0"
+        className="min-w-52 rounded-3xl p-1.5"
       >
         <DropdownMenuRadioGroup
           value={weight}

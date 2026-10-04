@@ -72,8 +72,8 @@
   --color-text-onwarning-subtlest: var(--text-onwarning-subtlest);
   --color-text-danger: var(--text-danger);
   --color-text-danger-subtle: var(--text-danger-subtle);
-  --color-text-ondanger: var(--text-ondanger);
   --color-text-danger-strong: var(--text-danger-strong);
+  --color-text-ondanger: var(--text-ondanger);
   --color-text-ondanger-subtle: var(--text-ondanger-subtle);
   --color-text-ondanger-subtlest: var(--text-ondanger-subtlest);
   --color-text-disabled: var(--text-disabled);
@@ -108,6 +108,18 @@
   --color-chart-3: var(--chart-3);
   --color-chart-4: var(--chart-4);
   --color-backdrop: var(--backdrop);
+  --color-alpha-1: var(--alpha-1);
+  --color-alpha-2: var(--alpha-2);
+  --color-alpha-3: var(--alpha-3);
+  --color-alpha-4: var(--alpha-4);
+  --color-alpha-5: var(--alpha-5);
+  --color-alpha-6: var(--alpha-6);
+  --color-alpha-7: var(--alpha-7);
+  --color-alpha-8: var(--alpha-8);
+  --color-alpha-9: var(--alpha-9);
+  --color-alpha-10: var(--alpha-10);
+  --color-alpha-11: var(--alpha-11);
+  --color-alpha-12: var(--alpha-12);
 }
 
 :root {
@@ -353,8 +365,8 @@
   --text-onwarning-subtlest: var(--warning-10);
   --text-danger: var(--danger-11);
   --text-danger-subtle: var(--danger-8);
-  --text-ondanger: var(--white-12);
   --text-danger-strong: var(--danger-12);
+  --text-ondanger: var(--white-12);
   --text-ondanger-subtle: var(--white-10);
   --text-ondanger-subtlest: var(--white-8);
   --text-disabled: var(--neutral-9);
@@ -389,6 +401,18 @@
   --chart-3: var(--brand-6);
   --chart-4: var(--neutral-4);
   --backdrop: var(--black-4);
+  --alpha-1: var(--black-1);
+  --alpha-2: var(--black-2);
+  --alpha-3: var(--black-3);
+  --alpha-4: var(--black-4);
+  --alpha-5: var(--black-5);
+  --alpha-6: var(--black-6);
+  --alpha-7: var(--black-7);
+  --alpha-8: var(--black-8);
+  --alpha-9: var(--black-9);
+  --alpha-10: var(--black-10);
+  --alpha-11: var(--black-11);
+  --alpha-12: var(--black-12);
 }
 
 .dark {
@@ -465,8 +489,8 @@
   --text-onwarning-subtlest: var(--warning-10);
   --text-danger: var(--danger-dark-11);
   --text-danger-subtle: var(--danger-dark-8);
-  --text-ondanger: var(--white-12);
   --text-danger-strong: var(--danger-dark-12);
+  --text-ondanger: var(--white-12);
   --text-ondanger-subtle: var(--white-10);
   --text-ondanger-subtlest: var(--white-8);
   --text-disabled: var(--neutral-dark-9);
@@ -501,4 +525,16 @@
   --chart-3: var(--brand-dark-6);
   --chart-4: var(--neutral-dark-4);
   --backdrop: var(--black-4);
+  --alpha-1: var(--white-1);
+  --alpha-2: var(--white-2);
+  --alpha-3: var(--white-3);
+  --alpha-4: var(--white-4);
+  --alpha-5: var(--white-5);
+  --alpha-6: var(--white-6);
+  --alpha-7: var(--white-7);
+  --alpha-8: var(--white-8);
+  --alpha-9: var(--white-9);
+  --alpha-10: var(--white-10);
+  --alpha-11: var(--white-11);
+  --alpha-12: var(--white-12);
 }
