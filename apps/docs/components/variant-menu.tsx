@@ -36,7 +36,7 @@ export function VariantMenu() {
       <DropdownMenuContent
         align="end"
         sideOffset={8}
-        className="min-w-52 rounded-3xl bg-surface-muted p-1.5 shadow-lg ring-0"
+        className="min-w-52 rounded-3xl bg-surface-muted p-1.5 shadow-none ring-0"
       >
         <DropdownMenuRadioGroup
           value={weight}

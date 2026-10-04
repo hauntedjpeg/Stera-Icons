@@ -16,7 +16,7 @@ export function SearchInput() {
   const inputRef = useRef<HTMLInputElement>(null);
 
   return (
-    <InputGroup className="w-48 sm:w-64 bg-surface-subtle hover:bg-surface-subtle-hover border-none rounded-full shadow-none has-[[data-slot=input-group-control]:focus-visible]:ring-0 has-[[data-slot=input-group-control]:focus-visible]:bg-surface-subtle-hover">
+    <InputGroup className="w-48 sm:w-64 bg-surface-muted hover:bg-surface-muted-hover border-none rounded-full shadow-none has-[[data-slot=input-group-control]:focus-visible]:ring-0 has-[[data-slot=input-group-control]:focus-visible]:bg-surface-muted-hover">
       <InputGroupAddon>
         <SiSearch />
       </InputGroupAddon>

@@ -60,7 +60,7 @@ export function VariantGrid({ icon, selected, onSelect, className, ref }: Varian
             className={cn(
               'flex aspect-square cursor-pointer items-center justify-center rounded-3xl text-text-subtle outline-none transition-colors',
               'hover:border-border-strong hover:border focus-visible:ring-3 focus-visible:ring-ring',
-              isSelected && 'bg-surface-muted text-text'
+              isSelected && 'bg-surface-subtle text-text'
             )}
           >
             <IconRenderer

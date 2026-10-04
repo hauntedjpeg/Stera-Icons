@@ -120,7 +120,7 @@ function DrawerHandle({ className, ...props }: React.ComponentProps<"div">) {
       )}
       {...props}
     >
-      <div className="h-1 w-12 rounded-full bg-surface-subtle" />
+      <div className="h-1 w-12 rounded-full bg-surface-muted" />
     </div>
   )
 }
@@ -214,7 +214,7 @@ function DrawerPopup({
             className={cn(
               // Base — clips its contents; scrolling lives on DrawerContent
               // (Drawer.Content).
-              "relative flex min-h-0 min-w-0 flex-col overflow-hidden rounded-xl bg-surface-muted rounded-[30px]e text-sm text-text shadow-lg",
+              "relative flex min-h-0 min-w-0 flex-col overflow-hidden rounded-xl bg-surface-muted rounded-[30px]e text-sm text-text",
               // Interactive only while open, so it goes inert during the exit
               "group-data-open/drawer:pointer-events-auto",
               // Sizing

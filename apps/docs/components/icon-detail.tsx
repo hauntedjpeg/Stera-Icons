@@ -64,7 +64,7 @@ export function IconDetail({ icon, variant, onTagClick, initialVariant = 'regula
   };
 
   const actions = (
-    <div className="flex items-center text-text-subtle bg-surface-muted rounded-full p-1">
+    <div className="flex items-center text-text-subtle bg-surface-subtle rounded-full p-1">
       <Tooltip>
         <TooltipTrigger
           render={
@@ -141,7 +141,7 @@ export function IconDetail({ icon, variant, onTagClick, initialVariant = 'regula
         <div className="flex flex-wrap gap-x-1.5 gap-y-2">
           {tags.map((tag) =>
             onTagClick ? (
-              <Chip key={tag} size="sm" className="bg-surface-muted st-body-md-compact text-text-subtle" onClick={() => onTagClick(tag)}>
+              <Chip key={tag} size="sm" className="bg-surface-subtle st-body-md-compact text-text-subtle" onClick={() => onTagClick(tag)}>
                 {tag}
               </Chip>
             ) : (

@@ -23,7 +23,7 @@ export function Navbar() {
           </Suspense>
         </div>
 
-        <div className="flex bg-surface-subtle rounded-full p-1 max-sm:hidden">
+        <div className="flex bg-surface-muted rounded-full p-1 max-sm:hidden">
           {NAV_LINKS.map(({ label, href, icon: Icon, internal }) => (
             <Button
               key={href}
