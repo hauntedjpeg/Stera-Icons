@@ -17,7 +17,7 @@ export function SearchInput() {
 
   return (
     <InputGroup className="w-48 sm:w-64 rounded-full border-none shadow-none bg-surface/60 bg-origin-border bg-linear-to-b from-alpha-1 to-alpha-2 inset-ring inset-ring-alpha-1 inset-shadow-2xs-b dark:inset-shadow-2xs inset-shadow-alpha-3 backdrop-blur-sm text-text transition-colors hover:from-alpha-1 hover:to-alpha-3 has-[[data-slot=input-group-control]:focus-visible]:ring-0 has-[[data-slot=input-group-control]:focus-visible]:from-alpha-1 has-[[data-slot=input-group-control]:focus-visible]:to-alpha-3">
-      <InputGroupAddon>
+      <InputGroupAddon className="[&>svg]:text-text">
         <SiSearch />
       </InputGroupAddon>
       <InputGroupInput
