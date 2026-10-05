@@ -31,7 +31,7 @@ export function Navbar() {
               size="icon"
               aria-label={label}
               nativeButton={false}
-              render={internal ? <Link href={href} /> : <a href={href} />}
+              render={internal ? <Link href={href} /> : <a href={href} target="_blank" rel="noopener noreferrer" />}
             >
               <Icon />
             </Button>

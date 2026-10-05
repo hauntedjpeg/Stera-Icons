@@ -9,7 +9,7 @@ import {
   DropdownMenuTrigger,
 } from "@/components/ui/dropdown-menu";
 import { NAV_LINKS } from "@/components/nav-links";
-import { SiMenuSimple } from "stera-icons";
+import { SiMore } from "stera-icons";
 
 const itemClassName =
   "items-center rounded-2xl px-3.5 py-2.5 st-body-lg text-text-subtle focus:bg-surface-muted-hover [&_svg:not([class*='size-'])]:size-5";
@@ -19,14 +19,14 @@ export function NavMenu() {
   return (
     <DropdownMenu>
       <DropdownMenuTrigger
-        render={<Button variant="ghost" size="icon-lg" aria-label="Menu" />}
+        render={<Button variant="outline" size="icon-lg" aria-label="Menu" />}
       >
-        <SiMenuSimple />
+        <SiMore />
       </DropdownMenuTrigger>
       <DropdownMenuContent
         align="end"
         sideOffset={8}
-        className="min-w-52 rounded-3xl bg-surface-muted p-1.5 shadow-none ring-0"
+        className="min-w-52 rounded-3xl p-1.5"
       >
         {NAV_LINKS.map(({ label, href, icon: Icon, internal }) => (
           <DropdownMenuLinkItem
@@ -34,7 +34,7 @@ export function NavMenu() {
             // The navbar stays mounted across client-side navigation
             closeOnClick
             className={itemClassName}
-            render={internal ? <Link href={href} /> : <a href={href} />}
+            render={internal ? <Link href={href} /> : <a href={href} target="_blank" rel="noopener noreferrer" />}
           >
             <Icon />
             {label}

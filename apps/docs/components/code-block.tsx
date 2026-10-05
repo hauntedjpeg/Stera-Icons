@@ -25,7 +25,7 @@ export function CodeBlock({ code, language }: CodeBlockProps) {
 
   return (
     <div className="relative group">
-      <pre className="rounded-xl border border-border-strong bg-surface p-4 overflow-x-auto">
+      <pre className="rounded-[20px] bg-surface-muted p-4 overflow-x-auto">
         <code className="font-mono text-xs text-text" data-language={language}>
           {code}
         </code>
