@@ -7,6 +7,11 @@ const isTypography = (value: string) =>
 
 const twMerge = extendTailwindMerge<"st-typography">({
   extend: {
+    // Custom --inset-shadow-* sizes from app/ui/colors.css. Without this they
+    // are read as inset-shadow colors and dropped when a real color follows.
+    theme: {
+      "inset-shadow": ["2xs-b"],
+    },
     classGroups: {
       "st-typography": [{ st: [isTypography] }],
     },

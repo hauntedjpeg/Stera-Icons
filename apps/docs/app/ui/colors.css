@@ -1,4 +1,5 @@
 @theme inline {
+  --inset-shadow-2xs-b: inset 0 -1px black;
   --color-surface: var(--surface);
   --color-surface-hover: var(--surface-hover);
   --color-surface-subtle: var(--surface-subtle);
@@ -292,7 +293,7 @@
   --white-11: oklch(100% 0 0 / 0.89);
   --white-12: oklch(100% 0 0);
 
-  --surface: var(--neutral-1);
+  --surface: var(--white-12);
   --surface-hover: var(--neutral-2);
   --surface-subtle: var(--neutral-2);
   --surface-subtle-hover: var(--neutral-3);
