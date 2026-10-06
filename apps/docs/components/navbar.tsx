@@ -23,7 +23,7 @@ export function Navbar() {
           </Suspense>
         </div>
 
-        <div className="flex bg-surface/60 bg-origin-border bg-linear-to-b from-alpha-1 to-alpha-2 border-none inset-ring inset-ring-alpha-1 inset-shadow-2xs-b dark:inset-shadow-2xs inset-shadow-alpha-3 backdrop-blur-sm rounded-full p-1 max-sm:hidden">
+        <div className="flex bg-surface/60 bg-origin-border bg-linear-to-b from-alpha-2 to-alpha-1 border-none inset-ring inset-ring-alpha-2 inset-shadow-2xs-b dark:inset-shadow-2xs inset-shadow-alpha-3 backdrop-blur-sm rounded-full p-1 max-sm:hidden">
           {NAV_LINKS.map(({ label, href, icon: Icon, internal }) => (
             <Button
               key={href}
