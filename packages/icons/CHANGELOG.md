@@ -1,5 +1,11 @@
 # stera-icons
 
+## 8.8.2
+
+### Patch Changes
+
+- ed2520f: Update build tooling to the latest versions. The newer SVGO rounds stray floating-point values in 12 icon paths (for example `6.099999999999999` becomes `6.1`). Icons render the same.
+
 ## 8.8.1
 
 ### Patch Changes
