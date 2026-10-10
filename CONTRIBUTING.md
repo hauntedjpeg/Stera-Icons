@@ -120,7 +120,7 @@ Releases are fully automated via GitHub Actions — **never run `pnpm changeset 
 |------|---------|-------------|
 | `patch` | 3.1.0 → 3.1.1 | Bug fixes, minor icon tweaks |
 | `minor` | 3.1.0 → 3.2.0 | **New icons** (most common) |
-| `major` | 3.1.0 → 4.0.0 | Breaking changes, icon removals or renames |
+| `major` | 3.1.0 → 4.0.0 | Breaking changes, icon removals, renames without an alias |
 
 Changes to anything that ships in the npm package need a changeset, including `packages/icons/README.md` and `packages/icons/llms.txt`. Changes to `apps/docs` do not.
 

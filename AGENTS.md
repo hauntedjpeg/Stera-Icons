@@ -30,8 +30,9 @@ Never hand-edit a generated file. Change the source or the generator, then rebui
 
 | File | Kind | In git |
 |------|------|--------|
-| `packages/icons/icons-export.json` | **Source.** Figma export; the only source of icon artwork, names and tags | yes |
+| `packages/icons/icons-export.json` | **Source.** Figma export; the only source of icon artwork, names, tags and categories | yes |
 | `packages/icons/icon-aliases.json` | **Source.** Deprecated aliases that keep the old names of renamed icons working | yes |
+| `packages/icons/categories.json` | **Source.** The closed list of icon categories. The build rejects any category on an icon that is not defined here | yes |
 | `packages/icons/src/{IconBase,DynamicIcon}.tsx`, `src/{base,dynamic,types,utils}.ts`, `src/__tests__/` | **Source** | yes |
 | `packages/icons/scripts/` | **Source.** The build pipeline | yes |
 | `packages/icons/src/icons/*.tsx` | Generated | yes |
@@ -81,7 +82,7 @@ Most icon docs regenerate on their own: the `@tags` JSDoc in `index.d.ts`, `dist
 | Count crosses a hundred (e.g. 900) | The `800+` figure in `packages/icons/llms.txt` and `packages/icons/README.md` |
 | An icon used as a doc example is renamed or removed | Every mention in `packages/icons/llms.txt`, `packages/icons/README.md` and `apps/docs/components/docs-content.tsx` |
 | An icon is added whose name the docs say does not exist (`SiClose`, `SiEdit`, `SiGear`, `SiCog`) | The "do not guess" examples in the same files, and `DOCUMENTED_AS_MISSING` in the test |
-| Any rename or removal | A migration note in the changeset body (old name → new name). Bump is `major` |
+| Any rename or removal | A migration note in the changeset body (old name → new name). A rename that ships with an alias is `minor`; a removal, or a rename without one, is `major` |
 
 `packages/icons/src/__tests__/docs.test.ts` enforces the first four rows, so a failing test there means a doc is stale, not that the test is wrong.
 
@@ -90,8 +91,8 @@ Most icon docs regenerate on their own: the `@tags` JSDoc in `index.d.ts`, `dist
 | Bump | When |
 |------|------|
 | `patch` | Bug fixes, small refinements to existing icons |
-| `minor` | New icons, new backwards-compatible features |
-| `major` | Icon removals or renames, and any other breaking change |
+| `minor` | New icons, new backwards-compatible features, icon renames that keep the old name as an alias |
+| `major` | Icon removals, renames without an alias, removing an expired alias, and any other breaking change |
 
 - Any change that affects what ships to npm (`src/`, `scripts/`, `README.md`, `llms.txt` in `packages/icons`) needs a changeset. Changes to `apps/docs` do not.
 - Releases are automated by `.github/workflows/release.yml`. **Never run `pnpm changeset version`, `pnpm version-packages`, `pnpm release` or `npm publish`.**

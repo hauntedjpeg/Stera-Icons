@@ -1,0 +1,152 @@
+[
+  {
+    "id": "interface",
+    "title": "Interface & actions",
+    "description": "Core UI controls and actions: add, remove, search, edit, settings, toggles, cursors, and scanning.",
+    "icon": "settings"
+  },
+  {
+    "id": "arrows",
+    "title": "Arrows",
+    "description": "Arrows, chevrons, and other directional indicators for navigation, movement, and rotation.",
+    "icon": "arrow-right"
+  },
+  {
+    "id": "layout",
+    "title": "Layout",
+    "description": "Windows, panels, sidebars, grids, and controls that arrange or resize content.",
+    "icon": "layout-grid"
+  },
+  {
+    "id": "text",
+    "title": "Text & editing",
+    "description": "Typography, text formatting, lists, quotes, and writing controls.",
+    "icon": "text"
+  },
+  {
+    "id": "files",
+    "title": "Files & documents",
+    "description": "Documents, folders, notes, books, clipboards, and file transfer.",
+    "icon": "document"
+  },
+  {
+    "id": "communication",
+    "title": "Communication",
+    "description": "Messages, mail, calls, replies, and sharing.",
+    "icon": "message-circle"
+  },
+  {
+    "id": "alerts",
+    "title": "Alerts & status",
+    "description": "Warnings, confirmations, info, help, notifications, and loading states.",
+    "icon": "alert-triangle"
+  },
+  {
+    "id": "media",
+    "title": "Media",
+    "description": "Audio, video, images, photography, and playback controls.",
+    "icon": "play"
+  },
+  {
+    "id": "time",
+    "title": "Time & calendar",
+    "description": "Clocks, calendars, alarms, timers, and history.",
+    "icon": "clock"
+  },
+  {
+    "id": "people",
+    "title": "People & account",
+    "description": "Users, teams, identity, sign-in, gestures, and facial expressions.",
+    "icon": "user"
+  },
+  {
+    "id": "security",
+    "title": "Security",
+    "description": "Locks, keys, shields, privacy, and authentication.",
+    "icon": "lock"
+  },
+  {
+    "id": "devices",
+    "title": "Devices & hardware",
+    "description": "Computers, phones, hardware components, power, and connectivity.",
+    "icon": "laptop"
+  },
+  {
+    "id": "development",
+    "title": "Development",
+    "description": "Code, terminals, git, databases, servers, workflows, and integrations.",
+    "icon": "code"
+  },
+  {
+    "id": "ai",
+    "title": "AI",
+    "description": "Artificial intelligence, agents, sparkles, and AI-assisted variants of other icons.",
+    "icon": "sparkles"
+  },
+  {
+    "id": "charts",
+    "title": "Charts & data",
+    "description": "Charts, gauges, trends, tables, and other data visualization.",
+    "icon": "chart-bar"
+  },
+  {
+    "id": "design",
+    "title": "Design",
+    "description": "Design tools: drawing, alignment, layers, color, curves, and measurement.",
+    "icon": "pen-nib"
+  },
+  {
+    "id": "shapes",
+    "title": "Shapes",
+    "description": "Basic geometric shapes, 3D primitives, and placeholders.",
+    "icon": "shapes"
+  },
+  {
+    "id": "symbols",
+    "title": "Symbols & math",
+    "description": "Punctuation, keyboard and cultural symbols, mathematical operators, and waveforms.",
+    "icon": "asterisk"
+  },
+  {
+    "id": "commerce",
+    "title": "Commerce & finance",
+    "description": "Money, currencies, payments, shopping, shipping, and business.",
+    "icon": "credit-card"
+  },
+  {
+    "id": "places",
+    "title": "Maps & places",
+    "description": "Maps, pins, routes, travel, buildings, and homes.",
+    "icon": "map-pin"
+  },
+  {
+    "id": "nature",
+    "title": "Nature & weather",
+    "description": "Plants, animals, landscapes, weather, and the elements.",
+    "icon": "leaf"
+  },
+  {
+    "id": "food",
+    "title": "Food & drink",
+    "description": "Food, drinks, and dining.",
+    "icon": "fork-knife"
+  },
+  {
+    "id": "science",
+    "title": "Science & health",
+    "description": "Science, lab equipment, medicine, and the body.",
+    "icon": "flask"
+  },
+  {
+    "id": "games",
+    "title": "Sports, games & awards",
+    "description": "Sports, games, characters, trophies, and achievements.",
+    "icon": "trophy"
+  },
+  {
+    "id": "tools",
+    "title": "Tools & objects",
+    "description": "Hand tools and everyday physical objects.",
+    "icon": "wrench"
+  }
+]

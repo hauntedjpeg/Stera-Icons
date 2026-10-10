@@ -26,6 +26,7 @@ import { generatePathJsx, generateVariantComponent, generateWrapperComponent, bu
 import { compileIcons, generateWrapperDeclarations, generateVariantDeclarations, collectEntryPoints } from './icon-build/compiler.js';
 import { PROGRESS_INTERVAL } from './icon-build/config.js';
 import { ALIASES_FILE, loadAliases, validateAliases, generateAliasDeclaration, generateAliasModule } from './icon-build/aliases.js';
+import { CATEGORIES_FILE, loadCategories, parseCategories, validateCategories, validateIconCategories } from './icon-build/categories.js';
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = dirname(__filename);
@@ -60,11 +61,8 @@ async function buildIcons(iconsExportPath) {
   // Load deprecated aliases for renamed icons, and stop before touching any
   // files if one is invalid or has reached the version it is removed in
   const aliases = loadAliases(join(__dirname, '..'));
-  const aliasErrors = validateAliases(
-    aliases,
-    new Set(iconsExport.icons.map(icon => normalizeSlug(parseIconName(icon.name)))),
-    currentVersion
-  );
+  const exportedIconNames = new Set(iconsExport.icons.map(icon => normalizeSlug(parseIconName(icon.name))));
+  const aliasErrors = validateAliases(aliases, exportedIconNames, currentVersion);
   if (aliasErrors.length > 0) {
     console.error(`\n❌ BUILD FAILED: Found ${aliasErrors.length} problem(s) in ${ALIASES_FILE}:`);
     aliasErrors.forEach((error, index) => console.error(`  ${index + 1}. ${error}`));
@@ -73,6 +71,19 @@ async function buildIcons(iconsExportPath) {
   if (aliases.length > 0) {
     console.log(`🔀 Loaded ${aliases.length} deprecated alias(es) from ${ALIASES_FILE}`);
   }
+  
+  // Check the category definitions and each icon's categories the same way
+  const categories = loadCategories(join(__dirname, '..'));
+  const categoryErrors = [
+    ...validateCategories(categories, exportedIconNames),
+    ...validateIconCategories(iconsExport.icons, categories)
+  ];
+  if (categoryErrors.length > 0) {
+    console.error(`\n❌ BUILD FAILED: Found ${categoryErrors.length} problem(s) with icon categories (${CATEGORIES_FILE}):`);
+    categoryErrors.forEach((error, index) => console.error(`  ${index + 1}. ${error}`));
+    process.exit(1);
+  }
+  console.log(`🗂️  Loaded ${categories.length} categories from ${CATEGORIES_FILE}`);
   
   const iconsDir = join(__dirname, '..', 'src', 'icons');
   const distDir = join(__dirname, '..', 'dist');
@@ -172,6 +183,7 @@ async function buildIcons(iconsExportPath) {
     }
     const originalName = icon.name;
     const parsedIconName = parseIconName(originalName);
+    const iconCategories = parseCategories(icon.categories);
     const normalizedSlug = normalizeSlug(parsedIconName);
     
     // Check for naming conflicts before processing
@@ -307,6 +319,7 @@ async function buildIcons(iconsExportPath) {
         weight,
         duotone,
         tags: parseTags(icon.tags),
+        categories: iconCategories,
         componentName: baseComponentName,
         variantComponentName: componentName,
         fileName: `${fileName}.tsx`,

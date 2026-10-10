@@ -93,6 +93,8 @@ export interface IconMetadata {
   weight: 'regular' | 'bold' | 'fill';
   duotone: boolean;
   tags: string[];
+  /** Category ids from categories.json, primary first */
+  categories: string[];
   componentName: string;
   fileName: string;
   versionAdded: string;
@@ -108,6 +110,7 @@ export interface IconsExport {
   icons: Array<{
     name: string;
     tags: string[];
+    categories: string[];
     variants: Array<{
       variant: {
         weight: 'Regular' | 'Bold' | 'Fill';

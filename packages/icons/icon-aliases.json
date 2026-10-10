@@ -1,4 +1,9 @@
 {
+  "currency-cent": { "to": "cent", "since": "8.9.0", "removeIn": "9.0.0" },
+  "currency-circle-dollar": { "to": "dollar-circle", "since": "8.9.0", "removeIn": "9.0.0" },
+  "currency-dollar": { "to": "dollar", "since": "8.9.0", "removeIn": "9.0.0" },
+  "currency-euro": { "to": "euro", "since": "8.9.0", "removeIn": "9.0.0" },
+  "currency-euro-cirlce": { "to": "euro-circle", "since": "8.9.0", "removeIn": "9.0.0" },
   "device-desktop": { "to": "monitor", "since": "8.8.0", "removeIn": "9.0.0" },
   "device-laptop": { "to": "laptop", "since": "8.8.0", "removeIn": "9.0.0" },
   "device-phone": { "to": "smartphone", "since": "8.8.0", "removeIn": "9.0.0" },
