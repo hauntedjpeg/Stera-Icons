@@ -6,7 +6,6 @@ import * as wrappers from '../dynamic-variants';
 import { iconNames } from '../dynamic';
 import { dynamicIconImports, dynamicIconAliases } from '../dynamicIconImports';
 import { getIconComponent } from '../DynamicIcon';
-// @ts-expect-error - build script, plain JS without types
 import { validateAliases, getDeprecatedExports, compareVersions } from '../../scripts/icon-build/aliases.js';
 
 // Guards the deprecated aliases for renamed icons (icon-aliases.json).
