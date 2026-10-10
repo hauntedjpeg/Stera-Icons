@@ -6,3 +6,6 @@ onlyBuiltDependencies:
   - esbuild
   - sharp
   - unrs-resolver
+
+overrides:
+  "@types/react": ^19.3.0
