@@ -7,8 +7,8 @@ type FlowDownArrowRegularDuotoneProps = Omit<IconBaseProps, 'children'>;
 const FlowDownArrowRegularDuotone = memo(
   forwardRef<SVGSVGElement, FlowDownArrowRegularDuotoneProps>((props, ref) => (
     <IconBase ref={ref} {...props}>
-      <path fillRule="evenodd" d="M12 1.25a4.75 4.75 0 1 1 0 9.5 4.75 4.75 0 0 1 0-9.5m0 1.5a3.25 3.25 0 1 0 0 6.5 3.25 3.25 0 0 0 0-6.5" clipRule="evenodd" opacity={.4} />
-        <path d="m12.75 20.19 3.72-3.72a.75.75 0 1 1 1.06 1.06l-5 5a1 1 0 0 1-.24.16l-.1.03-.04.01h-.02a1 1 0 0 1-.26 0h-.06l-.1-.04-.08-.04-.16-.12-5-5a.75.75 0 1 1 1.06-1.06l3.72 3.72v-9.5a5 5 0 0 0 1.5 0z" />
+      <path fillRule="evenodd" d="M12 1.25c2.62 0 4.75 2.13 4.75 4.75s-2.13 4.75-4.75 4.75S7.25 8.62 7.25 6 9.38 1.25 12 1.25m0 1.5c-1.8 0-3.25 1.46-3.25 3.25 0 1.8 1.46 3.25 3.25 3.25 1.8 0 3.25-1.46 3.25-3.25 0-1.8-1.46-3.25-3.25-3.25" clipRule="evenodd" opacity={.4} />
+        <path d="m12.75 20.19 3.72-3.72c.3-.3.77-.3 1.06 0s.3.77 0 1.06l-5 5-.1.08-.14.08-.1.03-.04.01h-.02l-.13.02-.13-.01h-.02l-.04-.02q-.05 0-.1-.03l-.08-.04q-.09-.04-.16-.12l-5-5c-.3-.3-.3-.77 0-1.06s.77-.3 1.06 0l3.72 3.72v-9.5q.37.06.75.06t.75-.06z" />
     </IconBase>
   ))
 );

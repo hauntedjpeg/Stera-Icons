@@ -7,8 +7,8 @@ type KeyHFillDuotoneProps = Omit<IconBaseProps, 'children'>;
 const KeyHFillDuotone = memo(
   forwardRef<SVGSVGElement, KeyHFillDuotoneProps>((props, ref) => (
     <IconBase ref={ref} {...props}>
-      <path fillRule="evenodd" d="M17 6.5a5.5 5.5 0 1 1-4.9 8H9.7l-1.75 1.76-.35-.46-1.15-1.54L5 15.71 1.3 12l2.5-2.5h8.3a5.5 5.5 0 0 1 4.9-3m1.5 4a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3" clipRule="evenodd" opacity={.4} />
-        <path d="M18.5 10.5a1.5 1.5 0 1 1 0 3 1.5 1.5 0 0 1 0-3" />
+      <path fillRule="evenodd" d="M17 6.5c3.04 0 5.5 2.46 5.5 5.5s-2.46 5.5-5.5 5.5c-2.14 0-3.99-1.22-4.9-3H9.7l-1.75 1.76-.35-.46-1.15-1.54L5 15.71 1.3 12l2.5-2.5h8.3c.91-1.78 2.76-3 4.9-3m1.5 4c-.83 0-1.5.67-1.5 1.5s.67 1.5 1.5 1.5S20 12.83 20 12s-.67-1.5-1.5-1.5" clipRule="evenodd" opacity={.4} />
+        <path d="M18.5 10.5c.83 0 1.5.67 1.5 1.5s-.67 1.5-1.5 1.5S17 12.83 17 12s.67-1.5 1.5-1.5" />
     </IconBase>
   ))
 );

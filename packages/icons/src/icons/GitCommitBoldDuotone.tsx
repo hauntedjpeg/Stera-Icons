@@ -7,8 +7,8 @@ type GitCommitBoldDuotoneProps = Omit<IconBaseProps, 'children'>;
 const GitCommitBoldDuotone = memo(
   forwardRef<SVGSVGElement, GitCommitBoldDuotoneProps>((props, ref) => (
     <IconBase ref={ref} {...props}>
-      <path d="M7.1 11a5 5 0 0 0 0 2H2a1 1 0 1 1 0-2zM22 11a1 1 0 1 1 0 2h-5.1a5 5 0 0 0 0-2z" opacity={0.4} />
-        <path fillRule="evenodd" d="M12 7a5 5 0 1 1 0 10 5 5 0 0 1 0-10m0 2a3 3 0 1 0 0 6 3 3 0 0 0 0-6" clipRule="evenodd" />
+      <path d="M7.1 11q-.1.49-.1 1t.1 1H2c-.55 0-1-.45-1-1s.45-1 1-1zM22 11c.55 0 1 .45 1 1s-.45 1-1 1h-5.1q.1-.49.1-1t-.1-1z" opacity={0.4} />
+        <path fillRule="evenodd" d="M12 7c2.76 0 5 2.24 5 5s-2.24 5-5 5-5-2.24-5-5 2.24-5 5-5m0 2c-1.66 0-3 1.34-3 3s1.34 3 3 3 3-1.34 3-3-1.34-3-3-3" clipRule="evenodd" />
     </IconBase>
   ))
 );

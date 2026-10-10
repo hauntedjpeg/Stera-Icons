@@ -7,8 +7,8 @@ type CircleSlashRegularDuotoneProps = Omit<IconBaseProps, 'children'>;
 const CircleSlashRegularDuotone = memo(
   forwardRef<SVGSVGElement, CircleSlashRegularDuotoneProps>((props, ref) => (
     <IconBase ref={ref} {...props}>
-      <path d="M18.34 17.28a8 8 0 0 1-1.06 1.06L5.66 6.72a8 8 0 0 1 1.06-1.06z" opacity={.4} />
-        <path fillRule="evenodd" d="M5.1 5.1a9.75 9.75 0 1 1 13.8 13.8A9.75 9.75 0 0 1 5.1 5.1m12.73 1.07A8.25 8.25 0 1 0 6.17 17.83 8.25 8.25 0 0 0 17.83 6.17" clipRule="evenodd" />
+      <path d="M18.34 17.28q-.24.29-.5.55-.27.27-.56.5L5.66 6.74q.24-.3.5-.56.28-.27.56-.5z" opacity={.4} />
+        <path fillRule="evenodd" d="M5.1 5.1c3.81-3.8 9.99-3.8 13.8 0 3.8 3.81 3.8 9.99 0 13.8-3.81 3.8-9.99 3.8-13.8 0-3.8-3.81-3.8-9.99 0-13.8m12.73 1.07c-3.22-3.23-8.44-3.23-11.66 0s-3.22 8.44 0 11.66 8.44 3.23 11.66 0 3.23-8.44 0-11.66" clipRule="evenodd" />
     </IconBase>
   ))
 );

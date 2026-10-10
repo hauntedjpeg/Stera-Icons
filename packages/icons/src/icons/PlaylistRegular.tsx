@@ -8,7 +8,7 @@ const PlaylistRegular = memo(
   forwardRef<SVGSVGElement, PlaylistRegularProps>((props, ref) => (
     <IconBase ref={ref} {...props}>
       <path fillRule="evenodd" d="M15.25 12.9c0-.92.94-1.5 1.75-1.15l.16.08 5.04 3.1c.8.5.8 1.65 0 2.13l-5.04 3.11c-.84.51-1.91-.09-1.91-1.06zm1.5 5.76L21.07 16l-4.32-2.66z" clipRule="evenodd" />
-        <path d="M12 15a1 1 0 1 1 0 2H2a1 1 0 1 1 0-2zM12 11a1 1 0 1 1 0 2H2a1 1 0 1 1 0-2zM22 7a1 1 0 1 1 0 2H2a1 1 0 0 1 0-2zM22 3a1 1 0 1 1 0 2H2a1 1 0 0 1 0-2z" />
+        <path d="M12 15c.55 0 1 .45 1 1s-.45 1-1 1H2c-.55 0-1-.45-1-1s.45-1 1-1zM12 11c.55 0 1 .45 1 1s-.45 1-1 1H2c-.55 0-1-.45-1-1s.45-1 1-1zM22 7c.55 0 1 .45 1 1s-.45 1-1 1H2c-.55 0-1-.45-1-1s.45-1 1-1zM22 3c.55 0 1 .45 1 1s-.45 1-1 1H2c-.55 0-1-.45-1-1s.45-1 1-1z" />
     </IconBase>
   ))
 );

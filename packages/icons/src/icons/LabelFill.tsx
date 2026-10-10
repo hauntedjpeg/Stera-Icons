@@ -7,7 +7,7 @@ type LabelFillProps = Omit<IconBaseProps, 'children'>;
 const LabelFill = memo(
   forwardRef<SVGSVGElement, LabelFillProps>((props, ref) => (
     <IconBase ref={ref} {...props}>
-      <path d="M15.46 4.13c1.25 0 2.42.6 3.15 1.62l3.27 4.58c.72 1 .72 2.34 0 3.34l-3.27 4.58a3.9 3.9 0 0 1-3.15 1.63H6A3.9 3.9 0 0 1 2.13 16V8A3.9 3.9 0 0 1 6 4.13z" />
+      <path d="M15.46 4.13c1.25 0 2.42.6 3.15 1.62l3.27 4.58c.72 1 .72 2.34 0 3.34l-3.27 4.58c-.73 1.02-1.9 1.63-3.15 1.63H6c-2.14 0-3.87-1.74-3.87-3.88V8c0-2.14 1.73-3.87 3.87-3.87z" />
     </IconBase>
   ))
 );

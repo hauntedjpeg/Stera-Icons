@@ -7,8 +7,8 @@ type HashCircleBoldProps = Omit<IconBaseProps, 'children'>;
 const HashCircleBold = memo(
   forwardRef<SVGSVGElement, HashCircleBoldProps>((props, ref) => (
     <IconBase ref={ref} {...props}>
-      <path fillRule="evenodd" d="M14 6.5a1 1 0 0 1 1 1V9h1.5a1 1 0 1 1 0 2H15v2h1.5a1 1 0 1 1 0 2H15v1.5a1 1 0 1 1-2 0V15h-2v1.5a1 1 0 1 1-2 0V15H7.5a1 1 0 0 1 0-2H9v-2H7.5a1 1 0 1 1 0-2H9V7.5a1 1 0 0 1 2 0V9h2V7.5a1 1 0 0 1 1-1M11 13h2v-2h-2z" clipRule="evenodd" />
-        <path fillRule="evenodd" d="M12 2a10 10 0 1 1 0 20 10 10 0 0 1 0-20m0 2a8 8 0 1 0 0 16 8 8 0 0 0 0-16" clipRule="evenodd" />
+      <path fillRule="evenodd" d="M14 6.5c.55 0 1 .45 1 1V9h1.5c.55 0 1 .45 1 1s-.45 1-1 1H15v2h1.5c.55 0 1 .45 1 1s-.45 1-1 1H15v1.5c0 .55-.45 1-1 1s-1-.45-1-1V15h-2v1.5c0 .55-.45 1-1 1s-1-.45-1-1V15H7.5c-.55 0-1-.45-1-1s.45-1 1-1H9v-2H7.5c-.55 0-1-.45-1-1s.45-1 1-1H9V7.5c0-.55.45-1 1-1s1 .45 1 1V9h2V7.5c0-.55.45-1 1-1M11 13h2v-2h-2z" clipRule="evenodd" />
+        <path fillRule="evenodd" d="M12 2c5.52 0 10 4.48 10 10s-4.48 10-10 10S2 17.52 2 12 6.48 2 12 2m0 2c-4.42 0-8 3.58-8 8s3.58 8 8 8 8-3.58 8-8-3.58-8-8-8" clipRule="evenodd" />
     </IconBase>
   ))
 );

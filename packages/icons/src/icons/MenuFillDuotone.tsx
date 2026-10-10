@@ -7,8 +7,8 @@ type MenuFillDuotoneProps = Omit<IconBaseProps, 'children'>;
 const MenuFillDuotone = memo(
   forwardRef<SVGSVGElement, MenuFillDuotoneProps>((props, ref) => (
     <IconBase ref={ref} {...props}>
-      <path d="M20 10.75a1.25 1.25 0 1 1 0 2.5H4a1.25 1.25 0 1 1 0-2.5z" opacity={.4} />
-        <path d="M20 16.75a1.25 1.25 0 1 1 0 2.5H4a1.25 1.25 0 1 1 0-2.5zM20 4.75a1.25 1.25 0 1 1 0 2.5H4a1.25 1.25 0 1 1 0-2.5z" />
+      <path d="M20 10.75c.69 0 1.25.56 1.25 1.25s-.56 1.25-1.25 1.25H4c-.69 0-1.25-.56-1.25-1.25s.56-1.25 1.25-1.25z" opacity={.4} />
+        <path d="M20 16.75c.69 0 1.25.56 1.25 1.25s-.56 1.25-1.25 1.25H4c-.69 0-1.25-.56-1.25-1.25s.56-1.25 1.25-1.25zM20 4.75c.69 0 1.25.56 1.25 1.25S20.69 7.25 20 7.25H4c-.69 0-1.25-.56-1.25-1.25S3.31 4.75 4 4.75z" />
     </IconBase>
   ))
 );

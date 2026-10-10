@@ -7,7 +7,7 @@ type ArrowLineUpBoldProps = Omit<IconBaseProps, 'children'>;
 const ArrowLineUpBold = memo(
   forwardRef<SVGSVGElement, ArrowLineUpBoldProps>((props, ref) => (
     <IconBase ref={ref} {...props}>
-      <path d="M3 3a1 1 0 0 0 1 1h16a1 1 0 1 0 0-2H4a1 1 0 0 0-1 1M4.3 13.3a1 1 0 1 0 1.4 1.4L11 9.42V21a1 1 0 1 0 2 0V9.41l5.3 5.3a1 1 0 1 0 1.4-1.42l-7-7a1 1 0 0 0-1.4 0z" />
+      <path d="M3 3c0 .55.45 1 1 1h16c.55 0 1-.45 1-1s-.45-1-1-1H4c-.55 0-1 .45-1 1M4.3 13.3c-.4.38-.4 1.02 0 1.4.38.4 1.02.4 1.4 0L11 9.42V21c0 .55.45 1 1 1s1-.45 1-1V9.41l5.3 5.3c.38.39 1.02.39 1.4 0 .4-.4.4-1.03 0-1.42l-7-7c-.38-.39-1.02-.39-1.4 0z" />
     </IconBase>
   ))
 );

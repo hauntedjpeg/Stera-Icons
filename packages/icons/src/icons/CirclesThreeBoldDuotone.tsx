@@ -7,8 +7,8 @@ type CirclesThreeBoldDuotoneProps = Omit<IconBaseProps, 'children'>;
 const CirclesThreeBoldDuotone = memo(
   forwardRef<SVGSVGElement, CirclesThreeBoldDuotoneProps>((props, ref) => (
     <IconBase ref={ref} {...props}>
-      <path fillRule="evenodd" d="M12 2a4.5 4.5 0 1 1 0 9 4.5 4.5 0 0 1 0-9m0 2a2.5 2.5 0 1 0 0 5 2.5 2.5 0 0 0 0-5" clipRule="evenodd" opacity={.4} />
-        <path fillRule="evenodd" d="M6.5 11.53a4.5 4.5 0 1 1 0 9 4.5 4.5 0 0 1 0-9m0 2a2.5 2.5 0 1 0 0 5 2.5 2.5 0 0 0 0-5M17.5 11.53a4.5 4.5 0 1 1 0 9 4.5 4.5 0 0 1 0-9m0 2a2.5 2.5 0 1 0 0 5 2.5 2.5 0 0 0 0-5" clipRule="evenodd" />
+      <path fillRule="evenodd" d="M12 2c2.49 0 4.5 2.01 4.5 4.5S14.49 11 12 11 7.5 8.99 7.5 6.5 9.51 2 12 2m0 2c-1.38 0-2.5 1.12-2.5 2.5S10.62 9 12 9s2.5-1.12 2.5-2.5S13.38 4 12 4" clipRule="evenodd" opacity={.4} />
+        <path fillRule="evenodd" d="M6.5 11.53c2.49 0 4.5 2.01 4.5 4.5 0 2.48-2.01 4.5-4.5 4.5S2 18.5 2 16.03c0-2.49 2.01-4.5 4.5-4.5m0 2c-1.38 0-2.5 1.12-2.5 2.5s1.12 2.5 2.5 2.5S9 17.4 9 16.03s-1.12-2.5-2.5-2.5M17.5 11.53c2.49 0 4.5 2.01 4.5 4.5 0 2.48-2.01 4.5-4.5 4.5S13 18.5 13 16.03c0-2.49 2.01-4.5 4.5-4.5m0 2c-1.38 0-2.5 1.12-2.5 2.5s1.12 2.5 2.5 2.5 2.5-1.12 2.5-2.5-1.12-2.5-2.5-2.5" clipRule="evenodd" />
     </IconBase>
   ))
 );

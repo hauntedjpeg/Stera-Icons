@@ -7,7 +7,7 @@ type ArrowUpLeftRegularProps = Omit<IconBaseProps, 'children'>;
 const ArrowUpLeftRegular = memo(
   forwardRef<SVGSVGElement, ArrowUpLeftRegularProps>((props, ref) => (
     <IconBase ref={ref} {...props}>
-      <path d="M16 5.25a.75.75 0 0 1 0 1.5H7.81l10.72 10.72a.75.75 0 1 1-1.06 1.06L6.75 7.81V16a.75.75 0 0 1-1.5 0V6c0-.41.34-.75.75-.75z" />
+      <path d="M16 5.25c.41 0 .75.34.75.75s-.34.75-.75.75H7.81l10.72 10.72c.3.3.3.77 0 1.06s-.77.3-1.06 0L6.75 7.81V16c0 .41-.34.75-.75.75s-.75-.34-.75-.75V6c0-.41.34-.75.75-.75z" />
     </IconBase>
   ))
 );

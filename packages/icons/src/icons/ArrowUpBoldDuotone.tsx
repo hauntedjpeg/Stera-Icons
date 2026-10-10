@@ -7,8 +7,8 @@ type ArrowUpBoldDuotoneProps = Omit<IconBaseProps, 'children'>;
 const ArrowUpBoldDuotone = memo(
   forwardRef<SVGSVGElement, ArrowUpBoldDuotoneProps>((props, ref) => (
     <IconBase ref={ref} {...props}>
-      <path d="M13 7.41V19a1 1 0 1 1-2 0V7.41l1-1z" opacity={.4} />
-        <path d="M4.3 12.7a1 1 0 0 1 0-1.4l7-7a1 1 0 0 1 1.4 0l7 7a1 1 0 0 1-1.4 1.4L12 6.42l-6.3 6.3a1 1 0 0 1-1.4 0" />
+      <path d="M13 7.41V19c0 .55-.45 1-1 1s-1-.45-1-1V7.41l1-1z" opacity={.4} />
+        <path d="M4.3 12.7c-.4-.38-.4-1.02 0-1.4l7-7c.38-.4 1.02-.4 1.4 0l7 7c.4.38.4 1.02 0 1.4-.38.4-1.02.4-1.4 0L12 6.42l-6.3 6.3c-.38.39-1.02.39-1.4 0" />
     </IconBase>
   ))
 );

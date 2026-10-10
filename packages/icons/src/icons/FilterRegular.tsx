@@ -7,7 +7,7 @@ type FilterRegularProps = Omit<IconBaseProps, 'children'>;
 const FilterRegular = memo(
   forwardRef<SVGSVGElement, FilterRegularProps>((props, ref) => (
     <IconBase ref={ref} {...props}>
-      <path d="M14 16.25a.75.75 0 0 1 0 1.5h-4a.75.75 0 0 1 0-1.5zM18 11.25a.75.75 0 0 1 0 1.5H6a.75.75 0 0 1 0-1.5zM22 6.25a.75.75 0 0 1 0 1.5H2a.75.75 0 0 1 0-1.5z" />
+      <path d="M14 16.25c.41 0 .75.34.75.75s-.34.75-.75.75h-4c-.41 0-.75-.34-.75-.75s.34-.75.75-.75zM18 11.25c.41 0 .75.34.75.75s-.34.75-.75.75H6c-.41 0-.75-.34-.75-.75s.34-.75.75-.75zM22 6.25c.41 0 .75.34.75.75s-.34.75-.75.75H2c-.41 0-.75-.34-.75-.75s.34-.75.75-.75z" />
     </IconBase>
   ))
 );

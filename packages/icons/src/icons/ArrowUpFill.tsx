@@ -7,7 +7,7 @@ type ArrowUpFillProps = Omit<IconBaseProps, 'children'>;
 const ArrowUpFill = memo(
   forwardRef<SVGSVGElement, ArrowUpFillProps>((props, ref) => (
     <IconBase ref={ref} {...props}>
-      <path d="M12 4.13q.36 0 .62.25l6 6a.88.88 0 0 1-.62 1.5h-5.13V19a.87.87 0 1 1-1.75 0v-7.12H6a.88.88 0 0 1-.62-1.5l6-6a1 1 0 0 1 .62-.25" />
+      <path d="M12 4.13q.36 0 .62.25l6 6c.25.25.32.63.19.96-.14.32-.46.54-.81.54h-5.13V19c0 .48-.39.88-.87.88s-.88-.4-.88-.88v-7.12H6c-.35 0-.67-.22-.8-.54-.14-.33-.07-.7.18-.96l6-6q.26-.25.62-.25" />
     </IconBase>
   ))
 );

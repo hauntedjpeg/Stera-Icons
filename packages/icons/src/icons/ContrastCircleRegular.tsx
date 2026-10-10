@@ -7,8 +7,8 @@ type ContrastCircleRegularProps = Omit<IconBaseProps, 'children'>;
 const ContrastCircleRegular = memo(
   forwardRef<SVGSVGElement, ContrastCircleRegularProps>((props, ref) => (
     <IconBase ref={ref} {...props}>
-      <path d="M12 7.5a4.5 4.5 0 1 1 0 9z" />
-        <path fillRule="evenodd" d="M12 2.25a9.75 9.75 0 1 1 0 19.5 9.75 9.75 0 0 1 0-19.5m0 5.25a4.5 4.5 0 0 0 0 9v3.75a8.25 8.25 0 0 0 0-16.5z" clipRule="evenodd" />
+      <path d="M12 7.5c2.49 0 4.5 2.01 4.5 4.5s-2.01 4.5-4.5 4.5z" />
+        <path fillRule="evenodd" d="M12 2.25c5.38 0 9.75 4.37 9.75 9.75s-4.37 9.75-9.75 9.75S2.25 17.38 2.25 12 6.62 2.25 12 2.25m0 5.25c-1.2 0-2.34.47-3.18 1.32C7.97 9.66 7.5 10.8 7.5 12s.47 2.34 1.32 3.18c.84.85 1.99 1.32 3.18 1.32v3.75c4.56 0 8.25-3.7 8.25-8.25S16.55 3.75 12 3.75z" clipRule="evenodd" />
     </IconBase>
   ))
 );

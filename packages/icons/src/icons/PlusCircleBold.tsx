@@ -7,8 +7,8 @@ type PlusCircleBoldProps = Omit<IconBaseProps, 'children'>;
 const PlusCircleBold = memo(
   forwardRef<SVGSVGElement, PlusCircleBoldProps>((props, ref) => (
     <IconBase ref={ref} {...props}>
-      <path d="M12 7a1 1 0 0 1 1 1v3h3a1 1 0 0 1 0 2h-3v3a1 1 0 0 1-2 0v-3H8a1 1 0 1 1 0-2h3V8a1 1 0 0 1 1-1" />
-        <path fillRule="evenodd" d="M12 2a10 10 0 1 1 0 20 10 10 0 0 1 0-20m0 2a8 8 0 1 0 0 16 8 8 0 0 0 0-16" clipRule="evenodd" />
+      <path d="M12 7c.56 0 1 .45 1 1v3h3c.55 0 1 .44 1 1 0 .55-.45 1-1 1h-3v3c0 .55-.44 1-1 1-.55 0-1-.45-1-1v-3H8c-.55 0-1-.45-1-1 0-.56.45-1 1-1h3V8c0-.55.45-1 1-1" />
+        <path fillRule="evenodd" d="M12 2c5.52 0 10 4.48 10 10s-4.48 10-10 10S2 17.52 2 12 6.48 2 12 2m0 2c-4.42 0-8 3.58-8 8s3.58 8 8 8 8-3.58 8-8-3.58-8-8-8" clipRule="evenodd" />
     </IconBase>
   ))
 );

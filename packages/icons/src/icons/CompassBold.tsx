@@ -7,8 +7,8 @@ type CompassBoldProps = Omit<IconBaseProps, 'children'>;
 const CompassBold = memo(
   forwardRef<SVGSVGElement, CompassBoldProps>((props, ref) => (
     <IconBase ref={ref} {...props}>
-      <path fillRule="evenodd" d="M15.68 7.05a1 1 0 0 1 1.27 1.27l-2 6a1 1 0 0 1-.63.63l-6 2a1 1 0 0 1-1.27-1.27l2-6 .05-.1a1 1 0 0 1 .58-.53zM12 10.75a1.25 1.25 0 1 0 0 2.5 1.25 1.25 0 0 0 0-2.5" clipRule="evenodd" />
-        <path fillRule="evenodd" d="M12 2a10 10 0 1 1 0 20 10 10 0 0 1 0-20m0 2a8 8 0 1 0 0 16 8 8 0 0 0 0-16" clipRule="evenodd" />
+      <path fillRule="evenodd" d="M15.68 7.05c.36-.12.76-.02 1.03.24.27.27.36.67.24 1.03l-2 6q-.16.46-.63.63l-6 2c-.36.12-.76.02-1.03-.24-.26-.27-.36-.67-.24-1.03l2-6 .05-.1q.18-.38.58-.53zM12 10.75c-.69 0-1.25.56-1.25 1.25s.56 1.25 1.25 1.25c.7 0 1.25-.56 1.25-1.25s-.56-1.25-1.25-1.25" clipRule="evenodd" />
+        <path fillRule="evenodd" d="M12 2c5.52 0 10 4.48 10 10s-4.48 10-10 10S2 17.52 2 12 6.48 2 12 2m0 2c-4.42 0-8 3.58-8 8s3.58 8 8 8 8-3.58 8-8-3.58-8-8-8" clipRule="evenodd" />
     </IconBase>
   ))
 );

@@ -7,8 +7,8 @@ type BackslashFillDuotoneProps = Omit<IconBaseProps, 'children'>;
 const BackslashFillDuotone = memo(
   forwardRef<SVGSVGElement, BackslashFillDuotoneProps>((props, ref) => (
     <IconBase ref={ref} {...props}>
-      <path d="M20.13 19.01A1.5 1.5 0 0 1 17.87 21l-7-8L13.13 11z" opacity={.4} />
-        <path d="M4.01 2.87a1.5 1.5 0 0 1 2.12.14l7 8L10.87 13l-7-8a1.5 1.5 0 0 1 .14-2.12" />
+      <path d="M20.13 19.01c.54.63.48 1.57-.14 2.12-.63.54-1.57.48-2.12-.14l-7-8L13.13 11z" opacity={.4} />
+        <path d="M4.01 2.87c.63-.54 1.57-.48 2.12.14l7 8L10.87 13l-7-8c-.54-.63-.48-1.57.14-2.12" />
     </IconBase>
   ))
 );

@@ -7,8 +7,8 @@ type ClockRegularDuotoneProps = Omit<IconBaseProps, 'children'>;
 const ClockRegularDuotone = memo(
   forwardRef<SVGSVGElement, ClockRegularDuotoneProps>((props, ref) => (
     <IconBase ref={ref} {...props}>
-      <path fillRule="evenodd" d="M12 2.25a9.75 9.75 0 1 1 0 19.5 9.75 9.75 0 0 1 0-19.5m0 1.5a8.25 8.25 0 1 0 0 16.5 8.25 8.25 0 0 0 0-16.5" clipRule="evenodd" opacity={.4} />
-        <path d="M12 6.25c.41 0 .75.34.75.75v4.69l2.6 2.6a.75.75 0 1 1-1.05 1.07l-2.83-2.83-.13-.19q-.02-.02-.03-.05a1 1 0 0 1-.06-.29V7c0-.41.34-.75.75-.75" />
+      <path fillRule="evenodd" d="M12 2.25c5.38 0 9.75 4.37 9.75 9.75s-4.37 9.75-9.75 9.75S2.25 17.38 2.25 12 6.62 2.25 12 2.25m0 1.5c-4.56 0-8.25 3.7-8.25 8.25s3.7 8.25 8.25 8.25 8.25-3.7 8.25-8.25-3.7-8.25-8.25-8.25" clipRule="evenodd" opacity={.4} />
+        <path d="M12 6.25c.41 0 .75.34.75.75v4.69l2.6 2.6c.3.3.3.78 0 1.07-.28.3-.76.3-1.05 0l-2.83-2.83q-.09-.09-.13-.19-.02-.02-.03-.05l-.05-.16-.01-.13V7c0-.41.34-.75.75-.75" />
     </IconBase>
   ))
 );

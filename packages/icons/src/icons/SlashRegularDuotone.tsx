@@ -7,8 +7,8 @@ type SlashRegularDuotoneProps = Omit<IconBaseProps, 'children'>;
 const SlashRegularDuotone = memo(
   forwardRef<SVGSVGElement, SlashRegularDuotoneProps>((props, ref) => (
     <IconBase ref={ref} {...props}>
-      <path d="m12.56 12.5-8 9a.75.75 0 0 1-1.12-1l8-9z" opacity={.4} />
-        <path d="M19.44 2.5a.75.75 0 0 1 1.12 1l-8 9-1.12-1z" />
+      <path d="m12.56 12.5-8 9c-.27.3-.75.34-1.06.06-.3-.27-.34-.75-.06-1.06l8-9z" opacity={.4} />
+        <path d="M19.44 2.5c.27-.3.75-.34 1.06-.06.3.27.34.75.06 1.06l-8 9-1.12-1z" />
     </IconBase>
   ))
 );

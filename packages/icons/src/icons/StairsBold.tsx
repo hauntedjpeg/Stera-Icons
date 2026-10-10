@@ -7,7 +7,7 @@ type StairsBoldProps = Omit<IconBaseProps, 'children'>;
 const StairsBold = memo(
   forwardRef<SVGSVGElement, StairsBoldProps>((props, ref) => (
     <IconBase ref={ref} {...props}>
-      <path d="M21.5 3.5a1 1 0 1 1 0 2h-4v5a1 1 0 0 1-1 1h-5v5a1 1 0 0 1-1 1h-5v4a1 1 0 1 1-2 0v-5a1 1 0 0 1 1-1h5v-5a1 1 0 0 1 1-1h5v-5a1 1 0 0 1 1-1z" />
+      <path d="M21.5 3.5c.55 0 1 .45 1 1s-.45 1-1 1h-4v5c0 .55-.45 1-1 1h-5v5c0 .55-.45 1-1 1h-5v4c0 .55-.45 1-1 1s-1-.45-1-1v-5c0-.55.45-1 1-1h5v-5c0-.55.45-1 1-1h5v-5c0-.55.45-1 1-1z" />
     </IconBase>
   ))
 );

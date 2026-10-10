@@ -8,6 +8,9 @@ export default {
           convertPathData: {
             floatPrecision: 2,
             transformPrecision: 2,
+            // Keep curves as curves: an arc radius rounded to 2 decimals
+            // no longer fits its endpoints and shifts full circles sideways
+            makeArcs: false,
           },
           // Clean up numeric values
           cleanupNumericValues: {
@@ -21,15 +24,6 @@ export default {
     },
     {
       name: 'removeXMLNS',
-    },
-    {
-      name: 'convertShapeToPath',
-    },
-    {
-      name: 'removeUselessStrokeAndFill',
-    },
-    {
-      name: 'sortAttrs',
     },
     // Remove fill attributes from paths/circles so they inherit
     // fill from the parent <svg> element set by IconBase

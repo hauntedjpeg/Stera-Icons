@@ -7,8 +7,8 @@ type TextQuoteBoldDuotoneProps = Omit<IconBaseProps, 'children'>;
 const TextQuoteBoldDuotone = memo(
   forwardRef<SVGSVGElement, TextQuoteBoldDuotoneProps>((props, ref) => (
     <IconBase ref={ref} {...props}>
-      <path d="M3 11a1 1 0 0 1 1 1v6.1a1 1 0 0 1-2 0V12a1 1 0 0 1 1-1" opacity={.4} />
-        <path d="M21 17a1 1 0 1 1 0 2H8a1 1 0 1 1 0-2zM21 11a1 1 0 1 1 0 2H8a1 1 0 1 1 0-2zM16 5a1 1 0 1 1 0 2H3a1 1 0 0 1 0-2z" />
+      <path d="M3 11c.55 0 1 .45 1 1v6.1c-.06.5-.48.9-1 .9s-.94-.4-1-.9V12c0-.55.45-1 1-1" opacity={.4} />
+        <path d="M21 17c.55 0 1 .45 1 1s-.45 1-1 1H8c-.55 0-1-.45-1-1s.45-1 1-1zM21 11c.55 0 1 .45 1 1s-.45 1-1 1H8c-.55 0-1-.45-1-1s.45-1 1-1zM16 5c.55 0 1 .45 1 1s-.45 1-1 1H3c-.55 0-1-.45-1-1s.45-1 1-1z" />
     </IconBase>
   ))
 );

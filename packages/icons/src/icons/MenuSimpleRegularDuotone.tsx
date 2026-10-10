@@ -7,8 +7,8 @@ type MenuSimpleRegularDuotoneProps = Omit<IconBaseProps, 'children'>;
 const MenuSimpleRegularDuotone = memo(
   forwardRef<SVGSVGElement, MenuSimpleRegularDuotoneProps>((props, ref) => (
     <IconBase ref={ref} {...props}>
-      <path d="M14 15.25a.75.75 0 0 1 0 1.5H4a.75.75 0 0 1 0-1.5z" opacity={.4} />
-        <path d="M20 7.25a.75.75 0 0 1 0 1.5H4a.75.75 0 0 1 0-1.5z" />
+      <path d="M14 15.25c.41 0 .75.34.75.75s-.34.75-.75.75H4c-.41 0-.75-.34-.75-.75s.34-.75.75-.75z" opacity={.4} />
+        <path d="M20 7.25c.41 0 .75.34.75.75s-.34.75-.75.75H4c-.41 0-.75-.34-.75-.75s.34-.75.75-.75z" />
     </IconBase>
   ))
 );

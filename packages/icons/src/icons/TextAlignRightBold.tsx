@@ -7,7 +7,7 @@ type TextAlignRightBoldProps = Omit<IconBaseProps, 'children'>;
 const TextAlignRightBold = memo(
   forwardRef<SVGSVGElement, TextAlignRightBoldProps>((props, ref) => (
     <IconBase ref={ref} {...props}>
-      <path d="M21 17a1 1 0 1 1 0 2H7a1 1 0 1 1 0-2zM21 11a1 1 0 1 1 0 2H11a1 1 0 1 1 0-2zM21 5a1 1 0 1 1 0 2H3a1 1 0 0 1 0-2z" />
+      <path d="M21 17c.55 0 1 .45 1 1s-.45 1-1 1H7c-.55 0-1-.45-1-1s.45-1 1-1zM21 11c.55 0 1 .45 1 1s-.45 1-1 1H11c-.55 0-1-.45-1-1s.45-1 1-1zM21 5c.55 0 1 .45 1 1s-.45 1-1 1H3c-.55 0-1-.45-1-1s.45-1 1-1z" />
     </IconBase>
   ))
 );

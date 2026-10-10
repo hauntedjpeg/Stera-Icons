@@ -7,7 +7,7 @@ type BracketsSquareBoldProps = Omit<IconBaseProps, 'children'>;
 const BracketsSquareBold = memo(
   forwardRef<SVGSVGElement, BracketsSquareBoldProps>((props, ref) => (
     <IconBase ref={ref} {...props}>
-      <path d="M7.5 3a1 1 0 0 1 0 2H6a1 1 0 0 0-1 1v12a1 1 0 0 0 1 1h1.5a1 1 0 1 1 0 2H6a3 3 0 0 1-3-3V6a3 3 0 0 1 3-3zM18 3a3 3 0 0 1 3 3v12a3 3 0 0 1-3 3h-1.5a1 1 0 1 1 0-2H18a1 1 0 0 0 1-1V6a1 1 0 0 0-1-1h-1.5a1 1 0 1 1 0-2z" />
+      <path d="M7.5 3c.55 0 1 .45 1 1s-.45 1-1 1H6c-.55 0-1 .45-1 1v12c0 .55.45 1 1 1h1.5c.55 0 1 .45 1 1s-.45 1-1 1H6c-1.66 0-3-1.34-3-3V6c0-1.66 1.34-3 3-3zM18 3c1.66 0 3 1.34 3 3v12c0 1.66-1.34 3-3 3h-1.5c-.55 0-1-.45-1-1s.45-1 1-1H18c.55 0 1-.45 1-1V6c0-.55-.45-1-1-1h-1.5c-.55 0-1-.45-1-1s.45-1 1-1z" />
     </IconBase>
   ))
 );

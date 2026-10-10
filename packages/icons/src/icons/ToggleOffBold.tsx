@@ -7,8 +7,8 @@ type ToggleOffBoldProps = Omit<IconBaseProps, 'children'>;
 const ToggleOffBold = memo(
   forwardRef<SVGSVGElement, ToggleOffBoldProps>((props, ref) => (
     <IconBase ref={ref} {...props}>
-      <path d="M9 8a4 4 0 1 1 0 8 4 4 0 0 1 0-8" />
-        <path fillRule="evenodd" d="M15 4a8 8 0 1 1 0 16H9A8 8 0 1 1 9 4zM9 6a6 6 0 1 0 0 12h6a6 6 0 0 0 0-12z" clipRule="evenodd" />
+      <path d="M9 8c2.2 0 4 1.8 4 4s-1.8 4-4 4-4-1.8-4-4 1.8-4 4-4" />
+        <path fillRule="evenodd" d="M15 4c4.42 0 8 3.58 8 8s-3.58 8-8 8H9c-4.42 0-8-3.58-8-8s3.58-8 8-8zM9 6c-3.31 0-6 2.69-6 6s2.69 6 6 6h6c3.31 0 6-2.69 6-6s-2.69-6-6-6z" clipRule="evenodd" />
     </IconBase>
   ))
 );

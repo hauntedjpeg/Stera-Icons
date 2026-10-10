@@ -7,7 +7,7 @@ type SlidersVBoldProps = Omit<IconBaseProps, 'children'>;
 const SlidersVBold = memo(
   forwardRef<SVGSVGElement, SlidersVBoldProps>((props, ref) => (
     <IconBase ref={ref} {...props}>
-      <path fillRule="evenodd" d="M11 15a4 4 0 0 1-3 3.87V22a1 1 0 1 1-2 0v-3.13a4 4 0 0 1 0-7.74V2a1 1 0 0 1 2 0v9.13A4 4 0 0 1 11 15m-2 0a2 2 0 1 0-4 0 2 2 0 0 0 4 0M21 9a4 4 0 0 1-3 3.87V22a1 1 0 1 1-2 0v-9.13a4 4 0 0 1 0-7.74V2a1 1 0 1 1 2 0v3.13A4 4 0 0 1 21 9m-2 0a2 2 0 1 0-4 0 2 2 0 0 0 4 0" clipRule="evenodd" />
+      <path fillRule="evenodd" d="M11 15c0 1.86-1.27 3.43-3 3.87V22c0 .55-.45 1-1 1s-1-.45-1-1v-3.13c-1.73-.44-3-2-3-3.87 0-1.86 1.27-3.43 3-3.87V2c0-.55.45-1 1-1s1 .45 1 1v9.13c1.73.44 3 2 3 3.87m-2 0c0-1.1-.9-2-2-2s-2 .9-2 2 .9 2 2 2 2-.9 2-2M21 9c0 1.86-1.27 3.43-3 3.87V22c0 .55-.45 1-1 1s-1-.45-1-1v-9.13c-1.73-.44-3-2-3-3.87 0-1.86 1.27-3.43 3-3.87V2c0-.55.45-1 1-1s1 .45 1 1v3.13c1.73.44 3 2 3 3.87m-2 0c0-1.1-.9-2-2-2s-2 .9-2 2 .9 2 2 2 2-.9 2-2" clipRule="evenodd" />
     </IconBase>
   ))
 );

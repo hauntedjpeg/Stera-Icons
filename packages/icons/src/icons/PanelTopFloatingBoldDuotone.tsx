@@ -7,8 +7,8 @@ type PanelTopFloatingBoldDuotoneProps = Omit<IconBaseProps, 'children'>;
 const PanelTopFloatingBoldDuotone = memo(
   forwardRef<SVGSVGElement, PanelTopFloatingBoldDuotoneProps>((props, ref) => (
     <IconBase ref={ref} {...props}>
-      <path d="M17.5 13a2 2 0 0 0 2-2V8.5a2 2 0 0 0-2-2h-11a2 2 0 0 0-2 2V11c0 1.1.9 2 2 2z" opacity={.4} />
-        <path fillRule="evenodd" d="M19 21a4 4 0 0 0 4-4V7a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v10a4 4 0 0 0 4 4zM5 19a2 2 0 0 1-2-2V7c0-1.1.9-2 2-2h14a2 2 0 0 1 2 2v10a2 2 0 0 1-2 2z" clipRule="evenodd" />
+      <path d="M17.5 13c1.1 0 2-.9 2-2V8.5c0-1.1-.9-2-2-2h-11c-1.1 0-2 .9-2 2V11c0 1.1.9 2 2 2z" opacity={.4} />
+        <path fillRule="evenodd" d="M19 21c2.2 0 4-1.8 4-4V7c0-2.2-1.8-4-4-4H5C2.8 3 1 4.8 1 7v10c0 2.2 1.8 4 4 4zM5 19c-1.1 0-2-.9-2-2V7c0-1.1.9-2 2-2h14c1.1 0 2 .9 2 2v10c0 1.1-.9 2-2 2z" clipRule="evenodd" />
     </IconBase>
   ))
 );

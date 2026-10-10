@@ -7,7 +7,7 @@ type CliBoldProps = Omit<IconBaseProps, 'children'>;
 const CliBold = memo(
   forwardRef<SVGSVGElement, CliBoldProps>((props, ref) => (
     <IconBase ref={ref} {...props}>
-      <path d="M20 17.5a1 1 0 0 1 0 2h-9a1 1 0 0 1 0-2zM3.3 4.8a1 1 0 0 1 1.4 0l6 6a1 1 0 0 1 0 1.4l-6 6a1 1 0 0 1-1.4-1.4l5.29-5.3-5.3-5.3a1 1 0 0 1 0-1.4" />
+      <path d="M20 17.5c.55 0 1 .45 1 1s-.45 1-1 1h-9c-.55 0-1-.45-1-1s.45-1 1-1zM3.3 4.8c.38-.4 1.02-.4 1.4 0l6 6c.4.38.4 1.02 0 1.4l-6 6c-.38.4-1.02.4-1.4 0-.4-.38-.4-1.02 0-1.4l5.29-5.3-5.3-5.3c-.39-.38-.39-1.02 0-1.4" />
     </IconBase>
   ))
 );

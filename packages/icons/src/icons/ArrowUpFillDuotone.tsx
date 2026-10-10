@@ -7,8 +7,8 @@ type ArrowUpFillDuotoneProps = Omit<IconBaseProps, 'children'>;
 const ArrowUpFillDuotone = memo(
   forwardRef<SVGSVGElement, ArrowUpFillDuotoneProps>((props, ref) => (
     <IconBase ref={ref} {...props}>
-      <path d="M12.87 11.88V19a.88.88 0 0 1-1.74 0v-7.12z" opacity={.4} />
-        <path d="M12 4.13q.36 0 .62.25l6 6a.88.88 0 0 1-.62 1.5H6a.88.88 0 0 1-.62-1.5l6-6a1 1 0 0 1 .62-.25" />
+      <path d="M12.87 11.88V19c0 .48-.39.88-.87.88s-.87-.4-.87-.88v-7.12z" opacity={.4} />
+        <path d="M12 4.13q.36 0 .62.25l6 6c.25.25.32.63.19.96-.14.32-.46.54-.81.54H6c-.35 0-.67-.22-.8-.54-.14-.33-.07-.7.18-.96l6-6q.26-.25.62-.25" />
     </IconBase>
   ))
 );

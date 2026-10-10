@@ -7,8 +7,8 @@ type BirdhouseRegularProps = Omit<IconBaseProps, 'children'>;
 const BirdhouseRegular = memo(
   forwardRef<SVGSVGElement, BirdhouseRegularProps>((props, ref) => (
     <IconBase ref={ref} {...props}>
-      <path fillRule="evenodd" d="M12 9.25a3.25 3.25 0 1 1 0 6.5 3.25 3.25 0 0 1 0-6.5m0 1.5a1.75 1.75 0 1 0 0 3.5 1.75 1.75 0 0 0 0-3.5" clipRule="evenodd" />
-        <path fillRule="evenodd" d="M10.5 3.33a2.25 2.25 0 0 1 3 0l8 7.11a.75.75 0 0 1-1 1.12l-.97-.86-1.62 8.55H19a.75.75 0 0 1 0 1.5H5a.75.75 0 0 1 0-1.5h1.1L4.45 10.7l-.96.86a.75.75 0 0 1-1-1.12zm2 1.12a.75.75 0 0 0-1 0L5.77 9.54l1.85 9.71h8.76l1.85-9.71z" clipRule="evenodd" />
+      <path fillRule="evenodd" d="M12 9.25c1.8 0 3.25 1.46 3.25 3.25 0 1.8-1.46 3.25-3.25 3.25-1.8 0-3.25-1.46-3.25-3.25 0-1.8 1.45-3.25 3.25-3.25m0 1.5c-.97 0-1.75.78-1.75 1.75s.78 1.75 1.75 1.75 1.75-.78 1.75-1.75-.78-1.75-1.75-1.75" clipRule="evenodd" />
+        <path fillRule="evenodd" d="M10.5 3.33c.86-.76 2.14-.76 3 0l8 7.11c.3.27.34.75.06 1.06-.27.3-.75.34-1.06.06l-.97-.86-1.62 8.55H19c.41 0 .75.34.75.75s-.34.75-.75.75H5c-.41 0-.75-.34-.75-.75s.34-.75.75-.75h1.1L4.45 10.7l-.96.86c-.31.28-.79.25-1.06-.06-.28-.31-.25-.79.06-1.06zm2 1.12c-.29-.26-.71-.26-1 0L5.77 9.54l1.85 9.71h8.76l1.85-9.71z" clipRule="evenodd" />
     </IconBase>
   ))
 );

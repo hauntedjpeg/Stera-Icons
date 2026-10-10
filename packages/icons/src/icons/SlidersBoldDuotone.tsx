@@ -7,8 +7,8 @@ type SlidersBoldDuotoneProps = Omit<IconBaseProps, 'children'>;
 const SlidersBoldDuotone = memo(
   forwardRef<SVGSVGElement, SlidersBoldDuotoneProps>((props, ref) => (
     <IconBase ref={ref} {...props}>
-      <path d="M11.13 16a4 4 0 0 0 0 2H2a1 1 0 1 1 0-2zM22 16a1 1 0 1 1 0 2h-3.13a4 4 0 0 0 0-2zM5.13 6a4 4 0 0 0 0 2H2a1 1 0 0 1 0-2zM22 6a1 1 0 1 1 0 2h-9.13a4 4 0 0 0 0-2z" opacity={0.4} />
-        <path fillRule="evenodd" d="M15 13a4 4 0 1 1 0 8 4 4 0 0 1 0-8m0 2a2 2 0 1 0 0 4 2 2 0 0 0 0-4M9 3a4 4 0 1 1 0 8 4 4 0 0 1 0-8m0 2a2 2 0 1 0 0 4 2 2 0 0 0 0-4" clipRule="evenodd" />
+      <path d="M11.13 16q-.13.48-.13 1t.13 1H2c-.55 0-1-.45-1-1s.45-1 1-1zM22 16c.55 0 1 .45 1 1s-.45 1-1 1h-3.13q.13-.48.13-1t-.13-1zM5.13 6Q5 6.48 5 7t.13 1H2c-.55 0-1-.45-1-1s.45-1 1-1zM22 6c.55 0 1 .45 1 1s-.45 1-1 1h-9.13q.13-.48.13-1t-.13-1z" opacity={0.4} />
+        <path fillRule="evenodd" d="M15 13c2.2 0 4 1.8 4 4s-1.8 4-4 4-4-1.8-4-4 1.8-4 4-4m0 2c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2M9 3c2.2 0 4 1.8 4 4s-1.8 4-4 4-4-1.8-4-4 1.8-4 4-4m0 2c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2" clipRule="evenodd" />
     </IconBase>
   ))
 );

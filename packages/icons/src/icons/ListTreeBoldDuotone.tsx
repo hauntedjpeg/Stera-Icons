@@ -7,8 +7,8 @@ type ListTreeBoldDuotoneProps = Omit<IconBaseProps, 'children'>;
 const ListTreeBoldDuotone = memo(
   forwardRef<SVGSVGElement, ListTreeBoldDuotoneProps>((props, ref) => (
     <IconBase ref={ref} {...props}>
-      <path d="M3 4a1 1 0 0 1 1 1v4c0 1.1.9 2 2 2h2a1 1 0 1 1 0 2H6q-1.1-.01-2-.54V16c0 1.1.9 2 2 2h2a1 1 0 1 1 0 2H6a4 4 0 0 1-4-4V5a1 1 0 0 1 1-1" opacity={.4} />
-        <path d="M21 18a1 1 0 1 1 0 2h-8a1 1 0 1 1 0-2zM21 11a1 1 0 1 1 0 2h-8a1 1 0 1 1 0-2zM21 4a1 1 0 1 1 0 2H8a1 1 0 0 1 0-2z" />
+      <path d="M3 4c.55 0 1 .45 1 1v4c0 1.1.9 2 2 2h2c.55 0 1 .45 1 1s-.45 1-1 1H6q-1.1-.01-2-.54V16c0 1.1.9 2 2 2h2c.55 0 1 .45 1 1s-.45 1-1 1H6c-2.2 0-4-1.8-4-4V5c0-.55.45-1 1-1" opacity={.4} />
+        <path d="M21 18c.55 0 1 .45 1 1s-.45 1-1 1h-8c-.55 0-1-.45-1-1s.45-1 1-1zM21 11c.55 0 1 .45 1 1s-.45 1-1 1h-8c-.55 0-1-.45-1-1s.45-1 1-1zM21 4c.55 0 1 .45 1 1s-.45 1-1 1H8c-.55 0-1-.45-1-1s.45-1 1-1z" />
     </IconBase>
   ))
 );

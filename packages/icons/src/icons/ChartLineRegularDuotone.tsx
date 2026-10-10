@@ -7,8 +7,8 @@ type ChartLineRegularDuotoneProps = Omit<IconBaseProps, 'children'>;
 const ChartLineRegularDuotone = memo(
   forwardRef<SVGSVGElement, ChartLineRegularDuotoneProps>((props, ref) => (
     <IconBase ref={ref} {...props}>
-      <path d="M21 18.25a.75.75 0 0 1 0 1.5H3a.75.75 0 0 1 0-1.5z" opacity={.4} />
-        <path d="M19.42 4.52a.75.75 0 0 1 1.16.96l-5.34 6.4a.75.75 0 0 1-.88.2L9.53 9.91 4.56 15.5a.75.75 0 0 1-1.12-1l5.33-6 .1-.08a.8.8 0 0 1 .77-.1l4.82 2.16z" />
+      <path d="M21 18.25c.41 0 .75.34.75.75s-.34.75-.75.75H3c-.41 0-.75-.34-.75-.75s.34-.75.75-.75z" opacity={.4} />
+        <path d="M19.42 4.52c.27-.32.74-.36 1.06-.1.32.27.36.74.1 1.06l-5.34 6.4c-.21.26-.57.34-.88.2L9.53 9.91 4.56 15.5c-.27.3-.75.34-1.06.06-.3-.27-.34-.75-.06-1.06l5.33-6 .1-.08c.2-.18.5-.22.77-.1l4.82 2.16z" />
     </IconBase>
   ))
 );

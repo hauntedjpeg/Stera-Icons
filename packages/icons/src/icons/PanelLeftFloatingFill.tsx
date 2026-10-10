@@ -7,7 +7,7 @@ type PanelLeftFloatingFillProps = Omit<IconBaseProps, 'children'>;
 const PanelLeftFloatingFill = memo(
   forwardRef<SVGSVGElement, PanelLeftFloatingFillProps>((props, ref) => (
     <IconBase ref={ref} {...props}>
-      <path fillRule="evenodd" d="M19 3.13A3.9 3.9 0 0 1 22.88 7v10A3.9 3.9 0 0 1 19 20.88H5A3.9 3.9 0 0 1 1.13 17V7A3.9 3.9 0 0 1 5 3.13zM6 6.63c-.76 0-1.37.61-1.37 1.37v8c0 .76.61 1.38 1.37 1.38h3.5c.76 0 1.38-.62 1.38-1.38V8c0-.76-.62-1.37-1.38-1.37z" clipRule="evenodd" />
+      <path fillRule="evenodd" d="M19 3.13c2.14 0 3.88 1.73 3.88 3.87v10c0 2.14-1.74 3.88-3.88 3.88H5c-2.14 0-3.87-1.74-3.87-3.88V7c0-2.14 1.73-3.87 3.87-3.87zM6 6.63c-.76 0-1.37.61-1.37 1.37v8c0 .76.61 1.38 1.37 1.38h3.5c.76 0 1.38-.62 1.38-1.38V8c0-.76-.62-1.37-1.38-1.37z" clipRule="evenodd" />
     </IconBase>
   ))
 );

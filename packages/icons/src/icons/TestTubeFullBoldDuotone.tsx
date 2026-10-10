@@ -7,8 +7,8 @@ type TestTubeFullBoldDuotoneProps = Omit<IconBaseProps, 'children'>;
 const TestTubeFullBoldDuotone = memo(
   forwardRef<SVGSVGElement, TestTubeFullBoldDuotoneProps>((props, ref) => (
     <IconBase ref={ref} {...props}>
-      <path d="M16.5 4a.5.5 0 0 0-.5.5V18a4 4 0 0 1-8 0V4.5a.5.5 0 0 0-.5-.5H10v14a2 2 0 1 0 4 0V4z" opacity={.4} />
-        <path d="M14 10.22a8 8 0 0 1-4 0v-2.1c1.29.48 2.71.48 4 0zM16.5 2a1 1 0 1 1 0 2h-9a1 1 0 0 1 0-2z" />
+      <path d="M16.5 4c-.28 0-.5.22-.5.5V18c0 2.2-1.8 4-4 4s-4-1.8-4-4V4.5c0-.28-.22-.5-.5-.5H10v14c0 1.1.9 2 2 2s2-.9 2-2V4z" opacity={.4} />
+        <path d="M14 10.22c-1.31.35-2.69.35-4 0v-2.1c1.29.48 2.71.48 4 0zM16.5 2c.55 0 1 .45 1 1s-.45 1-1 1h-9c-.55 0-1-.45-1-1s.45-1 1-1z" />
     </IconBase>
   ))
 );

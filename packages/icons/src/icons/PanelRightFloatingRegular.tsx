@@ -7,8 +7,8 @@ type PanelRightFloatingRegularProps = Omit<IconBaseProps, 'children'>;
 const PanelRightFloatingRegular = memo(
   forwardRef<SVGSVGElement, PanelRightFloatingRegularProps>((props, ref) => (
     <IconBase ref={ref} {...props}>
-      <path d="M15 6.5a2 2 0 0 0-2 2v7c0 1.1.9 2 2 2h2.5a2 2 0 0 0 2-2v-7a2 2 0 0 0-2-2z" />
-        <path fillRule="evenodd" d="M5 3.25A3.75 3.75 0 0 0 1.25 7v10A3.75 3.75 0 0 0 5 20.75h14A3.75 3.75 0 0 0 22.75 17V7A3.75 3.75 0 0 0 19 3.25zm14 1.5c1.24 0 2.25 1 2.25 2.25v10c0 1.24-1 2.25-2.25 2.25H5c-1.24 0-2.25-1-2.25-2.25V7c0-1.24 1-2.25 2.25-2.25z" clipRule="evenodd" />
+      <path d="M15 6.5c-1.1 0-2 .9-2 2v7c0 1.1.9 2 2 2h2.5c1.1 0 2-.9 2-2v-7c0-1.1-.9-2-2-2z" />
+        <path fillRule="evenodd" d="M5 3.25C2.93 3.25 1.25 4.93 1.25 7v10c0 2.07 1.68 3.75 3.75 3.75h14c2.07 0 3.75-1.68 3.75-3.75V7c0-2.07-1.68-3.75-3.75-3.75zm14 1.5c1.24 0 2.25 1 2.25 2.25v10c0 1.24-1 2.25-2.25 2.25H5c-1.24 0-2.25-1-2.25-2.25V7c0-1.24 1-2.25 2.25-2.25z" clipRule="evenodd" />
     </IconBase>
   ))
 );

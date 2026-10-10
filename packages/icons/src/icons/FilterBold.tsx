@@ -7,7 +7,7 @@ type FilterBoldProps = Omit<IconBaseProps, 'children'>;
 const FilterBold = memo(
   forwardRef<SVGSVGElement, FilterBoldProps>((props, ref) => (
     <IconBase ref={ref} {...props}>
-      <path d="M14 16a1 1 0 1 1 0 2h-4a1 1 0 1 1 0-2zM18 11a1 1 0 1 1 0 2H6a1 1 0 1 1 0-2zM22 6a1 1 0 1 1 0 2H2a1 1 0 0 1 0-2z" />
+      <path d="M14 16c.55 0 1 .45 1 1s-.45 1-1 1h-4c-.55 0-1-.45-1-1s.45-1 1-1zM18 11c.55 0 1 .45 1 1s-.45 1-1 1H6c-.55 0-1-.45-1-1s.45-1 1-1zM22 6c.55 0 1 .45 1 1s-.45 1-1 1H2c-.55 0-1-.45-1-1s.45-1 1-1z" />
     </IconBase>
   ))
 );

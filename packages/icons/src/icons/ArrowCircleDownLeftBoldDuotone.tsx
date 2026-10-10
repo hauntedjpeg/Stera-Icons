@@ -7,8 +7,8 @@ type ArrowCircleDownLeftBoldDuotoneProps = Omit<IconBaseProps, 'children'>;
 const ArrowCircleDownLeftBoldDuotone = memo(
   forwardRef<SVGSVGElement, ArrowCircleDownLeftBoldDuotoneProps>((props, ref) => (
     <IconBase ref={ref} {...props}>
-      <path fillRule="evenodd" d="M4.93 4.93a10 10 0 1 1 14.14 14.14A10 10 0 0 1 4.93 4.93m12.73 1.41A8 8 0 1 0 6.34 17.66 8 8 0 0 0 17.66 6.34" clipRule="evenodd" opacity={.4} />
-        <path d="M14.12 8.46a1 1 0 1 1 1.42 1.42l-3.95 3.95h3.24a1 1 0 0 1 0 2H9.17a1 1 0 0 1-1-1V9.17a1 1 0 1 1 2 0v3.24z" />
+      <path fillRule="evenodd" d="M4.93 4.93c3.9-3.9 10.24-3.9 14.14 0s3.9 10.24 0 14.14-10.24 3.9-14.14 0-3.9-10.24 0-14.14m12.73 1.41c-3.13-3.12-8.2-3.12-11.32 0s-3.12 8.2 0 11.32 8.2 3.12 11.32 0 3.12-8.2 0-11.32" clipRule="evenodd" opacity={.4} />
+        <path d="M14.12 8.46c.4-.39 1.02-.39 1.42 0 .39.4.39 1.03 0 1.42l-3.95 3.95h3.24c.55 0 1 .45 1 1s-.45 1-1 1H9.17q-.41 0-.7-.3c-.2-.18-.3-.44-.3-.7V9.17c0-.55.45-1 1-1s1 .45 1 1v3.24z" />
     </IconBase>
   ))
 );

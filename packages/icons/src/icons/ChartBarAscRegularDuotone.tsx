@@ -7,8 +7,8 @@ type ChartBarAscRegularDuotoneProps = Omit<IconBaseProps, 'children'>;
 const ChartBarAscRegularDuotone = memo(
   forwardRef<SVGSVGElement, ChartBarAscRegularDuotoneProps>((props, ref) => (
     <IconBase ref={ref} {...props}>
-      <path d="M15.92 5.75a.5.5 0 0 0-.5.5v12h-1.5v-8.5a.5.5 0 0 0-.5-.5h-2.84a.5.5 0 0 0-.5.5v8.5h-1.5v-5a.5.5 0 0 0-.5-.5H5.25a.5.5 0 0 0-.5.5v5h-1.5v-5c0-1.1.9-2 2-2h2.83a2 2 0 0 1 .5.07V9.75c0-1.1.9-2 2-2h2.84a2 2 0 0 1 .5.07V6.25c0-1.1.9-2 2-2h2.83a2 2 0 0 1 2 2v12h-1.5v-12a.5.5 0 0 0-.5-.5z" opacity={.4} />
-        <path d="M21 18.25a.75.75 0 0 1 0 1.5H3a.75.75 0 0 1 0-1.5z" />
+      <path d="M15.92 5.75c-.28 0-.5.22-.5.5v12h-1.5v-8.5c0-.28-.23-.5-.5-.5h-2.84c-.27 0-.5.22-.5.5v8.5h-1.5v-5c0-.28-.22-.5-.5-.5H5.25c-.28 0-.5.22-.5.5v5h-1.5v-5c0-1.1.9-2 2-2h2.83q.26 0 .5.07V9.75c0-1.1.9-2 2-2h2.84q.26 0 .5.07V6.25c0-1.1.9-2 2-2h2.83c1.1 0 2 .9 2 2v12h-1.5v-12c0-.28-.22-.5-.5-.5z" opacity={.4} />
+        <path d="M21 18.25c.41 0 .75.34.75.75s-.34.75-.75.75H3c-.41 0-.75-.34-.75-.75s.34-.75.75-.75z" />
     </IconBase>
   ))
 );

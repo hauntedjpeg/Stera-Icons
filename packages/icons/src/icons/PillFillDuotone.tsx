@@ -7,8 +7,8 @@ type PillFillDuotoneProps = Omit<IconBaseProps, 'children'>;
 const PillFillDuotone = memo(
   forwardRef<SVGSVGElement, PillFillDuotoneProps>((props, ref) => (
     <IconBase ref={ref} {...props}>
-      <path d="M14.12 5.12a3.37 3.37 0 0 1 4.76 4.76L15 13.76 10.24 9z" opacity={.4} />
-        <path fillRule="evenodd" d="M12.88 3.88a5.12 5.12 0 1 1 7.24 7.24l-9 9a5.12 5.12 0 0 1-7.24-7.24zm6 1.24a3.37 3.37 0 0 0-4.76 0L10.24 9 15 13.76l3.88-3.88a3.37 3.37 0 0 0 0-4.76" clipRule="evenodd" />
+      <path d="M14.12 5.12c1.31-1.32 3.45-1.32 4.76 0 1.32 1.31 1.32 3.45 0 4.76L15 13.76 10.24 9z" opacity={.4} />
+        <path fillRule="evenodd" d="M12.88 3.88c2-2 5.24-2 7.24 0s2 5.24 0 7.24l-9 9c-2 2-5.24 2-7.24 0s-2-5.24 0-7.24zm6 1.24c-1.31-1.32-3.45-1.32-4.76 0L10.24 9 15 13.76l3.88-3.88c1.32-1.31 1.32-3.45 0-4.76" clipRule="evenodd" />
     </IconBase>
   ))
 );

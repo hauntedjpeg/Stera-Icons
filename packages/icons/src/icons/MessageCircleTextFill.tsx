@@ -7,7 +7,7 @@ type MessageCircleTextFillProps = Omit<IconBaseProps, 'children'>;
 const MessageCircleTextFill = memo(
   forwardRef<SVGSVGElement, MessageCircleTextFillProps>((props, ref) => (
     <IconBase ref={ref} {...props}>
-      <path fillRule="evenodd" d="M12 2.13c5.35 0 9.88 3.87 9.88 8.87s-4.53 8.88-9.88 8.88q-1.16 0-2.25-.24l-3.8 1.52a1.88 1.88 0 0 1-2.55-2.02l.47-3.02q.01-.04-.05-.15A8.2 8.2 0 0 1 2.12 11c0-5 4.53-8.87 9.88-8.87m-3.5 9.5a.88.88 0 0 0 0 1.74H12a.88.88 0 0 0 0-1.74zm0-3.5a.87.87 0 1 0 0 1.74h7a.88.88 0 0 0 0-1.74z" clipRule="evenodd" />
+      <path fillRule="evenodd" d="M12 2.13c5.35 0 9.88 3.87 9.88 8.87s-4.53 8.88-9.88 8.88q-1.16 0-2.25-.24l-3.8 1.52c-1.35.54-2.77-.59-2.55-2.02l.47-3.02q.01-.04-.05-.15c-1.07-1.41-1.7-3.12-1.7-4.97 0-5 4.53-8.87 9.88-8.87m-3.5 9.5c-.48 0-.87.39-.87.87s.39.88.87.88H12c.48 0 .88-.4.88-.88s-.4-.87-.88-.87zm0-3.5c-.48 0-.87.39-.87.87s.39.88.87.88h7c.48 0 .88-.4.88-.88s-.4-.87-.88-.87z" clipRule="evenodd" />
     </IconBase>
   ))
 );

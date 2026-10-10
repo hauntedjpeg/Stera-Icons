@@ -7,7 +7,7 @@ type ListSimpleBoldProps = Omit<IconBaseProps, 'children'>;
 const ListSimpleBold = memo(
   forwardRef<SVGSVGElement, ListSimpleBoldProps>((props, ref) => (
     <IconBase ref={ref} {...props}>
-      <path d="M6 13a1 1 0 0 1 1 1v3a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1v-3a1 1 0 0 1 1-1zM21 14.5a1 1 0 1 1 0 2H10a1 1 0 1 1 0-2zM6 6a1 1 0 0 1 1 1v3a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V7a1 1 0 0 1 1-1zM21 7.5a1 1 0 1 1 0 2H10a1 1 0 0 1 0-2z" />
+      <path d="M6 13c.55 0 1 .45 1 1v3c0 .55-.45 1-1 1H3c-.55 0-1-.45-1-1v-3c0-.55.45-1 1-1zM21 14.5c.55 0 1 .45 1 1s-.45 1-1 1H10c-.55 0-1-.45-1-1s.45-1 1-1zM6 6c.55 0 1 .45 1 1v3c0 .55-.45 1-1 1H3c-.55 0-1-.45-1-1V7c0-.55.45-1 1-1zM21 7.5c.55 0 1 .45 1 1s-.45 1-1 1H10c-.55 0-1-.45-1-1s.45-1 1-1z" />
     </IconBase>
   ))
 );

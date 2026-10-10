@@ -7,7 +7,7 @@ type ChevronFullLeftBoldProps = Omit<IconBaseProps, 'children'>;
 const ChevronFullLeftBold = memo(
   forwardRef<SVGSVGElement, ChevronFullLeftBoldProps>((props, ref) => (
     <IconBase ref={ref} {...props}>
-      <path fillRule="evenodd" d="M14.3 4.3A1 1 0 0 1 16 5v14a1 1 0 0 1-1.7.7l-7-7a1 1 0 0 1 0-1.4zM9.4 12 14 16.59V7.4z" clipRule="evenodd" />
+      <path fillRule="evenodd" d="M14.3 4.3c.28-.3.7-.38 1.08-.22.38.15.62.52.62.92v14c0 .4-.24.77-.62.92-.37.16-.8.07-1.09-.21l-7-7Q7.01 12.4 7 12q0-.42.3-.7zM9.4 12 14 16.59V7.4z" clipRule="evenodd" />
     </IconBase>
   ))
 );

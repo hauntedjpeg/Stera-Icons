@@ -7,7 +7,7 @@ type TextAlignCenterBoldProps = Omit<IconBaseProps, 'children'>;
 const TextAlignCenterBold = memo(
   forwardRef<SVGSVGElement, TextAlignCenterBoldProps>((props, ref) => (
     <IconBase ref={ref} {...props}>
-      <path d="M19 17a1 1 0 1 1 0 2H5a1 1 0 1 1 0-2zM17 11a1 1 0 1 1 0 2H7a1 1 0 1 1 0-2zM21 5a1 1 0 1 1 0 2H3a1 1 0 0 1 0-2z" />
+      <path d="M19 17c.55 0 1 .45 1 1s-.45 1-1 1H5c-.55 0-1-.45-1-1s.45-1 1-1zM17 11c.55 0 1 .45 1 1s-.45 1-1 1H7c-.55 0-1-.45-1-1s.45-1 1-1zM21 5c.55 0 1 .45 1 1s-.45 1-1 1H3c-.55 0-1-.45-1-1s.45-1 1-1z" />
     </IconBase>
   ))
 );

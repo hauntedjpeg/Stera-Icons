@@ -7,7 +7,7 @@ type GitCommitBoldProps = Omit<IconBaseProps, 'children'>;
 const GitCommitBold = memo(
   forwardRef<SVGSVGElement, GitCommitBoldProps>((props, ref) => (
     <IconBase ref={ref} {...props}>
-      <path fillRule="evenodd" d="M12 7a5 5 0 0 1 4.9 4H22a1 1 0 1 1 0 2h-5.1a5 5 0 0 1-9.8 0H2a1 1 0 1 1 0-2h5.1A5 5 0 0 1 12 7m0 2a3 3 0 1 0 0 6 3 3 0 0 0 0-6" clipRule="evenodd" />
+      <path fillRule="evenodd" d="M12 7c2.42 0 4.44 1.72 4.9 4H22c.55 0 1 .45 1 1s-.45 1-1 1h-5.1c-.46 2.28-2.48 4-4.9 4s-4.44-1.72-4.9-4H2c-.55 0-1-.45-1-1s.45-1 1-1h5.1c.46-2.28 2.48-4 4.9-4m0 2c-1.66 0-3 1.34-3 3s1.34 3 3 3 3-1.34 3-3-1.34-3-3-3" clipRule="evenodd" />
     </IconBase>
   ))
 );

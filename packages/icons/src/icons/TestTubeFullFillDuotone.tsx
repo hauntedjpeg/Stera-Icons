@@ -7,8 +7,8 @@ type TestTubeFullFillDuotoneProps = Omit<IconBaseProps, 'children'>;
 const TestTubeFullFillDuotone = memo(
   forwardRef<SVGSVGElement, TestTubeFullFillDuotoneProps>((props, ref) => (
     <IconBase ref={ref} {...props}>
-      <path fillRule="evenodd" d="M16 3.88a.6.6 0 0 0-.62.62v14a3.37 3.37 0 1 1-6.76 0v-14A.6.6 0 0 0 8 3.88zm-5 4.75a.9.9 0 0 0-.87.87v9a1.88 1.88 0 0 0 3.74 0v-9c0-.48-.39-.87-.87-.87z" clipRule="evenodd" opacity={.4} />
-        <path d="M13 8.63c.48 0 .87.39.88.87v9a1.88 1.88 0 0 1-3.76 0v-9a.9.9 0 0 1 .88-.87zM16 2.13a.88.88 0 0 1 0 1.75H8a.87.87 0 1 1 0-1.75z" />
+      <path fillRule="evenodd" d="M16 3.88c-.35 0-.62.27-.62.62v14c0 1.86-1.52 3.38-3.38 3.38s-3.37-1.52-3.37-3.38v-14c0-.35-.28-.62-.63-.62zm-5 4.75q-.36 0-.62.25-.25.26-.26.62v9c0 1.04.84 1.88 1.88 1.88s1.88-.84 1.88-1.88v-9c0-.48-.4-.87-.88-.87z" clipRule="evenodd" opacity={.4} />
+        <path d="M13 8.63c.48 0 .87.39.88.87v9c0 1.04-.84 1.88-1.88 1.88s-1.87-.84-1.87-1.88v-9q0-.36.25-.62.26-.25.62-.26zM16 2.13c.48 0 .88.39.88.87s-.4.88-.88.88H8c-.48 0-.87-.4-.87-.88s.39-.87.87-.87z" />
     </IconBase>
   ))
 );

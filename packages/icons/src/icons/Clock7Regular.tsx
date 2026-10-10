@@ -7,8 +7,8 @@ type Clock7RegularProps = Omit<IconBaseProps, 'children'>;
 const Clock7Regular = memo(
   forwardRef<SVGSVGElement, Clock7RegularProps>((props, ref) => (
     <IconBase ref={ref} {...props}>
-      <path d="M12 6.25c.41 0 .75.34.75.75v5.1l-.03.1-.02.08-.05.1-2 3.46a.75.75 0 1 1-1.3-.75l1.9-3.3V7c0-.41.34-.75.75-.75" />
-        <path fillRule="evenodd" d="M12 2.25a9.75 9.75 0 1 1 0 19.5 9.75 9.75 0 0 1 0-19.5m0 1.5a8.25 8.25 0 1 0 0 16.5 8.25 8.25 0 0 0 0-16.5" clipRule="evenodd" />
+      <path d="M12 6.25c.41 0 .75.34.75.75v5.1l-.03.1-.02.08-.01.02-.04.07-2 3.47c-.2.36-.67.48-1.03.27-.35-.2-.48-.66-.27-1.02l1.9-3.3V7c0-.41.34-.75.75-.75" />
+        <path fillRule="evenodd" d="M12 2.25c5.38 0 9.75 4.37 9.75 9.75s-4.37 9.75-9.75 9.75S2.25 17.38 2.25 12 6.62 2.25 12 2.25m0 1.5c-4.56 0-8.25 3.7-8.25 8.25s3.7 8.25 8.25 8.25 8.25-3.7 8.25-8.25-3.7-8.25-8.25-8.25" clipRule="evenodd" />
     </IconBase>
   ))
 );

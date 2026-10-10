@@ -7,8 +7,8 @@ type ChecklistUncheckedRegularDuotoneProps = Omit<IconBaseProps, 'children'>;
 const ChecklistUncheckedRegularDuotone = memo(
   forwardRef<SVGSVGElement, ChecklistUncheckedRegularDuotoneProps>((props, ref) => (
     <IconBase ref={ref} {...props}>
-      <path d="M20 15.25a.75.75 0 0 1 0 1.5h-8a.75.75 0 0 1 0-1.5zM20 7.25a.75.75 0 0 1 0 1.5h-8a.75.75 0 0 1 0-1.5z" opacity={0.4} />
-        <path fillRule="evenodd" d="M6 13.25a2.75 2.75 0 1 1 0 5.5 2.75 2.75 0 0 1 0-5.5m0 1.5a1.25 1.25 0 1 0 0 2.5 1.25 1.25 0 0 0 0-2.5M6 5.25a2.75 2.75 0 1 1 0 5.5 2.75 2.75 0 0 1 0-5.5m0 1.5a1.25 1.25 0 1 0 0 2.5 1.25 1.25 0 0 0 0-2.5" clipRule="evenodd" />
+      <path d="M20 15.25c.41 0 .75.34.75.75s-.34.75-.75.75h-8c-.41 0-.75-.34-.75-.75s.34-.75.75-.75zM20 7.25c.41 0 .75.34.75.75s-.34.75-.75.75h-8c-.41 0-.75-.34-.75-.75s.34-.75.75-.75z" opacity={0.4} />
+        <path fillRule="evenodd" d="M6 13.25c1.52 0 2.75 1.23 2.75 2.75S7.52 18.75 6 18.75 3.25 17.52 3.25 16 4.48 13.25 6 13.25m0 1.5c-.69 0-1.25.56-1.25 1.25s.56 1.25 1.25 1.25 1.25-.56 1.25-1.25-.56-1.25-1.25-1.25M6 5.25c1.52 0 2.75 1.23 2.75 2.75S7.52 10.75 6 10.75 3.25 9.52 3.25 8 4.48 5.25 6 5.25m0 1.5c-.69 0-1.25.56-1.25 1.25S5.31 9.25 6 9.25 7.25 8.69 7.25 8 6.69 6.75 6 6.75" clipRule="evenodd" />
     </IconBase>
   ))
 );

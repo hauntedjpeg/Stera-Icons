@@ -7,7 +7,7 @@ type TextBoldProps = Omit<IconBaseProps, 'children'>;
 const TextBold = memo(
   forwardRef<SVGSVGElement, TextBoldProps>((props, ref) => (
     <IconBase ref={ref} {...props}>
-      <path d="M17 3a3 3 0 0 1 3 3 1 1 0 0 1-2 .1v-.2a1 1 0 0 0-1-.9h-3a1 1 0 0 0-1 1v12a1 1 0 0 0 1 1h1a1 1 0 1 1 0 2H9a1 1 0 1 1 0-2h1a1 1 0 0 0 1-1V6a1 1 0 0 0-1-1H7a1 1 0 0 0-1 .9v.2A1 1 0 0 1 4 6a3 3 0 0 1 3-3z" />
+      <path d="M17 3c1.66 0 3 1.34 3 3 0 .55-.45 1-1 1-.52 0-.94-.4-1-.9v-.2c-.06-.5-.48-.9-1-.9h-3c-.55 0-1 .45-1 1v12c0 .55.45 1 1 1h1c.55 0 1 .45 1 1s-.45 1-1 1H9c-.55 0-1-.45-1-1s.45-1 1-1h1c.55 0 1-.45 1-1V6c0-.55-.45-1-1-1H7c-.52 0-.94.4-1 .9v.2c-.06.5-.48.9-1 .9-.55 0-1-.45-1-1 0-1.66 1.34-3 3-3z" />
     </IconBase>
   ))
 );

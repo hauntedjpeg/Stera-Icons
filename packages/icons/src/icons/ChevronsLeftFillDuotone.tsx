@@ -7,8 +7,8 @@ type ChevronsLeftFillDuotoneProps = Omit<IconBaseProps, 'children'>;
 const ChevronsLeftFillDuotone = memo(
   forwardRef<SVGSVGElement, ChevronsLeftFillDuotoneProps>((props, ref) => (
     <IconBase ref={ref} {...props}>
-      <path d="M10.12 4.12a1.25 1.25 0 1 1 1.76 1.76L5.77 12l6.11 6.12a1.25 1.25 0 1 1-1.76 1.76l-7-7a1.25 1.25 0 0 1 0-1.76z" />
-        <path d="M18.12 4.12a1.25 1.25 0 1 1 1.76 1.76L13.77 12l6.11 6.12a1.25 1.25 0 1 1-1.76 1.76l-7-7a1.25 1.25 0 0 1 0-1.76z" opacity={.4} />
+      <path d="M10.12 4.12c.48-.5 1.28-.5 1.76 0 .5.48.5 1.28 0 1.76L5.77 12l6.11 6.12c.5.48.5 1.28 0 1.76-.48.5-1.28.5-1.76 0l-7-7c-.24-.23-.37-.55-.37-.88s.13-.65.37-.88z" />
+        <path d="M18.12 4.12c.48-.5 1.28-.5 1.76 0 .5.48.5 1.28 0 1.76L13.77 12l6.11 6.12c.5.48.5 1.28 0 1.76-.48.5-1.28.5-1.76 0l-7-7c-.24-.23-.37-.55-.37-.88s.13-.65.37-.88z" opacity={.4} />
     </IconBase>
   ))
 );

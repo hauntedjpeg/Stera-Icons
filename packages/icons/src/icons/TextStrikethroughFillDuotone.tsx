@@ -7,8 +7,8 @@ type TextStrikethroughFillDuotoneProps = Omit<IconBaseProps, 'children'>;
 const TextStrikethroughFillDuotone = memo(
   forwardRef<SVGSVGElement, TextStrikethroughFillDuotoneProps>((props, ref) => (
     <IconBase ref={ref} {...props}>
-      <path d="M18.47 13.25q.76 1.22.78 2.75c0 2.9-2.35 5.25-5.25 5.25H7a1.25 1.25 0 1 1 0-2.5h7a2.75 2.75 0 1 0 0-5.5zM17 2.75a1.25 1.25 0 1 1 0 2.5h-6a2.75 2.75 0 0 0 0 5.5H6.53Q5.77 9.53 5.75 8c0-2.9 2.35-5.25 5.25-5.25z" opacity={0.4} />
-        <path d="M21 10.75a1.25 1.25 0 1 1 0 2.5H3a1.25 1.25 0 1 1 0-2.5z" />
+      <path d="M18.47 13.25q.76 1.22.78 2.75c0 2.9-2.35 5.25-5.25 5.25H7c-.69 0-1.25-.56-1.25-1.25s.56-1.25 1.25-1.25h7c1.52 0 2.75-1.23 2.75-2.75s-1.23-2.75-2.75-2.75zM17 2.75c.69 0 1.25.56 1.25 1.25S17.69 5.25 17 5.25h-6C9.48 5.25 8.25 6.48 8.25 8s1.23 2.75 2.75 2.75H6.53Q5.77 9.53 5.75 8c0-2.9 2.35-5.25 5.25-5.25z" opacity={0.4} />
+        <path d="M21 10.75c.69 0 1.25.56 1.25 1.25s-.56 1.25-1.25 1.25H3c-.69 0-1.25-.56-1.25-1.25s.56-1.25 1.25-1.25z" />
     </IconBase>
   ))
 );

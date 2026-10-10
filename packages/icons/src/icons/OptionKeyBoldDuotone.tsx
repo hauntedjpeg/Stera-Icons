@@ -7,8 +7,8 @@ type OptionKeyBoldDuotoneProps = Omit<IconBaseProps, 'children'>;
 const OptionKeyBoldDuotone = memo(
   forwardRef<SVGSVGElement, OptionKeyBoldDuotoneProps>((props, ref) => (
     <IconBase ref={ref} {...props}>
-      <path d="M21 4a1 1 0 0 1 0 2h-6.5a1 1 0 1 1 0-2z" opacity={.4} />
-        <path d="M9 4a1 1 0 0 1 .92.6L15.66 18H21a1 1 0 1 1 0 2h-6a1 1 0 0 1-.92-.6L8.34 6H3a1 1 0 0 1 0-2z" />
+      <path d="M21 4c.55 0 1 .45 1 1s-.45 1-1 1h-6.5c-.55 0-1-.45-1-1s.45-1 1-1z" opacity={.4} />
+        <path d="M9 4c.4 0 .76.24.92.6L15.66 18H21c.55 0 1 .45 1 1s-.45 1-1 1h-6c-.4 0-.76-.24-.92-.6L8.34 6H3c-.55 0-1-.45-1-1s.45-1 1-1z" />
     </IconBase>
   ))
 );

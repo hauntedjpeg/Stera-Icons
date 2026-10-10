@@ -7,8 +7,8 @@ type StairsBoldDuotoneProps = Omit<IconBaseProps, 'children'>;
 const StairsBoldDuotone = memo(
   forwardRef<SVGSVGElement, StairsBoldDuotoneProps>((props, ref) => (
     <IconBase ref={ref} {...props}>
-      <path d="M3.5 16.5a1 1 0 0 0 1 1h1v4a1 1 0 1 1-2 0zM9.5 10.5a1 1 0 0 0 1 1h1v5a1 1 0 0 0-1-1h-1zM15.5 4.5a1 1 0 0 0 1 1h1v5a1 1 0 0 0-1-1h-1z" opacity={0.4} />
-        <path d="M10.5 15.5a1 1 0 1 1 0 2h-6a1 1 0 1 1 0-2zM16.5 9.5a1 1 0 1 1 0 2h-6a1 1 0 1 1 0-2zM21.5 3.5a1 1 0 1 1 0 2h-5a1 1 0 1 1 0-2z" />
+      <path d="M3.5 16.5c0 .55.45 1 1 1h1v4c0 .55-.45 1-1 1s-1-.45-1-1zM9.5 10.5c0 .55.45 1 1 1h1v5c0-.55-.45-1-1-1h-1zM15.5 4.5c0 .55.45 1 1 1h1v5c0-.55-.45-1-1-1h-1z" opacity={0.4} />
+        <path d="M10.5 15.5c.55 0 1 .45 1 1s-.45 1-1 1h-6c-.55 0-1-.45-1-1s.45-1 1-1zM16.5 9.5c.55 0 1 .45 1 1s-.45 1-1 1h-6c-.55 0-1-.45-1-1s.45-1 1-1zM21.5 3.5c.55 0 1 .45 1 1s-.45 1-1 1h-5c-.55 0-1-.45-1-1s.45-1 1-1z" />
     </IconBase>
   ))
 );

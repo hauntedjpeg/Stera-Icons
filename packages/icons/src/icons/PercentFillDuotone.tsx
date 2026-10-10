@@ -7,8 +7,8 @@ type PercentFillDuotoneProps = Omit<IconBaseProps, 'children'>;
 const PercentFillDuotone = memo(
   forwardRef<SVGSVGElement, PercentFillDuotoneProps>((props, ref) => (
     <IconBase ref={ref} {...props}>
-      <path d="M17.5 14.13a3.37 3.37 0 1 1 0 6.74 3.37 3.37 0 0 1 0-6.75M6.5 3.13a3.38 3.38 0 1 1 0 6.75 3.38 3.38 0 0 1 0-6.76" opacity={0.4} />
-        <path d="M19.38 3.38a.88.88 0 0 1 1.24 1.24l-16 16a.88.88 0 0 1-1.24-1.24z" />
+      <path d="M17.5 14.13c1.86 0 3.38 1.5 3.38 3.37 0 1.86-1.52 3.38-3.38 3.38s-3.37-1.52-3.37-3.38 1.5-3.37 3.37-3.37M6.5 3.13c1.86 0 3.38 1.5 3.38 3.37 0 1.86-1.52 3.38-3.38 3.38S3.13 8.36 3.13 6.5s1.5-3.37 3.37-3.37" opacity={0.4} />
+        <path d="M19.38 3.38c.34-.34.9-.34 1.24 0s.34.9 0 1.24l-16 16c-.34.34-.9.34-1.24 0s-.34-.9 0-1.24z" />
     </IconBase>
   ))
 );

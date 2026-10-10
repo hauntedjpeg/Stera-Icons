@@ -7,8 +7,8 @@ type FlowDownArrowBoldDuotoneProps = Omit<IconBaseProps, 'children'>;
 const FlowDownArrowBoldDuotone = memo(
   forwardRef<SVGSVGElement, FlowDownArrowBoldDuotoneProps>((props, ref) => (
     <IconBase ref={ref} {...props}>
-      <path fillRule="evenodd" d="M12 1a5 5 0 1 1 0 10 5 5 0 0 1 0-10m0 2a3 3 0 1 0 0 6 3 3 0 0 0 0-6" clipRule="evenodd" opacity={.4} />
-        <path d="m13 19.59 3.3-3.3a1 1 0 0 1 1.4 1.42l-5 5a1 1 0 0 1-.4.25l-.1.02h-.03a1 1 0 0 1-.34 0h-.06l-.06-.02a1 1 0 0 1-.42-.25l-5-5a1 1 0 1 1 1.42-1.42L11 19.6v-8.7a5 5 0 0 0 2 0z" />
+      <path fillRule="evenodd" d="M12 1c2.76 0 5 2.24 5 5s-2.24 5-5 5-5-2.24-5-5 2.24-5 5-5m0 2c-1.66 0-3 1.34-3 3s1.34 3 3 3 3-1.34 3-3-1.34-3-3-3" clipRule="evenodd" opacity={.4} />
+        <path d="m13 19.59 3.3-3.3c.38-.39 1.02-.39 1.4 0 .4.4.4 1.03 0 1.42l-5 5-.15.12-.12.07-.14.06-.1.02h-.02L12 23q-.08 0-.17-.02h-.06l-.06-.02-.14-.06-.12-.06-.16-.13-5-5c-.39-.4-.39-1.03 0-1.42.4-.39 1.03-.39 1.42 0L11 19.6v-8.7q.49.1 1 .11t1-.1z" />
     </IconBase>
   ))
 );

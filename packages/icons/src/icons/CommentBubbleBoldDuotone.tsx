@@ -7,8 +7,8 @@ type CommentBubbleBoldDuotoneProps = Omit<IconBaseProps, 'children'>;
 const CommentBubbleBoldDuotone = memo(
   forwardRef<SVGSVGElement, CommentBubbleBoldDuotoneProps>((props, ref) => (
     <IconBase ref={ref} {...props}>
-      <path d="M12 2.5a9.5 9.5 0 0 1 0 19H5.93a1 1 0 0 0 0-2H12A7.5 7.5 0 1 0 4.5 12v6.07a1 1 0 0 0-2 0V12A9.5 9.5 0 0 1 12 2.5" opacity={.4} />
-        <path d="M3.5 17.07a1 1 0 0 1 1 1l.01.6a1 1 0 0 0 .82.82l.6.01a1 1 0 0 1 0 2q-.53.01-.93-.04A3 3 0 0 1 2.54 19q-.05-.4-.04-.93a1 1 0 0 1 1-1" />
+      <path d="M12 2.5c5.25 0 9.5 4.25 9.5 9.5s-4.25 9.5-9.5 9.5H5.93c.55 0 1-.45 1-1s-.45-1-1-1H12c4.14 0 7.5-3.36 7.5-7.5S16.14 4.5 12 4.5 4.5 7.86 4.5 12v6.07c0-.55-.45-1-1-1s-1 .45-1 1V12c0-5.25 4.25-9.5 9.5-9.5" opacity={.4} />
+        <path d="M3.5 17.07c.55 0 1 .45 1 1l.01.6c.07.42.4.74.82.82l.6.01c.55 0 1 .45 1 1s-.45 1-1 1q-.53.01-.93-.04c-1.26-.22-2.24-1.2-2.46-2.46q-.05-.4-.04-.93c0-.55.45-1 1-1" />
     </IconBase>
   ))
 );

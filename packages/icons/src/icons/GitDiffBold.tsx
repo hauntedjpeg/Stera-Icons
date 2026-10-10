@@ -7,7 +7,7 @@ type GitDiffBoldProps = Omit<IconBaseProps, 'children'>;
 const GitDiffBold = memo(
   forwardRef<SVGSVGElement, GitDiffBoldProps>((props, ref) => (
     <IconBase ref={ref} {...props}>
-      <path d="M18 19a1 1 0 1 1 0 2H6a1 1 0 1 1 0-2zM12 3a1 1 0 0 1 1 1v5h5a1 1 0 1 1 0 2h-5v5a1 1 0 1 1-2 0v-5H6a1 1 0 1 1 0-2h5V4a1 1 0 0 1 1-1" />
+      <path d="M18 19c.55 0 1 .45 1 1s-.45 1-1 1H6c-.55 0-1-.45-1-1s.45-1 1-1zM12 3c.55 0 1 .45 1 1v5h5c.55 0 1 .45 1 1s-.45 1-1 1h-5v5c0 .55-.45 1-1 1s-1-.45-1-1v-5H6c-.55 0-1-.45-1-1s.45-1 1-1h5V4c0-.55.45-1 1-1" />
     </IconBase>
   ))
 );

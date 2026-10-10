@@ -8,7 +8,7 @@ const ChartBarDescBoldDuotone = memo(
   forwardRef<SVGSVGElement, ChartBarDescBoldDuotoneProps>((props, ref) => (
     <IconBase ref={ref} {...props}>
       <path d="M8.08 6c.14 0 .25.11.25.25V18h2V9.75c0-.14.12-.25.25-.25h2.84c.13 0 .25.11.25.25V18h2v-4.75q.01-.23.25-.25h2.83q.23.02.25.25V18h2v-4.75c0-1.24-1-2.25-2.25-2.25h-2.83l-.25.01V9.75c0-1.24-1.01-2.25-2.25-2.25h-2.84l-.25.01V6.25c0-1.24-1-2.25-2.25-2.25H5.25C4.01 4 3 5 3 6.25V18h2V6.25c0-.14.11-.25.25-.25z" opacity={.4} />
-        <path d="M3 18a1 1 0 1 0 0 2h18a1 1 0 1 0 0-2z" />
+        <path d="M3 18c-.55 0-1 .45-1 1s.45 1 1 1h18c.55 0 1-.45 1-1s-.45-1-1-1z" />
     </IconBase>
   ))
 );

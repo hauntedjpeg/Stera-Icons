@@ -7,8 +7,8 @@ type ChevronInwardBoldDuotoneProps = Omit<IconBaseProps, 'children'>;
 const ChevronInwardBoldDuotone = memo(
   forwardRef<SVGSVGElement, ChevronInwardBoldDuotoneProps>((props, ref) => (
     <IconBase ref={ref} {...props}>
-      <path d="M17.3 2.3a1 1 0 1 1 1.4 1.4l-6 6a1 1 0 0 1-1.4 0l-6-6a1 1 0 1 1 1.4-1.4L12 7.58z" />
-        <path d="M11.3 14.3a1 1 0 0 1 1.4 0l6 6a1 1 0 0 1-1.4 1.4L12 16.42l-5.3 5.3a1 1 0 0 1-1.4-1.42z" opacity={.4} />
+      <path d="M17.3 2.3c.38-.4 1.02-.4 1.4 0 .4.38.4 1.02 0 1.4l-6 6c-.38.4-1.02.4-1.4 0l-6-6c-.4-.38-.4-1.02 0-1.4.38-.4 1.02-.4 1.4 0L12 7.58z" />
+        <path d="M11.3 14.3c.38-.4 1.02-.4 1.4 0l6 6c.4.38.4 1.02 0 1.4-.38.4-1.02.4-1.4 0L12 16.42l-5.3 5.3c-.38.39-1.02.39-1.4 0-.4-.4-.4-1.03 0-1.42z" opacity={.4} />
     </IconBase>
   ))
 );

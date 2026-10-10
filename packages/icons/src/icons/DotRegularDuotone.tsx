@@ -7,8 +7,8 @@ type DotRegularDuotoneProps = Omit<IconBaseProps, 'children'>;
 const DotRegularDuotone = memo(
   forwardRef<SVGSVGElement, DotRegularDuotoneProps>((props, ref) => (
     <IconBase ref={ref} {...props}>
-      <path d="M12 7.25a4.75 4.75 0 1 1 0 9.5v-1.5a3.25 3.25 0 0 0 0-6.5z" opacity={.4} />
-        <path d="M12 8.75a3.25 3.25 0 0 0 0 6.5v1.5a4.75 4.75 0 1 1 0-9.5z" />
+      <path d="M12 7.25c2.62 0 4.75 2.13 4.75 4.75s-2.13 4.75-4.75 4.75v-1.5c1.8 0 3.25-1.46 3.25-3.25 0-1.8-1.46-3.25-3.25-3.25z" opacity={.4} />
+        <path d="M12 8.75c-1.8 0-3.25 1.46-3.25 3.25 0 1.8 1.46 3.25 3.25 3.25v1.5c-2.62 0-4.75-2.13-4.75-4.75S9.38 7.25 12 7.25z" />
     </IconBase>
   ))
 );

@@ -7,7 +7,7 @@ type MoreRegularProps = Omit<IconBaseProps, 'children'>;
 const MoreRegular = memo(
   forwardRef<SVGSVGElement, MoreRegularProps>((props, ref) => (
     <IconBase ref={ref} {...props}>
-      <path d="M6.5 12a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0M13.5 12a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0M20.5 12a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0" />
+      <path d="M6.5 12c0 .83-.67 1.5-1.5 1.5s-1.5-.67-1.5-1.5.67-1.5 1.5-1.5 1.5.67 1.5 1.5M13.5 12c0 .83-.67 1.5-1.5 1.5s-1.5-.67-1.5-1.5.67-1.5 1.5-1.5 1.5.67 1.5 1.5M20.5 12c0 .83-.67 1.5-1.5 1.5s-1.5-.67-1.5-1.5.67-1.5 1.5-1.5 1.5.67 1.5 1.5" />
     </IconBase>
   ))
 );

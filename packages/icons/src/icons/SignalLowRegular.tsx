@@ -7,7 +7,7 @@ type SignalLowRegularProps = Omit<IconBaseProps, 'children'>;
 const SignalLowRegular = memo(
   forwardRef<SVGSVGElement, SignalLowRegularProps>((props, ref) => (
     <IconBase ref={ref} {...props}>
-      <path d="M3.5 17.5a1 1 0 0 1 1 1v1a1 1 0 0 1-1 1h-1a1 1 0 0 1-1-1v-1a1 1 0 0 1 1-1zM9.5 12.83a1 1 0 0 1 1 1v5.67a1 1 0 0 1-1 1h-1a1 1 0 0 1-1-1v-5.67a1 1 0 0 1 1-1z" />
+      <path d="M3.5 17.5c.55 0 1 .45 1 1v1c0 .55-.45 1-1 1h-1c-.55 0-1-.45-1-1v-1c0-.55.45-1 1-1zM9.5 12.83c.55 0 1 .45 1 1v5.67c0 .55-.45 1-1 1h-1c-.55 0-1-.45-1-1v-5.67c0-.55.45-1 1-1z" />
     </IconBase>
   ))
 );

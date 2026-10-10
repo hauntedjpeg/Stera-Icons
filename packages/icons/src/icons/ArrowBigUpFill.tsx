@@ -7,7 +7,7 @@ type ArrowBigUpFillProps = Omit<IconBaseProps, 'children'>;
 const ArrowBigUpFill = memo(
   forwardRef<SVGSVGElement, ArrowBigUpFillProps>((props, ref) => (
     <IconBase ref={ref} {...props}>
-      <path d="M10.5 3.77a2.13 2.13 0 0 1 3 0l8.27 8.26c.86.86.25 2.34-.98 2.34h-3.92V19c0 1.04-.83 1.87-1.87 1.87H9A1.9 1.9 0 0 1 7.12 19v-4.63H3.21a1.38 1.38 0 0 1-.98-2.34z" />
+      <path d="M10.5 3.77c.83-.83 2.17-.83 3 0l8.27 8.26c.86.86.25 2.34-.98 2.34h-3.92V19c0 1.04-.83 1.87-1.87 1.87H9c-1.04 0-1.88-.83-1.88-1.87v-4.63H3.21c-1.23 0-1.84-1.48-.98-2.34z" />
     </IconBase>
   ))
 );

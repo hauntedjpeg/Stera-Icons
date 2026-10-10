@@ -7,8 +7,8 @@ type SearchMinusRegularProps = Omit<IconBaseProps, 'children'>;
 const SearchMinusRegular = memo(
   forwardRef<SVGSVGElement, SearchMinusRegularProps>((props, ref) => (
     <IconBase ref={ref} {...props}>
-      <path d="M14 10.25a.75.75 0 0 1 0 1.5H8a.75.75 0 0 1 0-1.5z" />
-        <path fillRule="evenodd" d="M11 2.75a8.25 8.25 0 0 1 6.65 13.13l3.73 3.74a1.25 1.25 0 0 1-1.76 1.76l-3.74-3.73A8.25 8.25 0 1 1 11 2.75m0 1.5a6.75 6.75 0 1 0 0 13.5 6.75 6.75 0 0 0 0-13.5" clipRule="evenodd" />
+      <path d="M14 10.25c.41 0 .75.34.75.75s-.34.75-.75.75H8c-.41 0-.75-.34-.75-.75s.34-.75.75-.75z" />
+        <path fillRule="evenodd" d="M11 2.75c4.56 0 8.25 3.7 8.25 8.25 0 1.83-.6 3.51-1.6 4.88l3.73 3.74c.5.48.5 1.28 0 1.76-.48.5-1.28.5-1.76 0l-3.74-3.73c-1.37 1-3.05 1.6-4.88 1.6-4.56 0-8.25-3.7-8.25-8.25S6.45 2.75 11 2.75m0 1.5c-3.73 0-6.75 3.02-6.75 6.75s3.02 6.75 6.75 6.75 6.75-3.02 6.75-6.75S14.73 4.25 11 4.25" clipRule="evenodd" />
     </IconBase>
   ))
 );

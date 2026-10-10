@@ -7,8 +7,8 @@ type LineSegmentVFillDuotoneProps = Omit<IconBaseProps, 'children'>;
 const LineSegmentVFillDuotone = memo(
   forwardRef<SVGSVGElement, LineSegmentVFillDuotoneProps>((props, ref) => (
     <IconBase ref={ref} {...props}>
-      <path d="M12.88 16.23a4 4 0 0 0-1.76 0V7.77a4 4 0 0 0 1.76 0z" opacity={.4} />
-        <path d="M12 16.13a3.88 3.88 0 1 1 0 7.75 3.88 3.88 0 0 1 0-7.75M12 .13a3.88 3.88 0 1 1 0 7.75 3.88 3.88 0 0 1 0-7.75" />
+      <path d="M12.88 16.23q-.43-.1-.88-.1-.46 0-.87.1V7.77q.42.1.87.1.46 0 .88-.1z" opacity={.4} />
+        <path d="M12 16.13c2.14 0 3.88 1.73 3.88 3.87s-1.74 3.88-3.88 3.88S8.13 22.14 8.13 20s1.73-3.87 3.87-3.87M12 .13c2.14 0 3.88 1.73 3.88 3.87S14.14 7.88 12 7.88 8.13 6.14 8.13 4 9.86.13 12 .13" />
     </IconBase>
   ))
 );

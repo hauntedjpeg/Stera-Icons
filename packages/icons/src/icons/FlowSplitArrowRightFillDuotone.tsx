@@ -7,8 +7,8 @@ type FlowSplitArrowRightFillDuotoneProps = Omit<IconBaseProps, 'children'>;
 const FlowSplitArrowRightFillDuotone = memo(
   forwardRef<SVGSVGElement, FlowSplitArrowRightFillDuotoneProps>((props, ref) => (
     <IconBase ref={ref} {...props}>
-      <path d="M18 4v2h-3a1 1 0 0 0-1 1v10a1 1 0 0 0 1 1h3v2h-3a3 3 0 0 1-3-3v-4H8.87a4 4 0 0 0 0-2H12V7a3 3 0 0 1 3-3z" opacity={.4} />
-        <path d="M18 8a1 1 0 0 0 1.7.7l3-3a1 1 0 0 0 0-1.4l-3-3A1 1 0 0 0 18 2zM18 22a1 1 0 0 0 1.7.7l3-3a1 1 0 0 0 0-1.4l-3-3a1 1 0 0 0-1.7.7zM1 12a4 4 0 1 0 8 0 4 4 0 0 0-8 0" />
+      <path d="M18 4v2h-3c-.55 0-1 .45-1 1v10c0 .55.45 1 1 1h3v2h-3c-1.66 0-3-1.34-3-3v-4H8.87q.13-.48.13-1t-.13-1H12V7c0-1.66 1.34-3 3-3z" opacity={.4} />
+        <path d="M18 8c0 .4.24.77.62.92.37.16.8.07 1.09-.21l3-3q.28-.3.29-.71 0-.42-.3-.7l-3-3c-.28-.3-.7-.38-1.08-.22-.38.15-.62.52-.62.92zM18 22c0 .4.24.77.62.92.37.16.8.07 1.09-.21l3-3q.28-.3.29-.71 0-.42-.3-.7l-3-3c-.28-.3-.7-.38-1.08-.22-.38.15-.62.52-.62.92zM1 12c0 2.2 1.8 4 4 4s4-1.8 4-4-1.8-4-4-4-4 1.8-4 4" />
     </IconBase>
   ))
 );

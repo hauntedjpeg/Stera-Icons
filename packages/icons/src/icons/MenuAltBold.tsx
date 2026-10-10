@@ -7,7 +7,7 @@ type MenuAltBoldProps = Omit<IconBaseProps, 'children'>;
 const MenuAltBold = memo(
   forwardRef<SVGSVGElement, MenuAltBoldProps>((props, ref) => (
     <IconBase ref={ref} {...props}>
-      <path d="M14 17a1 1 0 1 1 0 2H4a1 1 0 1 1 0-2zM20 11a1 1 0 1 1 0 2H4a1 1 0 1 1 0-2zM20 5a1 1 0 1 1 0 2H4a1 1 0 0 1 0-2z" />
+      <path d="M14 17c.55 0 1 .45 1 1s-.45 1-1 1H4c-.55 0-1-.45-1-1s.45-1 1-1zM20 11c.55 0 1 .45 1 1s-.45 1-1 1H4c-.55 0-1-.45-1-1s.45-1 1-1zM20 5c.55 0 1 .45 1 1s-.45 1-1 1H4c-.55 0-1-.45-1-1s.45-1 1-1z" />
     </IconBase>
   ))
 );

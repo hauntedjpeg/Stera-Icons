@@ -7,7 +7,7 @@ type SignalAltLowBoldProps = Omit<IconBaseProps, 'children'>;
 const SignalAltLowBold = memo(
   forwardRef<SVGSVGElement, SignalAltLowBoldProps>((props, ref) => (
     <IconBase ref={ref} {...props}>
-      <path d="M5 15.13c1.04 0 1.88.83 1.88 1.87v2c0 1.04-.84 1.88-1.88 1.88H4A1.9 1.9 0 0 1 2.13 19v-2c0-1.04.83-1.87 1.87-1.87z" />
+      <path d="M5 15.13c1.04 0 1.88.83 1.88 1.87v2c0 1.04-.84 1.88-1.88 1.88H4c-1.04 0-1.87-.84-1.87-1.88v-2c0-1.04.83-1.87 1.87-1.87z" />
     </IconBase>
   ))
 );

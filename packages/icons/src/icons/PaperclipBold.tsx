@@ -7,7 +7,7 @@ type PaperclipBoldProps = Omit<IconBaseProps, 'children'>;
 const PaperclipBold = memo(
   forwardRef<SVGSVGElement, PaperclipBoldProps>((props, ref) => (
     <IconBase ref={ref} {...props}>
-      <path d="M10.5 2A4.5 4.5 0 0 1 15 6.5V14a3 3 0 1 1-6 0V8a1 1 0 0 1 2 0v6a1 1 0 1 0 2 0V6.5a2.5 2.5 0 0 0-5 0V16a4 4 0 0 0 8 0V8a1 1 0 1 1 2 0v8a6 6 0 0 1-12 0V6.5A4.5 4.5 0 0 1 10.5 2" />
+      <path d="M10.5 2C12.99 2 15 4.01 15 6.5V14c0 1.66-1.34 3-3 3s-3-1.34-3-3V8c0-.55.45-1 1-1s1 .45 1 1v6c0 .55.45 1 1 1s1-.45 1-1V6.5C13 5.12 11.88 4 10.5 4S8 5.12 8 6.5V16c0 2.2 1.8 4 4 4s4-1.8 4-4V8c0-.55.45-1 1-1s1 .45 1 1v8c0 3.31-2.69 6-6 6s-6-2.69-6-6V6.5C6 4.01 8.01 2 10.5 2" />
     </IconBase>
   ))
 );

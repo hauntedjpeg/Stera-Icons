@@ -7,7 +7,7 @@ type FlashRegularProps = Omit<IconBaseProps, 'children'>;
 const FlashRegular = memo(
   forwardRef<SVGSVGElement, FlashRegularProps>((props, ref) => (
     <IconBase ref={ref} {...props}>
-      <path fillRule="evenodd" d="M15.88 1.44a.75.75 0 0 1 1.2.79l-2.4 7.48 4.56 1.58a.75.75 0 0 1 .25 1.27l-11.37 10a.75.75 0 0 1-1.21-.79l2.4-7.48-4.56-1.58a.75.75 0 0 1-.25-1.27zM6.46 11.7l4.03 1.4c.39.13.6.55.47.94l-1.8 5.6 8.38-7.36-4.04-1.4a.75.75 0 0 1-.46-.94l1.79-5.6z" clipRule="evenodd" />
+      <path fillRule="evenodd" d="M15.88 1.44c.25-.23.62-.25.9-.07.29.19.41.54.3.86l-2.4 7.48 4.56 1.58q.4.15.5.57c.05.26-.05.53-.25.7l-11.37 10c-.25.23-.62.25-.9.07-.29-.19-.41-.54-.31-.86l2.4-7.48-4.56-1.58c-.25-.09-.44-.3-.49-.57s.04-.53.24-.7zM6.46 11.7l4.03 1.4c.39.13.6.55.47.94l-1.8 5.6 8.38-7.36-4.04-1.4c-.38-.13-.59-.55-.46-.94l1.79-5.6z" clipRule="evenodd" />
     </IconBase>
   ))
 );

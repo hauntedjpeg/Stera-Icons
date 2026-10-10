@@ -7,8 +7,8 @@ type ArrowURightTopBoldDuotoneProps = Omit<IconBaseProps, 'children'>;
 const ArrowURightTopBoldDuotone = memo(
   forwardRef<SVGSVGElement, ArrowURightTopBoldDuotoneProps>((props, ref) => (
     <IconBase ref={ref} {...props}>
-      <path d="m18.59 8-1 1H10.5a4.5 4.5 0 1 0 0 9H15a1 1 0 1 1 0 2h-4.5a6.5 6.5 0 1 1 0-13h7.09z" opacity={.4} />
-        <path d="M15.3 3.3a1 1 0 0 1 1.4 0l4 4 .07.07a1 1 0 0 1-.06 1.34l-4 4a1 1 0 1 1-1.42-1.42L18.6 8l-3.3-3.3a1 1 0 0 1 0-1.4" />
+      <path d="m18.59 8-1 1H10.5C8.01 9 6 11.01 6 13.5S8.01 18 10.5 18H15c.55 0 1 .45 1 1s-.45 1-1 1h-4.5C6.91 20 4 17.09 4 13.5S6.91 7 10.5 7h7.09z" opacity={.4} />
+        <path d="M15.3 3.3c.38-.4 1.02-.4 1.4 0l4 4 .07.07q.23.27.23.63 0 .42-.3.7l-4 4c-.38.4-1.02.4-1.4 0-.4-.38-.4-1.02 0-1.4L18.58 8l-3.3-3.3c-.39-.38-.39-1.02 0-1.4" />
     </IconBase>
   ))
 );

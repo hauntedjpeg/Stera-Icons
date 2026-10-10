@@ -7,8 +7,8 @@ type DragHandleBoldDuotoneProps = Omit<IconBaseProps, 'children'>;
 const DragHandleBoldDuotone = memo(
   forwardRef<SVGSVGElement, DragHandleBoldDuotoneProps>((props, ref) => (
     <IconBase ref={ref} {...props}>
-      <path d="M15.5 17a2 2 0 1 1 0 4 2 2 0 0 1 0-4M15.5 10a2 2 0 1 1 0 4 2 2 0 0 1 0-4M15.5 3a2 2 0 1 1 0 4 2 2 0 0 1 0-4" opacity={0.4} />
-        <path d="M8.5 17a2 2 0 1 1 0 4 2 2 0 0 1 0-4M8.5 10a2 2 0 1 1 0 4 2 2 0 0 1 0-4M8.5 3a2 2 0 1 1 0 4 2 2 0 0 1 0-4" />
+      <path d="M15.5 17c1.1 0 2 .9 2 2s-.9 2-2 2-2-.9-2-2 .9-2 2-2M15.5 10c1.1 0 2 .9 2 2s-.9 2-2 2-2-.9-2-2 .9-2 2-2M15.5 3c1.1 0 2 .9 2 2s-.9 2-2 2-2-.9-2-2 .9-2 2-2" opacity={0.4} />
+        <path d="M8.5 17c1.1 0 2 .9 2 2s-.9 2-2 2-2-.9-2-2 .9-2 2-2M8.5 10c1.1 0 2 .9 2 2s-.9 2-2 2-2-.9-2-2 .9-2 2-2M8.5 3c1.1 0 2 .9 2 2s-.9 2-2 2-2-.9-2-2 .9-2 2-2" />
     </IconBase>
   ))
 );

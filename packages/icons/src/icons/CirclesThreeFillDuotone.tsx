@@ -7,8 +7,8 @@ type CirclesThreeFillDuotoneProps = Omit<IconBaseProps, 'children'>;
 const CirclesThreeFillDuotone = memo(
   forwardRef<SVGSVGElement, CirclesThreeFillDuotoneProps>((props, ref) => (
     <IconBase ref={ref} {...props}>
-      <path d="M6.5 11.65a4.38 4.38 0 1 1 0 8.75 4.38 4.38 0 0 1 0-8.75M17.5 11.65a4.38 4.38 0 1 1 0 8.75 4.38 4.38 0 0 1 0-8.75" />
-        <path d="M12 2.13a4.38 4.38 0 1 1 0 8.75 4.38 4.38 0 0 1 0-8.76" opacity={.4} />
+      <path d="M6.5 11.65c2.42 0 4.38 1.96 4.38 4.38S8.91 20.4 6.5 20.4s-4.37-1.96-4.37-4.37 1.95-4.38 4.37-4.38M17.5 11.65c2.42 0 4.38 1.96 4.38 4.38s-1.96 4.37-4.38 4.37-4.37-1.96-4.37-4.37 1.95-4.38 4.37-4.38" />
+        <path d="M12 2.13c2.42 0 4.38 1.95 4.38 4.37s-1.96 4.38-4.38 4.38S7.63 8.91 7.63 6.5 9.57 2.13 12 2.13" opacity={.4} />
     </IconBase>
   ))
 );

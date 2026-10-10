@@ -7,7 +7,7 @@ type DotFillProps = Omit<IconBaseProps, 'children'>;
 const DotFill = memo(
   forwardRef<SVGSVGElement, DotFillProps>((props, ref) => (
     <IconBase ref={ref} {...props}>
-      <path d="M12 7.13a4.87 4.87 0 1 1 0 9.74 4.87 4.87 0 0 1 0-9.75" />
+      <path d="M12 7.13c2.7 0 4.88 2.18 4.88 4.87 0 2.7-2.19 4.88-4.88 4.88-2.7 0-4.87-2.19-4.87-4.88 0-2.7 2.18-4.87 4.87-4.87" />
     </IconBase>
   ))
 );

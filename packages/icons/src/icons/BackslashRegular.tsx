@@ -7,7 +7,7 @@ type BackslashRegularProps = Omit<IconBaseProps, 'children'>;
 const BackslashRegular = memo(
   forwardRef<SVGSVGElement, BackslashRegularProps>((props, ref) => (
     <IconBase ref={ref} {...props}>
-      <path d="M4.5 3.44a.75.75 0 0 1 1.06.07l14 16a.75.75 0 0 1-1.12.98l-14-16a.75.75 0 0 1 .07-1.05" />
+      <path d="M4.5 3.44c.32-.28.8-.25 1.06.07l14 16c.28.3.25.78-.07 1.05-.3.28-.78.25-1.05-.07l-14-16c-.28-.3-.25-.78.07-1.05" />
     </IconBase>
   ))
 );

@@ -7,8 +7,8 @@ type SlashBoldDuotoneProps = Omit<IconBaseProps, 'children'>;
 const SlashBoldDuotone = memo(
   forwardRef<SVGSVGElement, SlashBoldDuotoneProps>((props, ref) => (
     <IconBase ref={ref} {...props}>
-      <path d="m12.75 12.66-8 9a1 1 0 1 1-1.5-1.32l8-9z" opacity={.4} />
-        <path d="M19.25 2.34a1 1 0 1 1 1.5 1.32l-8 9-1.5-1.32z" />
+      <path d="m12.75 12.66-8 9c-.37.42-1 .45-1.41.09-.42-.37-.45-1-.09-1.41l8-9z" opacity={.4} />
+        <path d="M19.25 2.34c.37-.42 1-.45 1.41-.09.42.37.45 1 .09 1.41l-8 9-1.5-1.32z" />
     </IconBase>
   ))
 );

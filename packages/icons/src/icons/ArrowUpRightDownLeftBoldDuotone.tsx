@@ -8,7 +8,7 @@ const ArrowUpRightDownLeftBoldDuotone = memo(
   forwardRef<SVGSVGElement, ArrowUpRightDownLeftBoldDuotoneProps>((props, ref) => (
     <IconBase ref={ref} {...props}>
       <path d="M19 5v1.41L6.41 19H5v-1.41L17.59 5z" opacity={.4} />
-        <path d="M4 12.5a1 1 0 0 1 1 1V19h5.5a1 1 0 1 1 0 2H4a1 1 0 0 1-1-1v-6.5a1 1 0 0 1 1-1M20 3a1 1 0 0 1 1 1v6.5a1 1 0 1 1-2 0V5h-5.5a1 1 0 1 1 0-2z" />
+        <path d="M4 12.5c.55 0 1 .45 1 1V19h5.5c.55 0 1 .45 1 1s-.45 1-1 1H4c-.55 0-1-.45-1-1v-6.5c0-.55.45-1 1-1M20 3c.55 0 1 .45 1 1v6.5c0 .55-.45 1-1 1s-1-.45-1-1V5h-5.5c-.55 0-1-.45-1-1s.45-1 1-1z" />
     </IconBase>
   ))
 );

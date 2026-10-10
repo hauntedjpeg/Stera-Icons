@@ -7,8 +7,8 @@ type MinusBoldDuotoneProps = Omit<IconBaseProps, 'children'>;
 const MinusBoldDuotone = memo(
   forwardRef<SVGSVGElement, MinusBoldDuotoneProps>((props, ref) => (
     <IconBase ref={ref} {...props}>
-      <path d="M21 11a1 1 0 1 1 0 2h-9v-2z" opacity={.4} />
-        <path d="M12 13H3a1 1 0 1 1 0-2h9z" />
+      <path d="M21 11c.55 0 1 .45 1 1s-.45 1-1 1h-9v-2z" opacity={.4} />
+        <path d="M12 13H3c-.55 0-1-.45-1-1s.45-1 1-1h9z" />
     </IconBase>
   ))
 );

@@ -7,8 +7,8 @@ type MoreVBoldDuotoneProps = Omit<IconBaseProps, 'children'>;
 const MoreVBoldDuotone = memo(
   forwardRef<SVGSVGElement, MoreVBoldDuotoneProps>((props, ref) => (
     <IconBase ref={ref} {...props}>
-      <path d="M12 14a2 2 0 1 1 0-4 2 2 0 0 1 0 4" opacity={.4} />
-        <path d="M12 6.5a2 2 0 1 1 0-4 2 2 0 0 1 0 4M12 21.5a2 2 0 1 1 0-4 2 2 0 0 1 0 4" />
+      <path d="M12 14c-1.1 0-2-.9-2-2s.9-2 2-2 2 .9 2 2-.9 2-2 2" opacity={.4} />
+        <path d="M12 6.5c-1.1 0-2-.9-2-2s.9-2 2-2 2 .9 2 2-.9 2-2 2M12 21.5c-1.1 0-2-.9-2-2s.9-2 2-2 2 .9 2 2-.9 2-2 2" />
     </IconBase>
   ))
 );

@@ -7,8 +7,8 @@ type StopwatchFillProps = Omit<IconBaseProps, 'children'>;
 const StopwatchFill = memo(
   forwardRef<SVGSVGElement, StopwatchFillProps>((props, ref) => (
     <IconBase ref={ref} {...props}>
-      <path fillRule="evenodd" d="M12 4.63a8.37 8.37 0 1 1 0 16.74 8.37 8.37 0 0 1 0-16.74m3.8 4.57a.9.9 0 0 0-1.24 0l-2.21 2.21a1.63 1.63 0 1 0 1.24 1.24l2.21-2.21a.9.9 0 0 0 0-1.24" clipRule="evenodd" />
-        <path d="M14 1.63a.88.88 0 0 1 0 1.75h-4a.87.87 0 1 1 0-1.75z" />
+      <path fillRule="evenodd" d="M12 4.63c4.63 0 8.38 3.74 8.38 8.37s-3.75 8.38-8.38 8.38S3.63 17.63 3.63 13 7.37 4.63 12 4.63m3.8 4.57c-.34-.34-.9-.34-1.24 0l-2.21 2.21q-.17-.04-.35-.04c-.9 0-1.62.73-1.62 1.63s.72 1.63 1.62 1.63 1.63-.73 1.63-1.63q0-.18-.04-.35l2.21-2.21c.34-.34.34-.9 0-1.24" clipRule="evenodd" />
+        <path d="M14 1.63c.48 0 .88.39.88.87s-.4.88-.88.88h-4c-.48 0-.87-.4-.87-.88s.39-.87.87-.87z" />
     </IconBase>
   ))
 );

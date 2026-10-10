@@ -7,7 +7,7 @@ type PilcrowRegularProps = Omit<IconBaseProps, 'children'>;
 const PilcrowRegular = memo(
   forwardRef<SVGSVGElement, PilcrowRegularProps>((props, ref) => (
     <IconBase ref={ref} {...props}>
-      <path fillRule="evenodd" d="M19 3.25a.75.75 0 0 1 0 1.5h-1.25V20a.75.75 0 0 1-1.5 0V4.75h-2.5V20a.75.75 0 0 1-1.5 0v-5.25H10a5.75 5.75 0 0 1 0-11.5zm-9 1.5a4.25 4.25 0 0 0 0 8.5h2.25v-8.5z" clipRule="evenodd" />
+      <path fillRule="evenodd" d="M19 3.25c.41 0 .75.34.75.75s-.34.75-.75.75h-1.25V20c0 .41-.34.75-.75.75s-.75-.34-.75-.75V4.75h-2.5V20c0 .41-.34.75-.75.75s-.75-.34-.75-.75v-5.25H10c-3.18 0-5.75-2.57-5.75-5.75S6.82 3.25 10 3.25zm-9 1.5c-2.35 0-4.25 1.9-4.25 4.25s1.9 4.25 4.25 4.25h2.25v-8.5z" clipRule="evenodd" />
     </IconBase>
   ))
 );

@@ -7,8 +7,8 @@ type ArrowCircleUpRightRegularProps = Omit<IconBaseProps, 'children'>;
 const ArrowCircleUpRightRegular = memo(
   forwardRef<SVGSVGElement, ArrowCircleUpRightRegularProps>((props, ref) => (
     <IconBase ref={ref} {...props}>
-      <path d="M14.83 8.42a.75.75 0 0 1 .75.75v5.66a.75.75 0 0 1-1.5 0v-3.85L9.7 15.36a.75.75 0 0 1-1.06-1.06l4.38-4.38H9.17a.75.75 0 0 1 0-1.5z" />
-        <path fillRule="evenodd" d="M5.1 5.1a9.75 9.75 0 1 1 13.8 13.8A9.75 9.75 0 0 1 5.1 5.1m12.73 1.07A8.25 8.25 0 1 0 6.17 17.84 8.25 8.25 0 0 0 17.83 6.17" clipRule="evenodd" />
+      <path d="M14.83 8.42q.31 0 .53.22t.22.53v5.66c0 .41-.34.75-.75.75-.42 0-.75-.34-.75-.75v-3.85L9.7 15.36c-.3.3-.77.3-1.06 0s-.3-.77 0-1.06l4.38-4.38H9.17c-.41 0-.75-.33-.75-.75 0-.41.34-.75.75-.75z" />
+        <path fillRule="evenodd" d="M5.1 5.1c3.81-3.8 9.99-3.8 13.8 0 3.8 3.81 3.8 9.99 0 13.8-3.81 3.8-9.99 3.8-13.8 0-3.8-3.81-3.8-9.99 0-13.8m12.73 1.07c-3.22-3.23-8.44-3.23-11.66 0s-3.23 8.44 0 11.66 8.44 3.23 11.66 0 3.23-8.44 0-11.66" clipRule="evenodd" />
     </IconBase>
   ))
 );

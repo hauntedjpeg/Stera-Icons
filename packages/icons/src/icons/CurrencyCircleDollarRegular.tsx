@@ -7,8 +7,8 @@ type CurrencyCircleDollarRegularProps = Omit<IconBaseProps, 'children'>;
 const CurrencyCircleDollarRegular = memo(
   forwardRef<SVGSVGElement, CurrencyCircleDollarRegularProps>((props, ref) => (
     <IconBase ref={ref} {...props}>
-      <path d="M11.75 5.5c.41 0 .75.34.75.75v1.5h2a.75.75 0 0 1 0 1.5h-3.75a1 1 0 0 0 0 2h3a2.5 2.5 0 0 1 0 5H13v1.5a.75.75 0 0 1-1.5 0v-1.5H9a.75.75 0 0 1 0-1.5h4.75a1 1 0 1 0 0-2h-3a2.5 2.5 0 0 1 0-5H11v-1.5c0-.41.34-.75.75-.75" />
-        <path fillRule="evenodd" d="M12 2.25a9.75 9.75 0 1 1 0 19.5 9.75 9.75 0 0 1 0-19.5m0 1.5a8.25 8.25 0 1 0 0 16.5 8.25 8.25 0 0 0 0-16.5" clipRule="evenodd" />
+      <path d="M11.75 5.5c.41 0 .75.34.75.75v1.5h2c.41 0 .75.34.75.75s-.34.75-.75.75h-3.75c-.55 0-1 .45-1 1s.45 1 1 1h3c1.38 0 2.5 1.12 2.5 2.5s-1.12 2.5-2.5 2.5H13v1.5c0 .41-.34.75-.75.75s-.75-.34-.75-.75v-1.5H9c-.41 0-.75-.34-.75-.75s.34-.75.75-.75h4.75c.55 0 1-.45 1-1s-.45-1-1-1h-3c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5H11v-1.5c0-.41.34-.75.75-.75" />
+        <path fillRule="evenodd" d="M12 2.25c5.38 0 9.75 4.37 9.75 9.75s-4.37 9.75-9.75 9.75S2.25 17.38 2.25 12 6.62 2.25 12 2.25m0 1.5c-4.56 0-8.25 3.7-8.25 8.25s3.7 8.25 8.25 8.25 8.25-3.7 8.25-8.25-3.7-8.25-8.25-8.25" clipRule="evenodd" />
     </IconBase>
   ))
 );

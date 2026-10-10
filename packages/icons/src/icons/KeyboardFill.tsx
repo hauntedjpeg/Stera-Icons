@@ -7,7 +7,7 @@ type KeyboardFillProps = Omit<IconBaseProps, 'children'>;
 const KeyboardFill = memo(
   forwardRef<SVGSVGElement, KeyboardFillProps>((props, ref) => (
     <IconBase ref={ref} {...props}>
-      <path fillRule="evenodd" d="M20 5.5A2.5 2.5 0 0 1 22.5 8v8a2.5 2.5 0 0 1-2.5 2.5H4a2.5 2.5 0 0 1-2.49-2.24L1.5 16V8A2.5 2.5 0 0 1 4 5.5zM6 13a1 1 0 1 0 0 2h.5a1 1 0 1 0 0-2zm3.75 0a1 1 0 1 0 0 2h4.5a1 1 0 1 0 0-2zm7.75 0a1 1 0 1 0 0 2h.6a1 1 0 0 0 0-2h-.6M6 9a1 1 0 0 0 0 2h.5a1 1 0 1 0 0-2zm3.75 0a1 1 0 0 0 0 2h.5a1 1 0 1 0 0-2zm4 0a1 1 0 1 0 0 2h.5a1 1 0 0 0 0-2zm3.75 0a1 1 0 1 0 0 2h.5a1 1 0 0 0 0-2z" clipRule="evenodd" />
+      <path fillRule="evenodd" d="M20 5.5c1.38 0 2.5 1.12 2.5 2.5v8c0 1.38-1.12 2.5-2.5 2.5H4c-1.3 0-2.36-.98-2.49-2.24L1.5 16V8c0-1.38 1.12-2.5 2.5-2.5zM6 13c-.55 0-1 .45-1 1s.45 1 1 1h.5c.55 0 1-.45 1-1s-.45-1-1-1zm3.75 0c-.55 0-1 .45-1 1s.45 1 1 1h4.5c.55 0 1-.45 1-1s-.45-1-1-1zm7.75 0c-.55 0-1 .45-1 1s.45 1 1 1h.6c.5-.06.9-.48.9-1s-.4-.94-.9-1h-.6M6 9c-.55 0-1 .45-1 1s.45 1 1 1h.5c.55 0 1-.45 1-1s-.45-1-1-1zm3.75 0c-.55 0-1 .45-1 1s.45 1 1 1h.5c.55 0 1-.45 1-1s-.45-1-1-1zm4 0c-.55 0-1 .45-1 1s.45 1 1 1h.5c.55 0 1-.45 1-1s-.45-1-1-1zm3.75 0c-.55 0-1 .45-1 1s.45 1 1 1h.5c.55 0 1-.45 1-1s-.45-1-1-1z" clipRule="evenodd" />
     </IconBase>
   ))
 );

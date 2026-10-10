@@ -7,8 +7,8 @@ type MinusCircleRegularProps = Omit<IconBaseProps, 'children'>;
 const MinusCircleRegular = memo(
   forwardRef<SVGSVGElement, MinusCircleRegularProps>((props, ref) => (
     <IconBase ref={ref} {...props}>
-      <path d="M16 11.25a.75.75 0 0 1 0 1.5H8a.75.75 0 0 1 0-1.5z" />
-        <path fillRule="evenodd" d="M12 2.25a9.75 9.75 0 1 1 0 19.5 9.75 9.75 0 0 1 0-19.5m0 1.5a8.25 8.25 0 1 0 0 16.5 8.25 8.25 0 0 0 0-16.5" clipRule="evenodd" />
+      <path d="M16 11.25c.41 0 .75.33.75.75 0 .41-.34.75-.75.75H8c-.41 0-.75-.34-.75-.75 0-.42.34-.75.75-.75z" />
+        <path fillRule="evenodd" d="M12 2.25c5.38 0 9.75 4.37 9.75 9.75s-4.37 9.75-9.75 9.75S2.25 17.38 2.25 12 6.62 2.25 12 2.25m0 1.5c-4.56 0-8.25 3.7-8.25 8.25s3.7 8.25 8.25 8.25 8.25-3.7 8.25-8.25-3.7-8.25-8.25-8.25" clipRule="evenodd" />
     </IconBase>
   ))
 );

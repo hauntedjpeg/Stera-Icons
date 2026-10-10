@@ -7,7 +7,7 @@ type TextItalicBoldProps = Omit<IconBaseProps, 'children'>;
 const TextItalicBold = memo(
   forwardRef<SVGSVGElement, TextItalicBoldProps>((props, ref) => (
     <IconBase ref={ref} {...props}>
-      <path d="M19 3a1 1 0 1 1 0 2h-1.92a2 2 0 0 0-1.87 1.28l-4.27 11.38A1 1 0 0 0 11.9 19H14a1 1 0 1 1 0 2H5a1 1 0 1 1 0-2h1.92a2 2 0 0 0 1.87-1.29l4.26-11.36A1 1 0 0 0 12.11 5H10a1 1 0 0 1 0-2z" />
+      <path d="M19 3c.55 0 1 .45 1 1s-.45 1-1 1h-1.92c-.83 0-1.57.51-1.87 1.28l-4.27 11.38c-.23.65.25 1.34.95 1.34H14c.55 0 1 .45 1 1 0 .45-.3.83-.7.96l-.1.02-.2.02H5c-.55 0-1-.45-1-1s.45-1 1-1h1.92c.83 0 1.57-.51 1.87-1.29l4.26-11.36c.24-.65-.24-1.35-.94-1.35H10c-.55 0-1-.45-1-1s.45-1 1-1z" />
     </IconBase>
   ))
 );

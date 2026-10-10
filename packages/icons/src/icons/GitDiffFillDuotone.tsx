@@ -7,8 +7,8 @@ type GitDiffFillDuotoneProps = Omit<IconBaseProps, 'children'>;
 const GitDiffFillDuotone = memo(
   forwardRef<SVGSVGElement, GitDiffFillDuotoneProps>((props, ref) => (
     <IconBase ref={ref} {...props}>
-      <path d="M18 18.75a1.25 1.25 0 1 1 0 2.5H6a1.25 1.25 0 1 1 0-2.5z" opacity={.4} />
-        <path d="M12 2.75c.69 0 1.25.56 1.25 1.25v4.75H18a1.25 1.25 0 1 1 0 2.5h-4.75V16a1.25 1.25 0 1 1-2.5 0v-4.75H6a1.25 1.25 0 1 1 0-2.5h4.75V4c0-.69.56-1.25 1.25-1.25" />
+      <path d="M18 18.75c.69 0 1.25.56 1.25 1.25s-.56 1.25-1.25 1.25H6c-.69 0-1.25-.56-1.25-1.25s.56-1.25 1.25-1.25z" opacity={.4} />
+        <path d="M12 2.75c.69 0 1.25.56 1.25 1.25v4.75H18c.69 0 1.25.56 1.25 1.25s-.56 1.25-1.25 1.25h-4.75V16c0 .69-.56 1.25-1.25 1.25s-1.25-.56-1.25-1.25v-4.75H6c-.69 0-1.25-.56-1.25-1.25S5.31 8.75 6 8.75h4.75V4c0-.69.56-1.25 1.25-1.25" />
     </IconBase>
   ))
 );

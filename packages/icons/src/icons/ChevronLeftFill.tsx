@@ -7,7 +7,7 @@ type ChevronLeftFillProps = Omit<IconBaseProps, 'children'>;
 const ChevronLeftFill = memo(
   forwardRef<SVGSVGElement, ChevronLeftFillProps>((props, ref) => (
     <IconBase ref={ref} {...props}>
-      <path d="M14.38 4.38a.88.88 0 0 1 1.5.62v14a.88.88 0 0 1-1.5.62l-7-7a.9.9 0 0 1 0-1.24z" />
+      <path d="M14.38 4.38c.25-.25.63-.32.96-.19.32.14.53.46.54.81v14c0 .35-.22.67-.54.8-.33.14-.7.07-.96-.18l-7-7q-.25-.27-.25-.62 0-.36.25-.62z" />
     </IconBase>
   ))
 );

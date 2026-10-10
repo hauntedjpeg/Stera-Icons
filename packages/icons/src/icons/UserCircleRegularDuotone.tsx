@@ -7,8 +7,8 @@ type UserCircleRegularDuotoneProps = Omit<IconBaseProps, 'children'>;
 const UserCircleRegularDuotone = memo(
   forwardRef<SVGSVGElement, UserCircleRegularDuotoneProps>((props, ref) => (
     <IconBase ref={ref} {...props}>
-      <path fillRule="evenodd" d="M12 2.25a9.75 9.75 0 1 1 0 19.5 9.75 9.75 0 0 1 0-19.5m0 1.5a8.25 8.25 0 1 0 0 16.5 8.25 8.25 0 0 0 0-16.5" clipRule="evenodd" opacity={.4} />
-        <path fillRule="evenodd" d="M12 6.75a4.35 4.35 0 0 1 2.77 7.7 8 8 0 0 1 3.64 2.74q-.48.6-1.07 1.1a6.44 6.44 0 0 0-10.68 0 8 8 0 0 1-1.07-1.1 8 8 0 0 1 3.63-2.74A4.34 4.34 0 0 1 12 6.75m0 1.5a2.85 2.85 0 1 0 0 5.7 2.85 2.85 0 0 0 0-5.7" clipRule="evenodd" />
+      <path fillRule="evenodd" d="M12 2.25c5.38 0 9.75 4.37 9.75 9.75s-4.37 9.75-9.75 9.75S2.25 17.38 2.25 12 6.62 2.25 12 2.25m0 1.5c-4.56 0-8.25 3.7-8.25 8.25s3.7 8.25 8.25 8.25 8.25-3.7 8.25-8.25-3.7-8.25-8.25-8.25" clipRule="evenodd" opacity={.4} />
+        <path fillRule="evenodd" d="M12 6.75c2.4 0 4.35 1.95 4.35 4.35 0 1.35-.61 2.55-1.58 3.35 1.47.54 2.73 1.5 3.64 2.74q-.48.6-1.07 1.1c-1.16-1.72-3.12-2.84-5.34-2.84s-4.18 1.12-5.34 2.84q-.59-.5-1.07-1.1c.91-1.23 2.17-2.2 3.63-2.74-.96-.8-1.57-2-1.57-3.35 0-2.4 1.95-4.35 4.35-4.35m0 1.5c-1.57 0-2.85 1.28-2.85 2.85s1.28 2.85 2.85 2.85 2.85-1.28 2.85-2.85S13.57 8.25 12 8.25" clipRule="evenodd" />
     </IconBase>
   ))
 );

@@ -7,8 +7,8 @@ type Clock10BoldDuotoneProps = Omit<IconBaseProps, 'children'>;
 const Clock10BoldDuotone = memo(
   forwardRef<SVGSVGElement, Clock10BoldDuotoneProps>((props, ref) => (
     <IconBase ref={ref} {...props}>
-      <path fillRule="evenodd" d="M12 2a10 10 0 1 1 0 20 10 10 0 0 1 0-20m0 2a8 8 0 1 0 0 16 8 8 0 0 0 0-16" clipRule="evenodd" opacity={.4} />
-        <path d="M12 6a1 1 0 0 1 1 1v5a1 1 0 0 1-.24.65l-.03.03-.04.04-.03.03-.12.1-.04.01a1 1 0 0 1-.32.12h-.04l-.12.02h-.13l-.08-.02h-.02l-.15-.05-.04-.01-.1-.05-3.47-2a1 1 0 0 1 1-1.74L11 10.27V7a1 1 0 0 1 1-1" />
+      <path fillRule="evenodd" d="M12 2c5.52 0 10 4.48 10 10s-4.48 10-10 10S2 17.52 2 12 6.48 2 12 2m0 2c-4.42 0-8 3.58-8 8s3.58 8 8 8 8-3.58 8-8-3.58-8-8-8" clipRule="evenodd" opacity={.4} />
+        <path d="M12 6c.55 0 1 .45 1 1v5q0 .1-.02.2l-.01.04q-.06.24-.21.41l-.03.03-.04.04-.03.03-.05.04-.02.02q-.03 0-.05.03l-.04.02q-.1.07-.23.1h-.03l-.06.02h-.04l-.05.02h-.2l-.08-.02h-.02l-.06-.02h-.03l-.06-.03-.04-.01-.1-.05-3.47-2c-.47-.28-.64-.9-.36-1.37.27-.48.89-.64 1.36-.37L11 10.27V7c0-.55.45-1 1-1" />
     </IconBase>
   ))
 );
