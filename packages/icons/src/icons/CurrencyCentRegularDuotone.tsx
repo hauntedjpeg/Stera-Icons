@@ -15,7 +15,7 @@ const CurrencyCentRegularDuotone = memo(
 
 CurrencyCentRegularDuotone.displayName = 'CurrencyCentRegularDuotone';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { CurrencyCentRegularDuotone, CurrencyCentRegularDuotone as CurrencyCentRegularDuotoneIcon, CurrencyCentRegularDuotone as SiCurrencyCentRegularDuotone };
 export default CurrencyCentRegularDuotone;
 export type { CurrencyCentRegularDuotoneProps };

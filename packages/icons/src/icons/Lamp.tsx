@@ -18,10 +18,10 @@ export interface LampProps extends IconProps {
  * For smaller bundle size, import specific variants directly:
  * import { LampRegular } from 'stera-icons/icons/LampRegular';
  */
-const Lamp = memo(forwardRef<SVGSVGElement, LampProps>(({ 
+const Lamp = memo(forwardRef<SVGSVGElement, LampProps>(({
   weight = 'regular',
   duotone = false,
-  ...rest 
+  ...rest
 }, ref) => {
   if (weight === 'bold' && duotone) return <LampBoldDuotone ref={ref} {...rest} />;
   if (weight === 'bold') return <LampBold ref={ref} {...rest} />;
@@ -33,6 +33,6 @@ const Lamp = memo(forwardRef<SVGSVGElement, LampProps>(({
 
 Lamp.displayName = 'Lamp';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { Lamp, Lamp as LampIcon, Lamp as SiLamp };
 export default Lamp;

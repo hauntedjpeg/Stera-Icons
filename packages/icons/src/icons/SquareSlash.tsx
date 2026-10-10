@@ -18,10 +18,10 @@ export interface SquareSlashProps extends IconProps {
  * For smaller bundle size, import specific variants directly:
  * import { SquareSlashRegular } from 'stera-icons/icons/SquareSlashRegular';
  */
-const SquareSlash = memo(forwardRef<SVGSVGElement, SquareSlashProps>(({ 
+const SquareSlash = memo(forwardRef<SVGSVGElement, SquareSlashProps>(({
   weight = 'regular',
   duotone = false,
-  ...rest 
+  ...rest
 }, ref) => {
   if (weight === 'bold' && duotone) return <SquareSlashBoldDuotone ref={ref} {...rest} />;
   if (weight === 'bold') return <SquareSlashBold ref={ref} {...rest} />;
@@ -33,6 +33,6 @@ const SquareSlash = memo(forwardRef<SVGSVGElement, SquareSlashProps>(({
 
 SquareSlash.displayName = 'SquareSlash';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { SquareSlash, SquareSlash as SquareSlashIcon, SquareSlash as SiSquareSlash };
 export default SquareSlash;

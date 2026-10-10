@@ -18,10 +18,10 @@ export interface PercentCircleProps extends IconProps {
  * For smaller bundle size, import specific variants directly:
  * import { PercentCircleRegular } from 'stera-icons/icons/PercentCircleRegular';
  */
-const PercentCircle = memo(forwardRef<SVGSVGElement, PercentCircleProps>(({ 
+const PercentCircle = memo(forwardRef<SVGSVGElement, PercentCircleProps>(({
   weight = 'regular',
   duotone = false,
-  ...rest 
+  ...rest
 }, ref) => {
   if (weight === 'bold' && duotone) return <PercentCircleBoldDuotone ref={ref} {...rest} />;
   if (weight === 'bold') return <PercentCircleBold ref={ref} {...rest} />;
@@ -33,6 +33,6 @@ const PercentCircle = memo(forwardRef<SVGSVGElement, PercentCircleProps>(({
 
 PercentCircle.displayName = 'PercentCircle';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { PercentCircle, PercentCircle as PercentCircleIcon, PercentCircle as SiPercentCircle };
 export default PercentCircle;

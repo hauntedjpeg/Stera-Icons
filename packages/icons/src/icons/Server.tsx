@@ -18,10 +18,10 @@ export interface ServerProps extends IconProps {
  * For smaller bundle size, import specific variants directly:
  * import { ServerRegular } from 'stera-icons/icons/ServerRegular';
  */
-const Server = memo(forwardRef<SVGSVGElement, ServerProps>(({ 
+const Server = memo(forwardRef<SVGSVGElement, ServerProps>(({
   weight = 'regular',
   duotone = false,
-  ...rest 
+  ...rest
 }, ref) => {
   if (weight === 'bold' && duotone) return <ServerBoldDuotone ref={ref} {...rest} />;
   if (weight === 'bold') return <ServerBold ref={ref} {...rest} />;
@@ -33,6 +33,6 @@ const Server = memo(forwardRef<SVGSVGElement, ServerProps>(({
 
 Server.displayName = 'Server';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { Server, Server as ServerIcon, Server as SiServer };
 export default Server;

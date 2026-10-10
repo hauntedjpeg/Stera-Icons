@@ -14,7 +14,7 @@ const SidebarRightFill = memo(
 
 SidebarRightFill.displayName = 'SidebarRightFill';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { SidebarRightFill, SidebarRightFill as SidebarRightFillIcon, SidebarRightFill as SiSidebarRightFill };
 export default SidebarRightFill;
 export type { SidebarRightFillProps };

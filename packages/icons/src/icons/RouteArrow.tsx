@@ -18,10 +18,10 @@ export interface RouteArrowProps extends IconProps {
  * For smaller bundle size, import specific variants directly:
  * import { RouteArrowRegular } from 'stera-icons/icons/RouteArrowRegular';
  */
-const RouteArrow = memo(forwardRef<SVGSVGElement, RouteArrowProps>(({ 
+const RouteArrow = memo(forwardRef<SVGSVGElement, RouteArrowProps>(({
   weight = 'regular',
   duotone = false,
-  ...rest 
+  ...rest
 }, ref) => {
   if (weight === 'bold' && duotone) return <RouteArrowBoldDuotone ref={ref} {...rest} />;
   if (weight === 'bold') return <RouteArrowBold ref={ref} {...rest} />;
@@ -33,6 +33,6 @@ const RouteArrow = memo(forwardRef<SVGSVGElement, RouteArrowProps>(({
 
 RouteArrow.displayName = 'RouteArrow';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { RouteArrow, RouteArrow as RouteArrowIcon, RouteArrow as SiRouteArrow };
 export default RouteArrow;

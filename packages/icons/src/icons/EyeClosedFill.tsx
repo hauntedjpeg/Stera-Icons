@@ -14,7 +14,7 @@ const EyeClosedFill = memo(
 
 EyeClosedFill.displayName = 'EyeClosedFill';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { EyeClosedFill, EyeClosedFill as EyeClosedFillIcon, EyeClosedFill as SiEyeClosedFill };
 export default EyeClosedFill;
 export type { EyeClosedFillProps };

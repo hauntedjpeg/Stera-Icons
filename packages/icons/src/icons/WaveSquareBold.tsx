@@ -14,7 +14,7 @@ const WaveSquareBold = memo(
 
 WaveSquareBold.displayName = 'WaveSquareBold';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { WaveSquareBold, WaveSquareBold as WaveSquareBoldIcon, WaveSquareBold as SiWaveSquareBold };
 export default WaveSquareBold;
 export type { WaveSquareBoldProps };

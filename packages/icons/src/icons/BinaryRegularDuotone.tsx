@@ -15,7 +15,7 @@ const BinaryRegularDuotone = memo(
 
 BinaryRegularDuotone.displayName = 'BinaryRegularDuotone';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { BinaryRegularDuotone, BinaryRegularDuotone as BinaryRegularDuotoneIcon, BinaryRegularDuotone as SiBinaryRegularDuotone };
 export default BinaryRegularDuotone;
 export type { BinaryRegularDuotoneProps };

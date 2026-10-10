@@ -18,10 +18,10 @@ export interface FolderOpenProps extends IconProps {
  * For smaller bundle size, import specific variants directly:
  * import { FolderOpenRegular } from 'stera-icons/icons/FolderOpenRegular';
  */
-const FolderOpen = memo(forwardRef<SVGSVGElement, FolderOpenProps>(({ 
+const FolderOpen = memo(forwardRef<SVGSVGElement, FolderOpenProps>(({
   weight = 'regular',
   duotone = false,
-  ...rest 
+  ...rest
 }, ref) => {
   if (weight === 'bold' && duotone) return <FolderOpenBoldDuotone ref={ref} {...rest} />;
   if (weight === 'bold') return <FolderOpenBold ref={ref} {...rest} />;
@@ -33,6 +33,6 @@ const FolderOpen = memo(forwardRef<SVGSVGElement, FolderOpenProps>(({
 
 FolderOpen.displayName = 'FolderOpen';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { FolderOpen, FolderOpen as FolderOpenIcon, FolderOpen as SiFolderOpen };
 export default FolderOpen;

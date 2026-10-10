@@ -15,7 +15,7 @@ const VolleyballRegularDuotone = memo(
 
 VolleyballRegularDuotone.displayName = 'VolleyballRegularDuotone';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { VolleyballRegularDuotone, VolleyballRegularDuotone as VolleyballRegularDuotoneIcon, VolleyballRegularDuotone as SiVolleyballRegularDuotone };
 export default VolleyballRegularDuotone;
 export type { VolleyballRegularDuotoneProps };

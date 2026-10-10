@@ -14,7 +14,7 @@ const PushPinAltRegular = memo(
 
 PushPinAltRegular.displayName = 'PushPinAltRegular';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { PushPinAltRegular, PushPinAltRegular as PushPinAltRegularIcon, PushPinAltRegular as SiPushPinAltRegular };
 export default PushPinAltRegular;
 export type { PushPinAltRegularProps };

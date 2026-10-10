@@ -14,7 +14,7 @@ const AngleObtuseFill = memo(
 
 AngleObtuseFill.displayName = 'AngleObtuseFill';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { AngleObtuseFill, AngleObtuseFill as AngleObtuseFillIcon, AngleObtuseFill as SiAngleObtuseFill };
 export default AngleObtuseFill;
 export type { AngleObtuseFillProps };

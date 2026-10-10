@@ -14,7 +14,7 @@ const TextItalicFill = memo(
 
 TextItalicFill.displayName = 'TextItalicFill';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { TextItalicFill, TextItalicFill as TextItalicFillIcon, TextItalicFill as SiTextItalicFill };
 export default TextItalicFill;
 export type { TextItalicFillProps };

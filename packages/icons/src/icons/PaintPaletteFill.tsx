@@ -14,7 +14,7 @@ const PaintPaletteFill = memo(
 
 PaintPaletteFill.displayName = 'PaintPaletteFill';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { PaintPaletteFill, PaintPaletteFill as PaintPaletteFillIcon, PaintPaletteFill as SiPaintPaletteFill };
 export default PaintPaletteFill;
 export type { PaintPaletteFillProps };

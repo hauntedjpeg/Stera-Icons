@@ -14,7 +14,7 @@ const ScaleRegular = memo(
 
 ScaleRegular.displayName = 'ScaleRegular';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { ScaleRegular, ScaleRegular as ScaleRegularIcon, ScaleRegular as SiScaleRegular };
 export default ScaleRegular;
 export type { ScaleRegularProps };

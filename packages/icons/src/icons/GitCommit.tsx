@@ -18,10 +18,10 @@ export interface GitCommitProps extends IconProps {
  * For smaller bundle size, import specific variants directly:
  * import { GitCommitRegular } from 'stera-icons/icons/GitCommitRegular';
  */
-const GitCommit = memo(forwardRef<SVGSVGElement, GitCommitProps>(({ 
+const GitCommit = memo(forwardRef<SVGSVGElement, GitCommitProps>(({
   weight = 'regular',
   duotone = false,
-  ...rest 
+  ...rest
 }, ref) => {
   if (weight === 'bold' && duotone) return <GitCommitBoldDuotone ref={ref} {...rest} />;
   if (weight === 'bold') return <GitCommitBold ref={ref} {...rest} />;
@@ -33,6 +33,6 @@ const GitCommit = memo(forwardRef<SVGSVGElement, GitCommitProps>(({
 
 GitCommit.displayName = 'GitCommit';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { GitCommit, GitCommit as GitCommitIcon, GitCommit as SiGitCommit };
 export default GitCommit;

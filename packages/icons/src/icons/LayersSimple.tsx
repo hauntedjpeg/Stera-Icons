@@ -18,10 +18,10 @@ export interface LayersSimpleProps extends IconProps {
  * For smaller bundle size, import specific variants directly:
  * import { LayersSimpleRegular } from 'stera-icons/icons/LayersSimpleRegular';
  */
-const LayersSimple = memo(forwardRef<SVGSVGElement, LayersSimpleProps>(({ 
+const LayersSimple = memo(forwardRef<SVGSVGElement, LayersSimpleProps>(({
   weight = 'regular',
   duotone = false,
-  ...rest 
+  ...rest
 }, ref) => {
   if (weight === 'bold' && duotone) return <LayersSimpleBoldDuotone ref={ref} {...rest} />;
   if (weight === 'bold') return <LayersSimpleBold ref={ref} {...rest} />;
@@ -33,6 +33,6 @@ const LayersSimple = memo(forwardRef<SVGSVGElement, LayersSimpleProps>(({
 
 LayersSimple.displayName = 'LayersSimple';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { LayersSimple, LayersSimple as LayersSimpleIcon, LayersSimple as SiLayersSimple };
 export default LayersSimple;

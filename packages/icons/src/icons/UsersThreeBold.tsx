@@ -15,7 +15,7 @@ const UsersThreeBold = memo(
 
 UsersThreeBold.displayName = 'UsersThreeBold';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { UsersThreeBold, UsersThreeBold as UsersThreeBoldIcon, UsersThreeBold as SiUsersThreeBold };
 export default UsersThreeBold;
 export type { UsersThreeBoldProps };

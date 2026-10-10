@@ -15,7 +15,7 @@ const HashCircleBoldDuotone = memo(
 
 HashCircleBoldDuotone.displayName = 'HashCircleBoldDuotone';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { HashCircleBoldDuotone, HashCircleBoldDuotone as HashCircleBoldDuotoneIcon, HashCircleBoldDuotone as SiHashCircleBoldDuotone };
 export default HashCircleBoldDuotone;
 export type { HashCircleBoldDuotoneProps };

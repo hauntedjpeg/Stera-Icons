@@ -18,10 +18,10 @@ export interface SnowflakeProps extends IconProps {
  * For smaller bundle size, import specific variants directly:
  * import { SnowflakeRegular } from 'stera-icons/icons/SnowflakeRegular';
  */
-const Snowflake = memo(forwardRef<SVGSVGElement, SnowflakeProps>(({ 
+const Snowflake = memo(forwardRef<SVGSVGElement, SnowflakeProps>(({
   weight = 'regular',
   duotone = false,
-  ...rest 
+  ...rest
 }, ref) => {
   if (weight === 'bold' && duotone) return <SnowflakeBoldDuotone ref={ref} {...rest} />;
   if (weight === 'bold') return <SnowflakeBold ref={ref} {...rest} />;
@@ -33,6 +33,6 @@ const Snowflake = memo(forwardRef<SVGSVGElement, SnowflakeProps>(({
 
 Snowflake.displayName = 'Snowflake';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { Snowflake, Snowflake as SnowflakeIcon, Snowflake as SiSnowflake };
 export default Snowflake;

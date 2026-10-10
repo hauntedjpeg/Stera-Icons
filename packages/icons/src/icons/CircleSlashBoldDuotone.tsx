@@ -15,7 +15,7 @@ const CircleSlashBoldDuotone = memo(
 
 CircleSlashBoldDuotone.displayName = 'CircleSlashBoldDuotone';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { CircleSlashBoldDuotone, CircleSlashBoldDuotone as CircleSlashBoldDuotoneIcon, CircleSlashBoldDuotone as SiCircleSlashBoldDuotone };
 export default CircleSlashBoldDuotone;
 export type { CircleSlashBoldDuotoneProps };

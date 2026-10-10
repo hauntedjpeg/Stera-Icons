@@ -18,10 +18,10 @@ export interface VideoProps extends IconProps {
  * For smaller bundle size, import specific variants directly:
  * import { VideoRegular } from 'stera-icons/icons/VideoRegular';
  */
-const Video = memo(forwardRef<SVGSVGElement, VideoProps>(({ 
+const Video = memo(forwardRef<SVGSVGElement, VideoProps>(({
   weight = 'regular',
   duotone = false,
-  ...rest 
+  ...rest
 }, ref) => {
   if (weight === 'bold' && duotone) return <VideoBoldDuotone ref={ref} {...rest} />;
   if (weight === 'bold') return <VideoBold ref={ref} {...rest} />;
@@ -33,6 +33,6 @@ const Video = memo(forwardRef<SVGSVGElement, VideoProps>(({
 
 Video.displayName = 'Video';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { Video, Video as VideoIcon, Video as SiVideo };
 export default Video;

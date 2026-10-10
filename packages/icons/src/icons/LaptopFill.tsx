@@ -14,7 +14,7 @@ const LaptopFill = memo(
 
 LaptopFill.displayName = 'LaptopFill';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { LaptopFill, LaptopFill as LaptopFillIcon, LaptopFill as SiLaptopFill };
 export default LaptopFill;
 export type { LaptopFillProps };

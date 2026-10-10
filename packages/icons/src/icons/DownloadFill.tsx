@@ -15,7 +15,7 @@ const DownloadFill = memo(
 
 DownloadFill.displayName = 'DownloadFill';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { DownloadFill, DownloadFill as DownloadFillIcon, DownloadFill as SiDownloadFill };
 export default DownloadFill;
 export type { DownloadFillProps };

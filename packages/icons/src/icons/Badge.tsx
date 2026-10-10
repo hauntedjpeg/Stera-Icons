@@ -18,10 +18,10 @@ export interface BadgeProps extends IconProps {
  * For smaller bundle size, import specific variants directly:
  * import { BadgeRegular } from 'stera-icons/icons/BadgeRegular';
  */
-const Badge = memo(forwardRef<SVGSVGElement, BadgeProps>(({ 
+const Badge = memo(forwardRef<SVGSVGElement, BadgeProps>(({
   weight = 'regular',
   duotone = false,
-  ...rest 
+  ...rest
 }, ref) => {
   if (weight === 'bold' && duotone) return <BadgeBoldDuotone ref={ref} {...rest} />;
   if (weight === 'bold') return <BadgeBold ref={ref} {...rest} />;
@@ -33,6 +33,6 @@ const Badge = memo(forwardRef<SVGSVGElement, BadgeProps>(({
 
 Badge.displayName = 'Badge';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { Badge, Badge as BadgeIcon, Badge as SiBadge };
 export default Badge;

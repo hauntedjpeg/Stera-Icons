@@ -14,7 +14,7 @@ const HardDriveFill = memo(
 
 HardDriveFill.displayName = 'HardDriveFill';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { HardDriveFill, HardDriveFill as HardDriveFillIcon, HardDriveFill as SiHardDriveFill };
 export default HardDriveFill;
 export type { HardDriveFillProps };

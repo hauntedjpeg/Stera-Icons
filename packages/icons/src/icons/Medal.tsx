@@ -18,10 +18,10 @@ export interface MedalProps extends IconProps {
  * For smaller bundle size, import specific variants directly:
  * import { MedalRegular } from 'stera-icons/icons/MedalRegular';
  */
-const Medal = memo(forwardRef<SVGSVGElement, MedalProps>(({ 
+const Medal = memo(forwardRef<SVGSVGElement, MedalProps>(({
   weight = 'regular',
   duotone = false,
-  ...rest 
+  ...rest
 }, ref) => {
   if (weight === 'bold' && duotone) return <MedalBoldDuotone ref={ref} {...rest} />;
   if (weight === 'bold') return <MedalBold ref={ref} {...rest} />;
@@ -33,6 +33,6 @@ const Medal = memo(forwardRef<SVGSVGElement, MedalProps>(({
 
 Medal.displayName = 'Medal';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { Medal, Medal as MedalIcon, Medal as SiMedal };
 export default Medal;

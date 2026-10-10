@@ -18,10 +18,10 @@ export interface MoonStarProps extends IconProps {
  * For smaller bundle size, import specific variants directly:
  * import { MoonStarRegular } from 'stera-icons/icons/MoonStarRegular';
  */
-const MoonStar = memo(forwardRef<SVGSVGElement, MoonStarProps>(({ 
+const MoonStar = memo(forwardRef<SVGSVGElement, MoonStarProps>(({
   weight = 'regular',
   duotone = false,
-  ...rest 
+  ...rest
 }, ref) => {
   if (weight === 'bold' && duotone) return <MoonStarBoldDuotone ref={ref} {...rest} />;
   if (weight === 'bold') return <MoonStarBold ref={ref} {...rest} />;
@@ -33,6 +33,6 @@ const MoonStar = memo(forwardRef<SVGSVGElement, MoonStarProps>(({
 
 MoonStar.displayName = 'MoonStar';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { MoonStar, MoonStar as MoonStarIcon, MoonStar as SiMoonStar };
 export default MoonStar;

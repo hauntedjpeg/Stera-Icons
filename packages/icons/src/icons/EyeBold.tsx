@@ -15,7 +15,7 @@ const EyeBold = memo(
 
 EyeBold.displayName = 'EyeBold';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { EyeBold, EyeBold as EyeBoldIcon, EyeBold as SiEyeBold };
 export default EyeBold;
 export type { EyeBoldProps };

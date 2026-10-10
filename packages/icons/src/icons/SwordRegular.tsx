@@ -14,7 +14,7 @@ const SwordRegular = memo(
 
 SwordRegular.displayName = 'SwordRegular';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { SwordRegular, SwordRegular as SwordRegularIcon, SwordRegular as SiSwordRegular };
 export default SwordRegular;
 export type { SwordRegularProps };

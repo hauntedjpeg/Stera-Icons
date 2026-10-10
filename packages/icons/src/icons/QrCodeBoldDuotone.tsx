@@ -17,7 +17,7 @@ const QrCodeBoldDuotone = memo(
 
 QrCodeBoldDuotone.displayName = 'QrCodeBoldDuotone';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { QrCodeBoldDuotone, QrCodeBoldDuotone as QrCodeBoldDuotoneIcon, QrCodeBoldDuotone as SiQrCodeBoldDuotone };
 export default QrCodeBoldDuotone;
 export type { QrCodeBoldDuotoneProps };

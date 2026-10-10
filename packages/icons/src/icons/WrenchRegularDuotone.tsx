@@ -15,7 +15,7 @@ const WrenchRegularDuotone = memo(
 
 WrenchRegularDuotone.displayName = 'WrenchRegularDuotone';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { WrenchRegularDuotone, WrenchRegularDuotone as WrenchRegularDuotoneIcon, WrenchRegularDuotone as SiWrenchRegularDuotone };
 export default WrenchRegularDuotone;
 export type { WrenchRegularDuotoneProps };

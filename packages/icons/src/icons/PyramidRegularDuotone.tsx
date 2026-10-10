@@ -15,7 +15,7 @@ const PyramidRegularDuotone = memo(
 
 PyramidRegularDuotone.displayName = 'PyramidRegularDuotone';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { PyramidRegularDuotone, PyramidRegularDuotone as PyramidRegularDuotoneIcon, PyramidRegularDuotone as SiPyramidRegularDuotone };
 export default PyramidRegularDuotone;
 export type { PyramidRegularDuotoneProps };

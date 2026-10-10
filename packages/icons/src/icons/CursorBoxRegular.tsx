@@ -15,7 +15,7 @@ const CursorBoxRegular = memo(
 
 CursorBoxRegular.displayName = 'CursorBoxRegular';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { CursorBoxRegular, CursorBoxRegular as CursorBoxRegularIcon, CursorBoxRegular as SiCursorBoxRegular };
 export default CursorBoxRegular;
 export type { CursorBoxRegularProps };

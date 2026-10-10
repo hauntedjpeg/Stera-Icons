@@ -15,7 +15,7 @@ const TextFieldBold = memo(
 
 TextFieldBold.displayName = 'TextFieldBold';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { TextFieldBold, TextFieldBold as TextFieldBoldIcon, TextFieldBold as SiTextFieldBold };
 export default TextFieldBold;
 export type { TextFieldBoldProps };

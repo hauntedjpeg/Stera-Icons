@@ -14,7 +14,7 @@ const CaseSensitiveBold = memo(
 
 CaseSensitiveBold.displayName = 'CaseSensitiveBold';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { CaseSensitiveBold, CaseSensitiveBold as CaseSensitiveBoldIcon, CaseSensitiveBold as SiCaseSensitiveBold };
 export default CaseSensitiveBold;
 export type { CaseSensitiveBoldProps };

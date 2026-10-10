@@ -18,10 +18,10 @@ export interface TagProps extends IconProps {
  * For smaller bundle size, import specific variants directly:
  * import { TagRegular } from 'stera-icons/icons/TagRegular';
  */
-const Tag = memo(forwardRef<SVGSVGElement, TagProps>(({ 
+const Tag = memo(forwardRef<SVGSVGElement, TagProps>(({
   weight = 'regular',
   duotone = false,
-  ...rest 
+  ...rest
 }, ref) => {
   if (weight === 'bold' && duotone) return <TagBoldDuotone ref={ref} {...rest} />;
   if (weight === 'bold') return <TagBold ref={ref} {...rest} />;
@@ -33,6 +33,6 @@ const Tag = memo(forwardRef<SVGSVGElement, TagProps>(({
 
 Tag.displayName = 'Tag';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { Tag, Tag as TagIcon, Tag as SiTag };
 export default Tag;

@@ -14,7 +14,7 @@ const NoteTextFill = memo(
 
 NoteTextFill.displayName = 'NoteTextFill';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { NoteTextFill, NoteTextFill as NoteTextFillIcon, NoteTextFill as SiNoteTextFill };
 export default NoteTextFill;
 export type { NoteTextFillProps };

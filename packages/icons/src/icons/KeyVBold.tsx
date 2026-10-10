@@ -15,7 +15,7 @@ const KeyVBold = memo(
 
 KeyVBold.displayName = 'KeyVBold';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { KeyVBold, KeyVBold as KeyVBoldIcon, KeyVBold as SiKeyVBold };
 export default KeyVBold;
 export type { KeyVBoldProps };

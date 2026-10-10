@@ -15,7 +15,7 @@ const AudioBarsCircleBold = memo(
 
 AudioBarsCircleBold.displayName = 'AudioBarsCircleBold';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { AudioBarsCircleBold, AudioBarsCircleBold as AudioBarsCircleBoldIcon, AudioBarsCircleBold as SiAudioBarsCircleBold };
 export default AudioBarsCircleBold;
 export type { AudioBarsCircleBoldProps };

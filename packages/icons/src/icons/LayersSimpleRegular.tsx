@@ -14,7 +14,7 @@ const LayersSimpleRegular = memo(
 
 LayersSimpleRegular.displayName = 'LayersSimpleRegular';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { LayersSimpleRegular, LayersSimpleRegular as LayersSimpleRegularIcon, LayersSimpleRegular as SiLayersSimpleRegular };
 export default LayersSimpleRegular;
 export type { LayersSimpleRegularProps };

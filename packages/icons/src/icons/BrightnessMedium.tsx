@@ -18,10 +18,10 @@ export interface BrightnessMediumProps extends IconProps {
  * For smaller bundle size, import specific variants directly:
  * import { BrightnessMediumRegular } from 'stera-icons/icons/BrightnessMediumRegular';
  */
-const BrightnessMedium = memo(forwardRef<SVGSVGElement, BrightnessMediumProps>(({ 
+const BrightnessMedium = memo(forwardRef<SVGSVGElement, BrightnessMediumProps>(({
   weight = 'regular',
   duotone = false,
-  ...rest 
+  ...rest
 }, ref) => {
   if (weight === 'bold' && duotone) return <BrightnessMediumBoldDuotone ref={ref} {...rest} />;
   if (weight === 'bold') return <BrightnessMediumBold ref={ref} {...rest} />;
@@ -33,6 +33,6 @@ const BrightnessMedium = memo(forwardRef<SVGSVGElement, BrightnessMediumProps>((
 
 BrightnessMedium.displayName = 'BrightnessMedium';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { BrightnessMedium, BrightnessMedium as BrightnessMediumIcon, BrightnessMedium as SiBrightnessMedium };
 export default BrightnessMedium;

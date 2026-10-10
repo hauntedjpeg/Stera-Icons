@@ -15,7 +15,7 @@ const GradientBold = memo(
 
 GradientBold.displayName = 'GradientBold';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { GradientBold, GradientBold as GradientBoldIcon, GradientBold as SiGradientBold };
 export default GradientBold;
 export type { GradientBoldProps };

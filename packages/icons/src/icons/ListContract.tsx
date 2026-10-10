@@ -18,10 +18,10 @@ export interface ListContractProps extends IconProps {
  * For smaller bundle size, import specific variants directly:
  * import { ListContractRegular } from 'stera-icons/icons/ListContractRegular';
  */
-const ListContract = memo(forwardRef<SVGSVGElement, ListContractProps>(({ 
+const ListContract = memo(forwardRef<SVGSVGElement, ListContractProps>(({
   weight = 'regular',
   duotone = false,
-  ...rest 
+  ...rest
 }, ref) => {
   if (weight === 'bold' && duotone) return <ListContractBoldDuotone ref={ref} {...rest} />;
   if (weight === 'bold') return <ListContractBold ref={ref} {...rest} />;
@@ -33,6 +33,6 @@ const ListContract = memo(forwardRef<SVGSVGElement, ListContractProps>(({
 
 ListContract.displayName = 'ListContract';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { ListContract, ListContract as ListContractIcon, ListContract as SiListContract };
 export default ListContract;

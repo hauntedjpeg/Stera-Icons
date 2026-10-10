@@ -15,7 +15,7 @@ const CameraOffBold = memo(
 
 CameraOffBold.displayName = 'CameraOffBold';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { CameraOffBold, CameraOffBold as CameraOffBoldIcon, CameraOffBold as SiCameraOffBold };
 export default CameraOffBold;
 export type { CameraOffBoldProps };

@@ -18,10 +18,10 @@ export interface ArrowURightTopProps extends IconProps {
  * For smaller bundle size, import specific variants directly:
  * import { ArrowURightTopRegular } from 'stera-icons/icons/ArrowURightTopRegular';
  */
-const ArrowURightTop = memo(forwardRef<SVGSVGElement, ArrowURightTopProps>(({ 
+const ArrowURightTop = memo(forwardRef<SVGSVGElement, ArrowURightTopProps>(({
   weight = 'regular',
   duotone = false,
-  ...rest 
+  ...rest
 }, ref) => {
   if (weight === 'bold' && duotone) return <ArrowURightTopBoldDuotone ref={ref} {...rest} />;
   if (weight === 'bold') return <ArrowURightTopBold ref={ref} {...rest} />;
@@ -33,6 +33,6 @@ const ArrowURightTop = memo(forwardRef<SVGSVGElement, ArrowURightTopProps>(({
 
 ArrowURightTop.displayName = 'ArrowURightTop';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { ArrowURightTop, ArrowURightTop as ArrowURightTopIcon, ArrowURightTop as SiArrowURightTop };
 export default ArrowURightTop;

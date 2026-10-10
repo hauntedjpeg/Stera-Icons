@@ -15,7 +15,7 @@ const PaintPaletteFillDuotone = memo(
 
 PaintPaletteFillDuotone.displayName = 'PaintPaletteFillDuotone';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { PaintPaletteFillDuotone, PaintPaletteFillDuotone as PaintPaletteFillDuotoneIcon, PaintPaletteFillDuotone as SiPaintPaletteFillDuotone };
 export default PaintPaletteFillDuotone;
 export type { PaintPaletteFillDuotoneProps };

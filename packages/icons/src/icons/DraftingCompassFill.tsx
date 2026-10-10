@@ -14,7 +14,7 @@ const DraftingCompassFill = memo(
 
 DraftingCompassFill.displayName = 'DraftingCompassFill';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { DraftingCompassFill, DraftingCompassFill as DraftingCompassFillIcon, DraftingCompassFill as SiDraftingCompassFill };
 export default DraftingCompassFill;
 export type { DraftingCompassFillProps };

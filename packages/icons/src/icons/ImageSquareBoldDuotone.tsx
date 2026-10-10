@@ -15,7 +15,7 @@ const ImageSquareBoldDuotone = memo(
 
 ImageSquareBoldDuotone.displayName = 'ImageSquareBoldDuotone';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { ImageSquareBoldDuotone, ImageSquareBoldDuotone as ImageSquareBoldDuotoneIcon, ImageSquareBoldDuotone as SiImageSquareBoldDuotone };
 export default ImageSquareBoldDuotone;
 export type { ImageSquareBoldDuotoneProps };

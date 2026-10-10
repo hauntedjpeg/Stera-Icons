@@ -14,7 +14,7 @@ const MilestoneRegular = memo(
 
 MilestoneRegular.displayName = 'MilestoneRegular';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { MilestoneRegular, MilestoneRegular as MilestoneRegularIcon, MilestoneRegular as SiMilestoneRegular };
 export default MilestoneRegular;
 export type { MilestoneRegularProps };

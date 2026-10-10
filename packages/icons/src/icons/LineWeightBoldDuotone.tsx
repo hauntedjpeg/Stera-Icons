@@ -16,7 +16,7 @@ const LineWeightBoldDuotone = memo(
 
 LineWeightBoldDuotone.displayName = 'LineWeightBoldDuotone';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { LineWeightBoldDuotone, LineWeightBoldDuotone as LineWeightBoldDuotoneIcon, LineWeightBoldDuotone as SiLineWeightBoldDuotone };
 export default LineWeightBoldDuotone;
 export type { LineWeightBoldDuotoneProps };

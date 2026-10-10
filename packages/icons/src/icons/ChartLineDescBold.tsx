@@ -14,7 +14,7 @@ const ChartLineDescBold = memo(
 
 ChartLineDescBold.displayName = 'ChartLineDescBold';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { ChartLineDescBold, ChartLineDescBold as ChartLineDescBoldIcon, ChartLineDescBold as SiChartLineDescBold };
 export default ChartLineDescBold;
 export type { ChartLineDescBoldProps };

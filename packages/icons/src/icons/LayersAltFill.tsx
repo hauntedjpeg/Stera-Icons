@@ -16,7 +16,7 @@ const LayersAltFill = memo(
 
 LayersAltFill.displayName = 'LayersAltFill';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { LayersAltFill, LayersAltFill as LayersAltFillIcon, LayersAltFill as SiLayersAltFill };
 export default LayersAltFill;
 export type { LayersAltFillProps };

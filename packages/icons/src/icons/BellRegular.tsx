@@ -14,7 +14,7 @@ const BellRegular = memo(
 
 BellRegular.displayName = 'BellRegular';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { BellRegular, BellRegular as BellRegularIcon, BellRegular as SiBellRegular };
 export default BellRegular;
 export type { BellRegularProps };

@@ -15,7 +15,7 @@ const BrickWallRegularDuotone = memo(
 
 BrickWallRegularDuotone.displayName = 'BrickWallRegularDuotone';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { BrickWallRegularDuotone, BrickWallRegularDuotone as BrickWallRegularDuotoneIcon, BrickWallRegularDuotone as SiBrickWallRegularDuotone };
 export default BrickWallRegularDuotone;
 export type { BrickWallRegularDuotoneProps };

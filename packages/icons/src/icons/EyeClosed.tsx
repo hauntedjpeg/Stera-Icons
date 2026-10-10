@@ -18,10 +18,10 @@ export interface EyeClosedProps extends IconProps {
  * For smaller bundle size, import specific variants directly:
  * import { EyeClosedRegular } from 'stera-icons/icons/EyeClosedRegular';
  */
-const EyeClosed = memo(forwardRef<SVGSVGElement, EyeClosedProps>(({ 
+const EyeClosed = memo(forwardRef<SVGSVGElement, EyeClosedProps>(({
   weight = 'regular',
   duotone = false,
-  ...rest 
+  ...rest
 }, ref) => {
   if (weight === 'bold' && duotone) return <EyeClosedBoldDuotone ref={ref} {...rest} />;
   if (weight === 'bold') return <EyeClosedBold ref={ref} {...rest} />;
@@ -33,6 +33,6 @@ const EyeClosed = memo(forwardRef<SVGSVGElement, EyeClosedProps>(({
 
 EyeClosed.displayName = 'EyeClosed';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { EyeClosed, EyeClosed as EyeClosedIcon, EyeClosed as SiEyeClosed };
 export default EyeClosed;

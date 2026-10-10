@@ -18,10 +18,10 @@ export interface TextItalicProps extends IconProps {
  * For smaller bundle size, import specific variants directly:
  * import { TextItalicRegular } from 'stera-icons/icons/TextItalicRegular';
  */
-const TextItalic = memo(forwardRef<SVGSVGElement, TextItalicProps>(({ 
+const TextItalic = memo(forwardRef<SVGSVGElement, TextItalicProps>(({
   weight = 'regular',
   duotone = false,
-  ...rest 
+  ...rest
 }, ref) => {
   if (weight === 'bold' && duotone) return <TextItalicBoldDuotone ref={ref} {...rest} />;
   if (weight === 'bold') return <TextItalicBold ref={ref} {...rest} />;
@@ -33,6 +33,6 @@ const TextItalic = memo(forwardRef<SVGSVGElement, TextItalicProps>(({
 
 TextItalic.displayName = 'TextItalic';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { TextItalic, TextItalic as TextItalicIcon, TextItalic as SiTextItalic };
 export default TextItalic;

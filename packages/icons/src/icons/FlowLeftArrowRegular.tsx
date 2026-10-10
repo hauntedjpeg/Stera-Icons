@@ -14,7 +14,7 @@ const FlowLeftArrowRegular = memo(
 
 FlowLeftArrowRegular.displayName = 'FlowLeftArrowRegular';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { FlowLeftArrowRegular, FlowLeftArrowRegular as FlowLeftArrowRegularIcon, FlowLeftArrowRegular as SiFlowLeftArrowRegular };
 export default FlowLeftArrowRegular;
 export type { FlowLeftArrowRegularProps };

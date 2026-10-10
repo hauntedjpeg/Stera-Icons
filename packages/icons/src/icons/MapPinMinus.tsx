@@ -18,10 +18,10 @@ export interface MapPinMinusProps extends IconProps {
  * For smaller bundle size, import specific variants directly:
  * import { MapPinMinusRegular } from 'stera-icons/icons/MapPinMinusRegular';
  */
-const MapPinMinus = memo(forwardRef<SVGSVGElement, MapPinMinusProps>(({ 
+const MapPinMinus = memo(forwardRef<SVGSVGElement, MapPinMinusProps>(({
   weight = 'regular',
   duotone = false,
-  ...rest 
+  ...rest
 }, ref) => {
   if (weight === 'bold' && duotone) return <MapPinMinusBoldDuotone ref={ref} {...rest} />;
   if (weight === 'bold') return <MapPinMinusBold ref={ref} {...rest} />;
@@ -33,6 +33,6 @@ const MapPinMinus = memo(forwardRef<SVGSVGElement, MapPinMinusProps>(({
 
 MapPinMinus.displayName = 'MapPinMinus';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { MapPinMinus, MapPinMinus as MapPinMinusIcon, MapPinMinus as SiMapPinMinus };
 export default MapPinMinus;

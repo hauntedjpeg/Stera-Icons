@@ -14,7 +14,7 @@ const VideoBold = memo(
 
 VideoBold.displayName = 'VideoBold';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { VideoBold, VideoBold as VideoBoldIcon, VideoBold as SiVideoBold };
 export default VideoBold;
 export type { VideoBoldProps };

@@ -14,7 +14,7 @@ const CrownRegular = memo(
 
 CrownRegular.displayName = 'CrownRegular';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { CrownRegular, CrownRegular as CrownRegularIcon, CrownRegular as SiCrownRegular };
 export default CrownRegular;
 export type { CrownRegularProps };

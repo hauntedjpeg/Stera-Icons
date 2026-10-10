@@ -16,7 +16,7 @@ const MicOffRegularDuotone = memo(
 
 MicOffRegularDuotone.displayName = 'MicOffRegularDuotone';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { MicOffRegularDuotone, MicOffRegularDuotone as MicOffRegularDuotoneIcon, MicOffRegularDuotone as SiMicOffRegularDuotone };
 export default MicOffRegularDuotone;
 export type { MicOffRegularDuotoneProps };

@@ -18,10 +18,10 @@ export interface StarHalfProps extends IconProps {
  * For smaller bundle size, import specific variants directly:
  * import { StarHalfRegular } from 'stera-icons/icons/StarHalfRegular';
  */
-const StarHalf = memo(forwardRef<SVGSVGElement, StarHalfProps>(({ 
+const StarHalf = memo(forwardRef<SVGSVGElement, StarHalfProps>(({
   weight = 'regular',
   duotone = false,
-  ...rest 
+  ...rest
 }, ref) => {
   if (weight === 'bold' && duotone) return <StarHalfBoldDuotone ref={ref} {...rest} />;
   if (weight === 'bold') return <StarHalfBold ref={ref} {...rest} />;
@@ -33,6 +33,6 @@ const StarHalf = memo(forwardRef<SVGSVGElement, StarHalfProps>(({
 
 StarHalf.displayName = 'StarHalf';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { StarHalf, StarHalf as StarHalfIcon, StarHalf as SiStarHalf };
 export default StarHalf;

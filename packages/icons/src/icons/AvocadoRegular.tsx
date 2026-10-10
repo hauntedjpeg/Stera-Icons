@@ -15,7 +15,7 @@ const AvocadoRegular = memo(
 
 AvocadoRegular.displayName = 'AvocadoRegular';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { AvocadoRegular, AvocadoRegular as AvocadoRegularIcon, AvocadoRegular as SiAvocadoRegular };
 export default AvocadoRegular;
 export type { AvocadoRegularProps };

@@ -14,7 +14,7 @@ const ApertureRegular = memo(
 
 ApertureRegular.displayName = 'ApertureRegular';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { ApertureRegular, ApertureRegular as ApertureRegularIcon, ApertureRegular as SiApertureRegular };
 export default ApertureRegular;
 export type { ApertureRegularProps };

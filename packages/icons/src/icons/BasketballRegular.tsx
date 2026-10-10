@@ -14,7 +14,7 @@ const BasketballRegular = memo(
 
 BasketballRegular.displayName = 'BasketballRegular';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { BasketballRegular, BasketballRegular as BasketballRegularIcon, BasketballRegular as SiBasketballRegular };
 export default BasketballRegular;
 export type { BasketballRegularProps };

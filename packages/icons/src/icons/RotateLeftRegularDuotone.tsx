@@ -15,7 +15,7 @@ const RotateLeftRegularDuotone = memo(
 
 RotateLeftRegularDuotone.displayName = 'RotateLeftRegularDuotone';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { RotateLeftRegularDuotone, RotateLeftRegularDuotone as RotateLeftRegularDuotoneIcon, RotateLeftRegularDuotone as SiRotateLeftRegularDuotone };
 export default RotateLeftRegularDuotone;
 export type { RotateLeftRegularDuotoneProps };

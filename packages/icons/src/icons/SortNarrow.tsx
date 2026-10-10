@@ -18,10 +18,10 @@ export interface SortNarrowProps extends IconProps {
  * For smaller bundle size, import specific variants directly:
  * import { SortNarrowRegular } from 'stera-icons/icons/SortNarrowRegular';
  */
-const SortNarrow = memo(forwardRef<SVGSVGElement, SortNarrowProps>(({ 
+const SortNarrow = memo(forwardRef<SVGSVGElement, SortNarrowProps>(({
   weight = 'regular',
   duotone = false,
-  ...rest 
+  ...rest
 }, ref) => {
   if (weight === 'bold' && duotone) return <SortNarrowBoldDuotone ref={ref} {...rest} />;
   if (weight === 'bold') return <SortNarrowBold ref={ref} {...rest} />;
@@ -33,6 +33,6 @@ const SortNarrow = memo(forwardRef<SVGSVGElement, SortNarrowProps>(({
 
 SortNarrow.displayName = 'SortNarrow';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { SortNarrow, SortNarrow as SortNarrowIcon, SortNarrow as SiSortNarrow };
 export default SortNarrow;

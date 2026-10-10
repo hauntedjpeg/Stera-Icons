@@ -15,7 +15,7 @@ const EyeOffBoldDuotone = memo(
 
 EyeOffBoldDuotone.displayName = 'EyeOffBoldDuotone';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { EyeOffBoldDuotone, EyeOffBoldDuotone as EyeOffBoldDuotoneIcon, EyeOffBoldDuotone as SiEyeOffBoldDuotone };
 export default EyeOffBoldDuotone;
 export type { EyeOffBoldDuotoneProps };

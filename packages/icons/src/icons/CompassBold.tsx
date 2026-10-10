@@ -15,7 +15,7 @@ const CompassBold = memo(
 
 CompassBold.displayName = 'CompassBold';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { CompassBold, CompassBold as CompassBoldIcon, CompassBold as SiCompassBold };
 export default CompassBold;
 export type { CompassBoldProps };

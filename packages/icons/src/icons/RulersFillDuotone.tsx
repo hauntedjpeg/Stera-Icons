@@ -18,7 +18,7 @@ const RulersFillDuotone = memo(
 
 RulersFillDuotone.displayName = 'RulersFillDuotone';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { RulersFillDuotone, RulersFillDuotone as RulersFillDuotoneIcon, RulersFillDuotone as SiRulersFillDuotone };
 export default RulersFillDuotone;
 export type { RulersFillDuotoneProps };

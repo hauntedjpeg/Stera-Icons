@@ -15,7 +15,7 @@ const TreeRegularDuotone = memo(
 
 TreeRegularDuotone.displayName = 'TreeRegularDuotone';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { TreeRegularDuotone, TreeRegularDuotone as TreeRegularDuotoneIcon, TreeRegularDuotone as SiTreeRegularDuotone };
 export default TreeRegularDuotone;
 export type { TreeRegularDuotoneProps };

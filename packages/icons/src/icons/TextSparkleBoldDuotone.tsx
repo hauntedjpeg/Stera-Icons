@@ -15,7 +15,7 @@ const TextSparkleBoldDuotone = memo(
 
 TextSparkleBoldDuotone.displayName = 'TextSparkleBoldDuotone';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { TextSparkleBoldDuotone, TextSparkleBoldDuotone as TextSparkleBoldDuotoneIcon, TextSparkleBoldDuotone as SiTextSparkleBoldDuotone };
 export default TextSparkleBoldDuotone;
 export type { TextSparkleBoldDuotoneProps };

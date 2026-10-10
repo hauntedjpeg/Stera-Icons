@@ -18,10 +18,10 @@ export interface PushPinProps extends IconProps {
  * For smaller bundle size, import specific variants directly:
  * import { PushPinRegular } from 'stera-icons/icons/PushPinRegular';
  */
-const PushPin = memo(forwardRef<SVGSVGElement, PushPinProps>(({ 
+const PushPin = memo(forwardRef<SVGSVGElement, PushPinProps>(({
   weight = 'regular',
   duotone = false,
-  ...rest 
+  ...rest
 }, ref) => {
   if (weight === 'bold' && duotone) return <PushPinBoldDuotone ref={ref} {...rest} />;
   if (weight === 'bold') return <PushPinBold ref={ref} {...rest} />;
@@ -33,6 +33,6 @@ const PushPin = memo(forwardRef<SVGSVGElement, PushPinProps>(({
 
 PushPin.displayName = 'PushPin';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { PushPin, PushPin as PushPinIcon, PushPin as SiPushPin };
 export default PushPin;

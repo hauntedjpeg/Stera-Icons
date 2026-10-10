@@ -14,7 +14,7 @@ const CylinderBold = memo(
 
 CylinderBold.displayName = 'CylinderBold';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { CylinderBold, CylinderBold as CylinderBoldIcon, CylinderBold as SiCylinderBold };
 export default CylinderBold;
 export type { CylinderBoldProps };

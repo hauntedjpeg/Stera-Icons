@@ -15,7 +15,7 @@ const ChevronFullCircleLeftRegularDuotone = memo(
 
 ChevronFullCircleLeftRegularDuotone.displayName = 'ChevronFullCircleLeftRegularDuotone';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { ChevronFullCircleLeftRegularDuotone, ChevronFullCircleLeftRegularDuotone as ChevronFullCircleLeftRegularDuotoneIcon, ChevronFullCircleLeftRegularDuotone as SiChevronFullCircleLeftRegularDuotone };
 export default ChevronFullCircleLeftRegularDuotone;
 export type { ChevronFullCircleLeftRegularDuotoneProps };

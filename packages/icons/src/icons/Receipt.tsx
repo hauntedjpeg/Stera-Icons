@@ -18,10 +18,10 @@ export interface ReceiptProps extends IconProps {
  * For smaller bundle size, import specific variants directly:
  * import { ReceiptRegular } from 'stera-icons/icons/ReceiptRegular';
  */
-const Receipt = memo(forwardRef<SVGSVGElement, ReceiptProps>(({ 
+const Receipt = memo(forwardRef<SVGSVGElement, ReceiptProps>(({
   weight = 'regular',
   duotone = false,
-  ...rest 
+  ...rest
 }, ref) => {
   if (weight === 'bold' && duotone) return <ReceiptBoldDuotone ref={ref} {...rest} />;
   if (weight === 'bold') return <ReceiptBold ref={ref} {...rest} />;
@@ -33,6 +33,6 @@ const Receipt = memo(forwardRef<SVGSVGElement, ReceiptProps>(({
 
 Receipt.displayName = 'Receipt';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { Receipt, Receipt as ReceiptIcon, Receipt as SiReceipt };
 export default Receipt;

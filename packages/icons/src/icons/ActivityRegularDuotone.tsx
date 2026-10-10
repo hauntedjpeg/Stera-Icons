@@ -15,7 +15,7 @@ const ActivityRegularDuotone = memo(
 
 ActivityRegularDuotone.displayName = 'ActivityRegularDuotone';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { ActivityRegularDuotone, ActivityRegularDuotone as ActivityRegularDuotoneIcon, ActivityRegularDuotone as SiActivityRegularDuotone };
 export default ActivityRegularDuotone;
 export type { ActivityRegularDuotoneProps };

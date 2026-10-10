@@ -14,7 +14,7 @@ const SoccerFieldBold = memo(
 
 SoccerFieldBold.displayName = 'SoccerFieldBold';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { SoccerFieldBold, SoccerFieldBold as SoccerFieldBoldIcon, SoccerFieldBold as SiSoccerFieldBold };
 export default SoccerFieldBold;
 export type { SoccerFieldBoldProps };

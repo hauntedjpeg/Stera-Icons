@@ -15,7 +15,7 @@ const EyeClosedRegularDuotone = memo(
 
 EyeClosedRegularDuotone.displayName = 'EyeClosedRegularDuotone';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { EyeClosedRegularDuotone, EyeClosedRegularDuotone as EyeClosedRegularDuotoneIcon, EyeClosedRegularDuotone as SiEyeClosedRegularDuotone };
 export default EyeClosedRegularDuotone;
 export type { EyeClosedRegularDuotoneProps };

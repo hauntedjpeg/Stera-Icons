@@ -14,7 +14,7 @@ const SliceBold = memo(
 
 SliceBold.displayName = 'SliceBold';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { SliceBold, SliceBold as SliceBoldIcon, SliceBold as SiSliceBold };
 export default SliceBold;
 export type { SliceBoldProps };

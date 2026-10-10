@@ -15,7 +15,7 @@ const MicroscopeRegular = memo(
 
 MicroscopeRegular.displayName = 'MicroscopeRegular';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { MicroscopeRegular, MicroscopeRegular as MicroscopeRegularIcon, MicroscopeRegular as SiMicroscopeRegular };
 export default MicroscopeRegular;
 export type { MicroscopeRegularProps };

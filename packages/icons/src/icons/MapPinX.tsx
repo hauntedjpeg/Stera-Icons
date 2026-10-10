@@ -18,10 +18,10 @@ export interface MapPinXProps extends IconProps {
  * For smaller bundle size, import specific variants directly:
  * import { MapPinXRegular } from 'stera-icons/icons/MapPinXRegular';
  */
-const MapPinX = memo(forwardRef<SVGSVGElement, MapPinXProps>(({ 
+const MapPinX = memo(forwardRef<SVGSVGElement, MapPinXProps>(({
   weight = 'regular',
   duotone = false,
-  ...rest 
+  ...rest
 }, ref) => {
   if (weight === 'bold' && duotone) return <MapPinXBoldDuotone ref={ref} {...rest} />;
   if (weight === 'bold') return <MapPinXBold ref={ref} {...rest} />;
@@ -33,6 +33,6 @@ const MapPinX = memo(forwardRef<SVGSVGElement, MapPinXProps>(({
 
 MapPinX.displayName = 'MapPinX';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { MapPinX, MapPinX as MapPinXIcon, MapPinX as SiMapPinX };
 export default MapPinX;

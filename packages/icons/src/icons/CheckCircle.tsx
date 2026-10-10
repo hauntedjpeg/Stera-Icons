@@ -18,10 +18,10 @@ export interface CheckCircleProps extends IconProps {
  * For smaller bundle size, import specific variants directly:
  * import { CheckCircleRegular } from 'stera-icons/icons/CheckCircleRegular';
  */
-const CheckCircle = memo(forwardRef<SVGSVGElement, CheckCircleProps>(({ 
+const CheckCircle = memo(forwardRef<SVGSVGElement, CheckCircleProps>(({
   weight = 'regular',
   duotone = false,
-  ...rest 
+  ...rest
 }, ref) => {
   if (weight === 'bold' && duotone) return <CheckCircleBoldDuotone ref={ref} {...rest} />;
   if (weight === 'bold') return <CheckCircleBold ref={ref} {...rest} />;
@@ -33,6 +33,6 @@ const CheckCircle = memo(forwardRef<SVGSVGElement, CheckCircleProps>(({
 
 CheckCircle.displayName = 'CheckCircle';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { CheckCircle, CheckCircle as CheckCircleIcon, CheckCircle as SiCheckCircle };
 export default CheckCircle;

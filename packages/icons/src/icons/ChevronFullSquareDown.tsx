@@ -18,10 +18,10 @@ export interface ChevronFullSquareDownProps extends IconProps {
  * For smaller bundle size, import specific variants directly:
  * import { ChevronFullSquareDownRegular } from 'stera-icons/icons/ChevronFullSquareDownRegular';
  */
-const ChevronFullSquareDown = memo(forwardRef<SVGSVGElement, ChevronFullSquareDownProps>(({ 
+const ChevronFullSquareDown = memo(forwardRef<SVGSVGElement, ChevronFullSquareDownProps>(({
   weight = 'regular',
   duotone = false,
-  ...rest 
+  ...rest
 }, ref) => {
   if (weight === 'bold' && duotone) return <ChevronFullSquareDownBoldDuotone ref={ref} {...rest} />;
   if (weight === 'bold') return <ChevronFullSquareDownBold ref={ref} {...rest} />;
@@ -33,6 +33,6 @@ const ChevronFullSquareDown = memo(forwardRef<SVGSVGElement, ChevronFullSquareDo
 
 ChevronFullSquareDown.displayName = 'ChevronFullSquareDown';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { ChevronFullSquareDown, ChevronFullSquareDown as ChevronFullSquareDownIcon, ChevronFullSquareDown as SiChevronFullSquareDown };
 export default ChevronFullSquareDown;

@@ -18,10 +18,10 @@ export interface ScanCubeProps extends IconProps {
  * For smaller bundle size, import specific variants directly:
  * import { ScanCubeRegular } from 'stera-icons/icons/ScanCubeRegular';
  */
-const ScanCube = memo(forwardRef<SVGSVGElement, ScanCubeProps>(({ 
+const ScanCube = memo(forwardRef<SVGSVGElement, ScanCubeProps>(({
   weight = 'regular',
   duotone = false,
-  ...rest 
+  ...rest
 }, ref) => {
   if (weight === 'bold' && duotone) return <ScanCubeBoldDuotone ref={ref} {...rest} />;
   if (weight === 'bold') return <ScanCubeBold ref={ref} {...rest} />;
@@ -33,6 +33,6 @@ const ScanCube = memo(forwardRef<SVGSVGElement, ScanCubeProps>(({
 
 ScanCube.displayName = 'ScanCube';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { ScanCube, ScanCube as ScanCubeIcon, ScanCube as SiScanCube };
 export default ScanCube;

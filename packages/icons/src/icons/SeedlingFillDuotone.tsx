@@ -15,7 +15,7 @@ const SeedlingFillDuotone = memo(
 
 SeedlingFillDuotone.displayName = 'SeedlingFillDuotone';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { SeedlingFillDuotone, SeedlingFillDuotone as SeedlingFillDuotoneIcon, SeedlingFillDuotone as SiSeedlingFillDuotone };
 export default SeedlingFillDuotone;
 export type { SeedlingFillDuotoneProps };

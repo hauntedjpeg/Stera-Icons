@@ -14,7 +14,7 @@ const HashItalicRegular = memo(
 
 HashItalicRegular.displayName = 'HashItalicRegular';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { HashItalicRegular, HashItalicRegular as HashItalicRegularIcon, HashItalicRegular as SiHashItalicRegular };
 export default HashItalicRegular;
 export type { HashItalicRegularProps };

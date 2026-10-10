@@ -14,7 +14,7 @@ const MessageSquareAlertFill = memo(
 
 MessageSquareAlertFill.displayName = 'MessageSquareAlertFill';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { MessageSquareAlertFill, MessageSquareAlertFill as MessageSquareAlertFillIcon, MessageSquareAlertFill as SiMessageSquareAlertFill };
 export default MessageSquareAlertFill;
 export type { MessageSquareAlertFillProps };

@@ -16,7 +16,7 @@ const ChecklistRegularDuotone = memo(
 
 ChecklistRegularDuotone.displayName = 'ChecklistRegularDuotone';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { ChecklistRegularDuotone, ChecklistRegularDuotone as ChecklistRegularDuotoneIcon, ChecklistRegularDuotone as SiChecklistRegularDuotone };
 export default ChecklistRegularDuotone;
 export type { ChecklistRegularDuotoneProps };

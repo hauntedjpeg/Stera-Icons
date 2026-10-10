@@ -15,7 +15,7 @@ const PowerFill = memo(
 
 PowerFill.displayName = 'PowerFill';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { PowerFill, PowerFill as PowerFillIcon, PowerFill as SiPowerFill };
 export default PowerFill;
 export type { PowerFillProps };

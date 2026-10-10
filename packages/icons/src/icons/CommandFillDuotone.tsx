@@ -15,7 +15,7 @@ const CommandFillDuotone = memo(
 
 CommandFillDuotone.displayName = 'CommandFillDuotone';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { CommandFillDuotone, CommandFillDuotone as CommandFillDuotoneIcon, CommandFillDuotone as SiCommandFillDuotone };
 export default CommandFillDuotone;
 export type { CommandFillDuotoneProps };

@@ -15,7 +15,7 @@ const LinkOffFillDuotone = memo(
 
 LinkOffFillDuotone.displayName = 'LinkOffFillDuotone';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { LinkOffFillDuotone, LinkOffFillDuotone as LinkOffFillDuotoneIcon, LinkOffFillDuotone as SiLinkOffFillDuotone };
 export default LinkOffFillDuotone;
 export type { LinkOffFillDuotoneProps };

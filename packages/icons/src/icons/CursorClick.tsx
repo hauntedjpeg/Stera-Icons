@@ -18,10 +18,10 @@ export interface CursorClickProps extends IconProps {
  * For smaller bundle size, import specific variants directly:
  * import { CursorClickRegular } from 'stera-icons/icons/CursorClickRegular';
  */
-const CursorClick = memo(forwardRef<SVGSVGElement, CursorClickProps>(({ 
+const CursorClick = memo(forwardRef<SVGSVGElement, CursorClickProps>(({
   weight = 'regular',
   duotone = false,
-  ...rest 
+  ...rest
 }, ref) => {
   if (weight === 'bold' && duotone) return <CursorClickBoldDuotone ref={ref} {...rest} />;
   if (weight === 'bold') return <CursorClickBold ref={ref} {...rest} />;
@@ -33,6 +33,6 @@ const CursorClick = memo(forwardRef<SVGSVGElement, CursorClickProps>(({
 
 CursorClick.displayName = 'CursorClick';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { CursorClick, CursorClick as CursorClickIcon, CursorClick as SiCursorClick };
 export default CursorClick;

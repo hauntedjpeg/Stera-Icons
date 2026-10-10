@@ -18,10 +18,10 @@ export interface UserCircleProps extends IconProps {
  * For smaller bundle size, import specific variants directly:
  * import { UserCircleRegular } from 'stera-icons/icons/UserCircleRegular';
  */
-const UserCircle = memo(forwardRef<SVGSVGElement, UserCircleProps>(({ 
+const UserCircle = memo(forwardRef<SVGSVGElement, UserCircleProps>(({
   weight = 'regular',
   duotone = false,
-  ...rest 
+  ...rest
 }, ref) => {
   if (weight === 'bold' && duotone) return <UserCircleBoldDuotone ref={ref} {...rest} />;
   if (weight === 'bold') return <UserCircleBold ref={ref} {...rest} />;
@@ -33,6 +33,6 @@ const UserCircle = memo(forwardRef<SVGSVGElement, UserCircleProps>(({
 
 UserCircle.displayName = 'UserCircle';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { UserCircle, UserCircle as UserCircleIcon, UserCircle as SiUserCircle };
 export default UserCircle;

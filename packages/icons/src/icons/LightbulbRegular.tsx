@@ -14,7 +14,7 @@ const LightbulbRegular = memo(
 
 LightbulbRegular.displayName = 'LightbulbRegular';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { LightbulbRegular, LightbulbRegular as LightbulbRegularIcon, LightbulbRegular as SiLightbulbRegular };
 export default LightbulbRegular;
 export type { LightbulbRegularProps };

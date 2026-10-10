@@ -15,7 +15,7 @@ const NotebookBold = memo(
 
 NotebookBold.displayName = 'NotebookBold';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { NotebookBold, NotebookBold as NotebookBoldIcon, NotebookBold as SiNotebookBold };
 export default NotebookBold;
 export type { NotebookBoldProps };

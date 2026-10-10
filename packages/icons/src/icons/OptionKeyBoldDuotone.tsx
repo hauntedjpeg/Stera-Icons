@@ -15,7 +15,7 @@ const OptionKeyBoldDuotone = memo(
 
 OptionKeyBoldDuotone.displayName = 'OptionKeyBoldDuotone';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { OptionKeyBoldDuotone, OptionKeyBoldDuotone as OptionKeyBoldDuotoneIcon, OptionKeyBoldDuotone as SiOptionKeyBoldDuotone };
 export default OptionKeyBoldDuotone;
 export type { OptionKeyBoldDuotoneProps };

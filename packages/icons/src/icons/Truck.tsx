@@ -18,10 +18,10 @@ export interface TruckProps extends IconProps {
  * For smaller bundle size, import specific variants directly:
  * import { TruckRegular } from 'stera-icons/icons/TruckRegular';
  */
-const Truck = memo(forwardRef<SVGSVGElement, TruckProps>(({ 
+const Truck = memo(forwardRef<SVGSVGElement, TruckProps>(({
   weight = 'regular',
   duotone = false,
-  ...rest 
+  ...rest
 }, ref) => {
   if (weight === 'bold' && duotone) return <TruckBoldDuotone ref={ref} {...rest} />;
   if (weight === 'bold') return <TruckBold ref={ref} {...rest} />;
@@ -33,6 +33,6 @@ const Truck = memo(forwardRef<SVGSVGElement, TruckProps>(({
 
 Truck.displayName = 'Truck';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { Truck, Truck as TruckIcon, Truck as SiTruck };
 export default Truck;

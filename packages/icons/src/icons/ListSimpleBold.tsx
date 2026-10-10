@@ -14,7 +14,7 @@ const ListSimpleBold = memo(
 
 ListSimpleBold.displayName = 'ListSimpleBold';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { ListSimpleBold, ListSimpleBold as ListSimpleBoldIcon, ListSimpleBold as SiListSimpleBold };
 export default ListSimpleBold;
 export type { ListSimpleBoldProps };

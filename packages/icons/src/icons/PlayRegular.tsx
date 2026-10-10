@@ -14,7 +14,7 @@ const PlayRegular = memo(
 
 PlayRegular.displayName = 'PlayRegular';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { PlayRegular, PlayRegular as PlayRegularIcon, PlayRegular as SiPlayRegular };
 export default PlayRegular;
 export type { PlayRegularProps };

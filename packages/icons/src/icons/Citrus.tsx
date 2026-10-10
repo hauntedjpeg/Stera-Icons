@@ -18,10 +18,10 @@ export interface CitrusProps extends IconProps {
  * For smaller bundle size, import specific variants directly:
  * import { CitrusRegular } from 'stera-icons/icons/CitrusRegular';
  */
-const Citrus = memo(forwardRef<SVGSVGElement, CitrusProps>(({ 
+const Citrus = memo(forwardRef<SVGSVGElement, CitrusProps>(({
   weight = 'regular',
   duotone = false,
-  ...rest 
+  ...rest
 }, ref) => {
   if (weight === 'bold' && duotone) return <CitrusBoldDuotone ref={ref} {...rest} />;
   if (weight === 'bold') return <CitrusBold ref={ref} {...rest} />;
@@ -33,6 +33,6 @@ const Citrus = memo(forwardRef<SVGSVGElement, CitrusProps>(({
 
 Citrus.displayName = 'Citrus';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { Citrus, Citrus as CitrusIcon, Citrus as SiCitrus };
 export default Citrus;

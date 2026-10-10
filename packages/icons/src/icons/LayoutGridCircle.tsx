@@ -18,10 +18,10 @@ export interface LayoutGridCircleProps extends IconProps {
  * For smaller bundle size, import specific variants directly:
  * import { LayoutGridCircleRegular } from 'stera-icons/icons/LayoutGridCircleRegular';
  */
-const LayoutGridCircle = memo(forwardRef<SVGSVGElement, LayoutGridCircleProps>(({ 
+const LayoutGridCircle = memo(forwardRef<SVGSVGElement, LayoutGridCircleProps>(({
   weight = 'regular',
   duotone = false,
-  ...rest 
+  ...rest
 }, ref) => {
   if (weight === 'bold' && duotone) return <LayoutGridCircleBoldDuotone ref={ref} {...rest} />;
   if (weight === 'bold') return <LayoutGridCircleBold ref={ref} {...rest} />;
@@ -33,6 +33,6 @@ const LayoutGridCircle = memo(forwardRef<SVGSVGElement, LayoutGridCircleProps>((
 
 LayoutGridCircle.displayName = 'LayoutGridCircle';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { LayoutGridCircle, LayoutGridCircle as LayoutGridCircleIcon, LayoutGridCircle as SiLayoutGridCircle };
 export default LayoutGridCircle;

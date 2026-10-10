@@ -15,7 +15,7 @@ const ContrastCircleRegular = memo(
 
 ContrastCircleRegular.displayName = 'ContrastCircleRegular';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { ContrastCircleRegular, ContrastCircleRegular as ContrastCircleRegularIcon, ContrastCircleRegular as SiContrastCircleRegular };
 export default ContrastCircleRegular;
 export type { ContrastCircleRegularProps };

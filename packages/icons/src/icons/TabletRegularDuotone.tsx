@@ -15,7 +15,7 @@ const TabletRegularDuotone = memo(
 
 TabletRegularDuotone.displayName = 'TabletRegularDuotone';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { TabletRegularDuotone, TabletRegularDuotone as TabletRegularDuotoneIcon, TabletRegularDuotone as SiTabletRegularDuotone };
 export default TabletRegularDuotone;
 export type { TabletRegularDuotoneProps };

@@ -15,7 +15,7 @@ const BuildingBold = memo(
 
 BuildingBold.displayName = 'BuildingBold';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { BuildingBold, BuildingBold as BuildingBoldIcon, BuildingBold as SiBuildingBold };
 export default BuildingBold;
 export type { BuildingBoldProps };

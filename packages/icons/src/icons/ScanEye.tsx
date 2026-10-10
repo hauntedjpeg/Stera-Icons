@@ -18,10 +18,10 @@ export interface ScanEyeProps extends IconProps {
  * For smaller bundle size, import specific variants directly:
  * import { ScanEyeRegular } from 'stera-icons/icons/ScanEyeRegular';
  */
-const ScanEye = memo(forwardRef<SVGSVGElement, ScanEyeProps>(({ 
+const ScanEye = memo(forwardRef<SVGSVGElement, ScanEyeProps>(({
   weight = 'regular',
   duotone = false,
-  ...rest 
+  ...rest
 }, ref) => {
   if (weight === 'bold' && duotone) return <ScanEyeBoldDuotone ref={ref} {...rest} />;
   if (weight === 'bold') return <ScanEyeBold ref={ref} {...rest} />;
@@ -33,6 +33,6 @@ const ScanEye = memo(forwardRef<SVGSVGElement, ScanEyeProps>(({
 
 ScanEye.displayName = 'ScanEye';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { ScanEye, ScanEye as ScanEyeIcon, ScanEye as SiScanEye };
 export default ScanEye;

@@ -18,10 +18,10 @@ export interface MessageCircleCheckProps extends IconProps {
  * For smaller bundle size, import specific variants directly:
  * import { MessageCircleCheckRegular } from 'stera-icons/icons/MessageCircleCheckRegular';
  */
-const MessageCircleCheck = memo(forwardRef<SVGSVGElement, MessageCircleCheckProps>(({ 
+const MessageCircleCheck = memo(forwardRef<SVGSVGElement, MessageCircleCheckProps>(({
   weight = 'regular',
   duotone = false,
-  ...rest 
+  ...rest
 }, ref) => {
   if (weight === 'bold' && duotone) return <MessageCircleCheckBoldDuotone ref={ref} {...rest} />;
   if (weight === 'bold') return <MessageCircleCheckBold ref={ref} {...rest} />;
@@ -33,6 +33,6 @@ const MessageCircleCheck = memo(forwardRef<SVGSVGElement, MessageCircleCheckProp
 
 MessageCircleCheck.displayName = 'MessageCircleCheck';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { MessageCircleCheck, MessageCircleCheck as MessageCircleCheckIcon, MessageCircleCheck as SiMessageCircleCheck };
 export default MessageCircleCheck;

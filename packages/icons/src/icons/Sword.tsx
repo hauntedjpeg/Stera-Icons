@@ -18,10 +18,10 @@ export interface SwordProps extends IconProps {
  * For smaller bundle size, import specific variants directly:
  * import { SwordRegular } from 'stera-icons/icons/SwordRegular';
  */
-const Sword = memo(forwardRef<SVGSVGElement, SwordProps>(({ 
+const Sword = memo(forwardRef<SVGSVGElement, SwordProps>(({
   weight = 'regular',
   duotone = false,
-  ...rest 
+  ...rest
 }, ref) => {
   if (weight === 'bold' && duotone) return <SwordBoldDuotone ref={ref} {...rest} />;
   if (weight === 'bold') return <SwordBold ref={ref} {...rest} />;
@@ -33,6 +33,6 @@ const Sword = memo(forwardRef<SVGSVGElement, SwordProps>(({
 
 Sword.displayName = 'Sword';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { Sword, Sword as SwordIcon, Sword as SiSword };
 export default Sword;

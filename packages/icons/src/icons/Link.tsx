@@ -18,10 +18,10 @@ export interface LinkProps extends IconProps {
  * For smaller bundle size, import specific variants directly:
  * import { LinkRegular } from 'stera-icons/icons/LinkRegular';
  */
-const Link = memo(forwardRef<SVGSVGElement, LinkProps>(({ 
+const Link = memo(forwardRef<SVGSVGElement, LinkProps>(({
   weight = 'regular',
   duotone = false,
-  ...rest 
+  ...rest
 }, ref) => {
   if (weight === 'bold' && duotone) return <LinkBoldDuotone ref={ref} {...rest} />;
   if (weight === 'bold') return <LinkBold ref={ref} {...rest} />;
@@ -33,6 +33,6 @@ const Link = memo(forwardRef<SVGSVGElement, LinkProps>(({
 
 Link.displayName = 'Link';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { Link, Link as LinkIcon, Link as SiLink };
 export default Link;

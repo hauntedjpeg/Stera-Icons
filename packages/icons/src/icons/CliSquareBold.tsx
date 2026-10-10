@@ -15,7 +15,7 @@ const CliSquareBold = memo(
 
 CliSquareBold.displayName = 'CliSquareBold';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { CliSquareBold, CliSquareBold as CliSquareBoldIcon, CliSquareBold as SiCliSquareBold };
 export default CliSquareBold;
 export type { CliSquareBoldProps };

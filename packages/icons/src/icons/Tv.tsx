@@ -18,10 +18,10 @@ export interface TvProps extends IconProps {
  * For smaller bundle size, import specific variants directly:
  * import { TvRegular } from 'stera-icons/icons/TvRegular';
  */
-const Tv = memo(forwardRef<SVGSVGElement, TvProps>(({ 
+const Tv = memo(forwardRef<SVGSVGElement, TvProps>(({
   weight = 'regular',
   duotone = false,
-  ...rest 
+  ...rest
 }, ref) => {
   if (weight === 'bold' && duotone) return <TvBoldDuotone ref={ref} {...rest} />;
   if (weight === 'bold') return <TvBold ref={ref} {...rest} />;
@@ -33,6 +33,6 @@ const Tv = memo(forwardRef<SVGSVGElement, TvProps>(({
 
 Tv.displayName = 'Tv';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { Tv, Tv as TvIcon, Tv as SiTv };
 export default Tv;

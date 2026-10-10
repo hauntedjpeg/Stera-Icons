@@ -18,10 +18,10 @@ export interface FilterProps extends IconProps {
  * For smaller bundle size, import specific variants directly:
  * import { FilterRegular } from 'stera-icons/icons/FilterRegular';
  */
-const Filter = memo(forwardRef<SVGSVGElement, FilterProps>(({ 
+const Filter = memo(forwardRef<SVGSVGElement, FilterProps>(({
   weight = 'regular',
   duotone = false,
-  ...rest 
+  ...rest
 }, ref) => {
   if (weight === 'bold' && duotone) return <FilterBoldDuotone ref={ref} {...rest} />;
   if (weight === 'bold') return <FilterBold ref={ref} {...rest} />;
@@ -33,6 +33,6 @@ const Filter = memo(forwardRef<SVGSVGElement, FilterProps>(({
 
 Filter.displayName = 'Filter';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { Filter, Filter as FilterIcon, Filter as SiFilter };
 export default Filter;

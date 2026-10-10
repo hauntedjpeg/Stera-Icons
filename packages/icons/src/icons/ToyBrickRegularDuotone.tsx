@@ -15,7 +15,7 @@ const ToyBrickRegularDuotone = memo(
 
 ToyBrickRegularDuotone.displayName = 'ToyBrickRegularDuotone';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { ToyBrickRegularDuotone, ToyBrickRegularDuotone as ToyBrickRegularDuotoneIcon, ToyBrickRegularDuotone as SiToyBrickRegularDuotone };
 export default ToyBrickRegularDuotone;
 export type { ToyBrickRegularDuotoneProps };

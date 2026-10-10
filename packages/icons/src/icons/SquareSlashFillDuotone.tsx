@@ -15,7 +15,7 @@ const SquareSlashFillDuotone = memo(
 
 SquareSlashFillDuotone.displayName = 'SquareSlashFillDuotone';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { SquareSlashFillDuotone, SquareSlashFillDuotone as SquareSlashFillDuotoneIcon, SquareSlashFillDuotone as SiSquareSlashFillDuotone };
 export default SquareSlashFillDuotone;
 export type { SquareSlashFillDuotoneProps };

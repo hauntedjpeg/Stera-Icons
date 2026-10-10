@@ -15,7 +15,7 @@ const FlowMergeBoldDuotone = memo(
 
 FlowMergeBoldDuotone.displayName = 'FlowMergeBoldDuotone';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { FlowMergeBoldDuotone, FlowMergeBoldDuotone as FlowMergeBoldDuotoneIcon, FlowMergeBoldDuotone as SiFlowMergeBoldDuotone };
 export default FlowMergeBoldDuotone;
 export type { FlowMergeBoldDuotoneProps };

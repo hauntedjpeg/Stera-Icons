@@ -14,7 +14,7 @@ const SignalLowRegular = memo(
 
 SignalLowRegular.displayName = 'SignalLowRegular';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { SignalLowRegular, SignalLowRegular as SignalLowRegularIcon, SignalLowRegular as SiSignalLowRegular };
 export default SignalLowRegular;
 export type { SignalLowRegularProps };

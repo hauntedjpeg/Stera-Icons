@@ -15,7 +15,7 @@ const Gauge33BoldDuotone = memo(
 
 Gauge33BoldDuotone.displayName = 'Gauge33BoldDuotone';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { Gauge33BoldDuotone, Gauge33BoldDuotone as Gauge33BoldDuotoneIcon, Gauge33BoldDuotone as SiGauge33BoldDuotone };
 export default Gauge33BoldDuotone;
 export type { Gauge33BoldDuotoneProps };

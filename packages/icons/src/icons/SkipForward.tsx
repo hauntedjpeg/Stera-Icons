@@ -18,10 +18,10 @@ export interface SkipForwardProps extends IconProps {
  * For smaller bundle size, import specific variants directly:
  * import { SkipForwardRegular } from 'stera-icons/icons/SkipForwardRegular';
  */
-const SkipForward = memo(forwardRef<SVGSVGElement, SkipForwardProps>(({ 
+const SkipForward = memo(forwardRef<SVGSVGElement, SkipForwardProps>(({
   weight = 'regular',
   duotone = false,
-  ...rest 
+  ...rest
 }, ref) => {
   if (weight === 'bold' && duotone) return <SkipForwardBoldDuotone ref={ref} {...rest} />;
   if (weight === 'bold') return <SkipForwardBold ref={ref} {...rest} />;
@@ -33,6 +33,6 @@ const SkipForward = memo(forwardRef<SVGSVGElement, SkipForwardProps>(({
 
 SkipForward.displayName = 'SkipForward';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { SkipForward, SkipForward as SkipForwardIcon, SkipForward as SiSkipForward };
 export default SkipForward;

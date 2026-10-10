@@ -18,10 +18,10 @@ export interface SignInProps extends IconProps {
  * For smaller bundle size, import specific variants directly:
  * import { SignInRegular } from 'stera-icons/icons/SignInRegular';
  */
-const SignIn = memo(forwardRef<SVGSVGElement, SignInProps>(({ 
+const SignIn = memo(forwardRef<SVGSVGElement, SignInProps>(({
   weight = 'regular',
   duotone = false,
-  ...rest 
+  ...rest
 }, ref) => {
   if (weight === 'bold' && duotone) return <SignInBoldDuotone ref={ref} {...rest} />;
   if (weight === 'bold') return <SignInBold ref={ref} {...rest} />;
@@ -33,6 +33,6 @@ const SignIn = memo(forwardRef<SVGSVGElement, SignInProps>(({
 
 SignIn.displayName = 'SignIn';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { SignIn, SignIn as SignInIcon, SignIn as SiSignIn };
 export default SignIn;

@@ -14,7 +14,7 @@ const SeedlingFill = memo(
 
 SeedlingFill.displayName = 'SeedlingFill';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { SeedlingFill, SeedlingFill as SeedlingFillIcon, SeedlingFill as SiSeedlingFill };
 export default SeedlingFill;
 export type { SeedlingFillProps };

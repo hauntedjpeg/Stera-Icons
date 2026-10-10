@@ -15,7 +15,7 @@ const ArrowSquareUpLeftBoldDuotone = memo(
 
 ArrowSquareUpLeftBoldDuotone.displayName = 'ArrowSquareUpLeftBoldDuotone';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { ArrowSquareUpLeftBoldDuotone, ArrowSquareUpLeftBoldDuotone as ArrowSquareUpLeftBoldDuotoneIcon, ArrowSquareUpLeftBoldDuotone as SiArrowSquareUpLeftBoldDuotone };
 export default ArrowSquareUpLeftBoldDuotone;
 export type { ArrowSquareUpLeftBoldDuotoneProps };

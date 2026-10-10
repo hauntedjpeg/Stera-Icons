@@ -16,7 +16,7 @@ const CertificateBoldDuotone = memo(
 
 CertificateBoldDuotone.displayName = 'CertificateBoldDuotone';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { CertificateBoldDuotone, CertificateBoldDuotone as CertificateBoldDuotoneIcon, CertificateBoldDuotone as SiCertificateBoldDuotone };
 export default CertificateBoldDuotone;
 export type { CertificateBoldDuotoneProps };

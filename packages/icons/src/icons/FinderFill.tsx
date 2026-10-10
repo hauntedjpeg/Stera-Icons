@@ -15,7 +15,7 @@ const FinderFill = memo(
 
 FinderFill.displayName = 'FinderFill';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { FinderFill, FinderFill as FinderFillIcon, FinderFill as SiFinderFill };
 export default FinderFill;
 export type { FinderFillProps };

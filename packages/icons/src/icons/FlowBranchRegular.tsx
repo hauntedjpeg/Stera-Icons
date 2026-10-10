@@ -14,7 +14,7 @@ const FlowBranchRegular = memo(
 
 FlowBranchRegular.displayName = 'FlowBranchRegular';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { FlowBranchRegular, FlowBranchRegular as FlowBranchRegularIcon, FlowBranchRegular as SiFlowBranchRegular };
 export default FlowBranchRegular;
 export type { FlowBranchRegularProps };

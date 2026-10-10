@@ -18,10 +18,10 @@ export interface ScanFaceProps extends IconProps {
  * For smaller bundle size, import specific variants directly:
  * import { ScanFaceRegular } from 'stera-icons/icons/ScanFaceRegular';
  */
-const ScanFace = memo(forwardRef<SVGSVGElement, ScanFaceProps>(({ 
+const ScanFace = memo(forwardRef<SVGSVGElement, ScanFaceProps>(({
   weight = 'regular',
   duotone = false,
-  ...rest 
+  ...rest
 }, ref) => {
   if (weight === 'bold' && duotone) return <ScanFaceBoldDuotone ref={ref} {...rest} />;
   if (weight === 'bold') return <ScanFaceBold ref={ref} {...rest} />;
@@ -33,6 +33,6 @@ const ScanFace = memo(forwardRef<SVGSVGElement, ScanFaceProps>(({
 
 ScanFace.displayName = 'ScanFace';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { ScanFace, ScanFace as ScanFaceIcon, ScanFace as SiScanFace };
 export default ScanFace;

@@ -15,7 +15,7 @@ const TabletBold = memo(
 
 TabletBold.displayName = 'TabletBold';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { TabletBold, TabletBold as TabletBoldIcon, TabletBold as SiTabletBold };
 export default TabletBold;
 export type { TabletBoldProps };

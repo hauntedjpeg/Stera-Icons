@@ -18,10 +18,10 @@ export interface EmoteSadProps extends IconProps {
  * For smaller bundle size, import specific variants directly:
  * import { EmoteSadRegular } from 'stera-icons/icons/EmoteSadRegular';
  */
-const EmoteSad = memo(forwardRef<SVGSVGElement, EmoteSadProps>(({ 
+const EmoteSad = memo(forwardRef<SVGSVGElement, EmoteSadProps>(({
   weight = 'regular',
   duotone = false,
-  ...rest 
+  ...rest
 }, ref) => {
   if (weight === 'bold' && duotone) return <EmoteSadBoldDuotone ref={ref} {...rest} />;
   if (weight === 'bold') return <EmoteSadBold ref={ref} {...rest} />;
@@ -33,6 +33,6 @@ const EmoteSad = memo(forwardRef<SVGSVGElement, EmoteSadProps>(({
 
 EmoteSad.displayName = 'EmoteSad';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { EmoteSad, EmoteSad as EmoteSadIcon, EmoteSad as SiEmoteSad };
 export default EmoteSad;

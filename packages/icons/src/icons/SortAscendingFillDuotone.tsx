@@ -15,7 +15,7 @@ const SortAscendingFillDuotone = memo(
 
 SortAscendingFillDuotone.displayName = 'SortAscendingFillDuotone';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { SortAscendingFillDuotone, SortAscendingFillDuotone as SortAscendingFillDuotoneIcon, SortAscendingFillDuotone as SiSortAscendingFillDuotone };
 export default SortAscendingFillDuotone;
 export type { SortAscendingFillDuotoneProps };

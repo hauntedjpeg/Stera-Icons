@@ -14,7 +14,7 @@ const SidebarRightBold = memo(
 
 SidebarRightBold.displayName = 'SidebarRightBold';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { SidebarRightBold, SidebarRightBold as SidebarRightBoldIcon, SidebarRightBold as SiSidebarRightBold };
 export default SidebarRightBold;
 export type { SidebarRightBoldProps };

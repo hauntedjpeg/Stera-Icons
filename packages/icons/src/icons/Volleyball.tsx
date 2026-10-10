@@ -18,10 +18,10 @@ export interface VolleyballProps extends IconProps {
  * For smaller bundle size, import specific variants directly:
  * import { VolleyballRegular } from 'stera-icons/icons/VolleyballRegular';
  */
-const Volleyball = memo(forwardRef<SVGSVGElement, VolleyballProps>(({ 
+const Volleyball = memo(forwardRef<SVGSVGElement, VolleyballProps>(({
   weight = 'regular',
   duotone = false,
-  ...rest 
+  ...rest
 }, ref) => {
   if (weight === 'bold' && duotone) return <VolleyballBoldDuotone ref={ref} {...rest} />;
   if (weight === 'bold') return <VolleyballBold ref={ref} {...rest} />;
@@ -33,6 +33,6 @@ const Volleyball = memo(forwardRef<SVGSVGElement, VolleyballProps>(({
 
 Volleyball.displayName = 'Volleyball';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { Volleyball, Volleyball as VolleyballIcon, Volleyball as SiVolleyball };
 export default Volleyball;

@@ -14,7 +14,7 @@ const HomePlusFill = memo(
 
 HomePlusFill.displayName = 'HomePlusFill';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { HomePlusFill, HomePlusFill as HomePlusFillIcon, HomePlusFill as SiHomePlusFill };
 export default HomePlusFill;
 export type { HomePlusFillProps };

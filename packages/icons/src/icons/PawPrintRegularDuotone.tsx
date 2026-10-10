@@ -15,7 +15,7 @@ const PawPrintRegularDuotone = memo(
 
 PawPrintRegularDuotone.displayName = 'PawPrintRegularDuotone';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { PawPrintRegularDuotone, PawPrintRegularDuotone as PawPrintRegularDuotoneIcon, PawPrintRegularDuotone as SiPawPrintRegularDuotone };
 export default PawPrintRegularDuotone;
 export type { PawPrintRegularDuotoneProps };

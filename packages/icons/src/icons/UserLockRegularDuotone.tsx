@@ -15,7 +15,7 @@ const UserLockRegularDuotone = memo(
 
 UserLockRegularDuotone.displayName = 'UserLockRegularDuotone';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { UserLockRegularDuotone, UserLockRegularDuotone as UserLockRegularDuotoneIcon, UserLockRegularDuotone as SiUserLockRegularDuotone };
 export default UserLockRegularDuotone;
 export type { UserLockRegularDuotoneProps };

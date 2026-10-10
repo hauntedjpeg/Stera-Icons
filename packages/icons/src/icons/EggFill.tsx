@@ -14,7 +14,7 @@ const EggFill = memo(
 
 EggFill.displayName = 'EggFill';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { EggFill, EggFill as EggFillIcon, EggFill as SiEggFill };
 export default EggFill;
 export type { EggFillProps };

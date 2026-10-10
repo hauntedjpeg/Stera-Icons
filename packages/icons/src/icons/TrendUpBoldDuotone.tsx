@@ -15,7 +15,7 @@ const TrendUpBoldDuotone = memo(
 
 TrendUpBoldDuotone.displayName = 'TrendUpBoldDuotone';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { TrendUpBoldDuotone, TrendUpBoldDuotone as TrendUpBoldDuotoneIcon, TrendUpBoldDuotone as SiTrendUpBoldDuotone };
 export default TrendUpBoldDuotone;
 export type { TrendUpBoldDuotoneProps };

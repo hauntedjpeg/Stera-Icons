@@ -18,10 +18,10 @@ export interface ScanDashedProps extends IconProps {
  * For smaller bundle size, import specific variants directly:
  * import { ScanDashedRegular } from 'stera-icons/icons/ScanDashedRegular';
  */
-const ScanDashed = memo(forwardRef<SVGSVGElement, ScanDashedProps>(({ 
+const ScanDashed = memo(forwardRef<SVGSVGElement, ScanDashedProps>(({
   weight = 'regular',
   duotone = false,
-  ...rest 
+  ...rest
 }, ref) => {
   if (weight === 'bold' && duotone) return <ScanDashedBoldDuotone ref={ref} {...rest} />;
   if (weight === 'bold') return <ScanDashedBold ref={ref} {...rest} />;
@@ -33,6 +33,6 @@ const ScanDashed = memo(forwardRef<SVGSVGElement, ScanDashedProps>(({
 
 ScanDashed.displayName = 'ScanDashed';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { ScanDashed, ScanDashed as ScanDashedIcon, ScanDashed as SiScanDashed };
 export default ScanDashed;

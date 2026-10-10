@@ -14,7 +14,7 @@ const BoltFill = memo(
 
 BoltFill.displayName = 'BoltFill';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { BoltFill, BoltFill as BoltFillIcon, BoltFill as SiBoltFill };
 export default BoltFill;
 export type { BoltFillProps };

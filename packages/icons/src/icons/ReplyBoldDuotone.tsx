@@ -15,7 +15,7 @@ const ReplyBoldDuotone = memo(
 
 ReplyBoldDuotone.displayName = 'ReplyBoldDuotone';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { ReplyBoldDuotone, ReplyBoldDuotone as ReplyBoldDuotoneIcon, ReplyBoldDuotone as SiReplyBoldDuotone };
 export default ReplyBoldDuotone;
 export type { ReplyBoldDuotoneProps };

@@ -14,7 +14,7 @@ const FlagRegular = memo(
 
 FlagRegular.displayName = 'FlagRegular';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { FlagRegular, FlagRegular as FlagRegularIcon, FlagRegular as SiFlagRegular };
 export default FlagRegular;
 export type { FlagRegularProps };

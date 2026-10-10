@@ -15,7 +15,7 @@ const MessageSquarePlusFillDuotone = memo(
 
 MessageSquarePlusFillDuotone.displayName = 'MessageSquarePlusFillDuotone';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { MessageSquarePlusFillDuotone, MessageSquarePlusFillDuotone as MessageSquarePlusFillDuotoneIcon, MessageSquarePlusFillDuotone as SiMessageSquarePlusFillDuotone };
 export default MessageSquarePlusFillDuotone;
 export type { MessageSquarePlusFillDuotoneProps };

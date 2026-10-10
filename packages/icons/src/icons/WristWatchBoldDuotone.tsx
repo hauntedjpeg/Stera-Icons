@@ -16,7 +16,7 @@ const WristWatchBoldDuotone = memo(
 
 WristWatchBoldDuotone.displayName = 'WristWatchBoldDuotone';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { WristWatchBoldDuotone, WristWatchBoldDuotone as WristWatchBoldDuotoneIcon, WristWatchBoldDuotone as SiWristWatchBoldDuotone };
 export default WristWatchBoldDuotone;
 export type { WristWatchBoldDuotoneProps };

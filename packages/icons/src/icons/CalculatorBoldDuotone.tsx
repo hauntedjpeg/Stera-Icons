@@ -15,7 +15,7 @@ const CalculatorBoldDuotone = memo(
 
 CalculatorBoldDuotone.displayName = 'CalculatorBoldDuotone';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { CalculatorBoldDuotone, CalculatorBoldDuotone as CalculatorBoldDuotoneIcon, CalculatorBoldDuotone as SiCalculatorBoldDuotone };
 export default CalculatorBoldDuotone;
 export type { CalculatorBoldDuotoneProps };

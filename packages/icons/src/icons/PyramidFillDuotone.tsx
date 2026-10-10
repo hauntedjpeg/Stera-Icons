@@ -15,7 +15,7 @@ const PyramidFillDuotone = memo(
 
 PyramidFillDuotone.displayName = 'PyramidFillDuotone';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { PyramidFillDuotone, PyramidFillDuotone as PyramidFillDuotoneIcon, PyramidFillDuotone as SiPyramidFillDuotone };
 export default PyramidFillDuotone;
 export type { PyramidFillDuotoneProps };

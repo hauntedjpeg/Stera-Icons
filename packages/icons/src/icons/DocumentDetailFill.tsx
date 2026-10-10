@@ -14,7 +14,7 @@ const DocumentDetailFill = memo(
 
 DocumentDetailFill.displayName = 'DocumentDetailFill';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { DocumentDetailFill, DocumentDetailFill as DocumentDetailFillIcon, DocumentDetailFill as SiDocumentDetailFill };
 export default DocumentDetailFill;
 export type { DocumentDetailFillProps };

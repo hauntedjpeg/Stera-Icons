@@ -14,7 +14,7 @@ const ScaleFill = memo(
 
 ScaleFill.displayName = 'ScaleFill';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { ScaleFill, ScaleFill as ScaleFillIcon, ScaleFill as SiScaleFill };
 export default ScaleFill;
 export type { ScaleFillProps };

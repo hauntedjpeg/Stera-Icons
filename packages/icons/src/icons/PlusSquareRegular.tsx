@@ -15,7 +15,7 @@ const PlusSquareRegular = memo(
 
 PlusSquareRegular.displayName = 'PlusSquareRegular';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { PlusSquareRegular, PlusSquareRegular as PlusSquareRegularIcon, PlusSquareRegular as SiPlusSquareRegular };
 export default PlusSquareRegular;
 export type { PlusSquareRegularProps };

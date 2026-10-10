@@ -14,7 +14,7 @@ const CommentBubbleFill = memo(
 
 CommentBubbleFill.displayName = 'CommentBubbleFill';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { CommentBubbleFill, CommentBubbleFill as CommentBubbleFillIcon, CommentBubbleFill as SiCommentBubbleFill };
 export default CommentBubbleFill;
 export type { CommentBubbleFillProps };

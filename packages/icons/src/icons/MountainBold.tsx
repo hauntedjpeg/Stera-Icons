@@ -14,7 +14,7 @@ const MountainBold = memo(
 
 MountainBold.displayName = 'MountainBold';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { MountainBold, MountainBold as MountainBoldIcon, MountainBold as SiMountainBold };
 export default MountainBold;
 export type { MountainBoldProps };

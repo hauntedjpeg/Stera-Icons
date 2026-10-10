@@ -15,7 +15,7 @@ const BoundingBoxRegularDuotone = memo(
 
 BoundingBoxRegularDuotone.displayName = 'BoundingBoxRegularDuotone';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { BoundingBoxRegularDuotone, BoundingBoxRegularDuotone as BoundingBoxRegularDuotoneIcon, BoundingBoxRegularDuotone as SiBoundingBoxRegularDuotone };
 export default BoundingBoxRegularDuotone;
 export type { BoundingBoxRegularDuotoneProps };

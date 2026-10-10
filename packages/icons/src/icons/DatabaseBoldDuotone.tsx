@@ -15,7 +15,7 @@ const DatabaseBoldDuotone = memo(
 
 DatabaseBoldDuotone.displayName = 'DatabaseBoldDuotone';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { DatabaseBoldDuotone, DatabaseBoldDuotone as DatabaseBoldDuotoneIcon, DatabaseBoldDuotone as SiDatabaseBoldDuotone };
 export default DatabaseBoldDuotone;
 export type { DatabaseBoldDuotoneProps };

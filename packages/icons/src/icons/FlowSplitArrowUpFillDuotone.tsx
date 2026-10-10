@@ -15,7 +15,7 @@ const FlowSplitArrowUpFillDuotone = memo(
 
 FlowSplitArrowUpFillDuotone.displayName = 'FlowSplitArrowUpFillDuotone';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { FlowSplitArrowUpFillDuotone, FlowSplitArrowUpFillDuotone as FlowSplitArrowUpFillDuotoneIcon, FlowSplitArrowUpFillDuotone as SiFlowSplitArrowUpFillDuotone };
 export default FlowSplitArrowUpFillDuotone;
 export type { FlowSplitArrowUpFillDuotoneProps };

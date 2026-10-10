@@ -18,10 +18,10 @@ export interface CursorTextAltProps extends IconProps {
  * For smaller bundle size, import specific variants directly:
  * import { CursorTextAltRegular } from 'stera-icons/icons/CursorTextAltRegular';
  */
-const CursorTextAlt = memo(forwardRef<SVGSVGElement, CursorTextAltProps>(({ 
+const CursorTextAlt = memo(forwardRef<SVGSVGElement, CursorTextAltProps>(({
   weight = 'regular',
   duotone = false,
-  ...rest 
+  ...rest
 }, ref) => {
   if (weight === 'bold' && duotone) return <CursorTextAltBoldDuotone ref={ref} {...rest} />;
   if (weight === 'bold') return <CursorTextAltBold ref={ref} {...rest} />;
@@ -33,6 +33,6 @@ const CursorTextAlt = memo(forwardRef<SVGSVGElement, CursorTextAltProps>(({
 
 CursorTextAlt.displayName = 'CursorTextAlt';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { CursorTextAlt, CursorTextAlt as CursorTextAltIcon, CursorTextAlt as SiCursorTextAlt };
 export default CursorTextAlt;

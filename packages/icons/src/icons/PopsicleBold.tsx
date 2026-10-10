@@ -14,7 +14,7 @@ const PopsicleBold = memo(
 
 PopsicleBold.displayName = 'PopsicleBold';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { PopsicleBold, PopsicleBold as PopsicleBoldIcon, PopsicleBold as SiPopsicleBold };
 export default PopsicleBold;
 export type { PopsicleBoldProps };

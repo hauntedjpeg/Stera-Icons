@@ -15,7 +15,7 @@ const HourglassFullRegularDuotone = memo(
 
 HourglassFullRegularDuotone.displayName = 'HourglassFullRegularDuotone';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { HourglassFullRegularDuotone, HourglassFullRegularDuotone as HourglassFullRegularDuotoneIcon, HourglassFullRegularDuotone as SiHourglassFullRegularDuotone };
 export default HourglassFullRegularDuotone;
 export type { HourglassFullRegularDuotoneProps };

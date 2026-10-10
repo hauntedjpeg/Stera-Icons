@@ -18,10 +18,10 @@ export interface TrendDownProps extends IconProps {
  * For smaller bundle size, import specific variants directly:
  * import { TrendDownRegular } from 'stera-icons/icons/TrendDownRegular';
  */
-const TrendDown = memo(forwardRef<SVGSVGElement, TrendDownProps>(({ 
+const TrendDown = memo(forwardRef<SVGSVGElement, TrendDownProps>(({
   weight = 'regular',
   duotone = false,
-  ...rest 
+  ...rest
 }, ref) => {
   if (weight === 'bold' && duotone) return <TrendDownBoldDuotone ref={ref} {...rest} />;
   if (weight === 'bold') return <TrendDownBold ref={ref} {...rest} />;
@@ -33,6 +33,6 @@ const TrendDown = memo(forwardRef<SVGSVGElement, TrendDownProps>(({
 
 TrendDown.displayName = 'TrendDown';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { TrendDown, TrendDown as TrendDownIcon, TrendDown as SiTrendDown };
 export default TrendDown;

@@ -18,10 +18,10 @@ export interface ConnectionAltProps extends IconProps {
  * For smaller bundle size, import specific variants directly:
  * import { ConnectionAltRegular } from 'stera-icons/icons/ConnectionAltRegular';
  */
-const ConnectionAlt = memo(forwardRef<SVGSVGElement, ConnectionAltProps>(({ 
+const ConnectionAlt = memo(forwardRef<SVGSVGElement, ConnectionAltProps>(({
   weight = 'regular',
   duotone = false,
-  ...rest 
+  ...rest
 }, ref) => {
   if (weight === 'bold' && duotone) return <ConnectionAltBoldDuotone ref={ref} {...rest} />;
   if (weight === 'bold') return <ConnectionAltBold ref={ref} {...rest} />;
@@ -33,6 +33,6 @@ const ConnectionAlt = memo(forwardRef<SVGSVGElement, ConnectionAltProps>(({
 
 ConnectionAlt.displayName = 'ConnectionAlt';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { ConnectionAlt, ConnectionAlt as ConnectionAltIcon, ConnectionAlt as SiConnectionAlt };
 export default ConnectionAlt;

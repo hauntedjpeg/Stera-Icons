@@ -14,7 +14,7 @@ const TextAlignCenterBold = memo(
 
 TextAlignCenterBold.displayName = 'TextAlignCenterBold';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { TextAlignCenterBold, TextAlignCenterBold as TextAlignCenterBoldIcon, TextAlignCenterBold as SiTextAlignCenterBold };
 export default TextAlignCenterBold;
 export type { TextAlignCenterBoldProps };

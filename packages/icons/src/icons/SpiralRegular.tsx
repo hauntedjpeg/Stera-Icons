@@ -14,7 +14,7 @@ const SpiralRegular = memo(
 
 SpiralRegular.displayName = 'SpiralRegular';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { SpiralRegular, SpiralRegular as SpiralRegularIcon, SpiralRegular as SiSpiralRegular };
 export default SpiralRegular;
 export type { SpiralRegularProps };

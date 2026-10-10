@@ -14,7 +14,7 @@ const MountainFill = memo(
 
 MountainFill.displayName = 'MountainFill';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { MountainFill, MountainFill as MountainFillIcon, MountainFill as SiMountainFill };
 export default MountainFill;
 export type { MountainFillProps };

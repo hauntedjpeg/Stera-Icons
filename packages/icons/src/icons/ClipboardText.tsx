@@ -18,10 +18,10 @@ export interface ClipboardTextProps extends IconProps {
  * For smaller bundle size, import specific variants directly:
  * import { ClipboardTextRegular } from 'stera-icons/icons/ClipboardTextRegular';
  */
-const ClipboardText = memo(forwardRef<SVGSVGElement, ClipboardTextProps>(({ 
+const ClipboardText = memo(forwardRef<SVGSVGElement, ClipboardTextProps>(({
   weight = 'regular',
   duotone = false,
-  ...rest 
+  ...rest
 }, ref) => {
   if (weight === 'bold' && duotone) return <ClipboardTextBoldDuotone ref={ref} {...rest} />;
   if (weight === 'bold') return <ClipboardTextBold ref={ref} {...rest} />;
@@ -33,6 +33,6 @@ const ClipboardText = memo(forwardRef<SVGSVGElement, ClipboardTextProps>(({
 
 ClipboardText.displayName = 'ClipboardText';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { ClipboardText, ClipboardText as ClipboardTextIcon, ClipboardText as SiClipboardText };
 export default ClipboardText;

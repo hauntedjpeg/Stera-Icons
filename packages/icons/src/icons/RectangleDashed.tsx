@@ -18,10 +18,10 @@ export interface RectangleDashedProps extends IconProps {
  * For smaller bundle size, import specific variants directly:
  * import { RectangleDashedRegular } from 'stera-icons/icons/RectangleDashedRegular';
  */
-const RectangleDashed = memo(forwardRef<SVGSVGElement, RectangleDashedProps>(({ 
+const RectangleDashed = memo(forwardRef<SVGSVGElement, RectangleDashedProps>(({
   weight = 'regular',
   duotone = false,
-  ...rest 
+  ...rest
 }, ref) => {
   if (weight === 'bold' && duotone) return <RectangleDashedBoldDuotone ref={ref} {...rest} />;
   if (weight === 'bold') return <RectangleDashedBold ref={ref} {...rest} />;
@@ -33,6 +33,6 @@ const RectangleDashed = memo(forwardRef<SVGSVGElement, RectangleDashedProps>(({
 
 RectangleDashed.displayName = 'RectangleDashed';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { RectangleDashed, RectangleDashed as RectangleDashedIcon, RectangleDashed as SiRectangleDashed };
 export default RectangleDashed;

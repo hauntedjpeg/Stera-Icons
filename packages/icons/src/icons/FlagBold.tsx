@@ -14,7 +14,7 @@ const FlagBold = memo(
 
 FlagBold.displayName = 'FlagBold';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { FlagBold, FlagBold as FlagBoldIcon, FlagBold as SiFlagBold };
 export default FlagBold;
 export type { FlagBoldProps };

@@ -15,7 +15,7 @@ const PowerFillDuotone = memo(
 
 PowerFillDuotone.displayName = 'PowerFillDuotone';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { PowerFillDuotone, PowerFillDuotone as PowerFillDuotoneIcon, PowerFillDuotone as SiPowerFillDuotone };
 export default PowerFillDuotone;
 export type { PowerFillDuotoneProps };

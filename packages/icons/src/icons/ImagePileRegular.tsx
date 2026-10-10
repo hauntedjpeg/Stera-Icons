@@ -15,7 +15,7 @@ const ImagePileRegular = memo(
 
 ImagePileRegular.displayName = 'ImagePileRegular';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { ImagePileRegular, ImagePileRegular as ImagePileRegularIcon, ImagePileRegular as SiImagePileRegular };
 export default ImagePileRegular;
 export type { ImagePileRegularProps };

@@ -18,10 +18,10 @@ export interface HistoryProps extends IconProps {
  * For smaller bundle size, import specific variants directly:
  * import { HistoryRegular } from 'stera-icons/icons/HistoryRegular';
  */
-const History = memo(forwardRef<SVGSVGElement, HistoryProps>(({ 
+const History = memo(forwardRef<SVGSVGElement, HistoryProps>(({
   weight = 'regular',
   duotone = false,
-  ...rest 
+  ...rest
 }, ref) => {
   if (weight === 'bold' && duotone) return <HistoryBoldDuotone ref={ref} {...rest} />;
   if (weight === 'bold') return <HistoryBold ref={ref} {...rest} />;
@@ -33,6 +33,6 @@ const History = memo(forwardRef<SVGSVGElement, HistoryProps>(({
 
 History.displayName = 'History';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { History, History as HistoryIcon, History as SiHistory };
 export default History;

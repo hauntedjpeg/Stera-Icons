@@ -18,10 +18,10 @@ export interface CheckSquareProps extends IconProps {
  * For smaller bundle size, import specific variants directly:
  * import { CheckSquareRegular } from 'stera-icons/icons/CheckSquareRegular';
  */
-const CheckSquare = memo(forwardRef<SVGSVGElement, CheckSquareProps>(({ 
+const CheckSquare = memo(forwardRef<SVGSVGElement, CheckSquareProps>(({
   weight = 'regular',
   duotone = false,
-  ...rest 
+  ...rest
 }, ref) => {
   if (weight === 'bold' && duotone) return <CheckSquareBoldDuotone ref={ref} {...rest} />;
   if (weight === 'bold') return <CheckSquareBold ref={ref} {...rest} />;
@@ -33,6 +33,6 @@ const CheckSquare = memo(forwardRef<SVGSVGElement, CheckSquareProps>(({
 
 CheckSquare.displayName = 'CheckSquare';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { CheckSquare, CheckSquare as CheckSquareIcon, CheckSquare as SiCheckSquare };
 export default CheckSquare;

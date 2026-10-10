@@ -18,10 +18,10 @@ export interface CubeProps extends IconProps {
  * For smaller bundle size, import specific variants directly:
  * import { CubeRegular } from 'stera-icons/icons/CubeRegular';
  */
-const Cube = memo(forwardRef<SVGSVGElement, CubeProps>(({ 
+const Cube = memo(forwardRef<SVGSVGElement, CubeProps>(({
   weight = 'regular',
   duotone = false,
-  ...rest 
+  ...rest
 }, ref) => {
   if (weight === 'bold' && duotone) return <CubeBoldDuotone ref={ref} {...rest} />;
   if (weight === 'bold') return <CubeBold ref={ref} {...rest} />;
@@ -33,6 +33,6 @@ const Cube = memo(forwardRef<SVGSVGElement, CubeProps>(({
 
 Cube.displayName = 'Cube';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { Cube, Cube as CubeIcon, Cube as SiCube };
 export default Cube;

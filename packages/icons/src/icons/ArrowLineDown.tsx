@@ -18,10 +18,10 @@ export interface ArrowLineDownProps extends IconProps {
  * For smaller bundle size, import specific variants directly:
  * import { ArrowLineDownRegular } from 'stera-icons/icons/ArrowLineDownRegular';
  */
-const ArrowLineDown = memo(forwardRef<SVGSVGElement, ArrowLineDownProps>(({ 
+const ArrowLineDown = memo(forwardRef<SVGSVGElement, ArrowLineDownProps>(({
   weight = 'regular',
   duotone = false,
-  ...rest 
+  ...rest
 }, ref) => {
   if (weight === 'bold' && duotone) return <ArrowLineDownBoldDuotone ref={ref} {...rest} />;
   if (weight === 'bold') return <ArrowLineDownBold ref={ref} {...rest} />;
@@ -33,6 +33,6 @@ const ArrowLineDown = memo(forwardRef<SVGSVGElement, ArrowLineDownProps>(({
 
 ArrowLineDown.displayName = 'ArrowLineDown';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { ArrowLineDown, ArrowLineDown as ArrowLineDownIcon, ArrowLineDown as SiArrowLineDown };
 export default ArrowLineDown;

@@ -15,7 +15,7 @@ const HomePlusRegularDuotone = memo(
 
 HomePlusRegularDuotone.displayName = 'HomePlusRegularDuotone';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { HomePlusRegularDuotone, HomePlusRegularDuotone as HomePlusRegularDuotoneIcon, HomePlusRegularDuotone as SiHomePlusRegularDuotone };
 export default HomePlusRegularDuotone;
 export type { HomePlusRegularDuotoneProps };

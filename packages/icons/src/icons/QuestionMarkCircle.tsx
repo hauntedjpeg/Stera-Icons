@@ -18,10 +18,10 @@ export interface QuestionMarkCircleProps extends IconProps {
  * For smaller bundle size, import specific variants directly:
  * import { QuestionMarkCircleRegular } from 'stera-icons/icons/QuestionMarkCircleRegular';
  */
-const QuestionMarkCircle = memo(forwardRef<SVGSVGElement, QuestionMarkCircleProps>(({ 
+const QuestionMarkCircle = memo(forwardRef<SVGSVGElement, QuestionMarkCircleProps>(({
   weight = 'regular',
   duotone = false,
-  ...rest 
+  ...rest
 }, ref) => {
   if (weight === 'bold' && duotone) return <QuestionMarkCircleBoldDuotone ref={ref} {...rest} />;
   if (weight === 'bold') return <QuestionMarkCircleBold ref={ref} {...rest} />;
@@ -33,6 +33,6 @@ const QuestionMarkCircle = memo(forwardRef<SVGSVGElement, QuestionMarkCircleProp
 
 QuestionMarkCircle.displayName = 'QuestionMarkCircle';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { QuestionMarkCircle, QuestionMarkCircle as QuestionMarkCircleIcon, QuestionMarkCircle as SiQuestionMarkCircle };
 export default QuestionMarkCircle;

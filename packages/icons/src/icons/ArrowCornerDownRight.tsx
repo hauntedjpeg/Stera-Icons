@@ -18,10 +18,10 @@ export interface ArrowCornerDownRightProps extends IconProps {
  * For smaller bundle size, import specific variants directly:
  * import { ArrowCornerDownRightRegular } from 'stera-icons/icons/ArrowCornerDownRightRegular';
  */
-const ArrowCornerDownRight = memo(forwardRef<SVGSVGElement, ArrowCornerDownRightProps>(({ 
+const ArrowCornerDownRight = memo(forwardRef<SVGSVGElement, ArrowCornerDownRightProps>(({
   weight = 'regular',
   duotone = false,
-  ...rest 
+  ...rest
 }, ref) => {
   if (weight === 'bold' && duotone) return <ArrowCornerDownRightBoldDuotone ref={ref} {...rest} />;
   if (weight === 'bold') return <ArrowCornerDownRightBold ref={ref} {...rest} />;
@@ -33,6 +33,6 @@ const ArrowCornerDownRight = memo(forwardRef<SVGSVGElement, ArrowCornerDownRight
 
 ArrowCornerDownRight.displayName = 'ArrowCornerDownRight';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { ArrowCornerDownRight, ArrowCornerDownRight as ArrowCornerDownRightIcon, ArrowCornerDownRight as SiArrowCornerDownRight };
 export default ArrowCornerDownRight;

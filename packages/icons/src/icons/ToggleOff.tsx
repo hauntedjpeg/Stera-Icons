@@ -18,10 +18,10 @@ export interface ToggleOffProps extends IconProps {
  * For smaller bundle size, import specific variants directly:
  * import { ToggleOffRegular } from 'stera-icons/icons/ToggleOffRegular';
  */
-const ToggleOff = memo(forwardRef<SVGSVGElement, ToggleOffProps>(({ 
+const ToggleOff = memo(forwardRef<SVGSVGElement, ToggleOffProps>(({
   weight = 'regular',
   duotone = false,
-  ...rest 
+  ...rest
 }, ref) => {
   if (weight === 'bold' && duotone) return <ToggleOffBoldDuotone ref={ref} {...rest} />;
   if (weight === 'bold') return <ToggleOffBold ref={ref} {...rest} />;
@@ -33,6 +33,6 @@ const ToggleOff = memo(forwardRef<SVGSVGElement, ToggleOffProps>(({
 
 ToggleOff.displayName = 'ToggleOff';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { ToggleOff, ToggleOff as ToggleOffIcon, ToggleOff as SiToggleOff };
 export default ToggleOff;

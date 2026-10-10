@@ -14,7 +14,7 @@ const PauseRegular = memo(
 
 PauseRegular.displayName = 'PauseRegular';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { PauseRegular, PauseRegular as PauseRegularIcon, PauseRegular as SiPauseRegular };
 export default PauseRegular;
 export type { PauseRegularProps };

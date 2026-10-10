@@ -15,7 +15,7 @@ const SlashFillDuotone = memo(
 
 SlashFillDuotone.displayName = 'SlashFillDuotone';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { SlashFillDuotone, SlashFillDuotone as SlashFillDuotoneIcon, SlashFillDuotone as SiSlashFillDuotone };
 export default SlashFillDuotone;
 export type { SlashFillDuotoneProps };

@@ -14,7 +14,7 @@ const MoveBold = memo(
 
 MoveBold.displayName = 'MoveBold';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { MoveBold, MoveBold as MoveBoldIcon, MoveBold as SiMoveBold };
 export default MoveBold;
 export type { MoveBoldProps };

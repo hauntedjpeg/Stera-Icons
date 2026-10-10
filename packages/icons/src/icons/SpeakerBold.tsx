@@ -14,7 +14,7 @@ const SpeakerBold = memo(
 
 SpeakerBold.displayName = 'SpeakerBold';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { SpeakerBold, SpeakerBold as SpeakerBoldIcon, SpeakerBold as SiSpeakerBold };
 export default SpeakerBold;
 export type { SpeakerBoldProps };

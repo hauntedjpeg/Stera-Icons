@@ -14,7 +14,7 @@ const QuestionMarkBold = memo(
 
 QuestionMarkBold.displayName = 'QuestionMarkBold';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { QuestionMarkBold, QuestionMarkBold as QuestionMarkBoldIcon, QuestionMarkBold as SiQuestionMarkBold };
 export default QuestionMarkBold;
 export type { QuestionMarkBoldProps };

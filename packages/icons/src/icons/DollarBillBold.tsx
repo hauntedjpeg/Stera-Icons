@@ -15,7 +15,7 @@ const DollarBillBold = memo(
 
 DollarBillBold.displayName = 'DollarBillBold';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { DollarBillBold, DollarBillBold as DollarBillBoldIcon, DollarBillBold as SiDollarBillBold };
 export default DollarBillBold;
 export type { DollarBillBoldProps };

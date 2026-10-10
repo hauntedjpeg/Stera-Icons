@@ -14,7 +14,7 @@ const ChartBarDescRegular = memo(
 
 ChartBarDescRegular.displayName = 'ChartBarDescRegular';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { ChartBarDescRegular, ChartBarDescRegular as ChartBarDescRegularIcon, ChartBarDescRegular as SiChartBarDescRegular };
 export default ChartBarDescRegular;
 export type { ChartBarDescRegularProps };

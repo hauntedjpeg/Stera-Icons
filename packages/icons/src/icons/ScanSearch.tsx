@@ -18,10 +18,10 @@ export interface ScanSearchProps extends IconProps {
  * For smaller bundle size, import specific variants directly:
  * import { ScanSearchRegular } from 'stera-icons/icons/ScanSearchRegular';
  */
-const ScanSearch = memo(forwardRef<SVGSVGElement, ScanSearchProps>(({ 
+const ScanSearch = memo(forwardRef<SVGSVGElement, ScanSearchProps>(({
   weight = 'regular',
   duotone = false,
-  ...rest 
+  ...rest
 }, ref) => {
   if (weight === 'bold' && duotone) return <ScanSearchBoldDuotone ref={ref} {...rest} />;
   if (weight === 'bold') return <ScanSearchBold ref={ref} {...rest} />;
@@ -33,6 +33,6 @@ const ScanSearch = memo(forwardRef<SVGSVGElement, ScanSearchProps>(({
 
 ScanSearch.displayName = 'ScanSearch';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { ScanSearch, ScanSearch as ScanSearchIcon, ScanSearch as SiScanSearch };
 export default ScanSearch;

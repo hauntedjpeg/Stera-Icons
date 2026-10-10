@@ -15,7 +15,7 @@ const AnnotationFillDuotone = memo(
 
 AnnotationFillDuotone.displayName = 'AnnotationFillDuotone';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { AnnotationFillDuotone, AnnotationFillDuotone as AnnotationFillDuotoneIcon, AnnotationFillDuotone as SiAnnotationFillDuotone };
 export default AnnotationFillDuotone;
 export type { AnnotationFillDuotoneProps };

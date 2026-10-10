@@ -14,7 +14,7 @@ const MaximizeFill = memo(
 
 MaximizeFill.displayName = 'MaximizeFill';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { MaximizeFill, MaximizeFill as MaximizeFillIcon, MaximizeFill as SiMaximizeFill };
 export default MaximizeFill;
 export type { MaximizeFillProps };

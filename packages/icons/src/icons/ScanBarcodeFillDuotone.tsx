@@ -15,7 +15,7 @@ const ScanBarcodeFillDuotone = memo(
 
 ScanBarcodeFillDuotone.displayName = 'ScanBarcodeFillDuotone';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { ScanBarcodeFillDuotone, ScanBarcodeFillDuotone as ScanBarcodeFillDuotoneIcon, ScanBarcodeFillDuotone as SiScanBarcodeFillDuotone };
 export default ScanBarcodeFillDuotone;
 export type { ScanBarcodeFillDuotoneProps };

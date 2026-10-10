@@ -18,10 +18,10 @@ export interface EditSquareProps extends IconProps {
  * For smaller bundle size, import specific variants directly:
  * import { EditSquareRegular } from 'stera-icons/icons/EditSquareRegular';
  */
-const EditSquare = memo(forwardRef<SVGSVGElement, EditSquareProps>(({ 
+const EditSquare = memo(forwardRef<SVGSVGElement, EditSquareProps>(({
   weight = 'regular',
   duotone = false,
-  ...rest 
+  ...rest
 }, ref) => {
   if (weight === 'bold' && duotone) return <EditSquareBoldDuotone ref={ref} {...rest} />;
   if (weight === 'bold') return <EditSquareBold ref={ref} {...rest} />;
@@ -33,6 +33,6 @@ const EditSquare = memo(forwardRef<SVGSVGElement, EditSquareProps>(({
 
 EditSquare.displayName = 'EditSquare';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { EditSquare, EditSquare as EditSquareIcon, EditSquare as SiEditSquare };
 export default EditSquare;

@@ -18,10 +18,10 @@ export interface ContrastProps extends IconProps {
  * For smaller bundle size, import specific variants directly:
  * import { ContrastRegular } from 'stera-icons/icons/ContrastRegular';
  */
-const Contrast = memo(forwardRef<SVGSVGElement, ContrastProps>(({ 
+const Contrast = memo(forwardRef<SVGSVGElement, ContrastProps>(({
   weight = 'regular',
   duotone = false,
-  ...rest 
+  ...rest
 }, ref) => {
   if (weight === 'bold' && duotone) return <ContrastBoldDuotone ref={ref} {...rest} />;
   if (weight === 'bold') return <ContrastBold ref={ref} {...rest} />;
@@ -33,6 +33,6 @@ const Contrast = memo(forwardRef<SVGSVGElement, ContrastProps>(({
 
 Contrast.displayName = 'Contrast';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { Contrast, Contrast as ContrastIcon, Contrast as SiContrast };
 export default Contrast;

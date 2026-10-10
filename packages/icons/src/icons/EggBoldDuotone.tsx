@@ -15,7 +15,7 @@ const EggBoldDuotone = memo(
 
 EggBoldDuotone.displayName = 'EggBoldDuotone';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { EggBoldDuotone, EggBoldDuotone as EggBoldDuotoneIcon, EggBoldDuotone as SiEggBoldDuotone };
 export default EggBoldDuotone;
 export type { EggBoldDuotoneProps };

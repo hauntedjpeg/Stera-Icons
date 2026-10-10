@@ -15,7 +15,7 @@ const PushPinBoldDuotone = memo(
 
 PushPinBoldDuotone.displayName = 'PushPinBoldDuotone';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { PushPinBoldDuotone, PushPinBoldDuotone as PushPinBoldDuotoneIcon, PushPinBoldDuotone as SiPushPinBoldDuotone };
 export default PushPinBoldDuotone;
 export type { PushPinBoldDuotoneProps };

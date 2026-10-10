@@ -15,7 +15,7 @@ const AlignVerticalTopBoldDuotone = memo(
 
 AlignVerticalTopBoldDuotone.displayName = 'AlignVerticalTopBoldDuotone';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { AlignVerticalTopBoldDuotone, AlignVerticalTopBoldDuotone as AlignVerticalTopBoldDuotoneIcon, AlignVerticalTopBoldDuotone as SiAlignVerticalTopBoldDuotone };
 export default AlignVerticalTopBoldDuotone;
 export type { AlignVerticalTopBoldDuotoneProps };

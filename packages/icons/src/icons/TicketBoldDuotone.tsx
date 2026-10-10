@@ -15,7 +15,7 @@ const TicketBoldDuotone = memo(
 
 TicketBoldDuotone.displayName = 'TicketBoldDuotone';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { TicketBoldDuotone, TicketBoldDuotone as TicketBoldDuotoneIcon, TicketBoldDuotone as SiTicketBoldDuotone };
 export default TicketBoldDuotone;
 export type { TicketBoldDuotoneProps };

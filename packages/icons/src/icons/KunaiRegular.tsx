@@ -14,7 +14,7 @@ const KunaiRegular = memo(
 
 KunaiRegular.displayName = 'KunaiRegular';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { KunaiRegular, KunaiRegular as KunaiRegularIcon, KunaiRegular as SiKunaiRegular };
 export default KunaiRegular;
 export type { KunaiRegularProps };

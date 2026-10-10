@@ -15,7 +15,7 @@ const TallyMarksBoldDuotone = memo(
 
 TallyMarksBoldDuotone.displayName = 'TallyMarksBoldDuotone';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { TallyMarksBoldDuotone, TallyMarksBoldDuotone as TallyMarksBoldDuotoneIcon, TallyMarksBoldDuotone as SiTallyMarksBoldDuotone };
 export default TallyMarksBoldDuotone;
 export type { TallyMarksBoldDuotoneProps };

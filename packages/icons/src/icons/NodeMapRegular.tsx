@@ -14,7 +14,7 @@ const NodeMapRegular = memo(
 
 NodeMapRegular.displayName = 'NodeMapRegular';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { NodeMapRegular, NodeMapRegular as NodeMapRegularIcon, NodeMapRegular as SiNodeMapRegular };
 export default NodeMapRegular;
 export type { NodeMapRegularProps };

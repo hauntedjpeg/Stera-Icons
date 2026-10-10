@@ -18,10 +18,10 @@ export interface ChevronRightProps extends IconProps {
  * For smaller bundle size, import specific variants directly:
  * import { ChevronRightRegular } from 'stera-icons/icons/ChevronRightRegular';
  */
-const ChevronRight = memo(forwardRef<SVGSVGElement, ChevronRightProps>(({ 
+const ChevronRight = memo(forwardRef<SVGSVGElement, ChevronRightProps>(({
   weight = 'regular',
   duotone = false,
-  ...rest 
+  ...rest
 }, ref) => {
   if (weight === 'bold' && duotone) return <ChevronRightBoldDuotone ref={ref} {...rest} />;
   if (weight === 'bold') return <ChevronRightBold ref={ref} {...rest} />;
@@ -33,6 +33,6 @@ const ChevronRight = memo(forwardRef<SVGSVGElement, ChevronRightProps>(({
 
 ChevronRight.displayName = 'ChevronRight';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { ChevronRight, ChevronRight as ChevronRightIcon, ChevronRight as SiChevronRight };
 export default ChevronRight;

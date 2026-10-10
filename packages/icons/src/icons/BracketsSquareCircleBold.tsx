@@ -15,7 +15,7 @@ const BracketsSquareCircleBold = memo(
 
 BracketsSquareCircleBold.displayName = 'BracketsSquareCircleBold';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { BracketsSquareCircleBold, BracketsSquareCircleBold as BracketsSquareCircleBoldIcon, BracketsSquareCircleBold as SiBracketsSquareCircleBold };
 export default BracketsSquareCircleBold;
 export type { BracketsSquareCircleBoldProps };

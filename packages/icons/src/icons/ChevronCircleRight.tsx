@@ -18,10 +18,10 @@ export interface ChevronCircleRightProps extends IconProps {
  * For smaller bundle size, import specific variants directly:
  * import { ChevronCircleRightRegular } from 'stera-icons/icons/ChevronCircleRightRegular';
  */
-const ChevronCircleRight = memo(forwardRef<SVGSVGElement, ChevronCircleRightProps>(({ 
+const ChevronCircleRight = memo(forwardRef<SVGSVGElement, ChevronCircleRightProps>(({
   weight = 'regular',
   duotone = false,
-  ...rest 
+  ...rest
 }, ref) => {
   if (weight === 'bold' && duotone) return <ChevronCircleRightBoldDuotone ref={ref} {...rest} />;
   if (weight === 'bold') return <ChevronCircleRightBold ref={ref} {...rest} />;
@@ -33,6 +33,6 @@ const ChevronCircleRight = memo(forwardRef<SVGSVGElement, ChevronCircleRightProp
 
 ChevronCircleRight.displayName = 'ChevronCircleRight';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { ChevronCircleRight, ChevronCircleRight as ChevronCircleRightIcon, ChevronCircleRight as SiChevronCircleRight };
 export default ChevronCircleRight;

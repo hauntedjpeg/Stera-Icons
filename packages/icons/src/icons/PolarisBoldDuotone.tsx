@@ -15,7 +15,7 @@ const PolarisBoldDuotone = memo(
 
 PolarisBoldDuotone.displayName = 'PolarisBoldDuotone';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { PolarisBoldDuotone, PolarisBoldDuotone as PolarisBoldDuotoneIcon, PolarisBoldDuotone as SiPolarisBoldDuotone };
 export default PolarisBoldDuotone;
 export type { PolarisBoldDuotoneProps };

@@ -14,7 +14,7 @@ const TelescopeBold = memo(
 
 TelescopeBold.displayName = 'TelescopeBold';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { TelescopeBold, TelescopeBold as TelescopeBoldIcon, TelescopeBold as SiTelescopeBold };
 export default TelescopeBold;
 export type { TelescopeBoldProps };

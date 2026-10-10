@@ -15,7 +15,7 @@ const UsersRegularDuotone = memo(
 
 UsersRegularDuotone.displayName = 'UsersRegularDuotone';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { UsersRegularDuotone, UsersRegularDuotone as UsersRegularDuotoneIcon, UsersRegularDuotone as SiUsersRegularDuotone };
 export default UsersRegularDuotone;
 export type { UsersRegularDuotoneProps };

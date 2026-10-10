@@ -18,10 +18,10 @@ export interface ChartLineProps extends IconProps {
  * For smaller bundle size, import specific variants directly:
  * import { ChartLineRegular } from 'stera-icons/icons/ChartLineRegular';
  */
-const ChartLine = memo(forwardRef<SVGSVGElement, ChartLineProps>(({ 
+const ChartLine = memo(forwardRef<SVGSVGElement, ChartLineProps>(({
   weight = 'regular',
   duotone = false,
-  ...rest 
+  ...rest
 }, ref) => {
   if (weight === 'bold' && duotone) return <ChartLineBoldDuotone ref={ref} {...rest} />;
   if (weight === 'bold') return <ChartLineBold ref={ref} {...rest} />;
@@ -33,6 +33,6 @@ const ChartLine = memo(forwardRef<SVGSVGElement, ChartLineProps>(({
 
 ChartLine.displayName = 'ChartLine';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { ChartLine, ChartLine as ChartLineIcon, ChartLine as SiChartLine };
 export default ChartLine;

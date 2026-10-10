@@ -14,7 +14,7 @@ const RulersFill = memo(
 
 RulersFill.displayName = 'RulersFill';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { RulersFill, RulersFill as RulersFillIcon, RulersFill as SiRulersFill };
 export default RulersFill;
 export type { RulersFillProps };

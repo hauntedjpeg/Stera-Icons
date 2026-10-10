@@ -14,7 +14,7 @@ const SlidersVFill = memo(
 
 SlidersVFill.displayName = 'SlidersVFill';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { SlidersVFill, SlidersVFill as SlidersVFillIcon, SlidersVFill as SiSlidersVFill };
 export default SlidersVFill;
 export type { SlidersVFillProps };

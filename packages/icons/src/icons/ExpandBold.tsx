@@ -14,7 +14,7 @@ const ExpandBold = memo(
 
 ExpandBold.displayName = 'ExpandBold';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { ExpandBold, ExpandBold as ExpandBoldIcon, ExpandBold as SiExpandBold };
 export default ExpandBold;
 export type { ExpandBoldProps };

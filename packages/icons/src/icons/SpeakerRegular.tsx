@@ -14,7 +14,7 @@ const SpeakerRegular = memo(
 
 SpeakerRegular.displayName = 'SpeakerRegular';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { SpeakerRegular, SpeakerRegular as SpeakerRegularIcon, SpeakerRegular as SiSpeakerRegular };
 export default SpeakerRegular;
 export type { SpeakerRegularProps };

@@ -16,7 +16,7 @@ const BrowserFillDuotone = memo(
 
 BrowserFillDuotone.displayName = 'BrowserFillDuotone';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { BrowserFillDuotone, BrowserFillDuotone as BrowserFillDuotoneIcon, BrowserFillDuotone as SiBrowserFillDuotone };
 export default BrowserFillDuotone;
 export type { BrowserFillDuotoneProps };

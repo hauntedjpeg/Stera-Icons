@@ -15,7 +15,7 @@ const MessageSquareOffBold = memo(
 
 MessageSquareOffBold.displayName = 'MessageSquareOffBold';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { MessageSquareOffBold, MessageSquareOffBold as MessageSquareOffBoldIcon, MessageSquareOffBold as SiMessageSquareOffBold };
 export default MessageSquareOffBold;
 export type { MessageSquareOffBoldProps };

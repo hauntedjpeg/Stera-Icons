@@ -15,7 +15,7 @@ const HardDriveBold = memo(
 
 HardDriveBold.displayName = 'HardDriveBold';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { HardDriveBold, HardDriveBold as HardDriveBoldIcon, HardDriveBold as SiHardDriveBold };
 export default HardDriveBold;
 export type { HardDriveBoldProps };

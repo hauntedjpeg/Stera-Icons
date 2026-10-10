@@ -18,10 +18,10 @@ export interface CircleCheckerProps extends IconProps {
  * For smaller bundle size, import specific variants directly:
  * import { CircleCheckerRegular } from 'stera-icons/icons/CircleCheckerRegular';
  */
-const CircleChecker = memo(forwardRef<SVGSVGElement, CircleCheckerProps>(({ 
+const CircleChecker = memo(forwardRef<SVGSVGElement, CircleCheckerProps>(({
   weight = 'regular',
   duotone = false,
-  ...rest 
+  ...rest
 }, ref) => {
   if (weight === 'bold' && duotone) return <CircleCheckerBoldDuotone ref={ref} {...rest} />;
   if (weight === 'bold') return <CircleCheckerBold ref={ref} {...rest} />;
@@ -33,6 +33,6 @@ const CircleChecker = memo(forwardRef<SVGSVGElement, CircleCheckerProps>(({
 
 CircleChecker.displayName = 'CircleChecker';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { CircleChecker, CircleChecker as CircleCheckerIcon, CircleChecker as SiCircleChecker };
 export default CircleChecker;

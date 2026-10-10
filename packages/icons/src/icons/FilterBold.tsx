@@ -14,7 +14,7 @@ const FilterBold = memo(
 
 FilterBold.displayName = 'FilterBold';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { FilterBold, FilterBold as FilterBoldIcon, FilterBold as SiFilterBold };
 export default FilterBold;
 export type { FilterBoldProps };

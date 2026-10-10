@@ -18,10 +18,10 @@ export interface CreditCardAltProps extends IconProps {
  * For smaller bundle size, import specific variants directly:
  * import { CreditCardAltRegular } from 'stera-icons/icons/CreditCardAltRegular';
  */
-const CreditCardAlt = memo(forwardRef<SVGSVGElement, CreditCardAltProps>(({ 
+const CreditCardAlt = memo(forwardRef<SVGSVGElement, CreditCardAltProps>(({
   weight = 'regular',
   duotone = false,
-  ...rest 
+  ...rest
 }, ref) => {
   if (weight === 'bold' && duotone) return <CreditCardAltBoldDuotone ref={ref} {...rest} />;
   if (weight === 'bold') return <CreditCardAltBold ref={ref} {...rest} />;
@@ -33,6 +33,6 @@ const CreditCardAlt = memo(forwardRef<SVGSVGElement, CreditCardAltProps>(({
 
 CreditCardAlt.displayName = 'CreditCardAlt';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { CreditCardAlt, CreditCardAlt as CreditCardAltIcon, CreditCardAlt as SiCreditCardAlt };
 export default CreditCardAlt;

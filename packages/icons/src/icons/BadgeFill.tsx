@@ -14,7 +14,7 @@ const BadgeFill = memo(
 
 BadgeFill.displayName = 'BadgeFill';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { BadgeFill, BadgeFill as BadgeFillIcon, BadgeFill as SiBadgeFill };
 export default BadgeFill;
 export type { BadgeFillProps };

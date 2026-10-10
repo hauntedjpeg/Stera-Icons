@@ -14,7 +14,7 @@ const CursorTextAltRegular = memo(
 
 CursorTextAltRegular.displayName = 'CursorTextAltRegular';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { CursorTextAltRegular, CursorTextAltRegular as CursorTextAltRegularIcon, CursorTextAltRegular as SiCursorTextAltRegular };
 export default CursorTextAltRegular;
 export type { CursorTextAltRegularProps };

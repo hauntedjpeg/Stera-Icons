@@ -15,7 +15,7 @@ const SortRegularDuotone = memo(
 
 SortRegularDuotone.displayName = 'SortRegularDuotone';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { SortRegularDuotone, SortRegularDuotone as SortRegularDuotoneIcon, SortRegularDuotone as SiSortRegularDuotone };
 export default SortRegularDuotone;
 export type { SortRegularDuotoneProps };

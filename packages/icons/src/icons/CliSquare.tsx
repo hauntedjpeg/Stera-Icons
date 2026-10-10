@@ -18,10 +18,10 @@ export interface CliSquareProps extends IconProps {
  * For smaller bundle size, import specific variants directly:
  * import { CliSquareRegular } from 'stera-icons/icons/CliSquareRegular';
  */
-const CliSquare = memo(forwardRef<SVGSVGElement, CliSquareProps>(({ 
+const CliSquare = memo(forwardRef<SVGSVGElement, CliSquareProps>(({
   weight = 'regular',
   duotone = false,
-  ...rest 
+  ...rest
 }, ref) => {
   if (weight === 'bold' && duotone) return <CliSquareBoldDuotone ref={ref} {...rest} />;
   if (weight === 'bold') return <CliSquareBold ref={ref} {...rest} />;
@@ -33,6 +33,6 @@ const CliSquare = memo(forwardRef<SVGSVGElement, CliSquareProps>(({
 
 CliSquare.displayName = 'CliSquare';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { CliSquare, CliSquare as CliSquareIcon, CliSquare as SiCliSquare };
 export default CliSquare;

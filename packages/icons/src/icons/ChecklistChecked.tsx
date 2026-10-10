@@ -18,10 +18,10 @@ export interface ChecklistCheckedProps extends IconProps {
  * For smaller bundle size, import specific variants directly:
  * import { ChecklistCheckedRegular } from 'stera-icons/icons/ChecklistCheckedRegular';
  */
-const ChecklistChecked = memo(forwardRef<SVGSVGElement, ChecklistCheckedProps>(({ 
+const ChecklistChecked = memo(forwardRef<SVGSVGElement, ChecklistCheckedProps>(({
   weight = 'regular',
   duotone = false,
-  ...rest 
+  ...rest
 }, ref) => {
   if (weight === 'bold' && duotone) return <ChecklistCheckedBoldDuotone ref={ref} {...rest} />;
   if (weight === 'bold') return <ChecklistCheckedBold ref={ref} {...rest} />;
@@ -33,6 +33,6 @@ const ChecklistChecked = memo(forwardRef<SVGSVGElement, ChecklistCheckedProps>((
 
 ChecklistChecked.displayName = 'ChecklistChecked';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { ChecklistChecked, ChecklistChecked as ChecklistCheckedIcon, ChecklistChecked as SiChecklistChecked };
 export default ChecklistChecked;

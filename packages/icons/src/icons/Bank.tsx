@@ -18,10 +18,10 @@ export interface BankProps extends IconProps {
  * For smaller bundle size, import specific variants directly:
  * import { BankRegular } from 'stera-icons/icons/BankRegular';
  */
-const Bank = memo(forwardRef<SVGSVGElement, BankProps>(({ 
+const Bank = memo(forwardRef<SVGSVGElement, BankProps>(({
   weight = 'regular',
   duotone = false,
-  ...rest 
+  ...rest
 }, ref) => {
   if (weight === 'bold' && duotone) return <BankBoldDuotone ref={ref} {...rest} />;
   if (weight === 'bold') return <BankBold ref={ref} {...rest} />;
@@ -33,6 +33,6 @@ const Bank = memo(forwardRef<SVGSVGElement, BankProps>(({
 
 Bank.displayName = 'Bank';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { Bank, Bank as BankIcon, Bank as SiBank };
 export default Bank;

@@ -18,10 +18,10 @@ export interface FinderProps extends IconProps {
  * For smaller bundle size, import specific variants directly:
  * import { FinderRegular } from 'stera-icons/icons/FinderRegular';
  */
-const Finder = memo(forwardRef<SVGSVGElement, FinderProps>(({ 
+const Finder = memo(forwardRef<SVGSVGElement, FinderProps>(({
   weight = 'regular',
   duotone = false,
-  ...rest 
+  ...rest
 }, ref) => {
   if (weight === 'bold' && duotone) return <FinderBoldDuotone ref={ref} {...rest} />;
   if (weight === 'bold') return <FinderBold ref={ref} {...rest} />;
@@ -33,6 +33,6 @@ const Finder = memo(forwardRef<SVGSVGElement, FinderProps>(({
 
 Finder.displayName = 'Finder';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { Finder, Finder as FinderIcon, Finder as SiFinder };
 export default Finder;

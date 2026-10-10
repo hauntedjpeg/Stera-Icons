@@ -18,10 +18,10 @@ export interface BubbleProps extends IconProps {
  * For smaller bundle size, import specific variants directly:
  * import { BubbleRegular } from 'stera-icons/icons/BubbleRegular';
  */
-const Bubble = memo(forwardRef<SVGSVGElement, BubbleProps>(({ 
+const Bubble = memo(forwardRef<SVGSVGElement, BubbleProps>(({
   weight = 'regular',
   duotone = false,
-  ...rest 
+  ...rest
 }, ref) => {
   if (weight === 'bold' && duotone) return <BubbleBoldDuotone ref={ref} {...rest} />;
   if (weight === 'bold') return <BubbleBold ref={ref} {...rest} />;
@@ -33,6 +33,6 @@ const Bubble = memo(forwardRef<SVGSVGElement, BubbleProps>(({
 
 Bubble.displayName = 'Bubble';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { Bubble, Bubble as BubbleIcon, Bubble as SiBubble };
 export default Bubble;

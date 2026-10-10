@@ -18,10 +18,10 @@ export interface PauseProps extends IconProps {
  * For smaller bundle size, import specific variants directly:
  * import { PauseRegular } from 'stera-icons/icons/PauseRegular';
  */
-const Pause = memo(forwardRef<SVGSVGElement, PauseProps>(({ 
+const Pause = memo(forwardRef<SVGSVGElement, PauseProps>(({
   weight = 'regular',
   duotone = false,
-  ...rest 
+  ...rest
 }, ref) => {
   if (weight === 'bold' && duotone) return <PauseBoldDuotone ref={ref} {...rest} />;
   if (weight === 'bold') return <PauseBold ref={ref} {...rest} />;
@@ -33,6 +33,6 @@ const Pause = memo(forwardRef<SVGSVGElement, PauseProps>(({
 
 Pause.displayName = 'Pause';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { Pause, Pause as PauseIcon, Pause as SiPause };
 export default Pause;

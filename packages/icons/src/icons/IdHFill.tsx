@@ -14,7 +14,7 @@ const IdHFill = memo(
 
 IdHFill.displayName = 'IdHFill';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { IdHFill, IdHFill as IdHFillIcon, IdHFill as SiIdHFill };
 export default IdHFill;
 export type { IdHFillProps };

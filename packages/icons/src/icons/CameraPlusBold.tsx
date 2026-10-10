@@ -15,7 +15,7 @@ const CameraPlusBold = memo(
 
 CameraPlusBold.displayName = 'CameraPlusBold';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { CameraPlusBold, CameraPlusBold as CameraPlusBoldIcon, CameraPlusBold as SiCameraPlusBold };
 export default CameraPlusBold;
 export type { CameraPlusBoldProps };

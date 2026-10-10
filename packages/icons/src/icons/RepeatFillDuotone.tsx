@@ -15,7 +15,7 @@ const RepeatFillDuotone = memo(
 
 RepeatFillDuotone.displayName = 'RepeatFillDuotone';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { RepeatFillDuotone, RepeatFillDuotone as RepeatFillDuotoneIcon, RepeatFillDuotone as SiRepeatFillDuotone };
 export default RepeatFillDuotone;
 export type { RepeatFillDuotoneProps };

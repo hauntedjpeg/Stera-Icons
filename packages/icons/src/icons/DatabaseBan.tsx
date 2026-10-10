@@ -18,10 +18,10 @@ export interface DatabaseBanProps extends IconProps {
  * For smaller bundle size, import specific variants directly:
  * import { DatabaseBanRegular } from 'stera-icons/icons/DatabaseBanRegular';
  */
-const DatabaseBan = memo(forwardRef<SVGSVGElement, DatabaseBanProps>(({ 
+const DatabaseBan = memo(forwardRef<SVGSVGElement, DatabaseBanProps>(({
   weight = 'regular',
   duotone = false,
-  ...rest 
+  ...rest
 }, ref) => {
   if (weight === 'bold' && duotone) return <DatabaseBanBoldDuotone ref={ref} {...rest} />;
   if (weight === 'bold') return <DatabaseBanBold ref={ref} {...rest} />;
@@ -33,6 +33,6 @@ const DatabaseBan = memo(forwardRef<SVGSVGElement, DatabaseBanProps>(({
 
 DatabaseBan.displayName = 'DatabaseBan';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { DatabaseBan, DatabaseBan as DatabaseBanIcon, DatabaseBan as SiDatabaseBan };
 export default DatabaseBan;

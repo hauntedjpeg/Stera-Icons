@@ -15,7 +15,7 @@ const ScanDocumentFillDuotone = memo(
 
 ScanDocumentFillDuotone.displayName = 'ScanDocumentFillDuotone';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { ScanDocumentFillDuotone, ScanDocumentFillDuotone as ScanDocumentFillDuotoneIcon, ScanDocumentFillDuotone as SiScanDocumentFillDuotone };
 export default ScanDocumentFillDuotone;
 export type { ScanDocumentFillDuotoneProps };

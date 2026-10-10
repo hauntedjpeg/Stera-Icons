@@ -15,7 +15,7 @@ const MessageSquareQuestionRegular = memo(
 
 MessageSquareQuestionRegular.displayName = 'MessageSquareQuestionRegular';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { MessageSquareQuestionRegular, MessageSquareQuestionRegular as MessageSquareQuestionRegularIcon, MessageSquareQuestionRegular as SiMessageSquareQuestionRegular };
 export default MessageSquareQuestionRegular;
 export type { MessageSquareQuestionRegularProps };

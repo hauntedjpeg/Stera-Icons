@@ -18,10 +18,10 @@ export interface MacWindowCursorProps extends IconProps {
  * For smaller bundle size, import specific variants directly:
  * import { MacWindowCursorRegular } from 'stera-icons/icons/MacWindowCursorRegular';
  */
-const MacWindowCursor = memo(forwardRef<SVGSVGElement, MacWindowCursorProps>(({ 
+const MacWindowCursor = memo(forwardRef<SVGSVGElement, MacWindowCursorProps>(({
   weight = 'regular',
   duotone = false,
-  ...rest 
+  ...rest
 }, ref) => {
   if (weight === 'bold' && duotone) return <MacWindowCursorBoldDuotone ref={ref} {...rest} />;
   if (weight === 'bold') return <MacWindowCursorBold ref={ref} {...rest} />;
@@ -33,6 +33,6 @@ const MacWindowCursor = memo(forwardRef<SVGSVGElement, MacWindowCursorProps>(({
 
 MacWindowCursor.displayName = 'MacWindowCursor';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { MacWindowCursor, MacWindowCursor as MacWindowCursorIcon, MacWindowCursor as SiMacWindowCursor };
 export default MacWindowCursor;

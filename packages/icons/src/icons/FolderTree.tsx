@@ -18,10 +18,10 @@ export interface FolderTreeProps extends IconProps {
  * For smaller bundle size, import specific variants directly:
  * import { FolderTreeRegular } from 'stera-icons/icons/FolderTreeRegular';
  */
-const FolderTree = memo(forwardRef<SVGSVGElement, FolderTreeProps>(({ 
+const FolderTree = memo(forwardRef<SVGSVGElement, FolderTreeProps>(({
   weight = 'regular',
   duotone = false,
-  ...rest 
+  ...rest
 }, ref) => {
   if (weight === 'bold' && duotone) return <FolderTreeBoldDuotone ref={ref} {...rest} />;
   if (weight === 'bold') return <FolderTreeBold ref={ref} {...rest} />;
@@ -33,6 +33,6 @@ const FolderTree = memo(forwardRef<SVGSVGElement, FolderTreeProps>(({
 
 FolderTree.displayName = 'FolderTree';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { FolderTree, FolderTree as FolderTreeIcon, FolderTree as SiFolderTree };
 export default FolderTree;

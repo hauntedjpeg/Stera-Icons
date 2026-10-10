@@ -14,7 +14,7 @@ const ListSimpleFill = memo(
 
 ListSimpleFill.displayName = 'ListSimpleFill';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { ListSimpleFill, ListSimpleFill as ListSimpleFillIcon, ListSimpleFill as SiListSimpleFill };
 export default ListSimpleFill;
 export type { ListSimpleFillProps };

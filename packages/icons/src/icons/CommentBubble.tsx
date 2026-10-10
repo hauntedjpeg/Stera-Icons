@@ -18,10 +18,10 @@ export interface CommentBubbleProps extends IconProps {
  * For smaller bundle size, import specific variants directly:
  * import { CommentBubbleRegular } from 'stera-icons/icons/CommentBubbleRegular';
  */
-const CommentBubble = memo(forwardRef<SVGSVGElement, CommentBubbleProps>(({ 
+const CommentBubble = memo(forwardRef<SVGSVGElement, CommentBubbleProps>(({
   weight = 'regular',
   duotone = false,
-  ...rest 
+  ...rest
 }, ref) => {
   if (weight === 'bold' && duotone) return <CommentBubbleBoldDuotone ref={ref} {...rest} />;
   if (weight === 'bold') return <CommentBubbleBold ref={ref} {...rest} />;
@@ -33,6 +33,6 @@ const CommentBubble = memo(forwardRef<SVGSVGElement, CommentBubbleProps>(({
 
 CommentBubble.displayName = 'CommentBubble';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { CommentBubble, CommentBubble as CommentBubbleIcon, CommentBubble as SiCommentBubble };
 export default CommentBubble;

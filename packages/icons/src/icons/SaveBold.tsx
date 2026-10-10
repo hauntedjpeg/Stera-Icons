@@ -15,7 +15,7 @@ const SaveBold = memo(
 
 SaveBold.displayName = 'SaveBold';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { SaveBold, SaveBold as SaveBoldIcon, SaveBold as SiSaveBold };
 export default SaveBold;
 export type { SaveBoldProps };

@@ -15,7 +15,7 @@ const TrashBold = memo(
 
 TrashBold.displayName = 'TrashBold';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { TrashBold, TrashBold as TrashBoldIcon, TrashBold as SiTrashBold };
 export default TrashBold;
 export type { TrashBoldProps };

@@ -18,10 +18,10 @@ export interface AwardStarProps extends IconProps {
  * For smaller bundle size, import specific variants directly:
  * import { AwardStarRegular } from 'stera-icons/icons/AwardStarRegular';
  */
-const AwardStar = memo(forwardRef<SVGSVGElement, AwardStarProps>(({ 
+const AwardStar = memo(forwardRef<SVGSVGElement, AwardStarProps>(({
   weight = 'regular',
   duotone = false,
-  ...rest 
+  ...rest
 }, ref) => {
   if (weight === 'bold' && duotone) return <AwardStarBoldDuotone ref={ref} {...rest} />;
   if (weight === 'bold') return <AwardStarBold ref={ref} {...rest} />;
@@ -33,6 +33,6 @@ const AwardStar = memo(forwardRef<SVGSVGElement, AwardStarProps>(({
 
 AwardStar.displayName = 'AwardStar';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { AwardStar, AwardStar as AwardStarIcon, AwardStar as SiAwardStar };
 export default AwardStar;

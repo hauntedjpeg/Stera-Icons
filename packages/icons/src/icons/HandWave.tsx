@@ -18,10 +18,10 @@ export interface HandWaveProps extends IconProps {
  * For smaller bundle size, import specific variants directly:
  * import { HandWaveRegular } from 'stera-icons/icons/HandWaveRegular';
  */
-const HandWave = memo(forwardRef<SVGSVGElement, HandWaveProps>(({ 
+const HandWave = memo(forwardRef<SVGSVGElement, HandWaveProps>(({
   weight = 'regular',
   duotone = false,
-  ...rest 
+  ...rest
 }, ref) => {
   if (weight === 'bold' && duotone) return <HandWaveBoldDuotone ref={ref} {...rest} />;
   if (weight === 'bold') return <HandWaveBold ref={ref} {...rest} />;
@@ -33,6 +33,6 @@ const HandWave = memo(forwardRef<SVGSVGElement, HandWaveProps>(({
 
 HandWave.displayName = 'HandWave';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { HandWave, HandWave as HandWaveIcon, HandWave as SiHandWave };
 export default HandWave;

@@ -14,7 +14,7 @@ const MoonCrescentRegular = memo(
 
 MoonCrescentRegular.displayName = 'MoonCrescentRegular';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { MoonCrescentRegular, MoonCrescentRegular as MoonCrescentRegularIcon, MoonCrescentRegular as SiMoonCrescentRegular };
 export default MoonCrescentRegular;
 export type { MoonCrescentRegularProps };

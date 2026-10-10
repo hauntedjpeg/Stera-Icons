@@ -15,7 +15,7 @@ const AlertOctagonBoldDuotone = memo(
 
 AlertOctagonBoldDuotone.displayName = 'AlertOctagonBoldDuotone';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { AlertOctagonBoldDuotone, AlertOctagonBoldDuotone as AlertOctagonBoldDuotoneIcon, AlertOctagonBoldDuotone as SiAlertOctagonBoldDuotone };
 export default AlertOctagonBoldDuotone;
 export type { AlertOctagonBoldDuotoneProps };

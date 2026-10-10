@@ -14,7 +14,7 @@ const PaperclipFill = memo(
 
 PaperclipFill.displayName = 'PaperclipFill';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { PaperclipFill, PaperclipFill as PaperclipFillIcon, PaperclipFill as SiPaperclipFill };
 export default PaperclipFill;
 export type { PaperclipFillProps };

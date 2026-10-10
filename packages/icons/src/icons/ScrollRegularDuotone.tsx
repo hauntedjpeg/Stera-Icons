@@ -16,7 +16,7 @@ const ScrollRegularDuotone = memo(
 
 ScrollRegularDuotone.displayName = 'ScrollRegularDuotone';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { ScrollRegularDuotone, ScrollRegularDuotone as ScrollRegularDuotoneIcon, ScrollRegularDuotone as SiScrollRegularDuotone };
 export default ScrollRegularDuotone;
 export type { ScrollRegularDuotoneProps };

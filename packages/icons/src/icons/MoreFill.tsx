@@ -14,7 +14,7 @@ const MoreFill = memo(
 
 MoreFill.displayName = 'MoreFill';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { MoreFill, MoreFill as MoreFillIcon, MoreFill as SiMoreFill };
 export default MoreFill;
 export type { MoreFillProps };

@@ -15,7 +15,7 @@ const CloudCliBold = memo(
 
 CloudCliBold.displayName = 'CloudCliBold';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { CloudCliBold, CloudCliBold as CloudCliBoldIcon, CloudCliBold as SiCloudCliBold };
 export default CloudCliBold;
 export type { CloudCliBoldProps };

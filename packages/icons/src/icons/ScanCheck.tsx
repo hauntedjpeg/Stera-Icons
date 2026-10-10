@@ -18,10 +18,10 @@ export interface ScanCheckProps extends IconProps {
  * For smaller bundle size, import specific variants directly:
  * import { ScanCheckRegular } from 'stera-icons/icons/ScanCheckRegular';
  */
-const ScanCheck = memo(forwardRef<SVGSVGElement, ScanCheckProps>(({ 
+const ScanCheck = memo(forwardRef<SVGSVGElement, ScanCheckProps>(({
   weight = 'regular',
   duotone = false,
-  ...rest 
+  ...rest
 }, ref) => {
   if (weight === 'bold' && duotone) return <ScanCheckBoldDuotone ref={ref} {...rest} />;
   if (weight === 'bold') return <ScanCheckBold ref={ref} {...rest} />;
@@ -33,6 +33,6 @@ const ScanCheck = memo(forwardRef<SVGSVGElement, ScanCheckProps>(({
 
 ScanCheck.displayName = 'ScanCheck';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { ScanCheck, ScanCheck as ScanCheckIcon, ScanCheck as SiScanCheck };
 export default ScanCheck;

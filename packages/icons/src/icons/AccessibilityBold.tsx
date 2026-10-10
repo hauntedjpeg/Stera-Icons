@@ -15,7 +15,7 @@ const AccessibilityBold = memo(
 
 AccessibilityBold.displayName = 'AccessibilityBold';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { AccessibilityBold, AccessibilityBold as AccessibilityBoldIcon, AccessibilityBold as SiAccessibilityBold };
 export default AccessibilityBold;
 export type { AccessibilityBoldProps };

@@ -14,7 +14,7 @@ const LayoutMasonryFill = memo(
 
 LayoutMasonryFill.displayName = 'LayoutMasonryFill';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { LayoutMasonryFill, LayoutMasonryFill as LayoutMasonryFillIcon, LayoutMasonryFill as SiLayoutMasonryFill };
 export default LayoutMasonryFill;
 export type { LayoutMasonryFillProps };

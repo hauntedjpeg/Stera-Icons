@@ -18,10 +18,10 @@ export interface FrameProps extends IconProps {
  * For smaller bundle size, import specific variants directly:
  * import { FrameRegular } from 'stera-icons/icons/FrameRegular';
  */
-const Frame = memo(forwardRef<SVGSVGElement, FrameProps>(({ 
+const Frame = memo(forwardRef<SVGSVGElement, FrameProps>(({
   weight = 'regular',
   duotone = false,
-  ...rest 
+  ...rest
 }, ref) => {
   if (weight === 'bold' && duotone) return <FrameBoldDuotone ref={ref} {...rest} />;
   if (weight === 'bold') return <FrameBold ref={ref} {...rest} />;
@@ -33,6 +33,6 @@ const Frame = memo(forwardRef<SVGSVGElement, FrameProps>(({
 
 Frame.displayName = 'Frame';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { Frame, Frame as FrameIcon, Frame as SiFrame };
 export default Frame;

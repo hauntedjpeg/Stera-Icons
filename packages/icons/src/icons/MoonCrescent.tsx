@@ -18,10 +18,10 @@ export interface MoonCrescentProps extends IconProps {
  * For smaller bundle size, import specific variants directly:
  * import { MoonCrescentRegular } from 'stera-icons/icons/MoonCrescentRegular';
  */
-const MoonCrescent = memo(forwardRef<SVGSVGElement, MoonCrescentProps>(({ 
+const MoonCrescent = memo(forwardRef<SVGSVGElement, MoonCrescentProps>(({
   weight = 'regular',
   duotone = false,
-  ...rest 
+  ...rest
 }, ref) => {
   if (weight === 'bold' && duotone) return <MoonCrescentBoldDuotone ref={ref} {...rest} />;
   if (weight === 'bold') return <MoonCrescentBold ref={ref} {...rest} />;
@@ -33,6 +33,6 @@ const MoonCrescent = memo(forwardRef<SVGSVGElement, MoonCrescentProps>(({
 
 MoonCrescent.displayName = 'MoonCrescent';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { MoonCrescent, MoonCrescent as MoonCrescentIcon, MoonCrescent as SiMoonCrescent };
 export default MoonCrescent;

@@ -14,7 +14,7 @@ const ScanDashedRegular = memo(
 
 ScanDashedRegular.displayName = 'ScanDashedRegular';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { ScanDashedRegular, ScanDashedRegular as ScanDashedRegularIcon, ScanDashedRegular as SiScanDashedRegular };
 export default ScanDashedRegular;
 export type { ScanDashedRegularProps };

@@ -14,7 +14,7 @@ const LayersBold = memo(
 
 LayersBold.displayName = 'LayersBold';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { LayersBold, LayersBold as LayersBoldIcon, LayersBold as SiLayersBold };
 export default LayersBold;
 export type { LayersBoldProps };

@@ -18,10 +18,10 @@ export interface GaugeDots33Props extends IconProps {
  * For smaller bundle size, import specific variants directly:
  * import { GaugeDots33Regular } from 'stera-icons/icons/GaugeDots33Regular';
  */
-const GaugeDots33 = memo(forwardRef<SVGSVGElement, GaugeDots33Props>(({ 
+const GaugeDots33 = memo(forwardRef<SVGSVGElement, GaugeDots33Props>(({
   weight = 'regular',
   duotone = false,
-  ...rest 
+  ...rest
 }, ref) => {
   if (weight === 'bold' && duotone) return <GaugeDots33BoldDuotone ref={ref} {...rest} />;
   if (weight === 'bold') return <GaugeDots33Bold ref={ref} {...rest} />;
@@ -33,6 +33,6 @@ const GaugeDots33 = memo(forwardRef<SVGSVGElement, GaugeDots33Props>(({
 
 GaugeDots33.displayName = 'GaugeDots33';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { GaugeDots33, GaugeDots33 as GaugeDots33Icon, GaugeDots33 as SiGaugeDots33 };
 export default GaugeDots33;

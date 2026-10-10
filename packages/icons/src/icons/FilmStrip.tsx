@@ -18,10 +18,10 @@ export interface FilmStripProps extends IconProps {
  * For smaller bundle size, import specific variants directly:
  * import { FilmStripRegular } from 'stera-icons/icons/FilmStripRegular';
  */
-const FilmStrip = memo(forwardRef<SVGSVGElement, FilmStripProps>(({ 
+const FilmStrip = memo(forwardRef<SVGSVGElement, FilmStripProps>(({
   weight = 'regular',
   duotone = false,
-  ...rest 
+  ...rest
 }, ref) => {
   if (weight === 'bold' && duotone) return <FilmStripBoldDuotone ref={ref} {...rest} />;
   if (weight === 'bold') return <FilmStripBold ref={ref} {...rest} />;
@@ -33,6 +33,6 @@ const FilmStrip = memo(forwardRef<SVGSVGElement, FilmStripProps>(({
 
 FilmStrip.displayName = 'FilmStrip';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { FilmStrip, FilmStrip as FilmStripIcon, FilmStrip as SiFilmStrip };
 export default FilmStrip;

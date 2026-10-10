@@ -18,10 +18,10 @@ export interface TextFieldProps extends IconProps {
  * For smaller bundle size, import specific variants directly:
  * import { TextFieldRegular } from 'stera-icons/icons/TextFieldRegular';
  */
-const TextField = memo(forwardRef<SVGSVGElement, TextFieldProps>(({ 
+const TextField = memo(forwardRef<SVGSVGElement, TextFieldProps>(({
   weight = 'regular',
   duotone = false,
-  ...rest 
+  ...rest
 }, ref) => {
   if (weight === 'bold' && duotone) return <TextFieldBoldDuotone ref={ref} {...rest} />;
   if (weight === 'bold') return <TextFieldBold ref={ref} {...rest} />;
@@ -33,6 +33,6 @@ const TextField = memo(forwardRef<SVGSVGElement, TextFieldProps>(({
 
 TextField.displayName = 'TextField';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { TextField, TextField as TextFieldIcon, TextField as SiTextField };
 export default TextField;

@@ -14,7 +14,7 @@ const MicOffBold = memo(
 
 MicOffBold.displayName = 'MicOffBold';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { MicOffBold, MicOffBold as MicOffBoldIcon, MicOffBold as SiMicOffBold };
 export default MicOffBold;
 export type { MicOffBoldProps };

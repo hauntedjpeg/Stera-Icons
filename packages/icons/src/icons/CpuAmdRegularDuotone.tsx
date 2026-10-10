@@ -15,7 +15,7 @@ const CpuAmdRegularDuotone = memo(
 
 CpuAmdRegularDuotone.displayName = 'CpuAmdRegularDuotone';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { CpuAmdRegularDuotone, CpuAmdRegularDuotone as CpuAmdRegularDuotoneIcon, CpuAmdRegularDuotone as SiCpuAmdRegularDuotone };
 export default CpuAmdRegularDuotone;
 export type { CpuAmdRegularDuotoneProps };

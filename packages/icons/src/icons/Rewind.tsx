@@ -18,10 +18,10 @@ export interface RewindProps extends IconProps {
  * For smaller bundle size, import specific variants directly:
  * import { RewindRegular } from 'stera-icons/icons/RewindRegular';
  */
-const Rewind = memo(forwardRef<SVGSVGElement, RewindProps>(({ 
+const Rewind = memo(forwardRef<SVGSVGElement, RewindProps>(({
   weight = 'regular',
   duotone = false,
-  ...rest 
+  ...rest
 }, ref) => {
   if (weight === 'bold' && duotone) return <RewindBoldDuotone ref={ref} {...rest} />;
   if (weight === 'bold') return <RewindBold ref={ref} {...rest} />;
@@ -33,6 +33,6 @@ const Rewind = memo(forwardRef<SVGSVGElement, RewindProps>(({
 
 Rewind.displayName = 'Rewind';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { Rewind, Rewind as RewindIcon, Rewind as SiRewind };
 export default Rewind;

@@ -18,10 +18,10 @@ export interface BasketProps extends IconProps {
  * For smaller bundle size, import specific variants directly:
  * import { BasketRegular } from 'stera-icons/icons/BasketRegular';
  */
-const Basket = memo(forwardRef<SVGSVGElement, BasketProps>(({ 
+const Basket = memo(forwardRef<SVGSVGElement, BasketProps>(({
   weight = 'regular',
   duotone = false,
-  ...rest 
+  ...rest
 }, ref) => {
   if (weight === 'bold' && duotone) return <BasketBoldDuotone ref={ref} {...rest} />;
   if (weight === 'bold') return <BasketBold ref={ref} {...rest} />;
@@ -33,6 +33,6 @@ const Basket = memo(forwardRef<SVGSVGElement, BasketProps>(({
 
 Basket.displayName = 'Basket';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { Basket, Basket as BasketIcon, Basket as SiBasket };
 export default Basket;

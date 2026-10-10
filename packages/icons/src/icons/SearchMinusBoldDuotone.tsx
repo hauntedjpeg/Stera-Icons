@@ -15,7 +15,7 @@ const SearchMinusBoldDuotone = memo(
 
 SearchMinusBoldDuotone.displayName = 'SearchMinusBoldDuotone';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { SearchMinusBoldDuotone, SearchMinusBoldDuotone as SearchMinusBoldDuotoneIcon, SearchMinusBoldDuotone as SiSearchMinusBoldDuotone };
 export default SearchMinusBoldDuotone;
 export type { SearchMinusBoldDuotoneProps };

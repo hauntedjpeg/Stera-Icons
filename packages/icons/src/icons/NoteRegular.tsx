@@ -14,7 +14,7 @@ const NoteRegular = memo(
 
 NoteRegular.displayName = 'NoteRegular';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { NoteRegular, NoteRegular as NoteRegularIcon, NoteRegular as SiNoteRegular };
 export default NoteRegular;
 export type { NoteRegularProps };

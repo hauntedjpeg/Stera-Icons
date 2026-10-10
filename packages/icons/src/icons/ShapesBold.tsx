@@ -14,7 +14,7 @@ const ShapesBold = memo(
 
 ShapesBold.displayName = 'ShapesBold';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { ShapesBold, ShapesBold as ShapesBoldIcon, ShapesBold as SiShapesBold };
 export default ShapesBold;
 export type { ShapesBoldProps };

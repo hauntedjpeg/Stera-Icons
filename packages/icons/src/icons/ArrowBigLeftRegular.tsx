@@ -14,7 +14,7 @@ const ArrowBigLeftRegular = memo(
 
 ArrowBigLeftRegular.displayName = 'ArrowBigLeftRegular';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { ArrowBigLeftRegular, ArrowBigLeftRegular as ArrowBigLeftRegularIcon, ArrowBigLeftRegular as SiArrowBigLeftRegular };
 export default ArrowBigLeftRegular;
 export type { ArrowBigLeftRegularProps };

@@ -14,7 +14,7 @@ const SignalMediumFill = memo(
 
 SignalMediumFill.displayName = 'SignalMediumFill';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { SignalMediumFill, SignalMediumFill as SignalMediumFillIcon, SignalMediumFill as SiSignalMediumFill };
 export default SignalMediumFill;
 export type { SignalMediumFillProps };

@@ -15,7 +15,7 @@ const PillRegularDuotone = memo(
 
 PillRegularDuotone.displayName = 'PillRegularDuotone';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { PillRegularDuotone, PillRegularDuotone as PillRegularDuotoneIcon, PillRegularDuotone as SiPillRegularDuotone };
 export default PillRegularDuotone;
 export type { PillRegularDuotoneProps };

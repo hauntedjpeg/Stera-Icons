@@ -16,7 +16,7 @@ const RadarBoldDuotone = memo(
 
 RadarBoldDuotone.displayName = 'RadarBoldDuotone';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { RadarBoldDuotone, RadarBoldDuotone as RadarBoldDuotoneIcon, RadarBoldDuotone as SiRadarBoldDuotone };
 export default RadarBoldDuotone;
 export type { RadarBoldDuotoneProps };

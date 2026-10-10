@@ -18,10 +18,10 @@ export interface CalendarBlankProps extends IconProps {
  * For smaller bundle size, import specific variants directly:
  * import { CalendarBlankRegular } from 'stera-icons/icons/CalendarBlankRegular';
  */
-const CalendarBlank = memo(forwardRef<SVGSVGElement, CalendarBlankProps>(({ 
+const CalendarBlank = memo(forwardRef<SVGSVGElement, CalendarBlankProps>(({
   weight = 'regular',
   duotone = false,
-  ...rest 
+  ...rest
 }, ref) => {
   if (weight === 'bold' && duotone) return <CalendarBlankBoldDuotone ref={ref} {...rest} />;
   if (weight === 'bold') return <CalendarBlankBold ref={ref} {...rest} />;
@@ -33,6 +33,6 @@ const CalendarBlank = memo(forwardRef<SVGSVGElement, CalendarBlankProps>(({
 
 CalendarBlank.displayName = 'CalendarBlank';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { CalendarBlank, CalendarBlank as CalendarBlankIcon, CalendarBlank as SiCalendarBlank };
 export default CalendarBlank;

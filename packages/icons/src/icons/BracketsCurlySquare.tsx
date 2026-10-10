@@ -18,10 +18,10 @@ export interface BracketsCurlySquareProps extends IconProps {
  * For smaller bundle size, import specific variants directly:
  * import { BracketsCurlySquareRegular } from 'stera-icons/icons/BracketsCurlySquareRegular';
  */
-const BracketsCurlySquare = memo(forwardRef<SVGSVGElement, BracketsCurlySquareProps>(({ 
+const BracketsCurlySquare = memo(forwardRef<SVGSVGElement, BracketsCurlySquareProps>(({
   weight = 'regular',
   duotone = false,
-  ...rest 
+  ...rest
 }, ref) => {
   if (weight === 'bold' && duotone) return <BracketsCurlySquareBoldDuotone ref={ref} {...rest} />;
   if (weight === 'bold') return <BracketsCurlySquareBold ref={ref} {...rest} />;
@@ -33,6 +33,6 @@ const BracketsCurlySquare = memo(forwardRef<SVGSVGElement, BracketsCurlySquarePr
 
 BracketsCurlySquare.displayName = 'BracketsCurlySquare';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { BracketsCurlySquare, BracketsCurlySquare as BracketsCurlySquareIcon, BracketsCurlySquare as SiBracketsCurlySquare };
 export default BracketsCurlySquare;

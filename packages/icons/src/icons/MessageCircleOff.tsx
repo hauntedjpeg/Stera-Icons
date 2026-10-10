@@ -18,10 +18,10 @@ export interface MessageCircleOffProps extends IconProps {
  * For smaller bundle size, import specific variants directly:
  * import { MessageCircleOffRegular } from 'stera-icons/icons/MessageCircleOffRegular';
  */
-const MessageCircleOff = memo(forwardRef<SVGSVGElement, MessageCircleOffProps>(({ 
+const MessageCircleOff = memo(forwardRef<SVGSVGElement, MessageCircleOffProps>(({
   weight = 'regular',
   duotone = false,
-  ...rest 
+  ...rest
 }, ref) => {
   if (weight === 'bold' && duotone) return <MessageCircleOffBoldDuotone ref={ref} {...rest} />;
   if (weight === 'bold') return <MessageCircleOffBold ref={ref} {...rest} />;
@@ -33,6 +33,6 @@ const MessageCircleOff = memo(forwardRef<SVGSVGElement, MessageCircleOffProps>((
 
 MessageCircleOff.displayName = 'MessageCircleOff';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { MessageCircleOff, MessageCircleOff as MessageCircleOffIcon, MessageCircleOff as SiMessageCircleOff };
 export default MessageCircleOff;

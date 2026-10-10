@@ -15,7 +15,7 @@ const CubicGraphBold = memo(
 
 CubicGraphBold.displayName = 'CubicGraphBold';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { CubicGraphBold, CubicGraphBold as CubicGraphBoldIcon, CubicGraphBold as SiCubicGraphBold };
 export default CubicGraphBold;
 export type { CubicGraphBoldProps };

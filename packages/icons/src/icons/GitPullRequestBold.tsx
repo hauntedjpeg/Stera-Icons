@@ -14,7 +14,7 @@ const GitPullRequestBold = memo(
 
 GitPullRequestBold.displayName = 'GitPullRequestBold';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { GitPullRequestBold, GitPullRequestBold as GitPullRequestBoldIcon, GitPullRequestBold as SiGitPullRequestBold };
 export default GitPullRequestBold;
 export type { GitPullRequestBoldProps };

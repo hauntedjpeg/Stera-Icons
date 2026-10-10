@@ -15,7 +15,7 @@ const LockPasswordOpenBold = memo(
 
 LockPasswordOpenBold.displayName = 'LockPasswordOpenBold';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { LockPasswordOpenBold, LockPasswordOpenBold as LockPasswordOpenBoldIcon, LockPasswordOpenBold as SiLockPasswordOpenBold };
 export default LockPasswordOpenBold;
 export type { LockPasswordOpenBoldProps };

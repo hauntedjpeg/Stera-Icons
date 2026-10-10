@@ -14,7 +14,7 @@ const GlobeRegular = memo(
 
 GlobeRegular.displayName = 'GlobeRegular';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { GlobeRegular, GlobeRegular as GlobeRegularIcon, GlobeRegular as SiGlobeRegular };
 export default GlobeRegular;
 export type { GlobeRegularProps };

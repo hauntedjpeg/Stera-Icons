@@ -16,7 +16,7 @@ const DatabaseBanFillDuotone = memo(
 
 DatabaseBanFillDuotone.displayName = 'DatabaseBanFillDuotone';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { DatabaseBanFillDuotone, DatabaseBanFillDuotone as DatabaseBanFillDuotoneIcon, DatabaseBanFillDuotone as SiDatabaseBanFillDuotone };
 export default DatabaseBanFillDuotone;
 export type { DatabaseBanFillDuotoneProps };

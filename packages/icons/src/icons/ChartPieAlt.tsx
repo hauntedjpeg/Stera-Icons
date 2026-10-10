@@ -18,10 +18,10 @@ export interface ChartPieAltProps extends IconProps {
  * For smaller bundle size, import specific variants directly:
  * import { ChartPieAltRegular } from 'stera-icons/icons/ChartPieAltRegular';
  */
-const ChartPieAlt = memo(forwardRef<SVGSVGElement, ChartPieAltProps>(({ 
+const ChartPieAlt = memo(forwardRef<SVGSVGElement, ChartPieAltProps>(({
   weight = 'regular',
   duotone = false,
-  ...rest 
+  ...rest
 }, ref) => {
   if (weight === 'bold' && duotone) return <ChartPieAltBoldDuotone ref={ref} {...rest} />;
   if (weight === 'bold') return <ChartPieAltBold ref={ref} {...rest} />;
@@ -33,6 +33,6 @@ const ChartPieAlt = memo(forwardRef<SVGSVGElement, ChartPieAltProps>(({
 
 ChartPieAlt.displayName = 'ChartPieAlt';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { ChartPieAlt, ChartPieAlt as ChartPieAltIcon, ChartPieAlt as SiChartPieAlt };
 export default ChartPieAlt;

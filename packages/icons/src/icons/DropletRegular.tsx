@@ -14,7 +14,7 @@ const DropletRegular = memo(
 
 DropletRegular.displayName = 'DropletRegular';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { DropletRegular, DropletRegular as DropletRegularIcon, DropletRegular as SiDropletRegular };
 export default DropletRegular;
 export type { DropletRegularProps };

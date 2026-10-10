@@ -18,10 +18,10 @@ export interface ThumbsUpProps extends IconProps {
  * For smaller bundle size, import specific variants directly:
  * import { ThumbsUpRegular } from 'stera-icons/icons/ThumbsUpRegular';
  */
-const ThumbsUp = memo(forwardRef<SVGSVGElement, ThumbsUpProps>(({ 
+const ThumbsUp = memo(forwardRef<SVGSVGElement, ThumbsUpProps>(({
   weight = 'regular',
   duotone = false,
-  ...rest 
+  ...rest
 }, ref) => {
   if (weight === 'bold' && duotone) return <ThumbsUpBoldDuotone ref={ref} {...rest} />;
   if (weight === 'bold') return <ThumbsUpBold ref={ref} {...rest} />;
@@ -33,6 +33,6 @@ const ThumbsUp = memo(forwardRef<SVGSVGElement, ThumbsUpProps>(({
 
 ThumbsUp.displayName = 'ThumbsUp';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { ThumbsUp, ThumbsUp as ThumbsUpIcon, ThumbsUp as SiThumbsUp };
 export default ThumbsUp;

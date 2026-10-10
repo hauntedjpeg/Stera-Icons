@@ -15,7 +15,7 @@ const ChartCandleRegularDuotone = memo(
 
 ChartCandleRegularDuotone.displayName = 'ChartCandleRegularDuotone';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { ChartCandleRegularDuotone, ChartCandleRegularDuotone as ChartCandleRegularDuotoneIcon, ChartCandleRegularDuotone as SiChartCandleRegularDuotone };
 export default ChartCandleRegularDuotone;
 export type { ChartCandleRegularDuotoneProps };

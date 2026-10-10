@@ -18,10 +18,10 @@ export interface ArrowSquareLeftProps extends IconProps {
  * For smaller bundle size, import specific variants directly:
  * import { ArrowSquareLeftRegular } from 'stera-icons/icons/ArrowSquareLeftRegular';
  */
-const ArrowSquareLeft = memo(forwardRef<SVGSVGElement, ArrowSquareLeftProps>(({ 
+const ArrowSquareLeft = memo(forwardRef<SVGSVGElement, ArrowSquareLeftProps>(({
   weight = 'regular',
   duotone = false,
-  ...rest 
+  ...rest
 }, ref) => {
   if (weight === 'bold' && duotone) return <ArrowSquareLeftBoldDuotone ref={ref} {...rest} />;
   if (weight === 'bold') return <ArrowSquareLeftBold ref={ref} {...rest} />;
@@ -33,6 +33,6 @@ const ArrowSquareLeft = memo(forwardRef<SVGSVGElement, ArrowSquareLeftProps>(({
 
 ArrowSquareLeft.displayName = 'ArrowSquareLeft';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { ArrowSquareLeft, ArrowSquareLeft as ArrowSquareLeftIcon, ArrowSquareLeft as SiArrowSquareLeft };
 export default ArrowSquareLeft;

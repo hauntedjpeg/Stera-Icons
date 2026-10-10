@@ -18,10 +18,10 @@ export interface ScanPlusProps extends IconProps {
  * For smaller bundle size, import specific variants directly:
  * import { ScanPlusRegular } from 'stera-icons/icons/ScanPlusRegular';
  */
-const ScanPlus = memo(forwardRef<SVGSVGElement, ScanPlusProps>(({ 
+const ScanPlus = memo(forwardRef<SVGSVGElement, ScanPlusProps>(({
   weight = 'regular',
   duotone = false,
-  ...rest 
+  ...rest
 }, ref) => {
   if (weight === 'bold' && duotone) return <ScanPlusBoldDuotone ref={ref} {...rest} />;
   if (weight === 'bold') return <ScanPlusBold ref={ref} {...rest} />;
@@ -33,6 +33,6 @@ const ScanPlus = memo(forwardRef<SVGSVGElement, ScanPlusProps>(({
 
 ScanPlus.displayName = 'ScanPlus';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { ScanPlus, ScanPlus as ScanPlusIcon, ScanPlus as SiScanPlus };
 export default ScanPlus;

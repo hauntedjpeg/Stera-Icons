@@ -18,10 +18,10 @@ export interface ScanTextProps extends IconProps {
  * For smaller bundle size, import specific variants directly:
  * import { ScanTextRegular } from 'stera-icons/icons/ScanTextRegular';
  */
-const ScanText = memo(forwardRef<SVGSVGElement, ScanTextProps>(({ 
+const ScanText = memo(forwardRef<SVGSVGElement, ScanTextProps>(({
   weight = 'regular',
   duotone = false,
-  ...rest 
+  ...rest
 }, ref) => {
   if (weight === 'bold' && duotone) return <ScanTextBoldDuotone ref={ref} {...rest} />;
   if (weight === 'bold') return <ScanTextBold ref={ref} {...rest} />;
@@ -33,6 +33,6 @@ const ScanText = memo(forwardRef<SVGSVGElement, ScanTextProps>(({
 
 ScanText.displayName = 'ScanText';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { ScanText, ScanText as ScanTextIcon, ScanText as SiScanText };
 export default ScanText;

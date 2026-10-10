@@ -15,7 +15,7 @@ const BinaryFillDuotone = memo(
 
 BinaryFillDuotone.displayName = 'BinaryFillDuotone';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { BinaryFillDuotone, BinaryFillDuotone as BinaryFillDuotoneIcon, BinaryFillDuotone as SiBinaryFillDuotone };
 export default BinaryFillDuotone;
 export type { BinaryFillDuotoneProps };

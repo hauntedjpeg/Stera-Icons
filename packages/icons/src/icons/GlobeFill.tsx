@@ -14,7 +14,7 @@ const GlobeFill = memo(
 
 GlobeFill.displayName = 'GlobeFill';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { GlobeFill, GlobeFill as GlobeFillIcon, GlobeFill as SiGlobeFill };
 export default GlobeFill;
 export type { GlobeFillProps };

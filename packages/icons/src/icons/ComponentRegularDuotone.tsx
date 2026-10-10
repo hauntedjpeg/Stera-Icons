@@ -15,7 +15,7 @@ const ComponentRegularDuotone = memo(
 
 ComponentRegularDuotone.displayName = 'ComponentRegularDuotone';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { ComponentRegularDuotone, ComponentRegularDuotone as ComponentRegularDuotoneIcon, ComponentRegularDuotone as SiComponentRegularDuotone };
 export default ComponentRegularDuotone;
 export type { ComponentRegularDuotoneProps };

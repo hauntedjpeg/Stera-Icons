@@ -18,10 +18,10 @@ export interface LayoutMasonryProps extends IconProps {
  * For smaller bundle size, import specific variants directly:
  * import { LayoutMasonryRegular } from 'stera-icons/icons/LayoutMasonryRegular';
  */
-const LayoutMasonry = memo(forwardRef<SVGSVGElement, LayoutMasonryProps>(({ 
+const LayoutMasonry = memo(forwardRef<SVGSVGElement, LayoutMasonryProps>(({
   weight = 'regular',
   duotone = false,
-  ...rest 
+  ...rest
 }, ref) => {
   if (weight === 'bold' && duotone) return <LayoutMasonryBoldDuotone ref={ref} {...rest} />;
   if (weight === 'bold') return <LayoutMasonryBold ref={ref} {...rest} />;
@@ -33,6 +33,6 @@ const LayoutMasonry = memo(forwardRef<SVGSVGElement, LayoutMasonryProps>(({
 
 LayoutMasonry.displayName = 'LayoutMasonry';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { LayoutMasonry, LayoutMasonry as LayoutMasonryIcon, LayoutMasonry as SiLayoutMasonry };
 export default LayoutMasonry;

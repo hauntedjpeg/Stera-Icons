@@ -16,7 +16,7 @@ const ShapesPlusRegular = memo(
 
 ShapesPlusRegular.displayName = 'ShapesPlusRegular';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { ShapesPlusRegular, ShapesPlusRegular as ShapesPlusRegularIcon, ShapesPlusRegular as SiShapesPlusRegular };
 export default ShapesPlusRegular;
 export type { ShapesPlusRegularProps };

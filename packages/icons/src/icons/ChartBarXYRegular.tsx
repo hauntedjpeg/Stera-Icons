@@ -15,7 +15,7 @@ const ChartBarXYRegular = memo(
 
 ChartBarXYRegular.displayName = 'ChartBarXYRegular';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { ChartBarXYRegular, ChartBarXYRegular as ChartBarXYRegularIcon, ChartBarXYRegular as SiChartBarXYRegular };
 export default ChartBarXYRegular;
 export type { ChartBarXYRegularProps };

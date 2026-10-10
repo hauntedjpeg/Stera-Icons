@@ -14,7 +14,7 @@ const EggRegular = memo(
 
 EggRegular.displayName = 'EggRegular';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { EggRegular, EggRegular as EggRegularIcon, EggRegular as SiEggRegular };
 export default EggRegular;
 export type { EggRegularProps };

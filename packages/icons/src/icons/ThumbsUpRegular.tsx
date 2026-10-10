@@ -14,7 +14,7 @@ const ThumbsUpRegular = memo(
 
 ThumbsUpRegular.displayName = 'ThumbsUpRegular';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { ThumbsUpRegular, ThumbsUpRegular as ThumbsUpRegularIcon, ThumbsUpRegular as SiThumbsUpRegular };
 export default ThumbsUpRegular;
 export type { ThumbsUpRegularProps };

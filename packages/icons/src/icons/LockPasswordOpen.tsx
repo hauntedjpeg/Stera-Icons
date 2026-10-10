@@ -18,10 +18,10 @@ export interface LockPasswordOpenProps extends IconProps {
  * For smaller bundle size, import specific variants directly:
  * import { LockPasswordOpenRegular } from 'stera-icons/icons/LockPasswordOpenRegular';
  */
-const LockPasswordOpen = memo(forwardRef<SVGSVGElement, LockPasswordOpenProps>(({ 
+const LockPasswordOpen = memo(forwardRef<SVGSVGElement, LockPasswordOpenProps>(({
   weight = 'regular',
   duotone = false,
-  ...rest 
+  ...rest
 }, ref) => {
   if (weight === 'bold' && duotone) return <LockPasswordOpenBoldDuotone ref={ref} {...rest} />;
   if (weight === 'bold') return <LockPasswordOpenBold ref={ref} {...rest} />;
@@ -33,6 +33,6 @@ const LockPasswordOpen = memo(forwardRef<SVGSVGElement, LockPasswordOpenProps>((
 
 LockPasswordOpen.displayName = 'LockPasswordOpen';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { LockPasswordOpen, LockPasswordOpen as LockPasswordOpenIcon, LockPasswordOpen as SiLockPasswordOpen };
 export default LockPasswordOpen;

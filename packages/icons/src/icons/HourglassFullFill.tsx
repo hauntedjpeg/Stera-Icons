@@ -14,7 +14,7 @@ const HourglassFullFill = memo(
 
 HourglassFullFill.displayName = 'HourglassFullFill';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { HourglassFullFill, HourglassFullFill as HourglassFullFillIcon, HourglassFullFill as SiHourglassFullFill };
 export default HourglassFullFill;
 export type { HourglassFullFillProps };

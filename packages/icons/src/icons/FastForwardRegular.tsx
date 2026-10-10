@@ -14,7 +14,7 @@ const FastForwardRegular = memo(
 
 FastForwardRegular.displayName = 'FastForwardRegular';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { FastForwardRegular, FastForwardRegular as FastForwardRegularIcon, FastForwardRegular as SiFastForwardRegular };
 export default FastForwardRegular;
 export type { FastForwardRegularProps };

@@ -15,7 +15,7 @@ const BadgeRegularDuotone = memo(
 
 BadgeRegularDuotone.displayName = 'BadgeRegularDuotone';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { BadgeRegularDuotone, BadgeRegularDuotone as BadgeRegularDuotoneIcon, BadgeRegularDuotone as SiBadgeRegularDuotone };
 export default BadgeRegularDuotone;
 export type { BadgeRegularDuotoneProps };

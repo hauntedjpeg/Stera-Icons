@@ -15,7 +15,7 @@ const UserBanBold = memo(
 
 UserBanBold.displayName = 'UserBanBold';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { UserBanBold, UserBanBold as UserBanBoldIcon, UserBanBold as SiUserBanBold };
 export default UserBanBold;
 export type { UserBanBoldProps };

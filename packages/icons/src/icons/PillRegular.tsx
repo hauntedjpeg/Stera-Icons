@@ -14,7 +14,7 @@ const PillRegular = memo(
 
 PillRegular.displayName = 'PillRegular';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { PillRegular, PillRegular as PillRegularIcon, PillRegular as SiPillRegular };
 export default PillRegular;
 export type { PillRegularProps };

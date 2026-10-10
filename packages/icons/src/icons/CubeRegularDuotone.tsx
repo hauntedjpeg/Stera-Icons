@@ -15,7 +15,7 @@ const CubeRegularDuotone = memo(
 
 CubeRegularDuotone.displayName = 'CubeRegularDuotone';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { CubeRegularDuotone, CubeRegularDuotone as CubeRegularDuotoneIcon, CubeRegularDuotone as SiCubeRegularDuotone };
 export default CubeRegularDuotone;
 export type { CubeRegularDuotoneProps };

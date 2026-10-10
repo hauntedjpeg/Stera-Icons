@@ -14,7 +14,7 @@ const ChevronCircleRightFill = memo(
 
 ChevronCircleRightFill.displayName = 'ChevronCircleRightFill';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { ChevronCircleRightFill, ChevronCircleRightFill as ChevronCircleRightFillIcon, ChevronCircleRightFill as SiChevronCircleRightFill };
 export default ChevronCircleRightFill;
 export type { ChevronCircleRightFillProps };

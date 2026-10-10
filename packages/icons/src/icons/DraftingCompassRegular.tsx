@@ -17,7 +17,7 @@ const DraftingCompassRegular = memo(
 
 DraftingCompassRegular.displayName = 'DraftingCompassRegular';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { DraftingCompassRegular, DraftingCompassRegular as DraftingCompassRegularIcon, DraftingCompassRegular as SiDraftingCompassRegular };
 export default DraftingCompassRegular;
 export type { DraftingCompassRegularProps };

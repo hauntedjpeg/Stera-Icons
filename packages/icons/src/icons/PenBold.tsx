@@ -14,7 +14,7 @@ const PenBold = memo(
 
 PenBold.displayName = 'PenBold';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { PenBold, PenBold as PenBoldIcon, PenBold as SiPenBold };
 export default PenBold;
 export type { PenBoldProps };

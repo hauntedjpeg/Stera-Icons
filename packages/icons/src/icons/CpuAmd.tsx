@@ -18,10 +18,10 @@ export interface CpuAmdProps extends IconProps {
  * For smaller bundle size, import specific variants directly:
  * import { CpuAmdRegular } from 'stera-icons/icons/CpuAmdRegular';
  */
-const CpuAmd = memo(forwardRef<SVGSVGElement, CpuAmdProps>(({ 
+const CpuAmd = memo(forwardRef<SVGSVGElement, CpuAmdProps>(({
   weight = 'regular',
   duotone = false,
-  ...rest 
+  ...rest
 }, ref) => {
   if (weight === 'bold' && duotone) return <CpuAmdBoldDuotone ref={ref} {...rest} />;
   if (weight === 'bold') return <CpuAmdBold ref={ref} {...rest} />;
@@ -33,6 +33,6 @@ const CpuAmd = memo(forwardRef<SVGSVGElement, CpuAmdProps>(({
 
 CpuAmd.displayName = 'CpuAmd';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { CpuAmd, CpuAmd as CpuAmdIcon, CpuAmd as SiCpuAmd };
 export default CpuAmd;

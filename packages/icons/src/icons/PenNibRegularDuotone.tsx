@@ -15,7 +15,7 @@ const PenNibRegularDuotone = memo(
 
 PenNibRegularDuotone.displayName = 'PenNibRegularDuotone';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { PenNibRegularDuotone, PenNibRegularDuotone as PenNibRegularDuotoneIcon, PenNibRegularDuotone as SiPenNibRegularDuotone };
 export default PenNibRegularDuotone;
 export type { PenNibRegularDuotoneProps };

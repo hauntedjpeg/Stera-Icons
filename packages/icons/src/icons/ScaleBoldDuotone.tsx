@@ -15,7 +15,7 @@ const ScaleBoldDuotone = memo(
 
 ScaleBoldDuotone.displayName = 'ScaleBoldDuotone';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { ScaleBoldDuotone, ScaleBoldDuotone as ScaleBoldDuotoneIcon, ScaleBoldDuotone as SiScaleBoldDuotone };
 export default ScaleBoldDuotone;
 export type { ScaleBoldDuotoneProps };

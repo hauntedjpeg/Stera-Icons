@@ -15,7 +15,7 @@ const MailBadgeFill = memo(
 
 MailBadgeFill.displayName = 'MailBadgeFill';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { MailBadgeFill, MailBadgeFill as MailBadgeFillIcon, MailBadgeFill as SiMailBadgeFill };
 export default MailBadgeFill;
 export type { MailBadgeFillProps };

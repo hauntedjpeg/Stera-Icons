@@ -14,7 +14,7 @@ const VolleyballBold = memo(
 
 VolleyballBold.displayName = 'VolleyballBold';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { VolleyballBold, VolleyballBold as VolleyballBoldIcon, VolleyballBold as SiVolleyballBold };
 export default VolleyballBold;
 export type { VolleyballBoldProps };

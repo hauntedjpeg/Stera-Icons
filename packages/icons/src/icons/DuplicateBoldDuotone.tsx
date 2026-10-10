@@ -15,7 +15,7 @@ const DuplicateBoldDuotone = memo(
 
 DuplicateBoldDuotone.displayName = 'DuplicateBoldDuotone';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { DuplicateBoldDuotone, DuplicateBoldDuotone as DuplicateBoldDuotoneIcon, DuplicateBoldDuotone as SiDuplicateBoldDuotone };
 export default DuplicateBoldDuotone;
 export type { DuplicateBoldDuotoneProps };

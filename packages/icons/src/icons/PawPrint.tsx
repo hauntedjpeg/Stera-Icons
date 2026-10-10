@@ -18,10 +18,10 @@ export interface PawPrintProps extends IconProps {
  * For smaller bundle size, import specific variants directly:
  * import { PawPrintRegular } from 'stera-icons/icons/PawPrintRegular';
  */
-const PawPrint = memo(forwardRef<SVGSVGElement, PawPrintProps>(({ 
+const PawPrint = memo(forwardRef<SVGSVGElement, PawPrintProps>(({
   weight = 'regular',
   duotone = false,
-  ...rest 
+  ...rest
 }, ref) => {
   if (weight === 'bold' && duotone) return <PawPrintBoldDuotone ref={ref} {...rest} />;
   if (weight === 'bold') return <PawPrintBold ref={ref} {...rest} />;
@@ -33,6 +33,6 @@ const PawPrint = memo(forwardRef<SVGSVGElement, PawPrintProps>(({
 
 PawPrint.displayName = 'PawPrint';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { PawPrint, PawPrint as PawPrintIcon, PawPrint as SiPawPrint };
 export default PawPrint;

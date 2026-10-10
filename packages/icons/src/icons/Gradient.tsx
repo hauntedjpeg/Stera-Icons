@@ -18,10 +18,10 @@ export interface GradientProps extends IconProps {
  * For smaller bundle size, import specific variants directly:
  * import { GradientRegular } from 'stera-icons/icons/GradientRegular';
  */
-const Gradient = memo(forwardRef<SVGSVGElement, GradientProps>(({ 
+const Gradient = memo(forwardRef<SVGSVGElement, GradientProps>(({
   weight = 'regular',
   duotone = false,
-  ...rest 
+  ...rest
 }, ref) => {
   if (weight === 'bold' && duotone) return <GradientBoldDuotone ref={ref} {...rest} />;
   if (weight === 'bold') return <GradientBold ref={ref} {...rest} />;
@@ -33,6 +33,6 @@ const Gradient = memo(forwardRef<SVGSVGElement, GradientProps>(({
 
 Gradient.displayName = 'Gradient';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { Gradient, Gradient as GradientIcon, Gradient as SiGradient };
 export default Gradient;

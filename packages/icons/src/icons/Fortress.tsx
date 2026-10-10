@@ -18,10 +18,10 @@ export interface FortressProps extends IconProps {
  * For smaller bundle size, import specific variants directly:
  * import { FortressRegular } from 'stera-icons/icons/FortressRegular';
  */
-const Fortress = memo(forwardRef<SVGSVGElement, FortressProps>(({ 
+const Fortress = memo(forwardRef<SVGSVGElement, FortressProps>(({
   weight = 'regular',
   duotone = false,
-  ...rest 
+  ...rest
 }, ref) => {
   if (weight === 'bold' && duotone) return <FortressBoldDuotone ref={ref} {...rest} />;
   if (weight === 'bold') return <FortressBold ref={ref} {...rest} />;
@@ -33,6 +33,6 @@ const Fortress = memo(forwardRef<SVGSVGElement, FortressProps>(({
 
 Fortress.displayName = 'Fortress';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { Fortress, Fortress as FortressIcon, Fortress as SiFortress };
 export default Fortress;

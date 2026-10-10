@@ -14,7 +14,7 @@ const SliceFill = memo(
 
 SliceFill.displayName = 'SliceFill';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { SliceFill, SliceFill as SliceFillIcon, SliceFill as SiSliceFill };
 export default SliceFill;
 export type { SliceFillProps };

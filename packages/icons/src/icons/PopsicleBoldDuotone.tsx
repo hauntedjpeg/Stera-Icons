@@ -15,7 +15,7 @@ const PopsicleBoldDuotone = memo(
 
 PopsicleBoldDuotone.displayName = 'PopsicleBoldDuotone';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { PopsicleBoldDuotone, PopsicleBoldDuotone as PopsicleBoldDuotoneIcon, PopsicleBoldDuotone as SiPopsicleBoldDuotone };
 export default PopsicleBoldDuotone;
 export type { PopsicleBoldDuotoneProps };

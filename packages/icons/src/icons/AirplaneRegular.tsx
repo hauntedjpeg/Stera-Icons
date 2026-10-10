@@ -14,7 +14,7 @@ const AirplaneRegular = memo(
 
 AirplaneRegular.displayName = 'AirplaneRegular';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { AirplaneRegular, AirplaneRegular as AirplaneRegularIcon, AirplaneRegular as SiAirplaneRegular };
 export default AirplaneRegular;
 export type { AirplaneRegularProps };

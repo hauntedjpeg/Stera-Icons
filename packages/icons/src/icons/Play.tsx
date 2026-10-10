@@ -18,10 +18,10 @@ export interface PlayProps extends IconProps {
  * For smaller bundle size, import specific variants directly:
  * import { PlayRegular } from 'stera-icons/icons/PlayRegular';
  */
-const Play = memo(forwardRef<SVGSVGElement, PlayProps>(({ 
+const Play = memo(forwardRef<SVGSVGElement, PlayProps>(({
   weight = 'regular',
   duotone = false,
-  ...rest 
+  ...rest
 }, ref) => {
   if (weight === 'bold' && duotone) return <PlayBoldDuotone ref={ref} {...rest} />;
   if (weight === 'bold') return <PlayBold ref={ref} {...rest} />;
@@ -33,6 +33,6 @@ const Play = memo(forwardRef<SVGSVGElement, PlayProps>(({
 
 Play.displayName = 'Play';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { Play, Play as PlayIcon, Play as SiPlay };
 export default Play;

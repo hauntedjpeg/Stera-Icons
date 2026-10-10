@@ -14,7 +14,7 @@ const HomeSimpleFill = memo(
 
 HomeSimpleFill.displayName = 'HomeSimpleFill';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { HomeSimpleFill, HomeSimpleFill as HomeSimpleFillIcon, HomeSimpleFill as SiHomeSimpleFill };
 export default HomeSimpleFill;
 export type { HomeSimpleFillProps };

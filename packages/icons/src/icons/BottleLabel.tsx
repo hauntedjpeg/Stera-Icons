@@ -18,10 +18,10 @@ export interface BottleLabelProps extends IconProps {
  * For smaller bundle size, import specific variants directly:
  * import { BottleLabelRegular } from 'stera-icons/icons/BottleLabelRegular';
  */
-const BottleLabel = memo(forwardRef<SVGSVGElement, BottleLabelProps>(({ 
+const BottleLabel = memo(forwardRef<SVGSVGElement, BottleLabelProps>(({
   weight = 'regular',
   duotone = false,
-  ...rest 
+  ...rest
 }, ref) => {
   if (weight === 'bold' && duotone) return <BottleLabelBoldDuotone ref={ref} {...rest} />;
   if (weight === 'bold') return <BottleLabelBold ref={ref} {...rest} />;
@@ -33,6 +33,6 @@ const BottleLabel = memo(forwardRef<SVGSVGElement, BottleLabelProps>(({
 
 BottleLabel.displayName = 'BottleLabel';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { BottleLabel, BottleLabel as BottleLabelIcon, BottleLabel as SiBottleLabel };
 export default BottleLabel;

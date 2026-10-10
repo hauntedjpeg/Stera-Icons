@@ -15,7 +15,7 @@ const FolderTreeFillDuotone = memo(
 
 FolderTreeFillDuotone.displayName = 'FolderTreeFillDuotone';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { FolderTreeFillDuotone, FolderTreeFillDuotone as FolderTreeFillDuotoneIcon, FolderTreeFillDuotone as SiFolderTreeFillDuotone };
 export default FolderTreeFillDuotone;
 export type { FolderTreeFillDuotoneProps };

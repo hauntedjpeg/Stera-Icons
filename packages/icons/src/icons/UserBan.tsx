@@ -18,10 +18,10 @@ export interface UserBanProps extends IconProps {
  * For smaller bundle size, import specific variants directly:
  * import { UserBanRegular } from 'stera-icons/icons/UserBanRegular';
  */
-const UserBan = memo(forwardRef<SVGSVGElement, UserBanProps>(({ 
+const UserBan = memo(forwardRef<SVGSVGElement, UserBanProps>(({
   weight = 'regular',
   duotone = false,
-  ...rest 
+  ...rest
 }, ref) => {
   if (weight === 'bold' && duotone) return <UserBanBoldDuotone ref={ref} {...rest} />;
   if (weight === 'bold') return <UserBanBold ref={ref} {...rest} />;
@@ -33,6 +33,6 @@ const UserBan = memo(forwardRef<SVGSVGElement, UserBanProps>(({
 
 UserBan.displayName = 'UserBan';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { UserBan, UserBan as UserBanIcon, UserBan as SiUserBan };
 export default UserBan;

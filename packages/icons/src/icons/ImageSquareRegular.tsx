@@ -15,7 +15,7 @@ const ImageSquareRegular = memo(
 
 ImageSquareRegular.displayName = 'ImageSquareRegular';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { ImageSquareRegular, ImageSquareRegular as ImageSquareRegularIcon, ImageSquareRegular as SiImageSquareRegular };
 export default ImageSquareRegular;
 export type { ImageSquareRegularProps };

@@ -14,7 +14,7 @@ const PawPrintBold = memo(
 
 PawPrintBold.displayName = 'PawPrintBold';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { PawPrintBold, PawPrintBold as PawPrintBoldIcon, PawPrintBold as SiPawPrintBold };
 export default PawPrintBold;
 export type { PawPrintBoldProps };

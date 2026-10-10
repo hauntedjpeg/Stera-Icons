@@ -18,10 +18,10 @@ export interface LayoutGridProps extends IconProps {
  * For smaller bundle size, import specific variants directly:
  * import { LayoutGridRegular } from 'stera-icons/icons/LayoutGridRegular';
  */
-const LayoutGrid = memo(forwardRef<SVGSVGElement, LayoutGridProps>(({ 
+const LayoutGrid = memo(forwardRef<SVGSVGElement, LayoutGridProps>(({
   weight = 'regular',
   duotone = false,
-  ...rest 
+  ...rest
 }, ref) => {
   if (weight === 'bold' && duotone) return <LayoutGridBoldDuotone ref={ref} {...rest} />;
   if (weight === 'bold') return <LayoutGridBold ref={ref} {...rest} />;
@@ -33,6 +33,6 @@ const LayoutGrid = memo(forwardRef<SVGSVGElement, LayoutGridProps>(({
 
 LayoutGrid.displayName = 'LayoutGrid';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { LayoutGrid, LayoutGrid as LayoutGridIcon, LayoutGrid as SiLayoutGrid };
 export default LayoutGrid;

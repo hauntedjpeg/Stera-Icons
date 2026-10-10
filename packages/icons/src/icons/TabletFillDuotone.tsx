@@ -15,7 +15,7 @@ const TabletFillDuotone = memo(
 
 TabletFillDuotone.displayName = 'TabletFillDuotone';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { TabletFillDuotone, TabletFillDuotone as TabletFillDuotoneIcon, TabletFillDuotone as SiTabletFillDuotone };
 export default TabletFillDuotone;
 export type { TabletFillDuotoneProps };

@@ -14,7 +14,7 @@ const ServerFill = memo(
 
 ServerFill.displayName = 'ServerFill';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { ServerFill, ServerFill as ServerFillIcon, ServerFill as SiServerFill };
 export default ServerFill;
 export type { ServerFillProps };

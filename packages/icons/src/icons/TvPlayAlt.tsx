@@ -18,10 +18,10 @@ export interface TvPlayAltProps extends IconProps {
  * For smaller bundle size, import specific variants directly:
  * import { TvPlayAltRegular } from 'stera-icons/icons/TvPlayAltRegular';
  */
-const TvPlayAlt = memo(forwardRef<SVGSVGElement, TvPlayAltProps>(({ 
+const TvPlayAlt = memo(forwardRef<SVGSVGElement, TvPlayAltProps>(({
   weight = 'regular',
   duotone = false,
-  ...rest 
+  ...rest
 }, ref) => {
   if (weight === 'bold' && duotone) return <TvPlayAltBoldDuotone ref={ref} {...rest} />;
   if (weight === 'bold') return <TvPlayAltBold ref={ref} {...rest} />;
@@ -33,6 +33,6 @@ const TvPlayAlt = memo(forwardRef<SVGSVGElement, TvPlayAltProps>(({
 
 TvPlayAlt.displayName = 'TvPlayAlt';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { TvPlayAlt, TvPlayAlt as TvPlayAltIcon, TvPlayAlt as SiTvPlayAlt };
 export default TvPlayAlt;

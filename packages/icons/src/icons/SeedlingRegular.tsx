@@ -14,7 +14,7 @@ const SeedlingRegular = memo(
 
 SeedlingRegular.displayName = 'SeedlingRegular';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { SeedlingRegular, SeedlingRegular as SeedlingRegularIcon, SeedlingRegular as SiSeedlingRegular };
 export default SeedlingRegular;
 export type { SeedlingRegularProps };

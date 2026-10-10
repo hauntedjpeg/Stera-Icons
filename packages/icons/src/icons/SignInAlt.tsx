@@ -18,10 +18,10 @@ export interface SignInAltProps extends IconProps {
  * For smaller bundle size, import specific variants directly:
  * import { SignInAltRegular } from 'stera-icons/icons/SignInAltRegular';
  */
-const SignInAlt = memo(forwardRef<SVGSVGElement, SignInAltProps>(({ 
+const SignInAlt = memo(forwardRef<SVGSVGElement, SignInAltProps>(({
   weight = 'regular',
   duotone = false,
-  ...rest 
+  ...rest
 }, ref) => {
   if (weight === 'bold' && duotone) return <SignInAltBoldDuotone ref={ref} {...rest} />;
   if (weight === 'bold') return <SignInAltBold ref={ref} {...rest} />;
@@ -33,6 +33,6 @@ const SignInAlt = memo(forwardRef<SVGSVGElement, SignInAltProps>(({
 
 SignInAlt.displayName = 'SignInAlt';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { SignInAlt, SignInAlt as SignInAltIcon, SignInAlt as SiSignInAlt };
 export default SignInAlt;

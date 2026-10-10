@@ -18,10 +18,10 @@ export interface CliProps extends IconProps {
  * For smaller bundle size, import specific variants directly:
  * import { CliRegular } from 'stera-icons/icons/CliRegular';
  */
-const Cli = memo(forwardRef<SVGSVGElement, CliProps>(({ 
+const Cli = memo(forwardRef<SVGSVGElement, CliProps>(({
   weight = 'regular',
   duotone = false,
-  ...rest 
+  ...rest
 }, ref) => {
   if (weight === 'bold' && duotone) return <CliBoldDuotone ref={ref} {...rest} />;
   if (weight === 'bold') return <CliBold ref={ref} {...rest} />;
@@ -33,6 +33,6 @@ const Cli = memo(forwardRef<SVGSVGElement, CliProps>(({
 
 Cli.displayName = 'Cli';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { Cli, Cli as CliIcon, Cli as SiCli };
 export default Cli;

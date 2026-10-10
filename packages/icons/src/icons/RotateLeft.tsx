@@ -18,10 +18,10 @@ export interface RotateLeftProps extends IconProps {
  * For smaller bundle size, import specific variants directly:
  * import { RotateLeftRegular } from 'stera-icons/icons/RotateLeftRegular';
  */
-const RotateLeft = memo(forwardRef<SVGSVGElement, RotateLeftProps>(({ 
+const RotateLeft = memo(forwardRef<SVGSVGElement, RotateLeftProps>(({
   weight = 'regular',
   duotone = false,
-  ...rest 
+  ...rest
 }, ref) => {
   if (weight === 'bold' && duotone) return <RotateLeftBoldDuotone ref={ref} {...rest} />;
   if (weight === 'bold') return <RotateLeftBold ref={ref} {...rest} />;
@@ -33,6 +33,6 @@ const RotateLeft = memo(forwardRef<SVGSVGElement, RotateLeftProps>(({
 
 RotateLeft.displayName = 'RotateLeft';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { RotateLeft, RotateLeft as RotateLeftIcon, RotateLeft as SiRotateLeft };
 export default RotateLeft;

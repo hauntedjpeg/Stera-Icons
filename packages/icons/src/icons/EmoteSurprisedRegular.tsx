@@ -15,7 +15,7 @@ const EmoteSurprisedRegular = memo(
 
 EmoteSurprisedRegular.displayName = 'EmoteSurprisedRegular';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { EmoteSurprisedRegular, EmoteSurprisedRegular as EmoteSurprisedRegularIcon, EmoteSurprisedRegular as SiEmoteSurprisedRegular };
 export default EmoteSurprisedRegular;
 export type { EmoteSurprisedRegularProps };

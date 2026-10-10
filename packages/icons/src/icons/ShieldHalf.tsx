@@ -18,10 +18,10 @@ export interface ShieldHalfProps extends IconProps {
  * For smaller bundle size, import specific variants directly:
  * import { ShieldHalfRegular } from 'stera-icons/icons/ShieldHalfRegular';
  */
-const ShieldHalf = memo(forwardRef<SVGSVGElement, ShieldHalfProps>(({ 
+const ShieldHalf = memo(forwardRef<SVGSVGElement, ShieldHalfProps>(({
   weight = 'regular',
   duotone = false,
-  ...rest 
+  ...rest
 }, ref) => {
   if (weight === 'bold' && duotone) return <ShieldHalfBoldDuotone ref={ref} {...rest} />;
   if (weight === 'bold') return <ShieldHalfBold ref={ref} {...rest} />;
@@ -33,6 +33,6 @@ const ShieldHalf = memo(forwardRef<SVGSVGElement, ShieldHalfProps>(({
 
 ShieldHalf.displayName = 'ShieldHalf';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { ShieldHalf, ShieldHalf as ShieldHalfIcon, ShieldHalf as SiShieldHalf };
 export default ShieldHalf;

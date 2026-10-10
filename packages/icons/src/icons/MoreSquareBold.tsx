@@ -15,7 +15,7 @@ const MoreSquareBold = memo(
 
 MoreSquareBold.displayName = 'MoreSquareBold';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { MoreSquareBold, MoreSquareBold as MoreSquareBoldIcon, MoreSquareBold as SiMoreSquareBold };
 export default MoreSquareBold;
 export type { MoreSquareBoldProps };

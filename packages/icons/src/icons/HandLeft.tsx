@@ -18,10 +18,10 @@ export interface HandLeftProps extends IconProps {
  * For smaller bundle size, import specific variants directly:
  * import { HandLeftRegular } from 'stera-icons/icons/HandLeftRegular';
  */
-const HandLeft = memo(forwardRef<SVGSVGElement, HandLeftProps>(({ 
+const HandLeft = memo(forwardRef<SVGSVGElement, HandLeftProps>(({
   weight = 'regular',
   duotone = false,
-  ...rest 
+  ...rest
 }, ref) => {
   if (weight === 'bold' && duotone) return <HandLeftBoldDuotone ref={ref} {...rest} />;
   if (weight === 'bold') return <HandLeftBold ref={ref} {...rest} />;
@@ -33,6 +33,6 @@ const HandLeft = memo(forwardRef<SVGSVGElement, HandLeftProps>(({
 
 HandLeft.displayName = 'HandLeft';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { HandLeft, HandLeft as HandLeftIcon, HandLeft as SiHandLeft };
 export default HandLeft;

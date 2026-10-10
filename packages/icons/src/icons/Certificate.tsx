@@ -18,10 +18,10 @@ export interface CertificateProps extends IconProps {
  * For smaller bundle size, import specific variants directly:
  * import { CertificateRegular } from 'stera-icons/icons/CertificateRegular';
  */
-const Certificate = memo(forwardRef<SVGSVGElement, CertificateProps>(({ 
+const Certificate = memo(forwardRef<SVGSVGElement, CertificateProps>(({
   weight = 'regular',
   duotone = false,
-  ...rest 
+  ...rest
 }, ref) => {
   if (weight === 'bold' && duotone) return <CertificateBoldDuotone ref={ref} {...rest} />;
   if (weight === 'bold') return <CertificateBold ref={ref} {...rest} />;
@@ -33,6 +33,6 @@ const Certificate = memo(forwardRef<SVGSVGElement, CertificateProps>(({
 
 Certificate.displayName = 'Certificate';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { Certificate, Certificate as CertificateIcon, Certificate as SiCertificate };
 export default Certificate;

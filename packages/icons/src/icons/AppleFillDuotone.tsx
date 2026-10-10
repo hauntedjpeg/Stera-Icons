@@ -15,7 +15,7 @@ const AppleFillDuotone = memo(
 
 AppleFillDuotone.displayName = 'AppleFillDuotone';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { AppleFillDuotone, AppleFillDuotone as AppleFillDuotoneIcon, AppleFillDuotone as SiAppleFillDuotone };
 export default AppleFillDuotone;
 export type { AppleFillDuotoneProps };

@@ -15,7 +15,7 @@ const WineBottleRegularDuotone = memo(
 
 WineBottleRegularDuotone.displayName = 'WineBottleRegularDuotone';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { WineBottleRegularDuotone, WineBottleRegularDuotone as WineBottleRegularDuotoneIcon, WineBottleRegularDuotone as SiWineBottleRegularDuotone };
 export default WineBottleRegularDuotone;
 export type { WineBottleRegularDuotoneProps };

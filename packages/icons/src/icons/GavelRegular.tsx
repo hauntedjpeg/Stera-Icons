@@ -14,7 +14,7 @@ const GavelRegular = memo(
 
 GavelRegular.displayName = 'GavelRegular';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { GavelRegular, GavelRegular as GavelRegularIcon, GavelRegular as SiGavelRegular };
 export default GavelRegular;
 export type { GavelRegularProps };

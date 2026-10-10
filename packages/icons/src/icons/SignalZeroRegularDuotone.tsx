@@ -15,7 +15,7 @@ const SignalZeroRegularDuotone = memo(
 
 SignalZeroRegularDuotone.displayName = 'SignalZeroRegularDuotone';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { SignalZeroRegularDuotone, SignalZeroRegularDuotone as SignalZeroRegularDuotoneIcon, SignalZeroRegularDuotone as SiSignalZeroRegularDuotone };
 export default SignalZeroRegularDuotone;
 export type { SignalZeroRegularDuotoneProps };

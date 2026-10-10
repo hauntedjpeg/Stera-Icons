@@ -14,7 +14,7 @@ const DotBold = memo(
 
 DotBold.displayName = 'DotBold';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { DotBold, DotBold as DotBoldIcon, DotBold as SiDotBold };
 export default DotBold;
 export type { DotBoldProps };

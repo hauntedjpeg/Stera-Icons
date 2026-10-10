@@ -17,7 +17,7 @@ const SpeakerHighRegularDuotone = memo(
 
 SpeakerHighRegularDuotone.displayName = 'SpeakerHighRegularDuotone';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { SpeakerHighRegularDuotone, SpeakerHighRegularDuotone as SpeakerHighRegularDuotoneIcon, SpeakerHighRegularDuotone as SiSpeakerHighRegularDuotone };
 export default SpeakerHighRegularDuotone;
 export type { SpeakerHighRegularDuotoneProps };

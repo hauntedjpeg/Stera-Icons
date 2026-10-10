@@ -18,10 +18,10 @@ export interface FlaskFullProps extends IconProps {
  * For smaller bundle size, import specific variants directly:
  * import { FlaskFullRegular } from 'stera-icons/icons/FlaskFullRegular';
  */
-const FlaskFull = memo(forwardRef<SVGSVGElement, FlaskFullProps>(({ 
+const FlaskFull = memo(forwardRef<SVGSVGElement, FlaskFullProps>(({
   weight = 'regular',
   duotone = false,
-  ...rest 
+  ...rest
 }, ref) => {
   if (weight === 'bold' && duotone) return <FlaskFullBoldDuotone ref={ref} {...rest} />;
   if (weight === 'bold') return <FlaskFullBold ref={ref} {...rest} />;
@@ -33,6 +33,6 @@ const FlaskFull = memo(forwardRef<SVGSVGElement, FlaskFullProps>(({
 
 FlaskFull.displayName = 'FlaskFull';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { FlaskFull, FlaskFull as FlaskFullIcon, FlaskFull as SiFlaskFull };
 export default FlaskFull;

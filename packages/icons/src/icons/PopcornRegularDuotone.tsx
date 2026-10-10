@@ -15,7 +15,7 @@ const PopcornRegularDuotone = memo(
 
 PopcornRegularDuotone.displayName = 'PopcornRegularDuotone';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { PopcornRegularDuotone, PopcornRegularDuotone as PopcornRegularDuotoneIcon, PopcornRegularDuotone as SiPopcornRegularDuotone };
 export default PopcornRegularDuotone;
 export type { PopcornRegularDuotoneProps };

@@ -15,7 +15,7 @@ const HomeXRegular = memo(
 
 HomeXRegular.displayName = 'HomeXRegular';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { HomeXRegular, HomeXRegular as HomeXRegularIcon, HomeXRegular as SiHomeXRegular };
 export default HomeXRegular;
 export type { HomeXRegularProps };

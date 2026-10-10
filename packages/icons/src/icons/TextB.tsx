@@ -18,10 +18,10 @@ export interface TextBProps extends IconProps {
  * For smaller bundle size, import specific variants directly:
  * import { TextBRegular } from 'stera-icons/icons/TextBRegular';
  */
-const TextB = memo(forwardRef<SVGSVGElement, TextBProps>(({ 
+const TextB = memo(forwardRef<SVGSVGElement, TextBProps>(({
   weight = 'regular',
   duotone = false,
-  ...rest 
+  ...rest
 }, ref) => {
   if (weight === 'bold' && duotone) return <TextBBoldDuotone ref={ref} {...rest} />;
   if (weight === 'bold') return <TextBBold ref={ref} {...rest} />;
@@ -33,6 +33,6 @@ const TextB = memo(forwardRef<SVGSVGElement, TextBProps>(({
 
 TextB.displayName = 'TextB';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { TextB, TextB as TextBIcon, TextB as SiTextB };
 export default TextB;

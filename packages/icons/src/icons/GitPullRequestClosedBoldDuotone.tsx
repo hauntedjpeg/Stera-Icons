@@ -16,7 +16,7 @@ const GitPullRequestClosedBoldDuotone = memo(
 
 GitPullRequestClosedBoldDuotone.displayName = 'GitPullRequestClosedBoldDuotone';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { GitPullRequestClosedBoldDuotone, GitPullRequestClosedBoldDuotone as GitPullRequestClosedBoldDuotoneIcon, GitPullRequestClosedBoldDuotone as SiGitPullRequestClosedBoldDuotone };
 export default GitPullRequestClosedBoldDuotone;
 export type { GitPullRequestClosedBoldDuotoneProps };

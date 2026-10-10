@@ -14,7 +14,7 @@ const MartiniBold = memo(
 
 MartiniBold.displayName = 'MartiniBold';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { MartiniBold, MartiniBold as MartiniBoldIcon, MartiniBold as SiMartiniBold };
 export default MartiniBold;
 export type { MartiniBoldProps };

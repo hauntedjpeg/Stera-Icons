@@ -18,10 +18,10 @@ export interface MountainProps extends IconProps {
  * For smaller bundle size, import specific variants directly:
  * import { MountainRegular } from 'stera-icons/icons/MountainRegular';
  */
-const Mountain = memo(forwardRef<SVGSVGElement, MountainProps>(({ 
+const Mountain = memo(forwardRef<SVGSVGElement, MountainProps>(({
   weight = 'regular',
   duotone = false,
-  ...rest 
+  ...rest
 }, ref) => {
   if (weight === 'bold' && duotone) return <MountainBoldDuotone ref={ref} {...rest} />;
   if (weight === 'bold') return <MountainBold ref={ref} {...rest} />;
@@ -33,6 +33,6 @@ const Mountain = memo(forwardRef<SVGSVGElement, MountainProps>(({
 
 Mountain.displayName = 'Mountain';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { Mountain, Mountain as MountainIcon, Mountain as SiMountain };
 export default Mountain;

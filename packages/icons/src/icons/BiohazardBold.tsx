@@ -14,7 +14,7 @@ const BiohazardBold = memo(
 
 BiohazardBold.displayName = 'BiohazardBold';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { BiohazardBold, BiohazardBold as BiohazardBoldIcon, BiohazardBold as SiBiohazardBold };
 export default BiohazardBold;
 export type { BiohazardBoldProps };

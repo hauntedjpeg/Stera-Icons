@@ -18,10 +18,10 @@ export interface PedestalProps extends IconProps {
  * For smaller bundle size, import specific variants directly:
  * import { PedestalRegular } from 'stera-icons/icons/PedestalRegular';
  */
-const Pedestal = memo(forwardRef<SVGSVGElement, PedestalProps>(({ 
+const Pedestal = memo(forwardRef<SVGSVGElement, PedestalProps>(({
   weight = 'regular',
   duotone = false,
-  ...rest 
+  ...rest
 }, ref) => {
   if (weight === 'bold' && duotone) return <PedestalBoldDuotone ref={ref} {...rest} />;
   if (weight === 'bold') return <PedestalBold ref={ref} {...rest} />;
@@ -33,6 +33,6 @@ const Pedestal = memo(forwardRef<SVGSVGElement, PedestalProps>(({
 
 Pedestal.displayName = 'Pedestal';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { Pedestal, Pedestal as PedestalIcon, Pedestal as SiPedestal };
 export default Pedestal;

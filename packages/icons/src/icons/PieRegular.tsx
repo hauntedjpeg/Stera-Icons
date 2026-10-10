@@ -15,7 +15,7 @@ const PieRegular = memo(
 
 PieRegular.displayName = 'PieRegular';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { PieRegular, PieRegular as PieRegularIcon, PieRegular as SiPieRegular };
 export default PieRegular;
 export type { PieRegularProps };

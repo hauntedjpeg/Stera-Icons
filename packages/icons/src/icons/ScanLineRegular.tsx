@@ -14,7 +14,7 @@ const ScanLineRegular = memo(
 
 ScanLineRegular.displayName = 'ScanLineRegular';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { ScanLineRegular, ScanLineRegular as ScanLineRegularIcon, ScanLineRegular as SiScanLineRegular };
 export default ScanLineRegular;
 export type { ScanLineRegularProps };

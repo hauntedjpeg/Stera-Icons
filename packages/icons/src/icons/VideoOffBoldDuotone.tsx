@@ -16,7 +16,7 @@ const VideoOffBoldDuotone = memo(
 
 VideoOffBoldDuotone.displayName = 'VideoOffBoldDuotone';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { VideoOffBoldDuotone, VideoOffBoldDuotone as VideoOffBoldDuotoneIcon, VideoOffBoldDuotone as SiVideoOffBoldDuotone };
 export default VideoOffBoldDuotone;
 export type { VideoOffBoldDuotoneProps };

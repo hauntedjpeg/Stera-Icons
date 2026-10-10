@@ -18,10 +18,10 @@ export interface PhoneIncomingProps extends IconProps {
  * For smaller bundle size, import specific variants directly:
  * import { PhoneIncomingRegular } from 'stera-icons/icons/PhoneIncomingRegular';
  */
-const PhoneIncoming = memo(forwardRef<SVGSVGElement, PhoneIncomingProps>(({ 
+const PhoneIncoming = memo(forwardRef<SVGSVGElement, PhoneIncomingProps>(({
   weight = 'regular',
   duotone = false,
-  ...rest 
+  ...rest
 }, ref) => {
   if (weight === 'bold' && duotone) return <PhoneIncomingBoldDuotone ref={ref} {...rest} />;
   if (weight === 'bold') return <PhoneIncomingBold ref={ref} {...rest} />;
@@ -33,6 +33,6 @@ const PhoneIncoming = memo(forwardRef<SVGSVGElement, PhoneIncomingProps>(({
 
 PhoneIncoming.displayName = 'PhoneIncoming';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { PhoneIncoming, PhoneIncoming as PhoneIncomingIcon, PhoneIncoming as SiPhoneIncoming };
 export default PhoneIncoming;

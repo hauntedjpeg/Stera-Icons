@@ -18,10 +18,10 @@ export interface MessageCircleSparkleProps extends IconProps {
  * For smaller bundle size, import specific variants directly:
  * import { MessageCircleSparkleRegular } from 'stera-icons/icons/MessageCircleSparkleRegular';
  */
-const MessageCircleSparkle = memo(forwardRef<SVGSVGElement, MessageCircleSparkleProps>(({ 
+const MessageCircleSparkle = memo(forwardRef<SVGSVGElement, MessageCircleSparkleProps>(({
   weight = 'regular',
   duotone = false,
-  ...rest 
+  ...rest
 }, ref) => {
   if (weight === 'bold' && duotone) return <MessageCircleSparkleBoldDuotone ref={ref} {...rest} />;
   if (weight === 'bold') return <MessageCircleSparkleBold ref={ref} {...rest} />;
@@ -33,6 +33,6 @@ const MessageCircleSparkle = memo(forwardRef<SVGSVGElement, MessageCircleSparkle
 
 MessageCircleSparkle.displayName = 'MessageCircleSparkle';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { MessageCircleSparkle, MessageCircleSparkle as MessageCircleSparkleIcon, MessageCircleSparkle as SiMessageCircleSparkle };
 export default MessageCircleSparkle;

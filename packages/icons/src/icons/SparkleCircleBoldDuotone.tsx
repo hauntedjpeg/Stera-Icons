@@ -15,7 +15,7 @@ const SparkleCircleBoldDuotone = memo(
 
 SparkleCircleBoldDuotone.displayName = 'SparkleCircleBoldDuotone';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { SparkleCircleBoldDuotone, SparkleCircleBoldDuotone as SparkleCircleBoldDuotoneIcon, SparkleCircleBoldDuotone as SiSparkleCircleBoldDuotone };
 export default SparkleCircleBoldDuotone;
 export type { SparkleCircleBoldDuotoneProps };

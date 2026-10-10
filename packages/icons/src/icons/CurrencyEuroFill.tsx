@@ -14,7 +14,7 @@ const CurrencyEuroFill = memo(
 
 CurrencyEuroFill.displayName = 'CurrencyEuroFill';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { CurrencyEuroFill, CurrencyEuroFill as CurrencyEuroFillIcon, CurrencyEuroFill as SiCurrencyEuroFill };
 export default CurrencyEuroFill;
 export type { CurrencyEuroFillProps };

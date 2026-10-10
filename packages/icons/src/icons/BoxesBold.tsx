@@ -14,7 +14,7 @@ const BoxesBold = memo(
 
 BoxesBold.displayName = 'BoxesBold';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { BoxesBold, BoxesBold as BoxesBoldIcon, BoxesBold as SiBoxesBold };
 export default BoxesBold;
 export type { BoxesBoldProps };

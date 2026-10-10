@@ -18,10 +18,10 @@ export interface StopCircleProps extends IconProps {
  * For smaller bundle size, import specific variants directly:
  * import { StopCircleRegular } from 'stera-icons/icons/StopCircleRegular';
  */
-const StopCircle = memo(forwardRef<SVGSVGElement, StopCircleProps>(({ 
+const StopCircle = memo(forwardRef<SVGSVGElement, StopCircleProps>(({
   weight = 'regular',
   duotone = false,
-  ...rest 
+  ...rest
 }, ref) => {
   if (weight === 'bold' && duotone) return <StopCircleBoldDuotone ref={ref} {...rest} />;
   if (weight === 'bold') return <StopCircleBold ref={ref} {...rest} />;
@@ -33,6 +33,6 @@ const StopCircle = memo(forwardRef<SVGSVGElement, StopCircleProps>(({
 
 StopCircle.displayName = 'StopCircle';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { StopCircle, StopCircle as StopCircleIcon, StopCircle as SiStopCircle };
 export default StopCircle;

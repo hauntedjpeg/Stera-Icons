@@ -14,7 +14,7 @@ const PencilRulerFill = memo(
 
 PencilRulerFill.displayName = 'PencilRulerFill';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { PencilRulerFill, PencilRulerFill as PencilRulerFillIcon, PencilRulerFill as SiPencilRulerFill };
 export default PencilRulerFill;
 export type { PencilRulerFillProps };

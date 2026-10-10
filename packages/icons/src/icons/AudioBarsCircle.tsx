@@ -18,10 +18,10 @@ export interface AudioBarsCircleProps extends IconProps {
  * For smaller bundle size, import specific variants directly:
  * import { AudioBarsCircleRegular } from 'stera-icons/icons/AudioBarsCircleRegular';
  */
-const AudioBarsCircle = memo(forwardRef<SVGSVGElement, AudioBarsCircleProps>(({ 
+const AudioBarsCircle = memo(forwardRef<SVGSVGElement, AudioBarsCircleProps>(({
   weight = 'regular',
   duotone = false,
-  ...rest 
+  ...rest
 }, ref) => {
   if (weight === 'bold' && duotone) return <AudioBarsCircleBoldDuotone ref={ref} {...rest} />;
   if (weight === 'bold') return <AudioBarsCircleBold ref={ref} {...rest} />;
@@ -33,6 +33,6 @@ const AudioBarsCircle = memo(forwardRef<SVGSVGElement, AudioBarsCircleProps>(({
 
 AudioBarsCircle.displayName = 'AudioBarsCircle';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { AudioBarsCircle, AudioBarsCircle as AudioBarsCircleIcon, AudioBarsCircle as SiAudioBarsCircle };
 export default AudioBarsCircle;

@@ -18,10 +18,10 @@ export interface ChartCandleProps extends IconProps {
  * For smaller bundle size, import specific variants directly:
  * import { ChartCandleRegular } from 'stera-icons/icons/ChartCandleRegular';
  */
-const ChartCandle = memo(forwardRef<SVGSVGElement, ChartCandleProps>(({ 
+const ChartCandle = memo(forwardRef<SVGSVGElement, ChartCandleProps>(({
   weight = 'regular',
   duotone = false,
-  ...rest 
+  ...rest
 }, ref) => {
   if (weight === 'bold' && duotone) return <ChartCandleBoldDuotone ref={ref} {...rest} />;
   if (weight === 'bold') return <ChartCandleBold ref={ref} {...rest} />;
@@ -33,6 +33,6 @@ const ChartCandle = memo(forwardRef<SVGSVGElement, ChartCandleProps>(({
 
 ChartCandle.displayName = 'ChartCandle';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { ChartCandle, ChartCandle as ChartCandleIcon, ChartCandle as SiChartCandle };
 export default ChartCandle;

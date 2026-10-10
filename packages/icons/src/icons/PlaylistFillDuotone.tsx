@@ -15,7 +15,7 @@ const PlaylistFillDuotone = memo(
 
 PlaylistFillDuotone.displayName = 'PlaylistFillDuotone';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { PlaylistFillDuotone, PlaylistFillDuotone as PlaylistFillDuotoneIcon, PlaylistFillDuotone as SiPlaylistFillDuotone };
 export default PlaylistFillDuotone;
 export type { PlaylistFillDuotoneProps };

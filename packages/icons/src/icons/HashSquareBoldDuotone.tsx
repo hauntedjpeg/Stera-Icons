@@ -15,7 +15,7 @@ const HashSquareBoldDuotone = memo(
 
 HashSquareBoldDuotone.displayName = 'HashSquareBoldDuotone';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { HashSquareBoldDuotone, HashSquareBoldDuotone as HashSquareBoldDuotoneIcon, HashSquareBoldDuotone as SiHashSquareBoldDuotone };
 export default HashSquareBoldDuotone;
 export type { HashSquareBoldDuotoneProps };

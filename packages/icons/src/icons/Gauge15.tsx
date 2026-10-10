@@ -18,10 +18,10 @@ export interface Gauge15Props extends IconProps {
  * For smaller bundle size, import specific variants directly:
  * import { Gauge15Regular } from 'stera-icons/icons/Gauge15Regular';
  */
-const Gauge15 = memo(forwardRef<SVGSVGElement, Gauge15Props>(({ 
+const Gauge15 = memo(forwardRef<SVGSVGElement, Gauge15Props>(({
   weight = 'regular',
   duotone = false,
-  ...rest 
+  ...rest
 }, ref) => {
   if (weight === 'bold' && duotone) return <Gauge15BoldDuotone ref={ref} {...rest} />;
   if (weight === 'bold') return <Gauge15Bold ref={ref} {...rest} />;
@@ -33,6 +33,6 @@ const Gauge15 = memo(forwardRef<SVGSVGElement, Gauge15Props>(({
 
 Gauge15.displayName = 'Gauge15';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { Gauge15, Gauge15 as Gauge15Icon, Gauge15 as SiGauge15 };
 export default Gauge15;

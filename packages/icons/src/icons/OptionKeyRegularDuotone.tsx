@@ -15,7 +15,7 @@ const OptionKeyRegularDuotone = memo(
 
 OptionKeyRegularDuotone.displayName = 'OptionKeyRegularDuotone';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { OptionKeyRegularDuotone, OptionKeyRegularDuotone as OptionKeyRegularDuotoneIcon, OptionKeyRegularDuotone as SiOptionKeyRegularDuotone };
 export default OptionKeyRegularDuotone;
 export type { OptionKeyRegularDuotoneProps };

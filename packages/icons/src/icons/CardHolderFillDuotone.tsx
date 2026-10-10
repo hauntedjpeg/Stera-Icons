@@ -15,7 +15,7 @@ const CardHolderFillDuotone = memo(
 
 CardHolderFillDuotone.displayName = 'CardHolderFillDuotone';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { CardHolderFillDuotone, CardHolderFillDuotone as CardHolderFillDuotoneIcon, CardHolderFillDuotone as SiCardHolderFillDuotone };
 export default CardHolderFillDuotone;
 export type { CardHolderFillDuotoneProps };

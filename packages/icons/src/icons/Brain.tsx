@@ -18,10 +18,10 @@ export interface BrainProps extends IconProps {
  * For smaller bundle size, import specific variants directly:
  * import { BrainRegular } from 'stera-icons/icons/BrainRegular';
  */
-const Brain = memo(forwardRef<SVGSVGElement, BrainProps>(({ 
+const Brain = memo(forwardRef<SVGSVGElement, BrainProps>(({
   weight = 'regular',
   duotone = false,
-  ...rest 
+  ...rest
 }, ref) => {
   if (weight === 'bold' && duotone) return <BrainBoldDuotone ref={ref} {...rest} />;
   if (weight === 'bold') return <BrainBold ref={ref} {...rest} />;
@@ -33,6 +33,6 @@ const Brain = memo(forwardRef<SVGSVGElement, BrainProps>(({
 
 Brain.displayName = 'Brain';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { Brain, Brain as BrainIcon, Brain as SiBrain };
 export default Brain;

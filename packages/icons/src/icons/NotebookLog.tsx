@@ -18,10 +18,10 @@ export interface NotebookLogProps extends IconProps {
  * For smaller bundle size, import specific variants directly:
  * import { NotebookLogRegular } from 'stera-icons/icons/NotebookLogRegular';
  */
-const NotebookLog = memo(forwardRef<SVGSVGElement, NotebookLogProps>(({ 
+const NotebookLog = memo(forwardRef<SVGSVGElement, NotebookLogProps>(({
   weight = 'regular',
   duotone = false,
-  ...rest 
+  ...rest
 }, ref) => {
   if (weight === 'bold' && duotone) return <NotebookLogBoldDuotone ref={ref} {...rest} />;
   if (weight === 'bold') return <NotebookLogBold ref={ref} {...rest} />;
@@ -33,6 +33,6 @@ const NotebookLog = memo(forwardRef<SVGSVGElement, NotebookLogProps>(({
 
 NotebookLog.displayName = 'NotebookLog';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { NotebookLog, NotebookLog as NotebookLogIcon, NotebookLog as SiNotebookLog };
 export default NotebookLog;

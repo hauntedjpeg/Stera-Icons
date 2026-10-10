@@ -18,10 +18,10 @@ export interface CheckBadgeProps extends IconProps {
  * For smaller bundle size, import specific variants directly:
  * import { CheckBadgeRegular } from 'stera-icons/icons/CheckBadgeRegular';
  */
-const CheckBadge = memo(forwardRef<SVGSVGElement, CheckBadgeProps>(({ 
+const CheckBadge = memo(forwardRef<SVGSVGElement, CheckBadgeProps>(({
   weight = 'regular',
   duotone = false,
-  ...rest 
+  ...rest
 }, ref) => {
   if (weight === 'bold' && duotone) return <CheckBadgeBoldDuotone ref={ref} {...rest} />;
   if (weight === 'bold') return <CheckBadgeBold ref={ref} {...rest} />;
@@ -33,6 +33,6 @@ const CheckBadge = memo(forwardRef<SVGSVGElement, CheckBadgeProps>(({
 
 CheckBadge.displayName = 'CheckBadge';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { CheckBadge, CheckBadge as CheckBadgeIcon, CheckBadge as SiCheckBadge };
 export default CheckBadge;

@@ -14,7 +14,7 @@ const ChevronDownFill = memo(
 
 ChevronDownFill.displayName = 'ChevronDownFill';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { ChevronDownFill, ChevronDownFill as ChevronDownFillIcon, ChevronDownFill as SiChevronDownFill };
 export default ChevronDownFill;
 export type { ChevronDownFillProps };

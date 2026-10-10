@@ -15,7 +15,7 @@ const KeyHBoldDuotone = memo(
 
 KeyHBoldDuotone.displayName = 'KeyHBoldDuotone';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { KeyHBoldDuotone, KeyHBoldDuotone as KeyHBoldDuotoneIcon, KeyHBoldDuotone as SiKeyHBoldDuotone };
 export default KeyHBoldDuotone;
 export type { KeyHBoldDuotoneProps };

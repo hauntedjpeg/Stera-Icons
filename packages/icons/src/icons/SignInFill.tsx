@@ -15,7 +15,7 @@ const SignInFill = memo(
 
 SignInFill.displayName = 'SignInFill';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { SignInFill, SignInFill as SignInFillIcon, SignInFill as SiSignInFill };
 export default SignInFill;
 export type { SignInFillProps };

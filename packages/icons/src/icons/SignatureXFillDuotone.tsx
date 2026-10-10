@@ -15,7 +15,7 @@ const SignatureXFillDuotone = memo(
 
 SignatureXFillDuotone.displayName = 'SignatureXFillDuotone';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { SignatureXFillDuotone, SignatureXFillDuotone as SignatureXFillDuotoneIcon, SignatureXFillDuotone as SiSignatureXFillDuotone };
 export default SignatureXFillDuotone;
 export type { SignatureXFillDuotoneProps };

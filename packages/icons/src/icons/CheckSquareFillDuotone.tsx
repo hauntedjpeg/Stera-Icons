@@ -15,7 +15,7 @@ const CheckSquareFillDuotone = memo(
 
 CheckSquareFillDuotone.displayName = 'CheckSquareFillDuotone';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { CheckSquareFillDuotone, CheckSquareFillDuotone as CheckSquareFillDuotoneIcon, CheckSquareFillDuotone as SiCheckSquareFillDuotone };
 export default CheckSquareFillDuotone;
 export type { CheckSquareFillDuotoneProps };

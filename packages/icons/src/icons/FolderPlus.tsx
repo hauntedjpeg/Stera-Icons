@@ -18,10 +18,10 @@ export interface FolderPlusProps extends IconProps {
  * For smaller bundle size, import specific variants directly:
  * import { FolderPlusRegular } from 'stera-icons/icons/FolderPlusRegular';
  */
-const FolderPlus = memo(forwardRef<SVGSVGElement, FolderPlusProps>(({ 
+const FolderPlus = memo(forwardRef<SVGSVGElement, FolderPlusProps>(({
   weight = 'regular',
   duotone = false,
-  ...rest 
+  ...rest
 }, ref) => {
   if (weight === 'bold' && duotone) return <FolderPlusBoldDuotone ref={ref} {...rest} />;
   if (weight === 'bold') return <FolderPlusBold ref={ref} {...rest} />;
@@ -33,6 +33,6 @@ const FolderPlus = memo(forwardRef<SVGSVGElement, FolderPlusProps>(({
 
 FolderPlus.displayName = 'FolderPlus';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { FolderPlus, FolderPlus as FolderPlusIcon, FolderPlus as SiFolderPlus };
 export default FolderPlus;

@@ -14,7 +14,7 @@ const GitBranchRegular = memo(
 
 GitBranchRegular.displayName = 'GitBranchRegular';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { GitBranchRegular, GitBranchRegular as GitBranchRegularIcon, GitBranchRegular as SiGitBranchRegular };
 export default GitBranchRegular;
 export type { GitBranchRegularProps };

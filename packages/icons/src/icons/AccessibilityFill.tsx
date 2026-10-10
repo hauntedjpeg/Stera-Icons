@@ -15,7 +15,7 @@ const AccessibilityFill = memo(
 
 AccessibilityFill.displayName = 'AccessibilityFill';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { AccessibilityFill, AccessibilityFill as AccessibilityFillIcon, AccessibilityFill as SiAccessibilityFill };
 export default AccessibilityFill;
 export type { AccessibilityFillProps };

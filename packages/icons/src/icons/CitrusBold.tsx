@@ -14,7 +14,7 @@ const CitrusBold = memo(
 
 CitrusBold.displayName = 'CitrusBold';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { CitrusBold, CitrusBold as CitrusBoldIcon, CitrusBold as SiCitrusBold };
 export default CitrusBold;
 export type { CitrusBoldProps };

@@ -14,7 +14,7 @@ const CodeFill = memo(
 
 CodeFill.displayName = 'CodeFill';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { CodeFill, CodeFill as CodeFillIcon, CodeFill as SiCodeFill };
 export default CodeFill;
 export type { CodeFillProps };

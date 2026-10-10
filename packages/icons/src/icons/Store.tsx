@@ -18,10 +18,10 @@ export interface StoreProps extends IconProps {
  * For smaller bundle size, import specific variants directly:
  * import { StoreRegular } from 'stera-icons/icons/StoreRegular';
  */
-const Store = memo(forwardRef<SVGSVGElement, StoreProps>(({ 
+const Store = memo(forwardRef<SVGSVGElement, StoreProps>(({
   weight = 'regular',
   duotone = false,
-  ...rest 
+  ...rest
 }, ref) => {
   if (weight === 'bold' && duotone) return <StoreBoldDuotone ref={ref} {...rest} />;
   if (weight === 'bold') return <StoreBold ref={ref} {...rest} />;
@@ -33,6 +33,6 @@ const Store = memo(forwardRef<SVGSVGElement, StoreProps>(({
 
 Store.displayName = 'Store';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { Store, Store as StoreIcon, Store as SiStore };
 export default Store;

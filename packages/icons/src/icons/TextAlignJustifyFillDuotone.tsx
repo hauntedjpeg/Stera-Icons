@@ -15,7 +15,7 @@ const TextAlignJustifyFillDuotone = memo(
 
 TextAlignJustifyFillDuotone.displayName = 'TextAlignJustifyFillDuotone';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { TextAlignJustifyFillDuotone, TextAlignJustifyFillDuotone as TextAlignJustifyFillDuotoneIcon, TextAlignJustifyFillDuotone as SiTextAlignJustifyFillDuotone };
 export default TextAlignJustifyFillDuotone;
 export type { TextAlignJustifyFillDuotoneProps };

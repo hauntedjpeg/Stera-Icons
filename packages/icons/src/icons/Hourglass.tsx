@@ -18,10 +18,10 @@ export interface HourglassProps extends IconProps {
  * For smaller bundle size, import specific variants directly:
  * import { HourglassRegular } from 'stera-icons/icons/HourglassRegular';
  */
-const Hourglass = memo(forwardRef<SVGSVGElement, HourglassProps>(({ 
+const Hourglass = memo(forwardRef<SVGSVGElement, HourglassProps>(({
   weight = 'regular',
   duotone = false,
-  ...rest 
+  ...rest
 }, ref) => {
   if (weight === 'bold' && duotone) return <HourglassBoldDuotone ref={ref} {...rest} />;
   if (weight === 'bold') return <HourglassBold ref={ref} {...rest} />;
@@ -33,6 +33,6 @@ const Hourglass = memo(forwardRef<SVGSVGElement, HourglassProps>(({
 
 Hourglass.displayName = 'Hourglass';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { Hourglass, Hourglass as HourglassIcon, Hourglass as SiHourglass };
 export default Hourglass;

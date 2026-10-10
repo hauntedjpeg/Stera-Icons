@@ -14,7 +14,7 @@ const EyeClosedRegular = memo(
 
 EyeClosedRegular.displayName = 'EyeClosedRegular';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { EyeClosedRegular, EyeClosedRegular as EyeClosedRegularIcon, EyeClosedRegular as SiEyeClosedRegular };
 export default EyeClosedRegular;
 export type { EyeClosedRegularProps };

@@ -18,10 +18,10 @@ export interface ArrowCircleUpLeftProps extends IconProps {
  * For smaller bundle size, import specific variants directly:
  * import { ArrowCircleUpLeftRegular } from 'stera-icons/icons/ArrowCircleUpLeftRegular';
  */
-const ArrowCircleUpLeft = memo(forwardRef<SVGSVGElement, ArrowCircleUpLeftProps>(({ 
+const ArrowCircleUpLeft = memo(forwardRef<SVGSVGElement, ArrowCircleUpLeftProps>(({
   weight = 'regular',
   duotone = false,
-  ...rest 
+  ...rest
 }, ref) => {
   if (weight === 'bold' && duotone) return <ArrowCircleUpLeftBoldDuotone ref={ref} {...rest} />;
   if (weight === 'bold') return <ArrowCircleUpLeftBold ref={ref} {...rest} />;
@@ -33,6 +33,6 @@ const ArrowCircleUpLeft = memo(forwardRef<SVGSVGElement, ArrowCircleUpLeftProps>
 
 ArrowCircleUpLeft.displayName = 'ArrowCircleUpLeft';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { ArrowCircleUpLeft, ArrowCircleUpLeft as ArrowCircleUpLeftIcon, ArrowCircleUpLeft as SiArrowCircleUpLeft };
 export default ArrowCircleUpLeft;

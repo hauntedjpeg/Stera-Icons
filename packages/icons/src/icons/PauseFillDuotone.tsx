@@ -15,7 +15,7 @@ const PauseFillDuotone = memo(
 
 PauseFillDuotone.displayName = 'PauseFillDuotone';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { PauseFillDuotone, PauseFillDuotone as PauseFillDuotoneIcon, PauseFillDuotone as SiPauseFillDuotone };
 export default PauseFillDuotone;
 export type { PauseFillDuotoneProps };

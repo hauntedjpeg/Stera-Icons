@@ -18,10 +18,10 @@ export interface SlashProps extends IconProps {
  * For smaller bundle size, import specific variants directly:
  * import { SlashRegular } from 'stera-icons/icons/SlashRegular';
  */
-const Slash = memo(forwardRef<SVGSVGElement, SlashProps>(({ 
+const Slash = memo(forwardRef<SVGSVGElement, SlashProps>(({
   weight = 'regular',
   duotone = false,
-  ...rest 
+  ...rest
 }, ref) => {
   if (weight === 'bold' && duotone) return <SlashBoldDuotone ref={ref} {...rest} />;
   if (weight === 'bold') return <SlashBold ref={ref} {...rest} />;
@@ -33,6 +33,6 @@ const Slash = memo(forwardRef<SVGSVGElement, SlashProps>(({
 
 Slash.displayName = 'Slash';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { Slash, Slash as SlashIcon, Slash as SiSlash };
 export default Slash;

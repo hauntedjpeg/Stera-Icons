@@ -15,7 +15,7 @@ const ListMinusRegular = memo(
 
 ListMinusRegular.displayName = 'ListMinusRegular';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { ListMinusRegular, ListMinusRegular as ListMinusRegularIcon, ListMinusRegular as SiListMinusRegular };
 export default ListMinusRegular;
 export type { ListMinusRegularProps };

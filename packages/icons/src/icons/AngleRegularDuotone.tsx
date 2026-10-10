@@ -15,7 +15,7 @@ const AngleRegularDuotone = memo(
 
 AngleRegularDuotone.displayName = 'AngleRegularDuotone';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { AngleRegularDuotone, AngleRegularDuotone as AngleRegularDuotoneIcon, AngleRegularDuotone as SiAngleRegularDuotone };
 export default AngleRegularDuotone;
 export type { AngleRegularDuotoneProps };

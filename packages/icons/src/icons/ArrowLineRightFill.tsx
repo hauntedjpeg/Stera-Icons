@@ -14,7 +14,7 @@ const ArrowLineRightFill = memo(
 
 ArrowLineRightFill.displayName = 'ArrowLineRightFill';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { ArrowLineRightFill, ArrowLineRightFill as ArrowLineRightFillIcon, ArrowLineRightFill as SiArrowLineRightFill };
 export default ArrowLineRightFill;
 export type { ArrowLineRightFillProps };

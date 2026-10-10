@@ -15,7 +15,7 @@ const CheckCircleRegular = memo(
 
 CheckCircleRegular.displayName = 'CheckCircleRegular';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { CheckCircleRegular, CheckCircleRegular as CheckCircleRegularIcon, CheckCircleRegular as SiCheckCircleRegular };
 export default CheckCircleRegular;
 export type { CheckCircleRegularProps };

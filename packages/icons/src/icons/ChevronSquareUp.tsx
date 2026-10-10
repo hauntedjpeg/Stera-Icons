@@ -18,10 +18,10 @@ export interface ChevronSquareUpProps extends IconProps {
  * For smaller bundle size, import specific variants directly:
  * import { ChevronSquareUpRegular } from 'stera-icons/icons/ChevronSquareUpRegular';
  */
-const ChevronSquareUp = memo(forwardRef<SVGSVGElement, ChevronSquareUpProps>(({ 
+const ChevronSquareUp = memo(forwardRef<SVGSVGElement, ChevronSquareUpProps>(({
   weight = 'regular',
   duotone = false,
-  ...rest 
+  ...rest
 }, ref) => {
   if (weight === 'bold' && duotone) return <ChevronSquareUpBoldDuotone ref={ref} {...rest} />;
   if (weight === 'bold') return <ChevronSquareUpBold ref={ref} {...rest} />;
@@ -33,6 +33,6 @@ const ChevronSquareUp = memo(forwardRef<SVGSVGElement, ChevronSquareUpProps>(({
 
 ChevronSquareUp.displayName = 'ChevronSquareUp';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { ChevronSquareUp, ChevronSquareUp as ChevronSquareUpIcon, ChevronSquareUp as SiChevronSquareUp };
 export default ChevronSquareUp;

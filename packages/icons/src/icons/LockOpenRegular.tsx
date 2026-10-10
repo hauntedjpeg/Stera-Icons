@@ -15,7 +15,7 @@ const LockOpenRegular = memo(
 
 LockOpenRegular.displayName = 'LockOpenRegular';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { LockOpenRegular, LockOpenRegular as LockOpenRegularIcon, LockOpenRegular as SiLockOpenRegular };
 export default LockOpenRegular;
 export type { LockOpenRegularProps };

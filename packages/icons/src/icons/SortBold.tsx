@@ -15,7 +15,7 @@ const SortBold = memo(
 
 SortBold.displayName = 'SortBold';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { SortBold, SortBold as SortBoldIcon, SortBold as SiSortBold };
 export default SortBold;
 export type { SortBoldProps };

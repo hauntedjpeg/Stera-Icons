@@ -16,7 +16,7 @@ const FolderTreeBold = memo(
 
 FolderTreeBold.displayName = 'FolderTreeBold';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { FolderTreeBold, FolderTreeBold as FolderTreeBoldIcon, FolderTreeBold as SiFolderTreeBold };
 export default FolderTreeBold;
 export type { FolderTreeBoldProps };

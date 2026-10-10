@@ -15,7 +15,7 @@ const TagBold = memo(
 
 TagBold.displayName = 'TagBold';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { TagBold, TagBold as TagBoldIcon, TagBold as SiTagBold };
 export default TagBold;
 export type { TagBoldProps };

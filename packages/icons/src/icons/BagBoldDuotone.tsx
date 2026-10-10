@@ -15,7 +15,7 @@ const BagBoldDuotone = memo(
 
 BagBoldDuotone.displayName = 'BagBoldDuotone';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { BagBoldDuotone, BagBoldDuotone as BagBoldDuotoneIcon, BagBoldDuotone as SiBagBoldDuotone };
 export default BagBoldDuotone;
 export type { BagBoldDuotoneProps };

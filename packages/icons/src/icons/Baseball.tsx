@@ -18,10 +18,10 @@ export interface BaseballProps extends IconProps {
  * For smaller bundle size, import specific variants directly:
  * import { BaseballRegular } from 'stera-icons/icons/BaseballRegular';
  */
-const Baseball = memo(forwardRef<SVGSVGElement, BaseballProps>(({ 
+const Baseball = memo(forwardRef<SVGSVGElement, BaseballProps>(({
   weight = 'regular',
   duotone = false,
-  ...rest 
+  ...rest
 }, ref) => {
   if (weight === 'bold' && duotone) return <BaseballBoldDuotone ref={ref} {...rest} />;
   if (weight === 'bold') return <BaseballBold ref={ref} {...rest} />;
@@ -33,6 +33,6 @@ const Baseball = memo(forwardRef<SVGSVGElement, BaseballProps>(({
 
 Baseball.displayName = 'Baseball';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { Baseball, Baseball as BaseballIcon, Baseball as SiBaseball };
 export default Baseball;

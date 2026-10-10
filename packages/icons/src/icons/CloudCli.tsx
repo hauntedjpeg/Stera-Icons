@@ -18,10 +18,10 @@ export interface CloudCliProps extends IconProps {
  * For smaller bundle size, import specific variants directly:
  * import { CloudCliRegular } from 'stera-icons/icons/CloudCliRegular';
  */
-const CloudCli = memo(forwardRef<SVGSVGElement, CloudCliProps>(({ 
+const CloudCli = memo(forwardRef<SVGSVGElement, CloudCliProps>(({
   weight = 'regular',
   duotone = false,
-  ...rest 
+  ...rest
 }, ref) => {
   if (weight === 'bold' && duotone) return <CloudCliBoldDuotone ref={ref} {...rest} />;
   if (weight === 'bold') return <CloudCliBold ref={ref} {...rest} />;
@@ -33,6 +33,6 @@ const CloudCli = memo(forwardRef<SVGSVGElement, CloudCliProps>(({
 
 CloudCli.displayName = 'CloudCli';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { CloudCli, CloudCli as CloudCliIcon, CloudCli as SiCloudCli };
 export default CloudCli;

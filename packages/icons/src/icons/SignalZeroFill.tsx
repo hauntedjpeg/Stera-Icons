@@ -14,7 +14,7 @@ const SignalZeroFill = memo(
 
 SignalZeroFill.displayName = 'SignalZeroFill';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { SignalZeroFill, SignalZeroFill as SignalZeroFillIcon, SignalZeroFill as SiSignalZeroFill };
 export default SignalZeroFill;
 export type { SignalZeroFillProps };

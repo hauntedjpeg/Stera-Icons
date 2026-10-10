@@ -18,10 +18,10 @@ export interface RectangleProps extends IconProps {
  * For smaller bundle size, import specific variants directly:
  * import { RectangleRegular } from 'stera-icons/icons/RectangleRegular';
  */
-const Rectangle = memo(forwardRef<SVGSVGElement, RectangleProps>(({ 
+const Rectangle = memo(forwardRef<SVGSVGElement, RectangleProps>(({
   weight = 'regular',
   duotone = false,
-  ...rest 
+  ...rest
 }, ref) => {
   if (weight === 'bold' && duotone) return <RectangleBoldDuotone ref={ref} {...rest} />;
   if (weight === 'bold') return <RectangleBold ref={ref} {...rest} />;
@@ -33,6 +33,6 @@ const Rectangle = memo(forwardRef<SVGSVGElement, RectangleProps>(({
 
 Rectangle.displayName = 'Rectangle';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { Rectangle, Rectangle as RectangleIcon, Rectangle as SiRectangle };
 export default Rectangle;

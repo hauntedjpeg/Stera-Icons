@@ -18,10 +18,10 @@ export interface BirdhouseProps extends IconProps {
  * For smaller bundle size, import specific variants directly:
  * import { BirdhouseRegular } from 'stera-icons/icons/BirdhouseRegular';
  */
-const Birdhouse = memo(forwardRef<SVGSVGElement, BirdhouseProps>(({ 
+const Birdhouse = memo(forwardRef<SVGSVGElement, BirdhouseProps>(({
   weight = 'regular',
   duotone = false,
-  ...rest 
+  ...rest
 }, ref) => {
   if (weight === 'bold' && duotone) return <BirdhouseBoldDuotone ref={ref} {...rest} />;
   if (weight === 'bold') return <BirdhouseBold ref={ref} {...rest} />;
@@ -33,6 +33,6 @@ const Birdhouse = memo(forwardRef<SVGSVGElement, BirdhouseProps>(({
 
 Birdhouse.displayName = 'Birdhouse';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { Birdhouse, Birdhouse as BirdhouseIcon, Birdhouse as SiBirdhouse };
 export default Birdhouse;

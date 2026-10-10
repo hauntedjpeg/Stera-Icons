@@ -18,10 +18,10 @@ export interface ToggleOnProps extends IconProps {
  * For smaller bundle size, import specific variants directly:
  * import { ToggleOnRegular } from 'stera-icons/icons/ToggleOnRegular';
  */
-const ToggleOn = memo(forwardRef<SVGSVGElement, ToggleOnProps>(({ 
+const ToggleOn = memo(forwardRef<SVGSVGElement, ToggleOnProps>(({
   weight = 'regular',
   duotone = false,
-  ...rest 
+  ...rest
 }, ref) => {
   if (weight === 'bold' && duotone) return <ToggleOnBoldDuotone ref={ref} {...rest} />;
   if (weight === 'bold') return <ToggleOnBold ref={ref} {...rest} />;
@@ -33,6 +33,6 @@ const ToggleOn = memo(forwardRef<SVGSVGElement, ToggleOnProps>(({
 
 ToggleOn.displayName = 'ToggleOn';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { ToggleOn, ToggleOn as ToggleOnIcon, ToggleOn as SiToggleOn };
 export default ToggleOn;

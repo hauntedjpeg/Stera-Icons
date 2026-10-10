@@ -16,7 +16,7 @@ const BinaryFill = memo(
 
 BinaryFill.displayName = 'BinaryFill';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { BinaryFill, BinaryFill as BinaryFillIcon, BinaryFill as SiBinaryFill };
 export default BinaryFill;
 export type { BinaryFillProps };

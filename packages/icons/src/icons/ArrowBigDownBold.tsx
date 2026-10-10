@@ -14,7 +14,7 @@ const ArrowBigDownBold = memo(
 
 ArrowBigDownBold.displayName = 'ArrowBigDownBold';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { ArrowBigDownBold, ArrowBigDownBold as ArrowBigDownBoldIcon, ArrowBigDownBold as SiArrowBigDownBold };
 export default ArrowBigDownBold;
 export type { ArrowBigDownBoldProps };

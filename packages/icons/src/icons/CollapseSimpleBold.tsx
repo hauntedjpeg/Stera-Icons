@@ -14,7 +14,7 @@ const CollapseSimpleBold = memo(
 
 CollapseSimpleBold.displayName = 'CollapseSimpleBold';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { CollapseSimpleBold, CollapseSimpleBold as CollapseSimpleBoldIcon, CollapseSimpleBold as SiCollapseSimpleBold };
 export default CollapseSimpleBold;
 export type { CollapseSimpleBoldProps };

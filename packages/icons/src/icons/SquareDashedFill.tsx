@@ -14,7 +14,7 @@ const SquareDashedFill = memo(
 
 SquareDashedFill.displayName = 'SquareDashedFill';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { SquareDashedFill, SquareDashedFill as SquareDashedFillIcon, SquareDashedFill as SiSquareDashedFill };
 export default SquareDashedFill;
 export type { SquareDashedFillProps };

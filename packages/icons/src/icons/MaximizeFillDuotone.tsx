@@ -15,7 +15,7 @@ const MaximizeFillDuotone = memo(
 
 MaximizeFillDuotone.displayName = 'MaximizeFillDuotone';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { MaximizeFillDuotone, MaximizeFillDuotone as MaximizeFillDuotoneIcon, MaximizeFillDuotone as SiMaximizeFillDuotone };
 export default MaximizeFillDuotone;
 export type { MaximizeFillDuotoneProps };

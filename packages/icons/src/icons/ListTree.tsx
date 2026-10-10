@@ -18,10 +18,10 @@ export interface ListTreeProps extends IconProps {
  * For smaller bundle size, import specific variants directly:
  * import { ListTreeRegular } from 'stera-icons/icons/ListTreeRegular';
  */
-const ListTree = memo(forwardRef<SVGSVGElement, ListTreeProps>(({ 
+const ListTree = memo(forwardRef<SVGSVGElement, ListTreeProps>(({
   weight = 'regular',
   duotone = false,
-  ...rest 
+  ...rest
 }, ref) => {
   if (weight === 'bold' && duotone) return <ListTreeBoldDuotone ref={ref} {...rest} />;
   if (weight === 'bold') return <ListTreeBold ref={ref} {...rest} />;
@@ -33,6 +33,6 @@ const ListTree = memo(forwardRef<SVGSVGElement, ListTreeProps>(({
 
 ListTree.displayName = 'ListTree';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { ListTree, ListTree as ListTreeIcon, ListTree as SiListTree };
 export default ListTree;

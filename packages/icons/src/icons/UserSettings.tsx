@@ -18,10 +18,10 @@ export interface UserSettingsProps extends IconProps {
  * For smaller bundle size, import specific variants directly:
  * import { UserSettingsRegular } from 'stera-icons/icons/UserSettingsRegular';
  */
-const UserSettings = memo(forwardRef<SVGSVGElement, UserSettingsProps>(({ 
+const UserSettings = memo(forwardRef<SVGSVGElement, UserSettingsProps>(({
   weight = 'regular',
   duotone = false,
-  ...rest 
+  ...rest
 }, ref) => {
   if (weight === 'bold' && duotone) return <UserSettingsBoldDuotone ref={ref} {...rest} />;
   if (weight === 'bold') return <UserSettingsBold ref={ref} {...rest} />;
@@ -33,6 +33,6 @@ const UserSettings = memo(forwardRef<SVGSVGElement, UserSettingsProps>(({
 
 UserSettings.displayName = 'UserSettings';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { UserSettings, UserSettings as UserSettingsIcon, UserSettings as SiUserSettings };
 export default UserSettings;

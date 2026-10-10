@@ -14,7 +14,7 @@ const InboxRegular = memo(
 
 InboxRegular.displayName = 'InboxRegular';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { InboxRegular, InboxRegular as InboxRegularIcon, InboxRegular as SiInboxRegular };
 export default InboxRegular;
 export type { InboxRegularProps };

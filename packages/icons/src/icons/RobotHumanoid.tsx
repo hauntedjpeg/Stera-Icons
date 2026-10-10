@@ -18,10 +18,10 @@ export interface RobotHumanoidProps extends IconProps {
  * For smaller bundle size, import specific variants directly:
  * import { RobotHumanoidRegular } from 'stera-icons/icons/RobotHumanoidRegular';
  */
-const RobotHumanoid = memo(forwardRef<SVGSVGElement, RobotHumanoidProps>(({ 
+const RobotHumanoid = memo(forwardRef<SVGSVGElement, RobotHumanoidProps>(({
   weight = 'regular',
   duotone = false,
-  ...rest 
+  ...rest
 }, ref) => {
   if (weight === 'bold' && duotone) return <RobotHumanoidBoldDuotone ref={ref} {...rest} />;
   if (weight === 'bold') return <RobotHumanoidBold ref={ref} {...rest} />;
@@ -33,6 +33,6 @@ const RobotHumanoid = memo(forwardRef<SVGSVGElement, RobotHumanoidProps>(({
 
 RobotHumanoid.displayName = 'RobotHumanoid';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { RobotHumanoid, RobotHumanoid as RobotHumanoidIcon, RobotHumanoid as SiRobotHumanoid };
 export default RobotHumanoid;

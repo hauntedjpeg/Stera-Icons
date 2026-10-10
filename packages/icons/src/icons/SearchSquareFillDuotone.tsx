@@ -16,7 +16,7 @@ const SearchSquareFillDuotone = memo(
 
 SearchSquareFillDuotone.displayName = 'SearchSquareFillDuotone';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { SearchSquareFillDuotone, SearchSquareFillDuotone as SearchSquareFillDuotoneIcon, SearchSquareFillDuotone as SiSearchSquareFillDuotone };
 export default SearchSquareFillDuotone;
 export type { SearchSquareFillDuotoneProps };

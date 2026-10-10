@@ -18,10 +18,10 @@ export interface TextSparkleProps extends IconProps {
  * For smaller bundle size, import specific variants directly:
  * import { TextSparkleRegular } from 'stera-icons/icons/TextSparkleRegular';
  */
-const TextSparkle = memo(forwardRef<SVGSVGElement, TextSparkleProps>(({ 
+const TextSparkle = memo(forwardRef<SVGSVGElement, TextSparkleProps>(({
   weight = 'regular',
   duotone = false,
-  ...rest 
+  ...rest
 }, ref) => {
   if (weight === 'bold' && duotone) return <TextSparkleBoldDuotone ref={ref} {...rest} />;
   if (weight === 'bold') return <TextSparkleBold ref={ref} {...rest} />;
@@ -33,6 +33,6 @@ const TextSparkle = memo(forwardRef<SVGSVGElement, TextSparkleProps>(({
 
 TextSparkle.displayName = 'TextSparkle';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { TextSparkle, TextSparkle as TextSparkleIcon, TextSparkle as SiTextSparkle };
 export default TextSparkle;

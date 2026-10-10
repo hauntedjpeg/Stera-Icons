@@ -14,7 +14,7 @@ const SnowflakeBold = memo(
 
 SnowflakeBold.displayName = 'SnowflakeBold';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { SnowflakeBold, SnowflakeBold as SnowflakeBoldIcon, SnowflakeBold as SiSnowflakeBold };
 export default SnowflakeBold;
 export type { SnowflakeBoldProps };

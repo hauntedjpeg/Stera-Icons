@@ -15,7 +15,7 @@ const TextUnderlineBoldDuotone = memo(
 
 TextUnderlineBoldDuotone.displayName = 'TextUnderlineBoldDuotone';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { TextUnderlineBoldDuotone, TextUnderlineBoldDuotone as TextUnderlineBoldDuotoneIcon, TextUnderlineBoldDuotone as SiTextUnderlineBoldDuotone };
 export default TextUnderlineBoldDuotone;
 export type { TextUnderlineBoldDuotoneProps };

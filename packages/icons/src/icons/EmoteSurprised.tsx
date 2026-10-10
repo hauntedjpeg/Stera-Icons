@@ -18,10 +18,10 @@ export interface EmoteSurprisedProps extends IconProps {
  * For smaller bundle size, import specific variants directly:
  * import { EmoteSurprisedRegular } from 'stera-icons/icons/EmoteSurprisedRegular';
  */
-const EmoteSurprised = memo(forwardRef<SVGSVGElement, EmoteSurprisedProps>(({ 
+const EmoteSurprised = memo(forwardRef<SVGSVGElement, EmoteSurprisedProps>(({
   weight = 'regular',
   duotone = false,
-  ...rest 
+  ...rest
 }, ref) => {
   if (weight === 'bold' && duotone) return <EmoteSurprisedBoldDuotone ref={ref} {...rest} />;
   if (weight === 'bold') return <EmoteSurprisedBold ref={ref} {...rest} />;
@@ -33,6 +33,6 @@ const EmoteSurprised = memo(forwardRef<SVGSVGElement, EmoteSurprisedProps>(({
 
 EmoteSurprised.displayName = 'EmoteSurprised';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { EmoteSurprised, EmoteSurprised as EmoteSurprisedIcon, EmoteSurprised as SiEmoteSurprised };
 export default EmoteSurprised;

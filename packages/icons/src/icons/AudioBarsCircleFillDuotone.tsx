@@ -15,7 +15,7 @@ const AudioBarsCircleFillDuotone = memo(
 
 AudioBarsCircleFillDuotone.displayName = 'AudioBarsCircleFillDuotone';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { AudioBarsCircleFillDuotone, AudioBarsCircleFillDuotone as AudioBarsCircleFillDuotoneIcon, AudioBarsCircleFillDuotone as SiAudioBarsCircleFillDuotone };
 export default AudioBarsCircleFillDuotone;
 export type { AudioBarsCircleFillDuotoneProps };

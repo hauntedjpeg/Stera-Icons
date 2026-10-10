@@ -15,7 +15,7 @@ const CursorTextAltFillDuotone = memo(
 
 CursorTextAltFillDuotone.displayName = 'CursorTextAltFillDuotone';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { CursorTextAltFillDuotone, CursorTextAltFillDuotone as CursorTextAltFillDuotoneIcon, CursorTextAltFillDuotone as SiCursorTextAltFillDuotone };
 export default CursorTextAltFillDuotone;
 export type { CursorTextAltFillDuotoneProps };

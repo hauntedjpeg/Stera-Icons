@@ -14,7 +14,7 @@ const ChartAreaRegular = memo(
 
 ChartAreaRegular.displayName = 'ChartAreaRegular';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { ChartAreaRegular, ChartAreaRegular as ChartAreaRegularIcon, ChartAreaRegular as SiChartAreaRegular };
 export default ChartAreaRegular;
 export type { ChartAreaRegularProps };

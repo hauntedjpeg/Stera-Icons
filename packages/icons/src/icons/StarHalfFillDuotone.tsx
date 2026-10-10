@@ -15,7 +15,7 @@ const StarHalfFillDuotone = memo(
 
 StarHalfFillDuotone.displayName = 'StarHalfFillDuotone';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { StarHalfFillDuotone, StarHalfFillDuotone as StarHalfFillDuotoneIcon, StarHalfFillDuotone as SiStarHalfFillDuotone };
 export default StarHalfFillDuotone;
 export type { StarHalfFillDuotoneProps };

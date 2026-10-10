@@ -16,7 +16,7 @@ const DocumentSearchBoldDuotone = memo(
 
 DocumentSearchBoldDuotone.displayName = 'DocumentSearchBoldDuotone';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { DocumentSearchBoldDuotone, DocumentSearchBoldDuotone as DocumentSearchBoldDuotoneIcon, DocumentSearchBoldDuotone as SiDocumentSearchBoldDuotone };
 export default DocumentSearchBoldDuotone;
 export type { DocumentSearchBoldDuotoneProps };

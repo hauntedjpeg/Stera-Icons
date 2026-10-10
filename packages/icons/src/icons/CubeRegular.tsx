@@ -14,7 +14,7 @@ const CubeRegular = memo(
 
 CubeRegular.displayName = 'CubeRegular';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { CubeRegular, CubeRegular as CubeRegularIcon, CubeRegular as SiCubeRegular };
 export default CubeRegular;
 export type { CubeRegularProps };

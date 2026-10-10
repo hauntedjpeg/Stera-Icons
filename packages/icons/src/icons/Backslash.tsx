@@ -18,10 +18,10 @@ export interface BackslashProps extends IconProps {
  * For smaller bundle size, import specific variants directly:
  * import { BackslashRegular } from 'stera-icons/icons/BackslashRegular';
  */
-const Backslash = memo(forwardRef<SVGSVGElement, BackslashProps>(({ 
+const Backslash = memo(forwardRef<SVGSVGElement, BackslashProps>(({
   weight = 'regular',
   duotone = false,
-  ...rest 
+  ...rest
 }, ref) => {
   if (weight === 'bold' && duotone) return <BackslashBoldDuotone ref={ref} {...rest} />;
   if (weight === 'bold') return <BackslashBold ref={ref} {...rest} />;
@@ -33,6 +33,6 @@ const Backslash = memo(forwardRef<SVGSVGElement, BackslashProps>(({
 
 Backslash.displayName = 'Backslash';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { Backslash, Backslash as BackslashIcon, Backslash as SiBackslash };
 export default Backslash;

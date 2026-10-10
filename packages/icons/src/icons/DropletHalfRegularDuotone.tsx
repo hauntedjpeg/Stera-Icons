@@ -15,7 +15,7 @@ const DropletHalfRegularDuotone = memo(
 
 DropletHalfRegularDuotone.displayName = 'DropletHalfRegularDuotone';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { DropletHalfRegularDuotone, DropletHalfRegularDuotone as DropletHalfRegularDuotoneIcon, DropletHalfRegularDuotone as SiDropletHalfRegularDuotone };
 export default DropletHalfRegularDuotone;
 export type { DropletHalfRegularDuotoneProps };

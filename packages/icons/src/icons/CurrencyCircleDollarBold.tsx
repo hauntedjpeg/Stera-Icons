@@ -15,7 +15,7 @@ const CurrencyCircleDollarBold = memo(
 
 CurrencyCircleDollarBold.displayName = 'CurrencyCircleDollarBold';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { CurrencyCircleDollarBold, CurrencyCircleDollarBold as CurrencyCircleDollarBoldIcon, CurrencyCircleDollarBold as SiCurrencyCircleDollarBold };
 export default CurrencyCircleDollarBold;
 export type { CurrencyCircleDollarBoldProps };

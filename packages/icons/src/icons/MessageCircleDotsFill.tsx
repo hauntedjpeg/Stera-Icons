@@ -14,7 +14,7 @@ const MessageCircleDotsFill = memo(
 
 MessageCircleDotsFill.displayName = 'MessageCircleDotsFill';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { MessageCircleDotsFill, MessageCircleDotsFill as MessageCircleDotsFillIcon, MessageCircleDotsFill as SiMessageCircleDotsFill };
 export default MessageCircleDotsFill;
 export type { MessageCircleDotsFillProps };

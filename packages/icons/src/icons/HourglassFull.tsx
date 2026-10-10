@@ -18,10 +18,10 @@ export interface HourglassFullProps extends IconProps {
  * For smaller bundle size, import specific variants directly:
  * import { HourglassFullRegular } from 'stera-icons/icons/HourglassFullRegular';
  */
-const HourglassFull = memo(forwardRef<SVGSVGElement, HourglassFullProps>(({ 
+const HourglassFull = memo(forwardRef<SVGSVGElement, HourglassFullProps>(({
   weight = 'regular',
   duotone = false,
-  ...rest 
+  ...rest
 }, ref) => {
   if (weight === 'bold' && duotone) return <HourglassFullBoldDuotone ref={ref} {...rest} />;
   if (weight === 'bold') return <HourglassFullBold ref={ref} {...rest} />;
@@ -33,6 +33,6 @@ const HourglassFull = memo(forwardRef<SVGSVGElement, HourglassFullProps>(({
 
 HourglassFull.displayName = 'HourglassFull';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { HourglassFull, HourglassFull as HourglassFullIcon, HourglassFull as SiHourglassFull };
 export default HourglassFull;

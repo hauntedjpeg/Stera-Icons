@@ -14,7 +14,7 @@ const DataTableFill = memo(
 
 DataTableFill.displayName = 'DataTableFill';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { DataTableFill, DataTableFill as DataTableFillIcon, DataTableFill as SiDataTableFill };
 export default DataTableFill;
 export type { DataTableFillProps };

@@ -15,7 +15,7 @@ const ReceiptAltBoldDuotone = memo(
 
 ReceiptAltBoldDuotone.displayName = 'ReceiptAltBoldDuotone';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { ReceiptAltBoldDuotone, ReceiptAltBoldDuotone as ReceiptAltBoldDuotoneIcon, ReceiptAltBoldDuotone as SiReceiptAltBoldDuotone };
 export default ReceiptAltBoldDuotone;
 export type { ReceiptAltBoldDuotoneProps };

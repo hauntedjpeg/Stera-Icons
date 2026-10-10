@@ -18,10 +18,10 @@ export interface PoundSterlingProps extends IconProps {
  * For smaller bundle size, import specific variants directly:
  * import { PoundSterlingRegular } from 'stera-icons/icons/PoundSterlingRegular';
  */
-const PoundSterling = memo(forwardRef<SVGSVGElement, PoundSterlingProps>(({ 
+const PoundSterling = memo(forwardRef<SVGSVGElement, PoundSterlingProps>(({
   weight = 'regular',
   duotone = false,
-  ...rest 
+  ...rest
 }, ref) => {
   if (weight === 'bold' && duotone) return <PoundSterlingBoldDuotone ref={ref} {...rest} />;
   if (weight === 'bold') return <PoundSterlingBold ref={ref} {...rest} />;
@@ -33,6 +33,6 @@ const PoundSterling = memo(forwardRef<SVGSVGElement, PoundSterlingProps>(({
 
 PoundSterling.displayName = 'PoundSterling';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { PoundSterling, PoundSterling as PoundSterlingIcon, PoundSterling as SiPoundSterling };
 export default PoundSterling;

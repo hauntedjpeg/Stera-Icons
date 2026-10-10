@@ -18,10 +18,10 @@ export interface ImagePileProps extends IconProps {
  * For smaller bundle size, import specific variants directly:
  * import { ImagePileRegular } from 'stera-icons/icons/ImagePileRegular';
  */
-const ImagePile = memo(forwardRef<SVGSVGElement, ImagePileProps>(({ 
+const ImagePile = memo(forwardRef<SVGSVGElement, ImagePileProps>(({
   weight = 'regular',
   duotone = false,
-  ...rest 
+  ...rest
 }, ref) => {
   if (weight === 'bold' && duotone) return <ImagePileBoldDuotone ref={ref} {...rest} />;
   if (weight === 'bold') return <ImagePileBold ref={ref} {...rest} />;
@@ -33,6 +33,6 @@ const ImagePile = memo(forwardRef<SVGSVGElement, ImagePileProps>(({
 
 ImagePile.displayName = 'ImagePile';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { ImagePile, ImagePile as ImagePileIcon, ImagePile as SiImagePile };
 export default ImagePile;

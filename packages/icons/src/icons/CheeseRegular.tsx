@@ -14,7 +14,7 @@ const CheeseRegular = memo(
 
 CheeseRegular.displayName = 'CheeseRegular';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { CheeseRegular, CheeseRegular as CheeseRegularIcon, CheeseRegular as SiCheeseRegular };
 export default CheeseRegular;
 export type { CheeseRegularProps };

@@ -14,7 +14,7 @@ const SoccerBallRegular = memo(
 
 SoccerBallRegular.displayName = 'SoccerBallRegular';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { SoccerBallRegular, SoccerBallRegular as SoccerBallRegularIcon, SoccerBallRegular as SiSoccerBallRegular };
 export default SoccerBallRegular;
 export type { SoccerBallRegularProps };

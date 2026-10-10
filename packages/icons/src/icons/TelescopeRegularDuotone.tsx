@@ -17,7 +17,7 @@ const TelescopeRegularDuotone = memo(
 
 TelescopeRegularDuotone.displayName = 'TelescopeRegularDuotone';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { TelescopeRegularDuotone, TelescopeRegularDuotone as TelescopeRegularDuotoneIcon, TelescopeRegularDuotone as SiTelescopeRegularDuotone };
 export default TelescopeRegularDuotone;
 export type { TelescopeRegularDuotoneProps };

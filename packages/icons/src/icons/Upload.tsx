@@ -18,10 +18,10 @@ export interface UploadProps extends IconProps {
  * For smaller bundle size, import specific variants directly:
  * import { UploadRegular } from 'stera-icons/icons/UploadRegular';
  */
-const Upload = memo(forwardRef<SVGSVGElement, UploadProps>(({ 
+const Upload = memo(forwardRef<SVGSVGElement, UploadProps>(({
   weight = 'regular',
   duotone = false,
-  ...rest 
+  ...rest
 }, ref) => {
   if (weight === 'bold' && duotone) return <UploadBoldDuotone ref={ref} {...rest} />;
   if (weight === 'bold') return <UploadBold ref={ref} {...rest} />;
@@ -33,6 +33,6 @@ const Upload = memo(forwardRef<SVGSVGElement, UploadProps>(({
 
 Upload.displayName = 'Upload';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { Upload, Upload as UploadIcon, Upload as SiUpload };
 export default Upload;

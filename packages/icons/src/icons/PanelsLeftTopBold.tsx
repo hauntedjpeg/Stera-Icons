@@ -14,7 +14,7 @@ const PanelsLeftTopBold = memo(
 
 PanelsLeftTopBold.displayName = 'PanelsLeftTopBold';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { PanelsLeftTopBold, PanelsLeftTopBold as PanelsLeftTopBoldIcon, PanelsLeftTopBold as SiPanelsLeftTopBold };
 export default PanelsLeftTopBold;
 export type { PanelsLeftTopBoldProps };

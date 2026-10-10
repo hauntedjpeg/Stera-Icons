@@ -18,10 +18,10 @@ export interface ForkKnifeProps extends IconProps {
  * For smaller bundle size, import specific variants directly:
  * import { ForkKnifeRegular } from 'stera-icons/icons/ForkKnifeRegular';
  */
-const ForkKnife = memo(forwardRef<SVGSVGElement, ForkKnifeProps>(({ 
+const ForkKnife = memo(forwardRef<SVGSVGElement, ForkKnifeProps>(({
   weight = 'regular',
   duotone = false,
-  ...rest 
+  ...rest
 }, ref) => {
   if (weight === 'bold' && duotone) return <ForkKnifeBoldDuotone ref={ref} {...rest} />;
   if (weight === 'bold') return <ForkKnifeBold ref={ref} {...rest} />;
@@ -33,6 +33,6 @@ const ForkKnife = memo(forwardRef<SVGSVGElement, ForkKnifeProps>(({
 
 ForkKnife.displayName = 'ForkKnife';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { ForkKnife, ForkKnife as ForkKnifeIcon, ForkKnife as SiForkKnife };
 export default ForkKnife;

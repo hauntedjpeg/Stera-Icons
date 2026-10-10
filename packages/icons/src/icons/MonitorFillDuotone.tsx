@@ -15,7 +15,7 @@ const MonitorFillDuotone = memo(
 
 MonitorFillDuotone.displayName = 'MonitorFillDuotone';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { MonitorFillDuotone, MonitorFillDuotone as MonitorFillDuotoneIcon, MonitorFillDuotone as SiMonitorFillDuotone };
 export default MonitorFillDuotone;
 export type { MonitorFillDuotoneProps };

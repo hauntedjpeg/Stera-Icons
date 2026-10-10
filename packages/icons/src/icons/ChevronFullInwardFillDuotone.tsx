@@ -15,7 +15,7 @@ const ChevronFullInwardFillDuotone = memo(
 
 ChevronFullInwardFillDuotone.displayName = 'ChevronFullInwardFillDuotone';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { ChevronFullInwardFillDuotone, ChevronFullInwardFillDuotone as ChevronFullInwardFillDuotoneIcon, ChevronFullInwardFillDuotone as SiChevronFullInwardFillDuotone };
 export default ChevronFullInwardFillDuotone;
 export type { ChevronFullInwardFillDuotoneProps };

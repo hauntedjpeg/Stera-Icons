@@ -15,7 +15,7 @@ const CalendarMinusFillDuotone = memo(
 
 CalendarMinusFillDuotone.displayName = 'CalendarMinusFillDuotone';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { CalendarMinusFillDuotone, CalendarMinusFillDuotone as CalendarMinusFillDuotoneIcon, CalendarMinusFillDuotone as SiCalendarMinusFillDuotone };
 export default CalendarMinusFillDuotone;
 export type { CalendarMinusFillDuotoneProps };

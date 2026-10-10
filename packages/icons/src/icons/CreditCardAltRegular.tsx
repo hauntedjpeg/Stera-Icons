@@ -15,7 +15,7 @@ const CreditCardAltRegular = memo(
 
 CreditCardAltRegular.displayName = 'CreditCardAltRegular';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { CreditCardAltRegular, CreditCardAltRegular as CreditCardAltRegularIcon, CreditCardAltRegular as SiCreditCardAltRegular };
 export default CreditCardAltRegular;
 export type { CreditCardAltRegularProps };

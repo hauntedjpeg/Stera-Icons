@@ -14,7 +14,7 @@ const AppleRegular = memo(
 
 AppleRegular.displayName = 'AppleRegular';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { AppleRegular, AppleRegular as AppleRegularIcon, AppleRegular as SiAppleRegular };
 export default AppleRegular;
 export type { AppleRegularProps };

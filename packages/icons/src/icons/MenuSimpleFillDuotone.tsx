@@ -15,7 +15,7 @@ const MenuSimpleFillDuotone = memo(
 
 MenuSimpleFillDuotone.displayName = 'MenuSimpleFillDuotone';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { MenuSimpleFillDuotone, MenuSimpleFillDuotone as MenuSimpleFillDuotoneIcon, MenuSimpleFillDuotone as SiMenuSimpleFillDuotone };
 export default MenuSimpleFillDuotone;
 export type { MenuSimpleFillDuotoneProps };

@@ -18,10 +18,10 @@ export interface AlertSquareProps extends IconProps {
  * For smaller bundle size, import specific variants directly:
  * import { AlertSquareRegular } from 'stera-icons/icons/AlertSquareRegular';
  */
-const AlertSquare = memo(forwardRef<SVGSVGElement, AlertSquareProps>(({ 
+const AlertSquare = memo(forwardRef<SVGSVGElement, AlertSquareProps>(({
   weight = 'regular',
   duotone = false,
-  ...rest 
+  ...rest
 }, ref) => {
   if (weight === 'bold' && duotone) return <AlertSquareBoldDuotone ref={ref} {...rest} />;
   if (weight === 'bold') return <AlertSquareBold ref={ref} {...rest} />;
@@ -33,6 +33,6 @@ const AlertSquare = memo(forwardRef<SVGSVGElement, AlertSquareProps>(({
 
 AlertSquare.displayName = 'AlertSquare';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { AlertSquare, AlertSquare as AlertSquareIcon, AlertSquare as SiAlertSquare };
 export default AlertSquare;

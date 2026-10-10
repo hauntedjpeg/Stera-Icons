@@ -18,10 +18,10 @@ export interface DragHandleProps extends IconProps {
  * For smaller bundle size, import specific variants directly:
  * import { DragHandleRegular } from 'stera-icons/icons/DragHandleRegular';
  */
-const DragHandle = memo(forwardRef<SVGSVGElement, DragHandleProps>(({ 
+const DragHandle = memo(forwardRef<SVGSVGElement, DragHandleProps>(({
   weight = 'regular',
   duotone = false,
-  ...rest 
+  ...rest
 }, ref) => {
   if (weight === 'bold' && duotone) return <DragHandleBoldDuotone ref={ref} {...rest} />;
   if (weight === 'bold') return <DragHandleBold ref={ref} {...rest} />;
@@ -33,6 +33,6 @@ const DragHandle = memo(forwardRef<SVGSVGElement, DragHandleProps>(({
 
 DragHandle.displayName = 'DragHandle';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { DragHandle, DragHandle as DragHandleIcon, DragHandle as SiDragHandle };
 export default DragHandle;

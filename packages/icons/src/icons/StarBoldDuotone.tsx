@@ -15,7 +15,7 @@ const StarBoldDuotone = memo(
 
 StarBoldDuotone.displayName = 'StarBoldDuotone';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { StarBoldDuotone, StarBoldDuotone as StarBoldDuotoneIcon, StarBoldDuotone as SiStarBoldDuotone };
 export default StarBoldDuotone;
 export type { StarBoldDuotoneProps };

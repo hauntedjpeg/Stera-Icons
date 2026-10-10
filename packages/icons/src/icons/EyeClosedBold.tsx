@@ -14,7 +14,7 @@ const EyeClosedBold = memo(
 
 EyeClosedBold.displayName = 'EyeClosedBold';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { EyeClosedBold, EyeClosedBold as EyeClosedBoldIcon, EyeClosedBold as SiEyeClosedBold };
 export default EyeClosedBold;
 export type { EyeClosedBoldProps };

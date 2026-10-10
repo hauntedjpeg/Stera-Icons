@@ -18,10 +18,10 @@ export interface EggProps extends IconProps {
  * For smaller bundle size, import specific variants directly:
  * import { EggRegular } from 'stera-icons/icons/EggRegular';
  */
-const Egg = memo(forwardRef<SVGSVGElement, EggProps>(({ 
+const Egg = memo(forwardRef<SVGSVGElement, EggProps>(({
   weight = 'regular',
   duotone = false,
-  ...rest 
+  ...rest
 }, ref) => {
   if (weight === 'bold' && duotone) return <EggBoldDuotone ref={ref} {...rest} />;
   if (weight === 'bold') return <EggBold ref={ref} {...rest} />;
@@ -33,6 +33,6 @@ const Egg = memo(forwardRef<SVGSVGElement, EggProps>(({
 
 Egg.displayName = 'Egg';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { Egg, Egg as EggIcon, Egg as SiEgg };
 export default Egg;

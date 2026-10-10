@@ -18,10 +18,10 @@ export interface PolarisProps extends IconProps {
  * For smaller bundle size, import specific variants directly:
  * import { PolarisRegular } from 'stera-icons/icons/PolarisRegular';
  */
-const Polaris = memo(forwardRef<SVGSVGElement, PolarisProps>(({ 
+const Polaris = memo(forwardRef<SVGSVGElement, PolarisProps>(({
   weight = 'regular',
   duotone = false,
-  ...rest 
+  ...rest
 }, ref) => {
   if (weight === 'bold' && duotone) return <PolarisBoldDuotone ref={ref} {...rest} />;
   if (weight === 'bold') return <PolarisBold ref={ref} {...rest} />;
@@ -33,6 +33,6 @@ const Polaris = memo(forwardRef<SVGSVGElement, PolarisProps>(({
 
 Polaris.displayName = 'Polaris';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { Polaris, Polaris as PolarisIcon, Polaris as SiPolaris };
 export default Polaris;

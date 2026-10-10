@@ -14,7 +14,7 @@ const ArrowsUpDownRegular = memo(
 
 ArrowsUpDownRegular.displayName = 'ArrowsUpDownRegular';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { ArrowsUpDownRegular, ArrowsUpDownRegular as ArrowsUpDownRegularIcon, ArrowsUpDownRegular as SiArrowsUpDownRegular };
 export default ArrowsUpDownRegular;
 export type { ArrowsUpDownRegularProps };

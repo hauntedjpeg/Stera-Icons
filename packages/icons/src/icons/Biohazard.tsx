@@ -18,10 +18,10 @@ export interface BiohazardProps extends IconProps {
  * For smaller bundle size, import specific variants directly:
  * import { BiohazardRegular } from 'stera-icons/icons/BiohazardRegular';
  */
-const Biohazard = memo(forwardRef<SVGSVGElement, BiohazardProps>(({ 
+const Biohazard = memo(forwardRef<SVGSVGElement, BiohazardProps>(({
   weight = 'regular',
   duotone = false,
-  ...rest 
+  ...rest
 }, ref) => {
   if (weight === 'bold' && duotone) return <BiohazardBoldDuotone ref={ref} {...rest} />;
   if (weight === 'bold') return <BiohazardBold ref={ref} {...rest} />;
@@ -33,6 +33,6 @@ const Biohazard = memo(forwardRef<SVGSVGElement, BiohazardProps>(({
 
 Biohazard.displayName = 'Biohazard';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { Biohazard, Biohazard as BiohazardIcon, Biohazard as SiBiohazard };
 export default Biohazard;

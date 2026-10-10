@@ -18,10 +18,10 @@ export interface ArchwayProps extends IconProps {
  * For smaller bundle size, import specific variants directly:
  * import { ArchwayRegular } from 'stera-icons/icons/ArchwayRegular';
  */
-const Archway = memo(forwardRef<SVGSVGElement, ArchwayProps>(({ 
+const Archway = memo(forwardRef<SVGSVGElement, ArchwayProps>(({
   weight = 'regular',
   duotone = false,
-  ...rest 
+  ...rest
 }, ref) => {
   if (weight === 'bold' && duotone) return <ArchwayBoldDuotone ref={ref} {...rest} />;
   if (weight === 'bold') return <ArchwayBold ref={ref} {...rest} />;
@@ -33,6 +33,6 @@ const Archway = memo(forwardRef<SVGSVGElement, ArchwayProps>(({
 
 Archway.displayName = 'Archway';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { Archway, Archway as ArchwayIcon, Archway as SiArchway };
 export default Archway;

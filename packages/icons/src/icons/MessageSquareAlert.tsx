@@ -18,10 +18,10 @@ export interface MessageSquareAlertProps extends IconProps {
  * For smaller bundle size, import specific variants directly:
  * import { MessageSquareAlertRegular } from 'stera-icons/icons/MessageSquareAlertRegular';
  */
-const MessageSquareAlert = memo(forwardRef<SVGSVGElement, MessageSquareAlertProps>(({ 
+const MessageSquareAlert = memo(forwardRef<SVGSVGElement, MessageSquareAlertProps>(({
   weight = 'regular',
   duotone = false,
-  ...rest 
+  ...rest
 }, ref) => {
   if (weight === 'bold' && duotone) return <MessageSquareAlertBoldDuotone ref={ref} {...rest} />;
   if (weight === 'bold') return <MessageSquareAlertBold ref={ref} {...rest} />;
@@ -33,6 +33,6 @@ const MessageSquareAlert = memo(forwardRef<SVGSVGElement, MessageSquareAlertProp
 
 MessageSquareAlert.displayName = 'MessageSquareAlert';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { MessageSquareAlert, MessageSquareAlert as MessageSquareAlertIcon, MessageSquareAlert as SiMessageSquareAlert };
 export default MessageSquareAlert;

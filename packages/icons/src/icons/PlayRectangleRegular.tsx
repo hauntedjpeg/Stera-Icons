@@ -15,7 +15,7 @@ const PlayRectangleRegular = memo(
 
 PlayRectangleRegular.displayName = 'PlayRectangleRegular';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { PlayRectangleRegular, PlayRectangleRegular as PlayRectangleRegularIcon, PlayRectangleRegular as SiPlayRectangleRegular };
 export default PlayRectangleRegular;
 export type { PlayRectangleRegularProps };

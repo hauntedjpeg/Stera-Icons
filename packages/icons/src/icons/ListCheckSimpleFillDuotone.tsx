@@ -15,7 +15,7 @@ const ListCheckSimpleFillDuotone = memo(
 
 ListCheckSimpleFillDuotone.displayName = 'ListCheckSimpleFillDuotone';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { ListCheckSimpleFillDuotone, ListCheckSimpleFillDuotone as ListCheckSimpleFillDuotoneIcon, ListCheckSimpleFillDuotone as SiListCheckSimpleFillDuotone };
 export default ListCheckSimpleFillDuotone;
 export type { ListCheckSimpleFillDuotoneProps };

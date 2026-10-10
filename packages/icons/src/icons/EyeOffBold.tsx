@@ -14,7 +14,7 @@ const EyeOffBold = memo(
 
 EyeOffBold.displayName = 'EyeOffBold';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { EyeOffBold, EyeOffBold as EyeOffBoldIcon, EyeOffBold as SiEyeOffBold };
 export default EyeOffBold;
 export type { EyeOffBoldProps };

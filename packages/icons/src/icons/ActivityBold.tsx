@@ -14,7 +14,7 @@ const ActivityBold = memo(
 
 ActivityBold.displayName = 'ActivityBold';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { ActivityBold, ActivityBold as ActivityBoldIcon, ActivityBold as SiActivityBold };
 export default ActivityBold;
 export type { ActivityBoldProps };

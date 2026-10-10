@@ -15,7 +15,7 @@ const MenuAltFillDuotone = memo(
 
 MenuAltFillDuotone.displayName = 'MenuAltFillDuotone';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { MenuAltFillDuotone, MenuAltFillDuotone as MenuAltFillDuotoneIcon, MenuAltFillDuotone as SiMenuAltFillDuotone };
 export default MenuAltFillDuotone;
 export type { MenuAltFillDuotoneProps };

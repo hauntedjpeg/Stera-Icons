@@ -14,7 +14,7 @@ const SettingsFill = memo(
 
 SettingsFill.displayName = 'SettingsFill';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { SettingsFill, SettingsFill as SettingsFillIcon, SettingsFill as SiSettingsFill };
 export default SettingsFill;
 export type { SettingsFillProps };

@@ -18,10 +18,10 @@ export interface StethoscopeProps extends IconProps {
  * For smaller bundle size, import specific variants directly:
  * import { StethoscopeRegular } from 'stera-icons/icons/StethoscopeRegular';
  */
-const Stethoscope = memo(forwardRef<SVGSVGElement, StethoscopeProps>(({ 
+const Stethoscope = memo(forwardRef<SVGSVGElement, StethoscopeProps>(({
   weight = 'regular',
   duotone = false,
-  ...rest 
+  ...rest
 }, ref) => {
   if (weight === 'bold' && duotone) return <StethoscopeBoldDuotone ref={ref} {...rest} />;
   if (weight === 'bold') return <StethoscopeBold ref={ref} {...rest} />;
@@ -33,6 +33,6 @@ const Stethoscope = memo(forwardRef<SVGSVGElement, StethoscopeProps>(({
 
 Stethoscope.displayName = 'Stethoscope';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { Stethoscope, Stethoscope as StethoscopeIcon, Stethoscope as SiStethoscope };
 export default Stethoscope;

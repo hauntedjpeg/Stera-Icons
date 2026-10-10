@@ -18,10 +18,10 @@ export interface PercentSquareProps extends IconProps {
  * For smaller bundle size, import specific variants directly:
  * import { PercentSquareRegular } from 'stera-icons/icons/PercentSquareRegular';
  */
-const PercentSquare = memo(forwardRef<SVGSVGElement, PercentSquareProps>(({ 
+const PercentSquare = memo(forwardRef<SVGSVGElement, PercentSquareProps>(({
   weight = 'regular',
   duotone = false,
-  ...rest 
+  ...rest
 }, ref) => {
   if (weight === 'bold' && duotone) return <PercentSquareBoldDuotone ref={ref} {...rest} />;
   if (weight === 'bold') return <PercentSquareBold ref={ref} {...rest} />;
@@ -33,6 +33,6 @@ const PercentSquare = memo(forwardRef<SVGSVGElement, PercentSquareProps>(({
 
 PercentSquare.displayName = 'PercentSquare';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { PercentSquare, PercentSquare as PercentSquareIcon, PercentSquare as SiPercentSquare };
 export default PercentSquare;

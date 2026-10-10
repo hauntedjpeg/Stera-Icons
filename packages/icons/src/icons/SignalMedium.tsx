@@ -18,10 +18,10 @@ export interface SignalMediumProps extends IconProps {
  * For smaller bundle size, import specific variants directly:
  * import { SignalMediumRegular } from 'stera-icons/icons/SignalMediumRegular';
  */
-const SignalMedium = memo(forwardRef<SVGSVGElement, SignalMediumProps>(({ 
+const SignalMedium = memo(forwardRef<SVGSVGElement, SignalMediumProps>(({
   weight = 'regular',
   duotone = false,
-  ...rest 
+  ...rest
 }, ref) => {
   if (weight === 'bold' && duotone) return <SignalMediumBoldDuotone ref={ref} {...rest} />;
   if (weight === 'bold') return <SignalMediumBold ref={ref} {...rest} />;
@@ -33,6 +33,6 @@ const SignalMedium = memo(forwardRef<SVGSVGElement, SignalMediumProps>(({
 
 SignalMedium.displayName = 'SignalMedium';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { SignalMedium, SignalMedium as SignalMediumIcon, SignalMedium as SiSignalMedium };
 export default SignalMedium;

@@ -15,7 +15,7 @@ const GitCompareBoldDuotone = memo(
 
 GitCompareBoldDuotone.displayName = 'GitCompareBoldDuotone';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { GitCompareBoldDuotone, GitCompareBoldDuotone as GitCompareBoldDuotoneIcon, GitCompareBoldDuotone as SiGitCompareBoldDuotone };
 export default GitCompareBoldDuotone;
 export type { GitCompareBoldDuotoneProps };

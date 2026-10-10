@@ -15,7 +15,7 @@ const PushPinAltFillDuotone = memo(
 
 PushPinAltFillDuotone.displayName = 'PushPinAltFillDuotone';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { PushPinAltFillDuotone, PushPinAltFillDuotone as PushPinAltFillDuotoneIcon, PushPinAltFillDuotone as SiPushPinAltFillDuotone };
 export default PushPinAltFillDuotone;
 export type { PushPinAltFillDuotoneProps };

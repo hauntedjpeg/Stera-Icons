@@ -18,10 +18,10 @@ export interface TextAlignCenterProps extends IconProps {
  * For smaller bundle size, import specific variants directly:
  * import { TextAlignCenterRegular } from 'stera-icons/icons/TextAlignCenterRegular';
  */
-const TextAlignCenter = memo(forwardRef<SVGSVGElement, TextAlignCenterProps>(({ 
+const TextAlignCenter = memo(forwardRef<SVGSVGElement, TextAlignCenterProps>(({
   weight = 'regular',
   duotone = false,
-  ...rest 
+  ...rest
 }, ref) => {
   if (weight === 'bold' && duotone) return <TextAlignCenterBoldDuotone ref={ref} {...rest} />;
   if (weight === 'bold') return <TextAlignCenterBold ref={ref} {...rest} />;
@@ -33,6 +33,6 @@ const TextAlignCenter = memo(forwardRef<SVGSVGElement, TextAlignCenterProps>(({
 
 TextAlignCenter.displayName = 'TextAlignCenter';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { TextAlignCenter, TextAlignCenter as TextAlignCenterIcon, TextAlignCenter as SiTextAlignCenter };
 export default TextAlignCenter;

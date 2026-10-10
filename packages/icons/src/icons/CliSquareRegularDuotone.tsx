@@ -15,7 +15,7 @@ const CliSquareRegularDuotone = memo(
 
 CliSquareRegularDuotone.displayName = 'CliSquareRegularDuotone';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { CliSquareRegularDuotone, CliSquareRegularDuotone as CliSquareRegularDuotoneIcon, CliSquareRegularDuotone as SiCliSquareRegularDuotone };
 export default CliSquareRegularDuotone;
 export type { CliSquareRegularDuotoneProps };

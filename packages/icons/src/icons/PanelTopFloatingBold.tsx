@@ -15,7 +15,7 @@ const PanelTopFloatingBold = memo(
 
 PanelTopFloatingBold.displayName = 'PanelTopFloatingBold';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { PanelTopFloatingBold, PanelTopFloatingBold as PanelTopFloatingBoldIcon, PanelTopFloatingBold as SiPanelTopFloatingBold };
 export default PanelTopFloatingBold;
 export type { PanelTopFloatingBoldProps };

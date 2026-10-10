@@ -15,7 +15,7 @@ const AlertDiamondRegularDuotone = memo(
 
 AlertDiamondRegularDuotone.displayName = 'AlertDiamondRegularDuotone';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { AlertDiamondRegularDuotone, AlertDiamondRegularDuotone as AlertDiamondRegularDuotoneIcon, AlertDiamondRegularDuotone as SiAlertDiamondRegularDuotone };
 export default AlertDiamondRegularDuotone;
 export type { AlertDiamondRegularDuotoneProps };

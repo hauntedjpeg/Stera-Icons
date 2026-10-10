@@ -14,7 +14,7 @@ const LayoutMasonryRegular = memo(
 
 LayoutMasonryRegular.displayName = 'LayoutMasonryRegular';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { LayoutMasonryRegular, LayoutMasonryRegular as LayoutMasonryRegularIcon, LayoutMasonryRegular as SiLayoutMasonryRegular };
 export default LayoutMasonryRegular;
 export type { LayoutMasonryRegularProps };

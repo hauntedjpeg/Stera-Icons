@@ -18,10 +18,10 @@ export interface GitCompareProps extends IconProps {
  * For smaller bundle size, import specific variants directly:
  * import { GitCompareRegular } from 'stera-icons/icons/GitCompareRegular';
  */
-const GitCompare = memo(forwardRef<SVGSVGElement, GitCompareProps>(({ 
+const GitCompare = memo(forwardRef<SVGSVGElement, GitCompareProps>(({
   weight = 'regular',
   duotone = false,
-  ...rest 
+  ...rest
 }, ref) => {
   if (weight === 'bold' && duotone) return <GitCompareBoldDuotone ref={ref} {...rest} />;
   if (weight === 'bold') return <GitCompareBold ref={ref} {...rest} />;
@@ -33,6 +33,6 @@ const GitCompare = memo(forwardRef<SVGSVGElement, GitCompareProps>(({
 
 GitCompare.displayName = 'GitCompare';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { GitCompare, GitCompare as GitCompareIcon, GitCompare as SiGitCompare };
 export default GitCompare;

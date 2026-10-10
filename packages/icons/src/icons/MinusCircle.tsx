@@ -18,10 +18,10 @@ export interface MinusCircleProps extends IconProps {
  * For smaller bundle size, import specific variants directly:
  * import { MinusCircleRegular } from 'stera-icons/icons/MinusCircleRegular';
  */
-const MinusCircle = memo(forwardRef<SVGSVGElement, MinusCircleProps>(({ 
+const MinusCircle = memo(forwardRef<SVGSVGElement, MinusCircleProps>(({
   weight = 'regular',
   duotone = false,
-  ...rest 
+  ...rest
 }, ref) => {
   if (weight === 'bold' && duotone) return <MinusCircleBoldDuotone ref={ref} {...rest} />;
   if (weight === 'bold') return <MinusCircleBold ref={ref} {...rest} />;
@@ -33,6 +33,6 @@ const MinusCircle = memo(forwardRef<SVGSVGElement, MinusCircleProps>(({
 
 MinusCircle.displayName = 'MinusCircle';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { MinusCircle, MinusCircle as MinusCircleIcon, MinusCircle as SiMinusCircle };
 export default MinusCircle;

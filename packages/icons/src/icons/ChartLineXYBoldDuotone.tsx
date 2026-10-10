@@ -15,7 +15,7 @@ const ChartLineXYBoldDuotone = memo(
 
 ChartLineXYBoldDuotone.displayName = 'ChartLineXYBoldDuotone';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { ChartLineXYBoldDuotone, ChartLineXYBoldDuotone as ChartLineXYBoldDuotoneIcon, ChartLineXYBoldDuotone as SiChartLineXYBoldDuotone };
 export default ChartLineXYBoldDuotone;
 export type { ChartLineXYBoldDuotoneProps };

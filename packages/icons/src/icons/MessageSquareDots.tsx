@@ -18,10 +18,10 @@ export interface MessageSquareDotsProps extends IconProps {
  * For smaller bundle size, import specific variants directly:
  * import { MessageSquareDotsRegular } from 'stera-icons/icons/MessageSquareDotsRegular';
  */
-const MessageSquareDots = memo(forwardRef<SVGSVGElement, MessageSquareDotsProps>(({ 
+const MessageSquareDots = memo(forwardRef<SVGSVGElement, MessageSquareDotsProps>(({
   weight = 'regular',
   duotone = false,
-  ...rest 
+  ...rest
 }, ref) => {
   if (weight === 'bold' && duotone) return <MessageSquareDotsBoldDuotone ref={ref} {...rest} />;
   if (weight === 'bold') return <MessageSquareDotsBold ref={ref} {...rest} />;
@@ -33,6 +33,6 @@ const MessageSquareDots = memo(forwardRef<SVGSVGElement, MessageSquareDotsProps>
 
 MessageSquareDots.displayName = 'MessageSquareDots';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { MessageSquareDots, MessageSquareDots as MessageSquareDotsIcon, MessageSquareDots as SiMessageSquareDots };
 export default MessageSquareDots;

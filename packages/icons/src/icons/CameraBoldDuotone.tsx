@@ -15,7 +15,7 @@ const CameraBoldDuotone = memo(
 
 CameraBoldDuotone.displayName = 'CameraBoldDuotone';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { CameraBoldDuotone, CameraBoldDuotone as CameraBoldDuotoneIcon, CameraBoldDuotone as SiCameraBoldDuotone };
 export default CameraBoldDuotone;
 export type { CameraBoldDuotoneProps };

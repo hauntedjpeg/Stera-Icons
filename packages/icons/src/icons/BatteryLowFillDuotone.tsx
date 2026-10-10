@@ -15,7 +15,7 @@ const BatteryLowFillDuotone = memo(
 
 BatteryLowFillDuotone.displayName = 'BatteryLowFillDuotone';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { BatteryLowFillDuotone, BatteryLowFillDuotone as BatteryLowFillDuotoneIcon, BatteryLowFillDuotone as SiBatteryLowFillDuotone };
 export default BatteryLowFillDuotone;
 export type { BatteryLowFillDuotoneProps };

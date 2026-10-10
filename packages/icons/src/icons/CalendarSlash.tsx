@@ -18,10 +18,10 @@ export interface CalendarSlashProps extends IconProps {
  * For smaller bundle size, import specific variants directly:
  * import { CalendarSlashRegular } from 'stera-icons/icons/CalendarSlashRegular';
  */
-const CalendarSlash = memo(forwardRef<SVGSVGElement, CalendarSlashProps>(({ 
+const CalendarSlash = memo(forwardRef<SVGSVGElement, CalendarSlashProps>(({
   weight = 'regular',
   duotone = false,
-  ...rest 
+  ...rest
 }, ref) => {
   if (weight === 'bold' && duotone) return <CalendarSlashBoldDuotone ref={ref} {...rest} />;
   if (weight === 'bold') return <CalendarSlashBold ref={ref} {...rest} />;
@@ -33,6 +33,6 @@ const CalendarSlash = memo(forwardRef<SVGSVGElement, CalendarSlashProps>(({
 
 CalendarSlash.displayName = 'CalendarSlash';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { CalendarSlash, CalendarSlash as CalendarSlashIcon, CalendarSlash as SiCalendarSlash };
 export default CalendarSlash;

@@ -15,7 +15,7 @@ const ForkKnifeFillDuotone = memo(
 
 ForkKnifeFillDuotone.displayName = 'ForkKnifeFillDuotone';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { ForkKnifeFillDuotone, ForkKnifeFillDuotone as ForkKnifeFillDuotoneIcon, ForkKnifeFillDuotone as SiForkKnifeFillDuotone };
 export default ForkKnifeFillDuotone;
 export type { ForkKnifeFillDuotoneProps };

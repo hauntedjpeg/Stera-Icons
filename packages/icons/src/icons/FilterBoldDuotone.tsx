@@ -15,7 +15,7 @@ const FilterBoldDuotone = memo(
 
 FilterBoldDuotone.displayName = 'FilterBoldDuotone';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { FilterBoldDuotone, FilterBoldDuotone as FilterBoldDuotoneIcon, FilterBoldDuotone as SiFilterBoldDuotone };
 export default FilterBoldDuotone;
 export type { FilterBoldDuotoneProps };

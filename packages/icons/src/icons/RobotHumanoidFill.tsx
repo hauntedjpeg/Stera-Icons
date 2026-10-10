@@ -14,7 +14,7 @@ const RobotHumanoidFill = memo(
 
 RobotHumanoidFill.displayName = 'RobotHumanoidFill';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { RobotHumanoidFill, RobotHumanoidFill as RobotHumanoidFillIcon, RobotHumanoidFill as SiRobotHumanoidFill };
 export default RobotHumanoidFill;
 export type { RobotHumanoidFillProps };

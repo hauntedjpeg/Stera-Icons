@@ -15,7 +15,7 @@ const OverlappingCirclesDashBoldDuotone = memo(
 
 OverlappingCirclesDashBoldDuotone.displayName = 'OverlappingCirclesDashBoldDuotone';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { OverlappingCirclesDashBoldDuotone, OverlappingCirclesDashBoldDuotone as OverlappingCirclesDashBoldDuotoneIcon, OverlappingCirclesDashBoldDuotone as SiOverlappingCirclesDashBoldDuotone };
 export default OverlappingCirclesDashBoldDuotone;
 export type { OverlappingCirclesDashBoldDuotoneProps };

@@ -14,7 +14,7 @@ const HamburgerRegular = memo(
 
 HamburgerRegular.displayName = 'HamburgerRegular';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { HamburgerRegular, HamburgerRegular as HamburgerRegularIcon, HamburgerRegular as SiHamburgerRegular };
 export default HamburgerRegular;
 export type { HamburgerRegularProps };

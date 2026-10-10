@@ -14,7 +14,7 @@ const RepeatBold = memo(
 
 RepeatBold.displayName = 'RepeatBold';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { RepeatBold, RepeatBold as RepeatBoldIcon, RepeatBold as SiRepeatBold };
 export default RepeatBold;
 export type { RepeatBoldProps };

@@ -18,10 +18,10 @@ export interface ImageLandscapeProps extends IconProps {
  * For smaller bundle size, import specific variants directly:
  * import { ImageLandscapeRegular } from 'stera-icons/icons/ImageLandscapeRegular';
  */
-const ImageLandscape = memo(forwardRef<SVGSVGElement, ImageLandscapeProps>(({ 
+const ImageLandscape = memo(forwardRef<SVGSVGElement, ImageLandscapeProps>(({
   weight = 'regular',
   duotone = false,
-  ...rest 
+  ...rest
 }, ref) => {
   if (weight === 'bold' && duotone) return <ImageLandscapeBoldDuotone ref={ref} {...rest} />;
   if (weight === 'bold') return <ImageLandscapeBold ref={ref} {...rest} />;
@@ -33,6 +33,6 @@ const ImageLandscape = memo(forwardRef<SVGSVGElement, ImageLandscapeProps>(({
 
 ImageLandscape.displayName = 'ImageLandscape';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { ImageLandscape, ImageLandscape as ImageLandscapeIcon, ImageLandscape as SiImageLandscape };
 export default ImageLandscape;

@@ -14,7 +14,7 @@ const StethoscopeRegular = memo(
 
 StethoscopeRegular.displayName = 'StethoscopeRegular';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { StethoscopeRegular, StethoscopeRegular as StethoscopeRegularIcon, StethoscopeRegular as SiStethoscopeRegular };
 export default StethoscopeRegular;
 export type { StethoscopeRegularProps };

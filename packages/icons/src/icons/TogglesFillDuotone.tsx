@@ -15,7 +15,7 @@ const TogglesFillDuotone = memo(
 
 TogglesFillDuotone.displayName = 'TogglesFillDuotone';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { TogglesFillDuotone, TogglesFillDuotone as TogglesFillDuotoneIcon, TogglesFillDuotone as SiTogglesFillDuotone };
 export default TogglesFillDuotone;
 export type { TogglesFillDuotoneProps };

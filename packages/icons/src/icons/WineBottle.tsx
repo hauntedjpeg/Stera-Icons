@@ -18,10 +18,10 @@ export interface WineBottleProps extends IconProps {
  * For smaller bundle size, import specific variants directly:
  * import { WineBottleRegular } from 'stera-icons/icons/WineBottleRegular';
  */
-const WineBottle = memo(forwardRef<SVGSVGElement, WineBottleProps>(({ 
+const WineBottle = memo(forwardRef<SVGSVGElement, WineBottleProps>(({
   weight = 'regular',
   duotone = false,
-  ...rest 
+  ...rest
 }, ref) => {
   if (weight === 'bold' && duotone) return <WineBottleBoldDuotone ref={ref} {...rest} />;
   if (weight === 'bold') return <WineBottleBold ref={ref} {...rest} />;
@@ -33,6 +33,6 @@ const WineBottle = memo(forwardRef<SVGSVGElement, WineBottleProps>(({
 
 WineBottle.displayName = 'WineBottle';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { WineBottle, WineBottle as WineBottleIcon, WineBottle as SiWineBottle };
 export default WineBottle;

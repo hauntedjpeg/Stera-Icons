@@ -15,7 +15,7 @@ const LinkRegularDuotone = memo(
 
 LinkRegularDuotone.displayName = 'LinkRegularDuotone';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { LinkRegularDuotone, LinkRegularDuotone as LinkRegularDuotoneIcon, LinkRegularDuotone as SiLinkRegularDuotone };
 export default LinkRegularDuotone;
 export type { LinkRegularDuotoneProps };

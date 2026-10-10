@@ -15,7 +15,7 @@ const DrinkCanBold = memo(
 
 DrinkCanBold.displayName = 'DrinkCanBold';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { DrinkCanBold, DrinkCanBold as DrinkCanBoldIcon, DrinkCanBold as SiDrinkCanBold };
 export default DrinkCanBold;
 export type { DrinkCanBoldProps };

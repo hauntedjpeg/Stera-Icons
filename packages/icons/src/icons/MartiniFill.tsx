@@ -14,7 +14,7 @@ const MartiniFill = memo(
 
 MartiniFill.displayName = 'MartiniFill';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { MartiniFill, MartiniFill as MartiniFillIcon, MartiniFill as SiMartiniFill };
 export default MartiniFill;
 export type { MartiniFillProps };

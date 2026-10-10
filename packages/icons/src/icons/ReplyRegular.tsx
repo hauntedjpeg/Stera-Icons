@@ -14,7 +14,7 @@ const ReplyRegular = memo(
 
 ReplyRegular.displayName = 'ReplyRegular';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { ReplyRegular, ReplyRegular as ReplyRegularIcon, ReplyRegular as SiReplyRegular };
 export default ReplyRegular;
 export type { ReplyRegularProps };

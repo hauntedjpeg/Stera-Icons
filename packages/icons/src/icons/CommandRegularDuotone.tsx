@@ -15,7 +15,7 @@ const CommandRegularDuotone = memo(
 
 CommandRegularDuotone.displayName = 'CommandRegularDuotone';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { CommandRegularDuotone, CommandRegularDuotone as CommandRegularDuotoneIcon, CommandRegularDuotone as SiCommandRegularDuotone };
 export default CommandRegularDuotone;
 export type { CommandRegularDuotoneProps };

@@ -18,10 +18,10 @@ export interface UserCircleDashedProps extends IconProps {
  * For smaller bundle size, import specific variants directly:
  * import { UserCircleDashedRegular } from 'stera-icons/icons/UserCircleDashedRegular';
  */
-const UserCircleDashed = memo(forwardRef<SVGSVGElement, UserCircleDashedProps>(({ 
+const UserCircleDashed = memo(forwardRef<SVGSVGElement, UserCircleDashedProps>(({
   weight = 'regular',
   duotone = false,
-  ...rest 
+  ...rest
 }, ref) => {
   if (weight === 'bold' && duotone) return <UserCircleDashedBoldDuotone ref={ref} {...rest} />;
   if (weight === 'bold') return <UserCircleDashedBold ref={ref} {...rest} />;
@@ -33,6 +33,6 @@ const UserCircleDashed = memo(forwardRef<SVGSVGElement, UserCircleDashedProps>((
 
 UserCircleDashed.displayName = 'UserCircleDashed';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { UserCircleDashed, UserCircleDashed as UserCircleDashedIcon, UserCircleDashed as SiUserCircleDashed };
 export default UserCircleDashed;

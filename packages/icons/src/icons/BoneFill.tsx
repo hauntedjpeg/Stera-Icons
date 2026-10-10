@@ -14,7 +14,7 @@ const BoneFill = memo(
 
 BoneFill.displayName = 'BoneFill';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { BoneFill, BoneFill as BoneFillIcon, BoneFill as SiBoneFill };
 export default BoneFill;
 export type { BoneFillProps };

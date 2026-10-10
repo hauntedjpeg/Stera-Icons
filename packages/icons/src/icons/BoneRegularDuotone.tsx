@@ -15,7 +15,7 @@ const BoneRegularDuotone = memo(
 
 BoneRegularDuotone.displayName = 'BoneRegularDuotone';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { BoneRegularDuotone, BoneRegularDuotone as BoneRegularDuotoneIcon, BoneRegularDuotone as SiBoneRegularDuotone };
 export default BoneRegularDuotone;
 export type { BoneRegularDuotoneProps };

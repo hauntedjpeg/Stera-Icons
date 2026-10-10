@@ -18,10 +18,10 @@ export interface LayoutGridPlusProps extends IconProps {
  * For smaller bundle size, import specific variants directly:
  * import { LayoutGridPlusRegular } from 'stera-icons/icons/LayoutGridPlusRegular';
  */
-const LayoutGridPlus = memo(forwardRef<SVGSVGElement, LayoutGridPlusProps>(({ 
+const LayoutGridPlus = memo(forwardRef<SVGSVGElement, LayoutGridPlusProps>(({
   weight = 'regular',
   duotone = false,
-  ...rest 
+  ...rest
 }, ref) => {
   if (weight === 'bold' && duotone) return <LayoutGridPlusBoldDuotone ref={ref} {...rest} />;
   if (weight === 'bold') return <LayoutGridPlusBold ref={ref} {...rest} />;
@@ -33,6 +33,6 @@ const LayoutGridPlus = memo(forwardRef<SVGSVGElement, LayoutGridPlusProps>(({
 
 LayoutGridPlus.displayName = 'LayoutGridPlus';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { LayoutGridPlus, LayoutGridPlus as LayoutGridPlusIcon, LayoutGridPlus as SiLayoutGridPlus };
 export default LayoutGridPlus;

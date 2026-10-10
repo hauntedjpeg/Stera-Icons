@@ -15,7 +15,7 @@ const PipetteRegularDuotone = memo(
 
 PipetteRegularDuotone.displayName = 'PipetteRegularDuotone';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { PipetteRegularDuotone, PipetteRegularDuotone as PipetteRegularDuotoneIcon, PipetteRegularDuotone as SiPipetteRegularDuotone };
 export default PipetteRegularDuotone;
 export type { PipetteRegularDuotoneProps };

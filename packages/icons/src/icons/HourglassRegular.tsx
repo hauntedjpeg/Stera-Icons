@@ -14,7 +14,7 @@ const HourglassRegular = memo(
 
 HourglassRegular.displayName = 'HourglassRegular';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { HourglassRegular, HourglassRegular as HourglassRegularIcon, HourglassRegular as SiHourglassRegular };
 export default HourglassRegular;
 export type { HourglassRegularProps };

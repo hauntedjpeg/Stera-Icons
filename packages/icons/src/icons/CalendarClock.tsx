@@ -18,10 +18,10 @@ export interface CalendarClockProps extends IconProps {
  * For smaller bundle size, import specific variants directly:
  * import { CalendarClockRegular } from 'stera-icons/icons/CalendarClockRegular';
  */
-const CalendarClock = memo(forwardRef<SVGSVGElement, CalendarClockProps>(({ 
+const CalendarClock = memo(forwardRef<SVGSVGElement, CalendarClockProps>(({
   weight = 'regular',
   duotone = false,
-  ...rest 
+  ...rest
 }, ref) => {
   if (weight === 'bold' && duotone) return <CalendarClockBoldDuotone ref={ref} {...rest} />;
   if (weight === 'bold') return <CalendarClockBold ref={ref} {...rest} />;
@@ -33,6 +33,6 @@ const CalendarClock = memo(forwardRef<SVGSVGElement, CalendarClockProps>(({
 
 CalendarClock.displayName = 'CalendarClock';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { CalendarClock, CalendarClock as CalendarClockIcon, CalendarClock as SiCalendarClock };
 export default CalendarClock;

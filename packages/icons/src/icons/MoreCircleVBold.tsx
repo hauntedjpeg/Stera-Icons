@@ -15,7 +15,7 @@ const MoreCircleVBold = memo(
 
 MoreCircleVBold.displayName = 'MoreCircleVBold';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { MoreCircleVBold, MoreCircleVBold as MoreCircleVBoldIcon, MoreCircleVBold as SiMoreCircleVBold };
 export default MoreCircleVBold;
 export type { MoreCircleVBoldProps };

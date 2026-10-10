@@ -18,10 +18,10 @@ export interface LeafProps extends IconProps {
  * For smaller bundle size, import specific variants directly:
  * import { LeafRegular } from 'stera-icons/icons/LeafRegular';
  */
-const Leaf = memo(forwardRef<SVGSVGElement, LeafProps>(({ 
+const Leaf = memo(forwardRef<SVGSVGElement, LeafProps>(({
   weight = 'regular',
   duotone = false,
-  ...rest 
+  ...rest
 }, ref) => {
   if (weight === 'bold' && duotone) return <LeafBoldDuotone ref={ref} {...rest} />;
   if (weight === 'bold') return <LeafBold ref={ref} {...rest} />;
@@ -33,6 +33,6 @@ const Leaf = memo(forwardRef<SVGSVGElement, LeafProps>(({
 
 Leaf.displayName = 'Leaf';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { Leaf, Leaf as LeafIcon, Leaf as SiLeaf };
 export default Leaf;

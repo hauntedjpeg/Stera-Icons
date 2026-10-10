@@ -18,10 +18,10 @@ export interface MessageCirclePlusProps extends IconProps {
  * For smaller bundle size, import specific variants directly:
  * import { MessageCirclePlusRegular } from 'stera-icons/icons/MessageCirclePlusRegular';
  */
-const MessageCirclePlus = memo(forwardRef<SVGSVGElement, MessageCirclePlusProps>(({ 
+const MessageCirclePlus = memo(forwardRef<SVGSVGElement, MessageCirclePlusProps>(({
   weight = 'regular',
   duotone = false,
-  ...rest 
+  ...rest
 }, ref) => {
   if (weight === 'bold' && duotone) return <MessageCirclePlusBoldDuotone ref={ref} {...rest} />;
   if (weight === 'bold') return <MessageCirclePlusBold ref={ref} {...rest} />;
@@ -33,6 +33,6 @@ const MessageCirclePlus = memo(forwardRef<SVGSVGElement, MessageCirclePlusProps>
 
 MessageCirclePlus.displayName = 'MessageCirclePlus';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { MessageCirclePlus, MessageCirclePlus as MessageCirclePlusIcon, MessageCirclePlus as SiMessageCirclePlus };
 export default MessageCirclePlus;

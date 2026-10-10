@@ -18,10 +18,10 @@ export interface CurveEaseProps extends IconProps {
  * For smaller bundle size, import specific variants directly:
  * import { CurveEaseRegular } from 'stera-icons/icons/CurveEaseRegular';
  */
-const CurveEase = memo(forwardRef<SVGSVGElement, CurveEaseProps>(({ 
+const CurveEase = memo(forwardRef<SVGSVGElement, CurveEaseProps>(({
   weight = 'regular',
   duotone = false,
-  ...rest 
+  ...rest
 }, ref) => {
   if (weight === 'bold' && duotone) return <CurveEaseBoldDuotone ref={ref} {...rest} />;
   if (weight === 'bold') return <CurveEaseBold ref={ref} {...rest} />;
@@ -33,6 +33,6 @@ const CurveEase = memo(forwardRef<SVGSVGElement, CurveEaseProps>(({
 
 CurveEase.displayName = 'CurveEase';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { CurveEase, CurveEase as CurveEaseIcon, CurveEase as SiCurveEase };
 export default CurveEase;

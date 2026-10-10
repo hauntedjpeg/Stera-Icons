@@ -15,7 +15,7 @@ const BuildingRegular = memo(
 
 BuildingRegular.displayName = 'BuildingRegular';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { BuildingRegular, BuildingRegular as BuildingRegularIcon, BuildingRegular as SiBuildingRegular };
 export default BuildingRegular;
 export type { BuildingRegularProps };

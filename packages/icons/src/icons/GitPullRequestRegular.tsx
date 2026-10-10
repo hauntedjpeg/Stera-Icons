@@ -14,7 +14,7 @@ const GitPullRequestRegular = memo(
 
 GitPullRequestRegular.displayName = 'GitPullRequestRegular';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { GitPullRequestRegular, GitPullRequestRegular as GitPullRequestRegularIcon, GitPullRequestRegular as SiGitPullRequestRegular };
 export default GitPullRequestRegular;
 export type { GitPullRequestRegularProps };

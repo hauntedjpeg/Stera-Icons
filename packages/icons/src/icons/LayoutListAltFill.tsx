@@ -14,7 +14,7 @@ const LayoutListAltFill = memo(
 
 LayoutListAltFill.displayName = 'LayoutListAltFill';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { LayoutListAltFill, LayoutListAltFill as LayoutListAltFillIcon, LayoutListAltFill as SiLayoutListAltFill };
 export default LayoutListAltFill;
 export type { LayoutListAltFillProps };

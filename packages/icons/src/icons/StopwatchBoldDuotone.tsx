@@ -15,7 +15,7 @@ const StopwatchBoldDuotone = memo(
 
 StopwatchBoldDuotone.displayName = 'StopwatchBoldDuotone';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { StopwatchBoldDuotone, StopwatchBoldDuotone as StopwatchBoldDuotoneIcon, StopwatchBoldDuotone as SiStopwatchBoldDuotone };
 export default StopwatchBoldDuotone;
 export type { StopwatchBoldDuotoneProps };

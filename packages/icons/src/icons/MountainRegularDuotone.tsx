@@ -15,7 +15,7 @@ const MountainRegularDuotone = memo(
 
 MountainRegularDuotone.displayName = 'MountainRegularDuotone';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { MountainRegularDuotone, MountainRegularDuotone as MountainRegularDuotoneIcon, MountainRegularDuotone as SiMountainRegularDuotone };
 export default MountainRegularDuotone;
 export type { MountainRegularDuotoneProps };

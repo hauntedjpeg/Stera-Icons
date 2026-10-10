@@ -14,7 +14,7 @@ const HamburgerFill = memo(
 
 HamburgerFill.displayName = 'HamburgerFill';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { HamburgerFill, HamburgerFill as HamburgerFillIcon, HamburgerFill as SiHamburgerFill };
 export default HamburgerFill;
 export type { HamburgerFillProps };

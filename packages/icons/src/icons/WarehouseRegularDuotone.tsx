@@ -15,7 +15,7 @@ const WarehouseRegularDuotone = memo(
 
 WarehouseRegularDuotone.displayName = 'WarehouseRegularDuotone';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { WarehouseRegularDuotone, WarehouseRegularDuotone as WarehouseRegularDuotoneIcon, WarehouseRegularDuotone as SiWarehouseRegularDuotone };
 export default WarehouseRegularDuotone;
 export type { WarehouseRegularDuotoneProps };

@@ -18,10 +18,10 @@ export interface CameraPlusProps extends IconProps {
  * For smaller bundle size, import specific variants directly:
  * import { CameraPlusRegular } from 'stera-icons/icons/CameraPlusRegular';
  */
-const CameraPlus = memo(forwardRef<SVGSVGElement, CameraPlusProps>(({ 
+const CameraPlus = memo(forwardRef<SVGSVGElement, CameraPlusProps>(({
   weight = 'regular',
   duotone = false,
-  ...rest 
+  ...rest
 }, ref) => {
   if (weight === 'bold' && duotone) return <CameraPlusBoldDuotone ref={ref} {...rest} />;
   if (weight === 'bold') return <CameraPlusBold ref={ref} {...rest} />;
@@ -33,6 +33,6 @@ const CameraPlus = memo(forwardRef<SVGSVGElement, CameraPlusProps>(({
 
 CameraPlus.displayName = 'CameraPlus';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { CameraPlus, CameraPlus as CameraPlusIcon, CameraPlus as SiCameraPlus };
 export default CameraPlus;

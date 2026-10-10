@@ -18,10 +18,10 @@ export interface SoccerFieldProps extends IconProps {
  * For smaller bundle size, import specific variants directly:
  * import { SoccerFieldRegular } from 'stera-icons/icons/SoccerFieldRegular';
  */
-const SoccerField = memo(forwardRef<SVGSVGElement, SoccerFieldProps>(({ 
+const SoccerField = memo(forwardRef<SVGSVGElement, SoccerFieldProps>(({
   weight = 'regular',
   duotone = false,
-  ...rest 
+  ...rest
 }, ref) => {
   if (weight === 'bold' && duotone) return <SoccerFieldBoldDuotone ref={ref} {...rest} />;
   if (weight === 'bold') return <SoccerFieldBold ref={ref} {...rest} />;
@@ -33,6 +33,6 @@ const SoccerField = memo(forwardRef<SVGSVGElement, SoccerFieldProps>(({
 
 SoccerField.displayName = 'SoccerField';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { SoccerField, SoccerField as SoccerFieldIcon, SoccerField as SiSoccerField };
 export default SoccerField;

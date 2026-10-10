@@ -15,7 +15,7 @@ const ListContractFillDuotone = memo(
 
 ListContractFillDuotone.displayName = 'ListContractFillDuotone';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { ListContractFillDuotone, ListContractFillDuotone as ListContractFillDuotoneIcon, ListContractFillDuotone as SiListContractFillDuotone };
 export default ListContractFillDuotone;
 export type { ListContractFillDuotoneProps };

@@ -15,7 +15,7 @@ const LayoutMasonryFillDuotone = memo(
 
 LayoutMasonryFillDuotone.displayName = 'LayoutMasonryFillDuotone';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { LayoutMasonryFillDuotone, LayoutMasonryFillDuotone as LayoutMasonryFillDuotoneIcon, LayoutMasonryFillDuotone as SiLayoutMasonryFillDuotone };
 export default LayoutMasonryFillDuotone;
 export type { LayoutMasonryFillDuotoneProps };

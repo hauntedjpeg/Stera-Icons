@@ -16,7 +16,7 @@ const IdVBoldDuotone = memo(
 
 IdVBoldDuotone.displayName = 'IdVBoldDuotone';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { IdVBoldDuotone, IdVBoldDuotone as IdVBoldDuotoneIcon, IdVBoldDuotone as SiIdVBoldDuotone };
 export default IdVBoldDuotone;
 export type { IdVBoldDuotoneProps };

@@ -15,7 +15,7 @@ const BasketballFillDuotone = memo(
 
 BasketballFillDuotone.displayName = 'BasketballFillDuotone';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { BasketballFillDuotone, BasketballFillDuotone as BasketballFillDuotoneIcon, BasketballFillDuotone as SiBasketballFillDuotone };
 export default BasketballFillDuotone;
 export type { BasketballFillDuotoneProps };

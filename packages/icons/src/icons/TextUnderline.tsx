@@ -18,10 +18,10 @@ export interface TextUnderlineProps extends IconProps {
  * For smaller bundle size, import specific variants directly:
  * import { TextUnderlineRegular } from 'stera-icons/icons/TextUnderlineRegular';
  */
-const TextUnderline = memo(forwardRef<SVGSVGElement, TextUnderlineProps>(({ 
+const TextUnderline = memo(forwardRef<SVGSVGElement, TextUnderlineProps>(({
   weight = 'regular',
   duotone = false,
-  ...rest 
+  ...rest
 }, ref) => {
   if (weight === 'bold' && duotone) return <TextUnderlineBoldDuotone ref={ref} {...rest} />;
   if (weight === 'bold') return <TextUnderlineBold ref={ref} {...rest} />;
@@ -33,6 +33,6 @@ const TextUnderline = memo(forwardRef<SVGSVGElement, TextUnderlineProps>(({
 
 TextUnderline.displayName = 'TextUnderline';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { TextUnderline, TextUnderline as TextUnderlineIcon, TextUnderline as SiTextUnderline };
 export default TextUnderline;

@@ -16,7 +16,7 @@ const CreditCardFillDuotone = memo(
 
 CreditCardFillDuotone.displayName = 'CreditCardFillDuotone';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { CreditCardFillDuotone, CreditCardFillDuotone as CreditCardFillDuotoneIcon, CreditCardFillDuotone as SiCreditCardFillDuotone };
 export default CreditCardFillDuotone;
 export type { CreditCardFillDuotoneProps };

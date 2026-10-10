@@ -14,7 +14,7 @@ const GitCommitRegular = memo(
 
 GitCommitRegular.displayName = 'GitCommitRegular';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { GitCommitRegular, GitCommitRegular as GitCommitRegularIcon, GitCommitRegular as SiGitCommitRegular };
 export default GitCommitRegular;
 export type { GitCommitRegularProps };

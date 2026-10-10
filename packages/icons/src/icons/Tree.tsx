@@ -18,10 +18,10 @@ export interface TreeProps extends IconProps {
  * For smaller bundle size, import specific variants directly:
  * import { TreeRegular } from 'stera-icons/icons/TreeRegular';
  */
-const Tree = memo(forwardRef<SVGSVGElement, TreeProps>(({ 
+const Tree = memo(forwardRef<SVGSVGElement, TreeProps>(({
   weight = 'regular',
   duotone = false,
-  ...rest 
+  ...rest
 }, ref) => {
   if (weight === 'bold' && duotone) return <TreeBoldDuotone ref={ref} {...rest} />;
   if (weight === 'bold') return <TreeBold ref={ref} {...rest} />;
@@ -33,6 +33,6 @@ const Tree = memo(forwardRef<SVGSVGElement, TreeProps>(({
 
 Tree.displayName = 'Tree';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { Tree, Tree as TreeIcon, Tree as SiTree };
 export default Tree;

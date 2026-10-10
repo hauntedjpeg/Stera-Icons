@@ -15,7 +15,7 @@ const FlagFillDuotone = memo(
 
 FlagFillDuotone.displayName = 'FlagFillDuotone';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { FlagFillDuotone, FlagFillDuotone as FlagFillDuotoneIcon, FlagFillDuotone as SiFlagFillDuotone };
 export default FlagFillDuotone;
 export type { FlagFillDuotoneProps };

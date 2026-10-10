@@ -18,10 +18,10 @@ export interface ChevronOutwardProps extends IconProps {
  * For smaller bundle size, import specific variants directly:
  * import { ChevronOutwardRegular } from 'stera-icons/icons/ChevronOutwardRegular';
  */
-const ChevronOutward = memo(forwardRef<SVGSVGElement, ChevronOutwardProps>(({ 
+const ChevronOutward = memo(forwardRef<SVGSVGElement, ChevronOutwardProps>(({
   weight = 'regular',
   duotone = false,
-  ...rest 
+  ...rest
 }, ref) => {
   if (weight === 'bold' && duotone) return <ChevronOutwardBoldDuotone ref={ref} {...rest} />;
   if (weight === 'bold') return <ChevronOutwardBold ref={ref} {...rest} />;
@@ -33,6 +33,6 @@ const ChevronOutward = memo(forwardRef<SVGSVGElement, ChevronOutwardProps>(({
 
 ChevronOutward.displayName = 'ChevronOutward';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { ChevronOutward, ChevronOutward as ChevronOutwardIcon, ChevronOutward as SiChevronOutward };
 export default ChevronOutward;

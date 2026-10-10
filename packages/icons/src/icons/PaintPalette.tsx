@@ -18,10 +18,10 @@ export interface PaintPaletteProps extends IconProps {
  * For smaller bundle size, import specific variants directly:
  * import { PaintPaletteRegular } from 'stera-icons/icons/PaintPaletteRegular';
  */
-const PaintPalette = memo(forwardRef<SVGSVGElement, PaintPaletteProps>(({ 
+const PaintPalette = memo(forwardRef<SVGSVGElement, PaintPaletteProps>(({
   weight = 'regular',
   duotone = false,
-  ...rest 
+  ...rest
 }, ref) => {
   if (weight === 'bold' && duotone) return <PaintPaletteBoldDuotone ref={ref} {...rest} />;
   if (weight === 'bold') return <PaintPaletteBold ref={ref} {...rest} />;
@@ -33,6 +33,6 @@ const PaintPalette = memo(forwardRef<SVGSVGElement, PaintPaletteProps>(({
 
 PaintPalette.displayName = 'PaintPalette';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { PaintPalette, PaintPalette as PaintPaletteIcon, PaintPalette as SiPaintPalette };
 export default PaintPalette;

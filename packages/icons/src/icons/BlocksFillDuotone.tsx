@@ -15,7 +15,7 @@ const BlocksFillDuotone = memo(
 
 BlocksFillDuotone.displayName = 'BlocksFillDuotone';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { BlocksFillDuotone, BlocksFillDuotone as BlocksFillDuotoneIcon, BlocksFillDuotone as SiBlocksFillDuotone };
 export default BlocksFillDuotone;
 export type { BlocksFillDuotoneProps };

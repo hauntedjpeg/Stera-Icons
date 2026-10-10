@@ -17,7 +17,7 @@ const ChecklistUncheckedBold = memo(
 
 ChecklistUncheckedBold.displayName = 'ChecklistUncheckedBold';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { ChecklistUncheckedBold, ChecklistUncheckedBold as ChecklistUncheckedBoldIcon, ChecklistUncheckedBold as SiChecklistUncheckedBold };
 export default ChecklistUncheckedBold;
 export type { ChecklistUncheckedBoldProps };

@@ -14,7 +14,7 @@ const GitMergeRegular = memo(
 
 GitMergeRegular.displayName = 'GitMergeRegular';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { GitMergeRegular, GitMergeRegular as GitMergeRegularIcon, GitMergeRegular as SiGitMergeRegular };
 export default GitMergeRegular;
 export type { GitMergeRegularProps };

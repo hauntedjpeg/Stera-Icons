@@ -18,10 +18,10 @@ export interface MailMinusProps extends IconProps {
  * For smaller bundle size, import specific variants directly:
  * import { MailMinusRegular } from 'stera-icons/icons/MailMinusRegular';
  */
-const MailMinus = memo(forwardRef<SVGSVGElement, MailMinusProps>(({ 
+const MailMinus = memo(forwardRef<SVGSVGElement, MailMinusProps>(({
   weight = 'regular',
   duotone = false,
-  ...rest 
+  ...rest
 }, ref) => {
   if (weight === 'bold' && duotone) return <MailMinusBoldDuotone ref={ref} {...rest} />;
   if (weight === 'bold') return <MailMinusBold ref={ref} {...rest} />;
@@ -33,6 +33,6 @@ const MailMinus = memo(forwardRef<SVGSVGElement, MailMinusProps>(({
 
 MailMinus.displayName = 'MailMinus';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { MailMinus, MailMinus as MailMinusIcon, MailMinus as SiMailMinus };
 export default MailMinus;

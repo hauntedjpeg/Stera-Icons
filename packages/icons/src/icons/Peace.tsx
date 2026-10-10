@@ -18,10 +18,10 @@ export interface PeaceProps extends IconProps {
  * For smaller bundle size, import specific variants directly:
  * import { PeaceRegular } from 'stera-icons/icons/PeaceRegular';
  */
-const Peace = memo(forwardRef<SVGSVGElement, PeaceProps>(({ 
+const Peace = memo(forwardRef<SVGSVGElement, PeaceProps>(({
   weight = 'regular',
   duotone = false,
-  ...rest 
+  ...rest
 }, ref) => {
   if (weight === 'bold' && duotone) return <PeaceBoldDuotone ref={ref} {...rest} />;
   if (weight === 'bold') return <PeaceBold ref={ref} {...rest} />;
@@ -33,6 +33,6 @@ const Peace = memo(forwardRef<SVGSVGElement, PeaceProps>(({
 
 Peace.displayName = 'Peace';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { Peace, Peace as PeaceIcon, Peace as SiPeace };
 export default Peace;

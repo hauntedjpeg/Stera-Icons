@@ -15,7 +15,7 @@ const PedestalRegular = memo(
 
 PedestalRegular.displayName = 'PedestalRegular';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { PedestalRegular, PedestalRegular as PedestalRegularIcon, PedestalRegular as SiPedestalRegular };
 export default PedestalRegular;
 export type { PedestalRegularProps };

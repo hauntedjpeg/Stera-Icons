@@ -18,10 +18,10 @@ export interface EyeOffProps extends IconProps {
  * For smaller bundle size, import specific variants directly:
  * import { EyeOffRegular } from 'stera-icons/icons/EyeOffRegular';
  */
-const EyeOff = memo(forwardRef<SVGSVGElement, EyeOffProps>(({ 
+const EyeOff = memo(forwardRef<SVGSVGElement, EyeOffProps>(({
   weight = 'regular',
   duotone = false,
-  ...rest 
+  ...rest
 }, ref) => {
   if (weight === 'bold' && duotone) return <EyeOffBoldDuotone ref={ref} {...rest} />;
   if (weight === 'bold') return <EyeOffBold ref={ref} {...rest} />;
@@ -33,6 +33,6 @@ const EyeOff = memo(forwardRef<SVGSVGElement, EyeOffProps>(({
 
 EyeOff.displayName = 'EyeOff';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { EyeOff, EyeOff as EyeOffIcon, EyeOff as SiEyeOff };
 export default EyeOff;

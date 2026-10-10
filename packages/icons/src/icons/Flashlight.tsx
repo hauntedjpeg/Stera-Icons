@@ -18,10 +18,10 @@ export interface FlashlightProps extends IconProps {
  * For smaller bundle size, import specific variants directly:
  * import { FlashlightRegular } from 'stera-icons/icons/FlashlightRegular';
  */
-const Flashlight = memo(forwardRef<SVGSVGElement, FlashlightProps>(({ 
+const Flashlight = memo(forwardRef<SVGSVGElement, FlashlightProps>(({
   weight = 'regular',
   duotone = false,
-  ...rest 
+  ...rest
 }, ref) => {
   if (weight === 'bold' && duotone) return <FlashlightBoldDuotone ref={ref} {...rest} />;
   if (weight === 'bold') return <FlashlightBold ref={ref} {...rest} />;
@@ -33,6 +33,6 @@ const Flashlight = memo(forwardRef<SVGSVGElement, FlashlightProps>(({
 
 Flashlight.displayName = 'Flashlight';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { Flashlight, Flashlight as FlashlightIcon, Flashlight as SiFlashlight };
 export default Flashlight;

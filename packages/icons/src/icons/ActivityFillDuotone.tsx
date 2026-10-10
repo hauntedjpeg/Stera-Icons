@@ -15,7 +15,7 @@ const ActivityFillDuotone = memo(
 
 ActivityFillDuotone.displayName = 'ActivityFillDuotone';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { ActivityFillDuotone, ActivityFillDuotone as ActivityFillDuotoneIcon, ActivityFillDuotone as SiActivityFillDuotone };
 export default ActivityFillDuotone;
 export type { ActivityFillDuotoneProps };

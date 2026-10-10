@@ -18,10 +18,10 @@ export interface AccessibilityProps extends IconProps {
  * For smaller bundle size, import specific variants directly:
  * import { AccessibilityRegular } from 'stera-icons/icons/AccessibilityRegular';
  */
-const Accessibility = memo(forwardRef<SVGSVGElement, AccessibilityProps>(({ 
+const Accessibility = memo(forwardRef<SVGSVGElement, AccessibilityProps>(({
   weight = 'regular',
   duotone = false,
-  ...rest 
+  ...rest
 }, ref) => {
   if (weight === 'bold' && duotone) return <AccessibilityBoldDuotone ref={ref} {...rest} />;
   if (weight === 'bold') return <AccessibilityBold ref={ref} {...rest} />;
@@ -33,6 +33,6 @@ const Accessibility = memo(forwardRef<SVGSVGElement, AccessibilityProps>(({
 
 Accessibility.displayName = 'Accessibility';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { Accessibility, Accessibility as AccessibilityIcon, Accessibility as SiAccessibility };
 export default Accessibility;

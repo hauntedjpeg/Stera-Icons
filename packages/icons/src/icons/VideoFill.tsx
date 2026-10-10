@@ -14,7 +14,7 @@ const VideoFill = memo(
 
 VideoFill.displayName = 'VideoFill';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { VideoFill, VideoFill as VideoFillIcon, VideoFill as SiVideoFill };
 export default VideoFill;
 export type { VideoFillProps };

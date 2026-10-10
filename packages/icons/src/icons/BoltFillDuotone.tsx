@@ -15,7 +15,7 @@ const BoltFillDuotone = memo(
 
 BoltFillDuotone.displayName = 'BoltFillDuotone';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { BoltFillDuotone, BoltFillDuotone as BoltFillDuotoneIcon, BoltFillDuotone as SiBoltFillDuotone };
 export default BoltFillDuotone;
 export type { BoltFillDuotoneProps };

@@ -18,10 +18,10 @@ export interface CloudProps extends IconProps {
  * For smaller bundle size, import specific variants directly:
  * import { CloudRegular } from 'stera-icons/icons/CloudRegular';
  */
-const Cloud = memo(forwardRef<SVGSVGElement, CloudProps>(({ 
+const Cloud = memo(forwardRef<SVGSVGElement, CloudProps>(({
   weight = 'regular',
   duotone = false,
-  ...rest 
+  ...rest
 }, ref) => {
   if (weight === 'bold' && duotone) return <CloudBoldDuotone ref={ref} {...rest} />;
   if (weight === 'bold') return <CloudBold ref={ref} {...rest} />;
@@ -33,6 +33,6 @@ const Cloud = memo(forwardRef<SVGSVGElement, CloudProps>(({
 
 Cloud.displayName = 'Cloud';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { Cloud, Cloud as CloudIcon, Cloud as SiCloud };
 export default Cloud;

@@ -15,7 +15,7 @@ const BubbleBold = memo(
 
 BubbleBold.displayName = 'BubbleBold';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { BubbleBold, BubbleBold as BubbleBoldIcon, BubbleBold as SiBubbleBold };
 export default BubbleBold;
 export type { BubbleBoldProps };

@@ -18,10 +18,10 @@ export interface SearchCircleProps extends IconProps {
  * For smaller bundle size, import specific variants directly:
  * import { SearchCircleRegular } from 'stera-icons/icons/SearchCircleRegular';
  */
-const SearchCircle = memo(forwardRef<SVGSVGElement, SearchCircleProps>(({ 
+const SearchCircle = memo(forwardRef<SVGSVGElement, SearchCircleProps>(({
   weight = 'regular',
   duotone = false,
-  ...rest 
+  ...rest
 }, ref) => {
   if (weight === 'bold' && duotone) return <SearchCircleBoldDuotone ref={ref} {...rest} />;
   if (weight === 'bold') return <SearchCircleBold ref={ref} {...rest} />;
@@ -33,6 +33,6 @@ const SearchCircle = memo(forwardRef<SVGSVGElement, SearchCircleProps>(({
 
 SearchCircle.displayName = 'SearchCircle';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { SearchCircle, SearchCircle as SearchCircleIcon, SearchCircle as SiSearchCircle };
 export default SearchCircle;

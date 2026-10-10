@@ -18,10 +18,10 @@ export interface PlugProps extends IconProps {
  * For smaller bundle size, import specific variants directly:
  * import { PlugRegular } from 'stera-icons/icons/PlugRegular';
  */
-const Plug = memo(forwardRef<SVGSVGElement, PlugProps>(({ 
+const Plug = memo(forwardRef<SVGSVGElement, PlugProps>(({
   weight = 'regular',
   duotone = false,
-  ...rest 
+  ...rest
 }, ref) => {
   if (weight === 'bold' && duotone) return <PlugBoldDuotone ref={ref} {...rest} />;
   if (weight === 'bold') return <PlugBold ref={ref} {...rest} />;
@@ -33,6 +33,6 @@ const Plug = memo(forwardRef<SVGSVGElement, PlugProps>(({
 
 Plug.displayName = 'Plug';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { Plug, Plug as PlugIcon, Plug as SiPlug };
 export default Plug;

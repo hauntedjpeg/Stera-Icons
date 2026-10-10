@@ -18,10 +18,10 @@ export interface TextSearchProps extends IconProps {
  * For smaller bundle size, import specific variants directly:
  * import { TextSearchRegular } from 'stera-icons/icons/TextSearchRegular';
  */
-const TextSearch = memo(forwardRef<SVGSVGElement, TextSearchProps>(({ 
+const TextSearch = memo(forwardRef<SVGSVGElement, TextSearchProps>(({
   weight = 'regular',
   duotone = false,
-  ...rest 
+  ...rest
 }, ref) => {
   if (weight === 'bold' && duotone) return <TextSearchBoldDuotone ref={ref} {...rest} />;
   if (weight === 'bold') return <TextSearchBold ref={ref} {...rest} />;
@@ -33,6 +33,6 @@ const TextSearch = memo(forwardRef<SVGSVGElement, TextSearchProps>(({
 
 TextSearch.displayName = 'TextSearch';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { TextSearch, TextSearch as TextSearchIcon, TextSearch as SiTextSearch };
 export default TextSearch;

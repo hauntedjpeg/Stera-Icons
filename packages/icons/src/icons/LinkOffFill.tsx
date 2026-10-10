@@ -14,7 +14,7 @@ const LinkOffFill = memo(
 
 LinkOffFill.displayName = 'LinkOffFill';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { LinkOffFill, LinkOffFill as LinkOffFillIcon, LinkOffFill as SiLinkOffFill };
 export default LinkOffFill;
 export type { LinkOffFillProps };

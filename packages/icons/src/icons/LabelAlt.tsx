@@ -18,10 +18,10 @@ export interface LabelAltProps extends IconProps {
  * For smaller bundle size, import specific variants directly:
  * import { LabelAltRegular } from 'stera-icons/icons/LabelAltRegular';
  */
-const LabelAlt = memo(forwardRef<SVGSVGElement, LabelAltProps>(({ 
+const LabelAlt = memo(forwardRef<SVGSVGElement, LabelAltProps>(({
   weight = 'regular',
   duotone = false,
-  ...rest 
+  ...rest
 }, ref) => {
   if (weight === 'bold' && duotone) return <LabelAltBoldDuotone ref={ref} {...rest} />;
   if (weight === 'bold') return <LabelAltBold ref={ref} {...rest} />;
@@ -33,6 +33,6 @@ const LabelAlt = memo(forwardRef<SVGSVGElement, LabelAltProps>(({
 
 LabelAlt.displayName = 'LabelAlt';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { LabelAlt, LabelAlt as LabelAltIcon, LabelAlt as SiLabelAlt };
 export default LabelAlt;

@@ -15,7 +15,7 @@ const DataTableBoldDuotone = memo(
 
 DataTableBoldDuotone.displayName = 'DataTableBoldDuotone';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { DataTableBoldDuotone, DataTableBoldDuotone as DataTableBoldDuotoneIcon, DataTableBoldDuotone as SiDataTableBoldDuotone };
 export default DataTableBoldDuotone;
 export type { DataTableBoldDuotoneProps };

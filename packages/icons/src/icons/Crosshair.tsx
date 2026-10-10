@@ -18,10 +18,10 @@ export interface CrosshairProps extends IconProps {
  * For smaller bundle size, import specific variants directly:
  * import { CrosshairRegular } from 'stera-icons/icons/CrosshairRegular';
  */
-const Crosshair = memo(forwardRef<SVGSVGElement, CrosshairProps>(({ 
+const Crosshair = memo(forwardRef<SVGSVGElement, CrosshairProps>(({
   weight = 'regular',
   duotone = false,
-  ...rest 
+  ...rest
 }, ref) => {
   if (weight === 'bold' && duotone) return <CrosshairBoldDuotone ref={ref} {...rest} />;
   if (weight === 'bold') return <CrosshairBold ref={ref} {...rest} />;
@@ -33,6 +33,6 @@ const Crosshair = memo(forwardRef<SVGSVGElement, CrosshairProps>(({
 
 Crosshair.displayName = 'Crosshair';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { Crosshair, Crosshair as CrosshairIcon, Crosshair as SiCrosshair };
 export default Crosshair;

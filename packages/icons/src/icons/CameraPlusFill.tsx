@@ -14,7 +14,7 @@ const CameraPlusFill = memo(
 
 CameraPlusFill.displayName = 'CameraPlusFill';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { CameraPlusFill, CameraPlusFill as CameraPlusFillIcon, CameraPlusFill as SiCameraPlusFill };
 export default CameraPlusFill;
 export type { CameraPlusFillProps };

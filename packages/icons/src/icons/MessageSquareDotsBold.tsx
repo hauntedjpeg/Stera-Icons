@@ -15,7 +15,7 @@ const MessageSquareDotsBold = memo(
 
 MessageSquareDotsBold.displayName = 'MessageSquareDotsBold';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { MessageSquareDotsBold, MessageSquareDotsBold as MessageSquareDotsBoldIcon, MessageSquareDotsBold as SiMessageSquareDotsBold };
 export default MessageSquareDotsBold;
 export type { MessageSquareDotsBoldProps };

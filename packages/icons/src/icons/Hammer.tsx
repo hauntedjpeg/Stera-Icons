@@ -18,10 +18,10 @@ export interface HammerProps extends IconProps {
  * For smaller bundle size, import specific variants directly:
  * import { HammerRegular } from 'stera-icons/icons/HammerRegular';
  */
-const Hammer = memo(forwardRef<SVGSVGElement, HammerProps>(({ 
+const Hammer = memo(forwardRef<SVGSVGElement, HammerProps>(({
   weight = 'regular',
   duotone = false,
-  ...rest 
+  ...rest
 }, ref) => {
   if (weight === 'bold' && duotone) return <HammerBoldDuotone ref={ref} {...rest} />;
   if (weight === 'bold') return <HammerBold ref={ref} {...rest} />;
@@ -33,6 +33,6 @@ const Hammer = memo(forwardRef<SVGSVGElement, HammerProps>(({
 
 Hammer.displayName = 'Hammer';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { Hammer, Hammer as HammerIcon, Hammer as SiHammer };
 export default Hammer;

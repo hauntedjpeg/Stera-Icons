@@ -15,7 +15,7 @@ const CloudCliRegular = memo(
 
 CloudCliRegular.displayName = 'CloudCliRegular';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { CloudCliRegular, CloudCliRegular as CloudCliRegularIcon, CloudCliRegular as SiCloudCliRegular };
 export default CloudCliRegular;
 export type { CloudCliRegularProps };

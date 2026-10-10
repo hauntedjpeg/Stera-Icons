@@ -18,10 +18,10 @@ export interface LayoutListAltProps extends IconProps {
  * For smaller bundle size, import specific variants directly:
  * import { LayoutListAltRegular } from 'stera-icons/icons/LayoutListAltRegular';
  */
-const LayoutListAlt = memo(forwardRef<SVGSVGElement, LayoutListAltProps>(({ 
+const LayoutListAlt = memo(forwardRef<SVGSVGElement, LayoutListAltProps>(({
   weight = 'regular',
   duotone = false,
-  ...rest 
+  ...rest
 }, ref) => {
   if (weight === 'bold' && duotone) return <LayoutListAltBoldDuotone ref={ref} {...rest} />;
   if (weight === 'bold') return <LayoutListAltBold ref={ref} {...rest} />;
@@ -33,6 +33,6 @@ const LayoutListAlt = memo(forwardRef<SVGSVGElement, LayoutListAltProps>(({
 
 LayoutListAlt.displayName = 'LayoutListAlt';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { LayoutListAlt, LayoutListAlt as LayoutListAltIcon, LayoutListAlt as SiLayoutListAlt };
 export default LayoutListAlt;

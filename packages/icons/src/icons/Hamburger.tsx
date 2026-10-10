@@ -18,10 +18,10 @@ export interface HamburgerProps extends IconProps {
  * For smaller bundle size, import specific variants directly:
  * import { HamburgerRegular } from 'stera-icons/icons/HamburgerRegular';
  */
-const Hamburger = memo(forwardRef<SVGSVGElement, HamburgerProps>(({ 
+const Hamburger = memo(forwardRef<SVGSVGElement, HamburgerProps>(({
   weight = 'regular',
   duotone = false,
-  ...rest 
+  ...rest
 }, ref) => {
   if (weight === 'bold' && duotone) return <HamburgerBoldDuotone ref={ref} {...rest} />;
   if (weight === 'bold') return <HamburgerBold ref={ref} {...rest} />;
@@ -33,6 +33,6 @@ const Hamburger = memo(forwardRef<SVGSVGElement, HamburgerProps>(({
 
 Hamburger.displayName = 'Hamburger';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { Hamburger, Hamburger as HamburgerIcon, Hamburger as SiHamburger };
 export default Hamburger;

@@ -18,10 +18,10 @@ export interface NodeMapProps extends IconProps {
  * For smaller bundle size, import specific variants directly:
  * import { NodeMapRegular } from 'stera-icons/icons/NodeMapRegular';
  */
-const NodeMap = memo(forwardRef<SVGSVGElement, NodeMapProps>(({ 
+const NodeMap = memo(forwardRef<SVGSVGElement, NodeMapProps>(({
   weight = 'regular',
   duotone = false,
-  ...rest 
+  ...rest
 }, ref) => {
   if (weight === 'bold' && duotone) return <NodeMapBoldDuotone ref={ref} {...rest} />;
   if (weight === 'bold') return <NodeMapBold ref={ref} {...rest} />;
@@ -33,6 +33,6 @@ const NodeMap = memo(forwardRef<SVGSVGElement, NodeMapProps>(({
 
 NodeMap.displayName = 'NodeMap';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { NodeMap, NodeMap as NodeMapIcon, NodeMap as SiNodeMap };
 export default NodeMap;

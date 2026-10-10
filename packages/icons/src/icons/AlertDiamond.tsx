@@ -18,10 +18,10 @@ export interface AlertDiamondProps extends IconProps {
  * For smaller bundle size, import specific variants directly:
  * import { AlertDiamondRegular } from 'stera-icons/icons/AlertDiamondRegular';
  */
-const AlertDiamond = memo(forwardRef<SVGSVGElement, AlertDiamondProps>(({ 
+const AlertDiamond = memo(forwardRef<SVGSVGElement, AlertDiamondProps>(({
   weight = 'regular',
   duotone = false,
-  ...rest 
+  ...rest
 }, ref) => {
   if (weight === 'bold' && duotone) return <AlertDiamondBoldDuotone ref={ref} {...rest} />;
   if (weight === 'bold') return <AlertDiamondBold ref={ref} {...rest} />;
@@ -33,6 +33,6 @@ const AlertDiamond = memo(forwardRef<SVGSVGElement, AlertDiamondProps>(({
 
 AlertDiamond.displayName = 'AlertDiamond';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { AlertDiamond, AlertDiamond as AlertDiamondIcon, AlertDiamond as SiAlertDiamond };
 export default AlertDiamond;

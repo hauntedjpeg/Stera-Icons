@@ -18,10 +18,10 @@ export interface InfoSquareProps extends IconProps {
  * For smaller bundle size, import specific variants directly:
  * import { InfoSquareRegular } from 'stera-icons/icons/InfoSquareRegular';
  */
-const InfoSquare = memo(forwardRef<SVGSVGElement, InfoSquareProps>(({ 
+const InfoSquare = memo(forwardRef<SVGSVGElement, InfoSquareProps>(({
   weight = 'regular',
   duotone = false,
-  ...rest 
+  ...rest
 }, ref) => {
   if (weight === 'bold' && duotone) return <InfoSquareBoldDuotone ref={ref} {...rest} />;
   if (weight === 'bold') return <InfoSquareBold ref={ref} {...rest} />;
@@ -33,6 +33,6 @@ const InfoSquare = memo(forwardRef<SVGSVGElement, InfoSquareProps>(({
 
 InfoSquare.displayName = 'InfoSquare';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { InfoSquare, InfoSquare as InfoSquareIcon, InfoSquare as SiInfoSquare };
 export default InfoSquare;

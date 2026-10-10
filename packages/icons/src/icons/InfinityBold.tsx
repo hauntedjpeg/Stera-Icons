@@ -14,7 +14,7 @@ const InfinityBold = memo(
 
 InfinityBold.displayName = 'InfinityBold';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { InfinityBold, InfinityBold as InfinityBoldIcon, InfinityBold as SiInfinityBold };
 export default InfinityBold;
 export type { InfinityBoldProps };

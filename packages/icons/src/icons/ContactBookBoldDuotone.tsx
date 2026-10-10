@@ -15,7 +15,7 @@ const ContactBookBoldDuotone = memo(
 
 ContactBookBoldDuotone.displayName = 'ContactBookBoldDuotone';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { ContactBookBoldDuotone, ContactBookBoldDuotone as ContactBookBoldDuotoneIcon, ContactBookBoldDuotone as SiContactBookBoldDuotone };
 export default ContactBookBoldDuotone;
 export type { ContactBookBoldDuotoneProps };

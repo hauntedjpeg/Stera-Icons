@@ -14,7 +14,7 @@ const CherryRegular = memo(
 
 CherryRegular.displayName = 'CherryRegular';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { CherryRegular, CherryRegular as CherryRegularIcon, CherryRegular as SiCherryRegular };
 export default CherryRegular;
 export type { CherryRegularProps };

@@ -15,7 +15,7 @@ const MapPinXFillDuotone = memo(
 
 MapPinXFillDuotone.displayName = 'MapPinXFillDuotone';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { MapPinXFillDuotone, MapPinXFillDuotone as MapPinXFillDuotoneIcon, MapPinXFillDuotone as SiMapPinXFillDuotone };
 export default MapPinXFillDuotone;
 export type { MapPinXFillDuotoneProps };

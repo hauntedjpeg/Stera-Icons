@@ -18,10 +18,10 @@ export interface TrophyProps extends IconProps {
  * For smaller bundle size, import specific variants directly:
  * import { TrophyRegular } from 'stera-icons/icons/TrophyRegular';
  */
-const Trophy = memo(forwardRef<SVGSVGElement, TrophyProps>(({ 
+const Trophy = memo(forwardRef<SVGSVGElement, TrophyProps>(({
   weight = 'regular',
   duotone = false,
-  ...rest 
+  ...rest
 }, ref) => {
   if (weight === 'bold' && duotone) return <TrophyBoldDuotone ref={ref} {...rest} />;
   if (weight === 'bold') return <TrophyBold ref={ref} {...rest} />;
@@ -33,6 +33,6 @@ const Trophy = memo(forwardRef<SVGSVGElement, TrophyProps>(({
 
 Trophy.displayName = 'Trophy';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { Trophy, Trophy as TrophyIcon, Trophy as SiTrophy };
 export default Trophy;

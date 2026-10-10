@@ -14,7 +14,7 @@ const ClipboardBold = memo(
 
 ClipboardBold.displayName = 'ClipboardBold';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { ClipboardBold, ClipboardBold as ClipboardBoldIcon, ClipboardBold as SiClipboardBold };
 export default ClipboardBold;
 export type { ClipboardBoldProps };

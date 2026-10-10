@@ -15,7 +15,7 @@ const PepperFillDuotone = memo(
 
 PepperFillDuotone.displayName = 'PepperFillDuotone';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { PepperFillDuotone, PepperFillDuotone as PepperFillDuotoneIcon, PepperFillDuotone as SiPepperFillDuotone };
 export default PepperFillDuotone;
 export type { PepperFillDuotoneProps };

@@ -14,7 +14,7 @@ const CloudBold = memo(
 
 CloudBold.displayName = 'CloudBold';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { CloudBold, CloudBold as CloudBoldIcon, CloudBold as SiCloudBold };
 export default CloudBold;
 export type { CloudBoldProps };

@@ -15,7 +15,7 @@ const KeyVRegular = memo(
 
 KeyVRegular.displayName = 'KeyVRegular';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { KeyVRegular, KeyVRegular as KeyVRegularIcon, KeyVRegular as SiKeyVRegular };
 export default KeyVRegular;
 export type { KeyVRegularProps };

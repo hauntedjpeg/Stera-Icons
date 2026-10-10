@@ -18,10 +18,10 @@ export interface AlignVerticalCenterProps extends IconProps {
  * For smaller bundle size, import specific variants directly:
  * import { AlignVerticalCenterRegular } from 'stera-icons/icons/AlignVerticalCenterRegular';
  */
-const AlignVerticalCenter = memo(forwardRef<SVGSVGElement, AlignVerticalCenterProps>(({ 
+const AlignVerticalCenter = memo(forwardRef<SVGSVGElement, AlignVerticalCenterProps>(({
   weight = 'regular',
   duotone = false,
-  ...rest 
+  ...rest
 }, ref) => {
   if (weight === 'bold' && duotone) return <AlignVerticalCenterBoldDuotone ref={ref} {...rest} />;
   if (weight === 'bold') return <AlignVerticalCenterBold ref={ref} {...rest} />;
@@ -33,6 +33,6 @@ const AlignVerticalCenter = memo(forwardRef<SVGSVGElement, AlignVerticalCenterPr
 
 AlignVerticalCenter.displayName = 'AlignVerticalCenter';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { AlignVerticalCenter, AlignVerticalCenter as AlignVerticalCenterIcon, AlignVerticalCenter as SiAlignVerticalCenter };
 export default AlignVerticalCenter;

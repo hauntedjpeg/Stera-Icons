@@ -15,7 +15,7 @@ const ApertureFillDuotone = memo(
 
 ApertureFillDuotone.displayName = 'ApertureFillDuotone';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { ApertureFillDuotone, ApertureFillDuotone as ApertureFillDuotoneIcon, ApertureFillDuotone as SiApertureFillDuotone };
 export default ApertureFillDuotone;
 export type { ApertureFillDuotoneProps };

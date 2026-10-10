@@ -18,10 +18,10 @@ export interface CropProps extends IconProps {
  * For smaller bundle size, import specific variants directly:
  * import { CropRegular } from 'stera-icons/icons/CropRegular';
  */
-const Crop = memo(forwardRef<SVGSVGElement, CropProps>(({ 
+const Crop = memo(forwardRef<SVGSVGElement, CropProps>(({
   weight = 'regular',
   duotone = false,
-  ...rest 
+  ...rest
 }, ref) => {
   if (weight === 'bold' && duotone) return <CropBoldDuotone ref={ref} {...rest} />;
   if (weight === 'bold') return <CropBold ref={ref} {...rest} />;
@@ -33,6 +33,6 @@ const Crop = memo(forwardRef<SVGSVGElement, CropProps>(({
 
 Crop.displayName = 'Crop';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { Crop, Crop as CropIcon, Crop as SiCrop };
 export default Crop;

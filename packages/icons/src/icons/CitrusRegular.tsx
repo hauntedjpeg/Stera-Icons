@@ -14,7 +14,7 @@ const CitrusRegular = memo(
 
 CitrusRegular.displayName = 'CitrusRegular';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { CitrusRegular, CitrusRegular as CitrusRegularIcon, CitrusRegular as SiCitrusRegular };
 export default CitrusRegular;
 export type { CitrusRegularProps };

@@ -16,7 +16,7 @@ const WifiBoldDuotone = memo(
 
 WifiBoldDuotone.displayName = 'WifiBoldDuotone';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { WifiBoldDuotone, WifiBoldDuotone as WifiBoldDuotoneIcon, WifiBoldDuotone as SiWifiBoldDuotone };
 export default WifiBoldDuotone;
 export type { WifiBoldDuotoneProps };

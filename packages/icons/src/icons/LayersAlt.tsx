@@ -18,10 +18,10 @@ export interface LayersAltProps extends IconProps {
  * For smaller bundle size, import specific variants directly:
  * import { LayersAltRegular } from 'stera-icons/icons/LayersAltRegular';
  */
-const LayersAlt = memo(forwardRef<SVGSVGElement, LayersAltProps>(({ 
+const LayersAlt = memo(forwardRef<SVGSVGElement, LayersAltProps>(({
   weight = 'regular',
   duotone = false,
-  ...rest 
+  ...rest
 }, ref) => {
   if (weight === 'bold' && duotone) return <LayersAltBoldDuotone ref={ref} {...rest} />;
   if (weight === 'bold') return <LayersAltBold ref={ref} {...rest} />;
@@ -33,6 +33,6 @@ const LayersAlt = memo(forwardRef<SVGSVGElement, LayersAltProps>(({
 
 LayersAlt.displayName = 'LayersAlt';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { LayersAlt, LayersAlt as LayersAltIcon, LayersAlt as SiLayersAlt };
 export default LayersAlt;

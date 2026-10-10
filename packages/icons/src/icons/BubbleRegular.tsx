@@ -15,7 +15,7 @@ const BubbleRegular = memo(
 
 BubbleRegular.displayName = 'BubbleRegular';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { BubbleRegular, BubbleRegular as BubbleRegularIcon, BubbleRegular as SiBubbleRegular };
 export default BubbleRegular;
 export type { BubbleRegularProps };

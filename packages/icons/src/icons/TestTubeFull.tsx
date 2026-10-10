@@ -18,10 +18,10 @@ export interface TestTubeFullProps extends IconProps {
  * For smaller bundle size, import specific variants directly:
  * import { TestTubeFullRegular } from 'stera-icons/icons/TestTubeFullRegular';
  */
-const TestTubeFull = memo(forwardRef<SVGSVGElement, TestTubeFullProps>(({ 
+const TestTubeFull = memo(forwardRef<SVGSVGElement, TestTubeFullProps>(({
   weight = 'regular',
   duotone = false,
-  ...rest 
+  ...rest
 }, ref) => {
   if (weight === 'bold' && duotone) return <TestTubeFullBoldDuotone ref={ref} {...rest} />;
   if (weight === 'bold') return <TestTubeFullBold ref={ref} {...rest} />;
@@ -33,6 +33,6 @@ const TestTubeFull = memo(forwardRef<SVGSVGElement, TestTubeFullProps>(({
 
 TestTubeFull.displayName = 'TestTubeFull';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { TestTubeFull, TestTubeFull as TestTubeFullIcon, TestTubeFull as SiTestTubeFull };
 export default TestTubeFull;

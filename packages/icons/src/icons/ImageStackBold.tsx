@@ -15,7 +15,7 @@ const ImageStackBold = memo(
 
 ImageStackBold.displayName = 'ImageStackBold';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { ImageStackBold, ImageStackBold as ImageStackBoldIcon, ImageStackBold as SiImageStackBold };
 export default ImageStackBold;
 export type { ImageStackBoldProps };

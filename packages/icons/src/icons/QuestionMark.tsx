@@ -18,10 +18,10 @@ export interface QuestionMarkProps extends IconProps {
  * For smaller bundle size, import specific variants directly:
  * import { QuestionMarkRegular } from 'stera-icons/icons/QuestionMarkRegular';
  */
-const QuestionMark = memo(forwardRef<SVGSVGElement, QuestionMarkProps>(({ 
+const QuestionMark = memo(forwardRef<SVGSVGElement, QuestionMarkProps>(({
   weight = 'regular',
   duotone = false,
-  ...rest 
+  ...rest
 }, ref) => {
   if (weight === 'bold' && duotone) return <QuestionMarkBoldDuotone ref={ref} {...rest} />;
   if (weight === 'bold') return <QuestionMarkBold ref={ref} {...rest} />;
@@ -33,6 +33,6 @@ const QuestionMark = memo(forwardRef<SVGSVGElement, QuestionMarkProps>(({
 
 QuestionMark.displayName = 'QuestionMark';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { QuestionMark, QuestionMark as QuestionMarkIcon, QuestionMark as SiQuestionMark };
 export default QuestionMark;

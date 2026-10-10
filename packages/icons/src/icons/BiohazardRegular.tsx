@@ -14,7 +14,7 @@ const BiohazardRegular = memo(
 
 BiohazardRegular.displayName = 'BiohazardRegular';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { BiohazardRegular, BiohazardRegular as BiohazardRegularIcon, BiohazardRegular as SiBiohazardRegular };
 export default BiohazardRegular;
 export type { BiohazardRegularProps };

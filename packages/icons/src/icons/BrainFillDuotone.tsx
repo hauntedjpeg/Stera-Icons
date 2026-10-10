@@ -15,7 +15,7 @@ const BrainFillDuotone = memo(
 
 BrainFillDuotone.displayName = 'BrainFillDuotone';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { BrainFillDuotone, BrainFillDuotone as BrainFillDuotoneIcon, BrainFillDuotone as SiBrainFillDuotone };
 export default BrainFillDuotone;
 export type { BrainFillDuotoneProps };

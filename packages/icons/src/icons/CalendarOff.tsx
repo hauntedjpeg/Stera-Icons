@@ -18,10 +18,10 @@ export interface CalendarOffProps extends IconProps {
  * For smaller bundle size, import specific variants directly:
  * import { CalendarOffRegular } from 'stera-icons/icons/CalendarOffRegular';
  */
-const CalendarOff = memo(forwardRef<SVGSVGElement, CalendarOffProps>(({ 
+const CalendarOff = memo(forwardRef<SVGSVGElement, CalendarOffProps>(({
   weight = 'regular',
   duotone = false,
-  ...rest 
+  ...rest
 }, ref) => {
   if (weight === 'bold' && duotone) return <CalendarOffBoldDuotone ref={ref} {...rest} />;
   if (weight === 'bold') return <CalendarOffBold ref={ref} {...rest} />;
@@ -33,6 +33,6 @@ const CalendarOff = memo(forwardRef<SVGSVGElement, CalendarOffProps>(({
 
 CalendarOff.displayName = 'CalendarOff';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { CalendarOff, CalendarOff as CalendarOffIcon, CalendarOff as SiCalendarOff };
 export default CalendarOff;

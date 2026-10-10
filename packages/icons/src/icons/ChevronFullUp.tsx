@@ -18,10 +18,10 @@ export interface ChevronFullUpProps extends IconProps {
  * For smaller bundle size, import specific variants directly:
  * import { ChevronFullUpRegular } from 'stera-icons/icons/ChevronFullUpRegular';
  */
-const ChevronFullUp = memo(forwardRef<SVGSVGElement, ChevronFullUpProps>(({ 
+const ChevronFullUp = memo(forwardRef<SVGSVGElement, ChevronFullUpProps>(({
   weight = 'regular',
   duotone = false,
-  ...rest 
+  ...rest
 }, ref) => {
   if (weight === 'bold' && duotone) return <ChevronFullUpBoldDuotone ref={ref} {...rest} />;
   if (weight === 'bold') return <ChevronFullUpBold ref={ref} {...rest} />;
@@ -33,6 +33,6 @@ const ChevronFullUp = memo(forwardRef<SVGSVGElement, ChevronFullUpProps>(({
 
 ChevronFullUp.displayName = 'ChevronFullUp';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { ChevronFullUp, ChevronFullUp as ChevronFullUpIcon, ChevronFullUp as SiChevronFullUp };
 export default ChevronFullUp;

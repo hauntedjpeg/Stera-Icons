@@ -15,7 +15,7 @@ const BookmarkFillDuotone = memo(
 
 BookmarkFillDuotone.displayName = 'BookmarkFillDuotone';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { BookmarkFillDuotone, BookmarkFillDuotone as BookmarkFillDuotoneIcon, BookmarkFillDuotone as SiBookmarkFillDuotone };
 export default BookmarkFillDuotone;
 export type { BookmarkFillDuotoneProps };

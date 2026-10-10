@@ -18,10 +18,10 @@ export interface SoccerBallProps extends IconProps {
  * For smaller bundle size, import specific variants directly:
  * import { SoccerBallRegular } from 'stera-icons/icons/SoccerBallRegular';
  */
-const SoccerBall = memo(forwardRef<SVGSVGElement, SoccerBallProps>(({ 
+const SoccerBall = memo(forwardRef<SVGSVGElement, SoccerBallProps>(({
   weight = 'regular',
   duotone = false,
-  ...rest 
+  ...rest
 }, ref) => {
   if (weight === 'bold' && duotone) return <SoccerBallBoldDuotone ref={ref} {...rest} />;
   if (weight === 'bold') return <SoccerBallBold ref={ref} {...rest} />;
@@ -33,6 +33,6 @@ const SoccerBall = memo(forwardRef<SVGSVGElement, SoccerBallProps>(({
 
 SoccerBall.displayName = 'SoccerBall';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { SoccerBall, SoccerBall as SoccerBallIcon, SoccerBall as SiSoccerBall };
 export default SoccerBall;

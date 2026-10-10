@@ -14,7 +14,7 @@ const MailOpenRegular = memo(
 
 MailOpenRegular.displayName = 'MailOpenRegular';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { MailOpenRegular, MailOpenRegular as MailOpenRegularIcon, MailOpenRegular as SiMailOpenRegular };
 export default MailOpenRegular;
 export type { MailOpenRegularProps };

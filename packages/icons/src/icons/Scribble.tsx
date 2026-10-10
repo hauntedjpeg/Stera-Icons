@@ -18,10 +18,10 @@ export interface ScribbleProps extends IconProps {
  * For smaller bundle size, import specific variants directly:
  * import { ScribbleRegular } from 'stera-icons/icons/ScribbleRegular';
  */
-const Scribble = memo(forwardRef<SVGSVGElement, ScribbleProps>(({ 
+const Scribble = memo(forwardRef<SVGSVGElement, ScribbleProps>(({
   weight = 'regular',
   duotone = false,
-  ...rest 
+  ...rest
 }, ref) => {
   if (weight === 'bold' && duotone) return <ScribbleBoldDuotone ref={ref} {...rest} />;
   if (weight === 'bold') return <ScribbleBold ref={ref} {...rest} />;
@@ -33,6 +33,6 @@ const Scribble = memo(forwardRef<SVGSVGElement, ScribbleProps>(({
 
 Scribble.displayName = 'Scribble';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { Scribble, Scribble as ScribbleIcon, Scribble as SiScribble };
 export default Scribble;

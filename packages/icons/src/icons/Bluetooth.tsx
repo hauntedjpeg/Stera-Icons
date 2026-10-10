@@ -18,10 +18,10 @@ export interface BluetoothProps extends IconProps {
  * For smaller bundle size, import specific variants directly:
  * import { BluetoothRegular } from 'stera-icons/icons/BluetoothRegular';
  */
-const Bluetooth = memo(forwardRef<SVGSVGElement, BluetoothProps>(({ 
+const Bluetooth = memo(forwardRef<SVGSVGElement, BluetoothProps>(({
   weight = 'regular',
   duotone = false,
-  ...rest 
+  ...rest
 }, ref) => {
   if (weight === 'bold' && duotone) return <BluetoothBoldDuotone ref={ref} {...rest} />;
   if (weight === 'bold') return <BluetoothBold ref={ref} {...rest} />;
@@ -33,6 +33,6 @@ const Bluetooth = memo(forwardRef<SVGSVGElement, BluetoothProps>(({
 
 Bluetooth.displayName = 'Bluetooth';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { Bluetooth, Bluetooth as BluetoothIcon, Bluetooth as SiBluetooth };
 export default Bluetooth;

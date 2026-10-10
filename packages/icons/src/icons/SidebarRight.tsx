@@ -18,10 +18,10 @@ export interface SidebarRightProps extends IconProps {
  * For smaller bundle size, import specific variants directly:
  * import { SidebarRightRegular } from 'stera-icons/icons/SidebarRightRegular';
  */
-const SidebarRight = memo(forwardRef<SVGSVGElement, SidebarRightProps>(({ 
+const SidebarRight = memo(forwardRef<SVGSVGElement, SidebarRightProps>(({
   weight = 'regular',
   duotone = false,
-  ...rest 
+  ...rest
 }, ref) => {
   if (weight === 'bold' && duotone) return <SidebarRightBoldDuotone ref={ref} {...rest} />;
   if (weight === 'bold') return <SidebarRightBold ref={ref} {...rest} />;
@@ -33,6 +33,6 @@ const SidebarRight = memo(forwardRef<SVGSVGElement, SidebarRightProps>(({
 
 SidebarRight.displayName = 'SidebarRight';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { SidebarRight, SidebarRight as SidebarRightIcon, SidebarRight as SiSidebarRight };
 export default SidebarRight;

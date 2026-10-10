@@ -14,7 +14,7 @@ const StairsFill = memo(
 
 StairsFill.displayName = 'StairsFill';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { StairsFill, StairsFill as StairsFillIcon, StairsFill as SiStairsFill };
 export default StairsFill;
 export type { StairsFillProps };

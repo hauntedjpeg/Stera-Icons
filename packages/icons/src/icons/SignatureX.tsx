@@ -18,10 +18,10 @@ export interface SignatureXProps extends IconProps {
  * For smaller bundle size, import specific variants directly:
  * import { SignatureXRegular } from 'stera-icons/icons/SignatureXRegular';
  */
-const SignatureX = memo(forwardRef<SVGSVGElement, SignatureXProps>(({ 
+const SignatureX = memo(forwardRef<SVGSVGElement, SignatureXProps>(({
   weight = 'regular',
   duotone = false,
-  ...rest 
+  ...rest
 }, ref) => {
   if (weight === 'bold' && duotone) return <SignatureXBoldDuotone ref={ref} {...rest} />;
   if (weight === 'bold') return <SignatureXBold ref={ref} {...rest} />;
@@ -33,6 +33,6 @@ const SignatureX = memo(forwardRef<SVGSVGElement, SignatureXProps>(({
 
 SignatureX.displayName = 'SignatureX';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { SignatureX, SignatureX as SignatureXIcon, SignatureX as SiSignatureX };
 export default SignatureX;

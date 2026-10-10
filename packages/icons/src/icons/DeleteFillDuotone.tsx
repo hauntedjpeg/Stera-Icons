@@ -15,7 +15,7 @@ const DeleteFillDuotone = memo(
 
 DeleteFillDuotone.displayName = 'DeleteFillDuotone';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { DeleteFillDuotone, DeleteFillDuotone as DeleteFillDuotoneIcon, DeleteFillDuotone as SiDeleteFillDuotone };
 export default DeleteFillDuotone;
 export type { DeleteFillDuotoneProps };

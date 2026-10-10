@@ -14,7 +14,7 @@ const AsteriskAltBold = memo(
 
 AsteriskAltBold.displayName = 'AsteriskAltBold';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { AsteriskAltBold, AsteriskAltBold as AsteriskAltBoldIcon, AsteriskAltBold as SiAsteriskAltBold };
 export default AsteriskAltBold;
 export type { AsteriskAltBoldProps };

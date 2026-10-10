@@ -14,7 +14,7 @@ const SlidersRegular = memo(
 
 SlidersRegular.displayName = 'SlidersRegular';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { SlidersRegular, SlidersRegular as SlidersRegularIcon, SlidersRegular as SiSlidersRegular };
 export default SlidersRegular;
 export type { SlidersRegularProps };

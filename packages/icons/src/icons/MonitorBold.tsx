@@ -14,7 +14,7 @@ const MonitorBold = memo(
 
 MonitorBold.displayName = 'MonitorBold';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { MonitorBold, MonitorBold as MonitorBoldIcon, MonitorBold as SiMonitorBold };
 export default MonitorBold;
 export type { MonitorBoldProps };

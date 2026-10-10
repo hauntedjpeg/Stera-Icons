@@ -14,7 +14,7 @@ const GitMergeFill = memo(
 
 GitMergeFill.displayName = 'GitMergeFill';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { GitMergeFill, GitMergeFill as GitMergeFillIcon, GitMergeFill as SiGitMergeFill };
 export default GitMergeFill;
 export type { GitMergeFillProps };

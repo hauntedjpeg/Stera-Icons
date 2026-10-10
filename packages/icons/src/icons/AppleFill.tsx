@@ -14,7 +14,7 @@ const AppleFill = memo(
 
 AppleFill.displayName = 'AppleFill';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { AppleFill, AppleFill as AppleFillIcon, AppleFill as SiAppleFill };
 export default AppleFill;
 export type { AppleFillProps };

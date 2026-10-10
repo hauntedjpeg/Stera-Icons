@@ -15,7 +15,7 @@ const ToggleOnBold = memo(
 
 ToggleOnBold.displayName = 'ToggleOnBold';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { ToggleOnBold, ToggleOnBold as ToggleOnBoldIcon, ToggleOnBold as SiToggleOnBold };
 export default ToggleOnBold;
 export type { ToggleOnBoldProps };

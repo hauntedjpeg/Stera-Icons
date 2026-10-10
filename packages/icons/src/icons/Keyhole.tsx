@@ -18,10 +18,10 @@ export interface KeyholeProps extends IconProps {
  * For smaller bundle size, import specific variants directly:
  * import { KeyholeRegular } from 'stera-icons/icons/KeyholeRegular';
  */
-const Keyhole = memo(forwardRef<SVGSVGElement, KeyholeProps>(({ 
+const Keyhole = memo(forwardRef<SVGSVGElement, KeyholeProps>(({
   weight = 'regular',
   duotone = false,
-  ...rest 
+  ...rest
 }, ref) => {
   if (weight === 'bold' && duotone) return <KeyholeBoldDuotone ref={ref} {...rest} />;
   if (weight === 'bold') return <KeyholeBold ref={ref} {...rest} />;
@@ -33,6 +33,6 @@ const Keyhole = memo(forwardRef<SVGSVGElement, KeyholeProps>(({
 
 Keyhole.displayName = 'Keyhole';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { Keyhole, Keyhole as KeyholeIcon, Keyhole as SiKeyhole };
 export default Keyhole;

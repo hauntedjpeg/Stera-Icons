@@ -18,10 +18,10 @@ export interface ChartBarRowAscProps extends IconProps {
  * For smaller bundle size, import specific variants directly:
  * import { ChartBarRowAscRegular } from 'stera-icons/icons/ChartBarRowAscRegular';
  */
-const ChartBarRowAsc = memo(forwardRef<SVGSVGElement, ChartBarRowAscProps>(({ 
+const ChartBarRowAsc = memo(forwardRef<SVGSVGElement, ChartBarRowAscProps>(({
   weight = 'regular',
   duotone = false,
-  ...rest 
+  ...rest
 }, ref) => {
   if (weight === 'bold' && duotone) return <ChartBarRowAscBoldDuotone ref={ref} {...rest} />;
   if (weight === 'bold') return <ChartBarRowAscBold ref={ref} {...rest} />;
@@ -33,6 +33,6 @@ const ChartBarRowAsc = memo(forwardRef<SVGSVGElement, ChartBarRowAscProps>(({
 
 ChartBarRowAsc.displayName = 'ChartBarRowAsc';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { ChartBarRowAsc, ChartBarRowAsc as ChartBarRowAscIcon, ChartBarRowAsc as SiChartBarRowAsc };
 export default ChartBarRowAsc;

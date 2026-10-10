@@ -14,7 +14,7 @@ const UserXFill = memo(
 
 UserXFill.displayName = 'UserXFill';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { UserXFill, UserXFill as UserXFillIcon, UserXFill as SiUserXFill };
 export default UserXFill;
 export type { UserXFillProps };

@@ -18,10 +18,10 @@ export interface QuoteOpeningProps extends IconProps {
  * For smaller bundle size, import specific variants directly:
  * import { QuoteOpeningRegular } from 'stera-icons/icons/QuoteOpeningRegular';
  */
-const QuoteOpening = memo(forwardRef<SVGSVGElement, QuoteOpeningProps>(({ 
+const QuoteOpening = memo(forwardRef<SVGSVGElement, QuoteOpeningProps>(({
   weight = 'regular',
   duotone = false,
-  ...rest 
+  ...rest
 }, ref) => {
   if (weight === 'bold' && duotone) return <QuoteOpeningBoldDuotone ref={ref} {...rest} />;
   if (weight === 'bold') return <QuoteOpeningBold ref={ref} {...rest} />;
@@ -33,6 +33,6 @@ const QuoteOpening = memo(forwardRef<SVGSVGElement, QuoteOpeningProps>(({
 
 QuoteOpening.displayName = 'QuoteOpening';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { QuoteOpening, QuoteOpening as QuoteOpeningIcon, QuoteOpening as SiQuoteOpening };
 export default QuoteOpening;

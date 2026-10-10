@@ -15,7 +15,7 @@ const ExternalLinkBold = memo(
 
 ExternalLinkBold.displayName = 'ExternalLinkBold';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { ExternalLinkBold, ExternalLinkBold as ExternalLinkBoldIcon, ExternalLinkBold as SiExternalLinkBold };
 export default ExternalLinkBold;
 export type { ExternalLinkBoldProps };

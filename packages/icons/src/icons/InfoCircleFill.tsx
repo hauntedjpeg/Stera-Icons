@@ -14,7 +14,7 @@ const InfoCircleFill = memo(
 
 InfoCircleFill.displayName = 'InfoCircleFill';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { InfoCircleFill, InfoCircleFill as InfoCircleFillIcon, InfoCircleFill as SiInfoCircleFill };
 export default InfoCircleFill;
 export type { InfoCircleFillProps };

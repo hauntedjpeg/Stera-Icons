@@ -14,7 +14,7 @@ const SearchMinusFill = memo(
 
 SearchMinusFill.displayName = 'SearchMinusFill';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { SearchMinusFill, SearchMinusFill as SearchMinusFillIcon, SearchMinusFill as SiSearchMinusFill };
 export default SearchMinusFill;
 export type { SearchMinusFillProps };

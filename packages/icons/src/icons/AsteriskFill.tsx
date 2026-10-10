@@ -14,7 +14,7 @@ const AsteriskFill = memo(
 
 AsteriskFill.displayName = 'AsteriskFill';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { AsteriskFill, AsteriskFill as AsteriskFillIcon, AsteriskFill as SiAsteriskFill };
 export default AsteriskFill;
 export type { AsteriskFillProps };

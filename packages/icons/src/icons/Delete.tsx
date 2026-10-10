@@ -18,10 +18,10 @@ export interface DeleteProps extends IconProps {
  * For smaller bundle size, import specific variants directly:
  * import { DeleteRegular } from 'stera-icons/icons/DeleteRegular';
  */
-const Delete = memo(forwardRef<SVGSVGElement, DeleteProps>(({ 
+const Delete = memo(forwardRef<SVGSVGElement, DeleteProps>(({
   weight = 'regular',
   duotone = false,
-  ...rest 
+  ...rest
 }, ref) => {
   if (weight === 'bold' && duotone) return <DeleteBoldDuotone ref={ref} {...rest} />;
   if (weight === 'bold') return <DeleteBold ref={ref} {...rest} />;
@@ -33,6 +33,6 @@ const Delete = memo(forwardRef<SVGSVGElement, DeleteProps>(({
 
 Delete.displayName = 'Delete';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { Delete, Delete as DeleteIcon, Delete as SiDelete };
 export default Delete;

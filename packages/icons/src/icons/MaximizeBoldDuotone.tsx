@@ -15,7 +15,7 @@ const MaximizeBoldDuotone = memo(
 
 MaximizeBoldDuotone.displayName = 'MaximizeBoldDuotone';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { MaximizeBoldDuotone, MaximizeBoldDuotone as MaximizeBoldDuotoneIcon, MaximizeBoldDuotone as SiMaximizeBoldDuotone };
 export default MaximizeBoldDuotone;
 export type { MaximizeBoldDuotoneProps };

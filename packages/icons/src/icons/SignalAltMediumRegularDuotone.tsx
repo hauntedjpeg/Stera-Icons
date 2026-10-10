@@ -15,7 +15,7 @@ const SignalAltMediumRegularDuotone = memo(
 
 SignalAltMediumRegularDuotone.displayName = 'SignalAltMediumRegularDuotone';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { SignalAltMediumRegularDuotone, SignalAltMediumRegularDuotone as SignalAltMediumRegularDuotoneIcon, SignalAltMediumRegularDuotone as SiSignalAltMediumRegularDuotone };
 export default SignalAltMediumRegularDuotone;
 export type { SignalAltMediumRegularDuotoneProps };

@@ -15,7 +15,7 @@ const CertificateBold = memo(
 
 CertificateBold.displayName = 'CertificateBold';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { CertificateBold, CertificateBold as CertificateBoldIcon, CertificateBold as SiCertificateBold };
 export default CertificateBold;
 export type { CertificateBoldProps };

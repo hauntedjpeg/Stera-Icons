@@ -18,10 +18,10 @@ export interface MenuSimpleProps extends IconProps {
  * For smaller bundle size, import specific variants directly:
  * import { MenuSimpleRegular } from 'stera-icons/icons/MenuSimpleRegular';
  */
-const MenuSimple = memo(forwardRef<SVGSVGElement, MenuSimpleProps>(({ 
+const MenuSimple = memo(forwardRef<SVGSVGElement, MenuSimpleProps>(({
   weight = 'regular',
   duotone = false,
-  ...rest 
+  ...rest
 }, ref) => {
   if (weight === 'bold' && duotone) return <MenuSimpleBoldDuotone ref={ref} {...rest} />;
   if (weight === 'bold') return <MenuSimpleBold ref={ref} {...rest} />;
@@ -33,6 +33,6 @@ const MenuSimple = memo(forwardRef<SVGSVGElement, MenuSimpleProps>(({
 
 MenuSimple.displayName = 'MenuSimple';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { MenuSimple, MenuSimple as MenuSimpleIcon, MenuSimple as SiMenuSimple };
 export default MenuSimple;

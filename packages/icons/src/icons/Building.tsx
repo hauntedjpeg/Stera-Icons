@@ -18,10 +18,10 @@ export interface BuildingProps extends IconProps {
  * For smaller bundle size, import specific variants directly:
  * import { BuildingRegular } from 'stera-icons/icons/BuildingRegular';
  */
-const Building = memo(forwardRef<SVGSVGElement, BuildingProps>(({ 
+const Building = memo(forwardRef<SVGSVGElement, BuildingProps>(({
   weight = 'regular',
   duotone = false,
-  ...rest 
+  ...rest
 }, ref) => {
   if (weight === 'bold' && duotone) return <BuildingBoldDuotone ref={ref} {...rest} />;
   if (weight === 'bold') return <BuildingBold ref={ref} {...rest} />;
@@ -33,6 +33,6 @@ const Building = memo(forwardRef<SVGSVGElement, BuildingProps>(({
 
 Building.displayName = 'Building';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { Building, Building as BuildingIcon, Building as SiBuilding };
 export default Building;

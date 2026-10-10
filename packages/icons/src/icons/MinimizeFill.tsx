@@ -14,7 +14,7 @@ const MinimizeFill = memo(
 
 MinimizeFill.displayName = 'MinimizeFill';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { MinimizeFill, MinimizeFill as MinimizeFillIcon, MinimizeFill as SiMinimizeFill };
 export default MinimizeFill;
 export type { MinimizeFillProps };

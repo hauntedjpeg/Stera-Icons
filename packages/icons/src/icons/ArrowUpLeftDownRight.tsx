@@ -18,10 +18,10 @@ export interface ArrowUpLeftDownRightProps extends IconProps {
  * For smaller bundle size, import specific variants directly:
  * import { ArrowUpLeftDownRightRegular } from 'stera-icons/icons/ArrowUpLeftDownRightRegular';
  */
-const ArrowUpLeftDownRight = memo(forwardRef<SVGSVGElement, ArrowUpLeftDownRightProps>(({ 
+const ArrowUpLeftDownRight = memo(forwardRef<SVGSVGElement, ArrowUpLeftDownRightProps>(({
   weight = 'regular',
   duotone = false,
-  ...rest 
+  ...rest
 }, ref) => {
   if (weight === 'bold' && duotone) return <ArrowUpLeftDownRightBoldDuotone ref={ref} {...rest} />;
   if (weight === 'bold') return <ArrowUpLeftDownRightBold ref={ref} {...rest} />;
@@ -33,6 +33,6 @@ const ArrowUpLeftDownRight = memo(forwardRef<SVGSVGElement, ArrowUpLeftDownRight
 
 ArrowUpLeftDownRight.displayName = 'ArrowUpLeftDownRight';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { ArrowUpLeftDownRight, ArrowUpLeftDownRight as ArrowUpLeftDownRightIcon, ArrowUpLeftDownRight as SiArrowUpLeftDownRight };
 export default ArrowUpLeftDownRight;

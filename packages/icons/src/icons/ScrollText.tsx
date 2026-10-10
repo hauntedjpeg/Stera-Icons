@@ -18,10 +18,10 @@ export interface ScrollTextProps extends IconProps {
  * For smaller bundle size, import specific variants directly:
  * import { ScrollTextRegular } from 'stera-icons/icons/ScrollTextRegular';
  */
-const ScrollText = memo(forwardRef<SVGSVGElement, ScrollTextProps>(({ 
+const ScrollText = memo(forwardRef<SVGSVGElement, ScrollTextProps>(({
   weight = 'regular',
   duotone = false,
-  ...rest 
+  ...rest
 }, ref) => {
   if (weight === 'bold' && duotone) return <ScrollTextBoldDuotone ref={ref} {...rest} />;
   if (weight === 'bold') return <ScrollTextBold ref={ref} {...rest} />;
@@ -33,6 +33,6 @@ const ScrollText = memo(forwardRef<SVGSVGElement, ScrollTextProps>(({
 
 ScrollText.displayName = 'ScrollText';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { ScrollText, ScrollText as ScrollTextIcon, ScrollText as SiScrollText };
 export default ScrollText;

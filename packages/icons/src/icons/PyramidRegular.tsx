@@ -14,7 +14,7 @@ const PyramidRegular = memo(
 
 PyramidRegular.displayName = 'PyramidRegular';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { PyramidRegular, PyramidRegular as PyramidRegularIcon, PyramidRegular as SiPyramidRegular };
 export default PyramidRegular;
 export type { PyramidRegularProps };

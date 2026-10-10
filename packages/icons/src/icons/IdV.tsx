@@ -18,10 +18,10 @@ export interface IdVProps extends IconProps {
  * For smaller bundle size, import specific variants directly:
  * import { IdVRegular } from 'stera-icons/icons/IdVRegular';
  */
-const IdV = memo(forwardRef<SVGSVGElement, IdVProps>(({ 
+const IdV = memo(forwardRef<SVGSVGElement, IdVProps>(({
   weight = 'regular',
   duotone = false,
-  ...rest 
+  ...rest
 }, ref) => {
   if (weight === 'bold' && duotone) return <IdVBoldDuotone ref={ref} {...rest} />;
   if (weight === 'bold') return <IdVBold ref={ref} {...rest} />;
@@ -33,6 +33,6 @@ const IdV = memo(forwardRef<SVGSVGElement, IdVProps>(({
 
 IdV.displayName = 'IdV';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { IdV, IdV as IdVIcon, IdV as SiIdV };
 export default IdV;

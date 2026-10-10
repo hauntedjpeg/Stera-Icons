@@ -14,7 +14,7 @@ const TextStrikethroughFill = memo(
 
 TextStrikethroughFill.displayName = 'TextStrikethroughFill';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { TextStrikethroughFill, TextStrikethroughFill as TextStrikethroughFillIcon, TextStrikethroughFill as SiTextStrikethroughFill };
 export default TextStrikethroughFill;
 export type { TextStrikethroughFillProps };

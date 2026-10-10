@@ -18,10 +18,10 @@ export interface MailBadgeProps extends IconProps {
  * For smaller bundle size, import specific variants directly:
  * import { MailBadgeRegular } from 'stera-icons/icons/MailBadgeRegular';
  */
-const MailBadge = memo(forwardRef<SVGSVGElement, MailBadgeProps>(({ 
+const MailBadge = memo(forwardRef<SVGSVGElement, MailBadgeProps>(({
   weight = 'regular',
   duotone = false,
-  ...rest 
+  ...rest
 }, ref) => {
   if (weight === 'bold' && duotone) return <MailBadgeBoldDuotone ref={ref} {...rest} />;
   if (weight === 'bold') return <MailBadgeBold ref={ref} {...rest} />;
@@ -33,6 +33,6 @@ const MailBadge = memo(forwardRef<SVGSVGElement, MailBadgeProps>(({
 
 MailBadge.displayName = 'MailBadge';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { MailBadge, MailBadge as MailBadgeIcon, MailBadge as SiMailBadge };
 export default MailBadge;

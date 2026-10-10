@@ -14,7 +14,7 @@ const TallyMarksRegular = memo(
 
 TallyMarksRegular.displayName = 'TallyMarksRegular';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { TallyMarksRegular, TallyMarksRegular as TallyMarksRegularIcon, TallyMarksRegular as SiTallyMarksRegular };
 export default TallyMarksRegular;
 export type { TallyMarksRegularProps };

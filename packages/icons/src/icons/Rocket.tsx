@@ -18,10 +18,10 @@ export interface RocketProps extends IconProps {
  * For smaller bundle size, import specific variants directly:
  * import { RocketRegular } from 'stera-icons/icons/RocketRegular';
  */
-const Rocket = memo(forwardRef<SVGSVGElement, RocketProps>(({ 
+const Rocket = memo(forwardRef<SVGSVGElement, RocketProps>(({
   weight = 'regular',
   duotone = false,
-  ...rest 
+  ...rest
 }, ref) => {
   if (weight === 'bold' && duotone) return <RocketBoldDuotone ref={ref} {...rest} />;
   if (weight === 'bold') return <RocketBold ref={ref} {...rest} />;
@@ -33,6 +33,6 @@ const Rocket = memo(forwardRef<SVGSVGElement, RocketProps>(({
 
 Rocket.displayName = 'Rocket';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { Rocket, Rocket as RocketIcon, Rocket as SiRocket };
 export default Rocket;

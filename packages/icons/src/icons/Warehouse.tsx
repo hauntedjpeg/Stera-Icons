@@ -18,10 +18,10 @@ export interface WarehouseProps extends IconProps {
  * For smaller bundle size, import specific variants directly:
  * import { WarehouseRegular } from 'stera-icons/icons/WarehouseRegular';
  */
-const Warehouse = memo(forwardRef<SVGSVGElement, WarehouseProps>(({ 
+const Warehouse = memo(forwardRef<SVGSVGElement, WarehouseProps>(({
   weight = 'regular',
   duotone = false,
-  ...rest 
+  ...rest
 }, ref) => {
   if (weight === 'bold' && duotone) return <WarehouseBoldDuotone ref={ref} {...rest} />;
   if (weight === 'bold') return <WarehouseBold ref={ref} {...rest} />;
@@ -33,6 +33,6 @@ const Warehouse = memo(forwardRef<SVGSVGElement, WarehouseProps>(({
 
 Warehouse.displayName = 'Warehouse';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { Warehouse, Warehouse as WarehouseIcon, Warehouse as SiWarehouse };
 export default Warehouse;

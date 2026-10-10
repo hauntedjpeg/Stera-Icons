@@ -15,7 +15,7 @@ const CameraBold = memo(
 
 CameraBold.displayName = 'CameraBold';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { CameraBold, CameraBold as CameraBoldIcon, CameraBold as SiCameraBold };
 export default CameraBold;
 export type { CameraBoldProps };

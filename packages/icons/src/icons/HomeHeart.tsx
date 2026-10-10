@@ -18,10 +18,10 @@ export interface HomeHeartProps extends IconProps {
  * For smaller bundle size, import specific variants directly:
  * import { HomeHeartRegular } from 'stera-icons/icons/HomeHeartRegular';
  */
-const HomeHeart = memo(forwardRef<SVGSVGElement, HomeHeartProps>(({ 
+const HomeHeart = memo(forwardRef<SVGSVGElement, HomeHeartProps>(({
   weight = 'regular',
   duotone = false,
-  ...rest 
+  ...rest
 }, ref) => {
   if (weight === 'bold' && duotone) return <HomeHeartBoldDuotone ref={ref} {...rest} />;
   if (weight === 'bold') return <HomeHeartBold ref={ref} {...rest} />;
@@ -33,6 +33,6 @@ const HomeHeart = memo(forwardRef<SVGSVGElement, HomeHeartProps>(({
 
 HomeHeart.displayName = 'HomeHeart';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { HomeHeart, HomeHeart as HomeHeartIcon, HomeHeart as SiHomeHeart };
 export default HomeHeart;

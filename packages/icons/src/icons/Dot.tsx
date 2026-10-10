@@ -18,10 +18,10 @@ export interface DotProps extends IconProps {
  * For smaller bundle size, import specific variants directly:
  * import { DotRegular } from 'stera-icons/icons/DotRegular';
  */
-const Dot = memo(forwardRef<SVGSVGElement, DotProps>(({ 
+const Dot = memo(forwardRef<SVGSVGElement, DotProps>(({
   weight = 'regular',
   duotone = false,
-  ...rest 
+  ...rest
 }, ref) => {
   if (weight === 'bold' && duotone) return <DotBoldDuotone ref={ref} {...rest} />;
   if (weight === 'bold') return <DotBold ref={ref} {...rest} />;
@@ -33,6 +33,6 @@ const Dot = memo(forwardRef<SVGSVGElement, DotProps>(({
 
 Dot.displayName = 'Dot';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { Dot, Dot as DotIcon, Dot as SiDot };
 export default Dot;

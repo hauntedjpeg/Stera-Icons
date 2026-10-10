@@ -18,10 +18,10 @@ export interface CpuProps extends IconProps {
  * For smaller bundle size, import specific variants directly:
  * import { CpuRegular } from 'stera-icons/icons/CpuRegular';
  */
-const Cpu = memo(forwardRef<SVGSVGElement, CpuProps>(({ 
+const Cpu = memo(forwardRef<SVGSVGElement, CpuProps>(({
   weight = 'regular',
   duotone = false,
-  ...rest 
+  ...rest
 }, ref) => {
   if (weight === 'bold' && duotone) return <CpuBoldDuotone ref={ref} {...rest} />;
   if (weight === 'bold') return <CpuBold ref={ref} {...rest} />;
@@ -33,6 +33,6 @@ const Cpu = memo(forwardRef<SVGSVGElement, CpuProps>(({
 
 Cpu.displayName = 'Cpu';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { Cpu, Cpu as CpuIcon, Cpu as SiCpu };
 export default Cpu;

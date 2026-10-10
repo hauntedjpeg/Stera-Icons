@@ -15,7 +15,7 @@ const WaveTriangleRegularDuotone = memo(
 
 WaveTriangleRegularDuotone.displayName = 'WaveTriangleRegularDuotone';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { WaveTriangleRegularDuotone, WaveTriangleRegularDuotone as WaveTriangleRegularDuotoneIcon, WaveTriangleRegularDuotone as SiWaveTriangleRegularDuotone };
 export default WaveTriangleRegularDuotone;
 export type { WaveTriangleRegularDuotoneProps };

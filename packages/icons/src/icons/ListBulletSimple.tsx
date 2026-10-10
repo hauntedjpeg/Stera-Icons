@@ -18,10 +18,10 @@ export interface ListBulletSimpleProps extends IconProps {
  * For smaller bundle size, import specific variants directly:
  * import { ListBulletSimpleRegular } from 'stera-icons/icons/ListBulletSimpleRegular';
  */
-const ListBulletSimple = memo(forwardRef<SVGSVGElement, ListBulletSimpleProps>(({ 
+const ListBulletSimple = memo(forwardRef<SVGSVGElement, ListBulletSimpleProps>(({
   weight = 'regular',
   duotone = false,
-  ...rest 
+  ...rest
 }, ref) => {
   if (weight === 'bold' && duotone) return <ListBulletSimpleBoldDuotone ref={ref} {...rest} />;
   if (weight === 'bold') return <ListBulletSimpleBold ref={ref} {...rest} />;
@@ -33,6 +33,6 @@ const ListBulletSimple = memo(forwardRef<SVGSVGElement, ListBulletSimpleProps>((
 
 ListBulletSimple.displayName = 'ListBulletSimple';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { ListBulletSimple, ListBulletSimple as ListBulletSimpleIcon, ListBulletSimple as SiListBulletSimple };
 export default ListBulletSimple;

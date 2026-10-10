@@ -18,10 +18,10 @@ export interface DatabaseXProps extends IconProps {
  * For smaller bundle size, import specific variants directly:
  * import { DatabaseXRegular } from 'stera-icons/icons/DatabaseXRegular';
  */
-const DatabaseX = memo(forwardRef<SVGSVGElement, DatabaseXProps>(({ 
+const DatabaseX = memo(forwardRef<SVGSVGElement, DatabaseXProps>(({
   weight = 'regular',
   duotone = false,
-  ...rest 
+  ...rest
 }, ref) => {
   if (weight === 'bold' && duotone) return <DatabaseXBoldDuotone ref={ref} {...rest} />;
   if (weight === 'bold') return <DatabaseXBold ref={ref} {...rest} />;
@@ -33,6 +33,6 @@ const DatabaseX = memo(forwardRef<SVGSVGElement, DatabaseXProps>(({
 
 DatabaseX.displayName = 'DatabaseX';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { DatabaseX, DatabaseX as DatabaseXIcon, DatabaseX as SiDatabaseX };
 export default DatabaseX;

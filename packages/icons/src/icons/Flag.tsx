@@ -18,10 +18,10 @@ export interface FlagProps extends IconProps {
  * For smaller bundle size, import specific variants directly:
  * import { FlagRegular } from 'stera-icons/icons/FlagRegular';
  */
-const Flag = memo(forwardRef<SVGSVGElement, FlagProps>(({ 
+const Flag = memo(forwardRef<SVGSVGElement, FlagProps>(({
   weight = 'regular',
   duotone = false,
-  ...rest 
+  ...rest
 }, ref) => {
   if (weight === 'bold' && duotone) return <FlagBoldDuotone ref={ref} {...rest} />;
   if (weight === 'bold') return <FlagBold ref={ref} {...rest} />;
@@ -33,6 +33,6 @@ const Flag = memo(forwardRef<SVGSVGElement, FlagProps>(({
 
 Flag.displayName = 'Flag';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { Flag, Flag as FlagIcon, Flag as SiFlag };
 export default Flag;

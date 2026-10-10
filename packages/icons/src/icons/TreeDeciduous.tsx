@@ -18,10 +18,10 @@ export interface TreeDeciduousProps extends IconProps {
  * For smaller bundle size, import specific variants directly:
  * import { TreeDeciduousRegular } from 'stera-icons/icons/TreeDeciduousRegular';
  */
-const TreeDeciduous = memo(forwardRef<SVGSVGElement, TreeDeciduousProps>(({ 
+const TreeDeciduous = memo(forwardRef<SVGSVGElement, TreeDeciduousProps>(({
   weight = 'regular',
   duotone = false,
-  ...rest 
+  ...rest
 }, ref) => {
   if (weight === 'bold' && duotone) return <TreeDeciduousBoldDuotone ref={ref} {...rest} />;
   if (weight === 'bold') return <TreeDeciduousBold ref={ref} {...rest} />;
@@ -33,6 +33,6 @@ const TreeDeciduous = memo(forwardRef<SVGSVGElement, TreeDeciduousProps>(({
 
 TreeDeciduous.displayName = 'TreeDeciduous';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { TreeDeciduous, TreeDeciduous as TreeDeciduousIcon, TreeDeciduous as SiTreeDeciduous };
 export default TreeDeciduous;

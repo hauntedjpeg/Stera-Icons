@@ -18,10 +18,10 @@ export interface WaveSineProps extends IconProps {
  * For smaller bundle size, import specific variants directly:
  * import { WaveSineRegular } from 'stera-icons/icons/WaveSineRegular';
  */
-const WaveSine = memo(forwardRef<SVGSVGElement, WaveSineProps>(({ 
+const WaveSine = memo(forwardRef<SVGSVGElement, WaveSineProps>(({
   weight = 'regular',
   duotone = false,
-  ...rest 
+  ...rest
 }, ref) => {
   if (weight === 'bold' && duotone) return <WaveSineBoldDuotone ref={ref} {...rest} />;
   if (weight === 'bold') return <WaveSineBold ref={ref} {...rest} />;
@@ -33,6 +33,6 @@ const WaveSine = memo(forwardRef<SVGSVGElement, WaveSineProps>(({
 
 WaveSine.displayName = 'WaveSine';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { WaveSine, WaveSine as WaveSineIcon, WaveSine as SiWaveSine };
 export default WaveSine;

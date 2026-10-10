@@ -16,7 +16,7 @@ const SwatchBookRegularDuotone = memo(
 
 SwatchBookRegularDuotone.displayName = 'SwatchBookRegularDuotone';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { SwatchBookRegularDuotone, SwatchBookRegularDuotone as SwatchBookRegularDuotoneIcon, SwatchBookRegularDuotone as SiSwatchBookRegularDuotone };
 export default SwatchBookRegularDuotone;
 export type { SwatchBookRegularDuotoneProps };

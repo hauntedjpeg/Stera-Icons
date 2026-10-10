@@ -14,7 +14,7 @@ const CollapseFill = memo(
 
 CollapseFill.displayName = 'CollapseFill';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { CollapseFill, CollapseFill as CollapseFillIcon, CollapseFill as SiCollapseFill };
 export default CollapseFill;
 export type { CollapseFillProps };

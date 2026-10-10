@@ -14,7 +14,7 @@ const PopcornFill = memo(
 
 PopcornFill.displayName = 'PopcornFill';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { PopcornFill, PopcornFill as PopcornFillIcon, PopcornFill as SiPopcornFill };
 export default PopcornFill;
 export type { PopcornFillProps };

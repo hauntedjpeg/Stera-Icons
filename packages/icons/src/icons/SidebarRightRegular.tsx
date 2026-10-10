@@ -14,7 +14,7 @@ const SidebarRightRegular = memo(
 
 SidebarRightRegular.displayName = 'SidebarRightRegular';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { SidebarRightRegular, SidebarRightRegular as SidebarRightRegularIcon, SidebarRightRegular as SiSidebarRightRegular };
 export default SidebarRightRegular;
 export type { SidebarRightRegularProps };

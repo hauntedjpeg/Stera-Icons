@@ -14,7 +14,7 @@ const RectangleDashedRegular = memo(
 
 RectangleDashedRegular.displayName = 'RectangleDashedRegular';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { RectangleDashedRegular, RectangleDashedRegular as RectangleDashedRegularIcon, RectangleDashedRegular as SiRectangleDashedRegular };
 export default RectangleDashedRegular;
 export type { RectangleDashedRegularProps };

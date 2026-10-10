@@ -15,7 +15,7 @@ const AlarmClockFill = memo(
 
 AlarmClockFill.displayName = 'AlarmClockFill';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { AlarmClockFill, AlarmClockFill as AlarmClockFillIcon, AlarmClockFill as SiAlarmClockFill };
 export default AlarmClockFill;
 export type { AlarmClockFillProps };

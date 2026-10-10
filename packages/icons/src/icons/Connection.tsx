@@ -18,10 +18,10 @@ export interface ConnectionProps extends IconProps {
  * For smaller bundle size, import specific variants directly:
  * import { ConnectionRegular } from 'stera-icons/icons/ConnectionRegular';
  */
-const Connection = memo(forwardRef<SVGSVGElement, ConnectionProps>(({ 
+const Connection = memo(forwardRef<SVGSVGElement, ConnectionProps>(({
   weight = 'regular',
   duotone = false,
-  ...rest 
+  ...rest
 }, ref) => {
   if (weight === 'bold' && duotone) return <ConnectionBoldDuotone ref={ref} {...rest} />;
   if (weight === 'bold') return <ConnectionBold ref={ref} {...rest} />;
@@ -33,6 +33,6 @@ const Connection = memo(forwardRef<SVGSVGElement, ConnectionProps>(({
 
 Connection.displayName = 'Connection';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { Connection, Connection as ConnectionIcon, Connection as SiConnection };
 export default Connection;

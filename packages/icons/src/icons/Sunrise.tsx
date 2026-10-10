@@ -18,10 +18,10 @@ export interface SunriseProps extends IconProps {
  * For smaller bundle size, import specific variants directly:
  * import { SunriseRegular } from 'stera-icons/icons/SunriseRegular';
  */
-const Sunrise = memo(forwardRef<SVGSVGElement, SunriseProps>(({ 
+const Sunrise = memo(forwardRef<SVGSVGElement, SunriseProps>(({
   weight = 'regular',
   duotone = false,
-  ...rest 
+  ...rest
 }, ref) => {
   if (weight === 'bold' && duotone) return <SunriseBoldDuotone ref={ref} {...rest} />;
   if (weight === 'bold') return <SunriseBold ref={ref} {...rest} />;
@@ -33,6 +33,6 @@ const Sunrise = memo(forwardRef<SVGSVGElement, SunriseProps>(({
 
 Sunrise.displayName = 'Sunrise';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { Sunrise, Sunrise as SunriseIcon, Sunrise as SiSunrise };
 export default Sunrise;

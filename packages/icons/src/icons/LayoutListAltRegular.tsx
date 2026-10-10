@@ -17,7 +17,7 @@ const LayoutListAltRegular = memo(
 
 LayoutListAltRegular.displayName = 'LayoutListAltRegular';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { LayoutListAltRegular, LayoutListAltRegular as LayoutListAltRegularIcon, LayoutListAltRegular as SiLayoutListAltRegular };
 export default LayoutListAltRegular;
 export type { LayoutListAltRegularProps };

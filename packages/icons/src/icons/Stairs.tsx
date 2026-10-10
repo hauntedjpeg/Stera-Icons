@@ -18,10 +18,10 @@ export interface StairsProps extends IconProps {
  * For smaller bundle size, import specific variants directly:
  * import { StairsRegular } from 'stera-icons/icons/StairsRegular';
  */
-const Stairs = memo(forwardRef<SVGSVGElement, StairsProps>(({ 
+const Stairs = memo(forwardRef<SVGSVGElement, StairsProps>(({
   weight = 'regular',
   duotone = false,
-  ...rest 
+  ...rest
 }, ref) => {
   if (weight === 'bold' && duotone) return <StairsBoldDuotone ref={ref} {...rest} />;
   if (weight === 'bold') return <StairsBold ref={ref} {...rest} />;
@@ -33,6 +33,6 @@ const Stairs = memo(forwardRef<SVGSVGElement, StairsProps>(({
 
 Stairs.displayName = 'Stairs';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { Stairs, Stairs as StairsIcon, Stairs as SiStairs };
 export default Stairs;

@@ -18,10 +18,10 @@ export interface MoreVProps extends IconProps {
  * For smaller bundle size, import specific variants directly:
  * import { MoreVRegular } from 'stera-icons/icons/MoreVRegular';
  */
-const MoreV = memo(forwardRef<SVGSVGElement, MoreVProps>(({ 
+const MoreV = memo(forwardRef<SVGSVGElement, MoreVProps>(({
   weight = 'regular',
   duotone = false,
-  ...rest 
+  ...rest
 }, ref) => {
   if (weight === 'bold' && duotone) return <MoreVBoldDuotone ref={ref} {...rest} />;
   if (weight === 'bold') return <MoreVBold ref={ref} {...rest} />;
@@ -33,6 +33,6 @@ const MoreV = memo(forwardRef<SVGSVGElement, MoreVProps>(({
 
 MoreV.displayName = 'MoreV';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { MoreV, MoreV as MoreVIcon, MoreV as SiMoreV };
 export default MoreV;

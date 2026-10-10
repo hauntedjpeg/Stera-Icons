@@ -18,10 +18,10 @@ export interface ListCheckProps extends IconProps {
  * For smaller bundle size, import specific variants directly:
  * import { ListCheckRegular } from 'stera-icons/icons/ListCheckRegular';
  */
-const ListCheck = memo(forwardRef<SVGSVGElement, ListCheckProps>(({ 
+const ListCheck = memo(forwardRef<SVGSVGElement, ListCheckProps>(({
   weight = 'regular',
   duotone = false,
-  ...rest 
+  ...rest
 }, ref) => {
   if (weight === 'bold' && duotone) return <ListCheckBoldDuotone ref={ref} {...rest} />;
   if (weight === 'bold') return <ListCheckBold ref={ref} {...rest} />;
@@ -33,6 +33,6 @@ const ListCheck = memo(forwardRef<SVGSVGElement, ListCheckProps>(({
 
 ListCheck.displayName = 'ListCheck';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { ListCheck, ListCheck as ListCheckIcon, ListCheck as SiListCheck };
 export default ListCheck;

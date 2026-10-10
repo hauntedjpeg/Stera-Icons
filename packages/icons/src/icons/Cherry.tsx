@@ -18,10 +18,10 @@ export interface CherryProps extends IconProps {
  * For smaller bundle size, import specific variants directly:
  * import { CherryRegular } from 'stera-icons/icons/CherryRegular';
  */
-const Cherry = memo(forwardRef<SVGSVGElement, CherryProps>(({ 
+const Cherry = memo(forwardRef<SVGSVGElement, CherryProps>(({
   weight = 'regular',
   duotone = false,
-  ...rest 
+  ...rest
 }, ref) => {
   if (weight === 'bold' && duotone) return <CherryBoldDuotone ref={ref} {...rest} />;
   if (weight === 'bold') return <CherryBold ref={ref} {...rest} />;
@@ -33,6 +33,6 @@ const Cherry = memo(forwardRef<SVGSVGElement, CherryProps>(({
 
 Cherry.displayName = 'Cherry';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { Cherry, Cherry as CherryIcon, Cherry as SiCherry };
 export default Cherry;

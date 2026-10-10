@@ -15,7 +15,7 @@ const CloudUploadBoldDuotone = memo(
 
 CloudUploadBoldDuotone.displayName = 'CloudUploadBoldDuotone';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { CloudUploadBoldDuotone, CloudUploadBoldDuotone as CloudUploadBoldDuotoneIcon, CloudUploadBoldDuotone as SiCloudUploadBoldDuotone };
 export default CloudUploadBoldDuotone;
 export type { CloudUploadBoldDuotoneProps };

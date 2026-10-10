@@ -14,7 +14,7 @@ const FolderOpenBold = memo(
 
 FolderOpenBold.displayName = 'FolderOpenBold';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { FolderOpenBold, FolderOpenBold as FolderOpenBoldIcon, FolderOpenBold as SiFolderOpenBold };
 export default FolderOpenBold;
 export type { FolderOpenBoldProps };

@@ -15,7 +15,7 @@ const EmoteGrinBold = memo(
 
 EmoteGrinBold.displayName = 'EmoteGrinBold';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { EmoteGrinBold, EmoteGrinBold as EmoteGrinBoldIcon, EmoteGrinBold as SiEmoteGrinBold };
 export default EmoteGrinBold;
 export type { EmoteGrinBoldProps };

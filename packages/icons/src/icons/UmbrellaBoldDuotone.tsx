@@ -15,7 +15,7 @@ const UmbrellaBoldDuotone = memo(
 
 UmbrellaBoldDuotone.displayName = 'UmbrellaBoldDuotone';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { UmbrellaBoldDuotone, UmbrellaBoldDuotone as UmbrellaBoldDuotoneIcon, UmbrellaBoldDuotone as SiUmbrellaBoldDuotone };
 export default UmbrellaBoldDuotone;
 export type { UmbrellaBoldDuotoneProps };

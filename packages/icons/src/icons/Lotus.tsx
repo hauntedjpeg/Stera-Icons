@@ -18,10 +18,10 @@ export interface LotusProps extends IconProps {
  * For smaller bundle size, import specific variants directly:
  * import { LotusRegular } from 'stera-icons/icons/LotusRegular';
  */
-const Lotus = memo(forwardRef<SVGSVGElement, LotusProps>(({ 
+const Lotus = memo(forwardRef<SVGSVGElement, LotusProps>(({
   weight = 'regular',
   duotone = false,
-  ...rest 
+  ...rest
 }, ref) => {
   if (weight === 'bold' && duotone) return <LotusBoldDuotone ref={ref} {...rest} />;
   if (weight === 'bold') return <LotusBold ref={ref} {...rest} />;
@@ -33,6 +33,6 @@ const Lotus = memo(forwardRef<SVGSVGElement, LotusProps>(({
 
 Lotus.displayName = 'Lotus';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { Lotus, Lotus as LotusIcon, Lotus as SiLotus };
 export default Lotus;

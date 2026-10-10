@@ -15,7 +15,7 @@ const CheckSquareRegular = memo(
 
 CheckSquareRegular.displayName = 'CheckSquareRegular';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { CheckSquareRegular, CheckSquareRegular as CheckSquareRegularIcon, CheckSquareRegular as SiCheckSquareRegular };
 export default CheckSquareRegular;
 export type { CheckSquareRegularProps };

@@ -18,10 +18,10 @@ export interface DownloadProps extends IconProps {
  * For smaller bundle size, import specific variants directly:
  * import { DownloadRegular } from 'stera-icons/icons/DownloadRegular';
  */
-const Download = memo(forwardRef<SVGSVGElement, DownloadProps>(({ 
+const Download = memo(forwardRef<SVGSVGElement, DownloadProps>(({
   weight = 'regular',
   duotone = false,
-  ...rest 
+  ...rest
 }, ref) => {
   if (weight === 'bold' && duotone) return <DownloadBoldDuotone ref={ref} {...rest} />;
   if (weight === 'bold') return <DownloadBold ref={ref} {...rest} />;
@@ -33,6 +33,6 @@ const Download = memo(forwardRef<SVGSVGElement, DownloadProps>(({
 
 Download.displayName = 'Download';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { Download, Download as DownloadIcon, Download as SiDownload };
 export default Download;

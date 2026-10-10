@@ -18,10 +18,10 @@ export interface TextAlignLeftProps extends IconProps {
  * For smaller bundle size, import specific variants directly:
  * import { TextAlignLeftRegular } from 'stera-icons/icons/TextAlignLeftRegular';
  */
-const TextAlignLeft = memo(forwardRef<SVGSVGElement, TextAlignLeftProps>(({ 
+const TextAlignLeft = memo(forwardRef<SVGSVGElement, TextAlignLeftProps>(({
   weight = 'regular',
   duotone = false,
-  ...rest 
+  ...rest
 }, ref) => {
   if (weight === 'bold' && duotone) return <TextAlignLeftBoldDuotone ref={ref} {...rest} />;
   if (weight === 'bold') return <TextAlignLeftBold ref={ref} {...rest} />;
@@ -33,6 +33,6 @@ const TextAlignLeft = memo(forwardRef<SVGSVGElement, TextAlignLeftProps>(({
 
 TextAlignLeft.displayName = 'TextAlignLeft';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { TextAlignLeft, TextAlignLeft as TextAlignLeftIcon, TextAlignLeft as SiTextAlignLeft };
 export default TextAlignLeft;

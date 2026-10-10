@@ -16,7 +16,7 @@ const PedestalBoldDuotone = memo(
 
 PedestalBoldDuotone.displayName = 'PedestalBoldDuotone';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { PedestalBoldDuotone, PedestalBoldDuotone as PedestalBoldDuotoneIcon, PedestalBoldDuotone as SiPedestalBoldDuotone };
 export default PedestalBoldDuotone;
 export type { PedestalBoldDuotoneProps };

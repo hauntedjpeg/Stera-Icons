@@ -14,7 +14,7 @@ const HexagonRegular = memo(
 
 HexagonRegular.displayName = 'HexagonRegular';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { HexagonRegular, HexagonRegular as HexagonRegularIcon, HexagonRegular as SiHexagonRegular };
 export default HexagonRegular;
 export type { HexagonRegularProps };

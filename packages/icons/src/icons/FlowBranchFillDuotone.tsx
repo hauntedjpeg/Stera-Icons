@@ -15,7 +15,7 @@ const FlowBranchFillDuotone = memo(
 
 FlowBranchFillDuotone.displayName = 'FlowBranchFillDuotone';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { FlowBranchFillDuotone, FlowBranchFillDuotone as FlowBranchFillDuotoneIcon, FlowBranchFillDuotone as SiFlowBranchFillDuotone };
 export default FlowBranchFillDuotone;
 export type { FlowBranchFillDuotoneProps };

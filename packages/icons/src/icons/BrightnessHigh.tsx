@@ -18,10 +18,10 @@ export interface BrightnessHighProps extends IconProps {
  * For smaller bundle size, import specific variants directly:
  * import { BrightnessHighRegular } from 'stera-icons/icons/BrightnessHighRegular';
  */
-const BrightnessHigh = memo(forwardRef<SVGSVGElement, BrightnessHighProps>(({ 
+const BrightnessHigh = memo(forwardRef<SVGSVGElement, BrightnessHighProps>(({
   weight = 'regular',
   duotone = false,
-  ...rest 
+  ...rest
 }, ref) => {
   if (weight === 'bold' && duotone) return <BrightnessHighBoldDuotone ref={ref} {...rest} />;
   if (weight === 'bold') return <BrightnessHighBold ref={ref} {...rest} />;
@@ -33,6 +33,6 @@ const BrightnessHigh = memo(forwardRef<SVGSVGElement, BrightnessHighProps>(({
 
 BrightnessHigh.displayName = 'BrightnessHigh';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { BrightnessHigh, BrightnessHigh as BrightnessHighIcon, BrightnessHigh as SiBrightnessHigh };
 export default BrightnessHigh;

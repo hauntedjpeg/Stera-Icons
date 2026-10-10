@@ -15,7 +15,7 @@ const TvRegularDuotone = memo(
 
 TvRegularDuotone.displayName = 'TvRegularDuotone';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { TvRegularDuotone, TvRegularDuotone as TvRegularDuotoneIcon, TvRegularDuotone as SiTvRegularDuotone };
 export default TvRegularDuotone;
 export type { TvRegularDuotoneProps };

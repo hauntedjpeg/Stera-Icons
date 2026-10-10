@@ -14,7 +14,7 @@ const MapFill = memo(
 
 MapFill.displayName = 'MapFill';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { MapFill, MapFill as MapFillIcon, MapFill as SiMapFill };
 export default MapFill;
 export type { MapFillProps };

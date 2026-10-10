@@ -18,10 +18,10 @@ export interface AnnotationProps extends IconProps {
  * For smaller bundle size, import specific variants directly:
  * import { AnnotationRegular } from 'stera-icons/icons/AnnotationRegular';
  */
-const Annotation = memo(forwardRef<SVGSVGElement, AnnotationProps>(({ 
+const Annotation = memo(forwardRef<SVGSVGElement, AnnotationProps>(({
   weight = 'regular',
   duotone = false,
-  ...rest 
+  ...rest
 }, ref) => {
   if (weight === 'bold' && duotone) return <AnnotationBoldDuotone ref={ref} {...rest} />;
   if (weight === 'bold') return <AnnotationBold ref={ref} {...rest} />;
@@ -33,6 +33,6 @@ const Annotation = memo(forwardRef<SVGSVGElement, AnnotationProps>(({
 
 Annotation.displayName = 'Annotation';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { Annotation, Annotation as AnnotationIcon, Annotation as SiAnnotation };
 export default Annotation;

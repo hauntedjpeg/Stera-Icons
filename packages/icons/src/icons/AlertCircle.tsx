@@ -18,10 +18,10 @@ export interface AlertCircleProps extends IconProps {
  * For smaller bundle size, import specific variants directly:
  * import { AlertCircleRegular } from 'stera-icons/icons/AlertCircleRegular';
  */
-const AlertCircle = memo(forwardRef<SVGSVGElement, AlertCircleProps>(({ 
+const AlertCircle = memo(forwardRef<SVGSVGElement, AlertCircleProps>(({
   weight = 'regular',
   duotone = false,
-  ...rest 
+  ...rest
 }, ref) => {
   if (weight === 'bold' && duotone) return <AlertCircleBoldDuotone ref={ref} {...rest} />;
   if (weight === 'bold') return <AlertCircleBold ref={ref} {...rest} />;
@@ -33,6 +33,6 @@ const AlertCircle = memo(forwardRef<SVGSVGElement, AlertCircleProps>(({
 
 AlertCircle.displayName = 'AlertCircle';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { AlertCircle, AlertCircle as AlertCircleIcon, AlertCircle as SiAlertCircle };
 export default AlertCircle;

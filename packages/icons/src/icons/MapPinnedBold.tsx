@@ -16,7 +16,7 @@ const MapPinnedBold = memo(
 
 MapPinnedBold.displayName = 'MapPinnedBold';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { MapPinnedBold, MapPinnedBold as MapPinnedBoldIcon, MapPinnedBold as SiMapPinnedBold };
 export default MapPinnedBold;
 export type { MapPinnedBoldProps };

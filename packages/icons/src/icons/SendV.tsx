@@ -18,10 +18,10 @@ export interface SendVProps extends IconProps {
  * For smaller bundle size, import specific variants directly:
  * import { SendVRegular } from 'stera-icons/icons/SendVRegular';
  */
-const SendV = memo(forwardRef<SVGSVGElement, SendVProps>(({ 
+const SendV = memo(forwardRef<SVGSVGElement, SendVProps>(({
   weight = 'regular',
   duotone = false,
-  ...rest 
+  ...rest
 }, ref) => {
   if (weight === 'bold' && duotone) return <SendVBoldDuotone ref={ref} {...rest} />;
   if (weight === 'bold') return <SendVBold ref={ref} {...rest} />;
@@ -33,6 +33,6 @@ const SendV = memo(forwardRef<SVGSVGElement, SendVProps>(({
 
 SendV.displayName = 'SendV';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { SendV, SendV as SendVIcon, SendV as SiSendV };
 export default SendV;

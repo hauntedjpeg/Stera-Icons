@@ -15,7 +15,7 @@ const GridFillDuotone = memo(
 
 GridFillDuotone.displayName = 'GridFillDuotone';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { GridFillDuotone, GridFillDuotone as GridFillDuotoneIcon, GridFillDuotone as SiGridFillDuotone };
 export default GridFillDuotone;
 export type { GridFillDuotoneProps };

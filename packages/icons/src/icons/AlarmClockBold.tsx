@@ -16,7 +16,7 @@ const AlarmClockBold = memo(
 
 AlarmClockBold.displayName = 'AlarmClockBold';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { AlarmClockBold, AlarmClockBold as AlarmClockBoldIcon, AlarmClockBold as SiAlarmClockBold };
 export default AlarmClockBold;
 export type { AlarmClockBoldProps };

@@ -15,7 +15,7 @@ const MessageCircleQuestionRegular = memo(
 
 MessageCircleQuestionRegular.displayName = 'MessageCircleQuestionRegular';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { MessageCircleQuestionRegular, MessageCircleQuestionRegular as MessageCircleQuestionRegularIcon, MessageCircleQuestionRegular as SiMessageCircleQuestionRegular };
 export default MessageCircleQuestionRegular;
 export type { MessageCircleQuestionRegularProps };

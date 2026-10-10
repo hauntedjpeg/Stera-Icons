@@ -15,7 +15,7 @@ const IdHFillDuotone = memo(
 
 IdHFillDuotone.displayName = 'IdHFillDuotone';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { IdHFillDuotone, IdHFillDuotone as IdHFillDuotoneIcon, IdHFillDuotone as SiIdHFillDuotone };
 export default IdHFillDuotone;
 export type { IdHFillDuotoneProps };

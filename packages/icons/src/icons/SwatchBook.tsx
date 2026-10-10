@@ -18,10 +18,10 @@ export interface SwatchBookProps extends IconProps {
  * For smaller bundle size, import specific variants directly:
  * import { SwatchBookRegular } from 'stera-icons/icons/SwatchBookRegular';
  */
-const SwatchBook = memo(forwardRef<SVGSVGElement, SwatchBookProps>(({ 
+const SwatchBook = memo(forwardRef<SVGSVGElement, SwatchBookProps>(({
   weight = 'regular',
   duotone = false,
-  ...rest 
+  ...rest
 }, ref) => {
   if (weight === 'bold' && duotone) return <SwatchBookBoldDuotone ref={ref} {...rest} />;
   if (weight === 'bold') return <SwatchBookBold ref={ref} {...rest} />;
@@ -33,6 +33,6 @@ const SwatchBook = memo(forwardRef<SVGSVGElement, SwatchBookProps>(({
 
 SwatchBook.displayName = 'SwatchBook';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { SwatchBook, SwatchBook as SwatchBookIcon, SwatchBook as SiSwatchBook };
 export default SwatchBook;

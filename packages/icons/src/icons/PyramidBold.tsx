@@ -14,7 +14,7 @@ const PyramidBold = memo(
 
 PyramidBold.displayName = 'PyramidBold';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { PyramidBold, PyramidBold as PyramidBoldIcon, PyramidBold as SiPyramidBold };
 export default PyramidBold;
 export type { PyramidBoldProps };

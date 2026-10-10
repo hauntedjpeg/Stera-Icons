@@ -18,10 +18,10 @@ export interface AlarmClockProps extends IconProps {
  * For smaller bundle size, import specific variants directly:
  * import { AlarmClockRegular } from 'stera-icons/icons/AlarmClockRegular';
  */
-const AlarmClock = memo(forwardRef<SVGSVGElement, AlarmClockProps>(({ 
+const AlarmClock = memo(forwardRef<SVGSVGElement, AlarmClockProps>(({
   weight = 'regular',
   duotone = false,
-  ...rest 
+  ...rest
 }, ref) => {
   if (weight === 'bold' && duotone) return <AlarmClockBoldDuotone ref={ref} {...rest} />;
   if (weight === 'bold') return <AlarmClockBold ref={ref} {...rest} />;
@@ -33,6 +33,6 @@ const AlarmClock = memo(forwardRef<SVGSVGElement, AlarmClockProps>(({
 
 AlarmClock.displayName = 'AlarmClock';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { AlarmClock, AlarmClock as AlarmClockIcon, AlarmClock as SiAlarmClock };
 export default AlarmClock;

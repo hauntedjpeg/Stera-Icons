@@ -18,10 +18,10 @@ export interface GlobeProps extends IconProps {
  * For smaller bundle size, import specific variants directly:
  * import { GlobeRegular } from 'stera-icons/icons/GlobeRegular';
  */
-const Globe = memo(forwardRef<SVGSVGElement, GlobeProps>(({ 
+const Globe = memo(forwardRef<SVGSVGElement, GlobeProps>(({
   weight = 'regular',
   duotone = false,
-  ...rest 
+  ...rest
 }, ref) => {
   if (weight === 'bold' && duotone) return <GlobeBoldDuotone ref={ref} {...rest} />;
   if (weight === 'bold') return <GlobeBold ref={ref} {...rest} />;
@@ -33,6 +33,6 @@ const Globe = memo(forwardRef<SVGSVGElement, GlobeProps>(({
 
 Globe.displayName = 'Globe';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { Globe, Globe as GlobeIcon, Globe as SiGlobe };
 export default Globe;

@@ -15,7 +15,7 @@ const CreditCardRegularDuotone = memo(
 
 CreditCardRegularDuotone.displayName = 'CreditCardRegularDuotone';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { CreditCardRegularDuotone, CreditCardRegularDuotone as CreditCardRegularDuotoneIcon, CreditCardRegularDuotone as SiCreditCardRegularDuotone };
 export default CreditCardRegularDuotone;
 export type { CreditCardRegularDuotoneProps };

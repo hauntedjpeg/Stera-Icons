@@ -18,7 +18,7 @@ const DollarBillFillDuotone = memo(
 
 DollarBillFillDuotone.displayName = 'DollarBillFillDuotone';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { DollarBillFillDuotone, DollarBillFillDuotone as DollarBillFillDuotoneIcon, DollarBillFillDuotone as SiDollarBillFillDuotone };
 export default DollarBillFillDuotone;
 export type { DollarBillFillDuotoneProps };

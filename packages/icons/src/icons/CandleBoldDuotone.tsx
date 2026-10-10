@@ -15,7 +15,7 @@ const CandleBoldDuotone = memo(
 
 CandleBoldDuotone.displayName = 'CandleBoldDuotone';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { CandleBoldDuotone, CandleBoldDuotone as CandleBoldDuotoneIcon, CandleBoldDuotone as SiCandleBoldDuotone };
 export default CandleBoldDuotone;
 export type { CandleBoldDuotoneProps };

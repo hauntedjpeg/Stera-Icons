@@ -15,7 +15,7 @@ const FinderBold = memo(
 
 FinderBold.displayName = 'FinderBold';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { FinderBold, FinderBold as FinderBoldIcon, FinderBold as SiFinderBold };
 export default FinderBold;
 export type { FinderBoldProps };

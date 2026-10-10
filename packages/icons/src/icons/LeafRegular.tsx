@@ -14,7 +14,7 @@ const LeafRegular = memo(
 
 LeafRegular.displayName = 'LeafRegular';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { LeafRegular, LeafRegular as LeafRegularIcon, LeafRegular as SiLeafRegular };
 export default LeafRegular;
 export type { LeafRegularProps };

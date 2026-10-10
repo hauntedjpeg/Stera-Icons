@@ -15,7 +15,7 @@ const UserBanFillDuotone = memo(
 
 UserBanFillDuotone.displayName = 'UserBanFillDuotone';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { UserBanFillDuotone, UserBanFillDuotone as UserBanFillDuotoneIcon, UserBanFillDuotone as SiUserBanFillDuotone };
 export default UserBanFillDuotone;
 export type { UserBanFillDuotoneProps };

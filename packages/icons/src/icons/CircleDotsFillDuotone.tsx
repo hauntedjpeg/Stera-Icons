@@ -15,7 +15,7 @@ const CircleDotsFillDuotone = memo(
 
 CircleDotsFillDuotone.displayName = 'CircleDotsFillDuotone';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { CircleDotsFillDuotone, CircleDotsFillDuotone as CircleDotsFillDuotoneIcon, CircleDotsFillDuotone as SiCircleDotsFillDuotone };
 export default CircleDotsFillDuotone;
 export type { CircleDotsFillDuotoneProps };

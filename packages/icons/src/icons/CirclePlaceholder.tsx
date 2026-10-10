@@ -18,10 +18,10 @@ export interface CirclePlaceholderProps extends IconProps {
  * For smaller bundle size, import specific variants directly:
  * import { CirclePlaceholderRegular } from 'stera-icons/icons/CirclePlaceholderRegular';
  */
-const CirclePlaceholder = memo(forwardRef<SVGSVGElement, CirclePlaceholderProps>(({ 
+const CirclePlaceholder = memo(forwardRef<SVGSVGElement, CirclePlaceholderProps>(({
   weight = 'regular',
   duotone = false,
-  ...rest 
+  ...rest
 }, ref) => {
   if (weight === 'bold' && duotone) return <CirclePlaceholderBoldDuotone ref={ref} {...rest} />;
   if (weight === 'bold') return <CirclePlaceholderBold ref={ref} {...rest} />;
@@ -33,6 +33,6 @@ const CirclePlaceholder = memo(forwardRef<SVGSVGElement, CirclePlaceholderProps>
 
 CirclePlaceholder.displayName = 'CirclePlaceholder';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { CirclePlaceholder, CirclePlaceholder as CirclePlaceholderIcon, CirclePlaceholder as SiCirclePlaceholder };
 export default CirclePlaceholder;

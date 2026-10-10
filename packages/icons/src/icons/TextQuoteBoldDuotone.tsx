@@ -15,7 +15,7 @@ const TextQuoteBoldDuotone = memo(
 
 TextQuoteBoldDuotone.displayName = 'TextQuoteBoldDuotone';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { TextQuoteBoldDuotone, TextQuoteBoldDuotone as TextQuoteBoldDuotoneIcon, TextQuoteBoldDuotone as SiTextQuoteBoldDuotone };
 export default TextQuoteBoldDuotone;
 export type { TextQuoteBoldDuotoneProps };

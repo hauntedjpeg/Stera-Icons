@@ -18,10 +18,10 @@ export interface CoinProps extends IconProps {
  * For smaller bundle size, import specific variants directly:
  * import { CoinRegular } from 'stera-icons/icons/CoinRegular';
  */
-const Coin = memo(forwardRef<SVGSVGElement, CoinProps>(({ 
+const Coin = memo(forwardRef<SVGSVGElement, CoinProps>(({
   weight = 'regular',
   duotone = false,
-  ...rest 
+  ...rest
 }, ref) => {
   if (weight === 'bold' && duotone) return <CoinBoldDuotone ref={ref} {...rest} />;
   if (weight === 'bold') return <CoinBold ref={ref} {...rest} />;
@@ -33,6 +33,6 @@ const Coin = memo(forwardRef<SVGSVGElement, CoinProps>(({
 
 Coin.displayName = 'Coin';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { Coin, Coin as CoinIcon, Coin as SiCoin };
 export default Coin;

@@ -18,10 +18,10 @@ export interface CurrencyEuroCirlceProps extends IconProps {
  * For smaller bundle size, import specific variants directly:
  * import { CurrencyEuroCirlceRegular } from 'stera-icons/icons/CurrencyEuroCirlceRegular';
  */
-const CurrencyEuroCirlce = memo(forwardRef<SVGSVGElement, CurrencyEuroCirlceProps>(({ 
+const CurrencyEuroCirlce = memo(forwardRef<SVGSVGElement, CurrencyEuroCirlceProps>(({
   weight = 'regular',
   duotone = false,
-  ...rest 
+  ...rest
 }, ref) => {
   if (weight === 'bold' && duotone) return <CurrencyEuroCirlceBoldDuotone ref={ref} {...rest} />;
   if (weight === 'bold') return <CurrencyEuroCirlceBold ref={ref} {...rest} />;
@@ -33,6 +33,6 @@ const CurrencyEuroCirlce = memo(forwardRef<SVGSVGElement, CurrencyEuroCirlceProp
 
 CurrencyEuroCirlce.displayName = 'CurrencyEuroCirlce';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { CurrencyEuroCirlce, CurrencyEuroCirlce as CurrencyEuroCirlceIcon, CurrencyEuroCirlce as SiCurrencyEuroCirlce };
 export default CurrencyEuroCirlce;

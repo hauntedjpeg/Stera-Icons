@@ -15,7 +15,7 @@ const MessageSquareTextRegularDuotone = memo(
 
 MessageSquareTextRegularDuotone.displayName = 'MessageSquareTextRegularDuotone';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { MessageSquareTextRegularDuotone, MessageSquareTextRegularDuotone as MessageSquareTextRegularDuotoneIcon, MessageSquareTextRegularDuotone as SiMessageSquareTextRegularDuotone };
 export default MessageSquareTextRegularDuotone;
 export type { MessageSquareTextRegularDuotoneProps };

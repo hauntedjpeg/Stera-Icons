@@ -18,10 +18,10 @@ export interface BatteryLowProps extends IconProps {
  * For smaller bundle size, import specific variants directly:
  * import { BatteryLowRegular } from 'stera-icons/icons/BatteryLowRegular';
  */
-const BatteryLow = memo(forwardRef<SVGSVGElement, BatteryLowProps>(({ 
+const BatteryLow = memo(forwardRef<SVGSVGElement, BatteryLowProps>(({
   weight = 'regular',
   duotone = false,
-  ...rest 
+  ...rest
 }, ref) => {
   if (weight === 'bold' && duotone) return <BatteryLowBoldDuotone ref={ref} {...rest} />;
   if (weight === 'bold') return <BatteryLowBold ref={ref} {...rest} />;
@@ -33,6 +33,6 @@ const BatteryLow = memo(forwardRef<SVGSVGElement, BatteryLowProps>(({
 
 BatteryLow.displayName = 'BatteryLow';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { BatteryLow, BatteryLow as BatteryLowIcon, BatteryLow as SiBatteryLow };
 export default BatteryLow;

@@ -18,10 +18,10 @@ export interface AngleObtuseProps extends IconProps {
  * For smaller bundle size, import specific variants directly:
  * import { AngleObtuseRegular } from 'stera-icons/icons/AngleObtuseRegular';
  */
-const AngleObtuse = memo(forwardRef<SVGSVGElement, AngleObtuseProps>(({ 
+const AngleObtuse = memo(forwardRef<SVGSVGElement, AngleObtuseProps>(({
   weight = 'regular',
   duotone = false,
-  ...rest 
+  ...rest
 }, ref) => {
   if (weight === 'bold' && duotone) return <AngleObtuseBoldDuotone ref={ref} {...rest} />;
   if (weight === 'bold') return <AngleObtuseBold ref={ref} {...rest} />;
@@ -33,6 +33,6 @@ const AngleObtuse = memo(forwardRef<SVGSVGElement, AngleObtuseProps>(({
 
 AngleObtuse.displayName = 'AngleObtuse';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { AngleObtuse, AngleObtuse as AngleObtuseIcon, AngleObtuse as SiAngleObtuse };
 export default AngleObtuse;

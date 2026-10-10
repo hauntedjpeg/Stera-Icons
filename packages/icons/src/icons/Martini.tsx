@@ -18,10 +18,10 @@ export interface MartiniProps extends IconProps {
  * For smaller bundle size, import specific variants directly:
  * import { MartiniRegular } from 'stera-icons/icons/MartiniRegular';
  */
-const Martini = memo(forwardRef<SVGSVGElement, MartiniProps>(({ 
+const Martini = memo(forwardRef<SVGSVGElement, MartiniProps>(({
   weight = 'regular',
   duotone = false,
-  ...rest 
+  ...rest
 }, ref) => {
   if (weight === 'bold' && duotone) return <MartiniBoldDuotone ref={ref} {...rest} />;
   if (weight === 'bold') return <MartiniBold ref={ref} {...rest} />;
@@ -33,6 +33,6 @@ const Martini = memo(forwardRef<SVGSVGElement, MartiniProps>(({
 
 Martini.displayName = 'Martini';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { Martini, Martini as MartiniIcon, Martini as SiMartini };
 export default Martini;

@@ -18,10 +18,10 @@ export interface MessageSquareDashedProps extends IconProps {
  * For smaller bundle size, import specific variants directly:
  * import { MessageSquareDashedRegular } from 'stera-icons/icons/MessageSquareDashedRegular';
  */
-const MessageSquareDashed = memo(forwardRef<SVGSVGElement, MessageSquareDashedProps>(({ 
+const MessageSquareDashed = memo(forwardRef<SVGSVGElement, MessageSquareDashedProps>(({
   weight = 'regular',
   duotone = false,
-  ...rest 
+  ...rest
 }, ref) => {
   if (weight === 'bold' && duotone) return <MessageSquareDashedBoldDuotone ref={ref} {...rest} />;
   if (weight === 'bold') return <MessageSquareDashedBold ref={ref} {...rest} />;
@@ -33,6 +33,6 @@ const MessageSquareDashed = memo(forwardRef<SVGSVGElement, MessageSquareDashedPr
 
 MessageSquareDashed.displayName = 'MessageSquareDashed';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { MessageSquareDashed, MessageSquareDashed as MessageSquareDashedIcon, MessageSquareDashed as SiMessageSquareDashed };
 export default MessageSquareDashed;

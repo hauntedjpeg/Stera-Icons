@@ -15,7 +15,7 @@ const CollapseSimpleRegularDuotone = memo(
 
 CollapseSimpleRegularDuotone.displayName = 'CollapseSimpleRegularDuotone';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { CollapseSimpleRegularDuotone, CollapseSimpleRegularDuotone as CollapseSimpleRegularDuotoneIcon, CollapseSimpleRegularDuotone as SiCollapseSimpleRegularDuotone };
 export default CollapseSimpleRegularDuotone;
 export type { CollapseSimpleRegularDuotoneProps };

@@ -15,7 +15,7 @@ const HardDriveRegular = memo(
 
 HardDriveRegular.displayName = 'HardDriveRegular';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { HardDriveRegular, HardDriveRegular as HardDriveRegularIcon, HardDriveRegular as SiHardDriveRegular };
 export default HardDriveRegular;
 export type { HardDriveRegularProps };

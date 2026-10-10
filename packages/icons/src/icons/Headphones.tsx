@@ -18,10 +18,10 @@ export interface HeadphonesProps extends IconProps {
  * For smaller bundle size, import specific variants directly:
  * import { HeadphonesRegular } from 'stera-icons/icons/HeadphonesRegular';
  */
-const Headphones = memo(forwardRef<SVGSVGElement, HeadphonesProps>(({ 
+const Headphones = memo(forwardRef<SVGSVGElement, HeadphonesProps>(({
   weight = 'regular',
   duotone = false,
-  ...rest 
+  ...rest
 }, ref) => {
   if (weight === 'bold' && duotone) return <HeadphonesBoldDuotone ref={ref} {...rest} />;
   if (weight === 'bold') return <HeadphonesBold ref={ref} {...rest} />;
@@ -33,6 +33,6 @@ const Headphones = memo(forwardRef<SVGSVGElement, HeadphonesProps>(({
 
 Headphones.displayName = 'Headphones';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { Headphones, Headphones as HeadphonesIcon, Headphones as SiHeadphones };
 export default Headphones;

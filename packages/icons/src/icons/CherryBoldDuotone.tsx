@@ -15,7 +15,7 @@ const CherryBoldDuotone = memo(
 
 CherryBoldDuotone.displayName = 'CherryBoldDuotone';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { CherryBoldDuotone, CherryBoldDuotone as CherryBoldDuotoneIcon, CherryBoldDuotone as SiCherryBoldDuotone };
 export default CherryBoldDuotone;
 export type { CherryBoldDuotoneProps };

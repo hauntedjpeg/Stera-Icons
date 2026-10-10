@@ -18,10 +18,10 @@ export interface CursorOgProps extends IconProps {
  * For smaller bundle size, import specific variants directly:
  * import { CursorOgRegular } from 'stera-icons/icons/CursorOgRegular';
  */
-const CursorOg = memo(forwardRef<SVGSVGElement, CursorOgProps>(({ 
+const CursorOg = memo(forwardRef<SVGSVGElement, CursorOgProps>(({
   weight = 'regular',
   duotone = false,
-  ...rest 
+  ...rest
 }, ref) => {
   if (weight === 'bold' && duotone) return <CursorOgBoldDuotone ref={ref} {...rest} />;
   if (weight === 'bold') return <CursorOgBold ref={ref} {...rest} />;
@@ -33,6 +33,6 @@ const CursorOg = memo(forwardRef<SVGSVGElement, CursorOgProps>(({
 
 CursorOg.displayName = 'CursorOg';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { CursorOg, CursorOg as CursorOgIcon, CursorOg as SiCursorOg };
 export default CursorOg;

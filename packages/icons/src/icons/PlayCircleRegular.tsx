@@ -15,7 +15,7 @@ const PlayCircleRegular = memo(
 
 PlayCircleRegular.displayName = 'PlayCircleRegular';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { PlayCircleRegular, PlayCircleRegular as PlayCircleRegularIcon, PlayCircleRegular as SiPlayCircleRegular };
 export default PlayCircleRegular;
 export type { PlayCircleRegularProps };

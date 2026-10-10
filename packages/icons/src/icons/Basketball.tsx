@@ -18,10 +18,10 @@ export interface BasketballProps extends IconProps {
  * For smaller bundle size, import specific variants directly:
  * import { BasketballRegular } from 'stera-icons/icons/BasketballRegular';
  */
-const Basketball = memo(forwardRef<SVGSVGElement, BasketballProps>(({ 
+const Basketball = memo(forwardRef<SVGSVGElement, BasketballProps>(({
   weight = 'regular',
   duotone = false,
-  ...rest 
+  ...rest
 }, ref) => {
   if (weight === 'bold' && duotone) return <BasketballBoldDuotone ref={ref} {...rest} />;
   if (weight === 'bold') return <BasketballBold ref={ref} {...rest} />;
@@ -33,6 +33,6 @@ const Basketball = memo(forwardRef<SVGSVGElement, BasketballProps>(({
 
 Basketball.displayName = 'Basketball';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { Basketball, Basketball as BasketballIcon, Basketball as SiBasketball };
 export default Basketball;

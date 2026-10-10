@@ -18,10 +18,10 @@ export interface FlowBranchProps extends IconProps {
  * For smaller bundle size, import specific variants directly:
  * import { FlowBranchRegular } from 'stera-icons/icons/FlowBranchRegular';
  */
-const FlowBranch = memo(forwardRef<SVGSVGElement, FlowBranchProps>(({ 
+const FlowBranch = memo(forwardRef<SVGSVGElement, FlowBranchProps>(({
   weight = 'regular',
   duotone = false,
-  ...rest 
+  ...rest
 }, ref) => {
   if (weight === 'bold' && duotone) return <FlowBranchBoldDuotone ref={ref} {...rest} />;
   if (weight === 'bold') return <FlowBranchBold ref={ref} {...rest} />;
@@ -33,6 +33,6 @@ const FlowBranch = memo(forwardRef<SVGSVGElement, FlowBranchProps>(({
 
 FlowBranch.displayName = 'FlowBranch';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { FlowBranch, FlowBranch as FlowBranchIcon, FlowBranch as SiFlowBranch };
 export default FlowBranch;

@@ -15,7 +15,7 @@ const ImagePanoramaFill = memo(
 
 ImagePanoramaFill.displayName = 'ImagePanoramaFill';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { ImagePanoramaFill, ImagePanoramaFill as ImagePanoramaFillIcon, ImagePanoramaFill as SiImagePanoramaFill };
 export default ImagePanoramaFill;
 export type { ImagePanoramaFillProps };

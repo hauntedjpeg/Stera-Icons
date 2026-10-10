@@ -15,7 +15,7 @@ const SmartphoneBold = memo(
 
 SmartphoneBold.displayName = 'SmartphoneBold';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { SmartphoneBold, SmartphoneBold as SmartphoneBoldIcon, SmartphoneBold as SiSmartphoneBold };
 export default SmartphoneBold;
 export type { SmartphoneBoldProps };

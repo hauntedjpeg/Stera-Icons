@@ -18,10 +18,10 @@ export interface ContactBookProps extends IconProps {
  * For smaller bundle size, import specific variants directly:
  * import { ContactBookRegular } from 'stera-icons/icons/ContactBookRegular';
  */
-const ContactBook = memo(forwardRef<SVGSVGElement, ContactBookProps>(({ 
+const ContactBook = memo(forwardRef<SVGSVGElement, ContactBookProps>(({
   weight = 'regular',
   duotone = false,
-  ...rest 
+  ...rest
 }, ref) => {
   if (weight === 'bold' && duotone) return <ContactBookBoldDuotone ref={ref} {...rest} />;
   if (weight === 'bold') return <ContactBookBold ref={ref} {...rest} />;
@@ -33,6 +33,6 @@ const ContactBook = memo(forwardRef<SVGSVGElement, ContactBookProps>(({
 
 ContactBook.displayName = 'ContactBook';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { ContactBook, ContactBook as ContactBookIcon, ContactBook as SiContactBook };
 export default ContactBook;

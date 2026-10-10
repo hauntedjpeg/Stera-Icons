@@ -15,7 +15,7 @@ const ArchiveRegular = memo(
 
 ArchiveRegular.displayName = 'ArchiveRegular';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { ArchiveRegular, ArchiveRegular as ArchiveRegularIcon, ArchiveRegular as SiArchiveRegular };
 export default ArchiveRegular;
 export type { ArchiveRegularProps };

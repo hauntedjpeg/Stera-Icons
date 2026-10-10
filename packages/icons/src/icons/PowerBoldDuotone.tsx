@@ -15,7 +15,7 @@ const PowerBoldDuotone = memo(
 
 PowerBoldDuotone.displayName = 'PowerBoldDuotone';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { PowerBoldDuotone, PowerBoldDuotone as PowerBoldDuotoneIcon, PowerBoldDuotone as SiPowerBoldDuotone };
 export default PowerBoldDuotone;
 export type { PowerBoldDuotoneProps };

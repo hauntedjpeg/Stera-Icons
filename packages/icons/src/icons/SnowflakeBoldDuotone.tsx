@@ -15,7 +15,7 @@ const SnowflakeBoldDuotone = memo(
 
 SnowflakeBoldDuotone.displayName = 'SnowflakeBoldDuotone';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { SnowflakeBoldDuotone, SnowflakeBoldDuotone as SnowflakeBoldDuotoneIcon, SnowflakeBoldDuotone as SiSnowflakeBoldDuotone };
 export default SnowflakeBoldDuotone;
 export type { SnowflakeBoldDuotoneProps };

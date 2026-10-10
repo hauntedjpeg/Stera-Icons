@@ -14,7 +14,7 @@ const ContrastFill = memo(
 
 ContrastFill.displayName = 'ContrastFill';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { ContrastFill, ContrastFill as ContrastFillIcon, ContrastFill as SiContrastFill };
 export default ContrastFill;
 export type { ContrastFillProps };

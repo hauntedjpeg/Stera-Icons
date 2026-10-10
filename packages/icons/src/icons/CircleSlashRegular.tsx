@@ -14,7 +14,7 @@ const CircleSlashRegular = memo(
 
 CircleSlashRegular.displayName = 'CircleSlashRegular';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { CircleSlashRegular, CircleSlashRegular as CircleSlashRegularIcon, CircleSlashRegular as SiCircleSlashRegular };
 export default CircleSlashRegular;
 export type { CircleSlashRegularProps };

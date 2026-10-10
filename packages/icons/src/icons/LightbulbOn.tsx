@@ -18,10 +18,10 @@ export interface LightbulbOnProps extends IconProps {
  * For smaller bundle size, import specific variants directly:
  * import { LightbulbOnRegular } from 'stera-icons/icons/LightbulbOnRegular';
  */
-const LightbulbOn = memo(forwardRef<SVGSVGElement, LightbulbOnProps>(({ 
+const LightbulbOn = memo(forwardRef<SVGSVGElement, LightbulbOnProps>(({
   weight = 'regular',
   duotone = false,
-  ...rest 
+  ...rest
 }, ref) => {
   if (weight === 'bold' && duotone) return <LightbulbOnBoldDuotone ref={ref} {...rest} />;
   if (weight === 'bold') return <LightbulbOnBold ref={ref} {...rest} />;
@@ -33,6 +33,6 @@ const LightbulbOn = memo(forwardRef<SVGSVGElement, LightbulbOnProps>(({
 
 LightbulbOn.displayName = 'LightbulbOn';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { LightbulbOn, LightbulbOn as LightbulbOnIcon, LightbulbOn as SiLightbulbOn };
 export default LightbulbOn;

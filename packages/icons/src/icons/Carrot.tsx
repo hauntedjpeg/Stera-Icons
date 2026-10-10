@@ -18,10 +18,10 @@ export interface CarrotProps extends IconProps {
  * For smaller bundle size, import specific variants directly:
  * import { CarrotRegular } from 'stera-icons/icons/CarrotRegular';
  */
-const Carrot = memo(forwardRef<SVGSVGElement, CarrotProps>(({ 
+const Carrot = memo(forwardRef<SVGSVGElement, CarrotProps>(({
   weight = 'regular',
   duotone = false,
-  ...rest 
+  ...rest
 }, ref) => {
   if (weight === 'bold' && duotone) return <CarrotBoldDuotone ref={ref} {...rest} />;
   if (weight === 'bold') return <CarrotBold ref={ref} {...rest} />;
@@ -33,6 +33,6 @@ const Carrot = memo(forwardRef<SVGSVGElement, CarrotProps>(({
 
 Carrot.displayName = 'Carrot';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { Carrot, Carrot as CarrotIcon, Carrot as SiCarrot };
 export default Carrot;

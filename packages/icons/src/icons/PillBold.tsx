@@ -14,7 +14,7 @@ const PillBold = memo(
 
 PillBold.displayName = 'PillBold';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { PillBold, PillBold as PillBoldIcon, PillBold as SiPillBold };
 export default PillBold;
 export type { PillBoldProps };

@@ -14,7 +14,7 @@ const ShieldBanRegular = memo(
 
 ShieldBanRegular.displayName = 'ShieldBanRegular';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { ShieldBanRegular, ShieldBanRegular as ShieldBanRegularIcon, ShieldBanRegular as SiShieldBanRegular };
 export default ShieldBanRegular;
 export type { ShieldBanRegularProps };

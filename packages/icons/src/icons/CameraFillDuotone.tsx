@@ -15,7 +15,7 @@ const CameraFillDuotone = memo(
 
 CameraFillDuotone.displayName = 'CameraFillDuotone';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { CameraFillDuotone, CameraFillDuotone as CameraFillDuotoneIcon, CameraFillDuotone as SiCameraFillDuotone };
 export default CameraFillDuotone;
 export type { CameraFillDuotoneProps };

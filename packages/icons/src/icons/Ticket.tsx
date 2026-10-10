@@ -18,10 +18,10 @@ export interface TicketProps extends IconProps {
  * For smaller bundle size, import specific variants directly:
  * import { TicketRegular } from 'stera-icons/icons/TicketRegular';
  */
-const Ticket = memo(forwardRef<SVGSVGElement, TicketProps>(({ 
+const Ticket = memo(forwardRef<SVGSVGElement, TicketProps>(({
   weight = 'regular',
   duotone = false,
-  ...rest 
+  ...rest
 }, ref) => {
   if (weight === 'bold' && duotone) return <TicketBoldDuotone ref={ref} {...rest} />;
   if (weight === 'bold') return <TicketBold ref={ref} {...rest} />;
@@ -33,6 +33,6 @@ const Ticket = memo(forwardRef<SVGSVGElement, TicketProps>(({
 
 Ticket.displayName = 'Ticket';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { Ticket, Ticket as TicketIcon, Ticket as SiTicket };
 export default Ticket;

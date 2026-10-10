@@ -18,10 +18,10 @@ export interface CodeProps extends IconProps {
  * For smaller bundle size, import specific variants directly:
  * import { CodeRegular } from 'stera-icons/icons/CodeRegular';
  */
-const Code = memo(forwardRef<SVGSVGElement, CodeProps>(({ 
+const Code = memo(forwardRef<SVGSVGElement, CodeProps>(({
   weight = 'regular',
   duotone = false,
-  ...rest 
+  ...rest
 }, ref) => {
   if (weight === 'bold' && duotone) return <CodeBoldDuotone ref={ref} {...rest} />;
   if (weight === 'bold') return <CodeBold ref={ref} {...rest} />;
@@ -33,6 +33,6 @@ const Code = memo(forwardRef<SVGSVGElement, CodeProps>(({
 
 Code.displayName = 'Code';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { Code, Code as CodeIcon, Code as SiCode };
 export default Code;

@@ -18,10 +18,10 @@ export interface BellProps extends IconProps {
  * For smaller bundle size, import specific variants directly:
  * import { BellRegular } from 'stera-icons/icons/BellRegular';
  */
-const Bell = memo(forwardRef<SVGSVGElement, BellProps>(({ 
+const Bell = memo(forwardRef<SVGSVGElement, BellProps>(({
   weight = 'regular',
   duotone = false,
-  ...rest 
+  ...rest
 }, ref) => {
   if (weight === 'bold' && duotone) return <BellBoldDuotone ref={ref} {...rest} />;
   if (weight === 'bold') return <BellBold ref={ref} {...rest} />;
@@ -33,6 +33,6 @@ const Bell = memo(forwardRef<SVGSVGElement, BellProps>(({
 
 Bell.displayName = 'Bell';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { Bell, Bell as BellIcon, Bell as SiBell };
 export default Bell;

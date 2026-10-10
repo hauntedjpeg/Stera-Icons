@@ -18,10 +18,10 @@ export interface CompassProps extends IconProps {
  * For smaller bundle size, import specific variants directly:
  * import { CompassRegular } from 'stera-icons/icons/CompassRegular';
  */
-const Compass = memo(forwardRef<SVGSVGElement, CompassProps>(({ 
+const Compass = memo(forwardRef<SVGSVGElement, CompassProps>(({
   weight = 'regular',
   duotone = false,
-  ...rest 
+  ...rest
 }, ref) => {
   if (weight === 'bold' && duotone) return <CompassBoldDuotone ref={ref} {...rest} />;
   if (weight === 'bold') return <CompassBold ref={ref} {...rest} />;
@@ -33,6 +33,6 @@ const Compass = memo(forwardRef<SVGSVGElement, CompassProps>(({
 
 Compass.displayName = 'Compass';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { Compass, Compass as CompassIcon, Compass as SiCompass };
 export default Compass;

@@ -18,10 +18,10 @@ export interface DropletHalfProps extends IconProps {
  * For smaller bundle size, import specific variants directly:
  * import { DropletHalfRegular } from 'stera-icons/icons/DropletHalfRegular';
  */
-const DropletHalf = memo(forwardRef<SVGSVGElement, DropletHalfProps>(({ 
+const DropletHalf = memo(forwardRef<SVGSVGElement, DropletHalfProps>(({
   weight = 'regular',
   duotone = false,
-  ...rest 
+  ...rest
 }, ref) => {
   if (weight === 'bold' && duotone) return <DropletHalfBoldDuotone ref={ref} {...rest} />;
   if (weight === 'bold') return <DropletHalfBold ref={ref} {...rest} />;
@@ -33,6 +33,6 @@ const DropletHalf = memo(forwardRef<SVGSVGElement, DropletHalfProps>(({
 
 DropletHalf.displayName = 'DropletHalf';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { DropletHalf, DropletHalf as DropletHalfIcon, DropletHalf as SiDropletHalf };
 export default DropletHalf;

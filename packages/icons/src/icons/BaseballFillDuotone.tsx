@@ -15,7 +15,7 @@ const BaseballFillDuotone = memo(
 
 BaseballFillDuotone.displayName = 'BaseballFillDuotone';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { BaseballFillDuotone, BaseballFillDuotone as BaseballFillDuotoneIcon, BaseballFillDuotone as SiBaseballFillDuotone };
 export default BaseballFillDuotone;
 export type { BaseballFillDuotoneProps };

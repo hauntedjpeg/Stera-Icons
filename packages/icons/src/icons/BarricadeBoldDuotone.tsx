@@ -15,7 +15,7 @@ const BarricadeBoldDuotone = memo(
 
 BarricadeBoldDuotone.displayName = 'BarricadeBoldDuotone';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { BarricadeBoldDuotone, BarricadeBoldDuotone as BarricadeBoldDuotoneIcon, BarricadeBoldDuotone as SiBarricadeBoldDuotone };
 export default BarricadeBoldDuotone;
 export type { BarricadeBoldDuotoneProps };

@@ -14,7 +14,7 @@ const PenNibAltRegular = memo(
 
 PenNibAltRegular.displayName = 'PenNibAltRegular';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { PenNibAltRegular, PenNibAltRegular as PenNibAltRegularIcon, PenNibAltRegular as SiPenNibAltRegular };
 export default PenNibAltRegular;
 export type { PenNibAltRegularProps };

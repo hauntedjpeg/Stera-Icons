@@ -15,7 +15,7 @@ const TextStrikethroughRegularDuotone = memo(
 
 TextStrikethroughRegularDuotone.displayName = 'TextStrikethroughRegularDuotone';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { TextStrikethroughRegularDuotone, TextStrikethroughRegularDuotone as TextStrikethroughRegularDuotoneIcon, TextStrikethroughRegularDuotone as SiTextStrikethroughRegularDuotone };
 export default TextStrikethroughRegularDuotone;
 export type { TextStrikethroughRegularDuotoneProps };

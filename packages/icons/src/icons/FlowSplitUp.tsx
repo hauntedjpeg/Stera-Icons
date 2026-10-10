@@ -18,10 +18,10 @@ export interface FlowSplitUpProps extends IconProps {
  * For smaller bundle size, import specific variants directly:
  * import { FlowSplitUpRegular } from 'stera-icons/icons/FlowSplitUpRegular';
  */
-const FlowSplitUp = memo(forwardRef<SVGSVGElement, FlowSplitUpProps>(({ 
+const FlowSplitUp = memo(forwardRef<SVGSVGElement, FlowSplitUpProps>(({
   weight = 'regular',
   duotone = false,
-  ...rest 
+  ...rest
 }, ref) => {
   if (weight === 'bold' && duotone) return <FlowSplitUpBoldDuotone ref={ref} {...rest} />;
   if (weight === 'bold') return <FlowSplitUpBold ref={ref} {...rest} />;
@@ -33,6 +33,6 @@ const FlowSplitUp = memo(forwardRef<SVGSVGElement, FlowSplitUpProps>(({
 
 FlowSplitUp.displayName = 'FlowSplitUp';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { FlowSplitUp, FlowSplitUp as FlowSplitUpIcon, FlowSplitUp as SiFlowSplitUp };
 export default FlowSplitUp;

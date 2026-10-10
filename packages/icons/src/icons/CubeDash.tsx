@@ -18,10 +18,10 @@ export interface CubeDashProps extends IconProps {
  * For smaller bundle size, import specific variants directly:
  * import { CubeDashRegular } from 'stera-icons/icons/CubeDashRegular';
  */
-const CubeDash = memo(forwardRef<SVGSVGElement, CubeDashProps>(({ 
+const CubeDash = memo(forwardRef<SVGSVGElement, CubeDashProps>(({
   weight = 'regular',
   duotone = false,
-  ...rest 
+  ...rest
 }, ref) => {
   if (weight === 'bold' && duotone) return <CubeDashBoldDuotone ref={ref} {...rest} />;
   if (weight === 'bold') return <CubeDashBold ref={ref} {...rest} />;
@@ -33,6 +33,6 @@ const CubeDash = memo(forwardRef<SVGSVGElement, CubeDashProps>(({
 
 CubeDash.displayName = 'CubeDash';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { CubeDash, CubeDash as CubeDashIcon, CubeDash as SiCubeDash };
 export default CubeDash;

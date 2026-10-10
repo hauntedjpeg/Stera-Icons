@@ -15,7 +15,7 @@ const AsteriskAltRegularDuotone = memo(
 
 AsteriskAltRegularDuotone.displayName = 'AsteriskAltRegularDuotone';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { AsteriskAltRegularDuotone, AsteriskAltRegularDuotone as AsteriskAltRegularDuotoneIcon, AsteriskAltRegularDuotone as SiAsteriskAltRegularDuotone };
 export default AsteriskAltRegularDuotone;
 export type { AsteriskAltRegularDuotoneProps };

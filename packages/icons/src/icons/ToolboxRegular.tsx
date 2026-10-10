@@ -14,7 +14,7 @@ const ToolboxRegular = memo(
 
 ToolboxRegular.displayName = 'ToolboxRegular';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { ToolboxRegular, ToolboxRegular as ToolboxRegularIcon, ToolboxRegular as SiToolboxRegular };
 export default ToolboxRegular;
 export type { ToolboxRegularProps };

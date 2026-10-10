@@ -18,10 +18,10 @@ export interface PieProps extends IconProps {
  * For smaller bundle size, import specific variants directly:
  * import { PieRegular } from 'stera-icons/icons/PieRegular';
  */
-const Pie = memo(forwardRef<SVGSVGElement, PieProps>(({ 
+const Pie = memo(forwardRef<SVGSVGElement, PieProps>(({
   weight = 'regular',
   duotone = false,
-  ...rest 
+  ...rest
 }, ref) => {
   if (weight === 'bold' && duotone) return <PieBoldDuotone ref={ref} {...rest} />;
   if (weight === 'bold') return <PieBold ref={ref} {...rest} />;
@@ -33,6 +33,6 @@ const Pie = memo(forwardRef<SVGSVGElement, PieProps>(({
 
 Pie.displayName = 'Pie';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { Pie, Pie as PieIcon, Pie as SiPie };
 export default Pie;

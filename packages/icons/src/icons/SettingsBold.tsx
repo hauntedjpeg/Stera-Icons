@@ -15,7 +15,7 @@ const SettingsBold = memo(
 
 SettingsBold.displayName = 'SettingsBold';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { SettingsBold, SettingsBold as SettingsBoldIcon, SettingsBold as SiSettingsBold };
 export default SettingsBold;
 export type { SettingsBoldProps };

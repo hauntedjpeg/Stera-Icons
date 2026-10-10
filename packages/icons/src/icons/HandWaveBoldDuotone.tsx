@@ -15,7 +15,7 @@ const HandWaveBoldDuotone = memo(
 
 HandWaveBoldDuotone.displayName = 'HandWaveBoldDuotone';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { HandWaveBoldDuotone, HandWaveBoldDuotone as HandWaveBoldDuotoneIcon, HandWaveBoldDuotone as SiHandWaveBoldDuotone };
 export default HandWaveBoldDuotone;
 export type { HandWaveBoldDuotoneProps };

@@ -14,7 +14,7 @@ const BackslashRegular = memo(
 
 BackslashRegular.displayName = 'BackslashRegular';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { BackslashRegular, BackslashRegular as BackslashRegularIcon, BackslashRegular as SiBackslashRegular };
 export default BackslashRegular;
 export type { BackslashRegularProps };

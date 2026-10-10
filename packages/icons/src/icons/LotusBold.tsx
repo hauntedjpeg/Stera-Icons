@@ -14,7 +14,7 @@ const LotusBold = memo(
 
 LotusBold.displayName = 'LotusBold';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { LotusBold, LotusBold as LotusBoldIcon, LotusBold as SiLotusBold };
 export default LotusBold;
 export type { LotusBoldProps };

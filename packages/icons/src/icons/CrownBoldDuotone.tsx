@@ -15,7 +15,7 @@ const CrownBoldDuotone = memo(
 
 CrownBoldDuotone.displayName = 'CrownBoldDuotone';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { CrownBoldDuotone, CrownBoldDuotone as CrownBoldDuotoneIcon, CrownBoldDuotone as SiCrownBoldDuotone };
 export default CrownBoldDuotone;
 export type { CrownBoldDuotoneProps };

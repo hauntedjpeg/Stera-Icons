@@ -15,7 +15,7 @@ const MinimizeRegularDuotone = memo(
 
 MinimizeRegularDuotone.displayName = 'MinimizeRegularDuotone';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { MinimizeRegularDuotone, MinimizeRegularDuotone as MinimizeRegularDuotoneIcon, MinimizeRegularDuotone as SiMinimizeRegularDuotone };
 export default MinimizeRegularDuotone;
 export type { MinimizeRegularDuotoneProps };

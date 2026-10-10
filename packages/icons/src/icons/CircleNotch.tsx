@@ -18,10 +18,10 @@ export interface CircleNotchProps extends IconProps {
  * For smaller bundle size, import specific variants directly:
  * import { CircleNotchRegular } from 'stera-icons/icons/CircleNotchRegular';
  */
-const CircleNotch = memo(forwardRef<SVGSVGElement, CircleNotchProps>(({ 
+const CircleNotch = memo(forwardRef<SVGSVGElement, CircleNotchProps>(({
   weight = 'regular',
   duotone = false,
-  ...rest 
+  ...rest
 }, ref) => {
   if (weight === 'bold' && duotone) return <CircleNotchBoldDuotone ref={ref} {...rest} />;
   if (weight === 'bold') return <CircleNotchBold ref={ref} {...rest} />;
@@ -33,6 +33,6 @@ const CircleNotch = memo(forwardRef<SVGSVGElement, CircleNotchProps>(({
 
 CircleNotch.displayName = 'CircleNotch';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { CircleNotch, CircleNotch as CircleNotchIcon, CircleNotch as SiCircleNotch };
 export default CircleNotch;

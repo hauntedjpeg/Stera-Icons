@@ -15,7 +15,7 @@ const GaugeDots33Bold = memo(
 
 GaugeDots33Bold.displayName = 'GaugeDots33Bold';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { GaugeDots33Bold, GaugeDots33Bold as GaugeDots33BoldIcon, GaugeDots33Bold as SiGaugeDots33Bold };
 export default GaugeDots33Bold;
 export type { GaugeDots33BoldProps };

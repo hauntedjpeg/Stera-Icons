@@ -18,10 +18,10 @@ export interface BagProps extends IconProps {
  * For smaller bundle size, import specific variants directly:
  * import { BagRegular } from 'stera-icons/icons/BagRegular';
  */
-const Bag = memo(forwardRef<SVGSVGElement, BagProps>(({ 
+const Bag = memo(forwardRef<SVGSVGElement, BagProps>(({
   weight = 'regular',
   duotone = false,
-  ...rest 
+  ...rest
 }, ref) => {
   if (weight === 'bold' && duotone) return <BagBoldDuotone ref={ref} {...rest} />;
   if (weight === 'bold') return <BagBold ref={ref} {...rest} />;
@@ -33,6 +33,6 @@ const Bag = memo(forwardRef<SVGSVGElement, BagProps>(({
 
 Bag.displayName = 'Bag';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { Bag, Bag as BagIcon, Bag as SiBag };
 export default Bag;

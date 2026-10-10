@@ -18,10 +18,10 @@ export interface AtSignProps extends IconProps {
  * For smaller bundle size, import specific variants directly:
  * import { AtSignRegular } from 'stera-icons/icons/AtSignRegular';
  */
-const AtSign = memo(forwardRef<SVGSVGElement, AtSignProps>(({ 
+const AtSign = memo(forwardRef<SVGSVGElement, AtSignProps>(({
   weight = 'regular',
   duotone = false,
-  ...rest 
+  ...rest
 }, ref) => {
   if (weight === 'bold' && duotone) return <AtSignBoldDuotone ref={ref} {...rest} />;
   if (weight === 'bold') return <AtSignBold ref={ref} {...rest} />;
@@ -33,6 +33,6 @@ const AtSign = memo(forwardRef<SVGSVGElement, AtSignProps>(({
 
 AtSign.displayName = 'AtSign';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { AtSign, AtSign as AtSignIcon, AtSign as SiAtSign };
 export default AtSign;

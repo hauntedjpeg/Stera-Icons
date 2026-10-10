@@ -15,7 +15,7 @@ const PencilLineFillDuotone = memo(
 
 PencilLineFillDuotone.displayName = 'PencilLineFillDuotone';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { PencilLineFillDuotone, PencilLineFillDuotone as PencilLineFillDuotoneIcon, PencilLineFillDuotone as SiPencilLineFillDuotone };
 export default PencilLineFillDuotone;
 export type { PencilLineFillDuotoneProps };

@@ -14,7 +14,7 @@ const TrophyFill = memo(
 
 TrophyFill.displayName = 'TrophyFill';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { TrophyFill, TrophyFill as TrophyFillIcon, TrophyFill as SiTrophyFill };
 export default TrophyFill;
 export type { TrophyFillProps };

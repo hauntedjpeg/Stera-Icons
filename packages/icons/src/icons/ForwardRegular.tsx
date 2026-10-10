@@ -14,7 +14,7 @@ const ForwardRegular = memo(
 
 ForwardRegular.displayName = 'ForwardRegular';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { ForwardRegular, ForwardRegular as ForwardRegularIcon, ForwardRegular as SiForwardRegular };
 export default ForwardRegular;
 export type { ForwardRegularProps };

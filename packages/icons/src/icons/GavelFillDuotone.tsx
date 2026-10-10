@@ -15,7 +15,7 @@ const GavelFillDuotone = memo(
 
 GavelFillDuotone.displayName = 'GavelFillDuotone';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { GavelFillDuotone, GavelFillDuotone as GavelFillDuotoneIcon, GavelFillDuotone as SiGavelFillDuotone };
 export default GavelFillDuotone;
 export type { GavelFillDuotoneProps };

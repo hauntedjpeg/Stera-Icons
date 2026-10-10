@@ -15,7 +15,7 @@ const LightbulbFillDuotone = memo(
 
 LightbulbFillDuotone.displayName = 'LightbulbFillDuotone';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { LightbulbFillDuotone, LightbulbFillDuotone as LightbulbFillDuotoneIcon, LightbulbFillDuotone as SiLightbulbFillDuotone };
 export default LightbulbFillDuotone;
 export type { LightbulbFillDuotoneProps };

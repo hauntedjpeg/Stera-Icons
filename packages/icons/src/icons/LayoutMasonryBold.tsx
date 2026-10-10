@@ -14,7 +14,7 @@ const LayoutMasonryBold = memo(
 
 LayoutMasonryBold.displayName = 'LayoutMasonryBold';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { LayoutMasonryBold, LayoutMasonryBold as LayoutMasonryBoldIcon, LayoutMasonryBold as SiLayoutMasonryBold };
 export default LayoutMasonryBold;
 export type { LayoutMasonryBoldProps };

@@ -14,7 +14,7 @@ const GiftBold = memo(
 
 GiftBold.displayName = 'GiftBold';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { GiftBold, GiftBold as GiftBoldIcon, GiftBold as SiGiftBold };
 export default GiftBold;
 export type { GiftBoldProps };

@@ -15,7 +15,7 @@ const ToolsRegularDuotone = memo(
 
 ToolsRegularDuotone.displayName = 'ToolsRegularDuotone';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { ToolsRegularDuotone, ToolsRegularDuotone as ToolsRegularDuotoneIcon, ToolsRegularDuotone as SiToolsRegularDuotone };
 export default ToolsRegularDuotone;
 export type { ToolsRegularDuotoneProps };

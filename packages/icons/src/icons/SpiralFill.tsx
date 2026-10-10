@@ -14,7 +14,7 @@ const SpiralFill = memo(
 
 SpiralFill.displayName = 'SpiralFill';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { SpiralFill, SpiralFill as SpiralFillIcon, SpiralFill as SiSpiralFill };
 export default SpiralFill;
 export type { SpiralFillProps };

@@ -18,10 +18,10 @@ export interface MessageSquareQuestionProps extends IconProps {
  * For smaller bundle size, import specific variants directly:
  * import { MessageSquareQuestionRegular } from 'stera-icons/icons/MessageSquareQuestionRegular';
  */
-const MessageSquareQuestion = memo(forwardRef<SVGSVGElement, MessageSquareQuestionProps>(({ 
+const MessageSquareQuestion = memo(forwardRef<SVGSVGElement, MessageSquareQuestionProps>(({
   weight = 'regular',
   duotone = false,
-  ...rest 
+  ...rest
 }, ref) => {
   if (weight === 'bold' && duotone) return <MessageSquareQuestionBoldDuotone ref={ref} {...rest} />;
   if (weight === 'bold') return <MessageSquareQuestionBold ref={ref} {...rest} />;
@@ -33,6 +33,6 @@ const MessageSquareQuestion = memo(forwardRef<SVGSVGElement, MessageSquareQuesti
 
 MessageSquareQuestion.displayName = 'MessageSquareQuestion';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { MessageSquareQuestion, MessageSquareQuestion as MessageSquareQuestionIcon, MessageSquareQuestion as SiMessageSquareQuestion };
 export default MessageSquareQuestion;

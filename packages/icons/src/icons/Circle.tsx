@@ -18,10 +18,10 @@ export interface CircleProps extends IconProps {
  * For smaller bundle size, import specific variants directly:
  * import { CircleRegular } from 'stera-icons/icons/CircleRegular';
  */
-const Circle = memo(forwardRef<SVGSVGElement, CircleProps>(({ 
+const Circle = memo(forwardRef<SVGSVGElement, CircleProps>(({
   weight = 'regular',
   duotone = false,
-  ...rest 
+  ...rest
 }, ref) => {
   if (weight === 'bold' && duotone) return <CircleBoldDuotone ref={ref} {...rest} />;
   if (weight === 'bold') return <CircleBold ref={ref} {...rest} />;
@@ -33,6 +33,6 @@ const Circle = memo(forwardRef<SVGSVGElement, CircleProps>(({
 
 Circle.displayName = 'Circle';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { Circle, Circle as CircleIcon, Circle as SiCircle };
 export default Circle;

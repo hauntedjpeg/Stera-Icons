@@ -14,7 +14,7 @@ const MedalRegular = memo(
 
 MedalRegular.displayName = 'MedalRegular';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { MedalRegular, MedalRegular as MedalRegularIcon, MedalRegular as SiMedalRegular };
 export default MedalRegular;
 export type { MedalRegularProps };

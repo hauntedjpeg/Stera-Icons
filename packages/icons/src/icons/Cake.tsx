@@ -18,10 +18,10 @@ export interface CakeProps extends IconProps {
  * For smaller bundle size, import specific variants directly:
  * import { CakeRegular } from 'stera-icons/icons/CakeRegular';
  */
-const Cake = memo(forwardRef<SVGSVGElement, CakeProps>(({ 
+const Cake = memo(forwardRef<SVGSVGElement, CakeProps>(({
   weight = 'regular',
   duotone = false,
-  ...rest 
+  ...rest
 }, ref) => {
   if (weight === 'bold' && duotone) return <CakeBoldDuotone ref={ref} {...rest} />;
   if (weight === 'bold') return <CakeBold ref={ref} {...rest} />;
@@ -33,6 +33,6 @@ const Cake = memo(forwardRef<SVGSVGElement, CakeProps>(({
 
 Cake.displayName = 'Cake';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { Cake, Cake as CakeIcon, Cake as SiCake };
 export default Cake;

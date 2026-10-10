@@ -15,7 +15,7 @@ const LayoutPanelLeftRegularDuotone = memo(
 
 LayoutPanelLeftRegularDuotone.displayName = 'LayoutPanelLeftRegularDuotone';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { LayoutPanelLeftRegularDuotone, LayoutPanelLeftRegularDuotone as LayoutPanelLeftRegularDuotoneIcon, LayoutPanelLeftRegularDuotone as SiLayoutPanelLeftRegularDuotone };
 export default LayoutPanelLeftRegularDuotone;
 export type { LayoutPanelLeftRegularDuotoneProps };

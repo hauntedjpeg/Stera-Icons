@@ -15,7 +15,7 @@ const MoreCircleVBoldDuotone = memo(
 
 MoreCircleVBoldDuotone.displayName = 'MoreCircleVBoldDuotone';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { MoreCircleVBoldDuotone, MoreCircleVBoldDuotone as MoreCircleVBoldDuotoneIcon, MoreCircleVBoldDuotone as SiMoreCircleVBoldDuotone };
 export default MoreCircleVBoldDuotone;
 export type { MoreCircleVBoldDuotoneProps };

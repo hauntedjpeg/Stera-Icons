@@ -18,10 +18,10 @@ export interface AngleProps extends IconProps {
  * For smaller bundle size, import specific variants directly:
  * import { AngleRegular } from 'stera-icons/icons/AngleRegular';
  */
-const Angle = memo(forwardRef<SVGSVGElement, AngleProps>(({ 
+const Angle = memo(forwardRef<SVGSVGElement, AngleProps>(({
   weight = 'regular',
   duotone = false,
-  ...rest 
+  ...rest
 }, ref) => {
   if (weight === 'bold' && duotone) return <AngleBoldDuotone ref={ref} {...rest} />;
   if (weight === 'bold') return <AngleBold ref={ref} {...rest} />;
@@ -33,6 +33,6 @@ const Angle = memo(forwardRef<SVGSVGElement, AngleProps>(({
 
 Angle.displayName = 'Angle';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { Angle, Angle as AngleIcon, Angle as SiAngle };
 export default Angle;

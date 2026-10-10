@@ -15,7 +15,7 @@ const MacWindowBold = memo(
 
 MacWindowBold.displayName = 'MacWindowBold';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { MacWindowBold, MacWindowBold as MacWindowBoldIcon, MacWindowBold as SiMacWindowBold };
 export default MacWindowBold;
 export type { MacWindowBoldProps };

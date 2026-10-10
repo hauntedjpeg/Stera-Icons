@@ -15,7 +15,7 @@ const ListXRegular = memo(
 
 ListXRegular.displayName = 'ListXRegular';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { ListXRegular, ListXRegular as ListXRegularIcon, ListXRegular as SiListXRegular };
 export default ListXRegular;
 export type { ListXRegularProps };

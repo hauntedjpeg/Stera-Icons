@@ -15,7 +15,7 @@ const ListPlusBold = memo(
 
 ListPlusBold.displayName = 'ListPlusBold';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { ListPlusBold, ListPlusBold as ListPlusBoldIcon, ListPlusBold as SiListPlusBold };
 export default ListPlusBold;
 export type { ListPlusBoldProps };

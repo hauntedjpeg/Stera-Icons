@@ -15,7 +15,7 @@ const MedicalCrossFillDuotone = memo(
 
 MedicalCrossFillDuotone.displayName = 'MedicalCrossFillDuotone';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { MedicalCrossFillDuotone, MedicalCrossFillDuotone as MedicalCrossFillDuotoneIcon, MedicalCrossFillDuotone as SiMedicalCrossFillDuotone };
 export default MedicalCrossFillDuotone;
 export type { MedicalCrossFillDuotoneProps };

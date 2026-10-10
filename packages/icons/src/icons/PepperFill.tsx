@@ -14,7 +14,7 @@ const PepperFill = memo(
 
 PepperFill.displayName = 'PepperFill';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { PepperFill, PepperFill as PepperFillIcon, PepperFill as SiPepperFill };
 export default PepperFill;
 export type { PepperFillProps };

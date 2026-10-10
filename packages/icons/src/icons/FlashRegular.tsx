@@ -14,7 +14,7 @@ const FlashRegular = memo(
 
 FlashRegular.displayName = 'FlashRegular';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { FlashRegular, FlashRegular as FlashRegularIcon, FlashRegular as SiFlashRegular };
 export default FlashRegular;
 export type { FlashRegularProps };

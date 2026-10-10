@@ -17,7 +17,7 @@ const AtomAiBold = memo(
 
 AtomAiBold.displayName = 'AtomAiBold';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { AtomAiBold, AtomAiBold as AtomAiBoldIcon, AtomAiBold as SiAtomAiBold };
 export default AtomAiBold;
 export type { AtomAiBoldProps };

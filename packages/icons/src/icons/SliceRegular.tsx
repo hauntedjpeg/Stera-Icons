@@ -14,7 +14,7 @@ const SliceRegular = memo(
 
 SliceRegular.displayName = 'SliceRegular';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { SliceRegular, SliceRegular as SliceRegularIcon, SliceRegular as SiSliceRegular };
 export default SliceRegular;
 export type { SliceRegularProps };

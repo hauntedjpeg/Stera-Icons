@@ -18,10 +18,10 @@ export interface MilestoneProps extends IconProps {
  * For smaller bundle size, import specific variants directly:
  * import { MilestoneRegular } from 'stera-icons/icons/MilestoneRegular';
  */
-const Milestone = memo(forwardRef<SVGSVGElement, MilestoneProps>(({ 
+const Milestone = memo(forwardRef<SVGSVGElement, MilestoneProps>(({
   weight = 'regular',
   duotone = false,
-  ...rest 
+  ...rest
 }, ref) => {
   if (weight === 'bold' && duotone) return <MilestoneBoldDuotone ref={ref} {...rest} />;
   if (weight === 'bold') return <MilestoneBold ref={ref} {...rest} />;
@@ -33,6 +33,6 @@ const Milestone = memo(forwardRef<SVGSVGElement, MilestoneProps>(({
 
 Milestone.displayName = 'Milestone';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { Milestone, Milestone as MilestoneIcon, Milestone as SiMilestone };
 export default Milestone;

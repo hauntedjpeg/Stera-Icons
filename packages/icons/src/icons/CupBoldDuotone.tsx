@@ -16,7 +16,7 @@ const CupBoldDuotone = memo(
 
 CupBoldDuotone.displayName = 'CupBoldDuotone';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { CupBoldDuotone, CupBoldDuotone as CupBoldDuotoneIcon, CupBoldDuotone as SiCupBoldDuotone };
 export default CupBoldDuotone;
 export type { CupBoldDuotoneProps };

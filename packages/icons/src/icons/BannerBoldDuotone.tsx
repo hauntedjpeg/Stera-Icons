@@ -15,7 +15,7 @@ const BannerBoldDuotone = memo(
 
 BannerBoldDuotone.displayName = 'BannerBoldDuotone';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { BannerBoldDuotone, BannerBoldDuotone as BannerBoldDuotoneIcon, BannerBoldDuotone as SiBannerBoldDuotone };
 export default BannerBoldDuotone;
 export type { BannerBoldDuotoneProps };

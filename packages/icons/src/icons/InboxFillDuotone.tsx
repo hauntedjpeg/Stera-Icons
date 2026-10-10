@@ -15,7 +15,7 @@ const InboxFillDuotone = memo(
 
 InboxFillDuotone.displayName = 'InboxFillDuotone';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { InboxFillDuotone, InboxFillDuotone as InboxFillDuotoneIcon, InboxFillDuotone as SiInboxFillDuotone };
 export default InboxFillDuotone;
 export type { InboxFillDuotoneProps };

@@ -14,7 +14,7 @@ const GradientFill = memo(
 
 GradientFill.displayName = 'GradientFill';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { GradientFill, GradientFill as GradientFillIcon, GradientFill as SiGradientFill };
 export default GradientFill;
 export type { GradientFillProps };

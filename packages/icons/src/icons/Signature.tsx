@@ -18,10 +18,10 @@ export interface SignatureProps extends IconProps {
  * For smaller bundle size, import specific variants directly:
  * import { SignatureRegular } from 'stera-icons/icons/SignatureRegular';
  */
-const Signature = memo(forwardRef<SVGSVGElement, SignatureProps>(({ 
+const Signature = memo(forwardRef<SVGSVGElement, SignatureProps>(({
   weight = 'regular',
   duotone = false,
-  ...rest 
+  ...rest
 }, ref) => {
   if (weight === 'bold' && duotone) return <SignatureBoldDuotone ref={ref} {...rest} />;
   if (weight === 'bold') return <SignatureBold ref={ref} {...rest} />;
@@ -33,6 +33,6 @@ const Signature = memo(forwardRef<SVGSVGElement, SignatureProps>(({
 
 Signature.displayName = 'Signature';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { Signature, Signature as SignatureIcon, Signature as SiSignature };
 export default Signature;

@@ -15,7 +15,7 @@ const EmoteNeutralFillDuotone = memo(
 
 EmoteNeutralFillDuotone.displayName = 'EmoteNeutralFillDuotone';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { EmoteNeutralFillDuotone, EmoteNeutralFillDuotone as EmoteNeutralFillDuotoneIcon, EmoteNeutralFillDuotone as SiEmoteNeutralFillDuotone };
 export default EmoteNeutralFillDuotone;
 export type { EmoteNeutralFillDuotoneProps };

@@ -18,10 +18,10 @@ export interface PlusSquareProps extends IconProps {
  * For smaller bundle size, import specific variants directly:
  * import { PlusSquareRegular } from 'stera-icons/icons/PlusSquareRegular';
  */
-const PlusSquare = memo(forwardRef<SVGSVGElement, PlusSquareProps>(({ 
+const PlusSquare = memo(forwardRef<SVGSVGElement, PlusSquareProps>(({
   weight = 'regular',
   duotone = false,
-  ...rest 
+  ...rest
 }, ref) => {
   if (weight === 'bold' && duotone) return <PlusSquareBoldDuotone ref={ref} {...rest} />;
   if (weight === 'bold') return <PlusSquareBold ref={ref} {...rest} />;
@@ -33,6 +33,6 @@ const PlusSquare = memo(forwardRef<SVGSVGElement, PlusSquareProps>(({
 
 PlusSquare.displayName = 'PlusSquare';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { PlusSquare, PlusSquare as PlusSquareIcon, PlusSquare as SiPlusSquare };
 export default PlusSquare;

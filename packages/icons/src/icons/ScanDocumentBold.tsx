@@ -16,7 +16,7 @@ const ScanDocumentBold = memo(
 
 ScanDocumentBold.displayName = 'ScanDocumentBold';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { ScanDocumentBold, ScanDocumentBold as ScanDocumentBoldIcon, ScanDocumentBold as SiScanDocumentBold };
 export default ScanDocumentBold;
 export type { ScanDocumentBoldProps };

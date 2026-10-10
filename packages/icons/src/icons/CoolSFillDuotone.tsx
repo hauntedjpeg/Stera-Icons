@@ -15,7 +15,7 @@ const CoolSFillDuotone = memo(
 
 CoolSFillDuotone.displayName = 'CoolSFillDuotone';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { CoolSFillDuotone, CoolSFillDuotone as CoolSFillDuotoneIcon, CoolSFillDuotone as SiCoolSFillDuotone };
 export default CoolSFillDuotone;
 export type { CoolSFillDuotoneProps };

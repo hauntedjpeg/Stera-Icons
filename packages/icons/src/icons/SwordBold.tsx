@@ -14,7 +14,7 @@ const SwordBold = memo(
 
 SwordBold.displayName = 'SwordBold';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { SwordBold, SwordBold as SwordBoldIcon, SwordBold as SiSwordBold };
 export default SwordBold;
 export type { SwordBoldProps };

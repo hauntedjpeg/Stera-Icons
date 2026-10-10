@@ -18,10 +18,10 @@ export interface CliCircleProps extends IconProps {
  * For smaller bundle size, import specific variants directly:
  * import { CliCircleRegular } from 'stera-icons/icons/CliCircleRegular';
  */
-const CliCircle = memo(forwardRef<SVGSVGElement, CliCircleProps>(({ 
+const CliCircle = memo(forwardRef<SVGSVGElement, CliCircleProps>(({
   weight = 'regular',
   duotone = false,
-  ...rest 
+  ...rest
 }, ref) => {
   if (weight === 'bold' && duotone) return <CliCircleBoldDuotone ref={ref} {...rest} />;
   if (weight === 'bold') return <CliCircleBold ref={ref} {...rest} />;
@@ -33,6 +33,6 @@ const CliCircle = memo(forwardRef<SVGSVGElement, CliCircleProps>(({
 
 CliCircle.displayName = 'CliCircle';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { CliCircle, CliCircle as CliCircleIcon, CliCircle as SiCliCircle };
 export default CliCircle;

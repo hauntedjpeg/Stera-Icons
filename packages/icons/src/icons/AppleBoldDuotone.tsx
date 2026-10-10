@@ -15,7 +15,7 @@ const AppleBoldDuotone = memo(
 
 AppleBoldDuotone.displayName = 'AppleBoldDuotone';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { AppleBoldDuotone, AppleBoldDuotone as AppleBoldDuotoneIcon, AppleBoldDuotone as SiAppleBoldDuotone };
 export default AppleBoldDuotone;
 export type { AppleBoldDuotoneProps };

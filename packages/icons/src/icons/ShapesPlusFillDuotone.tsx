@@ -15,7 +15,7 @@ const ShapesPlusFillDuotone = memo(
 
 ShapesPlusFillDuotone.displayName = 'ShapesPlusFillDuotone';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { ShapesPlusFillDuotone, ShapesPlusFillDuotone as ShapesPlusFillDuotoneIcon, ShapesPlusFillDuotone as SiShapesPlusFillDuotone };
 export default ShapesPlusFillDuotone;
 export type { ShapesPlusFillDuotoneProps };

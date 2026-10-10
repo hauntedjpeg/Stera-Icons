@@ -14,7 +14,7 @@ const HeartBold = memo(
 
 HeartBold.displayName = 'HeartBold';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { HeartBold, HeartBold as HeartBoldIcon, HeartBold as SiHeartBold };
 export default HeartBold;
 export type { HeartBoldProps };

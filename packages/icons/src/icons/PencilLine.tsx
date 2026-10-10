@@ -18,10 +18,10 @@ export interface PencilLineProps extends IconProps {
  * For smaller bundle size, import specific variants directly:
  * import { PencilLineRegular } from 'stera-icons/icons/PencilLineRegular';
  */
-const PencilLine = memo(forwardRef<SVGSVGElement, PencilLineProps>(({ 
+const PencilLine = memo(forwardRef<SVGSVGElement, PencilLineProps>(({
   weight = 'regular',
   duotone = false,
-  ...rest 
+  ...rest
 }, ref) => {
   if (weight === 'bold' && duotone) return <PencilLineBoldDuotone ref={ref} {...rest} />;
   if (weight === 'bold') return <PencilLineBold ref={ref} {...rest} />;
@@ -33,6 +33,6 @@ const PencilLine = memo(forwardRef<SVGSVGElement, PencilLineProps>(({
 
 PencilLine.displayName = 'PencilLine';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { PencilLine, PencilLine as PencilLineIcon, PencilLine as SiPencilLine };
 export default PencilLine;

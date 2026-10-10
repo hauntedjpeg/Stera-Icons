@@ -18,10 +18,10 @@ export interface UmbrellaProps extends IconProps {
  * For smaller bundle size, import specific variants directly:
  * import { UmbrellaRegular } from 'stera-icons/icons/UmbrellaRegular';
  */
-const Umbrella = memo(forwardRef<SVGSVGElement, UmbrellaProps>(({ 
+const Umbrella = memo(forwardRef<SVGSVGElement, UmbrellaProps>(({
   weight = 'regular',
   duotone = false,
-  ...rest 
+  ...rest
 }, ref) => {
   if (weight === 'bold' && duotone) return <UmbrellaBoldDuotone ref={ref} {...rest} />;
   if (weight === 'bold') return <UmbrellaBold ref={ref} {...rest} />;
@@ -33,6 +33,6 @@ const Umbrella = memo(forwardRef<SVGSVGElement, UmbrellaProps>(({
 
 Umbrella.displayName = 'Umbrella';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { Umbrella, Umbrella as UmbrellaIcon, Umbrella as SiUmbrella };
 export default Umbrella;

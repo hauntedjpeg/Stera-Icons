@@ -15,7 +15,7 @@ const TrophyRegularDuotone = memo(
 
 TrophyRegularDuotone.displayName = 'TrophyRegularDuotone';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { TrophyRegularDuotone, TrophyRegularDuotone as TrophyRegularDuotoneIcon, TrophyRegularDuotone as SiTrophyRegularDuotone };
 export default TrophyRegularDuotone;
 export type { TrophyRegularDuotoneProps };

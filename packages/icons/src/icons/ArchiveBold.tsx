@@ -15,7 +15,7 @@ const ArchiveBold = memo(
 
 ArchiveBold.displayName = 'ArchiveBold';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { ArchiveBold, ArchiveBold as ArchiveBoldIcon, ArchiveBold as SiArchiveBold };
 export default ArchiveBold;
 export type { ArchiveBoldProps };

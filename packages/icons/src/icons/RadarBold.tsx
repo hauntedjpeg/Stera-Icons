@@ -14,7 +14,7 @@ const RadarBold = memo(
 
 RadarBold.displayName = 'RadarBold';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { RadarBold, RadarBold as RadarBoldIcon, RadarBold as SiRadarBold };
 export default RadarBold;
 export type { RadarBoldProps };

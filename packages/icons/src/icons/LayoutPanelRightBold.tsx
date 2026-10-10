@@ -14,7 +14,7 @@ const LayoutPanelRightBold = memo(
 
 LayoutPanelRightBold.displayName = 'LayoutPanelRightBold';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { LayoutPanelRightBold, LayoutPanelRightBold as LayoutPanelRightBoldIcon, LayoutPanelRightBold as SiLayoutPanelRightBold };
 export default LayoutPanelRightBold;
 export type { LayoutPanelRightBoldProps };

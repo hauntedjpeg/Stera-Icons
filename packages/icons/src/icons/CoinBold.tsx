@@ -14,7 +14,7 @@ const CoinBold = memo(
 
 CoinBold.displayName = 'CoinBold';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { CoinBold, CoinBold as CoinBoldIcon, CoinBold as SiCoinBold };
 export default CoinBold;
 export type { CoinBoldProps };

@@ -18,10 +18,10 @@ export interface FileCabinetProps extends IconProps {
  * For smaller bundle size, import specific variants directly:
  * import { FileCabinetRegular } from 'stera-icons/icons/FileCabinetRegular';
  */
-const FileCabinet = memo(forwardRef<SVGSVGElement, FileCabinetProps>(({ 
+const FileCabinet = memo(forwardRef<SVGSVGElement, FileCabinetProps>(({
   weight = 'regular',
   duotone = false,
-  ...rest 
+  ...rest
 }, ref) => {
   if (weight === 'bold' && duotone) return <FileCabinetBoldDuotone ref={ref} {...rest} />;
   if (weight === 'bold') return <FileCabinetBold ref={ref} {...rest} />;
@@ -33,6 +33,6 @@ const FileCabinet = memo(forwardRef<SVGSVGElement, FileCabinetProps>(({
 
 FileCabinet.displayName = 'FileCabinet';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { FileCabinet, FileCabinet as FileCabinetIcon, FileCabinet as SiFileCabinet };
 export default FileCabinet;

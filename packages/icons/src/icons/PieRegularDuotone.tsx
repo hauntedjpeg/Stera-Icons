@@ -15,7 +15,7 @@ const PieRegularDuotone = memo(
 
 PieRegularDuotone.displayName = 'PieRegularDuotone';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { PieRegularDuotone, PieRegularDuotone as PieRegularDuotoneIcon, PieRegularDuotone as SiPieRegularDuotone };
 export default PieRegularDuotone;
 export type { PieRegularDuotoneProps };

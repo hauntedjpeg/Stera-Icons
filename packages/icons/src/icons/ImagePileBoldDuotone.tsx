@@ -16,7 +16,7 @@ const ImagePileBoldDuotone = memo(
 
 ImagePileBoldDuotone.displayName = 'ImagePileBoldDuotone';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { ImagePileBoldDuotone, ImagePileBoldDuotone as ImagePileBoldDuotoneIcon, ImagePileBoldDuotone as SiImagePileBoldDuotone };
 export default ImagePileBoldDuotone;
 export type { ImagePileBoldDuotoneProps };

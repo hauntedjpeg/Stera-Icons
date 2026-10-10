@@ -15,7 +15,7 @@ const ListTreeBoldDuotone = memo(
 
 ListTreeBoldDuotone.displayName = 'ListTreeBoldDuotone';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { ListTreeBoldDuotone, ListTreeBoldDuotone as ListTreeBoldDuotoneIcon, ListTreeBoldDuotone as SiListTreeBoldDuotone };
 export default ListTreeBoldDuotone;
 export type { ListTreeBoldDuotoneProps };

@@ -14,7 +14,7 @@ const TreeDeciduousFill = memo(
 
 TreeDeciduousFill.displayName = 'TreeDeciduousFill';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { TreeDeciduousFill, TreeDeciduousFill as TreeDeciduousFillIcon, TreeDeciduousFill as SiTreeDeciduousFill };
 export default TreeDeciduousFill;
 export type { TreeDeciduousFillProps };

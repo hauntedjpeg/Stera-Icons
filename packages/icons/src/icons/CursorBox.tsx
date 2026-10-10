@@ -18,10 +18,10 @@ export interface CursorBoxProps extends IconProps {
  * For smaller bundle size, import specific variants directly:
  * import { CursorBoxRegular } from 'stera-icons/icons/CursorBoxRegular';
  */
-const CursorBox = memo(forwardRef<SVGSVGElement, CursorBoxProps>(({ 
+const CursorBox = memo(forwardRef<SVGSVGElement, CursorBoxProps>(({
   weight = 'regular',
   duotone = false,
-  ...rest 
+  ...rest
 }, ref) => {
   if (weight === 'bold' && duotone) return <CursorBoxBoldDuotone ref={ref} {...rest} />;
   if (weight === 'bold') return <CursorBoxBold ref={ref} {...rest} />;
@@ -33,6 +33,6 @@ const CursorBox = memo(forwardRef<SVGSVGElement, CursorBoxProps>(({
 
 CursorBox.displayName = 'CursorBox';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { CursorBox, CursorBox as CursorBoxIcon, CursorBox as SiCursorBox };
 export default CursorBox;

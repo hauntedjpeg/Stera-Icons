@@ -18,10 +18,10 @@ export interface CircleDivideAltProps extends IconProps {
  * For smaller bundle size, import specific variants directly:
  * import { CircleDivideAltRegular } from 'stera-icons/icons/CircleDivideAltRegular';
  */
-const CircleDivideAlt = memo(forwardRef<SVGSVGElement, CircleDivideAltProps>(({ 
+const CircleDivideAlt = memo(forwardRef<SVGSVGElement, CircleDivideAltProps>(({
   weight = 'regular',
   duotone = false,
-  ...rest 
+  ...rest
 }, ref) => {
   if (weight === 'bold' && duotone) return <CircleDivideAltBoldDuotone ref={ref} {...rest} />;
   if (weight === 'bold') return <CircleDivideAltBold ref={ref} {...rest} />;
@@ -33,6 +33,6 @@ const CircleDivideAlt = memo(forwardRef<SVGSVGElement, CircleDivideAltProps>(({
 
 CircleDivideAlt.displayName = 'CircleDivideAlt';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { CircleDivideAlt, CircleDivideAlt as CircleDivideAltIcon, CircleDivideAlt as SiCircleDivideAlt };
 export default CircleDivideAlt;

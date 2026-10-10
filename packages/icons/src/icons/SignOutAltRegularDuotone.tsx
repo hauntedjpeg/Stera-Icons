@@ -15,7 +15,7 @@ const SignOutAltRegularDuotone = memo(
 
 SignOutAltRegularDuotone.displayName = 'SignOutAltRegularDuotone';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { SignOutAltRegularDuotone, SignOutAltRegularDuotone as SignOutAltRegularDuotoneIcon, SignOutAltRegularDuotone as SiSignOutAltRegularDuotone };
 export default SignOutAltRegularDuotone;
 export type { SignOutAltRegularDuotoneProps };

@@ -15,7 +15,7 @@ const GitCommitRegularDuotone = memo(
 
 GitCommitRegularDuotone.displayName = 'GitCommitRegularDuotone';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { GitCommitRegularDuotone, GitCommitRegularDuotone as GitCommitRegularDuotoneIcon, GitCommitRegularDuotone as SiGitCommitRegularDuotone };
 export default GitCommitRegularDuotone;
 export type { GitCommitRegularDuotoneProps };

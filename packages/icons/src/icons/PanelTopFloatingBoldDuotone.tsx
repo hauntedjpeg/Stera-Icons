@@ -15,7 +15,7 @@ const PanelTopFloatingBoldDuotone = memo(
 
 PanelTopFloatingBoldDuotone.displayName = 'PanelTopFloatingBoldDuotone';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { PanelTopFloatingBoldDuotone, PanelTopFloatingBoldDuotone as PanelTopFloatingBoldDuotoneIcon, PanelTopFloatingBoldDuotone as SiPanelTopFloatingBoldDuotone };
 export default PanelTopFloatingBoldDuotone;
 export type { PanelTopFloatingBoldDuotoneProps };

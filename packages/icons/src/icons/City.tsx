@@ -18,10 +18,10 @@ export interface CityProps extends IconProps {
  * For smaller bundle size, import specific variants directly:
  * import { CityRegular } from 'stera-icons/icons/CityRegular';
  */
-const City = memo(forwardRef<SVGSVGElement, CityProps>(({ 
+const City = memo(forwardRef<SVGSVGElement, CityProps>(({
   weight = 'regular',
   duotone = false,
-  ...rest 
+  ...rest
 }, ref) => {
   if (weight === 'bold' && duotone) return <CityBoldDuotone ref={ref} {...rest} />;
   if (weight === 'bold') return <CityBold ref={ref} {...rest} />;
@@ -33,6 +33,6 @@ const City = memo(forwardRef<SVGSVGElement, CityProps>(({
 
 City.displayName = 'City';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { City, City as CityIcon, City as SiCity };
 export default City;

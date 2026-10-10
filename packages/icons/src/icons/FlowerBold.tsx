@@ -14,7 +14,7 @@ const FlowerBold = memo(
 
 FlowerBold.displayName = 'FlowerBold';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { FlowerBold, FlowerBold as FlowerBoldIcon, FlowerBold as SiFlowerBold };
 export default FlowerBold;
 export type { FlowerBoldProps };

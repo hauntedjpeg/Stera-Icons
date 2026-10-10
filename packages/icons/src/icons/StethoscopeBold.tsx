@@ -14,7 +14,7 @@ const StethoscopeBold = memo(
 
 StethoscopeBold.displayName = 'StethoscopeBold';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { StethoscopeBold, StethoscopeBold as StethoscopeBoldIcon, StethoscopeBold as SiStethoscopeBold };
 export default StethoscopeBold;
 export type { StethoscopeBoldProps };

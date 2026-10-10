@@ -14,7 +14,7 @@ const KunaiBold = memo(
 
 KunaiBold.displayName = 'KunaiBold';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { KunaiBold, KunaiBold as KunaiBoldIcon, KunaiBold as SiKunaiBold };
 export default KunaiBold;
 export type { KunaiBoldProps };

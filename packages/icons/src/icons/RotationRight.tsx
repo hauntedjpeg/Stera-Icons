@@ -18,10 +18,10 @@ export interface RotationRightProps extends IconProps {
  * For smaller bundle size, import specific variants directly:
  * import { RotationRightRegular } from 'stera-icons/icons/RotationRightRegular';
  */
-const RotationRight = memo(forwardRef<SVGSVGElement, RotationRightProps>(({ 
+const RotationRight = memo(forwardRef<SVGSVGElement, RotationRightProps>(({
   weight = 'regular',
   duotone = false,
-  ...rest 
+  ...rest
 }, ref) => {
   if (weight === 'bold' && duotone) return <RotationRightBoldDuotone ref={ref} {...rest} />;
   if (weight === 'bold') return <RotationRightBold ref={ref} {...rest} />;
@@ -33,6 +33,6 @@ const RotationRight = memo(forwardRef<SVGSVGElement, RotationRightProps>(({
 
 RotationRight.displayName = 'RotationRight';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { RotationRight, RotationRight as RotationRightIcon, RotationRight as SiRotationRight };
 export default RotationRight;

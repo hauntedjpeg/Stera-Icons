@@ -17,7 +17,7 @@ const ServerBold = memo(
 
 ServerBold.displayName = 'ServerBold';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { ServerBold, ServerBold as ServerBoldIcon, ServerBold as SiServerBold };
 export default ServerBold;
 export type { ServerBoldProps };

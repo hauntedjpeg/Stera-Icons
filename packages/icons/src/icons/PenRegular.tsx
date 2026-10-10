@@ -14,7 +14,7 @@ const PenRegular = memo(
 
 PenRegular.displayName = 'PenRegular';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { PenRegular, PenRegular as PenRegularIcon, PenRegular as SiPenRegular };
 export default PenRegular;
 export type { PenRegularProps };

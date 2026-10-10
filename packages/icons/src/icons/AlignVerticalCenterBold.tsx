@@ -14,7 +14,7 @@ const AlignVerticalCenterBold = memo(
 
 AlignVerticalCenterBold.displayName = 'AlignVerticalCenterBold';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { AlignVerticalCenterBold, AlignVerticalCenterBold as AlignVerticalCenterBoldIcon, AlignVerticalCenterBold as SiAlignVerticalCenterBold };
 export default AlignVerticalCenterBold;
 export type { AlignVerticalCenterBoldProps };

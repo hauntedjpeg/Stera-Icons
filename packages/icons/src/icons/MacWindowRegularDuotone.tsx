@@ -15,7 +15,7 @@ const MacWindowRegularDuotone = memo(
 
 MacWindowRegularDuotone.displayName = 'MacWindowRegularDuotone';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { MacWindowRegularDuotone, MacWindowRegularDuotone as MacWindowRegularDuotoneIcon, MacWindowRegularDuotone as SiMacWindowRegularDuotone };
 export default MacWindowRegularDuotone;
 export type { MacWindowRegularDuotoneProps };

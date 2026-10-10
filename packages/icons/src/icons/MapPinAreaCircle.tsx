@@ -18,10 +18,10 @@ export interface MapPinAreaCircleProps extends IconProps {
  * For smaller bundle size, import specific variants directly:
  * import { MapPinAreaCircleRegular } from 'stera-icons/icons/MapPinAreaCircleRegular';
  */
-const MapPinAreaCircle = memo(forwardRef<SVGSVGElement, MapPinAreaCircleProps>(({ 
+const MapPinAreaCircle = memo(forwardRef<SVGSVGElement, MapPinAreaCircleProps>(({
   weight = 'regular',
   duotone = false,
-  ...rest 
+  ...rest
 }, ref) => {
   if (weight === 'bold' && duotone) return <MapPinAreaCircleBoldDuotone ref={ref} {...rest} />;
   if (weight === 'bold') return <MapPinAreaCircleBold ref={ref} {...rest} />;
@@ -33,6 +33,6 @@ const MapPinAreaCircle = memo(forwardRef<SVGSVGElement, MapPinAreaCircleProps>((
 
 MapPinAreaCircle.displayName = 'MapPinAreaCircle';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { MapPinAreaCircle, MapPinAreaCircle as MapPinAreaCircleIcon, MapPinAreaCircle as SiMapPinAreaCircle };
 export default MapPinAreaCircle;

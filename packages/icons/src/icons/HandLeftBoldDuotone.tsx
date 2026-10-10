@@ -15,7 +15,7 @@ const HandLeftBoldDuotone = memo(
 
 HandLeftBoldDuotone.displayName = 'HandLeftBoldDuotone';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { HandLeftBoldDuotone, HandLeftBoldDuotone as HandLeftBoldDuotoneIcon, HandLeftBoldDuotone as SiHandLeftBoldDuotone };
 export default HandLeftBoldDuotone;
 export type { HandLeftBoldDuotoneProps };

@@ -14,7 +14,7 @@ const FlashBold = memo(
 
 FlashBold.displayName = 'FlashBold';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { FlashBold, FlashBold as FlashBoldIcon, FlashBold as SiFlashBold };
 export default FlashBold;
 export type { FlashBoldProps };

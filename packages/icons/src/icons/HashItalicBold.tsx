@@ -14,7 +14,7 @@ const HashItalicBold = memo(
 
 HashItalicBold.displayName = 'HashItalicBold';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { HashItalicBold, HashItalicBold as HashItalicBoldIcon, HashItalicBold as SiHashItalicBold };
 export default HashItalicBold;
 export type { HashItalicBoldProps };

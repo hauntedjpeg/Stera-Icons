@@ -14,7 +14,7 @@ const SparklesAltBold = memo(
 
 SparklesAltBold.displayName = 'SparklesAltBold';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { SparklesAltBold, SparklesAltBold as SparklesAltBoldIcon, SparklesAltBold as SiSparklesAltBold };
 export default SparklesAltBold;
 export type { SparklesAltBoldProps };

@@ -18,10 +18,10 @@ export interface FlowerProps extends IconProps {
  * For smaller bundle size, import specific variants directly:
  * import { FlowerRegular } from 'stera-icons/icons/FlowerRegular';
  */
-const Flower = memo(forwardRef<SVGSVGElement, FlowerProps>(({ 
+const Flower = memo(forwardRef<SVGSVGElement, FlowerProps>(({
   weight = 'regular',
   duotone = false,
-  ...rest 
+  ...rest
 }, ref) => {
   if (weight === 'bold' && duotone) return <FlowerBoldDuotone ref={ref} {...rest} />;
   if (weight === 'bold') return <FlowerBold ref={ref} {...rest} />;
@@ -33,6 +33,6 @@ const Flower = memo(forwardRef<SVGSVGElement, FlowerProps>(({
 
 Flower.displayName = 'Flower';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { Flower, Flower as FlowerIcon, Flower as SiFlower };
 export default Flower;

@@ -16,7 +16,7 @@ const ScanFaceBold = memo(
 
 ScanFaceBold.displayName = 'ScanFaceBold';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { ScanFaceBold, ScanFaceBold as ScanFaceBoldIcon, ScanFaceBold as SiScanFaceBold };
 export default ScanFaceBold;
 export type { ScanFaceBoldProps };

@@ -15,7 +15,7 @@ const SortNarrowFillDuotone = memo(
 
 SortNarrowFillDuotone.displayName = 'SortNarrowFillDuotone';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { SortNarrowFillDuotone, SortNarrowFillDuotone as SortNarrowFillDuotoneIcon, SortNarrowFillDuotone as SiSortNarrowFillDuotone };
 export default SortNarrowFillDuotone;
 export type { SortNarrowFillDuotoneProps };

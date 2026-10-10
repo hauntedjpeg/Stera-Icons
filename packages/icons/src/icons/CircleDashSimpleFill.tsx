@@ -14,7 +14,7 @@ const CircleDashSimpleFill = memo(
 
 CircleDashSimpleFill.displayName = 'CircleDashSimpleFill';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { CircleDashSimpleFill, CircleDashSimpleFill as CircleDashSimpleFillIcon, CircleDashSimpleFill as SiCircleDashSimpleFill };
 export default CircleDashSimpleFill;
 export type { CircleDashSimpleFillProps };

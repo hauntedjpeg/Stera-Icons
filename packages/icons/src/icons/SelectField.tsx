@@ -18,10 +18,10 @@ export interface SelectFieldProps extends IconProps {
  * For smaller bundle size, import specific variants directly:
  * import { SelectFieldRegular } from 'stera-icons/icons/SelectFieldRegular';
  */
-const SelectField = memo(forwardRef<SVGSVGElement, SelectFieldProps>(({ 
+const SelectField = memo(forwardRef<SVGSVGElement, SelectFieldProps>(({
   weight = 'regular',
   duotone = false,
-  ...rest 
+  ...rest
 }, ref) => {
   if (weight === 'bold' && duotone) return <SelectFieldBoldDuotone ref={ref} {...rest} />;
   if (weight === 'bold') return <SelectFieldBold ref={ref} {...rest} />;
@@ -33,6 +33,6 @@ const SelectField = memo(forwardRef<SVGSVGElement, SelectFieldProps>(({
 
 SelectField.displayName = 'SelectField';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { SelectField, SelectField as SelectFieldIcon, SelectField as SiSelectField };
 export default SelectField;

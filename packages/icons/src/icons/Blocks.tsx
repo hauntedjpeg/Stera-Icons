@@ -18,10 +18,10 @@ export interface BlocksProps extends IconProps {
  * For smaller bundle size, import specific variants directly:
  * import { BlocksRegular } from 'stera-icons/icons/BlocksRegular';
  */
-const Blocks = memo(forwardRef<SVGSVGElement, BlocksProps>(({ 
+const Blocks = memo(forwardRef<SVGSVGElement, BlocksProps>(({
   weight = 'regular',
   duotone = false,
-  ...rest 
+  ...rest
 }, ref) => {
   if (weight === 'bold' && duotone) return <BlocksBoldDuotone ref={ref} {...rest} />;
   if (weight === 'bold') return <BlocksBold ref={ref} {...rest} />;
@@ -33,6 +33,6 @@ const Blocks = memo(forwardRef<SVGSVGElement, BlocksProps>(({
 
 Blocks.displayName = 'Blocks';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { Blocks, Blocks as BlocksIcon, Blocks as SiBlocks };
 export default Blocks;

@@ -16,7 +16,7 @@ const ScissorsBold = memo(
 
 ScissorsBold.displayName = 'ScissorsBold';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { ScissorsBold, ScissorsBold as ScissorsBoldIcon, ScissorsBold as SiScissorsBold };
 export default ScissorsBold;
 export type { ScissorsBoldProps };

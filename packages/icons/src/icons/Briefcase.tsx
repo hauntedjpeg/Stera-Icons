@@ -18,10 +18,10 @@ export interface BriefcaseProps extends IconProps {
  * For smaller bundle size, import specific variants directly:
  * import { BriefcaseRegular } from 'stera-icons/icons/BriefcaseRegular';
  */
-const Briefcase = memo(forwardRef<SVGSVGElement, BriefcaseProps>(({ 
+const Briefcase = memo(forwardRef<SVGSVGElement, BriefcaseProps>(({
   weight = 'regular',
   duotone = false,
-  ...rest 
+  ...rest
 }, ref) => {
   if (weight === 'bold' && duotone) return <BriefcaseBoldDuotone ref={ref} {...rest} />;
   if (weight === 'bold') return <BriefcaseBold ref={ref} {...rest} />;
@@ -33,6 +33,6 @@ const Briefcase = memo(forwardRef<SVGSVGElement, BriefcaseProps>(({
 
 Briefcase.displayName = 'Briefcase';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { Briefcase, Briefcase as BriefcaseIcon, Briefcase as SiBriefcase };
 export default Briefcase;

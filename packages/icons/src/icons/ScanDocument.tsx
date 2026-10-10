@@ -18,10 +18,10 @@ export interface ScanDocumentProps extends IconProps {
  * For smaller bundle size, import specific variants directly:
  * import { ScanDocumentRegular } from 'stera-icons/icons/ScanDocumentRegular';
  */
-const ScanDocument = memo(forwardRef<SVGSVGElement, ScanDocumentProps>(({ 
+const ScanDocument = memo(forwardRef<SVGSVGElement, ScanDocumentProps>(({
   weight = 'regular',
   duotone = false,
-  ...rest 
+  ...rest
 }, ref) => {
   if (weight === 'bold' && duotone) return <ScanDocumentBoldDuotone ref={ref} {...rest} />;
   if (weight === 'bold') return <ScanDocumentBold ref={ref} {...rest} />;
@@ -33,6 +33,6 @@ const ScanDocument = memo(forwardRef<SVGSVGElement, ScanDocumentProps>(({
 
 ScanDocument.displayName = 'ScanDocument';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { ScanDocument, ScanDocument as ScanDocumentIcon, ScanDocument as SiScanDocument };
 export default ScanDocument;

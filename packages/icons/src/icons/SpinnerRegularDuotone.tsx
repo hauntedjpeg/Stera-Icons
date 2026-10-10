@@ -15,7 +15,7 @@ const SpinnerRegularDuotone = memo(
 
 SpinnerRegularDuotone.displayName = 'SpinnerRegularDuotone';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { SpinnerRegularDuotone, SpinnerRegularDuotone as SpinnerRegularDuotoneIcon, SpinnerRegularDuotone as SiSpinnerRegularDuotone };
 export default SpinnerRegularDuotone;
 export type { SpinnerRegularDuotoneProps };

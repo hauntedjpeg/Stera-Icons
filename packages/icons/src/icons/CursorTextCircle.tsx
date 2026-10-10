@@ -18,10 +18,10 @@ export interface CursorTextCircleProps extends IconProps {
  * For smaller bundle size, import specific variants directly:
  * import { CursorTextCircleRegular } from 'stera-icons/icons/CursorTextCircleRegular';
  */
-const CursorTextCircle = memo(forwardRef<SVGSVGElement, CursorTextCircleProps>(({ 
+const CursorTextCircle = memo(forwardRef<SVGSVGElement, CursorTextCircleProps>(({
   weight = 'regular',
   duotone = false,
-  ...rest 
+  ...rest
 }, ref) => {
   if (weight === 'bold' && duotone) return <CursorTextCircleBoldDuotone ref={ref} {...rest} />;
   if (weight === 'bold') return <CursorTextCircleBold ref={ref} {...rest} />;
@@ -33,6 +33,6 @@ const CursorTextCircle = memo(forwardRef<SVGSVGElement, CursorTextCircleProps>((
 
 CursorTextCircle.displayName = 'CursorTextCircle';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { CursorTextCircle, CursorTextCircle as CursorTextCircleIcon, CursorTextCircle as SiCursorTextCircle };
 export default CursorTextCircle;

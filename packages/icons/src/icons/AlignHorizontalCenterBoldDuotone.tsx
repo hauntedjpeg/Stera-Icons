@@ -15,7 +15,7 @@ const AlignHorizontalCenterBoldDuotone = memo(
 
 AlignHorizontalCenterBoldDuotone.displayName = 'AlignHorizontalCenterBoldDuotone';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { AlignHorizontalCenterBoldDuotone, AlignHorizontalCenterBoldDuotone as AlignHorizontalCenterBoldDuotoneIcon, AlignHorizontalCenterBoldDuotone as SiAlignHorizontalCenterBoldDuotone };
 export default AlignHorizontalCenterBoldDuotone;
 export type { AlignHorizontalCenterBoldDuotoneProps };

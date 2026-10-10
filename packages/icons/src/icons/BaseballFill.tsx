@@ -14,7 +14,7 @@ const BaseballFill = memo(
 
 BaseballFill.displayName = 'BaseballFill';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { BaseballFill, BaseballFill as BaseballFillIcon, BaseballFill as SiBaseballFill };
 export default BaseballFill;
 export type { BaseballFillProps };

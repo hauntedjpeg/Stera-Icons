@@ -18,10 +18,10 @@ export interface TreePalmProps extends IconProps {
  * For smaller bundle size, import specific variants directly:
  * import { TreePalmRegular } from 'stera-icons/icons/TreePalmRegular';
  */
-const TreePalm = memo(forwardRef<SVGSVGElement, TreePalmProps>(({ 
+const TreePalm = memo(forwardRef<SVGSVGElement, TreePalmProps>(({
   weight = 'regular',
   duotone = false,
-  ...rest 
+  ...rest
 }, ref) => {
   if (weight === 'bold' && duotone) return <TreePalmBoldDuotone ref={ref} {...rest} />;
   if (weight === 'bold') return <TreePalmBold ref={ref} {...rest} />;
@@ -33,6 +33,6 @@ const TreePalm = memo(forwardRef<SVGSVGElement, TreePalmProps>(({
 
 TreePalm.displayName = 'TreePalm';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { TreePalm, TreePalm as TreePalmIcon, TreePalm as SiTreePalm };
 export default TreePalm;

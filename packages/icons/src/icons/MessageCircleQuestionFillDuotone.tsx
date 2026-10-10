@@ -15,7 +15,7 @@ const MessageCircleQuestionFillDuotone = memo(
 
 MessageCircleQuestionFillDuotone.displayName = 'MessageCircleQuestionFillDuotone';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { MessageCircleQuestionFillDuotone, MessageCircleQuestionFillDuotone as MessageCircleQuestionFillDuotoneIcon, MessageCircleQuestionFillDuotone as SiMessageCircleQuestionFillDuotone };
 export default MessageCircleQuestionFillDuotone;
 export type { MessageCircleQuestionFillDuotoneProps };

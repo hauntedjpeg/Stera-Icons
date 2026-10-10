@@ -15,7 +15,7 @@ const Gauge66Regular = memo(
 
 Gauge66Regular.displayName = 'Gauge66Regular';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { Gauge66Regular, Gauge66Regular as Gauge66RegularIcon, Gauge66Regular as SiGauge66Regular };
 export default Gauge66Regular;
 export type { Gauge66RegularProps };

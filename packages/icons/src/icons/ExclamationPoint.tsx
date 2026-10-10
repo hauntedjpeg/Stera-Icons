@@ -18,10 +18,10 @@ export interface ExclamationPointProps extends IconProps {
  * For smaller bundle size, import specific variants directly:
  * import { ExclamationPointRegular } from 'stera-icons/icons/ExclamationPointRegular';
  */
-const ExclamationPoint = memo(forwardRef<SVGSVGElement, ExclamationPointProps>(({ 
+const ExclamationPoint = memo(forwardRef<SVGSVGElement, ExclamationPointProps>(({
   weight = 'regular',
   duotone = false,
-  ...rest 
+  ...rest
 }, ref) => {
   if (weight === 'bold' && duotone) return <ExclamationPointBoldDuotone ref={ref} {...rest} />;
   if (weight === 'bold') return <ExclamationPointBold ref={ref} {...rest} />;
@@ -33,6 +33,6 @@ const ExclamationPoint = memo(forwardRef<SVGSVGElement, ExclamationPointProps>((
 
 ExclamationPoint.displayName = 'ExclamationPoint';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { ExclamationPoint, ExclamationPoint as ExclamationPointIcon, ExclamationPoint as SiExclamationPoint };
 export default ExclamationPoint;

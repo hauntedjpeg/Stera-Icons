@@ -18,10 +18,10 @@ export interface CameraProps extends IconProps {
  * For smaller bundle size, import specific variants directly:
  * import { CameraRegular } from 'stera-icons/icons/CameraRegular';
  */
-const Camera = memo(forwardRef<SVGSVGElement, CameraProps>(({ 
+const Camera = memo(forwardRef<SVGSVGElement, CameraProps>(({
   weight = 'regular',
   duotone = false,
-  ...rest 
+  ...rest
 }, ref) => {
   if (weight === 'bold' && duotone) return <CameraBoldDuotone ref={ref} {...rest} />;
   if (weight === 'bold') return <CameraBold ref={ref} {...rest} />;
@@ -33,6 +33,6 @@ const Camera = memo(forwardRef<SVGSVGElement, CameraProps>(({
 
 Camera.displayName = 'Camera';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { Camera, Camera as CameraIcon, Camera as SiCamera };
 export default Camera;

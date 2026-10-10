@@ -15,7 +15,7 @@ const KeyboardBold = memo(
 
 KeyboardBold.displayName = 'KeyboardBold';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { KeyboardBold, KeyboardBold as KeyboardBoldIcon, KeyboardBold as SiKeyboardBold };
 export default KeyboardBold;
 export type { KeyboardBoldProps };

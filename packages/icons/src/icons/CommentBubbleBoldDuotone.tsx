@@ -15,7 +15,7 @@ const CommentBubbleBoldDuotone = memo(
 
 CommentBubbleBoldDuotone.displayName = 'CommentBubbleBoldDuotone';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { CommentBubbleBoldDuotone, CommentBubbleBoldDuotone as CommentBubbleBoldDuotoneIcon, CommentBubbleBoldDuotone as SiCommentBubbleBoldDuotone };
 export default CommentBubbleBoldDuotone;
 export type { CommentBubbleBoldDuotoneProps };

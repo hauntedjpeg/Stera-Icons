@@ -18,10 +18,10 @@ export interface ImageStackProps extends IconProps {
  * For smaller bundle size, import specific variants directly:
  * import { ImageStackRegular } from 'stera-icons/icons/ImageStackRegular';
  */
-const ImageStack = memo(forwardRef<SVGSVGElement, ImageStackProps>(({ 
+const ImageStack = memo(forwardRef<SVGSVGElement, ImageStackProps>(({
   weight = 'regular',
   duotone = false,
-  ...rest 
+  ...rest
 }, ref) => {
   if (weight === 'bold' && duotone) return <ImageStackBoldDuotone ref={ref} {...rest} />;
   if (weight === 'bold') return <ImageStackBold ref={ref} {...rest} />;
@@ -33,6 +33,6 @@ const ImageStack = memo(forwardRef<SVGSVGElement, ImageStackProps>(({
 
 ImageStack.displayName = 'ImageStack';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { ImageStack, ImageStack as ImageStackIcon, ImageStack as SiImageStack };
 export default ImageStack;

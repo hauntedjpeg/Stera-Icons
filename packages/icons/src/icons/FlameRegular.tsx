@@ -14,7 +14,7 @@ const FlameRegular = memo(
 
 FlameRegular.displayName = 'FlameRegular';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { FlameRegular, FlameRegular as FlameRegularIcon, FlameRegular as SiFlameRegular };
 export default FlameRegular;
 export type { FlameRegularProps };

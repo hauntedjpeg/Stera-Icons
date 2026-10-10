@@ -15,7 +15,7 @@ const CertificateRegular = memo(
 
 CertificateRegular.displayName = 'CertificateRegular';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { CertificateRegular, CertificateRegular as CertificateRegularIcon, CertificateRegular as SiCertificateRegular };
 export default CertificateRegular;
 export type { CertificateRegularProps };

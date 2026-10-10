@@ -15,7 +15,7 @@ const CpuAmdRegular = memo(
 
 CpuAmdRegular.displayName = 'CpuAmdRegular';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { CpuAmdRegular, CpuAmdRegular as CpuAmdRegularIcon, CpuAmdRegular as SiCpuAmdRegular };
 export default CpuAmdRegular;
 export type { CpuAmdRegularProps };

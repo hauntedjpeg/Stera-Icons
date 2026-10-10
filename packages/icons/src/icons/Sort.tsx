@@ -18,10 +18,10 @@ export interface SortProps extends IconProps {
  * For smaller bundle size, import specific variants directly:
  * import { SortRegular } from 'stera-icons/icons/SortRegular';
  */
-const Sort = memo(forwardRef<SVGSVGElement, SortProps>(({ 
+const Sort = memo(forwardRef<SVGSVGElement, SortProps>(({
   weight = 'regular',
   duotone = false,
-  ...rest 
+  ...rest
 }, ref) => {
   if (weight === 'bold' && duotone) return <SortBoldDuotone ref={ref} {...rest} />;
   if (weight === 'bold') return <SortBold ref={ref} {...rest} />;
@@ -33,6 +33,6 @@ const Sort = memo(forwardRef<SVGSVGElement, SortProps>(({
 
 Sort.displayName = 'Sort';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { Sort, Sort as SortIcon, Sort as SiSort };
 export default Sort;

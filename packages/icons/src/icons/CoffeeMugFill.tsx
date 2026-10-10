@@ -14,7 +14,7 @@ const CoffeeMugFill = memo(
 
 CoffeeMugFill.displayName = 'CoffeeMugFill';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { CoffeeMugFill, CoffeeMugFill as CoffeeMugFillIcon, CoffeeMugFill as SiCoffeeMugFill };
 export default CoffeeMugFill;
 export type { CoffeeMugFillProps };

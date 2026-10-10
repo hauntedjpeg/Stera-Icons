@@ -18,10 +18,10 @@ export interface WristWatchProps extends IconProps {
  * For smaller bundle size, import specific variants directly:
  * import { WristWatchRegular } from 'stera-icons/icons/WristWatchRegular';
  */
-const WristWatch = memo(forwardRef<SVGSVGElement, WristWatchProps>(({ 
+const WristWatch = memo(forwardRef<SVGSVGElement, WristWatchProps>(({
   weight = 'regular',
   duotone = false,
-  ...rest 
+  ...rest
 }, ref) => {
   if (weight === 'bold' && duotone) return <WristWatchBoldDuotone ref={ref} {...rest} />;
   if (weight === 'bold') return <WristWatchBold ref={ref} {...rest} />;
@@ -33,6 +33,6 @@ const WristWatch = memo(forwardRef<SVGSVGElement, WristWatchProps>(({
 
 WristWatch.displayName = 'WristWatch';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { WristWatch, WristWatch as WristWatchIcon, WristWatch as SiWristWatch };
 export default WristWatch;

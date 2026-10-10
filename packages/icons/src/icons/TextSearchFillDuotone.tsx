@@ -15,7 +15,7 @@ const TextSearchFillDuotone = memo(
 
 TextSearchFillDuotone.displayName = 'TextSearchFillDuotone';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { TextSearchFillDuotone, TextSearchFillDuotone as TextSearchFillDuotoneIcon, TextSearchFillDuotone as SiTextSearchFillDuotone };
 export default TextSearchFillDuotone;
 export type { TextSearchFillDuotoneProps };

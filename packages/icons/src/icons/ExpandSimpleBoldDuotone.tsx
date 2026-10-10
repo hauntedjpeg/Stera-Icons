@@ -15,7 +15,7 @@ const ExpandSimpleBoldDuotone = memo(
 
 ExpandSimpleBoldDuotone.displayName = 'ExpandSimpleBoldDuotone';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { ExpandSimpleBoldDuotone, ExpandSimpleBoldDuotone as ExpandSimpleBoldDuotoneIcon, ExpandSimpleBoldDuotone as SiExpandSimpleBoldDuotone };
 export default ExpandSimpleBoldDuotone;
 export type { ExpandSimpleBoldDuotoneProps };

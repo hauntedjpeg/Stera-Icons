@@ -18,10 +18,10 @@ export interface Gauge50Props extends IconProps {
  * For smaller bundle size, import specific variants directly:
  * import { Gauge50Regular } from 'stera-icons/icons/Gauge50Regular';
  */
-const Gauge50 = memo(forwardRef<SVGSVGElement, Gauge50Props>(({ 
+const Gauge50 = memo(forwardRef<SVGSVGElement, Gauge50Props>(({
   weight = 'regular',
   duotone = false,
-  ...rest 
+  ...rest
 }, ref) => {
   if (weight === 'bold' && duotone) return <Gauge50BoldDuotone ref={ref} {...rest} />;
   if (weight === 'bold') return <Gauge50Bold ref={ref} {...rest} />;
@@ -33,6 +33,6 @@ const Gauge50 = memo(forwardRef<SVGSVGElement, Gauge50Props>(({
 
 Gauge50.displayName = 'Gauge50';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { Gauge50, Gauge50 as Gauge50Icon, Gauge50 as SiGauge50 };
 export default Gauge50;

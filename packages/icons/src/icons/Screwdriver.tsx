@@ -18,10 +18,10 @@ export interface ScrewdriverProps extends IconProps {
  * For smaller bundle size, import specific variants directly:
  * import { ScrewdriverRegular } from 'stera-icons/icons/ScrewdriverRegular';
  */
-const Screwdriver = memo(forwardRef<SVGSVGElement, ScrewdriverProps>(({ 
+const Screwdriver = memo(forwardRef<SVGSVGElement, ScrewdriverProps>(({
   weight = 'regular',
   duotone = false,
-  ...rest 
+  ...rest
 }, ref) => {
   if (weight === 'bold' && duotone) return <ScrewdriverBoldDuotone ref={ref} {...rest} />;
   if (weight === 'bold') return <ScrewdriverBold ref={ref} {...rest} />;
@@ -33,6 +33,6 @@ const Screwdriver = memo(forwardRef<SVGSVGElement, ScrewdriverProps>(({
 
 Screwdriver.displayName = 'Screwdriver';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { Screwdriver, Screwdriver as ScrewdriverIcon, Screwdriver as SiScrewdriver };
 export default Screwdriver;

@@ -18,10 +18,10 @@ export interface WifiSlashProps extends IconProps {
  * For smaller bundle size, import specific variants directly:
  * import { WifiSlashRegular } from 'stera-icons/icons/WifiSlashRegular';
  */
-const WifiSlash = memo(forwardRef<SVGSVGElement, WifiSlashProps>(({ 
+const WifiSlash = memo(forwardRef<SVGSVGElement, WifiSlashProps>(({
   weight = 'regular',
   duotone = false,
-  ...rest 
+  ...rest
 }, ref) => {
   if (weight === 'bold' && duotone) return <WifiSlashBoldDuotone ref={ref} {...rest} />;
   if (weight === 'bold') return <WifiSlashBold ref={ref} {...rest} />;
@@ -33,6 +33,6 @@ const WifiSlash = memo(forwardRef<SVGSVGElement, WifiSlashProps>(({
 
 WifiSlash.displayName = 'WifiSlash';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { WifiSlash, WifiSlash as WifiSlashIcon, WifiSlash as SiWifiSlash };
 export default WifiSlash;

@@ -16,7 +16,7 @@ const GitPullRequestDraftRegularDuotone = memo(
 
 GitPullRequestDraftRegularDuotone.displayName = 'GitPullRequestDraftRegularDuotone';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { GitPullRequestDraftRegularDuotone, GitPullRequestDraftRegularDuotone as GitPullRequestDraftRegularDuotoneIcon, GitPullRequestDraftRegularDuotone as SiGitPullRequestDraftRegularDuotone };
 export default GitPullRequestDraftRegularDuotone;
 export type { GitPullRequestDraftRegularDuotoneProps };

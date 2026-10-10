@@ -15,7 +15,7 @@ const SunriseBoldDuotone = memo(
 
 SunriseBoldDuotone.displayName = 'SunriseBoldDuotone';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { SunriseBoldDuotone, SunriseBoldDuotone as SunriseBoldDuotoneIcon, SunriseBoldDuotone as SiSunriseBoldDuotone };
 export default SunriseBoldDuotone;
 export type { SunriseBoldDuotoneProps };

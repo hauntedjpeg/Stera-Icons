@@ -15,7 +15,7 @@ const TextItalicFillDuotone = memo(
 
 TextItalicFillDuotone.displayName = 'TextItalicFillDuotone';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { TextItalicFillDuotone, TextItalicFillDuotone as TextItalicFillDuotoneIcon, TextItalicFillDuotone as SiTextItalicFillDuotone };
 export default TextItalicFillDuotone;
 export type { TextItalicFillDuotoneProps };

@@ -15,7 +15,7 @@ const CaseSensitiveRegularDuotone = memo(
 
 CaseSensitiveRegularDuotone.displayName = 'CaseSensitiveRegularDuotone';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { CaseSensitiveRegularDuotone, CaseSensitiveRegularDuotone as CaseSensitiveRegularDuotoneIcon, CaseSensitiveRegularDuotone as SiCaseSensitiveRegularDuotone };
 export default CaseSensitiveRegularDuotone;
 export type { CaseSensitiveRegularDuotoneProps };

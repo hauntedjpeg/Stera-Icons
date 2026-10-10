@@ -14,7 +14,7 @@ const FlowerRegular = memo(
 
 FlowerRegular.displayName = 'FlowerRegular';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { FlowerRegular, FlowerRegular as FlowerRegularIcon, FlowerRegular as SiFlowerRegular };
 export default FlowerRegular;
 export type { FlowerRegularProps };

@@ -14,7 +14,7 @@ const HomeHeartFill = memo(
 
 HomeHeartFill.displayName = 'HomeHeartFill';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { HomeHeartFill, HomeHeartFill as HomeHeartFillIcon, HomeHeartFill as SiHomeHeartFill };
 export default HomeHeartFill;
 export type { HomeHeartFillProps };

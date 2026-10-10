@@ -14,7 +14,7 @@ const CherryBold = memo(
 
 CherryBold.displayName = 'CherryBold';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { CherryBold, CherryBold as CherryBoldIcon, CherryBold as SiCherryBold };
 export default CherryBold;
 export type { CherryBoldProps };

@@ -15,7 +15,7 @@ const AlignHorizontalRightRegular = memo(
 
 AlignHorizontalRightRegular.displayName = 'AlignHorizontalRightRegular';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { AlignHorizontalRightRegular, AlignHorizontalRightRegular as AlignHorizontalRightRegularIcon, AlignHorizontalRightRegular as SiAlignHorizontalRightRegular };
 export default AlignHorizontalRightRegular;
 export type { AlignHorizontalRightRegularProps };

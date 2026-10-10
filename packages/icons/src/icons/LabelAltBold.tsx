@@ -14,7 +14,7 @@ const LabelAltBold = memo(
 
 LabelAltBold.displayName = 'LabelAltBold';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { LabelAltBold, LabelAltBold as LabelAltBoldIcon, LabelAltBold as SiLabelAltBold };
 export default LabelAltBold;
 export type { LabelAltBoldProps };

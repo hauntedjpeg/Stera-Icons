@@ -14,7 +14,7 @@ const LabelBold = memo(
 
 LabelBold.displayName = 'LabelBold';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { LabelBold, LabelBold as LabelBoldIcon, LabelBold as SiLabelBold };
 export default LabelBold;
 export type { LabelBoldProps };

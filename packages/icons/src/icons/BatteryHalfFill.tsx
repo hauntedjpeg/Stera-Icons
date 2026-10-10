@@ -14,7 +14,7 @@ const BatteryHalfFill = memo(
 
 BatteryHalfFill.displayName = 'BatteryHalfFill';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { BatteryHalfFill, BatteryHalfFill as BatteryHalfFillIcon, BatteryHalfFill as SiBatteryHalfFill };
 export default BatteryHalfFill;
 export type { BatteryHalfFillProps };

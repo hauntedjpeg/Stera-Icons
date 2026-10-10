@@ -18,10 +18,10 @@ export interface KunaiProps extends IconProps {
  * For smaller bundle size, import specific variants directly:
  * import { KunaiRegular } from 'stera-icons/icons/KunaiRegular';
  */
-const Kunai = memo(forwardRef<SVGSVGElement, KunaiProps>(({ 
+const Kunai = memo(forwardRef<SVGSVGElement, KunaiProps>(({
   weight = 'regular',
   duotone = false,
-  ...rest 
+  ...rest
 }, ref) => {
   if (weight === 'bold' && duotone) return <KunaiBoldDuotone ref={ref} {...rest} />;
   if (weight === 'bold') return <KunaiBold ref={ref} {...rest} />;
@@ -33,6 +33,6 @@ const Kunai = memo(forwardRef<SVGSVGElement, KunaiProps>(({
 
 Kunai.displayName = 'Kunai';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { Kunai, Kunai as KunaiIcon, Kunai as SiKunai };
 export default Kunai;

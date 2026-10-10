@@ -15,7 +15,7 @@ const BriefcaseFill = memo(
 
 BriefcaseFill.displayName = 'BriefcaseFill';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { BriefcaseFill, BriefcaseFill as BriefcaseFillIcon, BriefcaseFill as SiBriefcaseFill };
 export default BriefcaseFill;
 export type { BriefcaseFillProps };

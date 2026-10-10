@@ -14,7 +14,7 @@ const MartiniRegular = memo(
 
 MartiniRegular.displayName = 'MartiniRegular';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { MartiniRegular, MartiniRegular as MartiniRegularIcon, MartiniRegular as SiMartiniRegular };
 export default MartiniRegular;
 export type { MartiniRegularProps };

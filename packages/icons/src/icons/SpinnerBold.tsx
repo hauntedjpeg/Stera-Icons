@@ -14,7 +14,7 @@ const SpinnerBold = memo(
 
 SpinnerBold.displayName = 'SpinnerBold';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { SpinnerBold, SpinnerBold as SpinnerBoldIcon, SpinnerBold as SiSpinnerBold };
 export default SpinnerBold;
 export type { SpinnerBoldProps };

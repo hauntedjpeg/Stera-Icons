@@ -17,7 +17,7 @@ const BirdhouseRegularDuotone = memo(
 
 BirdhouseRegularDuotone.displayName = 'BirdhouseRegularDuotone';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { BirdhouseRegularDuotone, BirdhouseRegularDuotone as BirdhouseRegularDuotoneIcon, BirdhouseRegularDuotone as SiBirdhouseRegularDuotone };
 export default BirdhouseRegularDuotone;
 export type { BirdhouseRegularDuotoneProps };

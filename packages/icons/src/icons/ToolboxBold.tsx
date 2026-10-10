@@ -14,7 +14,7 @@ const ToolboxBold = memo(
 
 ToolboxBold.displayName = 'ToolboxBold';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { ToolboxBold, ToolboxBold as ToolboxBoldIcon, ToolboxBold as SiToolboxBold };
 export default ToolboxBold;
 export type { ToolboxBoldProps };

@@ -16,7 +16,7 @@ const CakeRegularDuotone = memo(
 
 CakeRegularDuotone.displayName = 'CakeRegularDuotone';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { CakeRegularDuotone, CakeRegularDuotone as CakeRegularDuotoneIcon, CakeRegularDuotone as SiCakeRegularDuotone };
 export default CakeRegularDuotone;
 export type { CakeRegularDuotoneProps };

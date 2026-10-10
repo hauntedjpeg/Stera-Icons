@@ -18,10 +18,10 @@ export interface DrinkCanProps extends IconProps {
  * For smaller bundle size, import specific variants directly:
  * import { DrinkCanRegular } from 'stera-icons/icons/DrinkCanRegular';
  */
-const DrinkCan = memo(forwardRef<SVGSVGElement, DrinkCanProps>(({ 
+const DrinkCan = memo(forwardRef<SVGSVGElement, DrinkCanProps>(({
   weight = 'regular',
   duotone = false,
-  ...rest 
+  ...rest
 }, ref) => {
   if (weight === 'bold' && duotone) return <DrinkCanBoldDuotone ref={ref} {...rest} />;
   if (weight === 'bold') return <DrinkCanBold ref={ref} {...rest} />;
@@ -33,6 +33,6 @@ const DrinkCan = memo(forwardRef<SVGSVGElement, DrinkCanProps>(({
 
 DrinkCan.displayName = 'DrinkCan';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { DrinkCan, DrinkCan as DrinkCanIcon, DrinkCan as SiDrinkCan };
 export default DrinkCan;

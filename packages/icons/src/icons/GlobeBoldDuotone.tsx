@@ -15,7 +15,7 @@ const GlobeBoldDuotone = memo(
 
 GlobeBoldDuotone.displayName = 'GlobeBoldDuotone';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { GlobeBoldDuotone, GlobeBoldDuotone as GlobeBoldDuotoneIcon, GlobeBoldDuotone as SiGlobeBoldDuotone };
 export default GlobeBoldDuotone;
 export type { GlobeBoldDuotoneProps };

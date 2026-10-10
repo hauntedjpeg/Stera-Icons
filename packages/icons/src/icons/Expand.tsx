@@ -18,10 +18,10 @@ export interface ExpandProps extends IconProps {
  * For smaller bundle size, import specific variants directly:
  * import { ExpandRegular } from 'stera-icons/icons/ExpandRegular';
  */
-const Expand = memo(forwardRef<SVGSVGElement, ExpandProps>(({ 
+const Expand = memo(forwardRef<SVGSVGElement, ExpandProps>(({
   weight = 'regular',
   duotone = false,
-  ...rest 
+  ...rest
 }, ref) => {
   if (weight === 'bold' && duotone) return <ExpandBoldDuotone ref={ref} {...rest} />;
   if (weight === 'bold') return <ExpandBold ref={ref} {...rest} />;
@@ -33,6 +33,6 @@ const Expand = memo(forwardRef<SVGSVGElement, ExpandProps>(({
 
 Expand.displayName = 'Expand';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { Expand, Expand as ExpandIcon, Expand as SiExpand };
 export default Expand;

@@ -14,7 +14,7 @@ const MapPinFill = memo(
 
 MapPinFill.displayName = 'MapPinFill';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { MapPinFill, MapPinFill as MapPinFillIcon, MapPinFill as SiMapPinFill };
 export default MapPinFill;
 export type { MapPinFillProps };

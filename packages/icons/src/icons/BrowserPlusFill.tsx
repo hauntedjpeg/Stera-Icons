@@ -15,7 +15,7 @@ const BrowserPlusFill = memo(
 
 BrowserPlusFill.displayName = 'BrowserPlusFill';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { BrowserPlusFill, BrowserPlusFill as BrowserPlusFillIcon, BrowserPlusFill as SiBrowserPlusFill };
 export default BrowserPlusFill;
 export type { BrowserPlusFillProps };

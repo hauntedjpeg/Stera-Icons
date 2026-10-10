@@ -15,7 +15,7 @@ const ArrowCircleRightBold = memo(
 
 ArrowCircleRightBold.displayName = 'ArrowCircleRightBold';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { ArrowCircleRightBold, ArrowCircleRightBold as ArrowCircleRightBoldIcon, ArrowCircleRightBold as SiArrowCircleRightBold };
 export default ArrowCircleRightBold;
 export type { ArrowCircleRightBoldProps };

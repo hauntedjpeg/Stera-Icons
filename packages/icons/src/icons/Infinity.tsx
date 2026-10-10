@@ -19,10 +19,10 @@ export interface InfinityProps extends IconProps {
  * import { InfinityRegular } from 'stera-icons/icons/InfinityRegular';
  */
 // eslint-disable-next-line no-shadow-restricted-names
-const Infinity = memo(forwardRef<SVGSVGElement, InfinityProps>(({ 
+const Infinity = memo(forwardRef<SVGSVGElement, InfinityProps>(({
   weight = 'regular',
   duotone = false,
-  ...rest 
+  ...rest
 }, ref) => {
   if (weight === 'bold' && duotone) return <InfinityBoldDuotone ref={ref} {...rest} />;
   if (weight === 'bold') return <InfinityBold ref={ref} {...rest} />;
@@ -34,6 +34,6 @@ const Infinity = memo(forwardRef<SVGSVGElement, InfinityProps>(({
 
 Infinity.displayName = 'Infinity';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { Infinity, Infinity as InfinityIcon, Infinity as SiInfinity };
 export default Infinity;

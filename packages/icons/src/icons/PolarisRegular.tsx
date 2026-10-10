@@ -14,7 +14,7 @@ const PolarisRegular = memo(
 
 PolarisRegular.displayName = 'PolarisRegular';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { PolarisRegular, PolarisRegular as PolarisRegularIcon, PolarisRegular as SiPolarisRegular };
 export default PolarisRegular;
 export type { PolarisRegularProps };

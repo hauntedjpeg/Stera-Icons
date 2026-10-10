@@ -14,7 +14,7 @@ const AppleBold = memo(
 
 AppleBold.displayName = 'AppleBold';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { AppleBold, AppleBold as AppleBoldIcon, AppleBold as SiAppleBold };
 export default AppleBold;
 export type { AppleBoldProps };

@@ -14,7 +14,7 @@ const CursorTextSquareFill = memo(
 
 CursorTextSquareFill.displayName = 'CursorTextSquareFill';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { CursorTextSquareFill, CursorTextSquareFill as CursorTextSquareFillIcon, CursorTextSquareFill as SiCursorTextSquareFill };
 export default CursorTextSquareFill;
 export type { CursorTextSquareFillProps };

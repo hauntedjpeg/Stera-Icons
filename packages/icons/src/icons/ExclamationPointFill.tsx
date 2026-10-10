@@ -14,7 +14,7 @@ const ExclamationPointFill = memo(
 
 ExclamationPointFill.displayName = 'ExclamationPointFill';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { ExclamationPointFill, ExclamationPointFill as ExclamationPointFillIcon, ExclamationPointFill as SiExclamationPointFill };
 export default ExclamationPointFill;
 export type { ExclamationPointFillProps };

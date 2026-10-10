@@ -15,7 +15,7 @@ const MessageSquareQuestionBold = memo(
 
 MessageSquareQuestionBold.displayName = 'MessageSquareQuestionBold';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { MessageSquareQuestionBold, MessageSquareQuestionBold as MessageSquareQuestionBoldIcon, MessageSquareQuestionBold as SiMessageSquareQuestionBold };
 export default MessageSquareQuestionBold;
 export type { MessageSquareQuestionBoldProps };

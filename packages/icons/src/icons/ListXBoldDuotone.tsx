@@ -15,7 +15,7 @@ const ListXBoldDuotone = memo(
 
 ListXBoldDuotone.displayName = 'ListXBoldDuotone';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { ListXBoldDuotone, ListXBoldDuotone as ListXBoldDuotoneIcon, ListXBoldDuotone as SiListXBoldDuotone };
 export default ListXBoldDuotone;
 export type { ListXBoldDuotoneProps };

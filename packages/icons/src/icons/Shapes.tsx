@@ -18,10 +18,10 @@ export interface ShapesProps extends IconProps {
  * For smaller bundle size, import specific variants directly:
  * import { ShapesRegular } from 'stera-icons/icons/ShapesRegular';
  */
-const Shapes = memo(forwardRef<SVGSVGElement, ShapesProps>(({ 
+const Shapes = memo(forwardRef<SVGSVGElement, ShapesProps>(({
   weight = 'regular',
   duotone = false,
-  ...rest 
+  ...rest
 }, ref) => {
   if (weight === 'bold' && duotone) return <ShapesBoldDuotone ref={ref} {...rest} />;
   if (weight === 'bold') return <ShapesBold ref={ref} {...rest} />;
@@ -33,6 +33,6 @@ const Shapes = memo(forwardRef<SVGSVGElement, ShapesProps>(({
 
 Shapes.displayName = 'Shapes';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { Shapes, Shapes as ShapesIcon, Shapes as SiShapes };
 export default Shapes;

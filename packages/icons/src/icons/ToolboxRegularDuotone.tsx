@@ -16,7 +16,7 @@ const ToolboxRegularDuotone = memo(
 
 ToolboxRegularDuotone.displayName = 'ToolboxRegularDuotone';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { ToolboxRegularDuotone, ToolboxRegularDuotone as ToolboxRegularDuotoneIcon, ToolboxRegularDuotone as SiToolboxRegularDuotone };
 export default ToolboxRegularDuotone;
 export type { ToolboxRegularDuotoneProps };

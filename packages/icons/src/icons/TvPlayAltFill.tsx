@@ -14,7 +14,7 @@ const TvPlayAltFill = memo(
 
 TvPlayAltFill.displayName = 'TvPlayAltFill';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { TvPlayAltFill, TvPlayAltFill as TvPlayAltFillIcon, TvPlayAltFill as SiTvPlayAltFill };
 export default TvPlayAltFill;
 export type { TvPlayAltFillProps };

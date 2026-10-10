@@ -18,10 +18,10 @@ export interface QrCodeProps extends IconProps {
  * For smaller bundle size, import specific variants directly:
  * import { QrCodeRegular } from 'stera-icons/icons/QrCodeRegular';
  */
-const QrCode = memo(forwardRef<SVGSVGElement, QrCodeProps>(({ 
+const QrCode = memo(forwardRef<SVGSVGElement, QrCodeProps>(({
   weight = 'regular',
   duotone = false,
-  ...rest 
+  ...rest
 }, ref) => {
   if (weight === 'bold' && duotone) return <QrCodeBoldDuotone ref={ref} {...rest} />;
   if (weight === 'bold') return <QrCodeBold ref={ref} {...rest} />;
@@ -33,6 +33,6 @@ const QrCode = memo(forwardRef<SVGSVGElement, QrCodeProps>(({
 
 QrCode.displayName = 'QrCode';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { QrCode, QrCode as QrCodeIcon, QrCode as SiQrCode };
 export default QrCode;

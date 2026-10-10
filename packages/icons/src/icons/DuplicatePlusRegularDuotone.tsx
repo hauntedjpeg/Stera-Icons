@@ -16,7 +16,7 @@ const DuplicatePlusRegularDuotone = memo(
 
 DuplicatePlusRegularDuotone.displayName = 'DuplicatePlusRegularDuotone';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { DuplicatePlusRegularDuotone, DuplicatePlusRegularDuotone as DuplicatePlusRegularDuotoneIcon, DuplicatePlusRegularDuotone as SiDuplicatePlusRegularDuotone };
 export default DuplicatePlusRegularDuotone;
 export type { DuplicatePlusRegularDuotoneProps };

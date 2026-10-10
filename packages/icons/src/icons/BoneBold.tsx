@@ -14,7 +14,7 @@ const BoneBold = memo(
 
 BoneBold.displayName = 'BoneBold';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { BoneBold, BoneBold as BoneBoldIcon, BoneBold as SiBoneBold };
 export default BoneBold;
 export type { BoneBoldProps };

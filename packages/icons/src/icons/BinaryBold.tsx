@@ -16,7 +16,7 @@ const BinaryBold = memo(
 
 BinaryBold.displayName = 'BinaryBold';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { BinaryBold, BinaryBold as BinaryBoldIcon, BinaryBold as SiBinaryBold };
 export default BinaryBold;
 export type { BinaryBoldProps };

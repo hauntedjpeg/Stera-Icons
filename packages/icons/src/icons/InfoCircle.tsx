@@ -18,10 +18,10 @@ export interface InfoCircleProps extends IconProps {
  * For smaller bundle size, import specific variants directly:
  * import { InfoCircleRegular } from 'stera-icons/icons/InfoCircleRegular';
  */
-const InfoCircle = memo(forwardRef<SVGSVGElement, InfoCircleProps>(({ 
+const InfoCircle = memo(forwardRef<SVGSVGElement, InfoCircleProps>(({
   weight = 'regular',
   duotone = false,
-  ...rest 
+  ...rest
 }, ref) => {
   if (weight === 'bold' && duotone) return <InfoCircleBoldDuotone ref={ref} {...rest} />;
   if (weight === 'bold') return <InfoCircleBold ref={ref} {...rest} />;
@@ -33,6 +33,6 @@ const InfoCircle = memo(forwardRef<SVGSVGElement, InfoCircleProps>(({
 
 InfoCircle.displayName = 'InfoCircle';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { InfoCircle, InfoCircle as InfoCircleIcon, InfoCircle as SiInfoCircle };
 export default InfoCircle;

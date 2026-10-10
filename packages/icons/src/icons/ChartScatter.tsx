@@ -18,10 +18,10 @@ export interface ChartScatterProps extends IconProps {
  * For smaller bundle size, import specific variants directly:
  * import { ChartScatterRegular } from 'stera-icons/icons/ChartScatterRegular';
  */
-const ChartScatter = memo(forwardRef<SVGSVGElement, ChartScatterProps>(({ 
+const ChartScatter = memo(forwardRef<SVGSVGElement, ChartScatterProps>(({
   weight = 'regular',
   duotone = false,
-  ...rest 
+  ...rest
 }, ref) => {
   if (weight === 'bold' && duotone) return <ChartScatterBoldDuotone ref={ref} {...rest} />;
   if (weight === 'bold') return <ChartScatterBold ref={ref} {...rest} />;
@@ -33,6 +33,6 @@ const ChartScatter = memo(forwardRef<SVGSVGElement, ChartScatterProps>(({
 
 ChartScatter.displayName = 'ChartScatter';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { ChartScatter, ChartScatter as ChartScatterIcon, ChartScatter as SiChartScatter };
 export default ChartScatter;

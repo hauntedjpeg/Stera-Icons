@@ -14,7 +14,7 @@ const PopsicleRegular = memo(
 
 PopsicleRegular.displayName = 'PopsicleRegular';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { PopsicleRegular, PopsicleRegular as PopsicleRegularIcon, PopsicleRegular as SiPopsicleRegular };
 export default PopsicleRegular;
 export type { PopsicleRegularProps };

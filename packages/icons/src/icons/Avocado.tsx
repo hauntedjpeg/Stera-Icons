@@ -18,10 +18,10 @@ export interface AvocadoProps extends IconProps {
  * For smaller bundle size, import specific variants directly:
  * import { AvocadoRegular } from 'stera-icons/icons/AvocadoRegular';
  */
-const Avocado = memo(forwardRef<SVGSVGElement, AvocadoProps>(({ 
+const Avocado = memo(forwardRef<SVGSVGElement, AvocadoProps>(({
   weight = 'regular',
   duotone = false,
-  ...rest 
+  ...rest
 }, ref) => {
   if (weight === 'bold' && duotone) return <AvocadoBoldDuotone ref={ref} {...rest} />;
   if (weight === 'bold') return <AvocadoBold ref={ref} {...rest} />;
@@ -33,6 +33,6 @@ const Avocado = memo(forwardRef<SVGSVGElement, AvocadoProps>(({
 
 Avocado.displayName = 'Avocado';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { Avocado, Avocado as AvocadoIcon, Avocado as SiAvocado };
 export default Avocado;

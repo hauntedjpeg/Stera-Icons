@@ -18,10 +18,10 @@ export interface BookOpenProps extends IconProps {
  * For smaller bundle size, import specific variants directly:
  * import { BookOpenRegular } from 'stera-icons/icons/BookOpenRegular';
  */
-const BookOpen = memo(forwardRef<SVGSVGElement, BookOpenProps>(({ 
+const BookOpen = memo(forwardRef<SVGSVGElement, BookOpenProps>(({
   weight = 'regular',
   duotone = false,
-  ...rest 
+  ...rest
 }, ref) => {
   if (weight === 'bold' && duotone) return <BookOpenBoldDuotone ref={ref} {...rest} />;
   if (weight === 'bold') return <BookOpenBold ref={ref} {...rest} />;
@@ -33,6 +33,6 @@ const BookOpen = memo(forwardRef<SVGSVGElement, BookOpenProps>(({
 
 BookOpen.displayName = 'BookOpen';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { BookOpen, BookOpen as BookOpenIcon, BookOpen as SiBookOpen };
 export default BookOpen;

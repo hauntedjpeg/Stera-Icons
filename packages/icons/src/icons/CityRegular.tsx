@@ -15,7 +15,7 @@ const CityRegular = memo(
 
 CityRegular.displayName = 'CityRegular';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { CityRegular, CityRegular as CityRegularIcon, CityRegular as SiCityRegular };
 export default CityRegular;
 export type { CityRegularProps };

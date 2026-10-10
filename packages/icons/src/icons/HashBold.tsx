@@ -14,7 +14,7 @@ const HashBold = memo(
 
 HashBold.displayName = 'HashBold';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { HashBold, HashBold as HashBoldIcon, HashBold as SiHashBold };
 export default HashBold;
 export type { HashBoldProps };

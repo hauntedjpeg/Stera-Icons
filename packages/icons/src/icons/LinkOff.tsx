@@ -18,10 +18,10 @@ export interface LinkOffProps extends IconProps {
  * For smaller bundle size, import specific variants directly:
  * import { LinkOffRegular } from 'stera-icons/icons/LinkOffRegular';
  */
-const LinkOff = memo(forwardRef<SVGSVGElement, LinkOffProps>(({ 
+const LinkOff = memo(forwardRef<SVGSVGElement, LinkOffProps>(({
   weight = 'regular',
   duotone = false,
-  ...rest 
+  ...rest
 }, ref) => {
   if (weight === 'bold' && duotone) return <LinkOffBoldDuotone ref={ref} {...rest} />;
   if (weight === 'bold') return <LinkOffBold ref={ref} {...rest} />;
@@ -33,6 +33,6 @@ const LinkOff = memo(forwardRef<SVGSVGElement, LinkOffProps>(({
 
 LinkOff.displayName = 'LinkOff';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { LinkOff, LinkOff as LinkOffIcon, LinkOff as SiLinkOff };
 export default LinkOff;

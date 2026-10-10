@@ -15,7 +15,7 @@ const FolderPlusRegular = memo(
 
 FolderPlusRegular.displayName = 'FolderPlusRegular';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { FolderPlusRegular, FolderPlusRegular as FolderPlusRegularIcon, FolderPlusRegular as SiFolderPlusRegular };
 export default FolderPlusRegular;
 export type { FolderPlusRegularProps };

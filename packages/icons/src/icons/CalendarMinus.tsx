@@ -18,10 +18,10 @@ export interface CalendarMinusProps extends IconProps {
  * For smaller bundle size, import specific variants directly:
  * import { CalendarMinusRegular } from 'stera-icons/icons/CalendarMinusRegular';
  */
-const CalendarMinus = memo(forwardRef<SVGSVGElement, CalendarMinusProps>(({ 
+const CalendarMinus = memo(forwardRef<SVGSVGElement, CalendarMinusProps>(({
   weight = 'regular',
   duotone = false,
-  ...rest 
+  ...rest
 }, ref) => {
   if (weight === 'bold' && duotone) return <CalendarMinusBoldDuotone ref={ref} {...rest} />;
   if (weight === 'bold') return <CalendarMinusBold ref={ref} {...rest} />;
@@ -33,6 +33,6 @@ const CalendarMinus = memo(forwardRef<SVGSVGElement, CalendarMinusProps>(({
 
 CalendarMinus.displayName = 'CalendarMinus';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { CalendarMinus, CalendarMinus as CalendarMinusIcon, CalendarMinus as SiCalendarMinus };
 export default CalendarMinus;

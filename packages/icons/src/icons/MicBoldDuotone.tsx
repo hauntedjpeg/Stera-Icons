@@ -15,7 +15,7 @@ const MicBoldDuotone = memo(
 
 MicBoldDuotone.displayName = 'MicBoldDuotone';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { MicBoldDuotone, MicBoldDuotone as MicBoldDuotoneIcon, MicBoldDuotone as SiMicBoldDuotone };
 export default MicBoldDuotone;
 export type { MicBoldDuotoneProps };

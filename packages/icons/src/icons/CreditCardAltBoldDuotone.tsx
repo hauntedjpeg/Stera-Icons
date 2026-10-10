@@ -15,7 +15,7 @@ const CreditCardAltBoldDuotone = memo(
 
 CreditCardAltBoldDuotone.displayName = 'CreditCardAltBoldDuotone';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { CreditCardAltBoldDuotone, CreditCardAltBoldDuotone as CreditCardAltBoldDuotoneIcon, CreditCardAltBoldDuotone as SiCreditCardAltBoldDuotone };
 export default CreditCardAltBoldDuotone;
 export type { CreditCardAltBoldDuotoneProps };

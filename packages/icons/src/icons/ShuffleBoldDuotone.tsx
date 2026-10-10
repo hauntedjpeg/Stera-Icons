@@ -15,7 +15,7 @@ const ShuffleBoldDuotone = memo(
 
 ShuffleBoldDuotone.displayName = 'ShuffleBoldDuotone';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { ShuffleBoldDuotone, ShuffleBoldDuotone as ShuffleBoldDuotoneIcon, ShuffleBoldDuotone as SiShuffleBoldDuotone };
 export default ShuffleBoldDuotone;
 export type { ShuffleBoldDuotoneProps };

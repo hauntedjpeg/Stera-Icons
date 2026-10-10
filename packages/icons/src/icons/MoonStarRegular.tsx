@@ -15,7 +15,7 @@ const MoonStarRegular = memo(
 
 MoonStarRegular.displayName = 'MoonStarRegular';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { MoonStarRegular, MoonStarRegular as MoonStarRegularIcon, MoonStarRegular as SiMoonStarRegular };
 export default MoonStarRegular;
 export type { MoonStarRegularProps };

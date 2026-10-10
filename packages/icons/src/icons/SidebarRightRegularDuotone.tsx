@@ -15,7 +15,7 @@ const SidebarRightRegularDuotone = memo(
 
 SidebarRightRegularDuotone.displayName = 'SidebarRightRegularDuotone';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { SidebarRightRegularDuotone, SidebarRightRegularDuotone as SidebarRightRegularDuotoneIcon, SidebarRightRegularDuotone as SiSidebarRightRegularDuotone };
 export default SidebarRightRegularDuotone;
 export type { SidebarRightRegularDuotoneProps };

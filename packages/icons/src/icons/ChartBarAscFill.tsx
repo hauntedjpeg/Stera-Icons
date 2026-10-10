@@ -14,7 +14,7 @@ const ChartBarAscFill = memo(
 
 ChartBarAscFill.displayName = 'ChartBarAscFill';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { ChartBarAscFill, ChartBarAscFill as ChartBarAscFillIcon, ChartBarAscFill as SiChartBarAscFill };
 export default ChartBarAscFill;
 export type { ChartBarAscFillProps };

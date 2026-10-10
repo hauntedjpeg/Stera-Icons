@@ -14,7 +14,7 @@ const TextQuoteBold = memo(
 
 TextQuoteBold.displayName = 'TextQuoteBold';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { TextQuoteBold, TextQuoteBold as TextQuoteBoldIcon, TextQuoteBold as SiTextQuoteBold };
 export default TextQuoteBold;
 export type { TextQuoteBoldProps };

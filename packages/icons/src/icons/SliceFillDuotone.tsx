@@ -15,7 +15,7 @@ const SliceFillDuotone = memo(
 
 SliceFillDuotone.displayName = 'SliceFillDuotone';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { SliceFillDuotone, SliceFillDuotone as SliceFillDuotoneIcon, SliceFillDuotone as SiSliceFillDuotone };
 export default SliceFillDuotone;
 export type { SliceFillDuotoneProps };

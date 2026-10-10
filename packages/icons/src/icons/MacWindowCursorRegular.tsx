@@ -16,7 +16,7 @@ const MacWindowCursorRegular = memo(
 
 MacWindowCursorRegular.displayName = 'MacWindowCursorRegular';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { MacWindowCursorRegular, MacWindowCursorRegular as MacWindowCursorRegularIcon, MacWindowCursorRegular as SiMacWindowCursorRegular };
 export default MacWindowCursorRegular;
 export type { MacWindowCursorRegularProps };

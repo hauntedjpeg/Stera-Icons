@@ -14,7 +14,7 @@ const CylinderRegular = memo(
 
 CylinderRegular.displayName = 'CylinderRegular';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { CylinderRegular, CylinderRegular as CylinderRegularIcon, CylinderRegular as SiCylinderRegular };
 export default CylinderRegular;
 export type { CylinderRegularProps };

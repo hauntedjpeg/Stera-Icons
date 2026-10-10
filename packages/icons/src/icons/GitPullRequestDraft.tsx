@@ -18,10 +18,10 @@ export interface GitPullRequestDraftProps extends IconProps {
  * For smaller bundle size, import specific variants directly:
  * import { GitPullRequestDraftRegular } from 'stera-icons/icons/GitPullRequestDraftRegular';
  */
-const GitPullRequestDraft = memo(forwardRef<SVGSVGElement, GitPullRequestDraftProps>(({ 
+const GitPullRequestDraft = memo(forwardRef<SVGSVGElement, GitPullRequestDraftProps>(({
   weight = 'regular',
   duotone = false,
-  ...rest 
+  ...rest
 }, ref) => {
   if (weight === 'bold' && duotone) return <GitPullRequestDraftBoldDuotone ref={ref} {...rest} />;
   if (weight === 'bold') return <GitPullRequestDraftBold ref={ref} {...rest} />;
@@ -33,6 +33,6 @@ const GitPullRequestDraft = memo(forwardRef<SVGSVGElement, GitPullRequestDraftPr
 
 GitPullRequestDraft.displayName = 'GitPullRequestDraft';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { GitPullRequestDraft, GitPullRequestDraft as GitPullRequestDraftIcon, GitPullRequestDraft as SiGitPullRequestDraft };
 export default GitPullRequestDraft;

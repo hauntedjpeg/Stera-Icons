@@ -18,10 +18,10 @@ export interface TextSquareProps extends IconProps {
  * For smaller bundle size, import specific variants directly:
  * import { TextSquareRegular } from 'stera-icons/icons/TextSquareRegular';
  */
-const TextSquare = memo(forwardRef<SVGSVGElement, TextSquareProps>(({ 
+const TextSquare = memo(forwardRef<SVGSVGElement, TextSquareProps>(({
   weight = 'regular',
   duotone = false,
-  ...rest 
+  ...rest
 }, ref) => {
   if (weight === 'bold' && duotone) return <TextSquareBoldDuotone ref={ref} {...rest} />;
   if (weight === 'bold') return <TextSquareBold ref={ref} {...rest} />;
@@ -33,6 +33,6 @@ const TextSquare = memo(forwardRef<SVGSVGElement, TextSquareProps>(({
 
 TextSquare.displayName = 'TextSquare';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { TextSquare, TextSquare as TextSquareIcon, TextSquare as SiTextSquare };
 export default TextSquare;

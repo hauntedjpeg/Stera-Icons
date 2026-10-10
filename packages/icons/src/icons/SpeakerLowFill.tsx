@@ -14,7 +14,7 @@ const SpeakerLowFill = memo(
 
 SpeakerLowFill.displayName = 'SpeakerLowFill';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { SpeakerLowFill, SpeakerLowFill as SpeakerLowFillIcon, SpeakerLowFill as SiSpeakerLowFill };
 export default SpeakerLowFill;
 export type { SpeakerLowFillProps };

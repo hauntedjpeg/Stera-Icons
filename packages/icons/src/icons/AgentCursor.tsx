@@ -18,10 +18,10 @@ export interface AgentCursorProps extends IconProps {
  * For smaller bundle size, import specific variants directly:
  * import { AgentCursorRegular } from 'stera-icons/icons/AgentCursorRegular';
  */
-const AgentCursor = memo(forwardRef<SVGSVGElement, AgentCursorProps>(({ 
+const AgentCursor = memo(forwardRef<SVGSVGElement, AgentCursorProps>(({
   weight = 'regular',
   duotone = false,
-  ...rest 
+  ...rest
 }, ref) => {
   if (weight === 'bold' && duotone) return <AgentCursorBoldDuotone ref={ref} {...rest} />;
   if (weight === 'bold') return <AgentCursorBold ref={ref} {...rest} />;
@@ -33,6 +33,6 @@ const AgentCursor = memo(forwardRef<SVGSVGElement, AgentCursorProps>(({
 
 AgentCursor.displayName = 'AgentCursor';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { AgentCursor, AgentCursor as AgentCursorIcon, AgentCursor as SiAgentCursor };
 export default AgentCursor;

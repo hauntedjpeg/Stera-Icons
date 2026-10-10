@@ -18,10 +18,10 @@ export interface PlusCircleProps extends IconProps {
  * For smaller bundle size, import specific variants directly:
  * import { PlusCircleRegular } from 'stera-icons/icons/PlusCircleRegular';
  */
-const PlusCircle = memo(forwardRef<SVGSVGElement, PlusCircleProps>(({ 
+const PlusCircle = memo(forwardRef<SVGSVGElement, PlusCircleProps>(({
   weight = 'regular',
   duotone = false,
-  ...rest 
+  ...rest
 }, ref) => {
   if (weight === 'bold' && duotone) return <PlusCircleBoldDuotone ref={ref} {...rest} />;
   if (weight === 'bold') return <PlusCircleBold ref={ref} {...rest} />;
@@ -33,6 +33,6 @@ const PlusCircle = memo(forwardRef<SVGSVGElement, PlusCircleProps>(({
 
 PlusCircle.displayName = 'PlusCircle';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { PlusCircle, PlusCircle as PlusCircleIcon, PlusCircle as SiPlusCircle };
 export default PlusCircle;

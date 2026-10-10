@@ -15,7 +15,7 @@ const ToggleOnRegular = memo(
 
 ToggleOnRegular.displayName = 'ToggleOnRegular';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { ToggleOnRegular, ToggleOnRegular as ToggleOnRegularIcon, ToggleOnRegular as SiToggleOnRegular };
 export default ToggleOnRegular;
 export type { ToggleOnRegularProps };

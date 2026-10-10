@@ -14,7 +14,7 @@ const ChevronFullRightBold = memo(
 
 ChevronFullRightBold.displayName = 'ChevronFullRightBold';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { ChevronFullRightBold, ChevronFullRightBold as ChevronFullRightBoldIcon, ChevronFullRightBold as SiChevronFullRightBold };
 export default ChevronFullRightBold;
 export type { ChevronFullRightBoldProps };

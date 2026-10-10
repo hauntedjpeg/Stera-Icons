@@ -15,7 +15,7 @@ const ScaleRegularDuotone = memo(
 
 ScaleRegularDuotone.displayName = 'ScaleRegularDuotone';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { ScaleRegularDuotone, ScaleRegularDuotone as ScaleRegularDuotoneIcon, ScaleRegularDuotone as SiScaleRegularDuotone };
 export default ScaleRegularDuotone;
 export type { ScaleRegularDuotoneProps };

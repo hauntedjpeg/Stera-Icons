@@ -14,7 +14,7 @@ const StoreFill = memo(
 
 StoreFill.displayName = 'StoreFill';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { StoreFill, StoreFill as StoreFillIcon, StoreFill as SiStoreFill };
 export default StoreFill;
 export type { StoreFillProps };

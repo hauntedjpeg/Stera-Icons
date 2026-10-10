@@ -15,7 +15,7 @@ const HamburgerRegularDuotone = memo(
 
 HamburgerRegularDuotone.displayName = 'HamburgerRegularDuotone';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { HamburgerRegularDuotone, HamburgerRegularDuotone as HamburgerRegularDuotoneIcon, HamburgerRegularDuotone as SiHamburgerRegularDuotone };
 export default HamburgerRegularDuotone;
 export type { HamburgerRegularDuotoneProps };

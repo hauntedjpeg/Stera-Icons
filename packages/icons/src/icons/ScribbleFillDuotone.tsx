@@ -15,7 +15,7 @@ const ScribbleFillDuotone = memo(
 
 ScribbleFillDuotone.displayName = 'ScribbleFillDuotone';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { ScribbleFillDuotone, ScribbleFillDuotone as ScribbleFillDuotoneIcon, ScribbleFillDuotone as SiScribbleFillDuotone };
 export default ScribbleFillDuotone;
 export type { ScribbleFillDuotoneProps };

@@ -15,7 +15,7 @@ const CodeBoldDuotone = memo(
 
 CodeBoldDuotone.displayName = 'CodeBoldDuotone';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { CodeBoldDuotone, CodeBoldDuotone as CodeBoldDuotoneIcon, CodeBoldDuotone as SiCodeBoldDuotone };
 export default CodeBoldDuotone;
 export type { CodeBoldDuotoneProps };

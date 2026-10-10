@@ -15,7 +15,7 @@ const CircleDashSimpleRegularDuotone = memo(
 
 CircleDashSimpleRegularDuotone.displayName = 'CircleDashSimpleRegularDuotone';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { CircleDashSimpleRegularDuotone, CircleDashSimpleRegularDuotone as CircleDashSimpleRegularDuotoneIcon, CircleDashSimpleRegularDuotone as SiCircleDashSimpleRegularDuotone };
 export default CircleDashSimpleRegularDuotone;
 export type { CircleDashSimpleRegularDuotoneProps };

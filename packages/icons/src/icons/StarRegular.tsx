@@ -14,7 +14,7 @@ const StarRegular = memo(
 
 StarRegular.displayName = 'StarRegular';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { StarRegular, StarRegular as StarRegularIcon, StarRegular as SiStarRegular };
 export default StarRegular;
 export type { StarRegularProps };

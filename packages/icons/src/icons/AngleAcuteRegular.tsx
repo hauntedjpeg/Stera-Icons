@@ -15,7 +15,7 @@ const AngleAcuteRegular = memo(
 
 AngleAcuteRegular.displayName = 'AngleAcuteRegular';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { AngleAcuteRegular, AngleAcuteRegular as AngleAcuteRegularIcon, AngleAcuteRegular as SiAngleAcuteRegular };
 export default AngleAcuteRegular;
 export type { AngleAcuteRegularProps };

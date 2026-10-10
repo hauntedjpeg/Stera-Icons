@@ -18,10 +18,10 @@ export interface CardHolderProps extends IconProps {
  * For smaller bundle size, import specific variants directly:
  * import { CardHolderRegular } from 'stera-icons/icons/CardHolderRegular';
  */
-const CardHolder = memo(forwardRef<SVGSVGElement, CardHolderProps>(({ 
+const CardHolder = memo(forwardRef<SVGSVGElement, CardHolderProps>(({
   weight = 'regular',
   duotone = false,
-  ...rest 
+  ...rest
 }, ref) => {
   if (weight === 'bold' && duotone) return <CardHolderBoldDuotone ref={ref} {...rest} />;
   if (weight === 'bold') return <CardHolderBold ref={ref} {...rest} />;
@@ -33,6 +33,6 @@ const CardHolder = memo(forwardRef<SVGSVGElement, CardHolderProps>(({
 
 CardHolder.displayName = 'CardHolder';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { CardHolder, CardHolder as CardHolderIcon, CardHolder as SiCardHolder };
 export default CardHolder;

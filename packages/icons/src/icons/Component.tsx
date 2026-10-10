@@ -18,10 +18,10 @@ export interface ComponentProps extends IconProps {
  * For smaller bundle size, import specific variants directly:
  * import { ComponentRegular } from 'stera-icons/icons/ComponentRegular';
  */
-const Component = memo(forwardRef<SVGSVGElement, ComponentProps>(({ 
+const Component = memo(forwardRef<SVGSVGElement, ComponentProps>(({
   weight = 'regular',
   duotone = false,
-  ...rest 
+  ...rest
 }, ref) => {
   if (weight === 'bold' && duotone) return <ComponentBoldDuotone ref={ref} {...rest} />;
   if (weight === 'bold') return <ComponentBold ref={ref} {...rest} />;
@@ -33,6 +33,6 @@ const Component = memo(forwardRef<SVGSVGElement, ComponentProps>(({
 
 Component.displayName = 'Component';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { Component, Component as ComponentIcon, Component as SiComponent };
 export default Component;

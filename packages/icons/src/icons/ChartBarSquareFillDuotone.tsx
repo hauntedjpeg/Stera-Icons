@@ -15,7 +15,7 @@ const ChartBarSquareFillDuotone = memo(
 
 ChartBarSquareFillDuotone.displayName = 'ChartBarSquareFillDuotone';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { ChartBarSquareFillDuotone, ChartBarSquareFillDuotone as ChartBarSquareFillDuotoneIcon, ChartBarSquareFillDuotone as SiChartBarSquareFillDuotone };
 export default ChartBarSquareFillDuotone;
 export type { ChartBarSquareFillDuotoneProps };

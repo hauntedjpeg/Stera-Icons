@@ -14,7 +14,7 @@ const SelectFieldFill = memo(
 
 SelectFieldFill.displayName = 'SelectFieldFill';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { SelectFieldFill, SelectFieldFill as SelectFieldFillIcon, SelectFieldFill as SiSelectFieldFill };
 export default SelectFieldFill;
 export type { SelectFieldFillProps };

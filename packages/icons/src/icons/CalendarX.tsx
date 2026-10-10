@@ -18,10 +18,10 @@ export interface CalendarXProps extends IconProps {
  * For smaller bundle size, import specific variants directly:
  * import { CalendarXRegular } from 'stera-icons/icons/CalendarXRegular';
  */
-const CalendarX = memo(forwardRef<SVGSVGElement, CalendarXProps>(({ 
+const CalendarX = memo(forwardRef<SVGSVGElement, CalendarXProps>(({
   weight = 'regular',
   duotone = false,
-  ...rest 
+  ...rest
 }, ref) => {
   if (weight === 'bold' && duotone) return <CalendarXBoldDuotone ref={ref} {...rest} />;
   if (weight === 'bold') return <CalendarXBold ref={ref} {...rest} />;
@@ -33,6 +33,6 @@ const CalendarX = memo(forwardRef<SVGSVGElement, CalendarXProps>(({
 
 CalendarX.displayName = 'CalendarX';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { CalendarX, CalendarX as CalendarXIcon, CalendarX as SiCalendarX };
 export default CalendarX;

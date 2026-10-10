@@ -15,7 +15,7 @@ const PoundSterlingRegularDuotone = memo(
 
 PoundSterlingRegularDuotone.displayName = 'PoundSterlingRegularDuotone';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { PoundSterlingRegularDuotone, PoundSterlingRegularDuotone as PoundSterlingRegularDuotoneIcon, PoundSterlingRegularDuotone as SiPoundSterlingRegularDuotone };
 export default PoundSterlingRegularDuotone;
 export type { PoundSterlingRegularDuotoneProps };

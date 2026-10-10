@@ -18,10 +18,10 @@ export interface CircleDotProps extends IconProps {
  * For smaller bundle size, import specific variants directly:
  * import { CircleDotRegular } from 'stera-icons/icons/CircleDotRegular';
  */
-const CircleDot = memo(forwardRef<SVGSVGElement, CircleDotProps>(({ 
+const CircleDot = memo(forwardRef<SVGSVGElement, CircleDotProps>(({
   weight = 'regular',
   duotone = false,
-  ...rest 
+  ...rest
 }, ref) => {
   if (weight === 'bold' && duotone) return <CircleDotBoldDuotone ref={ref} {...rest} />;
   if (weight === 'bold') return <CircleDotBold ref={ref} {...rest} />;
@@ -33,6 +33,6 @@ const CircleDot = memo(forwardRef<SVGSVGElement, CircleDotProps>(({
 
 CircleDot.displayName = 'CircleDot';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { CircleDot, CircleDot as CircleDotIcon, CircleDot as SiCircleDot };
 export default CircleDot;

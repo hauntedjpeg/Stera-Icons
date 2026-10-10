@@ -18,10 +18,10 @@ export interface BookClosedProps extends IconProps {
  * For smaller bundle size, import specific variants directly:
  * import { BookClosedRegular } from 'stera-icons/icons/BookClosedRegular';
  */
-const BookClosed = memo(forwardRef<SVGSVGElement, BookClosedProps>(({ 
+const BookClosed = memo(forwardRef<SVGSVGElement, BookClosedProps>(({
   weight = 'regular',
   duotone = false,
-  ...rest 
+  ...rest
 }, ref) => {
   if (weight === 'bold' && duotone) return <BookClosedBoldDuotone ref={ref} {...rest} />;
   if (weight === 'bold') return <BookClosedBold ref={ref} {...rest} />;
@@ -33,6 +33,6 @@ const BookClosed = memo(forwardRef<SVGSVGElement, BookClosedProps>(({
 
 BookClosed.displayName = 'BookClosed';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { BookClosed, BookClosed as BookClosedIcon, BookClosed as SiBookClosed };
 export default BookClosed;

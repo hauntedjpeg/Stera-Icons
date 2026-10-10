@@ -15,7 +15,7 @@ const TextFieldRegular = memo(
 
 TextFieldRegular.displayName = 'TextFieldRegular';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { TextFieldRegular, TextFieldRegular as TextFieldRegularIcon, TextFieldRegular as SiTextFieldRegular };
 export default TextFieldRegular;
 export type { TextFieldRegularProps };

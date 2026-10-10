@@ -14,7 +14,7 @@ const UserSquareBold = memo(
 
 UserSquareBold.displayName = 'UserSquareBold';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { UserSquareBold, UserSquareBold as UserSquareBoldIcon, UserSquareBold as SiUserSquareBold };
 export default UserSquareBold;
 export type { UserSquareBoldProps };

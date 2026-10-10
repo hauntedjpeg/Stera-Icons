@@ -15,7 +15,7 @@ const CarrotFillDuotone = memo(
 
 CarrotFillDuotone.displayName = 'CarrotFillDuotone';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { CarrotFillDuotone, CarrotFillDuotone as CarrotFillDuotoneIcon, CarrotFillDuotone as SiCarrotFillDuotone };
 export default CarrotFillDuotone;
 export type { CarrotFillDuotoneProps };

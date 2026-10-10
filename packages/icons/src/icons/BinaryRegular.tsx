@@ -16,7 +16,7 @@ const BinaryRegular = memo(
 
 BinaryRegular.displayName = 'BinaryRegular';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { BinaryRegular, BinaryRegular as BinaryRegularIcon, BinaryRegular as SiBinaryRegular };
 export default BinaryRegular;
 export type { BinaryRegularProps };

@@ -18,10 +18,10 @@ export interface GitPullRequestClosedProps extends IconProps {
  * For smaller bundle size, import specific variants directly:
  * import { GitPullRequestClosedRegular } from 'stera-icons/icons/GitPullRequestClosedRegular';
  */
-const GitPullRequestClosed = memo(forwardRef<SVGSVGElement, GitPullRequestClosedProps>(({ 
+const GitPullRequestClosed = memo(forwardRef<SVGSVGElement, GitPullRequestClosedProps>(({
   weight = 'regular',
   duotone = false,
-  ...rest 
+  ...rest
 }, ref) => {
   if (weight === 'bold' && duotone) return <GitPullRequestClosedBoldDuotone ref={ref} {...rest} />;
   if (weight === 'bold') return <GitPullRequestClosedBold ref={ref} {...rest} />;
@@ -33,6 +33,6 @@ const GitPullRequestClosed = memo(forwardRef<SVGSVGElement, GitPullRequestClosed
 
 GitPullRequestClosed.displayName = 'GitPullRequestClosed';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { GitPullRequestClosed, GitPullRequestClosed as GitPullRequestClosedIcon, GitPullRequestClosed as SiGitPullRequestClosed };
 export default GitPullRequestClosed;

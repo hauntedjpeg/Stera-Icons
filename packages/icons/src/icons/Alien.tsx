@@ -18,10 +18,10 @@ export interface AlienProps extends IconProps {
  * For smaller bundle size, import specific variants directly:
  * import { AlienRegular } from 'stera-icons/icons/AlienRegular';
  */
-const Alien = memo(forwardRef<SVGSVGElement, AlienProps>(({ 
+const Alien = memo(forwardRef<SVGSVGElement, AlienProps>(({
   weight = 'regular',
   duotone = false,
-  ...rest 
+  ...rest
 }, ref) => {
   if (weight === 'bold' && duotone) return <AlienBoldDuotone ref={ref} {...rest} />;
   if (weight === 'bold') return <AlienBold ref={ref} {...rest} />;
@@ -33,6 +33,6 @@ const Alien = memo(forwardRef<SVGSVGElement, AlienProps>(({
 
 Alien.displayName = 'Alien';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { Alien, Alien as AlienIcon, Alien as SiAlien };
 export default Alien;

@@ -18,10 +18,10 @@ export interface MapProps extends IconProps {
  * For smaller bundle size, import specific variants directly:
  * import { MapRegular } from 'stera-icons/icons/MapRegular';
  */
-const Map = memo(forwardRef<SVGSVGElement, MapProps>(({ 
+const Map = memo(forwardRef<SVGSVGElement, MapProps>(({
   weight = 'regular',
   duotone = false,
-  ...rest 
+  ...rest
 }, ref) => {
   if (weight === 'bold' && duotone) return <MapBoldDuotone ref={ref} {...rest} />;
   if (weight === 'bold') return <MapBold ref={ref} {...rest} />;
@@ -33,6 +33,6 @@ const Map = memo(forwardRef<SVGSVGElement, MapProps>(({
 
 Map.displayName = 'Map';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { Map, Map as MapIcon, Map as SiMap };
 export default Map;

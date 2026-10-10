@@ -18,10 +18,10 @@ export interface MinusSquareProps extends IconProps {
  * For smaller bundle size, import specific variants directly:
  * import { MinusSquareRegular } from 'stera-icons/icons/MinusSquareRegular';
  */
-const MinusSquare = memo(forwardRef<SVGSVGElement, MinusSquareProps>(({ 
+const MinusSquare = memo(forwardRef<SVGSVGElement, MinusSquareProps>(({
   weight = 'regular',
   duotone = false,
-  ...rest 
+  ...rest
 }, ref) => {
   if (weight === 'bold' && duotone) return <MinusSquareBoldDuotone ref={ref} {...rest} />;
   if (weight === 'bold') return <MinusSquareBold ref={ref} {...rest} />;
@@ -33,6 +33,6 @@ const MinusSquare = memo(forwardRef<SVGSVGElement, MinusSquareProps>(({
 
 MinusSquare.displayName = 'MinusSquare';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { MinusSquare, MinusSquare as MinusSquareIcon, MinusSquare as SiMinusSquare };
 export default MinusSquare;

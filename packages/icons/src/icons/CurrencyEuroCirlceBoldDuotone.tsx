@@ -15,7 +15,7 @@ const CurrencyEuroCirlceBoldDuotone = memo(
 
 CurrencyEuroCirlceBoldDuotone.displayName = 'CurrencyEuroCirlceBoldDuotone';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { CurrencyEuroCirlceBoldDuotone, CurrencyEuroCirlceBoldDuotone as CurrencyEuroCirlceBoldDuotoneIcon, CurrencyEuroCirlceBoldDuotone as SiCurrencyEuroCirlceBoldDuotone };
 export default CurrencyEuroCirlceBoldDuotone;
 export type { CurrencyEuroCirlceBoldDuotoneProps };

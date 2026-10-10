@@ -16,7 +16,7 @@ const ContrastCircleBoldDuotone = memo(
 
 ContrastCircleBoldDuotone.displayName = 'ContrastCircleBoldDuotone';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { ContrastCircleBoldDuotone, ContrastCircleBoldDuotone as ContrastCircleBoldDuotoneIcon, ContrastCircleBoldDuotone as SiContrastCircleBoldDuotone };
 export default ContrastCircleBoldDuotone;
 export type { ContrastCircleBoldDuotoneProps };

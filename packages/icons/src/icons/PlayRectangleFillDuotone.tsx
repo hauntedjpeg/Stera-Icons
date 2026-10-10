@@ -15,7 +15,7 @@ const PlayRectangleFillDuotone = memo(
 
 PlayRectangleFillDuotone.displayName = 'PlayRectangleFillDuotone';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { PlayRectangleFillDuotone, PlayRectangleFillDuotone as PlayRectangleFillDuotoneIcon, PlayRectangleFillDuotone as SiPlayRectangleFillDuotone };
 export default PlayRectangleFillDuotone;
 export type { PlayRectangleFillDuotoneProps };

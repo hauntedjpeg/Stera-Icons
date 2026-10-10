@@ -18,10 +18,10 @@ export interface MapPinnedProps extends IconProps {
  * For smaller bundle size, import specific variants directly:
  * import { MapPinnedRegular } from 'stera-icons/icons/MapPinnedRegular';
  */
-const MapPinned = memo(forwardRef<SVGSVGElement, MapPinnedProps>(({ 
+const MapPinned = memo(forwardRef<SVGSVGElement, MapPinnedProps>(({
   weight = 'regular',
   duotone = false,
-  ...rest 
+  ...rest
 }, ref) => {
   if (weight === 'bold' && duotone) return <MapPinnedBoldDuotone ref={ref} {...rest} />;
   if (weight === 'bold') return <MapPinnedBold ref={ref} {...rest} />;
@@ -33,6 +33,6 @@ const MapPinned = memo(forwardRef<SVGSVGElement, MapPinnedProps>(({
 
 MapPinned.displayName = 'MapPinned';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { MapPinned, MapPinned as MapPinnedIcon, MapPinned as SiMapPinned };
 export default MapPinned;

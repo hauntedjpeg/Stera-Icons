@@ -18,10 +18,10 @@ export interface ActivityProps extends IconProps {
  * For smaller bundle size, import specific variants directly:
  * import { ActivityRegular } from 'stera-icons/icons/ActivityRegular';
  */
-const Activity = memo(forwardRef<SVGSVGElement, ActivityProps>(({ 
+const Activity = memo(forwardRef<SVGSVGElement, ActivityProps>(({
   weight = 'regular',
   duotone = false,
-  ...rest 
+  ...rest
 }, ref) => {
   if (weight === 'bold' && duotone) return <ActivityBoldDuotone ref={ref} {...rest} />;
   if (weight === 'bold') return <ActivityBold ref={ref} {...rest} />;
@@ -33,6 +33,6 @@ const Activity = memo(forwardRef<SVGSVGElement, ActivityProps>(({
 
 Activity.displayName = 'Activity';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { Activity, Activity as ActivityIcon, Activity as SiActivity };
 export default Activity;

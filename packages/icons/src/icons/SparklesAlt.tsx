@@ -18,10 +18,10 @@ export interface SparklesAltProps extends IconProps {
  * For smaller bundle size, import specific variants directly:
  * import { SparklesAltRegular } from 'stera-icons/icons/SparklesAltRegular';
  */
-const SparklesAlt = memo(forwardRef<SVGSVGElement, SparklesAltProps>(({ 
+const SparklesAlt = memo(forwardRef<SVGSVGElement, SparklesAltProps>(({
   weight = 'regular',
   duotone = false,
-  ...rest 
+  ...rest
 }, ref) => {
   if (weight === 'bold' && duotone) return <SparklesAltBoldDuotone ref={ref} {...rest} />;
   if (weight === 'bold') return <SparklesAltBold ref={ref} {...rest} />;
@@ -33,6 +33,6 @@ const SparklesAlt = memo(forwardRef<SVGSVGElement, SparklesAltProps>(({
 
 SparklesAlt.displayName = 'SparklesAlt';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { SparklesAlt, SparklesAlt as SparklesAltIcon, SparklesAlt as SiSparklesAlt };
 export default SparklesAlt;

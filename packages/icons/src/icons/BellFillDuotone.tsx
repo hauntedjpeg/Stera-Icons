@@ -15,7 +15,7 @@ const BellFillDuotone = memo(
 
 BellFillDuotone.displayName = 'BellFillDuotone';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { BellFillDuotone, BellFillDuotone as BellFillDuotoneIcon, BellFillDuotone as SiBellFillDuotone };
 export default BellFillDuotone;
 export type { BellFillDuotoneProps };

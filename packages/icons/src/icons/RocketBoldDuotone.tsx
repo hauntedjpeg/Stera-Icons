@@ -16,7 +16,7 @@ const RocketBoldDuotone = memo(
 
 RocketBoldDuotone.displayName = 'RocketBoldDuotone';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { RocketBoldDuotone, RocketBoldDuotone as RocketBoldDuotoneIcon, RocketBoldDuotone as SiRocketBoldDuotone };
 export default RocketBoldDuotone;
 export type { RocketBoldDuotoneProps };

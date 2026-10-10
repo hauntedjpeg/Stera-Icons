@@ -14,7 +14,7 @@ const BadgeBold = memo(
 
 BadgeBold.displayName = 'BadgeBold';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { BadgeBold, BadgeBold as BadgeBoldIcon, BadgeBold as SiBadgeBold };
 export default BadgeBold;
 export type { BadgeBoldProps };

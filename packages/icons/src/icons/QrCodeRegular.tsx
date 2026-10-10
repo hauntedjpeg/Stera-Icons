@@ -17,7 +17,7 @@ const QrCodeRegular = memo(
 
 QrCodeRegular.displayName = 'QrCodeRegular';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { QrCodeRegular, QrCodeRegular as QrCodeRegularIcon, QrCodeRegular as SiQrCodeRegular };
 export default QrCodeRegular;
 export type { QrCodeRegularProps };

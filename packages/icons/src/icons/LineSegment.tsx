@@ -18,10 +18,10 @@ export interface LineSegmentProps extends IconProps {
  * For smaller bundle size, import specific variants directly:
  * import { LineSegmentRegular } from 'stera-icons/icons/LineSegmentRegular';
  */
-const LineSegment = memo(forwardRef<SVGSVGElement, LineSegmentProps>(({ 
+const LineSegment = memo(forwardRef<SVGSVGElement, LineSegmentProps>(({
   weight = 'regular',
   duotone = false,
-  ...rest 
+  ...rest
 }, ref) => {
   if (weight === 'bold' && duotone) return <LineSegmentBoldDuotone ref={ref} {...rest} />;
   if (weight === 'bold') return <LineSegmentBold ref={ref} {...rest} />;
@@ -33,6 +33,6 @@ const LineSegment = memo(forwardRef<SVGSVGElement, LineSegmentProps>(({
 
 LineSegment.displayName = 'LineSegment';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { LineSegment, LineSegment as LineSegmentIcon, LineSegment as SiLineSegment };
 export default LineSegment;

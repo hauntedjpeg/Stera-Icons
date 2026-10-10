@@ -18,10 +18,10 @@ export interface ShareProps extends IconProps {
  * For smaller bundle size, import specific variants directly:
  * import { ShareRegular } from 'stera-icons/icons/ShareRegular';
  */
-const Share = memo(forwardRef<SVGSVGElement, ShareProps>(({ 
+const Share = memo(forwardRef<SVGSVGElement, ShareProps>(({
   weight = 'regular',
   duotone = false,
-  ...rest 
+  ...rest
 }, ref) => {
   if (weight === 'bold' && duotone) return <ShareBoldDuotone ref={ref} {...rest} />;
   if (weight === 'bold') return <ShareBold ref={ref} {...rest} />;
@@ -33,6 +33,6 @@ const Share = memo(forwardRef<SVGSVGElement, ShareProps>(({
 
 Share.displayName = 'Share';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { Share, Share as ShareIcon, Share as SiShare };
 export default Share;

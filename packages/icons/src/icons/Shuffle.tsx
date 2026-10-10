@@ -18,10 +18,10 @@ export interface ShuffleProps extends IconProps {
  * For smaller bundle size, import specific variants directly:
  * import { ShuffleRegular } from 'stera-icons/icons/ShuffleRegular';
  */
-const Shuffle = memo(forwardRef<SVGSVGElement, ShuffleProps>(({ 
+const Shuffle = memo(forwardRef<SVGSVGElement, ShuffleProps>(({
   weight = 'regular',
   duotone = false,
-  ...rest 
+  ...rest
 }, ref) => {
   if (weight === 'bold' && duotone) return <ShuffleBoldDuotone ref={ref} {...rest} />;
   if (weight === 'bold') return <ShuffleBold ref={ref} {...rest} />;
@@ -33,6 +33,6 @@ const Shuffle = memo(forwardRef<SVGSVGElement, ShuffleProps>(({
 
 Shuffle.displayName = 'Shuffle';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { Shuffle, Shuffle as ShuffleIcon, Shuffle as SiShuffle };
 export default Shuffle;

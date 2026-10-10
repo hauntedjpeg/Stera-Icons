@@ -15,7 +15,7 @@ const TabletRegular = memo(
 
 TabletRegular.displayName = 'TabletRegular';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { TabletRegular, TabletRegular as TabletRegularIcon, TabletRegular as SiTabletRegular };
 export default TabletRegular;
 export type { TabletRegularProps };

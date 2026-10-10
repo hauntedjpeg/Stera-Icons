@@ -18,10 +18,10 @@ export interface MonitorProps extends IconProps {
  * For smaller bundle size, import specific variants directly:
  * import { MonitorRegular } from 'stera-icons/icons/MonitorRegular';
  */
-const Monitor = memo(forwardRef<SVGSVGElement, MonitorProps>(({ 
+const Monitor = memo(forwardRef<SVGSVGElement, MonitorProps>(({
   weight = 'regular',
   duotone = false,
-  ...rest 
+  ...rest
 }, ref) => {
   if (weight === 'bold' && duotone) return <MonitorBoldDuotone ref={ref} {...rest} />;
   if (weight === 'bold') return <MonitorBold ref={ref} {...rest} />;
@@ -33,6 +33,6 @@ const Monitor = memo(forwardRef<SVGSVGElement, MonitorProps>(({
 
 Monitor.displayName = 'Monitor';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { Monitor, Monitor as MonitorIcon, Monitor as SiMonitor };
 export default Monitor;

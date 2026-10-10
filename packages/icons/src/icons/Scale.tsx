@@ -18,10 +18,10 @@ export interface ScaleProps extends IconProps {
  * For smaller bundle size, import specific variants directly:
  * import { ScaleRegular } from 'stera-icons/icons/ScaleRegular';
  */
-const Scale = memo(forwardRef<SVGSVGElement, ScaleProps>(({ 
+const Scale = memo(forwardRef<SVGSVGElement, ScaleProps>(({
   weight = 'regular',
   duotone = false,
-  ...rest 
+  ...rest
 }, ref) => {
   if (weight === 'bold' && duotone) return <ScaleBoldDuotone ref={ref} {...rest} />;
   if (weight === 'bold') return <ScaleBold ref={ref} {...rest} />;
@@ -33,6 +33,6 @@ const Scale = memo(forwardRef<SVGSVGElement, ScaleProps>(({
 
 Scale.displayName = 'Scale';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { Scale, Scale as ScaleIcon, Scale as SiScale };
 export default Scale;

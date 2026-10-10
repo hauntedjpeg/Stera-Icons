@@ -15,7 +15,7 @@ const TextAlignLeftBoldDuotone = memo(
 
 TextAlignLeftBoldDuotone.displayName = 'TextAlignLeftBoldDuotone';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { TextAlignLeftBoldDuotone, TextAlignLeftBoldDuotone as TextAlignLeftBoldDuotoneIcon, TextAlignLeftBoldDuotone as SiTextAlignLeftBoldDuotone };
 export default TextAlignLeftBoldDuotone;
 export type { TextAlignLeftBoldDuotoneProps };

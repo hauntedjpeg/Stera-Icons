@@ -15,7 +15,7 @@ const HistoryBoldDuotone = memo(
 
 HistoryBoldDuotone.displayName = 'HistoryBoldDuotone';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { HistoryBoldDuotone, HistoryBoldDuotone as HistoryBoldDuotoneIcon, HistoryBoldDuotone as SiHistoryBoldDuotone };
 export default HistoryBoldDuotone;
 export type { HistoryBoldDuotoneProps };

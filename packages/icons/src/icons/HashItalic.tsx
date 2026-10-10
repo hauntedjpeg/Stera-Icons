@@ -18,10 +18,10 @@ export interface HashItalicProps extends IconProps {
  * For smaller bundle size, import specific variants directly:
  * import { HashItalicRegular } from 'stera-icons/icons/HashItalicRegular';
  */
-const HashItalic = memo(forwardRef<SVGSVGElement, HashItalicProps>(({ 
+const HashItalic = memo(forwardRef<SVGSVGElement, HashItalicProps>(({
   weight = 'regular',
   duotone = false,
-  ...rest 
+  ...rest
 }, ref) => {
   if (weight === 'bold' && duotone) return <HashItalicBoldDuotone ref={ref} {...rest} />;
   if (weight === 'bold') return <HashItalicBold ref={ref} {...rest} />;
@@ -33,6 +33,6 @@ const HashItalic = memo(forwardRef<SVGSVGElement, HashItalicProps>(({
 
 HashItalic.displayName = 'HashItalic';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { HashItalic, HashItalic as HashItalicIcon, HashItalic as SiHashItalic };
 export default HashItalic;

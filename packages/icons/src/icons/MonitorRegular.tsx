@@ -14,7 +14,7 @@ const MonitorRegular = memo(
 
 MonitorRegular.displayName = 'MonitorRegular';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { MonitorRegular, MonitorRegular as MonitorRegularIcon, MonitorRegular as SiMonitorRegular };
 export default MonitorRegular;
 export type { MonitorRegularProps };

@@ -18,10 +18,10 @@ export interface AirplaneProps extends IconProps {
  * For smaller bundle size, import specific variants directly:
  * import { AirplaneRegular } from 'stera-icons/icons/AirplaneRegular';
  */
-const Airplane = memo(forwardRef<SVGSVGElement, AirplaneProps>(({ 
+const Airplane = memo(forwardRef<SVGSVGElement, AirplaneProps>(({
   weight = 'regular',
   duotone = false,
-  ...rest 
+  ...rest
 }, ref) => {
   if (weight === 'bold' && duotone) return <AirplaneBoldDuotone ref={ref} {...rest} />;
   if (weight === 'bold') return <AirplaneBold ref={ref} {...rest} />;
@@ -33,6 +33,6 @@ const Airplane = memo(forwardRef<SVGSVGElement, AirplaneProps>(({
 
 Airplane.displayName = 'Airplane';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { Airplane, Airplane as AirplaneIcon, Airplane as SiAirplane };
 export default Airplane;

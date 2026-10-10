@@ -14,7 +14,7 @@ const ShieldHalfFill = memo(
 
 ShieldHalfFill.displayName = 'ShieldHalfFill';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { ShieldHalfFill, ShieldHalfFill as ShieldHalfFillIcon, ShieldHalfFill as SiShieldHalfFill };
 export default ShieldHalfFill;
 export type { ShieldHalfFillProps };

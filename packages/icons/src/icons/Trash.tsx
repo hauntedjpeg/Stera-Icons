@@ -18,10 +18,10 @@ export interface TrashProps extends IconProps {
  * For smaller bundle size, import specific variants directly:
  * import { TrashRegular } from 'stera-icons/icons/TrashRegular';
  */
-const Trash = memo(forwardRef<SVGSVGElement, TrashProps>(({ 
+const Trash = memo(forwardRef<SVGSVGElement, TrashProps>(({
   weight = 'regular',
   duotone = false,
-  ...rest 
+  ...rest
 }, ref) => {
   if (weight === 'bold' && duotone) return <TrashBoldDuotone ref={ref} {...rest} />;
   if (weight === 'bold') return <TrashBold ref={ref} {...rest} />;
@@ -33,6 +33,6 @@ const Trash = memo(forwardRef<SVGSVGElement, TrashProps>(({
 
 Trash.displayName = 'Trash';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { Trash, Trash as TrashIcon, Trash as SiTrash };
 export default Trash;

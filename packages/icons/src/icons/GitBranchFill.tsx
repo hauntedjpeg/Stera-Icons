@@ -14,7 +14,7 @@ const GitBranchFill = memo(
 
 GitBranchFill.displayName = 'GitBranchFill';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { GitBranchFill, GitBranchFill as GitBranchFillIcon, GitBranchFill as SiGitBranchFill };
 export default GitBranchFill;
 export type { GitBranchFillProps };

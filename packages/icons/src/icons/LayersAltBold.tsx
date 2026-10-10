@@ -16,7 +16,7 @@ const LayersAltBold = memo(
 
 LayersAltBold.displayName = 'LayersAltBold';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { LayersAltBold, LayersAltBold as LayersAltBoldIcon, LayersAltBold as SiLayersAltBold };
 export default LayersAltBold;
 export type { LayersAltBoldProps };

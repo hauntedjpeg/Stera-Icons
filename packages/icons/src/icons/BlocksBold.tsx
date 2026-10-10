@@ -15,7 +15,7 @@ const BlocksBold = memo(
 
 BlocksBold.displayName = 'BlocksBold';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { BlocksBold, BlocksBold as BlocksBoldIcon, BlocksBold as SiBlocksBold };
 export default BlocksBold;
 export type { BlocksBoldProps };

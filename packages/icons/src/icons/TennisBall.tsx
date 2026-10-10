@@ -18,10 +18,10 @@ export interface TennisBallProps extends IconProps {
  * For smaller bundle size, import specific variants directly:
  * import { TennisBallRegular } from 'stera-icons/icons/TennisBallRegular';
  */
-const TennisBall = memo(forwardRef<SVGSVGElement, TennisBallProps>(({ 
+const TennisBall = memo(forwardRef<SVGSVGElement, TennisBallProps>(({
   weight = 'regular',
   duotone = false,
-  ...rest 
+  ...rest
 }, ref) => {
   if (weight === 'bold' && duotone) return <TennisBallBoldDuotone ref={ref} {...rest} />;
   if (weight === 'bold') return <TennisBallBold ref={ref} {...rest} />;
@@ -33,6 +33,6 @@ const TennisBall = memo(forwardRef<SVGSVGElement, TennisBallProps>(({
 
 TennisBall.displayName = 'TennisBall';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { TennisBall, TennisBall as TennisBallIcon, TennisBall as SiTennisBall };
 export default TennisBall;

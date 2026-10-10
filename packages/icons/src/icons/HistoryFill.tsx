@@ -15,7 +15,7 @@ const HistoryFill = memo(
 
 HistoryFill.displayName = 'HistoryFill';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { HistoryFill, HistoryFill as HistoryFillIcon, HistoryFill as SiHistoryFill };
 export default HistoryFill;
 export type { HistoryFillProps };

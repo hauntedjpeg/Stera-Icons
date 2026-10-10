@@ -18,10 +18,10 @@ export interface ChartBarXYProps extends IconProps {
  * For smaller bundle size, import specific variants directly:
  * import { ChartBarXYRegular } from 'stera-icons/icons/ChartBarXYRegular';
  */
-const ChartBarXY = memo(forwardRef<SVGSVGElement, ChartBarXYProps>(({ 
+const ChartBarXY = memo(forwardRef<SVGSVGElement, ChartBarXYProps>(({
   weight = 'regular',
   duotone = false,
-  ...rest 
+  ...rest
 }, ref) => {
   if (weight === 'bold' && duotone) return <ChartBarXYBoldDuotone ref={ref} {...rest} />;
   if (weight === 'bold') return <ChartBarXYBold ref={ref} {...rest} />;
@@ -33,6 +33,6 @@ const ChartBarXY = memo(forwardRef<SVGSVGElement, ChartBarXYProps>(({
 
 ChartBarXY.displayName = 'ChartBarXY';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { ChartBarXY, ChartBarXY as ChartBarXYIcon, ChartBarXY as SiChartBarXY };
 export default ChartBarXY;

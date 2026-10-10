@@ -15,7 +15,7 @@ const AtomAiRegularDuotone = memo(
 
 AtomAiRegularDuotone.displayName = 'AtomAiRegularDuotone';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { AtomAiRegularDuotone, AtomAiRegularDuotone as AtomAiRegularDuotoneIcon, AtomAiRegularDuotone as SiAtomAiRegularDuotone };
 export default AtomAiRegularDuotone;
 export type { AtomAiRegularDuotoneProps };

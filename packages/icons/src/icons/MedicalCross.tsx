@@ -18,10 +18,10 @@ export interface MedicalCrossProps extends IconProps {
  * For smaller bundle size, import specific variants directly:
  * import { MedicalCrossRegular } from 'stera-icons/icons/MedicalCrossRegular';
  */
-const MedicalCross = memo(forwardRef<SVGSVGElement, MedicalCrossProps>(({ 
+const MedicalCross = memo(forwardRef<SVGSVGElement, MedicalCrossProps>(({
   weight = 'regular',
   duotone = false,
-  ...rest 
+  ...rest
 }, ref) => {
   if (weight === 'bold' && duotone) return <MedicalCrossBoldDuotone ref={ref} {...rest} />;
   if (weight === 'bold') return <MedicalCrossBold ref={ref} {...rest} />;
@@ -33,6 +33,6 @@ const MedicalCross = memo(forwardRef<SVGSVGElement, MedicalCrossProps>(({
 
 MedicalCross.displayName = 'MedicalCross';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { MedicalCross, MedicalCross as MedicalCrossIcon, MedicalCross as SiMedicalCross };
 export default MedicalCross;

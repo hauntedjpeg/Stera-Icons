@@ -14,7 +14,7 @@ const HandbagBold = memo(
 
 HandbagBold.displayName = 'HandbagBold';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { HandbagBold, HandbagBold as HandbagBoldIcon, HandbagBold as SiHandbagBold };
 export default HandbagBold;
 export type { HandbagBoldProps };

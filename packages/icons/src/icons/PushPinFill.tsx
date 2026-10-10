@@ -14,7 +14,7 @@ const PushPinFill = memo(
 
 PushPinFill.displayName = 'PushPinFill';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { PushPinFill, PushPinFill as PushPinFillIcon, PushPinFill as SiPushPinFill };
 export default PushPinFill;
 export type { PushPinFillProps };

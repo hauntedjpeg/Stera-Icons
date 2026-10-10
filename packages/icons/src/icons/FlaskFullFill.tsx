@@ -14,7 +14,7 @@ const FlaskFullFill = memo(
 
 FlaskFullFill.displayName = 'FlaskFullFill';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { FlaskFullFill, FlaskFullFill as FlaskFullFillIcon, FlaskFullFill as SiFlaskFullFill };
 export default FlaskFullFill;
 export type { FlaskFullFillProps };

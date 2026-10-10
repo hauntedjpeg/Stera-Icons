@@ -18,10 +18,10 @@ export interface PilcrowProps extends IconProps {
  * For smaller bundle size, import specific variants directly:
  * import { PilcrowRegular } from 'stera-icons/icons/PilcrowRegular';
  */
-const Pilcrow = memo(forwardRef<SVGSVGElement, PilcrowProps>(({ 
+const Pilcrow = memo(forwardRef<SVGSVGElement, PilcrowProps>(({
   weight = 'regular',
   duotone = false,
-  ...rest 
+  ...rest
 }, ref) => {
   if (weight === 'bold' && duotone) return <PilcrowBoldDuotone ref={ref} {...rest} />;
   if (weight === 'bold') return <PilcrowBold ref={ref} {...rest} />;
@@ -33,6 +33,6 @@ const Pilcrow = memo(forwardRef<SVGSVGElement, PilcrowProps>(({
 
 Pilcrow.displayName = 'Pilcrow';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { Pilcrow, Pilcrow as PilcrowIcon, Pilcrow as SiPilcrow };
 export default Pilcrow;

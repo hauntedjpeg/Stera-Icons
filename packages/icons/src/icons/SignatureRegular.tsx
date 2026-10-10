@@ -14,7 +14,7 @@ const SignatureRegular = memo(
 
 SignatureRegular.displayName = 'SignatureRegular';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { SignatureRegular, SignatureRegular as SignatureRegularIcon, SignatureRegular as SiSignatureRegular };
 export default SignatureRegular;
 export type { SignatureRegularProps };

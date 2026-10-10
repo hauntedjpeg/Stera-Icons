@@ -18,10 +18,10 @@ export interface LaptopProps extends IconProps {
  * For smaller bundle size, import specific variants directly:
  * import { LaptopRegular } from 'stera-icons/icons/LaptopRegular';
  */
-const Laptop = memo(forwardRef<SVGSVGElement, LaptopProps>(({ 
+const Laptop = memo(forwardRef<SVGSVGElement, LaptopProps>(({
   weight = 'regular',
   duotone = false,
-  ...rest 
+  ...rest
 }, ref) => {
   if (weight === 'bold' && duotone) return <LaptopBoldDuotone ref={ref} {...rest} />;
   if (weight === 'bold') return <LaptopBold ref={ref} {...rest} />;
@@ -33,6 +33,6 @@ const Laptop = memo(forwardRef<SVGSVGElement, LaptopProps>(({
 
 Laptop.displayName = 'Laptop';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { Laptop, Laptop as LaptopIcon, Laptop as SiLaptop };
 export default Laptop;

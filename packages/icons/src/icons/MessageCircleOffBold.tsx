@@ -15,7 +15,7 @@ const MessageCircleOffBold = memo(
 
 MessageCircleOffBold.displayName = 'MessageCircleOffBold';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { MessageCircleOffBold, MessageCircleOffBold as MessageCircleOffBoldIcon, MessageCircleOffBold as SiMessageCircleOffBold };
 export default MessageCircleOffBold;
 export type { MessageCircleOffBoldProps };

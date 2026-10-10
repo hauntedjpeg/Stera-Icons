@@ -15,7 +15,7 @@ const PieFill = memo(
 
 PieFill.displayName = 'PieFill';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { PieFill, PieFill as PieFillIcon, PieFill as SiPieFill };
 export default PieFill;
 export type { PieFillProps };

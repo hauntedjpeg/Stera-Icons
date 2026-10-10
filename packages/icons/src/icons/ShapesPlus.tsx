@@ -18,10 +18,10 @@ export interface ShapesPlusProps extends IconProps {
  * For smaller bundle size, import specific variants directly:
  * import { ShapesPlusRegular } from 'stera-icons/icons/ShapesPlusRegular';
  */
-const ShapesPlus = memo(forwardRef<SVGSVGElement, ShapesPlusProps>(({ 
+const ShapesPlus = memo(forwardRef<SVGSVGElement, ShapesPlusProps>(({
   weight = 'regular',
   duotone = false,
-  ...rest 
+  ...rest
 }, ref) => {
   if (weight === 'bold' && duotone) return <ShapesPlusBoldDuotone ref={ref} {...rest} />;
   if (weight === 'bold') return <ShapesPlusBold ref={ref} {...rest} />;
@@ -33,6 +33,6 @@ const ShapesPlus = memo(forwardRef<SVGSVGElement, ShapesPlusProps>(({
 
 ShapesPlus.displayName = 'ShapesPlus';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { ShapesPlus, ShapesPlus as ShapesPlusIcon, ShapesPlus as SiShapesPlus };
 export default ShapesPlus;

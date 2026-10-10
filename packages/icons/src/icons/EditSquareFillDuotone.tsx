@@ -15,7 +15,7 @@ const EditSquareFillDuotone = memo(
 
 EditSquareFillDuotone.displayName = 'EditSquareFillDuotone';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { EditSquareFillDuotone, EditSquareFillDuotone as EditSquareFillDuotoneIcon, EditSquareFillDuotone as SiEditSquareFillDuotone };
 export default EditSquareFillDuotone;
 export type { EditSquareFillDuotoneProps };

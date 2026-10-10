@@ -18,10 +18,10 @@ export interface OptionKeyProps extends IconProps {
  * For smaller bundle size, import specific variants directly:
  * import { OptionKeyRegular } from 'stera-icons/icons/OptionKeyRegular';
  */
-const OptionKey = memo(forwardRef<SVGSVGElement, OptionKeyProps>(({ 
+const OptionKey = memo(forwardRef<SVGSVGElement, OptionKeyProps>(({
   weight = 'regular',
   duotone = false,
-  ...rest 
+  ...rest
 }, ref) => {
   if (weight === 'bold' && duotone) return <OptionKeyBoldDuotone ref={ref} {...rest} />;
   if (weight === 'bold') return <OptionKeyBold ref={ref} {...rest} />;
@@ -33,6 +33,6 @@ const OptionKey = memo(forwardRef<SVGSVGElement, OptionKeyProps>(({
 
 OptionKey.displayName = 'OptionKey';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { OptionKey, OptionKey as OptionKeyIcon, OptionKey as SiOptionKey };
 export default OptionKey;

@@ -14,7 +14,7 @@ const PilcrowRegular = memo(
 
 PilcrowRegular.displayName = 'PilcrowRegular';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { PilcrowRegular, PilcrowRegular as PilcrowRegularIcon, PilcrowRegular as SiPilcrowRegular };
 export default PilcrowRegular;
 export type { PilcrowRegularProps };

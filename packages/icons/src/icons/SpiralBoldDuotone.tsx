@@ -18,7 +18,7 @@ const SpiralBoldDuotone = memo(
 
 SpiralBoldDuotone.displayName = 'SpiralBoldDuotone';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { SpiralBoldDuotone, SpiralBoldDuotone as SpiralBoldDuotoneIcon, SpiralBoldDuotone as SiSpiralBoldDuotone };
 export default SpiralBoldDuotone;
 export type { SpiralBoldDuotoneProps };

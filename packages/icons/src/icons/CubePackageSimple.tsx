@@ -18,10 +18,10 @@ export interface CubePackageSimpleProps extends IconProps {
  * For smaller bundle size, import specific variants directly:
  * import { CubePackageSimpleRegular } from 'stera-icons/icons/CubePackageSimpleRegular';
  */
-const CubePackageSimple = memo(forwardRef<SVGSVGElement, CubePackageSimpleProps>(({ 
+const CubePackageSimple = memo(forwardRef<SVGSVGElement, CubePackageSimpleProps>(({
   weight = 'regular',
   duotone = false,
-  ...rest 
+  ...rest
 }, ref) => {
   if (weight === 'bold' && duotone) return <CubePackageSimpleBoldDuotone ref={ref} {...rest} />;
   if (weight === 'bold') return <CubePackageSimpleBold ref={ref} {...rest} />;
@@ -33,6 +33,6 @@ const CubePackageSimple = memo(forwardRef<SVGSVGElement, CubePackageSimpleProps>
 
 CubePackageSimple.displayName = 'CubePackageSimple';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { CubePackageSimple, CubePackageSimple as CubePackageSimpleIcon, CubePackageSimple as SiCubePackageSimple };
 export default CubePackageSimple;

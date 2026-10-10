@@ -14,7 +14,7 @@ const PolarisBold = memo(
 
 PolarisBold.displayName = 'PolarisBold';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { PolarisBold, PolarisBold as PolarisBoldIcon, PolarisBold as SiPolarisBold };
 export default PolarisBold;
 export type { PolarisBoldProps };

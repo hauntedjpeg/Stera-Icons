@@ -15,7 +15,7 @@ const HourglassEmptyBoldDuotone = memo(
 
 HourglassEmptyBoldDuotone.displayName = 'HourglassEmptyBoldDuotone';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { HourglassEmptyBoldDuotone, HourglassEmptyBoldDuotone as HourglassEmptyBoldDuotoneIcon, HourglassEmptyBoldDuotone as SiHourglassEmptyBoldDuotone };
 export default HourglassEmptyBoldDuotone;
 export type { HourglassEmptyBoldDuotoneProps };

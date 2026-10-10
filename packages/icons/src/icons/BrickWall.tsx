@@ -18,10 +18,10 @@ export interface BrickWallProps extends IconProps {
  * For smaller bundle size, import specific variants directly:
  * import { BrickWallRegular } from 'stera-icons/icons/BrickWallRegular';
  */
-const BrickWall = memo(forwardRef<SVGSVGElement, BrickWallProps>(({ 
+const BrickWall = memo(forwardRef<SVGSVGElement, BrickWallProps>(({
   weight = 'regular',
   duotone = false,
-  ...rest 
+  ...rest
 }, ref) => {
   if (weight === 'bold' && duotone) return <BrickWallBoldDuotone ref={ref} {...rest} />;
   if (weight === 'bold') return <BrickWallBold ref={ref} {...rest} />;
@@ -33,6 +33,6 @@ const BrickWall = memo(forwardRef<SVGSVGElement, BrickWallProps>(({
 
 BrickWall.displayName = 'BrickWall';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { BrickWall, BrickWall as BrickWallIcon, BrickWall as SiBrickWall };
 export default BrickWall;

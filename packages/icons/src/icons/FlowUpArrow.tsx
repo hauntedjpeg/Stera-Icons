@@ -18,10 +18,10 @@ export interface FlowUpArrowProps extends IconProps {
  * For smaller bundle size, import specific variants directly:
  * import { FlowUpArrowRegular } from 'stera-icons/icons/FlowUpArrowRegular';
  */
-const FlowUpArrow = memo(forwardRef<SVGSVGElement, FlowUpArrowProps>(({ 
+const FlowUpArrow = memo(forwardRef<SVGSVGElement, FlowUpArrowProps>(({
   weight = 'regular',
   duotone = false,
-  ...rest 
+  ...rest
 }, ref) => {
   if (weight === 'bold' && duotone) return <FlowUpArrowBoldDuotone ref={ref} {...rest} />;
   if (weight === 'bold') return <FlowUpArrowBold ref={ref} {...rest} />;
@@ -33,6 +33,6 @@ const FlowUpArrow = memo(forwardRef<SVGSVGElement, FlowUpArrowProps>(({
 
 FlowUpArrow.displayName = 'FlowUpArrow';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { FlowUpArrow, FlowUpArrow as FlowUpArrowIcon, FlowUpArrow as SiFlowUpArrow };
 export default FlowUpArrow;

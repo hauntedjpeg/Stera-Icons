@@ -15,7 +15,7 @@ const ExternalLinkRegular = memo(
 
 ExternalLinkRegular.displayName = 'ExternalLinkRegular';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { ExternalLinkRegular, ExternalLinkRegular as ExternalLinkRegularIcon, ExternalLinkRegular as SiExternalLinkRegular };
 export default ExternalLinkRegular;
 export type { ExternalLinkRegularProps };

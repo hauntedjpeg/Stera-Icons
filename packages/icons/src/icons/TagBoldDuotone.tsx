@@ -15,7 +15,7 @@ const TagBoldDuotone = memo(
 
 TagBoldDuotone.displayName = 'TagBoldDuotone';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { TagBoldDuotone, TagBoldDuotone as TagBoldDuotoneIcon, TagBoldDuotone as SiTagBoldDuotone };
 export default TagBoldDuotone;
 export type { TagBoldDuotoneProps };

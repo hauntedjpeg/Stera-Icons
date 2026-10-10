@@ -18,10 +18,10 @@ export interface UserLockProps extends IconProps {
  * For smaller bundle size, import specific variants directly:
  * import { UserLockRegular } from 'stera-icons/icons/UserLockRegular';
  */
-const UserLock = memo(forwardRef<SVGSVGElement, UserLockProps>(({ 
+const UserLock = memo(forwardRef<SVGSVGElement, UserLockProps>(({
   weight = 'regular',
   duotone = false,
-  ...rest 
+  ...rest
 }, ref) => {
   if (weight === 'bold' && duotone) return <UserLockBoldDuotone ref={ref} {...rest} />;
   if (weight === 'bold') return <UserLockBold ref={ref} {...rest} />;
@@ -33,6 +33,6 @@ const UserLock = memo(forwardRef<SVGSVGElement, UserLockProps>(({
 
 UserLock.displayName = 'UserLock';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { UserLock, UserLock as UserLockIcon, UserLock as SiUserLock };
 export default UserLock;

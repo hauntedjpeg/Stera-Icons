@@ -18,10 +18,10 @@ export interface MailProps extends IconProps {
  * For smaller bundle size, import specific variants directly:
  * import { MailRegular } from 'stera-icons/icons/MailRegular';
  */
-const Mail = memo(forwardRef<SVGSVGElement, MailProps>(({ 
+const Mail = memo(forwardRef<SVGSVGElement, MailProps>(({
   weight = 'regular',
   duotone = false,
-  ...rest 
+  ...rest
 }, ref) => {
   if (weight === 'bold' && duotone) return <MailBoldDuotone ref={ref} {...rest} />;
   if (weight === 'bold') return <MailBold ref={ref} {...rest} />;
@@ -33,6 +33,6 @@ const Mail = memo(forwardRef<SVGSVGElement, MailProps>(({
 
 Mail.displayName = 'Mail';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { Mail, Mail as MailIcon, Mail as SiMail };
 export default Mail;

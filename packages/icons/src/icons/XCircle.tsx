@@ -18,10 +18,10 @@ export interface XCircleProps extends IconProps {
  * For smaller bundle size, import specific variants directly:
  * import { XCircleRegular } from 'stera-icons/icons/XCircleRegular';
  */
-const XCircle = memo(forwardRef<SVGSVGElement, XCircleProps>(({ 
+const XCircle = memo(forwardRef<SVGSVGElement, XCircleProps>(({
   weight = 'regular',
   duotone = false,
-  ...rest 
+  ...rest
 }, ref) => {
   if (weight === 'bold' && duotone) return <XCircleBoldDuotone ref={ref} {...rest} />;
   if (weight === 'bold') return <XCircleBold ref={ref} {...rest} />;
@@ -33,6 +33,6 @@ const XCircle = memo(forwardRef<SVGSVGElement, XCircleProps>(({
 
 XCircle.displayName = 'XCircle';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { XCircle, XCircle as XCircleIcon, XCircle as SiXCircle };
 export default XCircle;

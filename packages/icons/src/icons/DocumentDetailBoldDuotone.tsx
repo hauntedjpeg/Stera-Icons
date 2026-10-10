@@ -15,7 +15,7 @@ const DocumentDetailBoldDuotone = memo(
 
 DocumentDetailBoldDuotone.displayName = 'DocumentDetailBoldDuotone';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { DocumentDetailBoldDuotone, DocumentDetailBoldDuotone as DocumentDetailBoldDuotoneIcon, DocumentDetailBoldDuotone as SiDocumentDetailBoldDuotone };
 export default DocumentDetailBoldDuotone;
 export type { DocumentDetailBoldDuotoneProps };

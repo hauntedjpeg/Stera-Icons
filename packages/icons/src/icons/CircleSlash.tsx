@@ -18,10 +18,10 @@ export interface CircleSlashProps extends IconProps {
  * For smaller bundle size, import specific variants directly:
  * import { CircleSlashRegular } from 'stera-icons/icons/CircleSlashRegular';
  */
-const CircleSlash = memo(forwardRef<SVGSVGElement, CircleSlashProps>(({ 
+const CircleSlash = memo(forwardRef<SVGSVGElement, CircleSlashProps>(({
   weight = 'regular',
   duotone = false,
-  ...rest 
+  ...rest
 }, ref) => {
   if (weight === 'bold' && duotone) return <CircleSlashBoldDuotone ref={ref} {...rest} />;
   if (weight === 'bold') return <CircleSlashBold ref={ref} {...rest} />;
@@ -33,6 +33,6 @@ const CircleSlash = memo(forwardRef<SVGSVGElement, CircleSlashProps>(({
 
 CircleSlash.displayName = 'CircleSlash';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { CircleSlash, CircleSlash as CircleSlashIcon, CircleSlash as SiCircleSlash };
 export default CircleSlash;

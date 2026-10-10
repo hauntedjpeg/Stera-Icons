@@ -18,10 +18,10 @@ export interface CupProps extends IconProps {
  * For smaller bundle size, import specific variants directly:
  * import { CupRegular } from 'stera-icons/icons/CupRegular';
  */
-const Cup = memo(forwardRef<SVGSVGElement, CupProps>(({ 
+const Cup = memo(forwardRef<SVGSVGElement, CupProps>(({
   weight = 'regular',
   duotone = false,
-  ...rest 
+  ...rest
 }, ref) => {
   if (weight === 'bold' && duotone) return <CupBoldDuotone ref={ref} {...rest} />;
   if (weight === 'bold') return <CupBold ref={ref} {...rest} />;
@@ -33,6 +33,6 @@ const Cup = memo(forwardRef<SVGSVGElement, CupProps>(({
 
 Cup.displayName = 'Cup';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { Cup, Cup as CupIcon, Cup as SiCup };
 export default Cup;

@@ -18,10 +18,10 @@ export interface PanelsLeftTopProps extends IconProps {
  * For smaller bundle size, import specific variants directly:
  * import { PanelsLeftTopRegular } from 'stera-icons/icons/PanelsLeftTopRegular';
  */
-const PanelsLeftTop = memo(forwardRef<SVGSVGElement, PanelsLeftTopProps>(({ 
+const PanelsLeftTop = memo(forwardRef<SVGSVGElement, PanelsLeftTopProps>(({
   weight = 'regular',
   duotone = false,
-  ...rest 
+  ...rest
 }, ref) => {
   if (weight === 'bold' && duotone) return <PanelsLeftTopBoldDuotone ref={ref} {...rest} />;
   if (weight === 'bold') return <PanelsLeftTopBold ref={ref} {...rest} />;
@@ -33,6 +33,6 @@ const PanelsLeftTop = memo(forwardRef<SVGSVGElement, PanelsLeftTopProps>(({
 
 PanelsLeftTop.displayName = 'PanelsLeftTop';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { PanelsLeftTop, PanelsLeftTop as PanelsLeftTopIcon, PanelsLeftTop as SiPanelsLeftTop };
 export default PanelsLeftTop;

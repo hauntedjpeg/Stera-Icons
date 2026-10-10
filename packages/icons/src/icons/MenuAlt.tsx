@@ -18,10 +18,10 @@ export interface MenuAltProps extends IconProps {
  * For smaller bundle size, import specific variants directly:
  * import { MenuAltRegular } from 'stera-icons/icons/MenuAltRegular';
  */
-const MenuAlt = memo(forwardRef<SVGSVGElement, MenuAltProps>(({ 
+const MenuAlt = memo(forwardRef<SVGSVGElement, MenuAltProps>(({
   weight = 'regular',
   duotone = false,
-  ...rest 
+  ...rest
 }, ref) => {
   if (weight === 'bold' && duotone) return <MenuAltBoldDuotone ref={ref} {...rest} />;
   if (weight === 'bold') return <MenuAltBold ref={ref} {...rest} />;
@@ -33,6 +33,6 @@ const MenuAlt = memo(forwardRef<SVGSVGElement, MenuAltProps>(({
 
 MenuAlt.displayName = 'MenuAlt';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { MenuAlt, MenuAlt as MenuAltIcon, MenuAlt as SiMenuAlt };
 export default MenuAlt;

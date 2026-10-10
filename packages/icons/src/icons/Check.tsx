@@ -18,10 +18,10 @@ export interface CheckProps extends IconProps {
  * For smaller bundle size, import specific variants directly:
  * import { CheckRegular } from 'stera-icons/icons/CheckRegular';
  */
-const Check = memo(forwardRef<SVGSVGElement, CheckProps>(({ 
+const Check = memo(forwardRef<SVGSVGElement, CheckProps>(({
   weight = 'regular',
   duotone = false,
-  ...rest 
+  ...rest
 }, ref) => {
   if (weight === 'bold' && duotone) return <CheckBoldDuotone ref={ref} {...rest} />;
   if (weight === 'bold') return <CheckBold ref={ref} {...rest} />;
@@ -33,6 +33,6 @@ const Check = memo(forwardRef<SVGSVGElement, CheckProps>(({
 
 Check.displayName = 'Check';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { Check, Check as CheckIcon, Check as SiCheck };
 export default Check;

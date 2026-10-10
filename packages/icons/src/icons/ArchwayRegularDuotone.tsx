@@ -15,7 +15,7 @@ const ArchwayRegularDuotone = memo(
 
 ArchwayRegularDuotone.displayName = 'ArchwayRegularDuotone';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { ArchwayRegularDuotone, ArchwayRegularDuotone as ArchwayRegularDuotoneIcon, ArchwayRegularDuotone as SiArchwayRegularDuotone };
 export default ArchwayRegularDuotone;
 export type { ArchwayRegularDuotoneProps };

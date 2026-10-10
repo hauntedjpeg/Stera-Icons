@@ -14,7 +14,7 @@ const RouteArrowRegular = memo(
 
 RouteArrowRegular.displayName = 'RouteArrowRegular';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { RouteArrowRegular, RouteArrowRegular as RouteArrowRegularIcon, RouteArrowRegular as SiRouteArrowRegular };
 export default RouteArrowRegular;
 export type { RouteArrowRegularProps };

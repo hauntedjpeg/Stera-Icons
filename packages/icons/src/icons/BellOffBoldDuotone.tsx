@@ -16,7 +16,7 @@ const BellOffBoldDuotone = memo(
 
 BellOffBoldDuotone.displayName = 'BellOffBoldDuotone';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { BellOffBoldDuotone, BellOffBoldDuotone as BellOffBoldDuotoneIcon, BellOffBoldDuotone as SiBellOffBoldDuotone };
 export default BellOffBoldDuotone;
 export type { BellOffBoldDuotoneProps };

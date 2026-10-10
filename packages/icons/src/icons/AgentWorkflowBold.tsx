@@ -16,7 +16,7 @@ const AgentWorkflowBold = memo(
 
 AgentWorkflowBold.displayName = 'AgentWorkflowBold';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { AgentWorkflowBold, AgentWorkflowBold as AgentWorkflowBoldIcon, AgentWorkflowBold as SiAgentWorkflowBold };
 export default AgentWorkflowBold;
 export type { AgentWorkflowBoldProps };

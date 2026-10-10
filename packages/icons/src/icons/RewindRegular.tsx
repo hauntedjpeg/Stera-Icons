@@ -14,7 +14,7 @@ const RewindRegular = memo(
 
 RewindRegular.displayName = 'RewindRegular';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { RewindRegular, RewindRegular as RewindRegularIcon, RewindRegular as SiRewindRegular };
 export default RewindRegular;
 export type { RewindRegularProps };

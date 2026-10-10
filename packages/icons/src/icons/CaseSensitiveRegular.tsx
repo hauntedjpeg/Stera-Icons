@@ -14,7 +14,7 @@ const CaseSensitiveRegular = memo(
 
 CaseSensitiveRegular.displayName = 'CaseSensitiveRegular';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { CaseSensitiveRegular, CaseSensitiveRegular as CaseSensitiveRegularIcon, CaseSensitiveRegular as SiCaseSensitiveRegular };
 export default CaseSensitiveRegular;
 export type { CaseSensitiveRegularProps };

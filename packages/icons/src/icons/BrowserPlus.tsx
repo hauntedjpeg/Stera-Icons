@@ -18,10 +18,10 @@ export interface BrowserPlusProps extends IconProps {
  * For smaller bundle size, import specific variants directly:
  * import { BrowserPlusRegular } from 'stera-icons/icons/BrowserPlusRegular';
  */
-const BrowserPlus = memo(forwardRef<SVGSVGElement, BrowserPlusProps>(({ 
+const BrowserPlus = memo(forwardRef<SVGSVGElement, BrowserPlusProps>(({
   weight = 'regular',
   duotone = false,
-  ...rest 
+  ...rest
 }, ref) => {
   if (weight === 'bold' && duotone) return <BrowserPlusBoldDuotone ref={ref} {...rest} />;
   if (weight === 'bold') return <BrowserPlusBold ref={ref} {...rest} />;
@@ -33,6 +33,6 @@ const BrowserPlus = memo(forwardRef<SVGSVGElement, BrowserPlusProps>(({
 
 BrowserPlus.displayName = 'BrowserPlus';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { BrowserPlus, BrowserPlus as BrowserPlusIcon, BrowserPlus as SiBrowserPlus };
 export default BrowserPlus;

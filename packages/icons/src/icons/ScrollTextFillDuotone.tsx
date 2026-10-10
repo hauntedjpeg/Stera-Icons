@@ -17,7 +17,7 @@ const ScrollTextFillDuotone = memo(
 
 ScrollTextFillDuotone.displayName = 'ScrollTextFillDuotone';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { ScrollTextFillDuotone, ScrollTextFillDuotone as ScrollTextFillDuotoneIcon, ScrollTextFillDuotone as SiScrollTextFillDuotone };
 export default ScrollTextFillDuotone;
 export type { ScrollTextFillDuotoneProps };

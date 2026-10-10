@@ -14,7 +14,7 @@ const OptionKeyRegular = memo(
 
 OptionKeyRegular.displayName = 'OptionKeyRegular';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { OptionKeyRegular, OptionKeyRegular as OptionKeyRegularIcon, OptionKeyRegular as SiOptionKeyRegular };
 export default OptionKeyRegular;
 export type { OptionKeyRegularProps };

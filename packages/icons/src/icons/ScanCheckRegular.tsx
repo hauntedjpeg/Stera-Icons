@@ -14,7 +14,7 @@ const ScanCheckRegular = memo(
 
 ScanCheckRegular.displayName = 'ScanCheckRegular';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { ScanCheckRegular, ScanCheckRegular as ScanCheckRegularIcon, ScanCheckRegular as SiScanCheckRegular };
 export default ScanCheckRegular;
 export type { ScanCheckRegularProps };

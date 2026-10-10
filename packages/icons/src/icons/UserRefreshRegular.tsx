@@ -15,7 +15,7 @@ const UserRefreshRegular = memo(
 
 UserRefreshRegular.displayName = 'UserRefreshRegular';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { UserRefreshRegular, UserRefreshRegular as UserRefreshRegularIcon, UserRefreshRegular as SiUserRefreshRegular };
 export default UserRefreshRegular;
 export type { UserRefreshRegularProps };

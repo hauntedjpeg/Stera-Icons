@@ -14,7 +14,7 @@ const ChartBarSquareFill = memo(
 
 ChartBarSquareFill.displayName = 'ChartBarSquareFill';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { ChartBarSquareFill, ChartBarSquareFill as ChartBarSquareFillIcon, ChartBarSquareFill as SiChartBarSquareFill };
 export default ChartBarSquareFill;
 export type { ChartBarSquareFillProps };

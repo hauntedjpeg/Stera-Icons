@@ -14,7 +14,7 @@ const WarehouseRegular = memo(
 
 WarehouseRegular.displayName = 'WarehouseRegular';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { WarehouseRegular, WarehouseRegular as WarehouseRegularIcon, WarehouseRegular as SiWarehouseRegular };
 export default WarehouseRegular;
 export type { WarehouseRegularProps };

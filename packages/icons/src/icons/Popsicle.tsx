@@ -18,10 +18,10 @@ export interface PopsicleProps extends IconProps {
  * For smaller bundle size, import specific variants directly:
  * import { PopsicleRegular } from 'stera-icons/icons/PopsicleRegular';
  */
-const Popsicle = memo(forwardRef<SVGSVGElement, PopsicleProps>(({ 
+const Popsicle = memo(forwardRef<SVGSVGElement, PopsicleProps>(({
   weight = 'regular',
   duotone = false,
-  ...rest 
+  ...rest
 }, ref) => {
   if (weight === 'bold' && duotone) return <PopsicleBoldDuotone ref={ref} {...rest} />;
   if (weight === 'bold') return <PopsicleBold ref={ref} {...rest} />;
@@ -33,6 +33,6 @@ const Popsicle = memo(forwardRef<SVGSVGElement, PopsicleProps>(({
 
 Popsicle.displayName = 'Popsicle';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { Popsicle, Popsicle as PopsicleIcon, Popsicle as SiPopsicle };
 export default Popsicle;

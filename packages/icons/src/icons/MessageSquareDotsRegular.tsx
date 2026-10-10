@@ -15,7 +15,7 @@ const MessageSquareDotsRegular = memo(
 
 MessageSquareDotsRegular.displayName = 'MessageSquareDotsRegular';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { MessageSquareDotsRegular, MessageSquareDotsRegular as MessageSquareDotsRegularIcon, MessageSquareDotsRegular as SiMessageSquareDotsRegular };
 export default MessageSquareDotsRegular;
 export type { MessageSquareDotsRegularProps };

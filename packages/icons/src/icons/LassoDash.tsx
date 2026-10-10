@@ -18,10 +18,10 @@ export interface LassoDashProps extends IconProps {
  * For smaller bundle size, import specific variants directly:
  * import { LassoDashRegular } from 'stera-icons/icons/LassoDashRegular';
  */
-const LassoDash = memo(forwardRef<SVGSVGElement, LassoDashProps>(({ 
+const LassoDash = memo(forwardRef<SVGSVGElement, LassoDashProps>(({
   weight = 'regular',
   duotone = false,
-  ...rest 
+  ...rest
 }, ref) => {
   if (weight === 'bold' && duotone) return <LassoDashBoldDuotone ref={ref} {...rest} />;
   if (weight === 'bold') return <LassoDashBold ref={ref} {...rest} />;
@@ -33,6 +33,6 @@ const LassoDash = memo(forwardRef<SVGSVGElement, LassoDashProps>(({
 
 LassoDash.displayName = 'LassoDash';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { LassoDash, LassoDash as LassoDashIcon, LassoDash as SiLassoDash };
 export default LassoDash;

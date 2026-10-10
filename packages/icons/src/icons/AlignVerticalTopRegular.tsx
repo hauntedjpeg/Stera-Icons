@@ -15,7 +15,7 @@ const AlignVerticalTopRegular = memo(
 
 AlignVerticalTopRegular.displayName = 'AlignVerticalTopRegular';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { AlignVerticalTopRegular, AlignVerticalTopRegular as AlignVerticalTopRegularIcon, AlignVerticalTopRegular as SiAlignVerticalTopRegular };
 export default AlignVerticalTopRegular;
 export type { AlignVerticalTopRegularProps };

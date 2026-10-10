@@ -15,7 +15,7 @@ const CursorPointerRegularDuotone = memo(
 
 CursorPointerRegularDuotone.displayName = 'CursorPointerRegularDuotone';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { CursorPointerRegularDuotone, CursorPointerRegularDuotone as CursorPointerRegularDuotoneIcon, CursorPointerRegularDuotone as SiCursorPointerRegularDuotone };
 export default CursorPointerRegularDuotone;
 export type { CursorPointerRegularDuotoneProps };

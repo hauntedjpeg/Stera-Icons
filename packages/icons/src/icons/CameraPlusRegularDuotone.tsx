@@ -15,7 +15,7 @@ const CameraPlusRegularDuotone = memo(
 
 CameraPlusRegularDuotone.displayName = 'CameraPlusRegularDuotone';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { CameraPlusRegularDuotone, CameraPlusRegularDuotone as CameraPlusRegularDuotoneIcon, CameraPlusRegularDuotone as SiCameraPlusRegularDuotone };
 export default CameraPlusRegularDuotone;
 export type { CameraPlusRegularDuotoneProps };

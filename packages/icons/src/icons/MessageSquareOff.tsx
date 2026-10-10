@@ -18,10 +18,10 @@ export interface MessageSquareOffProps extends IconProps {
  * For smaller bundle size, import specific variants directly:
  * import { MessageSquareOffRegular } from 'stera-icons/icons/MessageSquareOffRegular';
  */
-const MessageSquareOff = memo(forwardRef<SVGSVGElement, MessageSquareOffProps>(({ 
+const MessageSquareOff = memo(forwardRef<SVGSVGElement, MessageSquareOffProps>(({
   weight = 'regular',
   duotone = false,
-  ...rest 
+  ...rest
 }, ref) => {
   if (weight === 'bold' && duotone) return <MessageSquareOffBoldDuotone ref={ref} {...rest} />;
   if (weight === 'bold') return <MessageSquareOffBold ref={ref} {...rest} />;
@@ -33,6 +33,6 @@ const MessageSquareOff = memo(forwardRef<SVGSVGElement, MessageSquareOffProps>((
 
 MessageSquareOff.displayName = 'MessageSquareOff';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { MessageSquareOff, MessageSquareOff as MessageSquareOffIcon, MessageSquareOff as SiMessageSquareOff };
 export default MessageSquareOff;

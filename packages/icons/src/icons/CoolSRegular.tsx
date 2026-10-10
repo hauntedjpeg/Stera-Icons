@@ -14,7 +14,7 @@ const CoolSRegular = memo(
 
 CoolSRegular.displayName = 'CoolSRegular';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { CoolSRegular, CoolSRegular as CoolSRegularIcon, CoolSRegular as SiCoolSRegular };
 export default CoolSRegular;
 export type { CoolSRegularProps };

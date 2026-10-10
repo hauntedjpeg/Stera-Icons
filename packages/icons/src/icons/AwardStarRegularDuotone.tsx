@@ -16,7 +16,7 @@ const AwardStarRegularDuotone = memo(
 
 AwardStarRegularDuotone.displayName = 'AwardStarRegularDuotone';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { AwardStarRegularDuotone, AwardStarRegularDuotone as AwardStarRegularDuotoneIcon, AwardStarRegularDuotone as SiAwardStarRegularDuotone };
 export default AwardStarRegularDuotone;
 export type { AwardStarRegularDuotoneProps };

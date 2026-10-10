@@ -14,7 +14,7 @@ const InboxFill = memo(
 
 InboxFill.displayName = 'InboxFill';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { InboxFill, InboxFill as InboxFillIcon, InboxFill as SiInboxFill };
 export default InboxFill;
 export type { InboxFillProps };

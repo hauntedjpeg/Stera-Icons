@@ -15,7 +15,7 @@ const FolderOpenFillDuotone = memo(
 
 FolderOpenFillDuotone.displayName = 'FolderOpenFillDuotone';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { FolderOpenFillDuotone, FolderOpenFillDuotone as FolderOpenFillDuotoneIcon, FolderOpenFillDuotone as SiFolderOpenFillDuotone };
 export default FolderOpenFillDuotone;
 export type { FolderOpenFillDuotoneProps };

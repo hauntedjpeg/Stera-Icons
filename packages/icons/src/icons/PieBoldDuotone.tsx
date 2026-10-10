@@ -15,7 +15,7 @@ const PieBoldDuotone = memo(
 
 PieBoldDuotone.displayName = 'PieBoldDuotone';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { PieBoldDuotone, PieBoldDuotone as PieBoldDuotoneIcon, PieBoldDuotone as SiPieBoldDuotone };
 export default PieBoldDuotone;
 export type { PieBoldDuotoneProps };

@@ -15,7 +15,7 @@ const UserRefreshBoldDuotone = memo(
 
 UserRefreshBoldDuotone.displayName = 'UserRefreshBoldDuotone';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { UserRefreshBoldDuotone, UserRefreshBoldDuotone as UserRefreshBoldDuotoneIcon, UserRefreshBoldDuotone as SiUserRefreshBoldDuotone };
 export default UserRefreshBoldDuotone;
 export type { UserRefreshBoldDuotoneProps };

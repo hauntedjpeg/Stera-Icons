@@ -15,7 +15,7 @@ const BrightnessHighRegularDuotone = memo(
 
 BrightnessHighRegularDuotone.displayName = 'BrightnessHighRegularDuotone';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { BrightnessHighRegularDuotone, BrightnessHighRegularDuotone as BrightnessHighRegularDuotoneIcon, BrightnessHighRegularDuotone as SiBrightnessHighRegularDuotone };
 export default BrightnessHighRegularDuotone;
 export type { BrightnessHighRegularDuotoneProps };

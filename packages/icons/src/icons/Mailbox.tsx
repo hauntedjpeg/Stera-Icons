@@ -18,10 +18,10 @@ export interface MailboxProps extends IconProps {
  * For smaller bundle size, import specific variants directly:
  * import { MailboxRegular } from 'stera-icons/icons/MailboxRegular';
  */
-const Mailbox = memo(forwardRef<SVGSVGElement, MailboxProps>(({ 
+const Mailbox = memo(forwardRef<SVGSVGElement, MailboxProps>(({
   weight = 'regular',
   duotone = false,
-  ...rest 
+  ...rest
 }, ref) => {
   if (weight === 'bold' && duotone) return <MailboxBoldDuotone ref={ref} {...rest} />;
   if (weight === 'bold') return <MailboxBold ref={ref} {...rest} />;
@@ -33,6 +33,6 @@ const Mailbox = memo(forwardRef<SVGSVGElement, MailboxProps>(({
 
 Mailbox.displayName = 'Mailbox';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { Mailbox, Mailbox as MailboxIcon, Mailbox as SiMailbox };
 export default Mailbox;

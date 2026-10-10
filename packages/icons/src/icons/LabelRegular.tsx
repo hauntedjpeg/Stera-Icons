@@ -14,7 +14,7 @@ const LabelRegular = memo(
 
 LabelRegular.displayName = 'LabelRegular';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { LabelRegular, LabelRegular as LabelRegularIcon, LabelRegular as SiLabelRegular };
 export default LabelRegular;
 export type { LabelRegularProps };

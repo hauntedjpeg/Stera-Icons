@@ -14,7 +14,7 @@ const ChartWaterfallRegular = memo(
 
 ChartWaterfallRegular.displayName = 'ChartWaterfallRegular';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { ChartWaterfallRegular, ChartWaterfallRegular as ChartWaterfallRegularIcon, ChartWaterfallRegular as SiChartWaterfallRegular };
 export default ChartWaterfallRegular;
 export type { ChartWaterfallRegularProps };

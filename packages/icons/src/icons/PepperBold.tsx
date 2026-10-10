@@ -14,7 +14,7 @@ const PepperBold = memo(
 
 PepperBold.displayName = 'PepperBold';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { PepperBold, PepperBold as PepperBoldIcon, PepperBold as SiPepperBold };
 export default PepperBold;
 export type { PepperBoldProps };

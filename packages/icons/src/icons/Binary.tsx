@@ -18,10 +18,10 @@ export interface BinaryProps extends IconProps {
  * For smaller bundle size, import specific variants directly:
  * import { BinaryRegular } from 'stera-icons/icons/BinaryRegular';
  */
-const Binary = memo(forwardRef<SVGSVGElement, BinaryProps>(({ 
+const Binary = memo(forwardRef<SVGSVGElement, BinaryProps>(({
   weight = 'regular',
   duotone = false,
-  ...rest 
+  ...rest
 }, ref) => {
   if (weight === 'bold' && duotone) return <BinaryBoldDuotone ref={ref} {...rest} />;
   if (weight === 'bold') return <BinaryBold ref={ref} {...rest} />;
@@ -33,6 +33,6 @@ const Binary = memo(forwardRef<SVGSVGElement, BinaryProps>(({
 
 Binary.displayName = 'Binary';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { Binary, Binary as BinaryIcon, Binary as SiBinary };
 export default Binary;

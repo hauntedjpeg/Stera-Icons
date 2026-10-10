@@ -14,7 +14,7 @@ const UserListFill = memo(
 
 UserListFill.displayName = 'UserListFill';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { UserListFill, UserListFill as UserListFillIcon, UserListFill as SiUserListFill };
 export default UserListFill;
 export type { UserListFillProps };

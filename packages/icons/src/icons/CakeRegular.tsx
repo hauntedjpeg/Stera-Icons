@@ -14,7 +14,7 @@ const CakeRegular = memo(
 
 CakeRegular.displayName = 'CakeRegular';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { CakeRegular, CakeRegular as CakeRegularIcon, CakeRegular as SiCakeRegular };
 export default CakeRegular;
 export type { CakeRegularProps };

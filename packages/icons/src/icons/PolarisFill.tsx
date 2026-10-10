@@ -14,7 +14,7 @@ const PolarisFill = memo(
 
 PolarisFill.displayName = 'PolarisFill';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { PolarisFill, PolarisFill as PolarisFillIcon, PolarisFill as SiPolarisFill };
 export default PolarisFill;
 export type { PolarisFillProps };

@@ -15,7 +15,7 @@ const FileCabinetRegular = memo(
 
 FileCabinetRegular.displayName = 'FileCabinetRegular';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { FileCabinetRegular, FileCabinetRegular as FileCabinetRegularIcon, FileCabinetRegular as SiFileCabinetRegular };
 export default FileCabinetRegular;
 export type { FileCabinetRegularProps };

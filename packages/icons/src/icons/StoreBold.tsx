@@ -14,7 +14,7 @@ const StoreBold = memo(
 
 StoreBold.displayName = 'StoreBold';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { StoreBold, StoreBold as StoreBoldIcon, StoreBold as SiStoreBold };
 export default StoreBold;
 export type { StoreBoldProps };

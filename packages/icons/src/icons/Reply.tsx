@@ -18,10 +18,10 @@ export interface ReplyProps extends IconProps {
  * For smaller bundle size, import specific variants directly:
  * import { ReplyRegular } from 'stera-icons/icons/ReplyRegular';
  */
-const Reply = memo(forwardRef<SVGSVGElement, ReplyProps>(({ 
+const Reply = memo(forwardRef<SVGSVGElement, ReplyProps>(({
   weight = 'regular',
   duotone = false,
-  ...rest 
+  ...rest
 }, ref) => {
   if (weight === 'bold' && duotone) return <ReplyBoldDuotone ref={ref} {...rest} />;
   if (weight === 'bold') return <ReplyBold ref={ref} {...rest} />;
@@ -33,6 +33,6 @@ const Reply = memo(forwardRef<SVGSVGElement, ReplyProps>(({
 
 Reply.displayName = 'Reply';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { Reply, Reply as ReplyIcon, Reply as SiReply };
 export default Reply;

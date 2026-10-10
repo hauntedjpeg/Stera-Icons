@@ -14,7 +14,7 @@ const CloudCliFill = memo(
 
 CloudCliFill.displayName = 'CloudCliFill';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { CloudCliFill, CloudCliFill as CloudCliFillIcon, CloudCliFill as SiCloudCliFill };
 export default CloudCliFill;
 export type { CloudCliFillProps };

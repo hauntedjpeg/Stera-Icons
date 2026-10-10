@@ -18,10 +18,10 @@ export interface ListXProps extends IconProps {
  * For smaller bundle size, import specific variants directly:
  * import { ListXRegular } from 'stera-icons/icons/ListXRegular';
  */
-const ListX = memo(forwardRef<SVGSVGElement, ListXProps>(({ 
+const ListX = memo(forwardRef<SVGSVGElement, ListXProps>(({
   weight = 'regular',
   duotone = false,
-  ...rest 
+  ...rest
 }, ref) => {
   if (weight === 'bold' && duotone) return <ListXBoldDuotone ref={ref} {...rest} />;
   if (weight === 'bold') return <ListXBold ref={ref} {...rest} />;
@@ -33,6 +33,6 @@ const ListX = memo(forwardRef<SVGSVGElement, ListXProps>(({
 
 ListX.displayName = 'ListX';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { ListX, ListX as ListXIcon, ListX as SiListX };
 export default ListX;

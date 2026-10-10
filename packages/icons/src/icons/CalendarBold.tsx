@@ -15,7 +15,7 @@ const CalendarBold = memo(
 
 CalendarBold.displayName = 'CalendarBold';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { CalendarBold, CalendarBold as CalendarBoldIcon, CalendarBold as SiCalendarBold };
 export default CalendarBold;
 export type { CalendarBoldProps };

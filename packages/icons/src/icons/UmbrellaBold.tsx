@@ -14,7 +14,7 @@ const UmbrellaBold = memo(
 
 UmbrellaBold.displayName = 'UmbrellaBold';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { UmbrellaBold, UmbrellaBold as UmbrellaBoldIcon, UmbrellaBold as SiUmbrellaBold };
 export default UmbrellaBold;
 export type { UmbrellaBoldProps };

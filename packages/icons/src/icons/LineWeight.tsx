@@ -18,10 +18,10 @@ export interface LineWeightProps extends IconProps {
  * For smaller bundle size, import specific variants directly:
  * import { LineWeightRegular } from 'stera-icons/icons/LineWeightRegular';
  */
-const LineWeight = memo(forwardRef<SVGSVGElement, LineWeightProps>(({ 
+const LineWeight = memo(forwardRef<SVGSVGElement, LineWeightProps>(({
   weight = 'regular',
   duotone = false,
-  ...rest 
+  ...rest
 }, ref) => {
   if (weight === 'bold' && duotone) return <LineWeightBoldDuotone ref={ref} {...rest} />;
   if (weight === 'bold') return <LineWeightBold ref={ref} {...rest} />;
@@ -33,6 +33,6 @@ const LineWeight = memo(forwardRef<SVGSVGElement, LineWeightProps>(({
 
 LineWeight.displayName = 'LineWeight';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { LineWeight, LineWeight as LineWeightIcon, LineWeight as SiLineWeight };
 export default LineWeight;

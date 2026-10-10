@@ -18,10 +18,10 @@ export interface DatabaseSparkleProps extends IconProps {
  * For smaller bundle size, import specific variants directly:
  * import { DatabaseSparkleRegular } from 'stera-icons/icons/DatabaseSparkleRegular';
  */
-const DatabaseSparkle = memo(forwardRef<SVGSVGElement, DatabaseSparkleProps>(({ 
+const DatabaseSparkle = memo(forwardRef<SVGSVGElement, DatabaseSparkleProps>(({
   weight = 'regular',
   duotone = false,
-  ...rest 
+  ...rest
 }, ref) => {
   if (weight === 'bold' && duotone) return <DatabaseSparkleBoldDuotone ref={ref} {...rest} />;
   if (weight === 'bold') return <DatabaseSparkleBold ref={ref} {...rest} />;
@@ -33,6 +33,6 @@ const DatabaseSparkle = memo(forwardRef<SVGSVGElement, DatabaseSparkleProps>(({
 
 DatabaseSparkle.displayName = 'DatabaseSparkle';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { DatabaseSparkle, DatabaseSparkle as DatabaseSparkleIcon, DatabaseSparkle as SiDatabaseSparkle };
 export default DatabaseSparkle;

@@ -14,7 +14,7 @@ const FlowDiagramRegular = memo(
 
 FlowDiagramRegular.displayName = 'FlowDiagramRegular';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { FlowDiagramRegular, FlowDiagramRegular as FlowDiagramRegularIcon, FlowDiagramRegular as SiFlowDiagramRegular };
 export default FlowDiagramRegular;
 export type { FlowDiagramRegularProps };

@@ -15,7 +15,7 @@ const CitrusFillDuotone = memo(
 
 CitrusFillDuotone.displayName = 'CitrusFillDuotone';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { CitrusFillDuotone, CitrusFillDuotone as CitrusFillDuotoneIcon, CitrusFillDuotone as SiCitrusFillDuotone };
 export default CitrusFillDuotone;
 export type { CitrusFillDuotoneProps };

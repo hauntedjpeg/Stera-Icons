@@ -15,7 +15,7 @@ const LinkOffRegularDuotone = memo(
 
 LinkOffRegularDuotone.displayName = 'LinkOffRegularDuotone';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { LinkOffRegularDuotone, LinkOffRegularDuotone as LinkOffRegularDuotoneIcon, LinkOffRegularDuotone as SiLinkOffRegularDuotone };
 export default LinkOffRegularDuotone;
 export type { LinkOffRegularDuotoneProps };

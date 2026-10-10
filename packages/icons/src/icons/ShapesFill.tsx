@@ -14,7 +14,7 @@ const ShapesFill = memo(
 
 ShapesFill.displayName = 'ShapesFill';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { ShapesFill, ShapesFill as ShapesFillIcon, ShapesFill as SiShapesFill };
 export default ShapesFill;
 export type { ShapesFillProps };

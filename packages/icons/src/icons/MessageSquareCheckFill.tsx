@@ -14,7 +14,7 @@ const MessageSquareCheckFill = memo(
 
 MessageSquareCheckFill.displayName = 'MessageSquareCheckFill';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { MessageSquareCheckFill, MessageSquareCheckFill as MessageSquareCheckFillIcon, MessageSquareCheckFill as SiMessageSquareCheckFill };
 export default MessageSquareCheckFill;
 export type { MessageSquareCheckFillProps };

@@ -18,10 +18,10 @@ export interface KeyboardProps extends IconProps {
  * For smaller bundle size, import specific variants directly:
  * import { KeyboardRegular } from 'stera-icons/icons/KeyboardRegular';
  */
-const Keyboard = memo(forwardRef<SVGSVGElement, KeyboardProps>(({ 
+const Keyboard = memo(forwardRef<SVGSVGElement, KeyboardProps>(({
   weight = 'regular',
   duotone = false,
-  ...rest 
+  ...rest
 }, ref) => {
   if (weight === 'bold' && duotone) return <KeyboardBoldDuotone ref={ref} {...rest} />;
   if (weight === 'bold') return <KeyboardBold ref={ref} {...rest} />;
@@ -33,6 +33,6 @@ const Keyboard = memo(forwardRef<SVGSVGElement, KeyboardProps>(({
 
 Keyboard.displayName = 'Keyboard';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { Keyboard, Keyboard as KeyboardIcon, Keyboard as SiKeyboard };
 export default Keyboard;

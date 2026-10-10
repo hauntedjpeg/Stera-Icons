@@ -18,10 +18,10 @@ export interface CopyProps extends IconProps {
  * For smaller bundle size, import specific variants directly:
  * import { CopyRegular } from 'stera-icons/icons/CopyRegular';
  */
-const Copy = memo(forwardRef<SVGSVGElement, CopyProps>(({ 
+const Copy = memo(forwardRef<SVGSVGElement, CopyProps>(({
   weight = 'regular',
   duotone = false,
-  ...rest 
+  ...rest
 }, ref) => {
   if (weight === 'bold' && duotone) return <CopyBoldDuotone ref={ref} {...rest} />;
   if (weight === 'bold') return <CopyBold ref={ref} {...rest} />;
@@ -33,6 +33,6 @@ const Copy = memo(forwardRef<SVGSVGElement, CopyProps>(({
 
 Copy.displayName = 'Copy';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { Copy, Copy as CopyIcon, Copy as SiCopy };
 export default Copy;

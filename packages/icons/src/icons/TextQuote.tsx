@@ -18,10 +18,10 @@ export interface TextQuoteProps extends IconProps {
  * For smaller bundle size, import specific variants directly:
  * import { TextQuoteRegular } from 'stera-icons/icons/TextQuoteRegular';
  */
-const TextQuote = memo(forwardRef<SVGSVGElement, TextQuoteProps>(({ 
+const TextQuote = memo(forwardRef<SVGSVGElement, TextQuoteProps>(({
   weight = 'regular',
   duotone = false,
-  ...rest 
+  ...rest
 }, ref) => {
   if (weight === 'bold' && duotone) return <TextQuoteBoldDuotone ref={ref} {...rest} />;
   if (weight === 'bold') return <TextQuoteBold ref={ref} {...rest} />;
@@ -33,6 +33,6 @@ const TextQuote = memo(forwardRef<SVGSVGElement, TextQuoteProps>(({
 
 TextQuote.displayName = 'TextQuote';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { TextQuote, TextQuote as TextQuoteIcon, TextQuote as SiTextQuote };
 export default TextQuote;

@@ -18,10 +18,10 @@ export interface ChartWaterfallXProps extends IconProps {
  * For smaller bundle size, import specific variants directly:
  * import { ChartWaterfallXRegular } from 'stera-icons/icons/ChartWaterfallXRegular';
  */
-const ChartWaterfallX = memo(forwardRef<SVGSVGElement, ChartWaterfallXProps>(({ 
+const ChartWaterfallX = memo(forwardRef<SVGSVGElement, ChartWaterfallXProps>(({
   weight = 'regular',
   duotone = false,
-  ...rest 
+  ...rest
 }, ref) => {
   if (weight === 'bold' && duotone) return <ChartWaterfallXBoldDuotone ref={ref} {...rest} />;
   if (weight === 'bold') return <ChartWaterfallXBold ref={ref} {...rest} />;
@@ -33,6 +33,6 @@ const ChartWaterfallX = memo(forwardRef<SVGSVGElement, ChartWaterfallXProps>(({
 
 ChartWaterfallX.displayName = 'ChartWaterfallX';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { ChartWaterfallX, ChartWaterfallX as ChartWaterfallXIcon, ChartWaterfallX as SiChartWaterfallX };
 export default ChartWaterfallX;

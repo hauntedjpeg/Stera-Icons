@@ -15,7 +15,7 @@ const CursorTextCircleRegular = memo(
 
 CursorTextCircleRegular.displayName = 'CursorTextCircleRegular';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { CursorTextCircleRegular, CursorTextCircleRegular as CursorTextCircleRegularIcon, CursorTextCircleRegular as SiCursorTextCircleRegular };
 export default CursorTextCircleRegular;
 export type { CursorTextCircleRegularProps };

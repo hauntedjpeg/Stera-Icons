@@ -18,10 +18,10 @@ export interface MessageSquareCheckProps extends IconProps {
  * For smaller bundle size, import specific variants directly:
  * import { MessageSquareCheckRegular } from 'stera-icons/icons/MessageSquareCheckRegular';
  */
-const MessageSquareCheck = memo(forwardRef<SVGSVGElement, MessageSquareCheckProps>(({ 
+const MessageSquareCheck = memo(forwardRef<SVGSVGElement, MessageSquareCheckProps>(({
   weight = 'regular',
   duotone = false,
-  ...rest 
+  ...rest
 }, ref) => {
   if (weight === 'bold' && duotone) return <MessageSquareCheckBoldDuotone ref={ref} {...rest} />;
   if (weight === 'bold') return <MessageSquareCheckBold ref={ref} {...rest} />;
@@ -33,6 +33,6 @@ const MessageSquareCheck = memo(forwardRef<SVGSVGElement, MessageSquareCheckProp
 
 MessageSquareCheck.displayName = 'MessageSquareCheck';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { MessageSquareCheck, MessageSquareCheck as MessageSquareCheckIcon, MessageSquareCheck as SiMessageSquareCheck };
 export default MessageSquareCheck;

@@ -15,7 +15,7 @@ const BluetoothFillDuotone = memo(
 
 BluetoothFillDuotone.displayName = 'BluetoothFillDuotone';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { BluetoothFillDuotone, BluetoothFillDuotone as BluetoothFillDuotoneIcon, BluetoothFillDuotone as SiBluetoothFillDuotone };
 export default BluetoothFillDuotone;
 export type { BluetoothFillDuotoneProps };

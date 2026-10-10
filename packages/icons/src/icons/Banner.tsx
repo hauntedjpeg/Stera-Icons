@@ -18,10 +18,10 @@ export interface BannerProps extends IconProps {
  * For smaller bundle size, import specific variants directly:
  * import { BannerRegular } from 'stera-icons/icons/BannerRegular';
  */
-const Banner = memo(forwardRef<SVGSVGElement, BannerProps>(({ 
+const Banner = memo(forwardRef<SVGSVGElement, BannerProps>(({
   weight = 'regular',
   duotone = false,
-  ...rest 
+  ...rest
 }, ref) => {
   if (weight === 'bold' && duotone) return <BannerBoldDuotone ref={ref} {...rest} />;
   if (weight === 'bold') return <BannerBold ref={ref} {...rest} />;
@@ -33,6 +33,6 @@ const Banner = memo(forwardRef<SVGSVGElement, BannerProps>(({
 
 Banner.displayName = 'Banner';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { Banner, Banner as BannerIcon, Banner as SiBanner };
 export default Banner;

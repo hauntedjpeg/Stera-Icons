@@ -14,7 +14,7 @@ const PhoneOffFill = memo(
 
 PhoneOffFill.displayName = 'PhoneOffFill';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { PhoneOffFill, PhoneOffFill as PhoneOffFillIcon, PhoneOffFill as SiPhoneOffFill };
 export default PhoneOffFill;
 export type { PhoneOffFillProps };

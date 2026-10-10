@@ -18,10 +18,10 @@ export interface PopcornProps extends IconProps {
  * For smaller bundle size, import specific variants directly:
  * import { PopcornRegular } from 'stera-icons/icons/PopcornRegular';
  */
-const Popcorn = memo(forwardRef<SVGSVGElement, PopcornProps>(({ 
+const Popcorn = memo(forwardRef<SVGSVGElement, PopcornProps>(({
   weight = 'regular',
   duotone = false,
-  ...rest 
+  ...rest
 }, ref) => {
   if (weight === 'bold' && duotone) return <PopcornBoldDuotone ref={ref} {...rest} />;
   if (weight === 'bold') return <PopcornBold ref={ref} {...rest} />;
@@ -33,6 +33,6 @@ const Popcorn = memo(forwardRef<SVGSVGElement, PopcornProps>(({
 
 Popcorn.displayName = 'Popcorn';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { Popcorn, Popcorn as PopcornIcon, Popcorn as SiPopcorn };
 export default Popcorn;

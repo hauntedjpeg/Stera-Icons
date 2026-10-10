@@ -14,7 +14,7 @@ const PencilLineBold = memo(
 
 PencilLineBold.displayName = 'PencilLineBold';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { PencilLineBold, PencilLineBold as PencilLineBoldIcon, PencilLineBold as SiPencilLineBold };
 export default PencilLineBold;
 export type { PencilLineBoldProps };

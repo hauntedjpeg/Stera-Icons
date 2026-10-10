@@ -18,10 +18,10 @@ export interface ArrowsUpDownProps extends IconProps {
  * For smaller bundle size, import specific variants directly:
  * import { ArrowsUpDownRegular } from 'stera-icons/icons/ArrowsUpDownRegular';
  */
-const ArrowsUpDown = memo(forwardRef<SVGSVGElement, ArrowsUpDownProps>(({ 
+const ArrowsUpDown = memo(forwardRef<SVGSVGElement, ArrowsUpDownProps>(({
   weight = 'regular',
   duotone = false,
-  ...rest 
+  ...rest
 }, ref) => {
   if (weight === 'bold' && duotone) return <ArrowsUpDownBoldDuotone ref={ref} {...rest} />;
   if (weight === 'bold') return <ArrowsUpDownBold ref={ref} {...rest} />;
@@ -33,6 +33,6 @@ const ArrowsUpDown = memo(forwardRef<SVGSVGElement, ArrowsUpDownProps>(({
 
 ArrowsUpDown.displayName = 'ArrowsUpDown';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { ArrowsUpDown, ArrowsUpDown as ArrowsUpDownIcon, ArrowsUpDown as SiArrowsUpDown };
 export default ArrowsUpDown;

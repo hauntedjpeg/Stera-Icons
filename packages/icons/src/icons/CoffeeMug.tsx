@@ -18,10 +18,10 @@ export interface CoffeeMugProps extends IconProps {
  * For smaller bundle size, import specific variants directly:
  * import { CoffeeMugRegular } from 'stera-icons/icons/CoffeeMugRegular';
  */
-const CoffeeMug = memo(forwardRef<SVGSVGElement, CoffeeMugProps>(({ 
+const CoffeeMug = memo(forwardRef<SVGSVGElement, CoffeeMugProps>(({
   weight = 'regular',
   duotone = false,
-  ...rest 
+  ...rest
 }, ref) => {
   if (weight === 'bold' && duotone) return <CoffeeMugBoldDuotone ref={ref} {...rest} />;
   if (weight === 'bold') return <CoffeeMugBold ref={ref} {...rest} />;
@@ -33,6 +33,6 @@ const CoffeeMug = memo(forwardRef<SVGSVGElement, CoffeeMugProps>(({
 
 CoffeeMug.displayName = 'CoffeeMug';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { CoffeeMug, CoffeeMug as CoffeeMugIcon, CoffeeMug as SiCoffeeMug };
 export default CoffeeMug;

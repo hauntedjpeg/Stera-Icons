@@ -15,7 +15,7 @@ const ImagePanoramaRegular = memo(
 
 ImagePanoramaRegular.displayName = 'ImagePanoramaRegular';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { ImagePanoramaRegular, ImagePanoramaRegular as ImagePanoramaRegularIcon, ImagePanoramaRegular as SiImagePanoramaRegular };
 export default ImagePanoramaRegular;
 export type { ImagePanoramaRegularProps };

@@ -17,7 +17,7 @@ const KunaiRegularDuotone = memo(
 
 KunaiRegularDuotone.displayName = 'KunaiRegularDuotone';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { KunaiRegularDuotone, KunaiRegularDuotone as KunaiRegularDuotoneIcon, KunaiRegularDuotone as SiKunaiRegularDuotone };
 export default KunaiRegularDuotone;
 export type { KunaiRegularDuotoneProps };

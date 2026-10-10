@@ -14,7 +14,7 @@ const ChevronInwardRegular = memo(
 
 ChevronInwardRegular.displayName = 'ChevronInwardRegular';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { ChevronInwardRegular, ChevronInwardRegular as ChevronInwardRegularIcon, ChevronInwardRegular as SiChevronInwardRegular };
 export default ChevronInwardRegular;
 export type { ChevronInwardRegularProps };

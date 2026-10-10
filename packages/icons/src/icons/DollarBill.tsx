@@ -18,10 +18,10 @@ export interface DollarBillProps extends IconProps {
  * For smaller bundle size, import specific variants directly:
  * import { DollarBillRegular } from 'stera-icons/icons/DollarBillRegular';
  */
-const DollarBill = memo(forwardRef<SVGSVGElement, DollarBillProps>(({ 
+const DollarBill = memo(forwardRef<SVGSVGElement, DollarBillProps>(({
   weight = 'regular',
   duotone = false,
-  ...rest 
+  ...rest
 }, ref) => {
   if (weight === 'bold' && duotone) return <DollarBillBoldDuotone ref={ref} {...rest} />;
   if (weight === 'bold') return <DollarBillBold ref={ref} {...rest} />;
@@ -33,6 +33,6 @@ const DollarBill = memo(forwardRef<SVGSVGElement, DollarBillProps>(({
 
 DollarBill.displayName = 'DollarBill';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { DollarBill, DollarBill as DollarBillIcon, DollarBill as SiDollarBill };
 export default DollarBill;

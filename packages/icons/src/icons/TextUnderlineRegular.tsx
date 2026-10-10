@@ -14,7 +14,7 @@ const TextUnderlineRegular = memo(
 
 TextUnderlineRegular.displayName = 'TextUnderlineRegular';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { TextUnderlineRegular, TextUnderlineRegular as TextUnderlineRegularIcon, TextUnderlineRegular as SiTextUnderlineRegular };
 export default TextUnderlineRegular;
 export type { TextUnderlineRegularProps };

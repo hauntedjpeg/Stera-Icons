@@ -14,7 +14,7 @@ const SlidersVBold = memo(
 
 SlidersVBold.displayName = 'SlidersVBold';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { SlidersVBold, SlidersVBold as SlidersVBoldIcon, SlidersVBold as SiSlidersVBold };
 export default SlidersVBold;
 export type { SlidersVBoldProps };

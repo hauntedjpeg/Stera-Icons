@@ -14,7 +14,7 @@ const CrownFill = memo(
 
 CrownFill.displayName = 'CrownFill';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { CrownFill, CrownFill as CrownFillIcon, CrownFill as SiCrownFill };
 export default CrownFill;
 export type { CrownFillProps };

@@ -14,7 +14,7 @@ const BrainCircuitRegular = memo(
 
 BrainCircuitRegular.displayName = 'BrainCircuitRegular';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { BrainCircuitRegular, BrainCircuitRegular as BrainCircuitRegularIcon, BrainCircuitRegular as SiBrainCircuitRegular };
 export default BrainCircuitRegular;
 export type { BrainCircuitRegularProps };

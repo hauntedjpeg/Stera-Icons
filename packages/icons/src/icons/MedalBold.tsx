@@ -14,7 +14,7 @@ const MedalBold = memo(
 
 MedalBold.displayName = 'MedalBold';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { MedalBold, MedalBold as MedalBoldIcon, MedalBold as SiMedalBold };
 export default MedalBold;
 export type { MedalBoldProps };

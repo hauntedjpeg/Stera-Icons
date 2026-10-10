@@ -15,7 +15,7 @@ const FortressFillDuotone = memo(
 
 FortressFillDuotone.displayName = 'FortressFillDuotone';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { FortressFillDuotone, FortressFillDuotone as FortressFillDuotoneIcon, FortressFillDuotone as SiFortressFillDuotone };
 export default FortressFillDuotone;
 export type { FortressFillDuotoneProps };

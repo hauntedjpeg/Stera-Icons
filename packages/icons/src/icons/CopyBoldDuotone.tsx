@@ -15,7 +15,7 @@ const CopyBoldDuotone = memo(
 
 CopyBoldDuotone.displayName = 'CopyBoldDuotone';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { CopyBoldDuotone, CopyBoldDuotone as CopyBoldDuotoneIcon, CopyBoldDuotone as SiCopyBoldDuotone };
 export default CopyBoldDuotone;
 export type { CopyBoldDuotoneProps };

@@ -14,7 +14,7 @@ const MoonStarFill = memo(
 
 MoonStarFill.displayName = 'MoonStarFill';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { MoonStarFill, MoonStarFill as MoonStarFillIcon, MoonStarFill as SiMoonStarFill };
 export default MoonStarFill;
 export type { MoonStarFillProps };

@@ -14,7 +14,7 @@ const PanelLeftFloatingFill = memo(
 
 PanelLeftFloatingFill.displayName = 'PanelLeftFloatingFill';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { PanelLeftFloatingFill, PanelLeftFloatingFill as PanelLeftFloatingFillIcon, PanelLeftFloatingFill as SiPanelLeftFloatingFill };
 export default PanelLeftFloatingFill;
 export type { PanelLeftFloatingFillProps };

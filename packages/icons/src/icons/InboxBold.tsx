@@ -14,7 +14,7 @@ const InboxBold = memo(
 
 InboxBold.displayName = 'InboxBold';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { InboxBold, InboxBold as InboxBoldIcon, InboxBold as SiInboxBold };
 export default InboxBold;
 export type { InboxBoldProps };

@@ -15,7 +15,7 @@ const MinimizeBoldDuotone = memo(
 
 MinimizeBoldDuotone.displayName = 'MinimizeBoldDuotone';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { MinimizeBoldDuotone, MinimizeBoldDuotone as MinimizeBoldDuotoneIcon, MinimizeBoldDuotone as SiMinimizeBoldDuotone };
 export default MinimizeBoldDuotone;
 export type { MinimizeBoldDuotoneProps };

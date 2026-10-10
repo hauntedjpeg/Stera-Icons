@@ -15,7 +15,7 @@ const WandRegularDuotone = memo(
 
 WandRegularDuotone.displayName = 'WandRegularDuotone';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { WandRegularDuotone, WandRegularDuotone as WandRegularDuotoneIcon, WandRegularDuotone as SiWandRegularDuotone };
 export default WandRegularDuotone;
 export type { WandRegularDuotoneProps };

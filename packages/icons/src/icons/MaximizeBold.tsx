@@ -14,7 +14,7 @@ const MaximizeBold = memo(
 
 MaximizeBold.displayName = 'MaximizeBold';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { MaximizeBold, MaximizeBold as MaximizeBoldIcon, MaximizeBold as SiMaximizeBold };
 export default MaximizeBold;
 export type { MaximizeBoldProps };

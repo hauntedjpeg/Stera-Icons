@@ -14,7 +14,7 @@ const RectangleFill = memo(
 
 RectangleFill.displayName = 'RectangleFill';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { RectangleFill, RectangleFill as RectangleFillIcon, RectangleFill as SiRectangleFill };
 export default RectangleFill;
 export type { RectangleFillProps };

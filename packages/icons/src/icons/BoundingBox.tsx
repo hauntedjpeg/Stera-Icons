@@ -18,10 +18,10 @@ export interface BoundingBoxProps extends IconProps {
  * For smaller bundle size, import specific variants directly:
  * import { BoundingBoxRegular } from 'stera-icons/icons/BoundingBoxRegular';
  */
-const BoundingBox = memo(forwardRef<SVGSVGElement, BoundingBoxProps>(({ 
+const BoundingBox = memo(forwardRef<SVGSVGElement, BoundingBoxProps>(({
   weight = 'regular',
   duotone = false,
-  ...rest 
+  ...rest
 }, ref) => {
   if (weight === 'bold' && duotone) return <BoundingBoxBoldDuotone ref={ref} {...rest} />;
   if (weight === 'bold') return <BoundingBoxBold ref={ref} {...rest} />;
@@ -33,6 +33,6 @@ const BoundingBox = memo(forwardRef<SVGSVGElement, BoundingBoxProps>(({
 
 BoundingBox.displayName = 'BoundingBox';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { BoundingBox, BoundingBox as BoundingBoxIcon, BoundingBox as SiBoundingBox };
 export default BoundingBox;

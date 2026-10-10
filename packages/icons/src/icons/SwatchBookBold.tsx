@@ -15,7 +15,7 @@ const SwatchBookBold = memo(
 
 SwatchBookBold.displayName = 'SwatchBookBold';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { SwatchBookBold, SwatchBookBold as SwatchBookBoldIcon, SwatchBookBold as SiSwatchBookBold };
 export default SwatchBookBold;
 export type { SwatchBookBoldProps };

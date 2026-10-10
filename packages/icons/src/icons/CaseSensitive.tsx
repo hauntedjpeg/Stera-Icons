@@ -18,10 +18,10 @@ export interface CaseSensitiveProps extends IconProps {
  * For smaller bundle size, import specific variants directly:
  * import { CaseSensitiveRegular } from 'stera-icons/icons/CaseSensitiveRegular';
  */
-const CaseSensitive = memo(forwardRef<SVGSVGElement, CaseSensitiveProps>(({ 
+const CaseSensitive = memo(forwardRef<SVGSVGElement, CaseSensitiveProps>(({
   weight = 'regular',
   duotone = false,
-  ...rest 
+  ...rest
 }, ref) => {
   if (weight === 'bold' && duotone) return <CaseSensitiveBoldDuotone ref={ref} {...rest} />;
   if (weight === 'bold') return <CaseSensitiveBold ref={ref} {...rest} />;
@@ -33,6 +33,6 @@ const CaseSensitive = memo(forwardRef<SVGSVGElement, CaseSensitiveProps>(({
 
 CaseSensitive.displayName = 'CaseSensitive';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { CaseSensitive, CaseSensitive as CaseSensitiveIcon, CaseSensitive as SiCaseSensitive };
 export default CaseSensitive;

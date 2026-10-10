@@ -14,7 +14,7 @@ const CodeSquareFill = memo(
 
 CodeSquareFill.displayName = 'CodeSquareFill';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { CodeSquareFill, CodeSquareFill as CodeSquareFillIcon, CodeSquareFill as SiCodeSquareFill };
 export default CodeSquareFill;
 export type { CodeSquareFillProps };

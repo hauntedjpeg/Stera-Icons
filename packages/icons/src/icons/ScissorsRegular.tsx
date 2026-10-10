@@ -16,7 +16,7 @@ const ScissorsRegular = memo(
 
 ScissorsRegular.displayName = 'ScissorsRegular';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { ScissorsRegular, ScissorsRegular as ScissorsRegularIcon, ScissorsRegular as SiScissorsRegular };
 export default ScissorsRegular;
 export type { ScissorsRegularProps };

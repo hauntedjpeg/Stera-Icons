@@ -15,7 +15,7 @@ const ExternalLinkFill = memo(
 
 ExternalLinkFill.displayName = 'ExternalLinkFill';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { ExternalLinkFill, ExternalLinkFill as ExternalLinkFillIcon, ExternalLinkFill as SiExternalLinkFill };
 export default ExternalLinkFill;
 export type { ExternalLinkFillProps };

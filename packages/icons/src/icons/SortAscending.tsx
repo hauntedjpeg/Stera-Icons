@@ -18,10 +18,10 @@ export interface SortAscendingProps extends IconProps {
  * For smaller bundle size, import specific variants directly:
  * import { SortAscendingRegular } from 'stera-icons/icons/SortAscendingRegular';
  */
-const SortAscending = memo(forwardRef<SVGSVGElement, SortAscendingProps>(({ 
+const SortAscending = memo(forwardRef<SVGSVGElement, SortAscendingProps>(({
   weight = 'regular',
   duotone = false,
-  ...rest 
+  ...rest
 }, ref) => {
   if (weight === 'bold' && duotone) return <SortAscendingBoldDuotone ref={ref} {...rest} />;
   if (weight === 'bold') return <SortAscendingBold ref={ref} {...rest} />;
@@ -33,6 +33,6 @@ const SortAscending = memo(forwardRef<SVGSVGElement, SortAscendingProps>(({
 
 SortAscending.displayName = 'SortAscending';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { SortAscending, SortAscending as SortAscendingIcon, SortAscending as SiSortAscending };
 export default SortAscending;

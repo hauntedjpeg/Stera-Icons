@@ -15,7 +15,7 @@ const PolarisRegularDuotone = memo(
 
 PolarisRegularDuotone.displayName = 'PolarisRegularDuotone';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { PolarisRegularDuotone, PolarisRegularDuotone as PolarisRegularDuotoneIcon, PolarisRegularDuotone as SiPolarisRegularDuotone };
 export default PolarisRegularDuotone;
 export type { PolarisRegularDuotoneProps };

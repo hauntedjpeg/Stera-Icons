@@ -15,7 +15,7 @@ const BasketFillDuotone = memo(
 
 BasketFillDuotone.displayName = 'BasketFillDuotone';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { BasketFillDuotone, BasketFillDuotone as BasketFillDuotoneIcon, BasketFillDuotone as SiBasketFillDuotone };
 export default BasketFillDuotone;
 export type { BasketFillDuotoneProps };

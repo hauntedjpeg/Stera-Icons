@@ -18,10 +18,10 @@ export interface CylinderProps extends IconProps {
  * For smaller bundle size, import specific variants directly:
  * import { CylinderRegular } from 'stera-icons/icons/CylinderRegular';
  */
-const Cylinder = memo(forwardRef<SVGSVGElement, CylinderProps>(({ 
+const Cylinder = memo(forwardRef<SVGSVGElement, CylinderProps>(({
   weight = 'regular',
   duotone = false,
-  ...rest 
+  ...rest
 }, ref) => {
   if (weight === 'bold' && duotone) return <CylinderBoldDuotone ref={ref} {...rest} />;
   if (weight === 'bold') return <CylinderBold ref={ref} {...rest} />;
@@ -33,6 +33,6 @@ const Cylinder = memo(forwardRef<SVGSVGElement, CylinderProps>(({
 
 Cylinder.displayName = 'Cylinder';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { Cylinder, Cylinder as CylinderIcon, Cylinder as SiCylinder };
 export default Cylinder;

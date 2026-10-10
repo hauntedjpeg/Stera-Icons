@@ -18,10 +18,10 @@ export interface ScissorsProps extends IconProps {
  * For smaller bundle size, import specific variants directly:
  * import { ScissorsRegular } from 'stera-icons/icons/ScissorsRegular';
  */
-const Scissors = memo(forwardRef<SVGSVGElement, ScissorsProps>(({ 
+const Scissors = memo(forwardRef<SVGSVGElement, ScissorsProps>(({
   weight = 'regular',
   duotone = false,
-  ...rest 
+  ...rest
 }, ref) => {
   if (weight === 'bold' && duotone) return <ScissorsBoldDuotone ref={ref} {...rest} />;
   if (weight === 'bold') return <ScissorsBold ref={ref} {...rest} />;
@@ -33,6 +33,6 @@ const Scissors = memo(forwardRef<SVGSVGElement, ScissorsProps>(({
 
 Scissors.displayName = 'Scissors';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { Scissors, Scissors as ScissorsIcon, Scissors as SiScissors };
 export default Scissors;

@@ -14,7 +14,7 @@ const MatchaBold = memo(
 
 MatchaBold.displayName = 'MatchaBold';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { MatchaBold, MatchaBold as MatchaBoldIcon, MatchaBold as SiMatchaBold };
 export default MatchaBold;
 export type { MatchaBoldProps };

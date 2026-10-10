@@ -18,10 +18,10 @@ export interface CoolSProps extends IconProps {
  * For smaller bundle size, import specific variants directly:
  * import { CoolSRegular } from 'stera-icons/icons/CoolSRegular';
  */
-const CoolS = memo(forwardRef<SVGSVGElement, CoolSProps>(({ 
+const CoolS = memo(forwardRef<SVGSVGElement, CoolSProps>(({
   weight = 'regular',
   duotone = false,
-  ...rest 
+  ...rest
 }, ref) => {
   if (weight === 'bold' && duotone) return <CoolSBoldDuotone ref={ref} {...rest} />;
   if (weight === 'bold') return <CoolSBold ref={ref} {...rest} />;
@@ -33,6 +33,6 @@ const CoolS = memo(forwardRef<SVGSVGElement, CoolSProps>(({
 
 CoolS.displayName = 'CoolS';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { CoolS, CoolS as CoolSIcon, CoolS as SiCoolS };
 export default CoolS;

@@ -18,10 +18,10 @@ export interface ImageSquareProps extends IconProps {
  * For smaller bundle size, import specific variants directly:
  * import { ImageSquareRegular } from 'stera-icons/icons/ImageSquareRegular';
  */
-const ImageSquare = memo(forwardRef<SVGSVGElement, ImageSquareProps>(({ 
+const ImageSquare = memo(forwardRef<SVGSVGElement, ImageSquareProps>(({
   weight = 'regular',
   duotone = false,
-  ...rest 
+  ...rest
 }, ref) => {
   if (weight === 'bold' && duotone) return <ImageSquareBoldDuotone ref={ref} {...rest} />;
   if (weight === 'bold') return <ImageSquareBold ref={ref} {...rest} />;
@@ -33,6 +33,6 @@ const ImageSquare = memo(forwardRef<SVGSVGElement, ImageSquareProps>(({
 
 ImageSquare.displayName = 'ImageSquare';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { ImageSquare, ImageSquare as ImageSquareIcon, ImageSquare as SiImageSquare };
 export default ImageSquare;

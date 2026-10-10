@@ -14,7 +14,7 @@ const ThumbsUpBold = memo(
 
 ThumbsUpBold.displayName = 'ThumbsUpBold';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { ThumbsUpBold, ThumbsUpBold as ThumbsUpBoldIcon, ThumbsUpBold as SiThumbsUpBold };
 export default ThumbsUpBold;
 export type { ThumbsUpBoldProps };

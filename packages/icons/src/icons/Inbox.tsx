@@ -18,10 +18,10 @@ export interface InboxProps extends IconProps {
  * For smaller bundle size, import specific variants directly:
  * import { InboxRegular } from 'stera-icons/icons/InboxRegular';
  */
-const Inbox = memo(forwardRef<SVGSVGElement, InboxProps>(({ 
+const Inbox = memo(forwardRef<SVGSVGElement, InboxProps>(({
   weight = 'regular',
   duotone = false,
-  ...rest 
+  ...rest
 }, ref) => {
   if (weight === 'bold' && duotone) return <InboxBoldDuotone ref={ref} {...rest} />;
   if (weight === 'bold') return <InboxBold ref={ref} {...rest} />;
@@ -33,6 +33,6 @@ const Inbox = memo(forwardRef<SVGSVGElement, InboxProps>(({
 
 Inbox.displayName = 'Inbox';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { Inbox, Inbox as InboxIcon, Inbox as SiInbox };
 export default Inbox;

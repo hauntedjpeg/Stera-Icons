@@ -15,7 +15,7 @@ const HashRegularDuotone = memo(
 
 HashRegularDuotone.displayName = 'HashRegularDuotone';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { HashRegularDuotone, HashRegularDuotone as HashRegularDuotoneIcon, HashRegularDuotone as SiHashRegularDuotone };
 export default HashRegularDuotone;
 export type { HashRegularDuotoneProps };

@@ -18,10 +18,10 @@ export interface PlaylistProps extends IconProps {
  * For smaller bundle size, import specific variants directly:
  * import { PlaylistRegular } from 'stera-icons/icons/PlaylistRegular';
  */
-const Playlist = memo(forwardRef<SVGSVGElement, PlaylistProps>(({ 
+const Playlist = memo(forwardRef<SVGSVGElement, PlaylistProps>(({
   weight = 'regular',
   duotone = false,
-  ...rest 
+  ...rest
 }, ref) => {
   if (weight === 'bold' && duotone) return <PlaylistBoldDuotone ref={ref} {...rest} />;
   if (weight === 'bold') return <PlaylistBold ref={ref} {...rest} />;
@@ -33,6 +33,6 @@ const Playlist = memo(forwardRef<SVGSVGElement, PlaylistProps>(({
 
 Playlist.displayName = 'Playlist';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { Playlist, Playlist as PlaylistIcon, Playlist as SiPlaylist };
 export default Playlist;

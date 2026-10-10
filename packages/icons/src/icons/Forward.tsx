@@ -18,10 +18,10 @@ export interface ForwardProps extends IconProps {
  * For smaller bundle size, import specific variants directly:
  * import { ForwardRegular } from 'stera-icons/icons/ForwardRegular';
  */
-const Forward = memo(forwardRef<SVGSVGElement, ForwardProps>(({ 
+const Forward = memo(forwardRef<SVGSVGElement, ForwardProps>(({
   weight = 'regular',
   duotone = false,
-  ...rest 
+  ...rest
 }, ref) => {
   if (weight === 'bold' && duotone) return <ForwardBoldDuotone ref={ref} {...rest} />;
   if (weight === 'bold') return <ForwardBold ref={ref} {...rest} />;
@@ -33,6 +33,6 @@ const Forward = memo(forwardRef<SVGSVGElement, ForwardProps>(({
 
 Forward.displayName = 'Forward';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { Forward, Forward as ForwardIcon, Forward as SiForward };
 export default Forward;

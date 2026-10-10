@@ -14,7 +14,7 @@ const SignalAltHighBold = memo(
 
 SignalAltHighBold.displayName = 'SignalAltHighBold';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { SignalAltHighBold, SignalAltHighBold as SignalAltHighBoldIcon, SignalAltHighBold as SiSignalAltHighBold };
 export default SignalAltHighBold;
 export type { SignalAltHighBoldProps };

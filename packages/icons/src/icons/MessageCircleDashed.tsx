@@ -18,10 +18,10 @@ export interface MessageCircleDashedProps extends IconProps {
  * For smaller bundle size, import specific variants directly:
  * import { MessageCircleDashedRegular } from 'stera-icons/icons/MessageCircleDashedRegular';
  */
-const MessageCircleDashed = memo(forwardRef<SVGSVGElement, MessageCircleDashedProps>(({ 
+const MessageCircleDashed = memo(forwardRef<SVGSVGElement, MessageCircleDashedProps>(({
   weight = 'regular',
   duotone = false,
-  ...rest 
+  ...rest
 }, ref) => {
   if (weight === 'bold' && duotone) return <MessageCircleDashedBoldDuotone ref={ref} {...rest} />;
   if (weight === 'bold') return <MessageCircleDashedBold ref={ref} {...rest} />;
@@ -33,6 +33,6 @@ const MessageCircleDashed = memo(forwardRef<SVGSVGElement, MessageCircleDashedPr
 
 MessageCircleDashed.displayName = 'MessageCircleDashed';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { MessageCircleDashed, MessageCircleDashed as MessageCircleDashedIcon, MessageCircleDashed as SiMessageCircleDashed };
 export default MessageCircleDashed;

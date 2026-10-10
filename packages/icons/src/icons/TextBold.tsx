@@ -14,7 +14,7 @@ const TextBold = memo(
 
 TextBold.displayName = 'TextBold';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { TextBold, TextBold as TextBoldIcon, TextBold as SiTextBold };
 export default TextBold;
 export type { TextBoldProps };

@@ -14,7 +14,7 @@ const CircleNotchBold = memo(
 
 CircleNotchBold.displayName = 'CircleNotchBold';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { CircleNotchBold, CircleNotchBold as CircleNotchBoldIcon, CircleNotchBold as SiCircleNotchBold };
 export default CircleNotchBold;
 export type { CircleNotchBoldProps };

@@ -15,7 +15,7 @@ const ScrollTextBold = memo(
 
 ScrollTextBold.displayName = 'ScrollTextBold';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { ScrollTextBold, ScrollTextBold as ScrollTextBoldIcon, ScrollTextBold as SiScrollTextBold };
 export default ScrollTextBold;
 export type { ScrollTextBoldProps };

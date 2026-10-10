@@ -16,7 +16,7 @@ const BankFillDuotone = memo(
 
 BankFillDuotone.displayName = 'BankFillDuotone';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { BankFillDuotone, BankFillDuotone as BankFillDuotoneIcon, BankFillDuotone as SiBankFillDuotone };
 export default BankFillDuotone;
 export type { BankFillDuotoneProps };

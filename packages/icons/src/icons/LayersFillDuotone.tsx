@@ -15,7 +15,7 @@ const LayersFillDuotone = memo(
 
 LayersFillDuotone.displayName = 'LayersFillDuotone';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { LayersFillDuotone, LayersFillDuotone as LayersFillDuotoneIcon, LayersFillDuotone as SiLayersFillDuotone };
 export default LayersFillDuotone;
 export type { LayersFillDuotoneProps };

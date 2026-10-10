@@ -18,10 +18,10 @@ export interface PillProps extends IconProps {
  * For smaller bundle size, import specific variants directly:
  * import { PillRegular } from 'stera-icons/icons/PillRegular';
  */
-const Pill = memo(forwardRef<SVGSVGElement, PillProps>(({ 
+const Pill = memo(forwardRef<SVGSVGElement, PillProps>(({
   weight = 'regular',
   duotone = false,
-  ...rest 
+  ...rest
 }, ref) => {
   if (weight === 'bold' && duotone) return <PillBoldDuotone ref={ref} {...rest} />;
   if (weight === 'bold') return <PillBold ref={ref} {...rest} />;
@@ -33,6 +33,6 @@ const Pill = memo(forwardRef<SVGSVGElement, PillProps>(({
 
 Pill.displayName = 'Pill';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { Pill, Pill as PillIcon, Pill as SiPill };
 export default Pill;

@@ -18,10 +18,10 @@ export interface AudioBarsSquareProps extends IconProps {
  * For smaller bundle size, import specific variants directly:
  * import { AudioBarsSquareRegular } from 'stera-icons/icons/AudioBarsSquareRegular';
  */
-const AudioBarsSquare = memo(forwardRef<SVGSVGElement, AudioBarsSquareProps>(({ 
+const AudioBarsSquare = memo(forwardRef<SVGSVGElement, AudioBarsSquareProps>(({
   weight = 'regular',
   duotone = false,
-  ...rest 
+  ...rest
 }, ref) => {
   if (weight === 'bold' && duotone) return <AudioBarsSquareBoldDuotone ref={ref} {...rest} />;
   if (weight === 'bold') return <AudioBarsSquareBold ref={ref} {...rest} />;
@@ -33,6 +33,6 @@ const AudioBarsSquare = memo(forwardRef<SVGSVGElement, AudioBarsSquareProps>(({
 
 AudioBarsSquare.displayName = 'AudioBarsSquare';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { AudioBarsSquare, AudioBarsSquare as AudioBarsSquareIcon, AudioBarsSquare as SiAudioBarsSquare };
 export default AudioBarsSquare;

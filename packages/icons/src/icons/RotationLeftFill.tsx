@@ -14,7 +14,7 @@ const RotationLeftFill = memo(
 
 RotationLeftFill.displayName = 'RotationLeftFill';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { RotationLeftFill, RotationLeftFill as RotationLeftFillIcon, RotationLeftFill as SiRotationLeftFill };
 export default RotationLeftFill;
 export type { RotationLeftFillProps };

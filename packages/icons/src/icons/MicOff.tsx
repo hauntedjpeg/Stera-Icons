@@ -18,10 +18,10 @@ export interface MicOffProps extends IconProps {
  * For smaller bundle size, import specific variants directly:
  * import { MicOffRegular } from 'stera-icons/icons/MicOffRegular';
  */
-const MicOff = memo(forwardRef<SVGSVGElement, MicOffProps>(({ 
+const MicOff = memo(forwardRef<SVGSVGElement, MicOffProps>(({
   weight = 'regular',
   duotone = false,
-  ...rest 
+  ...rest
 }, ref) => {
   if (weight === 'bold' && duotone) return <MicOffBoldDuotone ref={ref} {...rest} />;
   if (weight === 'bold') return <MicOffBold ref={ref} {...rest} />;
@@ -33,6 +33,6 @@ const MicOff = memo(forwardRef<SVGSVGElement, MicOffProps>(({
 
 MicOff.displayName = 'MicOff';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { MicOff, MicOff as MicOffIcon, MicOff as SiMicOff };
 export default MicOff;

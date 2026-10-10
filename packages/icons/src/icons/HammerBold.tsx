@@ -14,7 +14,7 @@ const HammerBold = memo(
 
 HammerBold.displayName = 'HammerBold';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { HammerBold, HammerBold as HammerBoldIcon, HammerBold as SiHammerBold };
 export default HammerBold;
 export type { HammerBoldProps };

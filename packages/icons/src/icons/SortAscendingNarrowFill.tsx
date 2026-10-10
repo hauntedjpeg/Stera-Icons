@@ -15,7 +15,7 @@ const SortAscendingNarrowFill = memo(
 
 SortAscendingNarrowFill.displayName = 'SortAscendingNarrowFill';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { SortAscendingNarrowFill, SortAscendingNarrowFill as SortAscendingNarrowFillIcon, SortAscendingNarrowFill as SiSortAscendingNarrowFill };
 export default SortAscendingNarrowFill;
 export type { SortAscendingNarrowFillProps };

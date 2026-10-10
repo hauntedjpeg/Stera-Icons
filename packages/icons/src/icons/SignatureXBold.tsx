@@ -15,7 +15,7 @@ const SignatureXBold = memo(
 
 SignatureXBold.displayName = 'SignatureXBold';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { SignatureXBold, SignatureXBold as SignatureXBoldIcon, SignatureXBold as SiSignatureXBold };
 export default SignatureXBold;
 export type { SignatureXBoldProps };

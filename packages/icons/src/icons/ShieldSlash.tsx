@@ -18,10 +18,10 @@ export interface ShieldSlashProps extends IconProps {
  * For smaller bundle size, import specific variants directly:
  * import { ShieldSlashRegular } from 'stera-icons/icons/ShieldSlashRegular';
  */
-const ShieldSlash = memo(forwardRef<SVGSVGElement, ShieldSlashProps>(({ 
+const ShieldSlash = memo(forwardRef<SVGSVGElement, ShieldSlashProps>(({
   weight = 'regular',
   duotone = false,
-  ...rest 
+  ...rest
 }, ref) => {
   if (weight === 'bold' && duotone) return <ShieldSlashBoldDuotone ref={ref} {...rest} />;
   if (weight === 'bold') return <ShieldSlashBold ref={ref} {...rest} />;
@@ -33,6 +33,6 @@ const ShieldSlash = memo(forwardRef<SVGSVGElement, ShieldSlashProps>(({
 
 ShieldSlash.displayName = 'ShieldSlash';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { ShieldSlash, ShieldSlash as ShieldSlashIcon, ShieldSlash as SiShieldSlash };
 export default ShieldSlash;

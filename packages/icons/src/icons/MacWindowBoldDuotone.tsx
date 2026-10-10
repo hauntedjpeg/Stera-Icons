@@ -15,7 +15,7 @@ const MacWindowBoldDuotone = memo(
 
 MacWindowBoldDuotone.displayName = 'MacWindowBoldDuotone';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { MacWindowBoldDuotone, MacWindowBoldDuotone as MacWindowBoldDuotoneIcon, MacWindowBoldDuotone as SiMacWindowBoldDuotone };
 export default MacWindowBoldDuotone;
 export type { MacWindowBoldDuotoneProps };

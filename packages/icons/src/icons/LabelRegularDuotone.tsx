@@ -15,7 +15,7 @@ const LabelRegularDuotone = memo(
 
 LabelRegularDuotone.displayName = 'LabelRegularDuotone';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { LabelRegularDuotone, LabelRegularDuotone as LabelRegularDuotoneIcon, LabelRegularDuotone as SiLabelRegularDuotone };
 export default LabelRegularDuotone;
 export type { LabelRegularDuotoneProps };

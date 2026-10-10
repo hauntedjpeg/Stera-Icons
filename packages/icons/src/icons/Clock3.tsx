@@ -18,10 +18,10 @@ export interface Clock3Props extends IconProps {
  * For smaller bundle size, import specific variants directly:
  * import { Clock3Regular } from 'stera-icons/icons/Clock3Regular';
  */
-const Clock3 = memo(forwardRef<SVGSVGElement, Clock3Props>(({ 
+const Clock3 = memo(forwardRef<SVGSVGElement, Clock3Props>(({
   weight = 'regular',
   duotone = false,
-  ...rest 
+  ...rest
 }, ref) => {
   if (weight === 'bold' && duotone) return <Clock3BoldDuotone ref={ref} {...rest} />;
   if (weight === 'bold') return <Clock3Bold ref={ref} {...rest} />;
@@ -33,6 +33,6 @@ const Clock3 = memo(forwardRef<SVGSVGElement, Clock3Props>(({
 
 Clock3.displayName = 'Clock3';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { Clock3, Clock3 as Clock3Icon, Clock3 as SiClock3 };
 export default Clock3;

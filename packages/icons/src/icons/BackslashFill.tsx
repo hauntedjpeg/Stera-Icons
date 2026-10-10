@@ -14,7 +14,7 @@ const BackslashFill = memo(
 
 BackslashFill.displayName = 'BackslashFill';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { BackslashFill, BackslashFill as BackslashFillIcon, BackslashFill as SiBackslashFill };
 export default BackslashFill;
 export type { BackslashFillProps };

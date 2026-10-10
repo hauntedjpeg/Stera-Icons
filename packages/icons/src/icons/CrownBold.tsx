@@ -14,7 +14,7 @@ const CrownBold = memo(
 
 CrownBold.displayName = 'CrownBold';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { CrownBold, CrownBold as CrownBoldIcon, CrownBold as SiCrownBold };
 export default CrownBold;
 export type { CrownBoldProps };

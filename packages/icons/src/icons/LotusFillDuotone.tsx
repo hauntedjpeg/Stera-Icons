@@ -15,7 +15,7 @@ const LotusFillDuotone = memo(
 
 LotusFillDuotone.displayName = 'LotusFillDuotone';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { LotusFillDuotone, LotusFillDuotone as LotusFillDuotoneIcon, LotusFillDuotone as SiLotusFillDuotone };
 export default LotusFillDuotone;
 export type { LotusFillDuotoneProps };

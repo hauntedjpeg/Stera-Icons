@@ -15,7 +15,7 @@ const ClipboardFill = memo(
 
 ClipboardFill.displayName = 'ClipboardFill';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { ClipboardFill, ClipboardFill as ClipboardFillIcon, ClipboardFill as SiClipboardFill };
 export default ClipboardFill;
 export type { ClipboardFillProps };

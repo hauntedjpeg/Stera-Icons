@@ -15,7 +15,7 @@ const MailBadgeRegularDuotone = memo(
 
 MailBadgeRegularDuotone.displayName = 'MailBadgeRegularDuotone';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { MailBadgeRegularDuotone, MailBadgeRegularDuotone as MailBadgeRegularDuotoneIcon, MailBadgeRegularDuotone as SiMailBadgeRegularDuotone };
 export default MailBadgeRegularDuotone;
 export type { MailBadgeRegularDuotoneProps };

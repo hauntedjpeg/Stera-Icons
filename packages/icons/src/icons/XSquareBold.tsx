@@ -15,7 +15,7 @@ const XSquareBold = memo(
 
 XSquareBold.displayName = 'XSquareBold';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { XSquareBold, XSquareBold as XSquareBoldIcon, XSquareBold as SiXSquareBold };
 export default XSquareBold;
 export type { XSquareBoldProps };

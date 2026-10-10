@@ -18,10 +18,10 @@ export interface AlignHorizontalCenterProps extends IconProps {
  * For smaller bundle size, import specific variants directly:
  * import { AlignHorizontalCenterRegular } from 'stera-icons/icons/AlignHorizontalCenterRegular';
  */
-const AlignHorizontalCenter = memo(forwardRef<SVGSVGElement, AlignHorizontalCenterProps>(({ 
+const AlignHorizontalCenter = memo(forwardRef<SVGSVGElement, AlignHorizontalCenterProps>(({
   weight = 'regular',
   duotone = false,
-  ...rest 
+  ...rest
 }, ref) => {
   if (weight === 'bold' && duotone) return <AlignHorizontalCenterBoldDuotone ref={ref} {...rest} />;
   if (weight === 'bold') return <AlignHorizontalCenterBold ref={ref} {...rest} />;
@@ -33,6 +33,6 @@ const AlignHorizontalCenter = memo(forwardRef<SVGSVGElement, AlignHorizontalCent
 
 AlignHorizontalCenter.displayName = 'AlignHorizontalCenter';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { AlignHorizontalCenter, AlignHorizontalCenter as AlignHorizontalCenterIcon, AlignHorizontalCenter as SiAlignHorizontalCenter };
 export default AlignHorizontalCenter;

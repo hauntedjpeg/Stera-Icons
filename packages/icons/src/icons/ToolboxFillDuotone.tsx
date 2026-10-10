@@ -15,7 +15,7 @@ const ToolboxFillDuotone = memo(
 
 ToolboxFillDuotone.displayName = 'ToolboxFillDuotone';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { ToolboxFillDuotone, ToolboxFillDuotone as ToolboxFillDuotoneIcon, ToolboxFillDuotone as SiToolboxFillDuotone };
 export default ToolboxFillDuotone;
 export type { ToolboxFillDuotoneProps };

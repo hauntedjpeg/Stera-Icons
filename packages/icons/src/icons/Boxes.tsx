@@ -18,10 +18,10 @@ export interface BoxesProps extends IconProps {
  * For smaller bundle size, import specific variants directly:
  * import { BoxesRegular } from 'stera-icons/icons/BoxesRegular';
  */
-const Boxes = memo(forwardRef<SVGSVGElement, BoxesProps>(({ 
+const Boxes = memo(forwardRef<SVGSVGElement, BoxesProps>(({
   weight = 'regular',
   duotone = false,
-  ...rest 
+  ...rest
 }, ref) => {
   if (weight === 'bold' && duotone) return <BoxesBoldDuotone ref={ref} {...rest} />;
   if (weight === 'bold') return <BoxesBold ref={ref} {...rest} />;
@@ -33,6 +33,6 @@ const Boxes = memo(forwardRef<SVGSVGElement, BoxesProps>(({
 
 Boxes.displayName = 'Boxes';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { Boxes, Boxes as BoxesIcon, Boxes as SiBoxes };
 export default Boxes;

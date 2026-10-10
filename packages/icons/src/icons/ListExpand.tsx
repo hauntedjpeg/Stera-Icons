@@ -18,10 +18,10 @@ export interface ListExpandProps extends IconProps {
  * For smaller bundle size, import specific variants directly:
  * import { ListExpandRegular } from 'stera-icons/icons/ListExpandRegular';
  */
-const ListExpand = memo(forwardRef<SVGSVGElement, ListExpandProps>(({ 
+const ListExpand = memo(forwardRef<SVGSVGElement, ListExpandProps>(({
   weight = 'regular',
   duotone = false,
-  ...rest 
+  ...rest
 }, ref) => {
   if (weight === 'bold' && duotone) return <ListExpandBoldDuotone ref={ref} {...rest} />;
   if (weight === 'bold') return <ListExpandBold ref={ref} {...rest} />;
@@ -33,6 +33,6 @@ const ListExpand = memo(forwardRef<SVGSVGElement, ListExpandProps>(({
 
 ListExpand.displayName = 'ListExpand';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { ListExpand, ListExpand as ListExpandIcon, ListExpand as SiListExpand };
 export default ListExpand;

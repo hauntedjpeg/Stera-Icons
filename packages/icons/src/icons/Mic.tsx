@@ -18,10 +18,10 @@ export interface MicProps extends IconProps {
  * For smaller bundle size, import specific variants directly:
  * import { MicRegular } from 'stera-icons/icons/MicRegular';
  */
-const Mic = memo(forwardRef<SVGSVGElement, MicProps>(({ 
+const Mic = memo(forwardRef<SVGSVGElement, MicProps>(({
   weight = 'regular',
   duotone = false,
-  ...rest 
+  ...rest
 }, ref) => {
   if (weight === 'bold' && duotone) return <MicBoldDuotone ref={ref} {...rest} />;
   if (weight === 'bold') return <MicBold ref={ref} {...rest} />;
@@ -33,6 +33,6 @@ const Mic = memo(forwardRef<SVGSVGElement, MicProps>(({
 
 Mic.displayName = 'Mic';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { Mic, Mic as MicIcon, Mic as SiMic };
 export default Mic;

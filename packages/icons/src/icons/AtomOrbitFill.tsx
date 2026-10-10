@@ -14,7 +14,7 @@ const AtomOrbitFill = memo(
 
 AtomOrbitFill.displayName = 'AtomOrbitFill';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { AtomOrbitFill, AtomOrbitFill as AtomOrbitFillIcon, AtomOrbitFill as SiAtomOrbitFill };
 export default AtomOrbitFill;
 export type { AtomOrbitFillProps };

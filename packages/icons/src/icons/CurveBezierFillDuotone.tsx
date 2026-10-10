@@ -15,7 +15,7 @@ const CurveBezierFillDuotone = memo(
 
 CurveBezierFillDuotone.displayName = 'CurveBezierFillDuotone';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { CurveBezierFillDuotone, CurveBezierFillDuotone as CurveBezierFillDuotoneIcon, CurveBezierFillDuotone as SiCurveBezierFillDuotone };
 export default CurveBezierFillDuotone;
 export type { CurveBezierFillDuotoneProps };

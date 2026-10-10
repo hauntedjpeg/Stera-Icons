@@ -18,10 +18,10 @@ export interface MinusProps extends IconProps {
  * For smaller bundle size, import specific variants directly:
  * import { MinusRegular } from 'stera-icons/icons/MinusRegular';
  */
-const Minus = memo(forwardRef<SVGSVGElement, MinusProps>(({ 
+const Minus = memo(forwardRef<SVGSVGElement, MinusProps>(({
   weight = 'regular',
   duotone = false,
-  ...rest 
+  ...rest
 }, ref) => {
   if (weight === 'bold' && duotone) return <MinusBoldDuotone ref={ref} {...rest} />;
   if (weight === 'bold') return <MinusBold ref={ref} {...rest} />;
@@ -33,6 +33,6 @@ const Minus = memo(forwardRef<SVGSVGElement, MinusProps>(({
 
 Minus.displayName = 'Minus';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { Minus, Minus as MinusIcon, Minus as SiMinus };
 export default Minus;

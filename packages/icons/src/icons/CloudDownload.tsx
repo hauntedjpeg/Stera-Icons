@@ -18,10 +18,10 @@ export interface CloudDownloadProps extends IconProps {
  * For smaller bundle size, import specific variants directly:
  * import { CloudDownloadRegular } from 'stera-icons/icons/CloudDownloadRegular';
  */
-const CloudDownload = memo(forwardRef<SVGSVGElement, CloudDownloadProps>(({ 
+const CloudDownload = memo(forwardRef<SVGSVGElement, CloudDownloadProps>(({
   weight = 'regular',
   duotone = false,
-  ...rest 
+  ...rest
 }, ref) => {
   if (weight === 'bold' && duotone) return <CloudDownloadBoldDuotone ref={ref} {...rest} />;
   if (weight === 'bold') return <CloudDownloadBold ref={ref} {...rest} />;
@@ -33,6 +33,6 @@ const CloudDownload = memo(forwardRef<SVGSVGElement, CloudDownloadProps>(({
 
 CloudDownload.displayName = 'CloudDownload';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { CloudDownload, CloudDownload as CloudDownloadIcon, CloudDownload as SiCloudDownload };
 export default CloudDownload;

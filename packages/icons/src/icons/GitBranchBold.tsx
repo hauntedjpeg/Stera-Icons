@@ -14,7 +14,7 @@ const GitBranchBold = memo(
 
 GitBranchBold.displayName = 'GitBranchBold';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { GitBranchBold, GitBranchBold as GitBranchBoldIcon, GitBranchBold as SiGitBranchBold };
 export default GitBranchBold;
 export type { GitBranchBoldProps };

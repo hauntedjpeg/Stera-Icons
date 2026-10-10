@@ -15,7 +15,7 @@ const PanelBottomFloatingRegular = memo(
 
 PanelBottomFloatingRegular.displayName = 'PanelBottomFloatingRegular';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { PanelBottomFloatingRegular, PanelBottomFloatingRegular as PanelBottomFloatingRegularIcon, PanelBottomFloatingRegular as SiPanelBottomFloatingRegular };
 export default PanelBottomFloatingRegular;
 export type { PanelBottomFloatingRegularProps };

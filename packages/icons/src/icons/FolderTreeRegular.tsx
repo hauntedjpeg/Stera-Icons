@@ -16,7 +16,7 @@ const FolderTreeRegular = memo(
 
 FolderTreeRegular.displayName = 'FolderTreeRegular';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { FolderTreeRegular, FolderTreeRegular as FolderTreeRegularIcon, FolderTreeRegular as SiFolderTreeRegular };
 export default FolderTreeRegular;
 export type { FolderTreeRegularProps };

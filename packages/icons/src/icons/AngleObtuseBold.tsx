@@ -14,7 +14,7 @@ const AngleObtuseBold = memo(
 
 AngleObtuseBold.displayName = 'AngleObtuseBold';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { AngleObtuseBold, AngleObtuseBold as AngleObtuseBoldIcon, AngleObtuseBold as SiAngleObtuseBold };
 export default AngleObtuseBold;
 export type { AngleObtuseBoldProps };

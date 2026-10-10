@@ -18,10 +18,10 @@ export interface WifiProps extends IconProps {
  * For smaller bundle size, import specific variants directly:
  * import { WifiRegular } from 'stera-icons/icons/WifiRegular';
  */
-const Wifi = memo(forwardRef<SVGSVGElement, WifiProps>(({ 
+const Wifi = memo(forwardRef<SVGSVGElement, WifiProps>(({
   weight = 'regular',
   duotone = false,
-  ...rest 
+  ...rest
 }, ref) => {
   if (weight === 'bold' && duotone) return <WifiBoldDuotone ref={ref} {...rest} />;
   if (weight === 'bold') return <WifiBold ref={ref} {...rest} />;
@@ -33,6 +33,6 @@ const Wifi = memo(forwardRef<SVGSVGElement, WifiProps>(({
 
 Wifi.displayName = 'Wifi';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { Wifi, Wifi as WifiIcon, Wifi as SiWifi };
 export default Wifi;

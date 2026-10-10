@@ -14,7 +14,7 @@ const BottleFill = memo(
 
 BottleFill.displayName = 'BottleFill';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { BottleFill, BottleFill as BottleFillIcon, BottleFill as SiBottleFill };
 export default BottleFill;
 export type { BottleFillProps };

@@ -18,10 +18,10 @@ export interface ScanCameraProps extends IconProps {
  * For smaller bundle size, import specific variants directly:
  * import { ScanCameraRegular } from 'stera-icons/icons/ScanCameraRegular';
  */
-const ScanCamera = memo(forwardRef<SVGSVGElement, ScanCameraProps>(({ 
+const ScanCamera = memo(forwardRef<SVGSVGElement, ScanCameraProps>(({
   weight = 'regular',
   duotone = false,
-  ...rest 
+  ...rest
 }, ref) => {
   if (weight === 'bold' && duotone) return <ScanCameraBoldDuotone ref={ref} {...rest} />;
   if (weight === 'bold') return <ScanCameraBold ref={ref} {...rest} />;
@@ -33,6 +33,6 @@ const ScanCamera = memo(forwardRef<SVGSVGElement, ScanCameraProps>(({
 
 ScanCamera.displayName = 'ScanCamera';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { ScanCamera, ScanCamera as ScanCameraIcon, ScanCamera as SiScanCamera };
 export default ScanCamera;

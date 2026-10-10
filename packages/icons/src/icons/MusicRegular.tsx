@@ -14,7 +14,7 @@ const MusicRegular = memo(
 
 MusicRegular.displayName = 'MusicRegular';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { MusicRegular, MusicRegular as MusicRegularIcon, MusicRegular as SiMusicRegular };
 export default MusicRegular;
 export type { MusicRegularProps };

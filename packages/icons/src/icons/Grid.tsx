@@ -18,10 +18,10 @@ export interface GridProps extends IconProps {
  * For smaller bundle size, import specific variants directly:
  * import { GridRegular } from 'stera-icons/icons/GridRegular';
  */
-const Grid = memo(forwardRef<SVGSVGElement, GridProps>(({ 
+const Grid = memo(forwardRef<SVGSVGElement, GridProps>(({
   weight = 'regular',
   duotone = false,
-  ...rest 
+  ...rest
 }, ref) => {
   if (weight === 'bold' && duotone) return <GridBoldDuotone ref={ref} {...rest} />;
   if (weight === 'bold') return <GridBold ref={ref} {...rest} />;
@@ -33,6 +33,6 @@ const Grid = memo(forwardRef<SVGSVGElement, GridProps>(({
 
 Grid.displayName = 'Grid';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { Grid, Grid as GridIcon, Grid as SiGrid };
 export default Grid;

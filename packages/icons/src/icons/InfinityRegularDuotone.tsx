@@ -15,7 +15,7 @@ const InfinityRegularDuotone = memo(
 
 InfinityRegularDuotone.displayName = 'InfinityRegularDuotone';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { InfinityRegularDuotone, InfinityRegularDuotone as InfinityRegularDuotoneIcon, InfinityRegularDuotone as SiInfinityRegularDuotone };
 export default InfinityRegularDuotone;
 export type { InfinityRegularDuotoneProps };

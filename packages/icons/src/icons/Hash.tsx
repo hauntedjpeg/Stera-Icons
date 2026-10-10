@@ -18,10 +18,10 @@ export interface HashProps extends IconProps {
  * For smaller bundle size, import specific variants directly:
  * import { HashRegular } from 'stera-icons/icons/HashRegular';
  */
-const Hash = memo(forwardRef<SVGSVGElement, HashProps>(({ 
+const Hash = memo(forwardRef<SVGSVGElement, HashProps>(({
   weight = 'regular',
   duotone = false,
-  ...rest 
+  ...rest
 }, ref) => {
   if (weight === 'bold' && duotone) return <HashBoldDuotone ref={ref} {...rest} />;
   if (weight === 'bold') return <HashBold ref={ref} {...rest} />;
@@ -33,6 +33,6 @@ const Hash = memo(forwardRef<SVGSVGElement, HashProps>(({
 
 Hash.displayName = 'Hash';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { Hash, Hash as HashIcon, Hash as SiHash };
 export default Hash;

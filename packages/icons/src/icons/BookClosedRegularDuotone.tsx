@@ -15,7 +15,7 @@ const BookClosedRegularDuotone = memo(
 
 BookClosedRegularDuotone.displayName = 'BookClosedRegularDuotone';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { BookClosedRegularDuotone, BookClosedRegularDuotone as BookClosedRegularDuotoneIcon, BookClosedRegularDuotone as SiBookClosedRegularDuotone };
 export default BookClosedRegularDuotone;
 export type { BookClosedRegularDuotoneProps };

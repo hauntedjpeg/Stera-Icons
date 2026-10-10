@@ -15,7 +15,7 @@ const CalendarBlankRegularDuotone = memo(
 
 CalendarBlankRegularDuotone.displayName = 'CalendarBlankRegularDuotone';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { CalendarBlankRegularDuotone, CalendarBlankRegularDuotone as CalendarBlankRegularDuotoneIcon, CalendarBlankRegularDuotone as SiCalendarBlankRegularDuotone };
 export default CalendarBlankRegularDuotone;
 export type { CalendarBlankRegularDuotoneProps };

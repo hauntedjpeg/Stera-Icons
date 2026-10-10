@@ -18,10 +18,10 @@ export interface LayoutListProps extends IconProps {
  * For smaller bundle size, import specific variants directly:
  * import { LayoutListRegular } from 'stera-icons/icons/LayoutListRegular';
  */
-const LayoutList = memo(forwardRef<SVGSVGElement, LayoutListProps>(({ 
+const LayoutList = memo(forwardRef<SVGSVGElement, LayoutListProps>(({
   weight = 'regular',
   duotone = false,
-  ...rest 
+  ...rest
 }, ref) => {
   if (weight === 'bold' && duotone) return <LayoutListBoldDuotone ref={ref} {...rest} />;
   if (weight === 'bold') return <LayoutListBold ref={ref} {...rest} />;
@@ -33,6 +33,6 @@ const LayoutList = memo(forwardRef<SVGSVGElement, LayoutListProps>(({
 
 LayoutList.displayName = 'LayoutList';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { LayoutList, LayoutList as LayoutListIcon, LayoutList as SiLayoutList };
 export default LayoutList;

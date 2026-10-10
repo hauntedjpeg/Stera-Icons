@@ -14,7 +14,7 @@ const MatchaFill = memo(
 
 MatchaFill.displayName = 'MatchaFill';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { MatchaFill, MatchaFill as MatchaFillIcon, MatchaFill as SiMatchaFill };
 export default MatchaFill;
 export type { MatchaFillProps };

@@ -18,10 +18,10 @@ export interface ToyBrickProps extends IconProps {
  * For smaller bundle size, import specific variants directly:
  * import { ToyBrickRegular } from 'stera-icons/icons/ToyBrickRegular';
  */
-const ToyBrick = memo(forwardRef<SVGSVGElement, ToyBrickProps>(({ 
+const ToyBrick = memo(forwardRef<SVGSVGElement, ToyBrickProps>(({
   weight = 'regular',
   duotone = false,
-  ...rest 
+  ...rest
 }, ref) => {
   if (weight === 'bold' && duotone) return <ToyBrickBoldDuotone ref={ref} {...rest} />;
   if (weight === 'bold') return <ToyBrickBold ref={ref} {...rest} />;
@@ -33,6 +33,6 @@ const ToyBrick = memo(forwardRef<SVGSVGElement, ToyBrickProps>(({
 
 ToyBrick.displayName = 'ToyBrick';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { ToyBrick, ToyBrick as ToyBrickIcon, ToyBrick as SiToyBrick };
 export default ToyBrick;

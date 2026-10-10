@@ -15,7 +15,7 @@ const MoreBoldDuotone = memo(
 
 MoreBoldDuotone.displayName = 'MoreBoldDuotone';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { MoreBoldDuotone, MoreBoldDuotone as MoreBoldDuotoneIcon, MoreBoldDuotone as SiMoreBoldDuotone };
 export default MoreBoldDuotone;
 export type { MoreBoldDuotoneProps };

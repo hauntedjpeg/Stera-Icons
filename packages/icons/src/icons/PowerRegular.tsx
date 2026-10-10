@@ -15,7 +15,7 @@ const PowerRegular = memo(
 
 PowerRegular.displayName = 'PowerRegular';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { PowerRegular, PowerRegular as PowerRegularIcon, PowerRegular as SiPowerRegular };
 export default PowerRegular;
 export type { PowerRegularProps };

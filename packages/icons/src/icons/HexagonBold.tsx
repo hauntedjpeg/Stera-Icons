@@ -14,7 +14,7 @@ const HexagonBold = memo(
 
 HexagonBold.displayName = 'HexagonBold';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { HexagonBold, HexagonBold as HexagonBoldIcon, HexagonBold as SiHexagonBold };
 export default HexagonBold;
 export type { HexagonBoldProps };

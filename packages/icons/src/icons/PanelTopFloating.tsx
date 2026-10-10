@@ -18,10 +18,10 @@ export interface PanelTopFloatingProps extends IconProps {
  * For smaller bundle size, import specific variants directly:
  * import { PanelTopFloatingRegular } from 'stera-icons/icons/PanelTopFloatingRegular';
  */
-const PanelTopFloating = memo(forwardRef<SVGSVGElement, PanelTopFloatingProps>(({ 
+const PanelTopFloating = memo(forwardRef<SVGSVGElement, PanelTopFloatingProps>(({
   weight = 'regular',
   duotone = false,
-  ...rest 
+  ...rest
 }, ref) => {
   if (weight === 'bold' && duotone) return <PanelTopFloatingBoldDuotone ref={ref} {...rest} />;
   if (weight === 'bold') return <PanelTopFloatingBold ref={ref} {...rest} />;
@@ -33,6 +33,6 @@ const PanelTopFloating = memo(forwardRef<SVGSVGElement, PanelTopFloatingProps>((
 
 PanelTopFloating.displayName = 'PanelTopFloating';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { PanelTopFloating, PanelTopFloating as PanelTopFloatingIcon, PanelTopFloating as SiPanelTopFloating };
 export default PanelTopFloating;

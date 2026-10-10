@@ -18,10 +18,10 @@ export interface CloudXProps extends IconProps {
  * For smaller bundle size, import specific variants directly:
  * import { CloudXRegular } from 'stera-icons/icons/CloudXRegular';
  */
-const CloudX = memo(forwardRef<SVGSVGElement, CloudXProps>(({ 
+const CloudX = memo(forwardRef<SVGSVGElement, CloudXProps>(({
   weight = 'regular',
   duotone = false,
-  ...rest 
+  ...rest
 }, ref) => {
   if (weight === 'bold' && duotone) return <CloudXBoldDuotone ref={ref} {...rest} />;
   if (weight === 'bold') return <CloudXBold ref={ref} {...rest} />;
@@ -33,6 +33,6 @@ const CloudX = memo(forwardRef<SVGSVGElement, CloudXProps>(({
 
 CloudX.displayName = 'CloudX';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { CloudX, CloudX as CloudXIcon, CloudX as SiCloudX };
 export default CloudX;

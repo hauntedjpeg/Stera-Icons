@@ -18,10 +18,10 @@ export interface FlowMergeProps extends IconProps {
  * For smaller bundle size, import specific variants directly:
  * import { FlowMergeRegular } from 'stera-icons/icons/FlowMergeRegular';
  */
-const FlowMerge = memo(forwardRef<SVGSVGElement, FlowMergeProps>(({ 
+const FlowMerge = memo(forwardRef<SVGSVGElement, FlowMergeProps>(({
   weight = 'regular',
   duotone = false,
-  ...rest 
+  ...rest
 }, ref) => {
   if (weight === 'bold' && duotone) return <FlowMergeBoldDuotone ref={ref} {...rest} />;
   if (weight === 'bold') return <FlowMergeBold ref={ref} {...rest} />;
@@ -33,6 +33,6 @@ const FlowMerge = memo(forwardRef<SVGSVGElement, FlowMergeProps>(({
 
 FlowMerge.displayName = 'FlowMerge';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { FlowMerge, FlowMerge as FlowMergeIcon, FlowMerge as SiFlowMerge };
 export default FlowMerge;

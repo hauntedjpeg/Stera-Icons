@@ -18,10 +18,10 @@ export interface LabelProps extends IconProps {
  * For smaller bundle size, import specific variants directly:
  * import { LabelRegular } from 'stera-icons/icons/LabelRegular';
  */
-const Label = memo(forwardRef<SVGSVGElement, LabelProps>(({ 
+const Label = memo(forwardRef<SVGSVGElement, LabelProps>(({
   weight = 'regular',
   duotone = false,
-  ...rest 
+  ...rest
 }, ref) => {
   if (weight === 'bold' && duotone) return <LabelBoldDuotone ref={ref} {...rest} />;
   if (weight === 'bold') return <LabelBold ref={ref} {...rest} />;
@@ -33,6 +33,6 @@ const Label = memo(forwardRef<SVGSVGElement, LabelProps>(({
 
 Label.displayName = 'Label';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { Label, Label as LabelIcon, Label as SiLabel };
 export default Label;

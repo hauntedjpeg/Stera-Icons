@@ -15,7 +15,7 @@ const CliCircleRegular = memo(
 
 CliCircleRegular.displayName = 'CliCircleRegular';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { CliCircleRegular, CliCircleRegular as CliCircleRegularIcon, CliCircleRegular as SiCliCircleRegular };
 export default CliCircleRegular;
 export type { CliCircleRegularProps };

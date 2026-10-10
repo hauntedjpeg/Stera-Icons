@@ -18,10 +18,10 @@ export interface CurveBezierProps extends IconProps {
  * For smaller bundle size, import specific variants directly:
  * import { CurveBezierRegular } from 'stera-icons/icons/CurveBezierRegular';
  */
-const CurveBezier = memo(forwardRef<SVGSVGElement, CurveBezierProps>(({ 
+const CurveBezier = memo(forwardRef<SVGSVGElement, CurveBezierProps>(({
   weight = 'regular',
   duotone = false,
-  ...rest 
+  ...rest
 }, ref) => {
   if (weight === 'bold' && duotone) return <CurveBezierBoldDuotone ref={ref} {...rest} />;
   if (weight === 'bold') return <CurveBezierBold ref={ref} {...rest} />;
@@ -33,6 +33,6 @@ const CurveBezier = memo(forwardRef<SVGSVGElement, CurveBezierProps>(({
 
 CurveBezier.displayName = 'CurveBezier';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { CurveBezier, CurveBezier as CurveBezierIcon, CurveBezier as SiCurveBezier };
 export default CurveBezier;

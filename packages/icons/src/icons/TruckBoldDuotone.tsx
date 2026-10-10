@@ -16,7 +16,7 @@ const TruckBoldDuotone = memo(
 
 TruckBoldDuotone.displayName = 'TruckBoldDuotone';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { TruckBoldDuotone, TruckBoldDuotone as TruckBoldDuotoneIcon, TruckBoldDuotone as SiTruckBoldDuotone };
 export default TruckBoldDuotone;
 export type { TruckBoldDuotoneProps };

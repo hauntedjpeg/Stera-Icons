@@ -16,7 +16,7 @@ const DatabasePlusFill = memo(
 
 DatabasePlusFill.displayName = 'DatabasePlusFill';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { DatabasePlusFill, DatabasePlusFill as DatabasePlusFillIcon, DatabasePlusFill as SiDatabasePlusFill };
 export default DatabasePlusFill;
 export type { DatabasePlusFillProps };

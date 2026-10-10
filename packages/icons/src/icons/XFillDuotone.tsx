@@ -15,7 +15,7 @@ const XFillDuotone = memo(
 
 XFillDuotone.displayName = 'XFillDuotone';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { XFillDuotone, XFillDuotone as XFillDuotoneIcon, XFillDuotone as SiXFillDuotone };
 export default XFillDuotone;
 export type { XFillDuotoneProps };

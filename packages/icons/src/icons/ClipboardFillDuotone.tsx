@@ -15,7 +15,7 @@ const ClipboardFillDuotone = memo(
 
 ClipboardFillDuotone.displayName = 'ClipboardFillDuotone';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { ClipboardFillDuotone, ClipboardFillDuotone as ClipboardFillDuotoneIcon, ClipboardFillDuotone as SiClipboardFillDuotone };
 export default ClipboardFillDuotone;
 export type { ClipboardFillDuotoneProps };

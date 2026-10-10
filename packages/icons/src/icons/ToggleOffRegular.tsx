@@ -15,7 +15,7 @@ const ToggleOffRegular = memo(
 
 ToggleOffRegular.displayName = 'ToggleOffRegular';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { ToggleOffRegular, ToggleOffRegular as ToggleOffRegularIcon, ToggleOffRegular as SiToggleOffRegular };
 export default ToggleOffRegular;
 export type { ToggleOffRegularProps };

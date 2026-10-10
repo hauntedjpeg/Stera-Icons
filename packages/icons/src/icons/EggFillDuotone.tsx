@@ -15,7 +15,7 @@ const EggFillDuotone = memo(
 
 EggFillDuotone.displayName = 'EggFillDuotone';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { EggFillDuotone, EggFillDuotone as EggFillDuotoneIcon, EggFillDuotone as SiEggFillDuotone };
 export default EggFillDuotone;
 export type { EggFillDuotoneProps };

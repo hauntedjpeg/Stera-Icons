@@ -15,7 +15,7 @@ const HistoryBold = memo(
 
 HistoryBold.displayName = 'HistoryBold';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { HistoryBold, HistoryBold as HistoryBoldIcon, HistoryBold as SiHistoryBold };
 export default HistoryBold;
 export type { HistoryBoldProps };

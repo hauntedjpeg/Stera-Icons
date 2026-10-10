@@ -16,7 +16,7 @@ const HardDriveRegularDuotone = memo(
 
 HardDriveRegularDuotone.displayName = 'HardDriveRegularDuotone';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { HardDriveRegularDuotone, HardDriveRegularDuotone as HardDriveRegularDuotoneIcon, HardDriveRegularDuotone as SiHardDriveRegularDuotone };
 export default HardDriveRegularDuotone;
 export type { HardDriveRegularDuotoneProps };

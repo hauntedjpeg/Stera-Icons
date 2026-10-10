@@ -14,7 +14,7 @@ const AvocadoFill = memo(
 
 AvocadoFill.displayName = 'AvocadoFill';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { AvocadoFill, AvocadoFill as AvocadoFillIcon, AvocadoFill as SiAvocadoFill };
 export default AvocadoFill;
 export type { AvocadoFillProps };

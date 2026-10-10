@@ -15,7 +15,7 @@ const MartiniFillDuotone = memo(
 
 MartiniFillDuotone.displayName = 'MartiniFillDuotone';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { MartiniFillDuotone, MartiniFillDuotone as MartiniFillDuotoneIcon, MartiniFillDuotone as SiMartiniFillDuotone };
 export default MartiniFillDuotone;
 export type { MartiniFillDuotoneProps };

@@ -18,10 +18,10 @@ export interface RotateCircleLeftProps extends IconProps {
  * For smaller bundle size, import specific variants directly:
  * import { RotateCircleLeftRegular } from 'stera-icons/icons/RotateCircleLeftRegular';
  */
-const RotateCircleLeft = memo(forwardRef<SVGSVGElement, RotateCircleLeftProps>(({ 
+const RotateCircleLeft = memo(forwardRef<SVGSVGElement, RotateCircleLeftProps>(({
   weight = 'regular',
   duotone = false,
-  ...rest 
+  ...rest
 }, ref) => {
   if (weight === 'bold' && duotone) return <RotateCircleLeftBoldDuotone ref={ref} {...rest} />;
   if (weight === 'bold') return <RotateCircleLeftBold ref={ref} {...rest} />;
@@ -33,6 +33,6 @@ const RotateCircleLeft = memo(forwardRef<SVGSVGElement, RotateCircleLeftProps>((
 
 RotateCircleLeft.displayName = 'RotateCircleLeft';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { RotateCircleLeft, RotateCircleLeft as RotateCircleLeftIcon, RotateCircleLeft as SiRotateCircleLeft };
 export default RotateCircleLeft;

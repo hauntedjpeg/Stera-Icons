@@ -18,10 +18,10 @@ export interface TallyMarksProps extends IconProps {
  * For smaller bundle size, import specific variants directly:
  * import { TallyMarksRegular } from 'stera-icons/icons/TallyMarksRegular';
  */
-const TallyMarks = memo(forwardRef<SVGSVGElement, TallyMarksProps>(({ 
+const TallyMarks = memo(forwardRef<SVGSVGElement, TallyMarksProps>(({
   weight = 'regular',
   duotone = false,
-  ...rest 
+  ...rest
 }, ref) => {
   if (weight === 'bold' && duotone) return <TallyMarksBoldDuotone ref={ref} {...rest} />;
   if (weight === 'bold') return <TallyMarksBold ref={ref} {...rest} />;
@@ -33,6 +33,6 @@ const TallyMarks = memo(forwardRef<SVGSVGElement, TallyMarksProps>(({
 
 TallyMarks.displayName = 'TallyMarks';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { TallyMarks, TallyMarks as TallyMarksIcon, TallyMarks as SiTallyMarks };
 export default TallyMarks;

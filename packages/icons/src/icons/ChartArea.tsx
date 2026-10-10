@@ -18,10 +18,10 @@ export interface ChartAreaProps extends IconProps {
  * For smaller bundle size, import specific variants directly:
  * import { ChartAreaRegular } from 'stera-icons/icons/ChartAreaRegular';
  */
-const ChartArea = memo(forwardRef<SVGSVGElement, ChartAreaProps>(({ 
+const ChartArea = memo(forwardRef<SVGSVGElement, ChartAreaProps>(({
   weight = 'regular',
   duotone = false,
-  ...rest 
+  ...rest
 }, ref) => {
   if (weight === 'bold' && duotone) return <ChartAreaBoldDuotone ref={ref} {...rest} />;
   if (weight === 'bold') return <ChartAreaBold ref={ref} {...rest} />;
@@ -33,6 +33,6 @@ const ChartArea = memo(forwardRef<SVGSVGElement, ChartAreaProps>(({
 
 ChartArea.displayName = 'ChartArea';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { ChartArea, ChartArea as ChartAreaIcon, ChartArea as SiChartArea };
 export default ChartArea;

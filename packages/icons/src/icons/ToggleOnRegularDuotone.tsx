@@ -15,7 +15,7 @@ const ToggleOnRegularDuotone = memo(
 
 ToggleOnRegularDuotone.displayName = 'ToggleOnRegularDuotone';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { ToggleOnRegularDuotone, ToggleOnRegularDuotone as ToggleOnRegularDuotoneIcon, ToggleOnRegularDuotone as SiToggleOnRegularDuotone };
 export default ToggleOnRegularDuotone;
 export type { ToggleOnRegularDuotoneProps };

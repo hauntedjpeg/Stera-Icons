@@ -15,7 +15,7 @@ const CropBoldDuotone = memo(
 
 CropBoldDuotone.displayName = 'CropBoldDuotone';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { CropBoldDuotone, CropBoldDuotone as CropBoldDuotoneIcon, CropBoldDuotone as SiCropBoldDuotone };
 export default CropBoldDuotone;
 export type { CropBoldDuotoneProps };

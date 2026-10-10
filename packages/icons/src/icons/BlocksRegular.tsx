@@ -15,7 +15,7 @@ const BlocksRegular = memo(
 
 BlocksRegular.displayName = 'BlocksRegular';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { BlocksRegular, BlocksRegular as BlocksRegularIcon, BlocksRegular as SiBlocksRegular };
 export default BlocksRegular;
 export type { BlocksRegularProps };

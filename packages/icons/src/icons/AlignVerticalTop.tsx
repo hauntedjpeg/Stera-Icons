@@ -18,10 +18,10 @@ export interface AlignVerticalTopProps extends IconProps {
  * For smaller bundle size, import specific variants directly:
  * import { AlignVerticalTopRegular } from 'stera-icons/icons/AlignVerticalTopRegular';
  */
-const AlignVerticalTop = memo(forwardRef<SVGSVGElement, AlignVerticalTopProps>(({ 
+const AlignVerticalTop = memo(forwardRef<SVGSVGElement, AlignVerticalTopProps>(({
   weight = 'regular',
   duotone = false,
-  ...rest 
+  ...rest
 }, ref) => {
   if (weight === 'bold' && duotone) return <AlignVerticalTopBoldDuotone ref={ref} {...rest} />;
   if (weight === 'bold') return <AlignVerticalTopBold ref={ref} {...rest} />;
@@ -33,6 +33,6 @@ const AlignVerticalTop = memo(forwardRef<SVGSVGElement, AlignVerticalTopProps>((
 
 AlignVerticalTop.displayName = 'AlignVerticalTop';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { AlignVerticalTop, AlignVerticalTop as AlignVerticalTopIcon, AlignVerticalTop as SiAlignVerticalTop };
 export default AlignVerticalTop;

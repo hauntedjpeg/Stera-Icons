@@ -18,10 +18,10 @@ export interface ImagePanoramaProps extends IconProps {
  * For smaller bundle size, import specific variants directly:
  * import { ImagePanoramaRegular } from 'stera-icons/icons/ImagePanoramaRegular';
  */
-const ImagePanorama = memo(forwardRef<SVGSVGElement, ImagePanoramaProps>(({ 
+const ImagePanorama = memo(forwardRef<SVGSVGElement, ImagePanoramaProps>(({
   weight = 'regular',
   duotone = false,
-  ...rest 
+  ...rest
 }, ref) => {
   if (weight === 'bold' && duotone) return <ImagePanoramaBoldDuotone ref={ref} {...rest} />;
   if (weight === 'bold') return <ImagePanoramaBold ref={ref} {...rest} />;
@@ -33,6 +33,6 @@ const ImagePanorama = memo(forwardRef<SVGSVGElement, ImagePanoramaProps>(({
 
 ImagePanorama.displayName = 'ImagePanorama';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { ImagePanorama, ImagePanorama as ImagePanoramaIcon, ImagePanorama as SiImagePanorama };
 export default ImagePanorama;

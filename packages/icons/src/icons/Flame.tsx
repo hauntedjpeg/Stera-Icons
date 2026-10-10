@@ -18,10 +18,10 @@ export interface FlameProps extends IconProps {
  * For smaller bundle size, import specific variants directly:
  * import { FlameRegular } from 'stera-icons/icons/FlameRegular';
  */
-const Flame = memo(forwardRef<SVGSVGElement, FlameProps>(({ 
+const Flame = memo(forwardRef<SVGSVGElement, FlameProps>(({
   weight = 'regular',
   duotone = false,
-  ...rest 
+  ...rest
 }, ref) => {
   if (weight === 'bold' && duotone) return <FlameBoldDuotone ref={ref} {...rest} />;
   if (weight === 'bold') return <FlameBold ref={ref} {...rest} />;
@@ -33,6 +33,6 @@ const Flame = memo(forwardRef<SVGSVGElement, FlameProps>(({
 
 Flame.displayName = 'Flame';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { Flame, Flame as FlameIcon, Flame as SiFlame };
 export default Flame;

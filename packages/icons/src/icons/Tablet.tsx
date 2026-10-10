@@ -18,10 +18,10 @@ export interface TabletProps extends IconProps {
  * For smaller bundle size, import specific variants directly:
  * import { TabletRegular } from 'stera-icons/icons/TabletRegular';
  */
-const Tablet = memo(forwardRef<SVGSVGElement, TabletProps>(({ 
+const Tablet = memo(forwardRef<SVGSVGElement, TabletProps>(({
   weight = 'regular',
   duotone = false,
-  ...rest 
+  ...rest
 }, ref) => {
   if (weight === 'bold' && duotone) return <TabletBoldDuotone ref={ref} {...rest} />;
   if (weight === 'bold') return <TabletBold ref={ref} {...rest} />;
@@ -33,6 +33,6 @@ const Tablet = memo(forwardRef<SVGSVGElement, TabletProps>(({
 
 Tablet.displayName = 'Tablet';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { Tablet, Tablet as TabletIcon, Tablet as SiTablet };
 export default Tablet;

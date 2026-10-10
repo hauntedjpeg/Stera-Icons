@@ -14,7 +14,7 @@ const CubeDashRegular = memo(
 
 CubeDashRegular.displayName = 'CubeDashRegular';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { CubeDashRegular, CubeDashRegular as CubeDashRegularIcon, CubeDashRegular as SiCubeDashRegular };
 export default CubeDashRegular;
 export type { CubeDashRegularProps };

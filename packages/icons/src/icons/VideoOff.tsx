@@ -18,10 +18,10 @@ export interface VideoOffProps extends IconProps {
  * For smaller bundle size, import specific variants directly:
  * import { VideoOffRegular } from 'stera-icons/icons/VideoOffRegular';
  */
-const VideoOff = memo(forwardRef<SVGSVGElement, VideoOffProps>(({ 
+const VideoOff = memo(forwardRef<SVGSVGElement, VideoOffProps>(({
   weight = 'regular',
   duotone = false,
-  ...rest 
+  ...rest
 }, ref) => {
   if (weight === 'bold' && duotone) return <VideoOffBoldDuotone ref={ref} {...rest} />;
   if (weight === 'bold') return <VideoOffBold ref={ref} {...rest} />;
@@ -33,6 +33,6 @@ const VideoOff = memo(forwardRef<SVGSVGElement, VideoOffProps>(({
 
 VideoOff.displayName = 'VideoOff';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { VideoOff, VideoOff as VideoOffIcon, VideoOff as SiVideoOff };
 export default VideoOff;

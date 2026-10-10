@@ -18,10 +18,10 @@ export interface TextStrikethroughProps extends IconProps {
  * For smaller bundle size, import specific variants directly:
  * import { TextStrikethroughRegular } from 'stera-icons/icons/TextStrikethroughRegular';
  */
-const TextStrikethrough = memo(forwardRef<SVGSVGElement, TextStrikethroughProps>(({ 
+const TextStrikethrough = memo(forwardRef<SVGSVGElement, TextStrikethroughProps>(({
   weight = 'regular',
   duotone = false,
-  ...rest 
+  ...rest
 }, ref) => {
   if (weight === 'bold' && duotone) return <TextStrikethroughBoldDuotone ref={ref} {...rest} />;
   if (weight === 'bold') return <TextStrikethroughBold ref={ref} {...rest} />;
@@ -33,6 +33,6 @@ const TextStrikethrough = memo(forwardRef<SVGSVGElement, TextStrikethroughProps>
 
 TextStrikethrough.displayName = 'TextStrikethrough';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { TextStrikethrough, TextStrikethrough as TextStrikethroughIcon, TextStrikethrough as SiTextStrikethrough };
 export default TextStrikethrough;

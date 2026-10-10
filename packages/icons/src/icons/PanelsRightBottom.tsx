@@ -18,10 +18,10 @@ export interface PanelsRightBottomProps extends IconProps {
  * For smaller bundle size, import specific variants directly:
  * import { PanelsRightBottomRegular } from 'stera-icons/icons/PanelsRightBottomRegular';
  */
-const PanelsRightBottom = memo(forwardRef<SVGSVGElement, PanelsRightBottomProps>(({ 
+const PanelsRightBottom = memo(forwardRef<SVGSVGElement, PanelsRightBottomProps>(({
   weight = 'regular',
   duotone = false,
-  ...rest 
+  ...rest
 }, ref) => {
   if (weight === 'bold' && duotone) return <PanelsRightBottomBoldDuotone ref={ref} {...rest} />;
   if (weight === 'bold') return <PanelsRightBottomBold ref={ref} {...rest} />;
@@ -33,6 +33,6 @@ const PanelsRightBottom = memo(forwardRef<SVGSVGElement, PanelsRightBottomProps>
 
 PanelsRightBottom.displayName = 'PanelsRightBottom';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { PanelsRightBottom, PanelsRightBottom as PanelsRightBottomIcon, PanelsRightBottom as SiPanelsRightBottom };
 export default PanelsRightBottom;

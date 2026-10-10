@@ -14,7 +14,7 @@ const TruckRegular = memo(
 
 TruckRegular.displayName = 'TruckRegular';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { TruckRegular, TruckRegular as TruckRegularIcon, TruckRegular as SiTruckRegular };
 export default TruckRegular;
 export type { TruckRegularProps };

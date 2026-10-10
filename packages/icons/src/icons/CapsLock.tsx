@@ -18,10 +18,10 @@ export interface CapsLockProps extends IconProps {
  * For smaller bundle size, import specific variants directly:
  * import { CapsLockRegular } from 'stera-icons/icons/CapsLockRegular';
  */
-const CapsLock = memo(forwardRef<SVGSVGElement, CapsLockProps>(({ 
+const CapsLock = memo(forwardRef<SVGSVGElement, CapsLockProps>(({
   weight = 'regular',
   duotone = false,
-  ...rest 
+  ...rest
 }, ref) => {
   if (weight === 'bold' && duotone) return <CapsLockBoldDuotone ref={ref} {...rest} />;
   if (weight === 'bold') return <CapsLockBold ref={ref} {...rest} />;
@@ -33,6 +33,6 @@ const CapsLock = memo(forwardRef<SVGSVGElement, CapsLockProps>(({
 
 CapsLock.displayName = 'CapsLock';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { CapsLock, CapsLock as CapsLockIcon, CapsLock as SiCapsLock };
 export default CapsLock;

@@ -15,7 +15,7 @@ const MapPinAreaFillDuotone = memo(
 
 MapPinAreaFillDuotone.displayName = 'MapPinAreaFillDuotone';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { MapPinAreaFillDuotone, MapPinAreaFillDuotone as MapPinAreaFillDuotoneIcon, MapPinAreaFillDuotone as SiMapPinAreaFillDuotone };
 export default MapPinAreaFillDuotone;
 export type { MapPinAreaFillDuotoneProps };

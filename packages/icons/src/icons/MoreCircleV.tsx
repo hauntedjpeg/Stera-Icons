@@ -18,10 +18,10 @@ export interface MoreCircleVProps extends IconProps {
  * For smaller bundle size, import specific variants directly:
  * import { MoreCircleVRegular } from 'stera-icons/icons/MoreCircleVRegular';
  */
-const MoreCircleV = memo(forwardRef<SVGSVGElement, MoreCircleVProps>(({ 
+const MoreCircleV = memo(forwardRef<SVGSVGElement, MoreCircleVProps>(({
   weight = 'regular',
   duotone = false,
-  ...rest 
+  ...rest
 }, ref) => {
   if (weight === 'bold' && duotone) return <MoreCircleVBoldDuotone ref={ref} {...rest} />;
   if (weight === 'bold') return <MoreCircleVBold ref={ref} {...rest} />;
@@ -33,6 +33,6 @@ const MoreCircleV = memo(forwardRef<SVGSVGElement, MoreCircleVProps>(({
 
 MoreCircleV.displayName = 'MoreCircleV';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { MoreCircleV, MoreCircleV as MoreCircleVIcon, MoreCircleV as SiMoreCircleV };
 export default MoreCircleV;

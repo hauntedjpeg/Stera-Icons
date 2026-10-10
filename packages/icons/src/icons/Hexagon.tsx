@@ -18,10 +18,10 @@ export interface HexagonProps extends IconProps {
  * For smaller bundle size, import specific variants directly:
  * import { HexagonRegular } from 'stera-icons/icons/HexagonRegular';
  */
-const Hexagon = memo(forwardRef<SVGSVGElement, HexagonProps>(({ 
+const Hexagon = memo(forwardRef<SVGSVGElement, HexagonProps>(({
   weight = 'regular',
   duotone = false,
-  ...rest 
+  ...rest
 }, ref) => {
   if (weight === 'bold' && duotone) return <HexagonBoldDuotone ref={ref} {...rest} />;
   if (weight === 'bold') return <HexagonBold ref={ref} {...rest} />;
@@ -33,6 +33,6 @@ const Hexagon = memo(forwardRef<SVGSVGElement, HexagonProps>(({
 
 Hexagon.displayName = 'Hexagon';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { Hexagon, Hexagon as HexagonIcon, Hexagon as SiHexagon };
 export default Hexagon;

@@ -18,10 +18,10 @@ export interface ApertureProps extends IconProps {
  * For smaller bundle size, import specific variants directly:
  * import { ApertureRegular } from 'stera-icons/icons/ApertureRegular';
  */
-const Aperture = memo(forwardRef<SVGSVGElement, ApertureProps>(({ 
+const Aperture = memo(forwardRef<SVGSVGElement, ApertureProps>(({
   weight = 'regular',
   duotone = false,
-  ...rest 
+  ...rest
 }, ref) => {
   if (weight === 'bold' && duotone) return <ApertureBoldDuotone ref={ref} {...rest} />;
   if (weight === 'bold') return <ApertureBold ref={ref} {...rest} />;
@@ -33,6 +33,6 @@ const Aperture = memo(forwardRef<SVGSVGElement, ApertureProps>(({
 
 Aperture.displayName = 'Aperture';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { Aperture, Aperture as ApertureIcon, Aperture as SiAperture };
 export default Aperture;

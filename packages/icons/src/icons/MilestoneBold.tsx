@@ -14,7 +14,7 @@ const MilestoneBold = memo(
 
 MilestoneBold.displayName = 'MilestoneBold';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { MilestoneBold, MilestoneBold as MilestoneBoldIcon, MilestoneBold as SiMilestoneBold };
 export default MilestoneBold;
 export type { MilestoneBoldProps };

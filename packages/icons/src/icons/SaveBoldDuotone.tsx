@@ -15,7 +15,7 @@ const SaveBoldDuotone = memo(
 
 SaveBoldDuotone.displayName = 'SaveBoldDuotone';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { SaveBoldDuotone, SaveBoldDuotone as SaveBoldDuotoneIcon, SaveBoldDuotone as SiSaveBoldDuotone };
 export default SaveBoldDuotone;
 export type { SaveBoldDuotoneProps };

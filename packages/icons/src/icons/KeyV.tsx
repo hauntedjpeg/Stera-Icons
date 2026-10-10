@@ -18,10 +18,10 @@ export interface KeyVProps extends IconProps {
  * For smaller bundle size, import specific variants directly:
  * import { KeyVRegular } from 'stera-icons/icons/KeyVRegular';
  */
-const KeyV = memo(forwardRef<SVGSVGElement, KeyVProps>(({ 
+const KeyV = memo(forwardRef<SVGSVGElement, KeyVProps>(({
   weight = 'regular',
   duotone = false,
-  ...rest 
+  ...rest
 }, ref) => {
   if (weight === 'bold' && duotone) return <KeyVBoldDuotone ref={ref} {...rest} />;
   if (weight === 'bold') return <KeyVBold ref={ref} {...rest} />;
@@ -33,6 +33,6 @@ const KeyV = memo(forwardRef<SVGSVGElement, KeyVProps>(({
 
 KeyV.displayName = 'KeyV';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { KeyV, KeyV as KeyVIcon, KeyV as SiKeyV };
 export default KeyV;

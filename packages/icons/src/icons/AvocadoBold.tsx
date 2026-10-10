@@ -15,7 +15,7 @@ const AvocadoBold = memo(
 
 AvocadoBold.displayName = 'AvocadoBold';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { AvocadoBold, AvocadoBold as AvocadoBoldIcon, AvocadoBold as SiAvocadoBold };
 export default AvocadoBold;
 export type { AvocadoBoldProps };

@@ -15,7 +15,7 @@ const BiohazardFillDuotone = memo(
 
 BiohazardFillDuotone.displayName = 'BiohazardFillDuotone';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { BiohazardFillDuotone, BiohazardFillDuotone as BiohazardFillDuotoneIcon, BiohazardFillDuotone as SiBiohazardFillDuotone };
 export default BiohazardFillDuotone;
 export type { BiohazardFillDuotoneProps };

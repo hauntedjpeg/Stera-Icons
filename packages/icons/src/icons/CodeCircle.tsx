@@ -18,10 +18,10 @@ export interface CodeCircleProps extends IconProps {
  * For smaller bundle size, import specific variants directly:
  * import { CodeCircleRegular } from 'stera-icons/icons/CodeCircleRegular';
  */
-const CodeCircle = memo(forwardRef<SVGSVGElement, CodeCircleProps>(({ 
+const CodeCircle = memo(forwardRef<SVGSVGElement, CodeCircleProps>(({
   weight = 'regular',
   duotone = false,
-  ...rest 
+  ...rest
 }, ref) => {
   if (weight === 'bold' && duotone) return <CodeCircleBoldDuotone ref={ref} {...rest} />;
   if (weight === 'bold') return <CodeCircleBold ref={ref} {...rest} />;
@@ -33,6 +33,6 @@ const CodeCircle = memo(forwardRef<SVGSVGElement, CodeCircleProps>(({
 
 CodeCircle.displayName = 'CodeCircle';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { CodeCircle, CodeCircle as CodeCircleIcon, CodeCircle as SiCodeCircle };
 export default CodeCircle;

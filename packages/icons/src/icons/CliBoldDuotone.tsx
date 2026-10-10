@@ -15,7 +15,7 @@ const CliBoldDuotone = memo(
 
 CliBoldDuotone.displayName = 'CliBoldDuotone';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { CliBoldDuotone, CliBoldDuotone as CliBoldDuotoneIcon, CliBoldDuotone as SiCliBoldDuotone };
 export default CliBoldDuotone;
 export type { CliBoldDuotoneProps };

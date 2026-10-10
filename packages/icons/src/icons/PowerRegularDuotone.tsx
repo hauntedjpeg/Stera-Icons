@@ -15,7 +15,7 @@ const PowerRegularDuotone = memo(
 
 PowerRegularDuotone.displayName = 'PowerRegularDuotone';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { PowerRegularDuotone, PowerRegularDuotone as PowerRegularDuotoneIcon, PowerRegularDuotone as SiPowerRegularDuotone };
 export default PowerRegularDuotone;
 export type { PowerRegularDuotoneProps };

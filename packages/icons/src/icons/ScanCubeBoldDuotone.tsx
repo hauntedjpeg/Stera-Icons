@@ -15,7 +15,7 @@ const ScanCubeBoldDuotone = memo(
 
 ScanCubeBoldDuotone.displayName = 'ScanCubeBoldDuotone';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { ScanCubeBoldDuotone, ScanCubeBoldDuotone as ScanCubeBoldDuotoneIcon, ScanCubeBoldDuotone as SiScanCubeBoldDuotone };
 export default ScanCubeBoldDuotone;
 export type { ScanCubeBoldDuotoneProps };

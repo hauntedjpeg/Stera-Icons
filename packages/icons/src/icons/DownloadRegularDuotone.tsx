@@ -15,7 +15,7 @@ const DownloadRegularDuotone = memo(
 
 DownloadRegularDuotone.displayName = 'DownloadRegularDuotone';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { DownloadRegularDuotone, DownloadRegularDuotone as DownloadRegularDuotoneIcon, DownloadRegularDuotone as SiDownloadRegularDuotone };
 export default DownloadRegularDuotone;
 export type { DownloadRegularDuotoneProps };

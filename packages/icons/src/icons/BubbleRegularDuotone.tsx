@@ -15,7 +15,7 @@ const BubbleRegularDuotone = memo(
 
 BubbleRegularDuotone.displayName = 'BubbleRegularDuotone';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { BubbleRegularDuotone, BubbleRegularDuotone as BubbleRegularDuotoneIcon, BubbleRegularDuotone as SiBubbleRegularDuotone };
 export default BubbleRegularDuotone;
 export type { BubbleRegularDuotoneProps };

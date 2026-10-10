@@ -18,10 +18,10 @@ export interface PowerProps extends IconProps {
  * For smaller bundle size, import specific variants directly:
  * import { PowerRegular } from 'stera-icons/icons/PowerRegular';
  */
-const Power = memo(forwardRef<SVGSVGElement, PowerProps>(({ 
+const Power = memo(forwardRef<SVGSVGElement, PowerProps>(({
   weight = 'regular',
   duotone = false,
-  ...rest 
+  ...rest
 }, ref) => {
   if (weight === 'bold' && duotone) return <PowerBoldDuotone ref={ref} {...rest} />;
   if (weight === 'bold') return <PowerBold ref={ref} {...rest} />;
@@ -33,6 +33,6 @@ const Power = memo(forwardRef<SVGSVGElement, PowerProps>(({
 
 Power.displayName = 'Power';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { Power, Power as PowerIcon, Power as SiPower };
 export default Power;

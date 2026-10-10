@@ -15,7 +15,7 @@ const MatchaBoldDuotone = memo(
 
 MatchaBoldDuotone.displayName = 'MatchaBoldDuotone';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { MatchaBoldDuotone, MatchaBoldDuotone as MatchaBoldDuotoneIcon, MatchaBoldDuotone as SiMatchaBoldDuotone };
 export default MatchaBoldDuotone;
 export type { MatchaBoldDuotoneProps };

@@ -18,10 +18,10 @@ export interface QuoteProps extends IconProps {
  * For smaller bundle size, import specific variants directly:
  * import { QuoteRegular } from 'stera-icons/icons/QuoteRegular';
  */
-const Quote = memo(forwardRef<SVGSVGElement, QuoteProps>(({ 
+const Quote = memo(forwardRef<SVGSVGElement, QuoteProps>(({
   weight = 'regular',
   duotone = false,
-  ...rest 
+  ...rest
 }, ref) => {
   if (weight === 'bold' && duotone) return <QuoteBoldDuotone ref={ref} {...rest} />;
   if (weight === 'bold') return <QuoteBold ref={ref} {...rest} />;
@@ -33,6 +33,6 @@ const Quote = memo(forwardRef<SVGSVGElement, QuoteProps>(({
 
 Quote.displayName = 'Quote';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { Quote, Quote as QuoteIcon, Quote as SiQuote };
 export default Quote;

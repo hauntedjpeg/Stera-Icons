@@ -18,10 +18,10 @@ export interface MinimizeProps extends IconProps {
  * For smaller bundle size, import specific variants directly:
  * import { MinimizeRegular } from 'stera-icons/icons/MinimizeRegular';
  */
-const Minimize = memo(forwardRef<SVGSVGElement, MinimizeProps>(({ 
+const Minimize = memo(forwardRef<SVGSVGElement, MinimizeProps>(({
   weight = 'regular',
   duotone = false,
-  ...rest 
+  ...rest
 }, ref) => {
   if (weight === 'bold' && duotone) return <MinimizeBoldDuotone ref={ref} {...rest} />;
   if (weight === 'bold') return <MinimizeBold ref={ref} {...rest} />;
@@ -33,6 +33,6 @@ const Minimize = memo(forwardRef<SVGSVGElement, MinimizeProps>(({
 
 Minimize.displayName = 'Minimize';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { Minimize, Minimize as MinimizeIcon, Minimize as SiMinimize };
 export default Minimize;

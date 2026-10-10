@@ -18,10 +18,10 @@ export interface TelescopeProps extends IconProps {
  * For smaller bundle size, import specific variants directly:
  * import { TelescopeRegular } from 'stera-icons/icons/TelescopeRegular';
  */
-const Telescope = memo(forwardRef<SVGSVGElement, TelescopeProps>(({ 
+const Telescope = memo(forwardRef<SVGSVGElement, TelescopeProps>(({
   weight = 'regular',
   duotone = false,
-  ...rest 
+  ...rest
 }, ref) => {
   if (weight === 'bold' && duotone) return <TelescopeBoldDuotone ref={ref} {...rest} />;
   if (weight === 'bold') return <TelescopeBold ref={ref} {...rest} />;
@@ -33,6 +33,6 @@ const Telescope = memo(forwardRef<SVGSVGElement, TelescopeProps>(({
 
 Telescope.displayName = 'Telescope';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { Telescope, Telescope as TelescopeIcon, Telescope as SiTelescope };
 export default Telescope;

@@ -18,10 +18,10 @@ export interface PenProps extends IconProps {
  * For smaller bundle size, import specific variants directly:
  * import { PenRegular } from 'stera-icons/icons/PenRegular';
  */
-const Pen = memo(forwardRef<SVGSVGElement, PenProps>(({ 
+const Pen = memo(forwardRef<SVGSVGElement, PenProps>(({
   weight = 'regular',
   duotone = false,
-  ...rest 
+  ...rest
 }, ref) => {
   if (weight === 'bold' && duotone) return <PenBoldDuotone ref={ref} {...rest} />;
   if (weight === 'bold') return <PenBold ref={ref} {...rest} />;
@@ -33,6 +33,6 @@ const Pen = memo(forwardRef<SVGSVGElement, PenProps>(({
 
 Pen.displayName = 'Pen';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { Pen, Pen as PenIcon, Pen as SiPen };
 export default Pen;

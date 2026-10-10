@@ -18,10 +18,10 @@ export interface SkipBackProps extends IconProps {
  * For smaller bundle size, import specific variants directly:
  * import { SkipBackRegular } from 'stera-icons/icons/SkipBackRegular';
  */
-const SkipBack = memo(forwardRef<SVGSVGElement, SkipBackProps>(({ 
+const SkipBack = memo(forwardRef<SVGSVGElement, SkipBackProps>(({
   weight = 'regular',
   duotone = false,
-  ...rest 
+  ...rest
 }, ref) => {
   if (weight === 'bold' && duotone) return <SkipBackBoldDuotone ref={ref} {...rest} />;
   if (weight === 'bold') return <SkipBackBold ref={ref} {...rest} />;
@@ -33,6 +33,6 @@ const SkipBack = memo(forwardRef<SVGSVGElement, SkipBackProps>(({
 
 SkipBack.displayName = 'SkipBack';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { SkipBack, SkipBack as SkipBackIcon, SkipBack as SiSkipBack };
 export default SkipBack;

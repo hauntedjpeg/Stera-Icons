@@ -18,10 +18,10 @@ export interface NoteTextProps extends IconProps {
  * For smaller bundle size, import specific variants directly:
  * import { NoteTextRegular } from 'stera-icons/icons/NoteTextRegular';
  */
-const NoteText = memo(forwardRef<SVGSVGElement, NoteTextProps>(({ 
+const NoteText = memo(forwardRef<SVGSVGElement, NoteTextProps>(({
   weight = 'regular',
   duotone = false,
-  ...rest 
+  ...rest
 }, ref) => {
   if (weight === 'bold' && duotone) return <NoteTextBoldDuotone ref={ref} {...rest} />;
   if (weight === 'bold') return <NoteTextBold ref={ref} {...rest} />;
@@ -33,6 +33,6 @@ const NoteText = memo(forwardRef<SVGSVGElement, NoteTextProps>(({
 
 NoteText.displayName = 'NoteText';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { NoteText, NoteText as NoteTextIcon, NoteText as SiNoteText };
 export default NoteText;

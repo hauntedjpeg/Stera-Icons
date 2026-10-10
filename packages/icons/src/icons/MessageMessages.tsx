@@ -18,10 +18,10 @@ export interface MessageMessagesProps extends IconProps {
  * For smaller bundle size, import specific variants directly:
  * import { MessageMessagesRegular } from 'stera-icons/icons/MessageMessagesRegular';
  */
-const MessageMessages = memo(forwardRef<SVGSVGElement, MessageMessagesProps>(({ 
+const MessageMessages = memo(forwardRef<SVGSVGElement, MessageMessagesProps>(({
   weight = 'regular',
   duotone = false,
-  ...rest 
+  ...rest
 }, ref) => {
   if (weight === 'bold' && duotone) return <MessageMessagesBoldDuotone ref={ref} {...rest} />;
   if (weight === 'bold') return <MessageMessagesBold ref={ref} {...rest} />;
@@ -33,6 +33,6 @@ const MessageMessages = memo(forwardRef<SVGSVGElement, MessageMessagesProps>(({
 
 MessageMessages.displayName = 'MessageMessages';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { MessageMessages, MessageMessages as MessageMessagesIcon, MessageMessages as SiMessageMessages };
 export default MessageMessages;

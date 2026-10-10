@@ -18,10 +18,10 @@ export interface HashCircleProps extends IconProps {
  * For smaller bundle size, import specific variants directly:
  * import { HashCircleRegular } from 'stera-icons/icons/HashCircleRegular';
  */
-const HashCircle = memo(forwardRef<SVGSVGElement, HashCircleProps>(({ 
+const HashCircle = memo(forwardRef<SVGSVGElement, HashCircleProps>(({
   weight = 'regular',
   duotone = false,
-  ...rest 
+  ...rest
 }, ref) => {
   if (weight === 'bold' && duotone) return <HashCircleBoldDuotone ref={ref} {...rest} />;
   if (weight === 'bold') return <HashCircleBold ref={ref} {...rest} />;
@@ -33,6 +33,6 @@ const HashCircle = memo(forwardRef<SVGSVGElement, HashCircleProps>(({
 
 HashCircle.displayName = 'HashCircle';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { HashCircle, HashCircle as HashCircleIcon, HashCircle as SiHashCircle };
 export default HashCircle;

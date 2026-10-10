@@ -18,10 +18,10 @@ export interface ExternalLinkProps extends IconProps {
  * For smaller bundle size, import specific variants directly:
  * import { ExternalLinkRegular } from 'stera-icons/icons/ExternalLinkRegular';
  */
-const ExternalLink = memo(forwardRef<SVGSVGElement, ExternalLinkProps>(({ 
+const ExternalLink = memo(forwardRef<SVGSVGElement, ExternalLinkProps>(({
   weight = 'regular',
   duotone = false,
-  ...rest 
+  ...rest
 }, ref) => {
   if (weight === 'bold' && duotone) return <ExternalLinkBoldDuotone ref={ref} {...rest} />;
   if (weight === 'bold') return <ExternalLinkBold ref={ref} {...rest} />;
@@ -33,6 +33,6 @@ const ExternalLink = memo(forwardRef<SVGSVGElement, ExternalLinkProps>(({
 
 ExternalLink.displayName = 'ExternalLink';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { ExternalLink, ExternalLink as ExternalLinkIcon, ExternalLink as SiExternalLink };
 export default ExternalLink;

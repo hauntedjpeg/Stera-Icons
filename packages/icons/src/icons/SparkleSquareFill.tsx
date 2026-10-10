@@ -14,7 +14,7 @@ const SparkleSquareFill = memo(
 
 SparkleSquareFill.displayName = 'SparkleSquareFill';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { SparkleSquareFill, SparkleSquareFill as SparkleSquareFillIcon, SparkleSquareFill as SiSparkleSquareFill };
 export default SparkleSquareFill;
 export type { SparkleSquareFillProps };

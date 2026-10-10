@@ -14,7 +14,7 @@ const MenuAltRegular = memo(
 
 MenuAltRegular.displayName = 'MenuAltRegular';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { MenuAltRegular, MenuAltRegular as MenuAltRegularIcon, MenuAltRegular as SiMenuAltRegular };
 export default MenuAltRegular;
 export type { MenuAltRegularProps };

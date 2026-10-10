@@ -14,7 +14,7 @@ const HandLeftRegular = memo(
 
 HandLeftRegular.displayName = 'HandLeftRegular';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { HandLeftRegular, HandLeftRegular as HandLeftRegularIcon, HandLeftRegular as SiHandLeftRegular };
 export default HandLeftRegular;
 export type { HandLeftRegularProps };

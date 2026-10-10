@@ -18,10 +18,10 @@ export interface WaveTriangleProps extends IconProps {
  * For smaller bundle size, import specific variants directly:
  * import { WaveTriangleRegular } from 'stera-icons/icons/WaveTriangleRegular';
  */
-const WaveTriangle = memo(forwardRef<SVGSVGElement, WaveTriangleProps>(({ 
+const WaveTriangle = memo(forwardRef<SVGSVGElement, WaveTriangleProps>(({
   weight = 'regular',
   duotone = false,
-  ...rest 
+  ...rest
 }, ref) => {
   if (weight === 'bold' && duotone) return <WaveTriangleBoldDuotone ref={ref} {...rest} />;
   if (weight === 'bold') return <WaveTriangleBold ref={ref} {...rest} />;
@@ -33,6 +33,6 @@ const WaveTriangle = memo(forwardRef<SVGSVGElement, WaveTriangleProps>(({
 
 WaveTriangle.displayName = 'WaveTriangle';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { WaveTriangle, WaveTriangle as WaveTriangleIcon, WaveTriangle as SiWaveTriangle };
 export default WaveTriangle;

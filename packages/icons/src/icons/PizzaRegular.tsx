@@ -14,7 +14,7 @@ const PizzaRegular = memo(
 
 PizzaRegular.displayName = 'PizzaRegular';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { PizzaRegular, PizzaRegular as PizzaRegularIcon, PizzaRegular as SiPizzaRegular };
 export default PizzaRegular;
 export type { PizzaRegularProps };

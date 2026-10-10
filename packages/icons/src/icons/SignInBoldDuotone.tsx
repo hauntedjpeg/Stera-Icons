@@ -15,7 +15,7 @@ const SignInBoldDuotone = memo(
 
 SignInBoldDuotone.displayName = 'SignInBoldDuotone';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { SignInBoldDuotone, SignInBoldDuotone as SignInBoldDuotoneIcon, SignInBoldDuotone as SiSignInBoldDuotone };
 export default SignInBoldDuotone;
 export type { SignInBoldDuotoneProps };

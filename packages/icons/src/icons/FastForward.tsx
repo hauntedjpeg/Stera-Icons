@@ -18,10 +18,10 @@ export interface FastForwardProps extends IconProps {
  * For smaller bundle size, import specific variants directly:
  * import { FastForwardRegular } from 'stera-icons/icons/FastForwardRegular';
  */
-const FastForward = memo(forwardRef<SVGSVGElement, FastForwardProps>(({ 
+const FastForward = memo(forwardRef<SVGSVGElement, FastForwardProps>(({
   weight = 'regular',
   duotone = false,
-  ...rest 
+  ...rest
 }, ref) => {
   if (weight === 'bold' && duotone) return <FastForwardBoldDuotone ref={ref} {...rest} />;
   if (weight === 'bold') return <FastForwardBold ref={ref} {...rest} />;
@@ -33,6 +33,6 @@ const FastForward = memo(forwardRef<SVGSVGElement, FastForwardProps>(({
 
 FastForward.displayName = 'FastForward';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { FastForward, FastForward as FastForwardIcon, FastForward as SiFastForward };
 export default FastForward;

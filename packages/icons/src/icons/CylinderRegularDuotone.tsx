@@ -15,7 +15,7 @@ const CylinderRegularDuotone = memo(
 
 CylinderRegularDuotone.displayName = 'CylinderRegularDuotone';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { CylinderRegularDuotone, CylinderRegularDuotone as CylinderRegularDuotoneIcon, CylinderRegularDuotone as SiCylinderRegularDuotone };
 export default CylinderRegularDuotone;
 export type { CylinderRegularDuotoneProps };

@@ -14,7 +14,7 @@ const GitDiffSquareFill = memo(
 
 GitDiffSquareFill.displayName = 'GitDiffSquareFill';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { GitDiffSquareFill, GitDiffSquareFill as GitDiffSquareFillIcon, GitDiffSquareFill as SiGitDiffSquareFill };
 export default GitDiffSquareFill;
 export type { GitDiffSquareFillProps };

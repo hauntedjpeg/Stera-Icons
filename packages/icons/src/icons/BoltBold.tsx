@@ -15,7 +15,7 @@ const BoltBold = memo(
 
 BoltBold.displayName = 'BoltBold';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { BoltBold, BoltBold as BoltBoldIcon, BoltBold as SiBoltBold };
 export default BoltBold;
 export type { BoltBoldProps };

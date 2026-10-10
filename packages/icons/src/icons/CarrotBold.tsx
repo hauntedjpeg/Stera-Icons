@@ -14,7 +14,7 @@ const CarrotBold = memo(
 
 CarrotBold.displayName = 'CarrotBold';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { CarrotBold, CarrotBold as CarrotBoldIcon, CarrotBold as SiCarrotBold };
 export default CarrotBold;
 export type { CarrotBoldProps };

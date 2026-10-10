@@ -15,7 +15,7 @@ const RobotRegular = memo(
 
 RobotRegular.displayName = 'RobotRegular';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { RobotRegular, RobotRegular as RobotRegularIcon, RobotRegular as SiRobotRegular };
 export default RobotRegular;
 export type { RobotRegularProps };

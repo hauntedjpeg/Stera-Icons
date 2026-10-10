@@ -14,7 +14,7 @@ const RotateRightRegular = memo(
 
 RotateRightRegular.displayName = 'RotateRightRegular';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { RotateRightRegular, RotateRightRegular as RotateRightRegularIcon, RotateRightRegular as SiRotateRightRegular };
 export default RotateRightRegular;
 export type { RotateRightRegularProps };

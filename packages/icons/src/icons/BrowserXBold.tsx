@@ -15,7 +15,7 @@ const BrowserXBold = memo(
 
 BrowserXBold.displayName = 'BrowserXBold';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { BrowserXBold, BrowserXBold as BrowserXBoldIcon, BrowserXBold as SiBrowserXBold };
 export default BrowserXBold;
 export type { BrowserXBoldProps };

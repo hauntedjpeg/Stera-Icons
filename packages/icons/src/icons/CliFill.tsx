@@ -14,7 +14,7 @@ const CliFill = memo(
 
 CliFill.displayName = 'CliFill';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { CliFill, CliFill as CliFillIcon, CliFill as SiCliFill };
 export default CliFill;
 export type { CliFillProps };

@@ -18,10 +18,10 @@ export interface SeedlingProps extends IconProps {
  * For smaller bundle size, import specific variants directly:
  * import { SeedlingRegular } from 'stera-icons/icons/SeedlingRegular';
  */
-const Seedling = memo(forwardRef<SVGSVGElement, SeedlingProps>(({ 
+const Seedling = memo(forwardRef<SVGSVGElement, SeedlingProps>(({
   weight = 'regular',
   duotone = false,
-  ...rest 
+  ...rest
 }, ref) => {
   if (weight === 'bold' && duotone) return <SeedlingBoldDuotone ref={ref} {...rest} />;
   if (weight === 'bold') return <SeedlingBold ref={ref} {...rest} />;
@@ -33,6 +33,6 @@ const Seedling = memo(forwardRef<SVGSVGElement, SeedlingProps>(({
 
 Seedling.displayName = 'Seedling';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { Seedling, Seedling as SeedlingIcon, Seedling as SiSeedling };
 export default Seedling;

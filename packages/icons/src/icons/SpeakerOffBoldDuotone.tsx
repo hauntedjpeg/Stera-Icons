@@ -15,7 +15,7 @@ const SpeakerOffBoldDuotone = memo(
 
 SpeakerOffBoldDuotone.displayName = 'SpeakerOffBoldDuotone';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { SpeakerOffBoldDuotone, SpeakerOffBoldDuotone as SpeakerOffBoldDuotoneIcon, SpeakerOffBoldDuotone as SiSpeakerOffBoldDuotone };
 export default SpeakerOffBoldDuotone;
 export type { SpeakerOffBoldDuotoneProps };

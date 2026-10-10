@@ -18,10 +18,10 @@ export interface FlowDiagramProps extends IconProps {
  * For smaller bundle size, import specific variants directly:
  * import { FlowDiagramRegular } from 'stera-icons/icons/FlowDiagramRegular';
  */
-const FlowDiagram = memo(forwardRef<SVGSVGElement, FlowDiagramProps>(({ 
+const FlowDiagram = memo(forwardRef<SVGSVGElement, FlowDiagramProps>(({
   weight = 'regular',
   duotone = false,
-  ...rest 
+  ...rest
 }, ref) => {
   if (weight === 'bold' && duotone) return <FlowDiagramBoldDuotone ref={ref} {...rest} />;
   if (weight === 'bold') return <FlowDiagramBold ref={ref} {...rest} />;
@@ -33,6 +33,6 @@ const FlowDiagram = memo(forwardRef<SVGSVGElement, FlowDiagramProps>(({
 
 FlowDiagram.displayName = 'FlowDiagram';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { FlowDiagram, FlowDiagram as FlowDiagramIcon, FlowDiagram as SiFlowDiagram };
 export default FlowDiagram;

@@ -18,10 +18,10 @@ export interface DraftingCompassProps extends IconProps {
  * For smaller bundle size, import specific variants directly:
  * import { DraftingCompassRegular } from 'stera-icons/icons/DraftingCompassRegular';
  */
-const DraftingCompass = memo(forwardRef<SVGSVGElement, DraftingCompassProps>(({ 
+const DraftingCompass = memo(forwardRef<SVGSVGElement, DraftingCompassProps>(({
   weight = 'regular',
   duotone = false,
-  ...rest 
+  ...rest
 }, ref) => {
   if (weight === 'bold' && duotone) return <DraftingCompassBoldDuotone ref={ref} {...rest} />;
   if (weight === 'bold') return <DraftingCompassBold ref={ref} {...rest} />;
@@ -33,6 +33,6 @@ const DraftingCompass = memo(forwardRef<SVGSVGElement, DraftingCompassProps>(({
 
 DraftingCompass.displayName = 'DraftingCompass';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { DraftingCompass, DraftingCompass as DraftingCompassIcon, DraftingCompass as SiDraftingCompass };
 export default DraftingCompass;

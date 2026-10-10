@@ -15,7 +15,7 @@ const ScrewdriverRegularDuotone = memo(
 
 ScrewdriverRegularDuotone.displayName = 'ScrewdriverRegularDuotone';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { ScrewdriverRegularDuotone, ScrewdriverRegularDuotone as ScrewdriverRegularDuotoneIcon, ScrewdriverRegularDuotone as SiScrewdriverRegularDuotone };
 export default ScrewdriverRegularDuotone;
 export type { ScrewdriverRegularDuotoneProps };

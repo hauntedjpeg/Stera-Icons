@@ -14,7 +14,7 @@ const StopCircleFill = memo(
 
 StopCircleFill.displayName = 'StopCircleFill';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { StopCircleFill, StopCircleFill as StopCircleFillIcon, StopCircleFill as SiStopCircleFill };
 export default StopCircleFill;
 export type { StopCircleFillProps };

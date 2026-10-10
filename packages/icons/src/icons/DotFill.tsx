@@ -14,7 +14,7 @@ const DotFill = memo(
 
 DotFill.displayName = 'DotFill';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { DotFill, DotFill as DotFillIcon, DotFill as SiDotFill };
 export default DotFill;
 export type { DotFillProps };

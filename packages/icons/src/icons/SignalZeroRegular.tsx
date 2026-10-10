@@ -14,7 +14,7 @@ const SignalZeroRegular = memo(
 
 SignalZeroRegular.displayName = 'SignalZeroRegular';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { SignalZeroRegular, SignalZeroRegular as SignalZeroRegularIcon, SignalZeroRegular as SiSignalZeroRegular };
 export default SignalZeroRegular;
 export type { SignalZeroRegularProps };

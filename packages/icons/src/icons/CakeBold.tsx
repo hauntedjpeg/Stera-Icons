@@ -14,7 +14,7 @@ const CakeBold = memo(
 
 CakeBold.displayName = 'CakeBold';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { CakeBold, CakeBold as CakeBoldIcon, CakeBold as SiCakeBold };
 export default CakeBold;
 export type { CakeBoldProps };

@@ -4,8 +4,6 @@ export default {
       name: 'preset-default',
       params: {
         overrides: {
-          // Keep viewBox for responsive scaling
-          removeViewBox: false,
           // Optimize path data with reduced precision
           convertPathData: {
             floatPrecision: 2,

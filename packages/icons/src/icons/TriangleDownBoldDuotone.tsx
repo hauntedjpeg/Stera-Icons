@@ -15,7 +15,7 @@ const TriangleDownBoldDuotone = memo(
 
 TriangleDownBoldDuotone.displayName = 'TriangleDownBoldDuotone';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { TriangleDownBoldDuotone, TriangleDownBoldDuotone as TriangleDownBoldDuotoneIcon, TriangleDownBoldDuotone as SiTriangleDownBoldDuotone };
 export default TriangleDownBoldDuotone;
 export type { TriangleDownBoldDuotoneProps };

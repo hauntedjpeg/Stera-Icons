@@ -15,7 +15,7 @@ const AlignHorizontalLeftRegularDuotone = memo(
 
 AlignHorizontalLeftRegularDuotone.displayName = 'AlignHorizontalLeftRegularDuotone';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { AlignHorizontalLeftRegularDuotone, AlignHorizontalLeftRegularDuotone as AlignHorizontalLeftRegularDuotoneIcon, AlignHorizontalLeftRegularDuotone as SiAlignHorizontalLeftRegularDuotone };
 export default AlignHorizontalLeftRegularDuotone;
 export type { AlignHorizontalLeftRegularDuotoneProps };

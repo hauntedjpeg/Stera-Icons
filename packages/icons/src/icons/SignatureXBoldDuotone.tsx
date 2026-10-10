@@ -15,7 +15,7 @@ const SignatureXBoldDuotone = memo(
 
 SignatureXBoldDuotone.displayName = 'SignatureXBoldDuotone';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { SignatureXBoldDuotone, SignatureXBoldDuotone as SignatureXBoldDuotoneIcon, SignatureXBoldDuotone as SiSignatureXBoldDuotone };
 export default SignatureXBoldDuotone;
 export type { SignatureXBoldDuotoneProps };

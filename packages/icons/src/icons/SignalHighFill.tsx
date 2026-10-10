@@ -14,7 +14,7 @@ const SignalHighFill = memo(
 
 SignalHighFill.displayName = 'SignalHighFill';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { SignalHighFill, SignalHighFill as SignalHighFillIcon, SignalHighFill as SiSignalHighFill };
 export default SignalHighFill;
 export type { SignalHighFillProps };

@@ -14,7 +14,7 @@ const RulersRegular = memo(
 
 RulersRegular.displayName = 'RulersRegular';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { RulersRegular, RulersRegular as RulersRegularIcon, RulersRegular as SiRulersRegular };
 export default RulersRegular;
 export type { RulersRegularProps };

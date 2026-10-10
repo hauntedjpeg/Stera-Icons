@@ -15,7 +15,7 @@ const AnnotationFill = memo(
 
 AnnotationFill.displayName = 'AnnotationFill';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { AnnotationFill, AnnotationFill as AnnotationFillIcon, AnnotationFill as SiAnnotationFill };
 export default AnnotationFill;
 export type { AnnotationFillProps };

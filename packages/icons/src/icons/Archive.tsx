@@ -18,10 +18,10 @@ export interface ArchiveProps extends IconProps {
  * For smaller bundle size, import specific variants directly:
  * import { ArchiveRegular } from 'stera-icons/icons/ArchiveRegular';
  */
-const Archive = memo(forwardRef<SVGSVGElement, ArchiveProps>(({ 
+const Archive = memo(forwardRef<SVGSVGElement, ArchiveProps>(({
   weight = 'regular',
   duotone = false,
-  ...rest 
+  ...rest
 }, ref) => {
   if (weight === 'bold' && duotone) return <ArchiveBoldDuotone ref={ref} {...rest} />;
   if (weight === 'bold') return <ArchiveBold ref={ref} {...rest} />;
@@ -33,6 +33,6 @@ const Archive = memo(forwardRef<SVGSVGElement, ArchiveProps>(({
 
 Archive.displayName = 'Archive';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { Archive, Archive as ArchiveIcon, Archive as SiArchive };
 export default Archive;

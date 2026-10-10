@@ -14,7 +14,7 @@ const TruckFill = memo(
 
 TruckFill.displayName = 'TruckFill';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { TruckFill, TruckFill as TruckFillIcon, TruckFill as SiTruckFill };
 export default TruckFill;
 export type { TruckFillProps };

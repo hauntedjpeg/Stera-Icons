@@ -15,7 +15,7 @@ const HistoryRegularDuotone = memo(
 
 HistoryRegularDuotone.displayName = 'HistoryRegularDuotone';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { HistoryRegularDuotone, HistoryRegularDuotone as HistoryRegularDuotoneIcon, HistoryRegularDuotone as SiHistoryRegularDuotone };
 export default HistoryRegularDuotone;
 export type { HistoryRegularDuotoneProps };

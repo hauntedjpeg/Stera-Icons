@@ -15,7 +15,7 @@ const SliceRegularDuotone = memo(
 
 SliceRegularDuotone.displayName = 'SliceRegularDuotone';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { SliceRegularDuotone, SliceRegularDuotone as SliceRegularDuotoneIcon, SliceRegularDuotone as SiSliceRegularDuotone };
 export default SliceRegularDuotone;
 export type { SliceRegularDuotoneProps };

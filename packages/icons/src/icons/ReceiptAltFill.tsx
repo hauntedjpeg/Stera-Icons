@@ -14,7 +14,7 @@ const ReceiptAltFill = memo(
 
 ReceiptAltFill.displayName = 'ReceiptAltFill';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { ReceiptAltFill, ReceiptAltFill as ReceiptAltFillIcon, ReceiptAltFill as SiReceiptAltFill };
 export default ReceiptAltFill;
 export type { ReceiptAltFillProps };

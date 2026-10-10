@@ -15,7 +15,7 @@ const PolarisFillDuotone = memo(
 
 PolarisFillDuotone.displayName = 'PolarisFillDuotone';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { PolarisFillDuotone, PolarisFillDuotone as PolarisFillDuotoneIcon, PolarisFillDuotone as SiPolarisFillDuotone };
 export default PolarisFillDuotone;
 export type { PolarisFillDuotoneProps };

@@ -15,7 +15,7 @@ const MilestoneRegularDuotone = memo(
 
 MilestoneRegularDuotone.displayName = 'MilestoneRegularDuotone';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { MilestoneRegularDuotone, MilestoneRegularDuotone as MilestoneRegularDuotoneIcon, MilestoneRegularDuotone as SiMilestoneRegularDuotone };
 export default MilestoneRegularDuotone;
 export type { MilestoneRegularDuotoneProps };

@@ -18,10 +18,10 @@ export interface RobotProps extends IconProps {
  * For smaller bundle size, import specific variants directly:
  * import { RobotRegular } from 'stera-icons/icons/RobotRegular';
  */
-const Robot = memo(forwardRef<SVGSVGElement, RobotProps>(({ 
+const Robot = memo(forwardRef<SVGSVGElement, RobotProps>(({
   weight = 'regular',
   duotone = false,
-  ...rest 
+  ...rest
 }, ref) => {
   if (weight === 'bold' && duotone) return <RobotBoldDuotone ref={ref} {...rest} />;
   if (weight === 'bold') return <RobotBold ref={ref} {...rest} />;
@@ -33,6 +33,6 @@ const Robot = memo(forwardRef<SVGSVGElement, RobotProps>(({
 
 Robot.displayName = 'Robot';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { Robot, Robot as RobotIcon, Robot as SiRobot };
 export default Robot;

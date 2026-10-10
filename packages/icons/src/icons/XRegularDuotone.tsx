@@ -15,7 +15,7 @@ const XRegularDuotone = memo(
 
 XRegularDuotone.displayName = 'XRegularDuotone';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { XRegularDuotone, XRegularDuotone as XRegularDuotoneIcon, XRegularDuotone as SiXRegularDuotone };
 export default XRegularDuotone;
 export type { XRegularDuotoneProps };

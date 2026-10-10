@@ -14,7 +14,7 @@ const EggBold = memo(
 
 EggBold.displayName = 'EggBold';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { EggBold, EggBold as EggBoldIcon, EggBold as SiEggBold };
 export default EggBold;
 export type { EggBoldProps };

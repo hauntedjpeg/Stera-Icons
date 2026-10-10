@@ -15,7 +15,7 @@ const CursorTextCircleBold = memo(
 
 CursorTextCircleBold.displayName = 'CursorTextCircleBold';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { CursorTextCircleBold, CursorTextCircleBold as CursorTextCircleBoldIcon, CursorTextCircleBold as SiCursorTextCircleBold };
 export default CursorTextCircleBold;
 export type { CursorTextCircleBoldProps };

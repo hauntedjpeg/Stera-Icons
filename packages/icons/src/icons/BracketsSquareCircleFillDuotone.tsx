@@ -15,7 +15,7 @@ const BracketsSquareCircleFillDuotone = memo(
 
 BracketsSquareCircleFillDuotone.displayName = 'BracketsSquareCircleFillDuotone';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { BracketsSquareCircleFillDuotone, BracketsSquareCircleFillDuotone as BracketsSquareCircleFillDuotoneIcon, BracketsSquareCircleFillDuotone as SiBracketsSquareCircleFillDuotone };
 export default BracketsSquareCircleFillDuotone;
 export type { BracketsSquareCircleFillDuotoneProps };

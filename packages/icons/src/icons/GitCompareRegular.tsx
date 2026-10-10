@@ -14,7 +14,7 @@ const GitCompareRegular = memo(
 
 GitCompareRegular.displayName = 'GitCompareRegular';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { GitCompareRegular, GitCompareRegular as GitCompareRegularIcon, GitCompareRegular as SiGitCompareRegular };
 export default GitCompareRegular;
 export type { GitCompareRegularProps };

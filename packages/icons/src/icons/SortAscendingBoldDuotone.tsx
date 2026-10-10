@@ -15,7 +15,7 @@ const SortAscendingBoldDuotone = memo(
 
 SortAscendingBoldDuotone.displayName = 'SortAscendingBoldDuotone';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { SortAscendingBoldDuotone, SortAscendingBoldDuotone as SortAscendingBoldDuotoneIcon, SortAscendingBoldDuotone as SiSortAscendingBoldDuotone };
 export default SortAscendingBoldDuotone;
 export type { SortAscendingBoldDuotoneProps };

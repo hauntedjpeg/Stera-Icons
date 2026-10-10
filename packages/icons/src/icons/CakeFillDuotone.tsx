@@ -15,7 +15,7 @@ const CakeFillDuotone = memo(
 
 CakeFillDuotone.displayName = 'CakeFillDuotone';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { CakeFillDuotone, CakeFillDuotone as CakeFillDuotoneIcon, CakeFillDuotone as SiCakeFillDuotone };
 export default CakeFillDuotone;
 export type { CakeFillDuotoneProps };

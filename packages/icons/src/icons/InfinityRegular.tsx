@@ -14,7 +14,7 @@ const InfinityRegular = memo(
 
 InfinityRegular.displayName = 'InfinityRegular';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { InfinityRegular, InfinityRegular as InfinityRegularIcon, InfinityRegular as SiInfinityRegular };
 export default InfinityRegular;
 export type { InfinityRegularProps };

@@ -15,7 +15,7 @@ const CarrotBoldDuotone = memo(
 
 CarrotBoldDuotone.displayName = 'CarrotBoldDuotone';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { CarrotBoldDuotone, CarrotBoldDuotone as CarrotBoldDuotoneIcon, CarrotBoldDuotone as SiCarrotBoldDuotone };
 export default CarrotBoldDuotone;
 export type { CarrotBoldDuotoneProps };

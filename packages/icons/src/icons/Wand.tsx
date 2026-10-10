@@ -18,10 +18,10 @@ export interface WandProps extends IconProps {
  * For smaller bundle size, import specific variants directly:
  * import { WandRegular } from 'stera-icons/icons/WandRegular';
  */
-const Wand = memo(forwardRef<SVGSVGElement, WandProps>(({ 
+const Wand = memo(forwardRef<SVGSVGElement, WandProps>(({
   weight = 'regular',
   duotone = false,
-  ...rest 
+  ...rest
 }, ref) => {
   if (weight === 'bold' && duotone) return <WandBoldDuotone ref={ref} {...rest} />;
   if (weight === 'bold') return <WandBold ref={ref} {...rest} />;
@@ -33,6 +33,6 @@ const Wand = memo(forwardRef<SVGSVGElement, WandProps>(({
 
 Wand.displayName = 'Wand';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { Wand, Wand as WandIcon, Wand as SiWand };
 export default Wand;

@@ -15,7 +15,7 @@ const ListBulletSimpleFillDuotone = memo(
 
 ListBulletSimpleFillDuotone.displayName = 'ListBulletSimpleFillDuotone';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { ListBulletSimpleFillDuotone, ListBulletSimpleFillDuotone as ListBulletSimpleFillDuotoneIcon, ListBulletSimpleFillDuotone as SiListBulletSimpleFillDuotone };
 export default ListBulletSimpleFillDuotone;
 export type { ListBulletSimpleFillDuotoneProps };

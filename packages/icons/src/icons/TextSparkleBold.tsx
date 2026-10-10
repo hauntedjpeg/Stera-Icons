@@ -14,7 +14,7 @@ const TextSparkleBold = memo(
 
 TextSparkleBold.displayName = 'TextSparkleBold';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { TextSparkleBold, TextSparkleBold as TextSparkleBoldIcon, TextSparkleBold as SiTextSparkleBold };
 export default TextSparkleBold;
 export type { TextSparkleBoldProps };

@@ -18,10 +18,10 @@ export interface SpeakerOffProps extends IconProps {
  * For smaller bundle size, import specific variants directly:
  * import { SpeakerOffRegular } from 'stera-icons/icons/SpeakerOffRegular';
  */
-const SpeakerOff = memo(forwardRef<SVGSVGElement, SpeakerOffProps>(({ 
+const SpeakerOff = memo(forwardRef<SVGSVGElement, SpeakerOffProps>(({
   weight = 'regular',
   duotone = false,
-  ...rest 
+  ...rest
 }, ref) => {
   if (weight === 'bold' && duotone) return <SpeakerOffBoldDuotone ref={ref} {...rest} />;
   if (weight === 'bold') return <SpeakerOffBold ref={ref} {...rest} />;
@@ -33,6 +33,6 @@ const SpeakerOff = memo(forwardRef<SVGSVGElement, SpeakerOffProps>(({
 
 SpeakerOff.displayName = 'SpeakerOff';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { SpeakerOff, SpeakerOff as SpeakerOffIcon, SpeakerOff as SiSpeakerOff };
 export default SpeakerOff;

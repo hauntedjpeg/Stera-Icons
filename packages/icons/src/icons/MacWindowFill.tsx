@@ -14,7 +14,7 @@ const MacWindowFill = memo(
 
 MacWindowFill.displayName = 'MacWindowFill';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { MacWindowFill, MacWindowFill as MacWindowFillIcon, MacWindowFill as SiMacWindowFill };
 export default MacWindowFill;
 export type { MacWindowFillProps };

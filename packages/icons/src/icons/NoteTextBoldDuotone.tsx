@@ -15,7 +15,7 @@ const NoteTextBoldDuotone = memo(
 
 NoteTextBoldDuotone.displayName = 'NoteTextBoldDuotone';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { NoteTextBoldDuotone, NoteTextBoldDuotone as NoteTextBoldDuotoneIcon, NoteTextBoldDuotone as SiNoteTextBoldDuotone };
 export default NoteTextBoldDuotone;
 export type { NoteTextBoldDuotoneProps };

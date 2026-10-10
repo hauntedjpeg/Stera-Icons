@@ -16,7 +16,7 @@ const MapPinAreaBold = memo(
 
 MapPinAreaBold.displayName = 'MapPinAreaBold';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { MapPinAreaBold, MapPinAreaBold as MapPinAreaBoldIcon, MapPinAreaBold as SiMapPinAreaBold };
 export default MapPinAreaBold;
 export type { MapPinAreaBoldProps };

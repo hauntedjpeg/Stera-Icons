@@ -18,10 +18,10 @@ export interface OverlappingCirclesDashProps extends IconProps {
  * For smaller bundle size, import specific variants directly:
  * import { OverlappingCirclesDashRegular } from 'stera-icons/icons/OverlappingCirclesDashRegular';
  */
-const OverlappingCirclesDash = memo(forwardRef<SVGSVGElement, OverlappingCirclesDashProps>(({ 
+const OverlappingCirclesDash = memo(forwardRef<SVGSVGElement, OverlappingCirclesDashProps>(({
   weight = 'regular',
   duotone = false,
-  ...rest 
+  ...rest
 }, ref) => {
   if (weight === 'bold' && duotone) return <OverlappingCirclesDashBoldDuotone ref={ref} {...rest} />;
   if (weight === 'bold') return <OverlappingCirclesDashBold ref={ref} {...rest} />;
@@ -33,6 +33,6 @@ const OverlappingCirclesDash = memo(forwardRef<SVGSVGElement, OverlappingCircles
 
 OverlappingCirclesDash.displayName = 'OverlappingCirclesDash';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { OverlappingCirclesDash, OverlappingCirclesDash as OverlappingCirclesDashIcon, OverlappingCirclesDash as SiOverlappingCirclesDash };
 export default OverlappingCirclesDash;

@@ -14,7 +14,7 @@ const MedalStarBold = memo(
 
 MedalStarBold.displayName = 'MedalStarBold';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { MedalStarBold, MedalStarBold as MedalStarBoldIcon, MedalStarBold as SiMedalStarBold };
 export default MedalStarBold;
 export type { MedalStarBoldProps };

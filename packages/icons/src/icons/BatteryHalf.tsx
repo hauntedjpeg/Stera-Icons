@@ -18,10 +18,10 @@ export interface BatteryHalfProps extends IconProps {
  * For smaller bundle size, import specific variants directly:
  * import { BatteryHalfRegular } from 'stera-icons/icons/BatteryHalfRegular';
  */
-const BatteryHalf = memo(forwardRef<SVGSVGElement, BatteryHalfProps>(({ 
+const BatteryHalf = memo(forwardRef<SVGSVGElement, BatteryHalfProps>(({
   weight = 'regular',
   duotone = false,
-  ...rest 
+  ...rest
 }, ref) => {
   if (weight === 'bold' && duotone) return <BatteryHalfBoldDuotone ref={ref} {...rest} />;
   if (weight === 'bold') return <BatteryHalfBold ref={ref} {...rest} />;
@@ -33,6 +33,6 @@ const BatteryHalf = memo(forwardRef<SVGSVGElement, BatteryHalfProps>(({
 
 BatteryHalf.displayName = 'BatteryHalf';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { BatteryHalf, BatteryHalf as BatteryHalfIcon, BatteryHalf as SiBatteryHalf };
 export default BatteryHalf;

@@ -15,7 +15,7 @@ const MessageCircleAlertBoldDuotone = memo(
 
 MessageCircleAlertBoldDuotone.displayName = 'MessageCircleAlertBoldDuotone';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { MessageCircleAlertBoldDuotone, MessageCircleAlertBoldDuotone as MessageCircleAlertBoldDuotoneIcon, MessageCircleAlertBoldDuotone as SiMessageCircleAlertBoldDuotone };
 export default MessageCircleAlertBoldDuotone;
 export type { MessageCircleAlertBoldDuotoneProps };

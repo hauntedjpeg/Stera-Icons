@@ -14,7 +14,7 @@ const CoinRegular = memo(
 
 CoinRegular.displayName = 'CoinRegular';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { CoinRegular, CoinRegular as CoinRegularIcon, CoinRegular as SiCoinRegular };
 export default CoinRegular;
 export type { CoinRegularProps };

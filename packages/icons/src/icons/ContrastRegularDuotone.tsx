@@ -15,7 +15,7 @@ const ContrastRegularDuotone = memo(
 
 ContrastRegularDuotone.displayName = 'ContrastRegularDuotone';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { ContrastRegularDuotone, ContrastRegularDuotone as ContrastRegularDuotoneIcon, ContrastRegularDuotone as SiContrastRegularDuotone };
 export default ContrastRegularDuotone;
 export type { ContrastRegularDuotoneProps };

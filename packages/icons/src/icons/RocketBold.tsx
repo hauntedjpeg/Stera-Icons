@@ -16,7 +16,7 @@ const RocketBold = memo(
 
 RocketBold.displayName = 'RocketBold';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { RocketBold, RocketBold as RocketBoldIcon, RocketBold as SiRocketBold };
 export default RocketBold;
 export type { RocketBoldProps };

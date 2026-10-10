@@ -41,12 +41,12 @@ export function ensureUnique(slug, taken) {
     taken.add(slug);
     return slug;
   }
-  
+
   let i = 2;
   while (taken.has(`${slug}-${i}`)) {
     i++;
   }
-  
+
   const unique = `${slug}-${i}`;
   taken.add(unique);
   return unique;
@@ -77,13 +77,13 @@ export function toPascalCase(slug) {
  */
 export function getComponentName(slug, weight, duotone) {
   const baseName = toPascalCase(slug);
-  
+
   // All direct variants get a suffix to avoid collision with wrapper components
   // Wrapper: Search (dynamic weight prop)
   // Direct variants: SearchRegular, SearchBold, SearchBoldDuotone, etc.
   const weightSuffix = weight.charAt(0).toUpperCase() + weight.slice(1);
   const duotoneSuffix = duotone ? 'Duotone' : '';
-  
+
   return `${baseName}${weightSuffix}${duotoneSuffix}`;
 }
 
@@ -102,7 +102,7 @@ export function getFileName(slug, weight, duotone) {
   const baseName = toPascalCase(slug);
   const weightSuffix = weight.charAt(0).toUpperCase() + weight.slice(1);
   const duotoneSuffix = duotone ? 'Duotone' : '';
-  
+
   return `${baseName}${weightSuffix}${duotoneSuffix}`;
 }
 
@@ -144,7 +144,7 @@ export function parseIconName(iconName) {
  * @returns {boolean} - True if the variant data is valid
  */
 export function validateVariantData(variantData) {
-  return variantData && 
+  return variantData &&
          variantData.variant &&
          typeof variantData.variant === 'object' &&
          typeof variantData.variant.weight === 'string' &&
@@ -166,7 +166,7 @@ export function parseTags(tags) {
 }
 
 /**
- * Generate aliased export names for a component (lucide-react style)
+ * Generate aliased export names for a component
  * @param {string} componentName - The component name (e.g., "SearchBold")
  * @returns {Object} - Object with base, icon suffix, and Si prefix aliases
  */

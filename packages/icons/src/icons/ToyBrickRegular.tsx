@@ -14,7 +14,7 @@ const ToyBrickRegular = memo(
 
 ToyBrickRegular.displayName = 'ToyBrickRegular';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { ToyBrickRegular, ToyBrickRegular as ToyBrickRegularIcon, ToyBrickRegular as SiToyBrickRegular };
 export default ToyBrickRegular;
 export type { ToyBrickRegularProps };

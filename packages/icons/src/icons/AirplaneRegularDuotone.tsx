@@ -15,7 +15,7 @@ const AirplaneRegularDuotone = memo(
 
 AirplaneRegularDuotone.displayName = 'AirplaneRegularDuotone';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { AirplaneRegularDuotone, AirplaneRegularDuotone as AirplaneRegularDuotoneIcon, AirplaneRegularDuotone as SiAirplaneRegularDuotone };
 export default AirplaneRegularDuotone;
 export type { AirplaneRegularDuotoneProps };

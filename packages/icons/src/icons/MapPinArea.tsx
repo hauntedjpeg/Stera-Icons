@@ -18,10 +18,10 @@ export interface MapPinAreaProps extends IconProps {
  * For smaller bundle size, import specific variants directly:
  * import { MapPinAreaRegular } from 'stera-icons/icons/MapPinAreaRegular';
  */
-const MapPinArea = memo(forwardRef<SVGSVGElement, MapPinAreaProps>(({ 
+const MapPinArea = memo(forwardRef<SVGSVGElement, MapPinAreaProps>(({
   weight = 'regular',
   duotone = false,
-  ...rest 
+  ...rest
 }, ref) => {
   if (weight === 'bold' && duotone) return <MapPinAreaBoldDuotone ref={ref} {...rest} />;
   if (weight === 'bold') return <MapPinAreaBold ref={ref} {...rest} />;
@@ -33,6 +33,6 @@ const MapPinArea = memo(forwardRef<SVGSVGElement, MapPinAreaProps>(({
 
 MapPinArea.displayName = 'MapPinArea';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { MapPinArea, MapPinArea as MapPinAreaIcon, MapPinArea as SiMapPinArea };
 export default MapPinArea;

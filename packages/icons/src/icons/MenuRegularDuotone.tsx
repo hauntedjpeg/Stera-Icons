@@ -15,7 +15,7 @@ const MenuRegularDuotone = memo(
 
 MenuRegularDuotone.displayName = 'MenuRegularDuotone';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { MenuRegularDuotone, MenuRegularDuotone as MenuRegularDuotoneIcon, MenuRegularDuotone as SiMenuRegularDuotone };
 export default MenuRegularDuotone;
 export type { MenuRegularDuotoneProps };

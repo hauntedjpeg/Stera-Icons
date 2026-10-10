@@ -18,10 +18,10 @@ export interface CircleDashSimpleProps extends IconProps {
  * For smaller bundle size, import specific variants directly:
  * import { CircleDashSimpleRegular } from 'stera-icons/icons/CircleDashSimpleRegular';
  */
-const CircleDashSimple = memo(forwardRef<SVGSVGElement, CircleDashSimpleProps>(({ 
+const CircleDashSimple = memo(forwardRef<SVGSVGElement, CircleDashSimpleProps>(({
   weight = 'regular',
   duotone = false,
-  ...rest 
+  ...rest
 }, ref) => {
   if (weight === 'bold' && duotone) return <CircleDashSimpleBoldDuotone ref={ref} {...rest} />;
   if (weight === 'bold') return <CircleDashSimpleBold ref={ref} {...rest} />;
@@ -33,6 +33,6 @@ const CircleDashSimple = memo(forwardRef<SVGSVGElement, CircleDashSimpleProps>((
 
 CircleDashSimple.displayName = 'CircleDashSimple';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { CircleDashSimple, CircleDashSimple as CircleDashSimpleIcon, CircleDashSimple as SiCircleDashSimple };
 export default CircleDashSimple;

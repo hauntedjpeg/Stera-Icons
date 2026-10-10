@@ -15,7 +15,7 @@ const BrowserXFill = memo(
 
 BrowserXFill.displayName = 'BrowserXFill';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { BrowserXFill, BrowserXFill as BrowserXFillIcon, BrowserXFill as SiBrowserXFill };
 export default BrowserXFill;
 export type { BrowserXFillProps };

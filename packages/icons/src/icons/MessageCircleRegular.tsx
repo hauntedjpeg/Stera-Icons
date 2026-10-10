@@ -14,7 +14,7 @@ const MessageCircleRegular = memo(
 
 MessageCircleRegular.displayName = 'MessageCircleRegular';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { MessageCircleRegular, MessageCircleRegular as MessageCircleRegularIcon, MessageCircleRegular as SiMessageCircleRegular };
 export default MessageCircleRegular;
 export type { MessageCircleRegularProps };

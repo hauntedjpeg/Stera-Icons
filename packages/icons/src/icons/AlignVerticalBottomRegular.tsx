@@ -15,7 +15,7 @@ const AlignVerticalBottomRegular = memo(
 
 AlignVerticalBottomRegular.displayName = 'AlignVerticalBottomRegular';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { AlignVerticalBottomRegular, AlignVerticalBottomRegular as AlignVerticalBottomRegularIcon, AlignVerticalBottomRegular as SiAlignVerticalBottomRegular };
 export default AlignVerticalBottomRegular;
 export type { AlignVerticalBottomRegularProps };

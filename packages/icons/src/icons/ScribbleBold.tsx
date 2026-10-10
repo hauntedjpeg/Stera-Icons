@@ -14,7 +14,7 @@ const ScribbleBold = memo(
 
 ScribbleBold.displayName = 'ScribbleBold';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { ScribbleBold, ScribbleBold as ScribbleBoldIcon, ScribbleBold as SiScribbleBold };
 export default ScribbleBold;
 export type { ScribbleBoldProps };

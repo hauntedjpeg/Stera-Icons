@@ -18,10 +18,10 @@ export interface BellXProps extends IconProps {
  * For smaller bundle size, import specific variants directly:
  * import { BellXRegular } from 'stera-icons/icons/BellXRegular';
  */
-const BellX = memo(forwardRef<SVGSVGElement, BellXProps>(({ 
+const BellX = memo(forwardRef<SVGSVGElement, BellXProps>(({
   weight = 'regular',
   duotone = false,
-  ...rest 
+  ...rest
 }, ref) => {
   if (weight === 'bold' && duotone) return <BellXBoldDuotone ref={ref} {...rest} />;
   if (weight === 'bold') return <BellXBold ref={ref} {...rest} />;
@@ -33,6 +33,6 @@ const BellX = memo(forwardRef<SVGSVGElement, BellXProps>(({
 
 BellX.displayName = 'BellX';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { BellX, BellX as BellXIcon, BellX as SiBellX };
 export default BellX;

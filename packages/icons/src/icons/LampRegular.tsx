@@ -14,7 +14,7 @@ const LampRegular = memo(
 
 LampRegular.displayName = 'LampRegular';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { LampRegular, LampRegular as LampRegularIcon, LampRegular as SiLampRegular };
 export default LampRegular;
 export type { LampRegularProps };

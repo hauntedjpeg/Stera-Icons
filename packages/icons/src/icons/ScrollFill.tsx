@@ -14,7 +14,7 @@ const ScrollFill = memo(
 
 ScrollFill.displayName = 'ScrollFill';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { ScrollFill, ScrollFill as ScrollFillIcon, ScrollFill as SiScrollFill };
 export default ScrollFill;
 export type { ScrollFillProps };

@@ -18,10 +18,10 @@ export interface LayersProps extends IconProps {
  * For smaller bundle size, import specific variants directly:
  * import { LayersRegular } from 'stera-icons/icons/LayersRegular';
  */
-const Layers = memo(forwardRef<SVGSVGElement, LayersProps>(({ 
+const Layers = memo(forwardRef<SVGSVGElement, LayersProps>(({
   weight = 'regular',
   duotone = false,
-  ...rest 
+  ...rest
 }, ref) => {
   if (weight === 'bold' && duotone) return <LayersBoldDuotone ref={ref} {...rest} />;
   if (weight === 'bold') return <LayersBold ref={ref} {...rest} />;
@@ -33,6 +33,6 @@ const Layers = memo(forwardRef<SVGSVGElement, LayersProps>(({
 
 Layers.displayName = 'Layers';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { Layers, Layers as LayersIcon, Layers as SiLayers };
 export default Layers;

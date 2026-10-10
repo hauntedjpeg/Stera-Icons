@@ -15,7 +15,7 @@ const AlertSquareBold = memo(
 
 AlertSquareBold.displayName = 'AlertSquareBold';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { AlertSquareBold, AlertSquareBold as AlertSquareBoldIcon, AlertSquareBold as SiAlertSquareBold };
 export default AlertSquareBold;
 export type { AlertSquareBoldProps };

@@ -14,7 +14,7 @@ const DuplicatePlusFill = memo(
 
 DuplicatePlusFill.displayName = 'DuplicatePlusFill';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { DuplicatePlusFill, DuplicatePlusFill as DuplicatePlusFillIcon, DuplicatePlusFill as SiDuplicatePlusFill };
 export default DuplicatePlusFill;
 export type { DuplicatePlusFillProps };

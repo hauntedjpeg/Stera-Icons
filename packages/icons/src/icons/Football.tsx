@@ -18,10 +18,10 @@ export interface FootballProps extends IconProps {
  * For smaller bundle size, import specific variants directly:
  * import { FootballRegular } from 'stera-icons/icons/FootballRegular';
  */
-const Football = memo(forwardRef<SVGSVGElement, FootballProps>(({ 
+const Football = memo(forwardRef<SVGSVGElement, FootballProps>(({
   weight = 'regular',
   duotone = false,
-  ...rest 
+  ...rest
 }, ref) => {
   if (weight === 'bold' && duotone) return <FootballBoldDuotone ref={ref} {...rest} />;
   if (weight === 'bold') return <FootballBold ref={ref} {...rest} />;
@@ -33,6 +33,6 @@ const Football = memo(forwardRef<SVGSVGElement, FootballProps>(({
 
 Football.displayName = 'Football';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { Football, Football as FootballIcon, Football as SiFootball };
 export default Football;

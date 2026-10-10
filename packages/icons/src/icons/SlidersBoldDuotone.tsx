@@ -15,7 +15,7 @@ const SlidersBoldDuotone = memo(
 
 SlidersBoldDuotone.displayName = 'SlidersBoldDuotone';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { SlidersBoldDuotone, SlidersBoldDuotone as SlidersBoldDuotoneIcon, SlidersBoldDuotone as SiSlidersBoldDuotone };
 export default SlidersBoldDuotone;
 export type { SlidersBoldDuotoneProps };

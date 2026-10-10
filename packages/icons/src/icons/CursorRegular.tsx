@@ -14,7 +14,7 @@ const CursorRegular = memo(
 
 CursorRegular.displayName = 'CursorRegular';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { CursorRegular, CursorRegular as CursorRegularIcon, CursorRegular as SiCursorRegular };
 export default CursorRegular;
 export type { CursorRegularProps };

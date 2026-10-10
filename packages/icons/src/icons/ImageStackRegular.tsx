@@ -15,7 +15,7 @@ const ImageStackRegular = memo(
 
 ImageStackRegular.displayName = 'ImageStackRegular';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { ImageStackRegular, ImageStackRegular as ImageStackRegularIcon, ImageStackRegular as SiImageStackRegular };
 export default ImageStackRegular;
 export type { ImageStackRegularProps };

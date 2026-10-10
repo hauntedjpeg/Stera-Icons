@@ -16,7 +16,7 @@ const ConnectionBold = memo(
 
 ConnectionBold.displayName = 'ConnectionBold';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { ConnectionBold, ConnectionBold as ConnectionBoldIcon, ConnectionBold as SiConnectionBold };
 export default ConnectionBold;
 export type { ConnectionBoldProps };

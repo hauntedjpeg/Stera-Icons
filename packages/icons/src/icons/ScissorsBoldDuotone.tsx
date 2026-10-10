@@ -16,7 +16,7 @@ const ScissorsBoldDuotone = memo(
 
 ScissorsBoldDuotone.displayName = 'ScissorsBoldDuotone';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { ScissorsBoldDuotone, ScissorsBoldDuotone as ScissorsBoldDuotoneIcon, ScissorsBoldDuotone as SiScissorsBoldDuotone };
 export default ScissorsBoldDuotone;
 export type { ScissorsBoldDuotoneProps };

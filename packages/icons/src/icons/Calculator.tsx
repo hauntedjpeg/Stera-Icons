@@ -18,10 +18,10 @@ export interface CalculatorProps extends IconProps {
  * For smaller bundle size, import specific variants directly:
  * import { CalculatorRegular } from 'stera-icons/icons/CalculatorRegular';
  */
-const Calculator = memo(forwardRef<SVGSVGElement, CalculatorProps>(({ 
+const Calculator = memo(forwardRef<SVGSVGElement, CalculatorProps>(({
   weight = 'regular',
   duotone = false,
-  ...rest 
+  ...rest
 }, ref) => {
   if (weight === 'bold' && duotone) return <CalculatorBoldDuotone ref={ref} {...rest} />;
   if (weight === 'bold') return <CalculatorBold ref={ref} {...rest} />;
@@ -33,6 +33,6 @@ const Calculator = memo(forwardRef<SVGSVGElement, CalculatorProps>(({
 
 Calculator.displayName = 'Calculator';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { Calculator, Calculator as CalculatorIcon, Calculator as SiCalculator };
 export default Calculator;

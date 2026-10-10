@@ -18,10 +18,10 @@ export interface DatabasePlusProps extends IconProps {
  * For smaller bundle size, import specific variants directly:
  * import { DatabasePlusRegular } from 'stera-icons/icons/DatabasePlusRegular';
  */
-const DatabasePlus = memo(forwardRef<SVGSVGElement, DatabasePlusProps>(({ 
+const DatabasePlus = memo(forwardRef<SVGSVGElement, DatabasePlusProps>(({
   weight = 'regular',
   duotone = false,
-  ...rest 
+  ...rest
 }, ref) => {
   if (weight === 'bold' && duotone) return <DatabasePlusBoldDuotone ref={ref} {...rest} />;
   if (weight === 'bold') return <DatabasePlusBold ref={ref} {...rest} />;
@@ -33,6 +33,6 @@ const DatabasePlus = memo(forwardRef<SVGSVGElement, DatabasePlusProps>(({
 
 DatabasePlus.displayName = 'DatabasePlus';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { DatabasePlus, DatabasePlus as DatabasePlusIcon, DatabasePlus as SiDatabasePlus };
 export default DatabasePlus;

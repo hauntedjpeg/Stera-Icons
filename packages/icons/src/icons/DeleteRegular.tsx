@@ -15,7 +15,7 @@ const DeleteRegular = memo(
 
 DeleteRegular.displayName = 'DeleteRegular';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { DeleteRegular, DeleteRegular as DeleteRegularIcon, DeleteRegular as SiDeleteRegular };
 export default DeleteRegular;
 export type { DeleteRegularProps };

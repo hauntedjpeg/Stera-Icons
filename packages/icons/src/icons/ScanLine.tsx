@@ -18,10 +18,10 @@ export interface ScanLineProps extends IconProps {
  * For smaller bundle size, import specific variants directly:
  * import { ScanLineRegular } from 'stera-icons/icons/ScanLineRegular';
  */
-const ScanLine = memo(forwardRef<SVGSVGElement, ScanLineProps>(({ 
+const ScanLine = memo(forwardRef<SVGSVGElement, ScanLineProps>(({
   weight = 'regular',
   duotone = false,
-  ...rest 
+  ...rest
 }, ref) => {
   if (weight === 'bold' && duotone) return <ScanLineBoldDuotone ref={ref} {...rest} />;
   if (weight === 'bold') return <ScanLineBold ref={ref} {...rest} />;
@@ -33,6 +33,6 @@ const ScanLine = memo(forwardRef<SVGSVGElement, ScanLineProps>(({
 
 ScanLine.displayName = 'ScanLine';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { ScanLine, ScanLine as ScanLineIcon, ScanLine as SiScanLine };
 export default ScanLine;

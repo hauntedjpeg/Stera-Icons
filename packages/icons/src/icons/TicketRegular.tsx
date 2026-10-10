@@ -15,7 +15,7 @@ const TicketRegular = memo(
 
 TicketRegular.displayName = 'TicketRegular';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { TicketRegular, TicketRegular as TicketRegularIcon, TicketRegular as SiTicketRegular };
 export default TicketRegular;
 export type { TicketRegularProps };

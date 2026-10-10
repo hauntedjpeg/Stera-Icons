@@ -18,10 +18,10 @@ export interface EmoteNeutralProps extends IconProps {
  * For smaller bundle size, import specific variants directly:
  * import { EmoteNeutralRegular } from 'stera-icons/icons/EmoteNeutralRegular';
  */
-const EmoteNeutral = memo(forwardRef<SVGSVGElement, EmoteNeutralProps>(({ 
+const EmoteNeutral = memo(forwardRef<SVGSVGElement, EmoteNeutralProps>(({
   weight = 'regular',
   duotone = false,
-  ...rest 
+  ...rest
 }, ref) => {
   if (weight === 'bold' && duotone) return <EmoteNeutralBoldDuotone ref={ref} {...rest} />;
   if (weight === 'bold') return <EmoteNeutralBold ref={ref} {...rest} />;
@@ -33,6 +33,6 @@ const EmoteNeutral = memo(forwardRef<SVGSVGElement, EmoteNeutralProps>(({
 
 EmoteNeutral.displayName = 'EmoteNeutral';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { EmoteNeutral, EmoteNeutral as EmoteNeutralIcon, EmoteNeutral as SiEmoteNeutral };
 export default EmoteNeutral;

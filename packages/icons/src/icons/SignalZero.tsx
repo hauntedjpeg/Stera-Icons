@@ -18,10 +18,10 @@ export interface SignalZeroProps extends IconProps {
  * For smaller bundle size, import specific variants directly:
  * import { SignalZeroRegular } from 'stera-icons/icons/SignalZeroRegular';
  */
-const SignalZero = memo(forwardRef<SVGSVGElement, SignalZeroProps>(({ 
+const SignalZero = memo(forwardRef<SVGSVGElement, SignalZeroProps>(({
   weight = 'regular',
   duotone = false,
-  ...rest 
+  ...rest
 }, ref) => {
   if (weight === 'bold' && duotone) return <SignalZeroBoldDuotone ref={ref} {...rest} />;
   if (weight === 'bold') return <SignalZeroBold ref={ref} {...rest} />;
@@ -33,6 +33,6 @@ const SignalZero = memo(forwardRef<SVGSVGElement, SignalZeroProps>(({
 
 SignalZero.displayName = 'SignalZero';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { SignalZero, SignalZero as SignalZeroIcon, SignalZero as SiSignalZero };
 export default SignalZero;

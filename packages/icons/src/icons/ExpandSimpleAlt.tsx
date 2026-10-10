@@ -18,10 +18,10 @@ export interface ExpandSimpleAltProps extends IconProps {
  * For smaller bundle size, import specific variants directly:
  * import { ExpandSimpleAltRegular } from 'stera-icons/icons/ExpandSimpleAltRegular';
  */
-const ExpandSimpleAlt = memo(forwardRef<SVGSVGElement, ExpandSimpleAltProps>(({ 
+const ExpandSimpleAlt = memo(forwardRef<SVGSVGElement, ExpandSimpleAltProps>(({
   weight = 'regular',
   duotone = false,
-  ...rest 
+  ...rest
 }, ref) => {
   if (weight === 'bold' && duotone) return <ExpandSimpleAltBoldDuotone ref={ref} {...rest} />;
   if (weight === 'bold') return <ExpandSimpleAltBold ref={ref} {...rest} />;
@@ -33,6 +33,6 @@ const ExpandSimpleAlt = memo(forwardRef<SVGSVGElement, ExpandSimpleAltProps>(({
 
 ExpandSimpleAlt.displayName = 'ExpandSimpleAlt';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { ExpandSimpleAlt, ExpandSimpleAlt as ExpandSimpleAltIcon, ExpandSimpleAlt as SiExpandSimpleAlt };
 export default ExpandSimpleAlt;

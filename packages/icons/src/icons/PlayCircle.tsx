@@ -18,10 +18,10 @@ export interface PlayCircleProps extends IconProps {
  * For smaller bundle size, import specific variants directly:
  * import { PlayCircleRegular } from 'stera-icons/icons/PlayCircleRegular';
  */
-const PlayCircle = memo(forwardRef<SVGSVGElement, PlayCircleProps>(({ 
+const PlayCircle = memo(forwardRef<SVGSVGElement, PlayCircleProps>(({
   weight = 'regular',
   duotone = false,
-  ...rest 
+  ...rest
 }, ref) => {
   if (weight === 'bold' && duotone) return <PlayCircleBoldDuotone ref={ref} {...rest} />;
   if (weight === 'bold') return <PlayCircleBold ref={ref} {...rest} />;
@@ -33,6 +33,6 @@ const PlayCircle = memo(forwardRef<SVGSVGElement, PlayCircleProps>(({
 
 PlayCircle.displayName = 'PlayCircle';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { PlayCircle, PlayCircle as PlayCircleIcon, PlayCircle as SiPlayCircle };
 export default PlayCircle;

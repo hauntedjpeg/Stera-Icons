@@ -15,7 +15,7 @@ const YinYangBoldDuotone = memo(
 
 YinYangBoldDuotone.displayName = 'YinYangBoldDuotone';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { YinYangBoldDuotone, YinYangBoldDuotone as YinYangBoldDuotoneIcon, YinYangBoldDuotone as SiYinYangBoldDuotone };
 export default YinYangBoldDuotone;
 export type { YinYangBoldDuotoneProps };

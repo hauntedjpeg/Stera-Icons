@@ -14,7 +14,7 @@ const TextItalicRegular = memo(
 
 TextItalicRegular.displayName = 'TextItalicRegular';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { TextItalicRegular, TextItalicRegular as TextItalicRegularIcon, TextItalicRegular as SiTextItalicRegular };
 export default TextItalicRegular;
 export type { TextItalicRegularProps };

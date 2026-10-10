@@ -15,7 +15,7 @@ const ChecklistCheckedBoldDuotone = memo(
 
 ChecklistCheckedBoldDuotone.displayName = 'ChecklistCheckedBoldDuotone';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { ChecklistCheckedBoldDuotone, ChecklistCheckedBoldDuotone as ChecklistCheckedBoldDuotoneIcon, ChecklistCheckedBoldDuotone as SiChecklistCheckedBoldDuotone };
 export default ChecklistCheckedBoldDuotone;
 export type { ChecklistCheckedBoldDuotoneProps };

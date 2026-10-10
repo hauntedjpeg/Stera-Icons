@@ -18,10 +18,10 @@ export interface GhostProps extends IconProps {
  * For smaller bundle size, import specific variants directly:
  * import { GhostRegular } from 'stera-icons/icons/GhostRegular';
  */
-const Ghost = memo(forwardRef<SVGSVGElement, GhostProps>(({ 
+const Ghost = memo(forwardRef<SVGSVGElement, GhostProps>(({
   weight = 'regular',
   duotone = false,
-  ...rest 
+  ...rest
 }, ref) => {
   if (weight === 'bold' && duotone) return <GhostBoldDuotone ref={ref} {...rest} />;
   if (weight === 'bold') return <GhostBold ref={ref} {...rest} />;
@@ -33,6 +33,6 @@ const Ghost = memo(forwardRef<SVGSVGElement, GhostProps>(({
 
 Ghost.displayName = 'Ghost';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { Ghost, Ghost as GhostIcon, Ghost as SiGhost };
 export default Ghost;

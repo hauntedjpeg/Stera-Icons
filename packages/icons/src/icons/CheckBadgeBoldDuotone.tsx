@@ -15,7 +15,7 @@ const CheckBadgeBoldDuotone = memo(
 
 CheckBadgeBoldDuotone.displayName = 'CheckBadgeBoldDuotone';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { CheckBadgeBoldDuotone, CheckBadgeBoldDuotone as CheckBadgeBoldDuotoneIcon, CheckBadgeBoldDuotone as SiCheckBadgeBoldDuotone };
 export default CheckBadgeBoldDuotone;
 export type { CheckBadgeBoldDuotoneProps };

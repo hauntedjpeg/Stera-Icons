@@ -18,10 +18,10 @@ export interface SendHProps extends IconProps {
  * For smaller bundle size, import specific variants directly:
  * import { SendHRegular } from 'stera-icons/icons/SendHRegular';
  */
-const SendH = memo(forwardRef<SVGSVGElement, SendHProps>(({ 
+const SendH = memo(forwardRef<SVGSVGElement, SendHProps>(({
   weight = 'regular',
   duotone = false,
-  ...rest 
+  ...rest
 }, ref) => {
   if (weight === 'bold' && duotone) return <SendHBoldDuotone ref={ref} {...rest} />;
   if (weight === 'bold') return <SendHBold ref={ref} {...rest} />;
@@ -33,6 +33,6 @@ const SendH = memo(forwardRef<SVGSVGElement, SendHProps>(({
 
 SendH.displayName = 'SendH';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { SendH, SendH as SendHIcon, SendH as SiSendH };
 export default SendH;

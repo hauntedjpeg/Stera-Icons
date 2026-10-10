@@ -14,7 +14,7 @@ const RewindBold = memo(
 
 RewindBold.displayName = 'RewindBold';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { RewindBold, RewindBold as RewindBoldIcon, RewindBold as SiRewindBold };
 export default RewindBold;
 export type { RewindBoldProps };

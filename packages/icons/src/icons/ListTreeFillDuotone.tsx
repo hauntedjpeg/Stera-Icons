@@ -15,7 +15,7 @@ const ListTreeFillDuotone = memo(
 
 ListTreeFillDuotone.displayName = 'ListTreeFillDuotone';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { ListTreeFillDuotone, ListTreeFillDuotone as ListTreeFillDuotoneIcon, ListTreeFillDuotone as SiListTreeFillDuotone };
 export default ListTreeFillDuotone;
 export type { ListTreeFillDuotoneProps };

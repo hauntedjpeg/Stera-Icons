@@ -18,10 +18,10 @@ export interface PencilProps extends IconProps {
  * For smaller bundle size, import specific variants directly:
  * import { PencilRegular } from 'stera-icons/icons/PencilRegular';
  */
-const Pencil = memo(forwardRef<SVGSVGElement, PencilProps>(({ 
+const Pencil = memo(forwardRef<SVGSVGElement, PencilProps>(({
   weight = 'regular',
   duotone = false,
-  ...rest 
+  ...rest
 }, ref) => {
   if (weight === 'bold' && duotone) return <PencilBoldDuotone ref={ref} {...rest} />;
   if (weight === 'bold') return <PencilBold ref={ref} {...rest} />;
@@ -33,6 +33,6 @@ const Pencil = memo(forwardRef<SVGSVGElement, PencilProps>(({
 
 Pencil.displayName = 'Pencil';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { Pencil, Pencil as PencilIcon, Pencil as SiPencil };
 export default Pencil;

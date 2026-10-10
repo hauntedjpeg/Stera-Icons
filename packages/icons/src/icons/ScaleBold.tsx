@@ -14,7 +14,7 @@ const ScaleBold = memo(
 
 ScaleBold.displayName = 'ScaleBold';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { ScaleBold, ScaleBold as ScaleBoldIcon, ScaleBold as SiScaleBold };
 export default ScaleBold;
 export type { ScaleBoldProps };

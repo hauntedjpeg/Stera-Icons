@@ -15,7 +15,7 @@ const MessageMessagesRegular = memo(
 
 MessageMessagesRegular.displayName = 'MessageMessagesRegular';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { MessageMessagesRegular, MessageMessagesRegular as MessageMessagesRegularIcon, MessageMessagesRegular as SiMessageMessagesRegular };
 export default MessageMessagesRegular;
 export type { MessageMessagesRegularProps };

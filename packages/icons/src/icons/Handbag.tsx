@@ -18,10 +18,10 @@ export interface HandbagProps extends IconProps {
  * For smaller bundle size, import specific variants directly:
  * import { HandbagRegular } from 'stera-icons/icons/HandbagRegular';
  */
-const Handbag = memo(forwardRef<SVGSVGElement, HandbagProps>(({ 
+const Handbag = memo(forwardRef<SVGSVGElement, HandbagProps>(({
   weight = 'regular',
   duotone = false,
-  ...rest 
+  ...rest
 }, ref) => {
   if (weight === 'bold' && duotone) return <HandbagBoldDuotone ref={ref} {...rest} />;
   if (weight === 'bold') return <HandbagBold ref={ref} {...rest} />;
@@ -33,6 +33,6 @@ const Handbag = memo(forwardRef<SVGSVGElement, HandbagProps>(({
 
 Handbag.displayName = 'Handbag';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { Handbag, Handbag as HandbagIcon, Handbag as SiHandbag };
 export default Handbag;

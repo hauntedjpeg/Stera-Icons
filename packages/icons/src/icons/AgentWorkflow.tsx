@@ -18,10 +18,10 @@ export interface AgentWorkflowProps extends IconProps {
  * For smaller bundle size, import specific variants directly:
  * import { AgentWorkflowRegular } from 'stera-icons/icons/AgentWorkflowRegular';
  */
-const AgentWorkflow = memo(forwardRef<SVGSVGElement, AgentWorkflowProps>(({ 
+const AgentWorkflow = memo(forwardRef<SVGSVGElement, AgentWorkflowProps>(({
   weight = 'regular',
   duotone = false,
-  ...rest 
+  ...rest
 }, ref) => {
   if (weight === 'bold' && duotone) return <AgentWorkflowBoldDuotone ref={ref} {...rest} />;
   if (weight === 'bold') return <AgentWorkflowBold ref={ref} {...rest} />;
@@ -33,6 +33,6 @@ const AgentWorkflow = memo(forwardRef<SVGSVGElement, AgentWorkflowProps>(({
 
 AgentWorkflow.displayName = 'AgentWorkflow';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { AgentWorkflow, AgentWorkflow as AgentWorkflowIcon, AgentWorkflow as SiAgentWorkflow };
 export default AgentWorkflow;

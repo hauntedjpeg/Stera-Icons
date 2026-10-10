@@ -14,7 +14,7 @@ const UserLockBold = memo(
 
 UserLockBold.displayName = 'UserLockBold';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { UserLockBold, UserLockBold as UserLockBoldIcon, UserLockBold as SiUserLockBold };
 export default UserLockBold;
 export type { UserLockBoldProps };

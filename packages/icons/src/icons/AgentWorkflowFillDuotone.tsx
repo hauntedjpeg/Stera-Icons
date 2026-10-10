@@ -15,7 +15,7 @@ const AgentWorkflowFillDuotone = memo(
 
 AgentWorkflowFillDuotone.displayName = 'AgentWorkflowFillDuotone';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { AgentWorkflowFillDuotone, AgentWorkflowFillDuotone as AgentWorkflowFillDuotoneIcon, AgentWorkflowFillDuotone as SiAgentWorkflowFillDuotone };
 export default AgentWorkflowFillDuotone;
 export type { AgentWorkflowFillDuotoneProps };

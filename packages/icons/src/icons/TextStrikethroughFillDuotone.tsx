@@ -15,7 +15,7 @@ const TextStrikethroughFillDuotone = memo(
 
 TextStrikethroughFillDuotone.displayName = 'TextStrikethroughFillDuotone';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { TextStrikethroughFillDuotone, TextStrikethroughFillDuotone as TextStrikethroughFillDuotoneIcon, TextStrikethroughFillDuotone as SiTextStrikethroughFillDuotone };
 export default TextStrikethroughFillDuotone;
 export type { TextStrikethroughFillDuotoneProps };

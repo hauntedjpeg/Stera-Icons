@@ -14,7 +14,7 @@ const SignalAltMediumRegular = memo(
 
 SignalAltMediumRegular.displayName = 'SignalAltMediumRegular';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { SignalAltMediumRegular, SignalAltMediumRegular as SignalAltMediumRegularIcon, SignalAltMediumRegular as SiSignalAltMediumRegular };
 export default SignalAltMediumRegular;
 export type { SignalAltMediumRegularProps };

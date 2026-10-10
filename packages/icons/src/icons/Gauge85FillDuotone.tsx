@@ -16,7 +16,7 @@ const Gauge85FillDuotone = memo(
 
 Gauge85FillDuotone.displayName = 'Gauge85FillDuotone';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { Gauge85FillDuotone, Gauge85FillDuotone as Gauge85FillDuotoneIcon, Gauge85FillDuotone as SiGauge85FillDuotone };
 export default Gauge85FillDuotone;
 export type { Gauge85FillDuotoneProps };

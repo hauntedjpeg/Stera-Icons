@@ -18,10 +18,10 @@ export interface ChevronFullInwardProps extends IconProps {
  * For smaller bundle size, import specific variants directly:
  * import { ChevronFullInwardRegular } from 'stera-icons/icons/ChevronFullInwardRegular';
  */
-const ChevronFullInward = memo(forwardRef<SVGSVGElement, ChevronFullInwardProps>(({ 
+const ChevronFullInward = memo(forwardRef<SVGSVGElement, ChevronFullInwardProps>(({
   weight = 'regular',
   duotone = false,
-  ...rest 
+  ...rest
 }, ref) => {
   if (weight === 'bold' && duotone) return <ChevronFullInwardBoldDuotone ref={ref} {...rest} />;
   if (weight === 'bold') return <ChevronFullInwardBold ref={ref} {...rest} />;
@@ -33,6 +33,6 @@ const ChevronFullInward = memo(forwardRef<SVGSVGElement, ChevronFullInwardProps>
 
 ChevronFullInward.displayName = 'ChevronFullInward';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { ChevronFullInward, ChevronFullInward as ChevronFullInwardIcon, ChevronFullInward as SiChevronFullInward };
 export default ChevronFullInward;

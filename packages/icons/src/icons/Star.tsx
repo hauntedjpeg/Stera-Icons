@@ -18,10 +18,10 @@ export interface StarProps extends IconProps {
  * For smaller bundle size, import specific variants directly:
  * import { StarRegular } from 'stera-icons/icons/StarRegular';
  */
-const Star = memo(forwardRef<SVGSVGElement, StarProps>(({ 
+const Star = memo(forwardRef<SVGSVGElement, StarProps>(({
   weight = 'regular',
   duotone = false,
-  ...rest 
+  ...rest
 }, ref) => {
   if (weight === 'bold' && duotone) return <StarBoldDuotone ref={ref} {...rest} />;
   if (weight === 'bold') return <StarBold ref={ref} {...rest} />;
@@ -33,6 +33,6 @@ const Star = memo(forwardRef<SVGSVGElement, StarProps>(({
 
 Star.displayName = 'Star';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { Star, Star as StarIcon, Star as SiStar };
 export default Star;

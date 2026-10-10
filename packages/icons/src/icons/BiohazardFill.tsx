@@ -14,7 +14,7 @@ const BiohazardFill = memo(
 
 BiohazardFill.displayName = 'BiohazardFill';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { BiohazardFill, BiohazardFill as BiohazardFillIcon, BiohazardFill as SiBiohazardFill };
 export default BiohazardFill;
 export type { BiohazardFillProps };

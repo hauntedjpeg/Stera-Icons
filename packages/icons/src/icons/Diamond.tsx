@@ -18,10 +18,10 @@ export interface DiamondProps extends IconProps {
  * For smaller bundle size, import specific variants directly:
  * import { DiamondRegular } from 'stera-icons/icons/DiamondRegular';
  */
-const Diamond = memo(forwardRef<SVGSVGElement, DiamondProps>(({ 
+const Diamond = memo(forwardRef<SVGSVGElement, DiamondProps>(({
   weight = 'regular',
   duotone = false,
-  ...rest 
+  ...rest
 }, ref) => {
   if (weight === 'bold' && duotone) return <DiamondBoldDuotone ref={ref} {...rest} />;
   if (weight === 'bold') return <DiamondBold ref={ref} {...rest} />;
@@ -33,6 +33,6 @@ const Diamond = memo(forwardRef<SVGSVGElement, DiamondProps>(({
 
 Diamond.displayName = 'Diamond';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { Diamond, Diamond as DiamondIcon, Diamond as SiDiamond };
 export default Diamond;

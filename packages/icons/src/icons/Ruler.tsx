@@ -18,10 +18,10 @@ export interface RulerProps extends IconProps {
  * For smaller bundle size, import specific variants directly:
  * import { RulerRegular } from 'stera-icons/icons/RulerRegular';
  */
-const Ruler = memo(forwardRef<SVGSVGElement, RulerProps>(({ 
+const Ruler = memo(forwardRef<SVGSVGElement, RulerProps>(({
   weight = 'regular',
   duotone = false,
-  ...rest 
+  ...rest
 }, ref) => {
   if (weight === 'bold' && duotone) return <RulerBoldDuotone ref={ref} {...rest} />;
   if (weight === 'bold') return <RulerBold ref={ref} {...rest} />;
@@ -33,6 +33,6 @@ const Ruler = memo(forwardRef<SVGSVGElement, RulerProps>(({
 
 Ruler.displayName = 'Ruler';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { Ruler, Ruler as RulerIcon, Ruler as SiRuler };
 export default Ruler;

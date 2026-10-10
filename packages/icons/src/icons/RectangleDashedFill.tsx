@@ -14,7 +14,7 @@ const RectangleDashedFill = memo(
 
 RectangleDashedFill.displayName = 'RectangleDashedFill';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { RectangleDashedFill, RectangleDashedFill as RectangleDashedFillIcon, RectangleDashedFill as SiRectangleDashedFill };
 export default RectangleDashedFill;
 export type { RectangleDashedFillProps };

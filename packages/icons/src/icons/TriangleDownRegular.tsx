@@ -14,7 +14,7 @@ const TriangleDownRegular = memo(
 
 TriangleDownRegular.displayName = 'TriangleDownRegular';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { TriangleDownRegular, TriangleDownRegular as TriangleDownRegularIcon, TriangleDownRegular as SiTriangleDownRegular };
 export default TriangleDownRegular;
 export type { TriangleDownRegularProps };

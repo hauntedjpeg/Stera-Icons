@@ -15,7 +15,7 @@ const ArrowSquareDownBold = memo(
 
 ArrowSquareDownBold.displayName = 'ArrowSquareDownBold';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { ArrowSquareDownBold, ArrowSquareDownBold as ArrowSquareDownBoldIcon, ArrowSquareDownBold as SiArrowSquareDownBold };
 export default ArrowSquareDownBold;
 export type { ArrowSquareDownBoldProps };

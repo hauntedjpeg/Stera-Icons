@@ -18,10 +18,10 @@ export interface WaveSquareProps extends IconProps {
  * For smaller bundle size, import specific variants directly:
  * import { WaveSquareRegular } from 'stera-icons/icons/WaveSquareRegular';
  */
-const WaveSquare = memo(forwardRef<SVGSVGElement, WaveSquareProps>(({ 
+const WaveSquare = memo(forwardRef<SVGSVGElement, WaveSquareProps>(({
   weight = 'regular',
   duotone = false,
-  ...rest 
+  ...rest
 }, ref) => {
   if (weight === 'bold' && duotone) return <WaveSquareBoldDuotone ref={ref} {...rest} />;
   if (weight === 'bold') return <WaveSquareBold ref={ref} {...rest} />;
@@ -33,6 +33,6 @@ const WaveSquare = memo(forwardRef<SVGSVGElement, WaveSquareProps>(({
 
 WaveSquare.displayName = 'WaveSquare';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { WaveSquare, WaveSquare as WaveSquareIcon, WaveSquare as SiWaveSquare };
 export default WaveSquare;

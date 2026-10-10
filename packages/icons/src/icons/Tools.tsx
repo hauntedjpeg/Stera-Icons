@@ -18,10 +18,10 @@ export interface ToolsProps extends IconProps {
  * For smaller bundle size, import specific variants directly:
  * import { ToolsRegular } from 'stera-icons/icons/ToolsRegular';
  */
-const Tools = memo(forwardRef<SVGSVGElement, ToolsProps>(({ 
+const Tools = memo(forwardRef<SVGSVGElement, ToolsProps>(({
   weight = 'regular',
   duotone = false,
-  ...rest 
+  ...rest
 }, ref) => {
   if (weight === 'bold' && duotone) return <ToolsBoldDuotone ref={ref} {...rest} />;
   if (weight === 'bold') return <ToolsBold ref={ref} {...rest} />;
@@ -33,6 +33,6 @@ const Tools = memo(forwardRef<SVGSVGElement, ToolsProps>(({
 
 Tools.displayName = 'Tools';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { Tools, Tools as ToolsIcon, Tools as SiTools };
 export default Tools;

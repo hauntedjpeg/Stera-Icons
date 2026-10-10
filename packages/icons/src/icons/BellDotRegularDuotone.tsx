@@ -15,7 +15,7 @@ const BellDotRegularDuotone = memo(
 
 BellDotRegularDuotone.displayName = 'BellDotRegularDuotone';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { BellDotRegularDuotone, BellDotRegularDuotone as BellDotRegularDuotoneIcon, BellDotRegularDuotone as SiBellDotRegularDuotone };
 export default BellDotRegularDuotone;
 export type { BellDotRegularDuotoneProps };

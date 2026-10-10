@@ -16,7 +16,7 @@ const GaugeDots50RegularDuotone = memo(
 
 GaugeDots50RegularDuotone.displayName = 'GaugeDots50RegularDuotone';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { GaugeDots50RegularDuotone, GaugeDots50RegularDuotone as GaugeDots50RegularDuotoneIcon, GaugeDots50RegularDuotone as SiGaugeDots50RegularDuotone };
 export default GaugeDots50RegularDuotone;
 export type { GaugeDots50RegularDuotoneProps };

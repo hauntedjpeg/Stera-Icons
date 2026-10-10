@@ -15,7 +15,7 @@ const PizzaBoldDuotone = memo(
 
 PizzaBoldDuotone.displayName = 'PizzaBoldDuotone';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { PizzaBoldDuotone, PizzaBoldDuotone as PizzaBoldDuotoneIcon, PizzaBoldDuotone as SiPizzaBoldDuotone };
 export default PizzaBoldDuotone;
 export type { PizzaBoldDuotoneProps };

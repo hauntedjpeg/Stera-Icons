@@ -18,10 +18,10 @@ export interface PoundSterlingCircleProps extends IconProps {
  * For smaller bundle size, import specific variants directly:
  * import { PoundSterlingCircleRegular } from 'stera-icons/icons/PoundSterlingCircleRegular';
  */
-const PoundSterlingCircle = memo(forwardRef<SVGSVGElement, PoundSterlingCircleProps>(({ 
+const PoundSterlingCircle = memo(forwardRef<SVGSVGElement, PoundSterlingCircleProps>(({
   weight = 'regular',
   duotone = false,
-  ...rest 
+  ...rest
 }, ref) => {
   if (weight === 'bold' && duotone) return <PoundSterlingCircleBoldDuotone ref={ref} {...rest} />;
   if (weight === 'bold') return <PoundSterlingCircleBold ref={ref} {...rest} />;
@@ -33,6 +33,6 @@ const PoundSterlingCircle = memo(forwardRef<SVGSVGElement, PoundSterlingCirclePr
 
 PoundSterlingCircle.displayName = 'PoundSterlingCircle';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { PoundSterlingCircle, PoundSterlingCircle as PoundSterlingCircleIcon, PoundSterlingCircle as SiPoundSterlingCircle };
 export default PoundSterlingCircle;

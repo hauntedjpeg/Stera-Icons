@@ -14,7 +14,7 @@ const AsteriskBold = memo(
 
 AsteriskBold.displayName = 'AsteriskBold';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { AsteriskBold, AsteriskBold as AsteriskBoldIcon, AsteriskBold as SiAsteriskBold };
 export default AsteriskBold;
 export type { AsteriskBoldProps };

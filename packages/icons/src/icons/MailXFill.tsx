@@ -15,7 +15,7 @@ const MailXFill = memo(
 
 MailXFill.displayName = 'MailXFill';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { MailXFill, MailXFill as MailXFillIcon, MailXFill as SiMailXFill };
 export default MailXFill;
 export type { MailXFillProps };

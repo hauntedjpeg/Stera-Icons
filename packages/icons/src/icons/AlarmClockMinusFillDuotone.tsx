@@ -15,7 +15,7 @@ const AlarmClockMinusFillDuotone = memo(
 
 AlarmClockMinusFillDuotone.displayName = 'AlarmClockMinusFillDuotone';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { AlarmClockMinusFillDuotone, AlarmClockMinusFillDuotone as AlarmClockMinusFillDuotoneIcon, AlarmClockMinusFillDuotone as SiAlarmClockMinusFillDuotone };
 export default AlarmClockMinusFillDuotone;
 export type { AlarmClockMinusFillDuotoneProps };

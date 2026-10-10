@@ -18,10 +18,10 @@ export interface AtomAiProps extends IconProps {
  * For smaller bundle size, import specific variants directly:
  * import { AtomAiRegular } from 'stera-icons/icons/AtomAiRegular';
  */
-const AtomAi = memo(forwardRef<SVGSVGElement, AtomAiProps>(({ 
+const AtomAi = memo(forwardRef<SVGSVGElement, AtomAiProps>(({
   weight = 'regular',
   duotone = false,
-  ...rest 
+  ...rest
 }, ref) => {
   if (weight === 'bold' && duotone) return <AtomAiBoldDuotone ref={ref} {...rest} />;
   if (weight === 'bold') return <AtomAiBold ref={ref} {...rest} />;
@@ -33,6 +33,6 @@ const AtomAi = memo(forwardRef<SVGSVGElement, AtomAiProps>(({
 
 AtomAi.displayName = 'AtomAi';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { AtomAi, AtomAi as AtomAiIcon, AtomAi as SiAtomAi };
 export default AtomAi;

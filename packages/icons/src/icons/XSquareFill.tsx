@@ -14,7 +14,7 @@ const XSquareFill = memo(
 
 XSquareFill.displayName = 'XSquareFill';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { XSquareFill, XSquareFill as XSquareFillIcon, XSquareFill as SiXSquareFill };
 export default XSquareFill;
 export type { XSquareFillProps };

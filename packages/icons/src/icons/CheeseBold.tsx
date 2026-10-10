@@ -14,7 +14,7 @@ const CheeseBold = memo(
 
 CheeseBold.displayName = 'CheeseBold';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { CheeseBold, CheeseBold as CheeseBoldIcon, CheeseBold as SiCheeseBold };
 export default CheeseBold;
 export type { CheeseBoldProps };

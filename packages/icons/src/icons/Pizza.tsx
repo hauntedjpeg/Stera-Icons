@@ -18,10 +18,10 @@ export interface PizzaProps extends IconProps {
  * For smaller bundle size, import specific variants directly:
  * import { PizzaRegular } from 'stera-icons/icons/PizzaRegular';
  */
-const Pizza = memo(forwardRef<SVGSVGElement, PizzaProps>(({ 
+const Pizza = memo(forwardRef<SVGSVGElement, PizzaProps>(({
   weight = 'regular',
   duotone = false,
-  ...rest 
+  ...rest
 }, ref) => {
   if (weight === 'bold' && duotone) return <PizzaBoldDuotone ref={ref} {...rest} />;
   if (weight === 'bold') return <PizzaBold ref={ref} {...rest} />;
@@ -33,6 +33,6 @@ const Pizza = memo(forwardRef<SVGSVGElement, PizzaProps>(({
 
 Pizza.displayName = 'Pizza';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { Pizza, Pizza as PizzaIcon, Pizza as SiPizza };
 export default Pizza;

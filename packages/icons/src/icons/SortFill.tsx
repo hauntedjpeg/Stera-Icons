@@ -15,7 +15,7 @@ const SortFill = memo(
 
 SortFill.displayName = 'SortFill';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { SortFill, SortFill as SortFillIcon, SortFill as SiSortFill };
 export default SortFill;
 export type { SortFillProps };

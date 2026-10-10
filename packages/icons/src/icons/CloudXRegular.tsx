@@ -15,7 +15,7 @@ const CloudXRegular = memo(
 
 CloudXRegular.displayName = 'CloudXRegular';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { CloudXRegular, CloudXRegular as CloudXRegularIcon, CloudXRegular as SiCloudXRegular };
 export default CloudXRegular;
 export type { CloudXRegularProps };

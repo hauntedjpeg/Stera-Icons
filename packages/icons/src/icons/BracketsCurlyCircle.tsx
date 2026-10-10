@@ -18,10 +18,10 @@ export interface BracketsCurlyCircleProps extends IconProps {
  * For smaller bundle size, import specific variants directly:
  * import { BracketsCurlyCircleRegular } from 'stera-icons/icons/BracketsCurlyCircleRegular';
  */
-const BracketsCurlyCircle = memo(forwardRef<SVGSVGElement, BracketsCurlyCircleProps>(({ 
+const BracketsCurlyCircle = memo(forwardRef<SVGSVGElement, BracketsCurlyCircleProps>(({
   weight = 'regular',
   duotone = false,
-  ...rest 
+  ...rest
 }, ref) => {
   if (weight === 'bold' && duotone) return <BracketsCurlyCircleBoldDuotone ref={ref} {...rest} />;
   if (weight === 'bold') return <BracketsCurlyCircleBold ref={ref} {...rest} />;
@@ -33,6 +33,6 @@ const BracketsCurlyCircle = memo(forwardRef<SVGSVGElement, BracketsCurlyCirclePr
 
 BracketsCurlyCircle.displayName = 'BracketsCurlyCircle';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { BracketsCurlyCircle, BracketsCurlyCircle as BracketsCurlyCircleIcon, BracketsCurlyCircle as SiBracketsCurlyCircle };
 export default BracketsCurlyCircle;

@@ -15,7 +15,7 @@ const ContrastCircleFill = memo(
 
 ContrastCircleFill.displayName = 'ContrastCircleFill';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { ContrastCircleFill, ContrastCircleFill as ContrastCircleFillIcon, ContrastCircleFill as SiContrastCircleFill };
 export default ContrastCircleFill;
 export type { ContrastCircleFillProps };

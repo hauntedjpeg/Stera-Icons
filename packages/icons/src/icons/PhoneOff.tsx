@@ -18,10 +18,10 @@ export interface PhoneOffProps extends IconProps {
  * For smaller bundle size, import specific variants directly:
  * import { PhoneOffRegular } from 'stera-icons/icons/PhoneOffRegular';
  */
-const PhoneOff = memo(forwardRef<SVGSVGElement, PhoneOffProps>(({ 
+const PhoneOff = memo(forwardRef<SVGSVGElement, PhoneOffProps>(({
   weight = 'regular',
   duotone = false,
-  ...rest 
+  ...rest
 }, ref) => {
   if (weight === 'bold' && duotone) return <PhoneOffBoldDuotone ref={ref} {...rest} />;
   if (weight === 'bold') return <PhoneOffBold ref={ref} {...rest} />;
@@ -33,6 +33,6 @@ const PhoneOff = memo(forwardRef<SVGSVGElement, PhoneOffProps>(({
 
 PhoneOff.displayName = 'PhoneOff';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { PhoneOff, PhoneOff as PhoneOffIcon, PhoneOff as SiPhoneOff };
 export default PhoneOff;

@@ -18,10 +18,10 @@ export interface AlertTriangleProps extends IconProps {
  * For smaller bundle size, import specific variants directly:
  * import { AlertTriangleRegular } from 'stera-icons/icons/AlertTriangleRegular';
  */
-const AlertTriangle = memo(forwardRef<SVGSVGElement, AlertTriangleProps>(({ 
+const AlertTriangle = memo(forwardRef<SVGSVGElement, AlertTriangleProps>(({
   weight = 'regular',
   duotone = false,
-  ...rest 
+  ...rest
 }, ref) => {
   if (weight === 'bold' && duotone) return <AlertTriangleBoldDuotone ref={ref} {...rest} />;
   if (weight === 'bold') return <AlertTriangleBold ref={ref} {...rest} />;
@@ -33,6 +33,6 @@ const AlertTriangle = memo(forwardRef<SVGSVGElement, AlertTriangleProps>(({
 
 AlertTriangle.displayName = 'AlertTriangle';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { AlertTriangle, AlertTriangle as AlertTriangleIcon, AlertTriangle as SiAlertTriangle };
 export default AlertTriangle;

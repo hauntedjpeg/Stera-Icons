@@ -18,10 +18,10 @@ export interface DocumentProps extends IconProps {
  * For smaller bundle size, import specific variants directly:
  * import { DocumentRegular } from 'stera-icons/icons/DocumentRegular';
  */
-const Document = memo(forwardRef<SVGSVGElement, DocumentProps>(({ 
+const Document = memo(forwardRef<SVGSVGElement, DocumentProps>(({
   weight = 'regular',
   duotone = false,
-  ...rest 
+  ...rest
 }, ref) => {
   if (weight === 'bold' && duotone) return <DocumentBoldDuotone ref={ref} {...rest} />;
   if (weight === 'bold') return <DocumentBold ref={ref} {...rest} />;
@@ -33,6 +33,6 @@ const Document = memo(forwardRef<SVGSVGElement, DocumentProps>(({
 
 Document.displayName = 'Document';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { Document, Document as DocumentIcon, Document as SiDocument };
 export default Document;

@@ -15,7 +15,7 @@ const LayoutGridCirclePlusBoldDuotone = memo(
 
 LayoutGridCirclePlusBoldDuotone.displayName = 'LayoutGridCirclePlusBoldDuotone';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { LayoutGridCirclePlusBoldDuotone, LayoutGridCirclePlusBoldDuotone as LayoutGridCirclePlusBoldDuotoneIcon, LayoutGridCirclePlusBoldDuotone as SiLayoutGridCirclePlusBoldDuotone };
 export default LayoutGridCirclePlusBoldDuotone;
 export type { LayoutGridCirclePlusBoldDuotoneProps };

@@ -15,7 +15,7 @@ const GitCompareFillDuotone = memo(
 
 GitCompareFillDuotone.displayName = 'GitCompareFillDuotone';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { GitCompareFillDuotone, GitCompareFillDuotone as GitCompareFillDuotoneIcon, GitCompareFillDuotone as SiGitCompareFillDuotone };
 export default GitCompareFillDuotone;
 export type { GitCompareFillDuotoneProps };

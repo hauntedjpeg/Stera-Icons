@@ -14,7 +14,7 @@ const AccessibilityRegular = memo(
 
 AccessibilityRegular.displayName = 'AccessibilityRegular';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { AccessibilityRegular, AccessibilityRegular as AccessibilityRegularIcon, AccessibilityRegular as SiAccessibilityRegular };
 export default AccessibilityRegular;
 export type { AccessibilityRegularProps };

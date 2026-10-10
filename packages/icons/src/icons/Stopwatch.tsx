@@ -18,10 +18,10 @@ export interface StopwatchProps extends IconProps {
  * For smaller bundle size, import specific variants directly:
  * import { StopwatchRegular } from 'stera-icons/icons/StopwatchRegular';
  */
-const Stopwatch = memo(forwardRef<SVGSVGElement, StopwatchProps>(({ 
+const Stopwatch = memo(forwardRef<SVGSVGElement, StopwatchProps>(({
   weight = 'regular',
   duotone = false,
-  ...rest 
+  ...rest
 }, ref) => {
   if (weight === 'bold' && duotone) return <StopwatchBoldDuotone ref={ref} {...rest} />;
   if (weight === 'bold') return <StopwatchBold ref={ref} {...rest} />;
@@ -33,6 +33,6 @@ const Stopwatch = memo(forwardRef<SVGSVGElement, StopwatchProps>(({
 
 Stopwatch.displayName = 'Stopwatch';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { Stopwatch, Stopwatch as StopwatchIcon, Stopwatch as SiStopwatch };
 export default Stopwatch;

@@ -15,7 +15,7 @@ const ToggleOffBold = memo(
 
 ToggleOffBold.displayName = 'ToggleOffBold';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { ToggleOffBold, ToggleOffBold as ToggleOffBoldIcon, ToggleOffBold as SiToggleOffBold };
 export default ToggleOffBold;
 export type { ToggleOffBoldProps };

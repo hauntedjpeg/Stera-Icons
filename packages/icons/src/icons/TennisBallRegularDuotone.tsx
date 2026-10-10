@@ -15,7 +15,7 @@ const TennisBallRegularDuotone = memo(
 
 TennisBallRegularDuotone.displayName = 'TennisBallRegularDuotone';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { TennisBallRegularDuotone, TennisBallRegularDuotone as TennisBallRegularDuotoneIcon, TennisBallRegularDuotone as SiTennisBallRegularDuotone };
 export default TennisBallRegularDuotone;
 export type { TennisBallRegularDuotoneProps };

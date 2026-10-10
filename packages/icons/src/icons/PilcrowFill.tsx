@@ -14,7 +14,7 @@ const PilcrowFill = memo(
 
 PilcrowFill.displayName = 'PilcrowFill';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { PilcrowFill, PilcrowFill as PilcrowFillIcon, PilcrowFill as SiPilcrowFill };
 export default PilcrowFill;
 export type { PilcrowFillProps };

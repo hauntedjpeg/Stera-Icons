@@ -17,7 +17,7 @@ const CurveEaseFillDuotone = memo(
 
 CurveEaseFillDuotone.displayName = 'CurveEaseFillDuotone';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { CurveEaseFillDuotone, CurveEaseFillDuotone as CurveEaseFillDuotoneIcon, CurveEaseFillDuotone as SiCurveEaseFillDuotone };
 export default CurveEaseFillDuotone;
 export type { CurveEaseFillDuotoneProps };

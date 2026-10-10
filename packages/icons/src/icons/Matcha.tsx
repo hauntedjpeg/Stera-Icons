@@ -18,10 +18,10 @@ export interface MatchaProps extends IconProps {
  * For smaller bundle size, import specific variants directly:
  * import { MatchaRegular } from 'stera-icons/icons/MatchaRegular';
  */
-const Matcha = memo(forwardRef<SVGSVGElement, MatchaProps>(({ 
+const Matcha = memo(forwardRef<SVGSVGElement, MatchaProps>(({
   weight = 'regular',
   duotone = false,
-  ...rest 
+  ...rest
 }, ref) => {
   if (weight === 'bold' && duotone) return <MatchaBoldDuotone ref={ref} {...rest} />;
   if (weight === 'bold') return <MatchaBold ref={ref} {...rest} />;
@@ -33,6 +33,6 @@ const Matcha = memo(forwardRef<SVGSVGElement, MatchaProps>(({
 
 Matcha.displayName = 'Matcha';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { Matcha, Matcha as MatchaIcon, Matcha as SiMatcha };
 export default Matcha;

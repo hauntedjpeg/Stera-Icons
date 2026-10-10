@@ -18,10 +18,10 @@ export interface AlertHexagonProps extends IconProps {
  * For smaller bundle size, import specific variants directly:
  * import { AlertHexagonRegular } from 'stera-icons/icons/AlertHexagonRegular';
  */
-const AlertHexagon = memo(forwardRef<SVGSVGElement, AlertHexagonProps>(({ 
+const AlertHexagon = memo(forwardRef<SVGSVGElement, AlertHexagonProps>(({
   weight = 'regular',
   duotone = false,
-  ...rest 
+  ...rest
 }, ref) => {
   if (weight === 'bold' && duotone) return <AlertHexagonBoldDuotone ref={ref} {...rest} />;
   if (weight === 'bold') return <AlertHexagonBold ref={ref} {...rest} />;
@@ -33,6 +33,6 @@ const AlertHexagon = memo(forwardRef<SVGSVGElement, AlertHexagonProps>(({
 
 AlertHexagon.displayName = 'AlertHexagon';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { AlertHexagon, AlertHexagon as AlertHexagonIcon, AlertHexagon as SiAlertHexagon };
 export default AlertHexagon;

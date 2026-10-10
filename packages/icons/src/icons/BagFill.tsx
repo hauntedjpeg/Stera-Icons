@@ -14,7 +14,7 @@ const BagFill = memo(
 
 BagFill.displayName = 'BagFill';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { BagFill, BagFill as BagFillIcon, BagFill as SiBagFill };
 export default BagFill;
 export type { BagFillProps };

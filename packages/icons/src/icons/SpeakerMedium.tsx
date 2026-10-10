@@ -18,10 +18,10 @@ export interface SpeakerMediumProps extends IconProps {
  * For smaller bundle size, import specific variants directly:
  * import { SpeakerMediumRegular } from 'stera-icons/icons/SpeakerMediumRegular';
  */
-const SpeakerMedium = memo(forwardRef<SVGSVGElement, SpeakerMediumProps>(({ 
+const SpeakerMedium = memo(forwardRef<SVGSVGElement, SpeakerMediumProps>(({
   weight = 'regular',
   duotone = false,
-  ...rest 
+  ...rest
 }, ref) => {
   if (weight === 'bold' && duotone) return <SpeakerMediumBoldDuotone ref={ref} {...rest} />;
   if (weight === 'bold') return <SpeakerMediumBold ref={ref} {...rest} />;
@@ -33,6 +33,6 @@ const SpeakerMedium = memo(forwardRef<SVGSVGElement, SpeakerMediumProps>(({
 
 SpeakerMedium.displayName = 'SpeakerMedium';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { SpeakerMedium, SpeakerMedium as SpeakerMediumIcon, SpeakerMedium as SiSpeakerMedium };
 export default SpeakerMedium;

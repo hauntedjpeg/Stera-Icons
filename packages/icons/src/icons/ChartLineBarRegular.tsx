@@ -15,7 +15,7 @@ const ChartLineBarRegular = memo(
 
 ChartLineBarRegular.displayName = 'ChartLineBarRegular';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { ChartLineBarRegular, ChartLineBarRegular as ChartLineBarRegularIcon, ChartLineBarRegular as SiChartLineBarRegular };
 export default ChartLineBarRegular;
 export type { ChartLineBarRegularProps };

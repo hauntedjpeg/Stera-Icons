@@ -18,10 +18,10 @@ export interface EmoteSmileProps extends IconProps {
  * For smaller bundle size, import specific variants directly:
  * import { EmoteSmileRegular } from 'stera-icons/icons/EmoteSmileRegular';
  */
-const EmoteSmile = memo(forwardRef<SVGSVGElement, EmoteSmileProps>(({ 
+const EmoteSmile = memo(forwardRef<SVGSVGElement, EmoteSmileProps>(({
   weight = 'regular',
   duotone = false,
-  ...rest 
+  ...rest
 }, ref) => {
   if (weight === 'bold' && duotone) return <EmoteSmileBoldDuotone ref={ref} {...rest} />;
   if (weight === 'bold') return <EmoteSmileBold ref={ref} {...rest} />;
@@ -33,6 +33,6 @@ const EmoteSmile = memo(forwardRef<SVGSVGElement, EmoteSmileProps>(({
 
 EmoteSmile.displayName = 'EmoteSmile';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { EmoteSmile, EmoteSmile as EmoteSmileIcon, EmoteSmile as SiEmoteSmile };
 export default EmoteSmile;

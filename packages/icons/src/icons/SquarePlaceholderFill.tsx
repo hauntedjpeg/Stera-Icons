@@ -14,7 +14,7 @@ const SquarePlaceholderFill = memo(
 
 SquarePlaceholderFill.displayName = 'SquarePlaceholderFill';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { SquarePlaceholderFill, SquarePlaceholderFill as SquarePlaceholderFillIcon, SquarePlaceholderFill as SiSquarePlaceholderFill };
 export default SquarePlaceholderFill;
 export type { SquarePlaceholderFillProps };

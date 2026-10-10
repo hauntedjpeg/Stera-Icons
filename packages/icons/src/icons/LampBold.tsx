@@ -14,7 +14,7 @@ const LampBold = memo(
 
 LampBold.displayName = 'LampBold';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { LampBold, LampBold as LampBoldIcon, LampBold as SiLampBold };
 export default LampBold;
 export type { LampBoldProps };

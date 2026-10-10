@@ -15,7 +15,7 @@ const SpinnerBoldDuotone = memo(
 
 SpinnerBoldDuotone.displayName = 'SpinnerBoldDuotone';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { SpinnerBoldDuotone, SpinnerBoldDuotone as SpinnerBoldDuotoneIcon, SpinnerBoldDuotone as SiSpinnerBoldDuotone };
 export default SpinnerBoldDuotone;
 export type { SpinnerBoldDuotoneProps };

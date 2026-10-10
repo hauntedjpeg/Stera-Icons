@@ -14,7 +14,7 @@ const RadarFill = memo(
 
 RadarFill.displayName = 'RadarFill';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { RadarFill, RadarFill as RadarFillIcon, RadarFill as SiRadarFill };
 export default RadarFill;
 export type { RadarFillProps };

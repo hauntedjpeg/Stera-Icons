@@ -14,7 +14,7 @@ const BannerFill = memo(
 
 BannerFill.displayName = 'BannerFill';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { BannerFill, BannerFill as BannerFillIcon, BannerFill as SiBannerFill };
 export default BannerFill;
 export type { BannerFillProps };

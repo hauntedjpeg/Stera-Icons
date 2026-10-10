@@ -14,7 +14,7 @@ const CubeBold = memo(
 
 CubeBold.displayName = 'CubeBold';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { CubeBold, CubeBold as CubeBoldIcon, CubeBold as SiCubeBold };
 export default CubeBold;
 export type { CubeBoldProps };

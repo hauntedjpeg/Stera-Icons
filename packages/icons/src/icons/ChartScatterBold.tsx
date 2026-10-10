@@ -15,7 +15,7 @@ const ChartScatterBold = memo(
 
 ChartScatterBold.displayName = 'ChartScatterBold';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { ChartScatterBold, ChartScatterBold as ChartScatterBoldIcon, ChartScatterBold as SiChartScatterBold };
 export default ChartScatterBold;
 export type { ChartScatterBoldProps };

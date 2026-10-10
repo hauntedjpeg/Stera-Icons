@@ -18,10 +18,10 @@ export interface ThermometerMediumProps extends IconProps {
  * For smaller bundle size, import specific variants directly:
  * import { ThermometerMediumRegular } from 'stera-icons/icons/ThermometerMediumRegular';
  */
-const ThermometerMedium = memo(forwardRef<SVGSVGElement, ThermometerMediumProps>(({ 
+const ThermometerMedium = memo(forwardRef<SVGSVGElement, ThermometerMediumProps>(({
   weight = 'regular',
   duotone = false,
-  ...rest 
+  ...rest
 }, ref) => {
   if (weight === 'bold' && duotone) return <ThermometerMediumBoldDuotone ref={ref} {...rest} />;
   if (weight === 'bold') return <ThermometerMediumBold ref={ref} {...rest} />;
@@ -33,6 +33,6 @@ const ThermometerMedium = memo(forwardRef<SVGSVGElement, ThermometerMediumProps>
 
 ThermometerMedium.displayName = 'ThermometerMedium';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { ThermometerMedium, ThermometerMedium as ThermometerMediumIcon, ThermometerMedium as SiThermometerMedium };
 export default ThermometerMedium;

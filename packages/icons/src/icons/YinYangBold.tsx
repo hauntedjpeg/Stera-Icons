@@ -15,7 +15,7 @@ const YinYangBold = memo(
 
 YinYangBold.displayName = 'YinYangBold';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { YinYangBold, YinYangBold as YinYangBoldIcon, YinYangBold as SiYinYangBold };
 export default YinYangBold;
 export type { YinYangBoldProps };

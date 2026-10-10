@@ -15,7 +15,7 @@ const LaptopBoldDuotone = memo(
 
 LaptopBoldDuotone.displayName = 'LaptopBoldDuotone';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { LaptopBoldDuotone, LaptopBoldDuotone as LaptopBoldDuotoneIcon, LaptopBoldDuotone as SiLaptopBoldDuotone };
 export default LaptopBoldDuotone;
 export type { LaptopBoldDuotoneProps };

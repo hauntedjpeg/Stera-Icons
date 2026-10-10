@@ -15,7 +15,7 @@ const PlusCircleBold = memo(
 
 PlusCircleBold.displayName = 'PlusCircleBold';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { PlusCircleBold, PlusCircleBold as PlusCircleBoldIcon, PlusCircleBold as SiPlusCircleBold };
 export default PlusCircleBold;
 export type { PlusCircleBoldProps };

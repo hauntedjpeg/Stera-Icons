@@ -14,7 +14,7 @@ const AtSignRegular = memo(
 
 AtSignRegular.displayName = 'AtSignRegular';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { AtSignRegular, AtSignRegular as AtSignRegularIcon, AtSignRegular as SiAtSignRegular };
 export default AtSignRegular;
 export type { AtSignRegularProps };

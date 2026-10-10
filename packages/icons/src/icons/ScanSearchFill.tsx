@@ -16,7 +16,7 @@ const ScanSearchFill = memo(
 
 ScanSearchFill.displayName = 'ScanSearchFill';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { ScanSearchFill, ScanSearchFill as ScanSearchFillIcon, ScanSearchFill as SiScanSearchFill };
 export default ScanSearchFill;
 export type { ScanSearchFillProps };

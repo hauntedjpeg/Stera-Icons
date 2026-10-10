@@ -15,7 +15,7 @@ const MessageCircleDotRegularDuotone = memo(
 
 MessageCircleDotRegularDuotone.displayName = 'MessageCircleDotRegularDuotone';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { MessageCircleDotRegularDuotone, MessageCircleDotRegularDuotone as MessageCircleDotRegularDuotoneIcon, MessageCircleDotRegularDuotone as SiMessageCircleDotRegularDuotone };
 export default MessageCircleDotRegularDuotone;
 export type { MessageCircleDotRegularDuotoneProps };

@@ -15,7 +15,7 @@ const CubePackageSimpleBoldDuotone = memo(
 
 CubePackageSimpleBoldDuotone.displayName = 'CubePackageSimpleBoldDuotone';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { CubePackageSimpleBoldDuotone, CubePackageSimpleBoldDuotone as CubePackageSimpleBoldDuotoneIcon, CubePackageSimpleBoldDuotone as SiCubePackageSimpleBoldDuotone };
 export default CubePackageSimpleBoldDuotone;
 export type { CubePackageSimpleBoldDuotoneProps };

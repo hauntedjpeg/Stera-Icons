@@ -15,7 +15,7 @@ const CodeSquareRegular = memo(
 
 CodeSquareRegular.displayName = 'CodeSquareRegular';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { CodeSquareRegular, CodeSquareRegular as CodeSquareRegularIcon, CodeSquareRegular as SiCodeSquareRegular };
 export default CodeSquareRegular;
 export type { CodeSquareRegularProps };

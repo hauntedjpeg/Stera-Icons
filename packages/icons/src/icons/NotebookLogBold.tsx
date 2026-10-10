@@ -15,7 +15,7 @@ const NotebookLogBold = memo(
 
 NotebookLogBold.displayName = 'NotebookLogBold';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { NotebookLogBold, NotebookLogBold as NotebookLogBoldIcon, NotebookLogBold as SiNotebookLogBold };
 export default NotebookLogBold;
 export type { NotebookLogBoldProps };

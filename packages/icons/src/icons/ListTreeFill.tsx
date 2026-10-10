@@ -14,7 +14,7 @@ const ListTreeFill = memo(
 
 ListTreeFill.displayName = 'ListTreeFill';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { ListTreeFill, ListTreeFill as ListTreeFillIcon, ListTreeFill as SiListTreeFill };
 export default ListTreeFill;
 export type { ListTreeFillProps };

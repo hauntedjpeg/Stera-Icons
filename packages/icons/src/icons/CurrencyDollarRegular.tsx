@@ -14,7 +14,7 @@ const CurrencyDollarRegular = memo(
 
 CurrencyDollarRegular.displayName = 'CurrencyDollarRegular';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { CurrencyDollarRegular, CurrencyDollarRegular as CurrencyDollarRegularIcon, CurrencyDollarRegular as SiCurrencyDollarRegular };
 export default CurrencyDollarRegular;
 export type { CurrencyDollarRegularProps };

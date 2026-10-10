@@ -18,10 +18,10 @@ export interface UserMinusProps extends IconProps {
  * For smaller bundle size, import specific variants directly:
  * import { UserMinusRegular } from 'stera-icons/icons/UserMinusRegular';
  */
-const UserMinus = memo(forwardRef<SVGSVGElement, UserMinusProps>(({ 
+const UserMinus = memo(forwardRef<SVGSVGElement, UserMinusProps>(({
   weight = 'regular',
   duotone = false,
-  ...rest 
+  ...rest
 }, ref) => {
   if (weight === 'bold' && duotone) return <UserMinusBoldDuotone ref={ref} {...rest} />;
   if (weight === 'bold') return <UserMinusBold ref={ref} {...rest} />;
@@ -33,6 +33,6 @@ const UserMinus = memo(forwardRef<SVGSVGElement, UserMinusProps>(({
 
 UserMinus.displayName = 'UserMinus';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { UserMinus, UserMinus as UserMinusIcon, UserMinus as SiUserMinus };
 export default UserMinus;

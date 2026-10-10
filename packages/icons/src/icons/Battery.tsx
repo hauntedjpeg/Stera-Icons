@@ -18,10 +18,10 @@ export interface BatteryProps extends IconProps {
  * For smaller bundle size, import specific variants directly:
  * import { BatteryRegular } from 'stera-icons/icons/BatteryRegular';
  */
-const Battery = memo(forwardRef<SVGSVGElement, BatteryProps>(({ 
+const Battery = memo(forwardRef<SVGSVGElement, BatteryProps>(({
   weight = 'regular',
   duotone = false,
-  ...rest 
+  ...rest
 }, ref) => {
   if (weight === 'bold' && duotone) return <BatteryBoldDuotone ref={ref} {...rest} />;
   if (weight === 'bold') return <BatteryBold ref={ref} {...rest} />;
@@ -33,6 +33,6 @@ const Battery = memo(forwardRef<SVGSVGElement, BatteryProps>(({
 
 Battery.displayName = 'Battery';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { Battery, Battery as BatteryIcon, Battery as SiBattery };
 export default Battery;

@@ -18,10 +18,10 @@ export interface PencilRulerProps extends IconProps {
  * For smaller bundle size, import specific variants directly:
  * import { PencilRulerRegular } from 'stera-icons/icons/PencilRulerRegular';
  */
-const PencilRuler = memo(forwardRef<SVGSVGElement, PencilRulerProps>(({ 
+const PencilRuler = memo(forwardRef<SVGSVGElement, PencilRulerProps>(({
   weight = 'regular',
   duotone = false,
-  ...rest 
+  ...rest
 }, ref) => {
   if (weight === 'bold' && duotone) return <PencilRulerBoldDuotone ref={ref} {...rest} />;
   if (weight === 'bold') return <PencilRulerBold ref={ref} {...rest} />;
@@ -33,6 +33,6 @@ const PencilRuler = memo(forwardRef<SVGSVGElement, PencilRulerProps>(({
 
 PencilRuler.displayName = 'PencilRuler';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { PencilRuler, PencilRuler as PencilRulerIcon, PencilRuler as SiPencilRuler };
 export default PencilRuler;

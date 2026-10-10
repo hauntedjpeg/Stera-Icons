@@ -15,7 +15,7 @@ const ListXBold = memo(
 
 ListXBold.displayName = 'ListXBold';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { ListXBold, ListXBold as ListXBoldIcon, ListXBold as SiListXBold };
 export default ListXBold;
 export type { ListXBoldProps };

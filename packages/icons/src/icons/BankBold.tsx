@@ -15,7 +15,7 @@ const BankBold = memo(
 
 BankBold.displayName = 'BankBold';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { BankBold, BankBold as BankBoldIcon, BankBold as SiBankBold };
 export default BankBold;
 export type { BankBoldProps };

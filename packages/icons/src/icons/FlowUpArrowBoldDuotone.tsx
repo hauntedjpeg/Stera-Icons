@@ -15,7 +15,7 @@ const FlowUpArrowBoldDuotone = memo(
 
 FlowUpArrowBoldDuotone.displayName = 'FlowUpArrowBoldDuotone';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { FlowUpArrowBoldDuotone, FlowUpArrowBoldDuotone as FlowUpArrowBoldDuotoneIcon, FlowUpArrowBoldDuotone as SiFlowUpArrowBoldDuotone };
 export default FlowUpArrowBoldDuotone;
 export type { FlowUpArrowBoldDuotoneProps };

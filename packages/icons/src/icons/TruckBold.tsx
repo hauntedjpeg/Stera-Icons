@@ -14,7 +14,7 @@ const TruckBold = memo(
 
 TruckBold.displayName = 'TruckBold';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { TruckBold, TruckBold as TruckBoldIcon, TruckBold as SiTruckBold };
 export default TruckBold;
 export type { TruckBoldProps };

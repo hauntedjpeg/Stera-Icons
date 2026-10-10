@@ -16,7 +16,7 @@ const TrashBoldDuotone = memo(
 
 TrashBoldDuotone.displayName = 'TrashBoldDuotone';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { TrashBoldDuotone, TrashBoldDuotone as TrashBoldDuotoneIcon, TrashBoldDuotone as SiTrashBoldDuotone };
 export default TrashBoldDuotone;
 export type { TrashBoldDuotoneProps };

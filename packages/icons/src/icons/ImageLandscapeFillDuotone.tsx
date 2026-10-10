@@ -15,7 +15,7 @@ const ImageLandscapeFillDuotone = memo(
 
 ImageLandscapeFillDuotone.displayName = 'ImageLandscapeFillDuotone';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { ImageLandscapeFillDuotone, ImageLandscapeFillDuotone as ImageLandscapeFillDuotoneIcon, ImageLandscapeFillDuotone as SiImageLandscapeFillDuotone };
 export default ImageLandscapeFillDuotone;
 export type { ImageLandscapeFillDuotoneProps };

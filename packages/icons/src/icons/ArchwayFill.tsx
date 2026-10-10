@@ -14,7 +14,7 @@ const ArchwayFill = memo(
 
 ArchwayFill.displayName = 'ArchwayFill';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { ArchwayFill, ArchwayFill as ArchwayFillIcon, ArchwayFill as SiArchwayFill };
 export default ArchwayFill;
 export type { ArchwayFillProps };

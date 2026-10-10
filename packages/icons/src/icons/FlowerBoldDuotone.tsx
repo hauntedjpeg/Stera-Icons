@@ -15,7 +15,7 @@ const FlowerBoldDuotone = memo(
 
 FlowerBoldDuotone.displayName = 'FlowerBoldDuotone';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { FlowerBoldDuotone, FlowerBoldDuotone as FlowerBoldDuotoneIcon, FlowerBoldDuotone as SiFlowerBoldDuotone };
 export default FlowerBoldDuotone;
 export type { FlowerBoldDuotoneProps };

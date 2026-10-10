@@ -1,6 +1,6 @@
 /**
  * JSX Generation Utilities
- * 
+ *
  * Functions for generating JSX code for icon components.
  */
 
@@ -18,7 +18,7 @@ export function generatePathJsx(paths) {
   if (paths.length === 0) {
     return '<path d="" />';
   }
-  
+
   return paths.map(attrs => {
     const attrStrings = Object.entries(attrs).map(([key, value]) => {
       // Handle numeric values like opacity
@@ -58,7 +58,7 @@ const ${componentName} = memo(
 
 ${componentName}.displayName = '${componentName}';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 ${generateTripleExport(componentName)}
 export default ${componentName};
 export type { ${componentName}Props };
@@ -100,17 +100,17 @@ export interface ${baseComponentName}Props extends IconProps {
  * For smaller bundle size, import specific variants directly:
  * import { ${regularVariantName} } from 'stera-icons/icons/${regularVariantName}';
  */
-${eslintDisable}const ${baseComponentName} = memo(forwardRef<SVGSVGElement, ${baseComponentName}Props>(({ 
+${eslintDisable}const ${baseComponentName} = memo(forwardRef<SVGSVGElement, ${baseComponentName}Props>(({
   weight = 'regular',
   duotone = false,
-  ...rest 
+  ...rest
 }, ref) => {
   ${selectionLogic.join('\n  ')}
 }));
 
 ${baseComponentName}.displayName = '${baseComponentName}';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 ${generateTripleExport(baseComponentName)}
 export default ${baseComponentName};
 `;
@@ -123,7 +123,7 @@ export default ${baseComponentName};
  */
 export function buildSelectionLogic(componentMap) {
   const selectionLogic = [];
-  
+
   if (componentMap.has('bold-true')) {
     selectionLogic.push(`if (weight === 'bold' && duotone) return <${componentMap.get('bold-true')} ref={ref} {...rest} />;`);
   }
@@ -139,6 +139,6 @@ export function buildSelectionLogic(componentMap) {
   if (componentMap.has('regular-true')) {
     selectionLogic.push(`if (duotone) return <${componentMap.get('regular-true')} ref={ref} {...rest} />;`);
   }
-  
+
   return selectionLogic;
 }

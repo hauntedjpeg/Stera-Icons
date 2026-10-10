@@ -18,10 +18,10 @@ export interface AppleProps extends IconProps {
  * For smaller bundle size, import specific variants directly:
  * import { AppleRegular } from 'stera-icons/icons/AppleRegular';
  */
-const Apple = memo(forwardRef<SVGSVGElement, AppleProps>(({ 
+const Apple = memo(forwardRef<SVGSVGElement, AppleProps>(({
   weight = 'regular',
   duotone = false,
-  ...rest 
+  ...rest
 }, ref) => {
   if (weight === 'bold' && duotone) return <AppleBoldDuotone ref={ref} {...rest} />;
   if (weight === 'bold') return <AppleBold ref={ref} {...rest} />;
@@ -33,6 +33,6 @@ const Apple = memo(forwardRef<SVGSVGElement, AppleProps>(({
 
 Apple.displayName = 'Apple';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { Apple, Apple as AppleIcon, Apple as SiApple };
 export default Apple;

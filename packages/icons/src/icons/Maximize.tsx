@@ -18,10 +18,10 @@ export interface MaximizeProps extends IconProps {
  * For smaller bundle size, import specific variants directly:
  * import { MaximizeRegular } from 'stera-icons/icons/MaximizeRegular';
  */
-const Maximize = memo(forwardRef<SVGSVGElement, MaximizeProps>(({ 
+const Maximize = memo(forwardRef<SVGSVGElement, MaximizeProps>(({
   weight = 'regular',
   duotone = false,
-  ...rest 
+  ...rest
 }, ref) => {
   if (weight === 'bold' && duotone) return <MaximizeBoldDuotone ref={ref} {...rest} />;
   if (weight === 'bold') return <MaximizeBold ref={ref} {...rest} />;
@@ -33,6 +33,6 @@ const Maximize = memo(forwardRef<SVGSVGElement, MaximizeProps>(({
 
 Maximize.displayName = 'Maximize';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { Maximize, Maximize as MaximizeIcon, Maximize as SiMaximize };
 export default Maximize;

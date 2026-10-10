@@ -14,7 +14,7 @@ const InfoSquareFill = memo(
 
 InfoSquareFill.displayName = 'InfoSquareFill';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { InfoSquareFill, InfoSquareFill as InfoSquareFillIcon, InfoSquareFill as SiInfoSquareFill };
 export default InfoSquareFill;
 export type { InfoSquareFillProps };

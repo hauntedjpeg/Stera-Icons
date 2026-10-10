@@ -18,10 +18,10 @@ export interface FlashProps extends IconProps {
  * For smaller bundle size, import specific variants directly:
  * import { FlashRegular } from 'stera-icons/icons/FlashRegular';
  */
-const Flash = memo(forwardRef<SVGSVGElement, FlashProps>(({ 
+const Flash = memo(forwardRef<SVGSVGElement, FlashProps>(({
   weight = 'regular',
   duotone = false,
-  ...rest 
+  ...rest
 }, ref) => {
   if (weight === 'bold' && duotone) return <FlashBoldDuotone ref={ref} {...rest} />;
   if (weight === 'bold') return <FlashBold ref={ref} {...rest} />;
@@ -33,6 +33,6 @@ const Flash = memo(forwardRef<SVGSVGElement, FlashProps>(({
 
 Flash.displayName = 'Flash';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { Flash, Flash as FlashIcon, Flash as SiFlash };
 export default Flash;

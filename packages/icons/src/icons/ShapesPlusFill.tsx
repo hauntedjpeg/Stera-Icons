@@ -14,7 +14,7 @@ const ShapesPlusFill = memo(
 
 ShapesPlusFill.displayName = 'ShapesPlusFill';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { ShapesPlusFill, ShapesPlusFill as ShapesPlusFillIcon, ShapesPlusFill as SiShapesPlusFill };
 export default ShapesPlusFill;
 export type { ShapesPlusFillProps };

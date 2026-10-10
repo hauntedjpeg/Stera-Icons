@@ -14,7 +14,7 @@ const AtSignBold = memo(
 
 AtSignBold.displayName = 'AtSignBold';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { AtSignBold, AtSignBold as AtSignBoldIcon, AtSignBold as SiAtSignBold };
 export default AtSignBold;
 export type { AtSignBoldProps };

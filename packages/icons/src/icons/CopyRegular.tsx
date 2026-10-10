@@ -14,7 +14,7 @@ const CopyRegular = memo(
 
 CopyRegular.displayName = 'CopyRegular';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { CopyRegular, CopyRegular as CopyRegularIcon, CopyRegular as SiCopyRegular };
 export default CopyRegular;
 export type { CopyRegularProps };

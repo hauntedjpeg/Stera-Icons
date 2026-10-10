@@ -18,10 +18,10 @@ export interface BarricadeProps extends IconProps {
  * For smaller bundle size, import specific variants directly:
  * import { BarricadeRegular } from 'stera-icons/icons/BarricadeRegular';
  */
-const Barricade = memo(forwardRef<SVGSVGElement, BarricadeProps>(({ 
+const Barricade = memo(forwardRef<SVGSVGElement, BarricadeProps>(({
   weight = 'regular',
   duotone = false,
-  ...rest 
+  ...rest
 }, ref) => {
   if (weight === 'bold' && duotone) return <BarricadeBoldDuotone ref={ref} {...rest} />;
   if (weight === 'bold') return <BarricadeBold ref={ref} {...rest} />;
@@ -33,6 +33,6 @@ const Barricade = memo(forwardRef<SVGSVGElement, BarricadeProps>(({
 
 Barricade.displayName = 'Barricade';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { Barricade, Barricade as BarricadeIcon, Barricade as SiBarricade };
 export default Barricade;

@@ -14,7 +14,7 @@ const MountainRegular = memo(
 
 MountainRegular.displayName = 'MountainRegular';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { MountainRegular, MountainRegular as MountainRegularIcon, MountainRegular as SiMountainRegular };
 export default MountainRegular;
 export type { MountainRegularProps };

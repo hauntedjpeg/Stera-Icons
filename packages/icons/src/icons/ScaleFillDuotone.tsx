@@ -15,7 +15,7 @@ const ScaleFillDuotone = memo(
 
 ScaleFillDuotone.displayName = 'ScaleFillDuotone';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { ScaleFillDuotone, ScaleFillDuotone as ScaleFillDuotoneIcon, ScaleFillDuotone as SiScaleFillDuotone };
 export default ScaleFillDuotone;
 export type { ScaleFillDuotoneProps };

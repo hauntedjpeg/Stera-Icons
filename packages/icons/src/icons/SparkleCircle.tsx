@@ -18,10 +18,10 @@ export interface SparkleCircleProps extends IconProps {
  * For smaller bundle size, import specific variants directly:
  * import { SparkleCircleRegular } from 'stera-icons/icons/SparkleCircleRegular';
  */
-const SparkleCircle = memo(forwardRef<SVGSVGElement, SparkleCircleProps>(({ 
+const SparkleCircle = memo(forwardRef<SVGSVGElement, SparkleCircleProps>(({
   weight = 'regular',
   duotone = false,
-  ...rest 
+  ...rest
 }, ref) => {
   if (weight === 'bold' && duotone) return <SparkleCircleBoldDuotone ref={ref} {...rest} />;
   if (weight === 'bold') return <SparkleCircleBold ref={ref} {...rest} />;
@@ -33,6 +33,6 @@ const SparkleCircle = memo(forwardRef<SVGSVGElement, SparkleCircleProps>(({
 
 SparkleCircle.displayName = 'SparkleCircle';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { SparkleCircle, SparkleCircle as SparkleCircleIcon, SparkleCircle as SiSparkleCircle };
 export default SparkleCircle;

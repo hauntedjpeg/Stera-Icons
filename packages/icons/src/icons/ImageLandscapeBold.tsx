@@ -15,7 +15,7 @@ const ImageLandscapeBold = memo(
 
 ImageLandscapeBold.displayName = 'ImageLandscapeBold';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { ImageLandscapeBold, ImageLandscapeBold as ImageLandscapeBoldIcon, ImageLandscapeBold as SiImageLandscapeBold };
 export default ImageLandscapeBold;
 export type { ImageLandscapeBoldProps };

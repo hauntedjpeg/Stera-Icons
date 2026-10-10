@@ -16,7 +16,7 @@ const MapPinXRegular = memo(
 
 MapPinXRegular.displayName = 'MapPinXRegular';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { MapPinXRegular, MapPinXRegular as MapPinXRegularIcon, MapPinXRegular as SiMapPinXRegular };
 export default MapPinXRegular;
 export type { MapPinXRegularProps };

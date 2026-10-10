@@ -15,7 +15,7 @@ const HomeHeartBold = memo(
 
 HomeHeartBold.displayName = 'HomeHeartBold';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { HomeHeartBold, HomeHeartBold as HomeHeartBoldIcon, HomeHeartBold as SiHomeHeartBold };
 export default HomeHeartBold;
 export type { HomeHeartBoldProps };

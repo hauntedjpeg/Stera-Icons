@@ -18,10 +18,10 @@ export interface SquareProps extends IconProps {
  * For smaller bundle size, import specific variants directly:
  * import { SquareRegular } from 'stera-icons/icons/SquareRegular';
  */
-const Square = memo(forwardRef<SVGSVGElement, SquareProps>(({ 
+const Square = memo(forwardRef<SVGSVGElement, SquareProps>(({
   weight = 'regular',
   duotone = false,
-  ...rest 
+  ...rest
 }, ref) => {
   if (weight === 'bold' && duotone) return <SquareBoldDuotone ref={ref} {...rest} />;
   if (weight === 'bold') return <SquareBold ref={ref} {...rest} />;
@@ -33,6 +33,6 @@ const Square = memo(forwardRef<SVGSVGElement, SquareProps>(({
 
 Square.displayName = 'Square';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { Square, Square as SquareIcon, Square as SiSquare };
 export default Square;

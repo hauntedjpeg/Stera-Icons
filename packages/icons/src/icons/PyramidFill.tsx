@@ -14,7 +14,7 @@ const PyramidFill = memo(
 
 PyramidFill.displayName = 'PyramidFill';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { PyramidFill, PyramidFill as PyramidFillIcon, PyramidFill as SiPyramidFill };
 export default PyramidFill;
 export type { PyramidFillProps };

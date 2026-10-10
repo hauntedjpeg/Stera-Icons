@@ -15,7 +15,7 @@ const ExternalLinkFillDuotone = memo(
 
 ExternalLinkFillDuotone.displayName = 'ExternalLinkFillDuotone';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { ExternalLinkFillDuotone, ExternalLinkFillDuotone as ExternalLinkFillDuotoneIcon, ExternalLinkFillDuotone as SiExternalLinkFillDuotone };
 export default ExternalLinkFillDuotone;
 export type { ExternalLinkFillDuotoneProps };

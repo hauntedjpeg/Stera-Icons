@@ -15,7 +15,7 @@ const LayoutGridFillDuotone = memo(
 
 LayoutGridFillDuotone.displayName = 'LayoutGridFillDuotone';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { LayoutGridFillDuotone, LayoutGridFillDuotone as LayoutGridFillDuotoneIcon, LayoutGridFillDuotone as SiLayoutGridFillDuotone };
 export default LayoutGridFillDuotone;
 export type { LayoutGridFillDuotoneProps };

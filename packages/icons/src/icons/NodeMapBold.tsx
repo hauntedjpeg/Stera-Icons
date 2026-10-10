@@ -14,7 +14,7 @@ const NodeMapBold = memo(
 
 NodeMapBold.displayName = 'NodeMapBold';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { NodeMapBold, NodeMapBold as NodeMapBoldIcon, NodeMapBold as SiNodeMapBold };
 export default NodeMapBold;
 export type { NodeMapBoldProps };

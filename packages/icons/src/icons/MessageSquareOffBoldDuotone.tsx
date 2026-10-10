@@ -15,7 +15,7 @@ const MessageSquareOffBoldDuotone = memo(
 
 MessageSquareOffBoldDuotone.displayName = 'MessageSquareOffBoldDuotone';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { MessageSquareOffBoldDuotone, MessageSquareOffBoldDuotone as MessageSquareOffBoldDuotoneIcon, MessageSquareOffBoldDuotone as SiMessageSquareOffBoldDuotone };
 export default MessageSquareOffBoldDuotone;
 export type { MessageSquareOffBoldDuotoneProps };

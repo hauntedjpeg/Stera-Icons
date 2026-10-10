@@ -15,7 +15,7 @@ const CloudDownloadBold = memo(
 
 CloudDownloadBold.displayName = 'CloudDownloadBold';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { CloudDownloadBold, CloudDownloadBold as CloudDownloadBoldIcon, CloudDownloadBold as SiCloudDownloadBold };
 export default CloudDownloadBold;
 export type { CloudDownloadBoldProps };

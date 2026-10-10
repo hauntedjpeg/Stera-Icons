@@ -17,7 +17,7 @@ const RulersBoldDuotone = memo(
 
 RulersBoldDuotone.displayName = 'RulersBoldDuotone';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { RulersBoldDuotone, RulersBoldDuotone as RulersBoldDuotoneIcon, RulersBoldDuotone as SiRulersBoldDuotone };
 export default RulersBoldDuotone;
 export type { RulersBoldDuotoneProps };

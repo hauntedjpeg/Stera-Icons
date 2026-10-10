@@ -14,7 +14,7 @@ const TextUnderlineBold = memo(
 
 TextUnderlineBold.displayName = 'TextUnderlineBold';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { TextUnderlineBold, TextUnderlineBold as TextUnderlineBoldIcon, TextUnderlineBold as SiTextUnderlineBold };
 export default TextUnderlineBold;
 export type { TextUnderlineBoldProps };

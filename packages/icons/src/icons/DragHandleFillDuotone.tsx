@@ -15,7 +15,7 @@ const DragHandleFillDuotone = memo(
 
 DragHandleFillDuotone.displayName = 'DragHandleFillDuotone';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { DragHandleFillDuotone, DragHandleFillDuotone as DragHandleFillDuotoneIcon, DragHandleFillDuotone as SiDragHandleFillDuotone };
 export default DragHandleFillDuotone;
 export type { DragHandleFillDuotoneProps };

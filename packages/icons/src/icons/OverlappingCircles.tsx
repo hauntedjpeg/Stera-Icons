@@ -18,10 +18,10 @@ export interface OverlappingCirclesProps extends IconProps {
  * For smaller bundle size, import specific variants directly:
  * import { OverlappingCirclesRegular } from 'stera-icons/icons/OverlappingCirclesRegular';
  */
-const OverlappingCircles = memo(forwardRef<SVGSVGElement, OverlappingCirclesProps>(({ 
+const OverlappingCircles = memo(forwardRef<SVGSVGElement, OverlappingCirclesProps>(({
   weight = 'regular',
   duotone = false,
-  ...rest 
+  ...rest
 }, ref) => {
   if (weight === 'bold' && duotone) return <OverlappingCirclesBoldDuotone ref={ref} {...rest} />;
   if (weight === 'bold') return <OverlappingCirclesBold ref={ref} {...rest} />;
@@ -33,6 +33,6 @@ const OverlappingCircles = memo(forwardRef<SVGSVGElement, OverlappingCirclesProp
 
 OverlappingCircles.displayName = 'OverlappingCircles';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { OverlappingCircles, OverlappingCircles as OverlappingCirclesIcon, OverlappingCircles as SiOverlappingCircles };
 export default OverlappingCircles;

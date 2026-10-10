@@ -15,7 +15,7 @@ const RectangleBoldDuotone = memo(
 
 RectangleBoldDuotone.displayName = 'RectangleBoldDuotone';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { RectangleBoldDuotone, RectangleBoldDuotone as RectangleBoldDuotoneIcon, RectangleBoldDuotone as SiRectangleBoldDuotone };
 export default RectangleBoldDuotone;
 export type { RectangleBoldDuotoneProps };

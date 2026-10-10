@@ -14,7 +14,7 @@ const QuoteOpeningRegular = memo(
 
 QuoteOpeningRegular.displayName = 'QuoteOpeningRegular';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { QuoteOpeningRegular, QuoteOpeningRegular as QuoteOpeningRegularIcon, QuoteOpeningRegular as SiQuoteOpeningRegular };
 export default QuoteOpeningRegular;
 export type { QuoteOpeningRegularProps };

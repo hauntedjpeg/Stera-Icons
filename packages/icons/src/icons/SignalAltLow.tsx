@@ -18,10 +18,10 @@ export interface SignalAltLowProps extends IconProps {
  * For smaller bundle size, import specific variants directly:
  * import { SignalAltLowRegular } from 'stera-icons/icons/SignalAltLowRegular';
  */
-const SignalAltLow = memo(forwardRef<SVGSVGElement, SignalAltLowProps>(({ 
+const SignalAltLow = memo(forwardRef<SVGSVGElement, SignalAltLowProps>(({
   weight = 'regular',
   duotone = false,
-  ...rest 
+  ...rest
 }, ref) => {
   if (weight === 'bold' && duotone) return <SignalAltLowBoldDuotone ref={ref} {...rest} />;
   if (weight === 'bold') return <SignalAltLowBold ref={ref} {...rest} />;
@@ -33,6 +33,6 @@ const SignalAltLow = memo(forwardRef<SVGSVGElement, SignalAltLowProps>(({
 
 SignalAltLow.displayName = 'SignalAltLow';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { SignalAltLow, SignalAltLow as SignalAltLowIcon, SignalAltLow as SiSignalAltLow };
 export default SignalAltLow;

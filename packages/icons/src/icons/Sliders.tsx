@@ -18,10 +18,10 @@ export interface SlidersProps extends IconProps {
  * For smaller bundle size, import specific variants directly:
  * import { SlidersRegular } from 'stera-icons/icons/SlidersRegular';
  */
-const Sliders = memo(forwardRef<SVGSVGElement, SlidersProps>(({ 
+const Sliders = memo(forwardRef<SVGSVGElement, SlidersProps>(({
   weight = 'regular',
   duotone = false,
-  ...rest 
+  ...rest
 }, ref) => {
   if (weight === 'bold' && duotone) return <SlidersBoldDuotone ref={ref} {...rest} />;
   if (weight === 'bold') return <SlidersBold ref={ref} {...rest} />;
@@ -33,6 +33,6 @@ const Sliders = memo(forwardRef<SVGSVGElement, SlidersProps>(({
 
 Sliders.displayName = 'Sliders';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { Sliders, Sliders as SlidersIcon, Sliders as SiSliders };
 export default Sliders;

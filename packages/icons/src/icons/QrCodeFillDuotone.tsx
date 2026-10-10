@@ -17,7 +17,7 @@ const QrCodeFillDuotone = memo(
 
 QrCodeFillDuotone.displayName = 'QrCodeFillDuotone';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { QrCodeFillDuotone, QrCodeFillDuotone as QrCodeFillDuotoneIcon, QrCodeFillDuotone as SiQrCodeFillDuotone };
 export default QrCodeFillDuotone;
 export type { QrCodeFillDuotoneProps };

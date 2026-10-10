@@ -18,10 +18,10 @@ export interface ShieldBanProps extends IconProps {
  * For smaller bundle size, import specific variants directly:
  * import { ShieldBanRegular } from 'stera-icons/icons/ShieldBanRegular';
  */
-const ShieldBan = memo(forwardRef<SVGSVGElement, ShieldBanProps>(({ 
+const ShieldBan = memo(forwardRef<SVGSVGElement, ShieldBanProps>(({
   weight = 'regular',
   duotone = false,
-  ...rest 
+  ...rest
 }, ref) => {
   if (weight === 'bold' && duotone) return <ShieldBanBoldDuotone ref={ref} {...rest} />;
   if (weight === 'bold') return <ShieldBanBold ref={ref} {...rest} />;
@@ -33,6 +33,6 @@ const ShieldBan = memo(forwardRef<SVGSVGElement, ShieldBanProps>(({
 
 ShieldBan.displayName = 'ShieldBan';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { ShieldBan, ShieldBan as ShieldBanIcon, ShieldBan as SiShieldBan };
 export default ShieldBan;

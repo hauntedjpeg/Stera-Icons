@@ -18,10 +18,10 @@ export interface HashSquareProps extends IconProps {
  * For smaller bundle size, import specific variants directly:
  * import { HashSquareRegular } from 'stera-icons/icons/HashSquareRegular';
  */
-const HashSquare = memo(forwardRef<SVGSVGElement, HashSquareProps>(({ 
+const HashSquare = memo(forwardRef<SVGSVGElement, HashSquareProps>(({
   weight = 'regular',
   duotone = false,
-  ...rest 
+  ...rest
 }, ref) => {
   if (weight === 'bold' && duotone) return <HashSquareBoldDuotone ref={ref} {...rest} />;
   if (weight === 'bold') return <HashSquareBold ref={ref} {...rest} />;
@@ -33,6 +33,6 @@ const HashSquare = memo(forwardRef<SVGSVGElement, HashSquareProps>(({
 
 HashSquare.displayName = 'HashSquare';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { HashSquare, HashSquare as HashSquareIcon, HashSquare as SiHashSquare };
 export default HashSquare;

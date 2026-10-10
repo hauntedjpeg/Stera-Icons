@@ -14,7 +14,7 @@ const GitPullRequestDraftFill = memo(
 
 GitPullRequestDraftFill.displayName = 'GitPullRequestDraftFill';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { GitPullRequestDraftFill, GitPullRequestDraftFill as GitPullRequestDraftFillIcon, GitPullRequestDraftFill as SiGitPullRequestDraftFill };
 export default GitPullRequestDraftFill;
 export type { GitPullRequestDraftFillProps };

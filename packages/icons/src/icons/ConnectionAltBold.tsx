@@ -16,7 +16,7 @@ const ConnectionAltBold = memo(
 
 ConnectionAltBold.displayName = 'ConnectionAltBold';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { ConnectionAltBold, ConnectionAltBold as ConnectionAltBoldIcon, ConnectionAltBold as SiConnectionAltBold };
 export default ConnectionAltBold;
 export type { ConnectionAltBoldProps };

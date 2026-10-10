@@ -15,7 +15,7 @@ const CrosshairRegularDuotone = memo(
 
 CrosshairRegularDuotone.displayName = 'CrosshairRegularDuotone';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { CrosshairRegularDuotone, CrosshairRegularDuotone as CrosshairRegularDuotoneIcon, CrosshairRegularDuotone as SiCrosshairRegularDuotone };
 export default CrosshairRegularDuotone;
 export type { CrosshairRegularDuotoneProps };

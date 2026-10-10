@@ -18,10 +18,10 @@ export interface HardDriveProps extends IconProps {
  * For smaller bundle size, import specific variants directly:
  * import { HardDriveRegular } from 'stera-icons/icons/HardDriveRegular';
  */
-const HardDrive = memo(forwardRef<SVGSVGElement, HardDriveProps>(({ 
+const HardDrive = memo(forwardRef<SVGSVGElement, HardDriveProps>(({
   weight = 'regular',
   duotone = false,
-  ...rest 
+  ...rest
 }, ref) => {
   if (weight === 'bold' && duotone) return <HardDriveBoldDuotone ref={ref} {...rest} />;
   if (weight === 'bold') return <HardDriveBold ref={ref} {...rest} />;
@@ -33,6 +33,6 @@ const HardDrive = memo(forwardRef<SVGSVGElement, HardDriveProps>(({
 
 HardDrive.displayName = 'HardDrive';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { HardDrive, HardDrive as HardDriveIcon, HardDrive as SiHardDrive };
 export default HardDrive;

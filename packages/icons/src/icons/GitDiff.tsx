@@ -18,10 +18,10 @@ export interface GitDiffProps extends IconProps {
  * For smaller bundle size, import specific variants directly:
  * import { GitDiffRegular } from 'stera-icons/icons/GitDiffRegular';
  */
-const GitDiff = memo(forwardRef<SVGSVGElement, GitDiffProps>(({ 
+const GitDiff = memo(forwardRef<SVGSVGElement, GitDiffProps>(({
   weight = 'regular',
   duotone = false,
-  ...rest 
+  ...rest
 }, ref) => {
   if (weight === 'bold' && duotone) return <GitDiffBoldDuotone ref={ref} {...rest} />;
   if (weight === 'bold') return <GitDiffBold ref={ref} {...rest} />;
@@ -33,6 +33,6 @@ const GitDiff = memo(forwardRef<SVGSVGElement, GitDiffProps>(({
 
 GitDiff.displayName = 'GitDiff';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { GitDiff, GitDiff as GitDiffIcon, GitDiff as SiGitDiff };
 export default GitDiff;

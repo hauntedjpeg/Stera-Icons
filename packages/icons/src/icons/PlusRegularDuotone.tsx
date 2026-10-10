@@ -15,7 +15,7 @@ const PlusRegularDuotone = memo(
 
 PlusRegularDuotone.displayName = 'PlusRegularDuotone';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { PlusRegularDuotone, PlusRegularDuotone as PlusRegularDuotoneIcon, PlusRegularDuotone as SiPlusRegularDuotone };
 export default PlusRegularDuotone;
 export type { PlusRegularDuotoneProps };

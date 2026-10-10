@@ -16,7 +16,7 @@ const CompassFillDuotone = memo(
 
 CompassFillDuotone.displayName = 'CompassFillDuotone';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { CompassFillDuotone, CompassFillDuotone as CompassFillDuotoneIcon, CompassFillDuotone as SiCompassFillDuotone };
 export default CompassFillDuotone;
 export type { CompassFillDuotoneProps };

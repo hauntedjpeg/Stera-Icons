@@ -14,7 +14,7 @@ const AsteriskRegular = memo(
 
 AsteriskRegular.displayName = 'AsteriskRegular';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { AsteriskRegular, AsteriskRegular as AsteriskRegularIcon, AsteriskRegular as SiAsteriskRegular };
 export default AsteriskRegular;
 export type { AsteriskRegularProps };

@@ -15,7 +15,7 @@ const StethoscopeFillDuotone = memo(
 
 StethoscopeFillDuotone.displayName = 'StethoscopeFillDuotone';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { StethoscopeFillDuotone, StethoscopeFillDuotone as StethoscopeFillDuotoneIcon, StethoscopeFillDuotone as SiStethoscopeFillDuotone };
 export default StethoscopeFillDuotone;
 export type { StethoscopeFillDuotoneProps };

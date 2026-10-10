@@ -18,10 +18,10 @@ export interface ChartDonutProps extends IconProps {
  * For smaller bundle size, import specific variants directly:
  * import { ChartDonutRegular } from 'stera-icons/icons/ChartDonutRegular';
  */
-const ChartDonut = memo(forwardRef<SVGSVGElement, ChartDonutProps>(({ 
+const ChartDonut = memo(forwardRef<SVGSVGElement, ChartDonutProps>(({
   weight = 'regular',
   duotone = false,
-  ...rest 
+  ...rest
 }, ref) => {
   if (weight === 'bold' && duotone) return <ChartDonutBoldDuotone ref={ref} {...rest} />;
   if (weight === 'bold') return <ChartDonutBold ref={ref} {...rest} />;
@@ -33,6 +33,6 @@ const ChartDonut = memo(forwardRef<SVGSVGElement, ChartDonutProps>(({
 
 ChartDonut.displayName = 'ChartDonut';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { ChartDonut, ChartDonut as ChartDonutIcon, ChartDonut as SiChartDonut };
 export default ChartDonut;

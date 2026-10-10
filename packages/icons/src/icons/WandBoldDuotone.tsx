@@ -15,7 +15,7 @@ const WandBoldDuotone = memo(
 
 WandBoldDuotone.displayName = 'WandBoldDuotone';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { WandBoldDuotone, WandBoldDuotone as WandBoldDuotoneIcon, WandBoldDuotone as SiWandBoldDuotone };
 export default WandBoldDuotone;
 export type { WandBoldDuotoneProps };

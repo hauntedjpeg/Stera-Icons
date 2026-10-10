@@ -18,10 +18,10 @@ export interface DataTableProps extends IconProps {
  * For smaller bundle size, import specific variants directly:
  * import { DataTableRegular } from 'stera-icons/icons/DataTableRegular';
  */
-const DataTable = memo(forwardRef<SVGSVGElement, DataTableProps>(({ 
+const DataTable = memo(forwardRef<SVGSVGElement, DataTableProps>(({
   weight = 'regular',
   duotone = false,
-  ...rest 
+  ...rest
 }, ref) => {
   if (weight === 'bold' && duotone) return <DataTableBoldDuotone ref={ref} {...rest} />;
   if (weight === 'bold') return <DataTableBold ref={ref} {...rest} />;
@@ -33,6 +33,6 @@ const DataTable = memo(forwardRef<SVGSVGElement, DataTableProps>(({
 
 DataTable.displayName = 'DataTable';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { DataTable, DataTable as DataTableIcon, DataTable as SiDataTable };
 export default DataTable;

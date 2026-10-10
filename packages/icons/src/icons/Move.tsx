@@ -18,10 +18,10 @@ export interface MoveProps extends IconProps {
  * For smaller bundle size, import specific variants directly:
  * import { MoveRegular } from 'stera-icons/icons/MoveRegular';
  */
-const Move = memo(forwardRef<SVGSVGElement, MoveProps>(({ 
+const Move = memo(forwardRef<SVGSVGElement, MoveProps>(({
   weight = 'regular',
   duotone = false,
-  ...rest 
+  ...rest
 }, ref) => {
   if (weight === 'bold' && duotone) return <MoveBoldDuotone ref={ref} {...rest} />;
   if (weight === 'bold') return <MoveBold ref={ref} {...rest} />;
@@ -33,6 +33,6 @@ const Move = memo(forwardRef<SVGSVGElement, MoveProps>(({
 
 Move.displayName = 'Move';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { Move, Move as MoveIcon, Move as SiMove };
 export default Move;

@@ -15,7 +15,7 @@ const PoundSterlingFillDuotone = memo(
 
 PoundSterlingFillDuotone.displayName = 'PoundSterlingFillDuotone';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { PoundSterlingFillDuotone, PoundSterlingFillDuotone as PoundSterlingFillDuotoneIcon, PoundSterlingFillDuotone as SiPoundSterlingFillDuotone };
 export default PoundSterlingFillDuotone;
 export type { PoundSterlingFillDuotoneProps };

@@ -15,7 +15,7 @@ const CursorPointerFillDuotone = memo(
 
 CursorPointerFillDuotone.displayName = 'CursorPointerFillDuotone';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { CursorPointerFillDuotone, CursorPointerFillDuotone as CursorPointerFillDuotoneIcon, CursorPointerFillDuotone as SiCursorPointerFillDuotone };
 export default CursorPointerFillDuotone;
 export type { CursorPointerFillDuotoneProps };

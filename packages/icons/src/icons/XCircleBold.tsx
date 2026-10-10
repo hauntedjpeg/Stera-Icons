@@ -15,7 +15,7 @@ const XCircleBold = memo(
 
 XCircleBold.displayName = 'XCircleBold';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { XCircleBold, XCircleBold as XCircleBoldIcon, XCircleBold as SiXCircleBold };
 export default XCircleBold;
 export type { XCircleBoldProps };

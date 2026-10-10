@@ -14,7 +14,7 @@ const AlignVerticalTopFill = memo(
 
 AlignVerticalTopFill.displayName = 'AlignVerticalTopFill';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { AlignVerticalTopFill, AlignVerticalTopFill as AlignVerticalTopFillIcon, AlignVerticalTopFill as SiAlignVerticalTopFill };
 export default AlignVerticalTopFill;
 export type { AlignVerticalTopFillProps };

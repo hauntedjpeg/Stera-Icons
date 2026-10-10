@@ -18,10 +18,10 @@ export interface EyeProps extends IconProps {
  * For smaller bundle size, import specific variants directly:
  * import { EyeRegular } from 'stera-icons/icons/EyeRegular';
  */
-const Eye = memo(forwardRef<SVGSVGElement, EyeProps>(({ 
+const Eye = memo(forwardRef<SVGSVGElement, EyeProps>(({
   weight = 'regular',
   duotone = false,
-  ...rest 
+  ...rest
 }, ref) => {
   if (weight === 'bold' && duotone) return <EyeBoldDuotone ref={ref} {...rest} />;
   if (weight === 'bold') return <EyeBold ref={ref} {...rest} />;
@@ -33,6 +33,6 @@ const Eye = memo(forwardRef<SVGSVGElement, EyeProps>(({
 
 Eye.displayName = 'Eye';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { Eye, Eye as EyeIcon, Eye as SiEye };
 export default Eye;

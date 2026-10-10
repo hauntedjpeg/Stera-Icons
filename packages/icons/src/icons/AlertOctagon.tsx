@@ -18,10 +18,10 @@ export interface AlertOctagonProps extends IconProps {
  * For smaller bundle size, import specific variants directly:
  * import { AlertOctagonRegular } from 'stera-icons/icons/AlertOctagonRegular';
  */
-const AlertOctagon = memo(forwardRef<SVGSVGElement, AlertOctagonProps>(({ 
+const AlertOctagon = memo(forwardRef<SVGSVGElement, AlertOctagonProps>(({
   weight = 'regular',
   duotone = false,
-  ...rest 
+  ...rest
 }, ref) => {
   if (weight === 'bold' && duotone) return <AlertOctagonBoldDuotone ref={ref} {...rest} />;
   if (weight === 'bold') return <AlertOctagonBold ref={ref} {...rest} />;
@@ -33,6 +33,6 @@ const AlertOctagon = memo(forwardRef<SVGSVGElement, AlertOctagonProps>(({
 
 AlertOctagon.displayName = 'AlertOctagon';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { AlertOctagon, AlertOctagon as AlertOctagonIcon, AlertOctagon as SiAlertOctagon };
 export default AlertOctagon;

@@ -15,7 +15,7 @@ const InfoSquareBoldDuotone = memo(
 
 InfoSquareBoldDuotone.displayName = 'InfoSquareBoldDuotone';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { InfoSquareBoldDuotone, InfoSquareBoldDuotone as InfoSquareBoldDuotoneIcon, InfoSquareBoldDuotone as SiInfoSquareBoldDuotone };
 export default InfoSquareBoldDuotone;
 export type { InfoSquareBoldDuotoneProps };

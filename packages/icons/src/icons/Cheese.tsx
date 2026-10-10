@@ -18,10 +18,10 @@ export interface CheeseProps extends IconProps {
  * For smaller bundle size, import specific variants directly:
  * import { CheeseRegular } from 'stera-icons/icons/CheeseRegular';
  */
-const Cheese = memo(forwardRef<SVGSVGElement, CheeseProps>(({ 
+const Cheese = memo(forwardRef<SVGSVGElement, CheeseProps>(({
   weight = 'regular',
   duotone = false,
-  ...rest 
+  ...rest
 }, ref) => {
   if (weight === 'bold' && duotone) return <CheeseBoldDuotone ref={ref} {...rest} />;
   if (weight === 'bold') return <CheeseBold ref={ref} {...rest} />;
@@ -33,6 +33,6 @@ const Cheese = memo(forwardRef<SVGSVGElement, CheeseProps>(({
 
 Cheese.displayName = 'Cheese';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { Cheese, Cheese as CheeseIcon, Cheese as SiCheese };
 export default Cheese;

@@ -18,10 +18,10 @@ export interface IdHProps extends IconProps {
  * For smaller bundle size, import specific variants directly:
  * import { IdHRegular } from 'stera-icons/icons/IdHRegular';
  */
-const IdH = memo(forwardRef<SVGSVGElement, IdHProps>(({ 
+const IdH = memo(forwardRef<SVGSVGElement, IdHProps>(({
   weight = 'regular',
   duotone = false,
-  ...rest 
+  ...rest
 }, ref) => {
   if (weight === 'bold' && duotone) return <IdHBoldDuotone ref={ref} {...rest} />;
   if (weight === 'bold') return <IdHBold ref={ref} {...rest} />;
@@ -33,6 +33,6 @@ const IdH = memo(forwardRef<SVGSVGElement, IdHProps>(({
 
 IdH.displayName = 'IdH';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { IdH, IdH as IdHIcon, IdH as SiIdH };
 export default IdH;

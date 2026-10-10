@@ -15,7 +15,7 @@ const CliSquareRegular = memo(
 
 CliSquareRegular.displayName = 'CliSquareRegular';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { CliSquareRegular, CliSquareRegular as CliSquareRegularIcon, CliSquareRegular as SiCliSquareRegular };
 export default CliSquareRegular;
 export type { CliSquareRegularProps };

@@ -14,7 +14,7 @@ const ForkKnifeRegular = memo(
 
 ForkKnifeRegular.displayName = 'ForkKnifeRegular';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { ForkKnifeRegular, ForkKnifeRegular as ForkKnifeRegularIcon, ForkKnifeRegular as SiForkKnifeRegular };
 export default ForkKnifeRegular;
 export type { ForkKnifeRegularProps };

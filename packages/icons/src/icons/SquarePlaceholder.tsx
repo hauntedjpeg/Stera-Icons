@@ -18,10 +18,10 @@ export interface SquarePlaceholderProps extends IconProps {
  * For smaller bundle size, import specific variants directly:
  * import { SquarePlaceholderRegular } from 'stera-icons/icons/SquarePlaceholderRegular';
  */
-const SquarePlaceholder = memo(forwardRef<SVGSVGElement, SquarePlaceholderProps>(({ 
+const SquarePlaceholder = memo(forwardRef<SVGSVGElement, SquarePlaceholderProps>(({
   weight = 'regular',
   duotone = false,
-  ...rest 
+  ...rest
 }, ref) => {
   if (weight === 'bold' && duotone) return <SquarePlaceholderBoldDuotone ref={ref} {...rest} />;
   if (weight === 'bold') return <SquarePlaceholderBold ref={ref} {...rest} />;
@@ -33,6 +33,6 @@ const SquarePlaceholder = memo(forwardRef<SVGSVGElement, SquarePlaceholderProps>
 
 SquarePlaceholder.displayName = 'SquarePlaceholder';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { SquarePlaceholder, SquarePlaceholder as SquarePlaceholderIcon, SquarePlaceholder as SiSquarePlaceholder };
 export default SquarePlaceholder;

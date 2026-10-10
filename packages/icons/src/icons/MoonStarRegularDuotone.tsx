@@ -15,7 +15,7 @@ const MoonStarRegularDuotone = memo(
 
 MoonStarRegularDuotone.displayName = 'MoonStarRegularDuotone';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { MoonStarRegularDuotone, MoonStarRegularDuotone as MoonStarRegularDuotoneIcon, MoonStarRegularDuotone as SiMoonStarRegularDuotone };
 export default MoonStarRegularDuotone;
 export type { MoonStarRegularDuotoneProps };

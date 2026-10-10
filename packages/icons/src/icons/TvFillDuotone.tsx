@@ -15,7 +15,7 @@ const TvFillDuotone = memo(
 
 TvFillDuotone.displayName = 'TvFillDuotone';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { TvFillDuotone, TvFillDuotone as TvFillDuotoneIcon, TvFillDuotone as SiTvFillDuotone };
 export default TvFillDuotone;
 export type { TvFillDuotoneProps };

@@ -15,7 +15,7 @@ const PilcrowFillDuotone = memo(
 
 PilcrowFillDuotone.displayName = 'PilcrowFillDuotone';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { PilcrowFillDuotone, PilcrowFillDuotone as PilcrowFillDuotoneIcon, PilcrowFillDuotone as SiPilcrowFillDuotone };
 export default PilcrowFillDuotone;
 export type { PilcrowFillDuotoneProps };

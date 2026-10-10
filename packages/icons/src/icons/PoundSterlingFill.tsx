@@ -14,7 +14,7 @@ const PoundSterlingFill = memo(
 
 PoundSterlingFill.displayName = 'PoundSterlingFill';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { PoundSterlingFill, PoundSterlingFill as PoundSterlingFillIcon, PoundSterlingFill as SiPoundSterlingFill };
 export default PoundSterlingFill;
 export type { PoundSterlingFillProps };

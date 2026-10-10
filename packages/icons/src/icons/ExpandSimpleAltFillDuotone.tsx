@@ -15,7 +15,7 @@ const ExpandSimpleAltFillDuotone = memo(
 
 ExpandSimpleAltFillDuotone.displayName = 'ExpandSimpleAltFillDuotone';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { ExpandSimpleAltFillDuotone, ExpandSimpleAltFillDuotone as ExpandSimpleAltFillDuotoneIcon, ExpandSimpleAltFillDuotone as SiExpandSimpleAltFillDuotone };
 export default ExpandSimpleAltFillDuotone;
 export type { ExpandSimpleAltFillDuotoneProps };

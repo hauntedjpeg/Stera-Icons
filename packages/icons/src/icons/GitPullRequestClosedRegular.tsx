@@ -15,7 +15,7 @@ const GitPullRequestClosedRegular = memo(
 
 GitPullRequestClosedRegular.displayName = 'GitPullRequestClosedRegular';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { GitPullRequestClosedRegular, GitPullRequestClosedRegular as GitPullRequestClosedRegularIcon, GitPullRequestClosedRegular as SiGitPullRequestClosedRegular };
 export default GitPullRequestClosedRegular;
 export type { GitPullRequestClosedRegularProps };

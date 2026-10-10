@@ -14,7 +14,7 @@ const HeadphonesBold = memo(
 
 HeadphonesBold.displayName = 'HeadphonesBold';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { HeadphonesBold, HeadphonesBold as HeadphonesBoldIcon, HeadphonesBold as SiHeadphonesBold };
 export default HeadphonesBold;
 export type { HeadphonesBoldProps };

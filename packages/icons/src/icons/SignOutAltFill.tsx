@@ -14,7 +14,7 @@ const SignOutAltFill = memo(
 
 SignOutAltFill.displayName = 'SignOutAltFill';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { SignOutAltFill, SignOutAltFill as SignOutAltFillIcon, SignOutAltFill as SiSignOutAltFill };
 export default SignOutAltFill;
 export type { SignOutAltFillProps };

@@ -15,7 +15,7 @@ const PlayFillDuotone = memo(
 
 PlayFillDuotone.displayName = 'PlayFillDuotone';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { PlayFillDuotone, PlayFillDuotone as PlayFillDuotoneIcon, PlayFillDuotone as SiPlayFillDuotone };
 export default PlayFillDuotone;
 export type { PlayFillDuotoneProps };

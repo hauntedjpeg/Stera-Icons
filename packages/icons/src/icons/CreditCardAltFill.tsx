@@ -15,7 +15,7 @@ const CreditCardAltFill = memo(
 
 CreditCardAltFill.displayName = 'CreditCardAltFill';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { CreditCardAltFill, CreditCardAltFill as CreditCardAltFillIcon, CreditCardAltFill as SiCreditCardAltFill };
 export default CreditCardAltFill;
 export type { CreditCardAltFillProps };

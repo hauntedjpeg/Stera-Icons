@@ -18,10 +18,10 @@ export interface UsersThreeProps extends IconProps {
  * For smaller bundle size, import specific variants directly:
  * import { UsersThreeRegular } from 'stera-icons/icons/UsersThreeRegular';
  */
-const UsersThree = memo(forwardRef<SVGSVGElement, UsersThreeProps>(({ 
+const UsersThree = memo(forwardRef<SVGSVGElement, UsersThreeProps>(({
   weight = 'regular',
   duotone = false,
-  ...rest 
+  ...rest
 }, ref) => {
   if (weight === 'bold' && duotone) return <UsersThreeBoldDuotone ref={ref} {...rest} />;
   if (weight === 'bold') return <UsersThreeBold ref={ref} {...rest} />;
@@ -33,6 +33,6 @@ const UsersThree = memo(forwardRef<SVGSVGElement, UsersThreeProps>(({
 
 UsersThree.displayName = 'UsersThree';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { UsersThree, UsersThree as UsersThreeIcon, UsersThree as SiUsersThree };
 export default UsersThree;

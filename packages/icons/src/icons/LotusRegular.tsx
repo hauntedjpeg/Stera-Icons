@@ -14,7 +14,7 @@ const LotusRegular = memo(
 
 LotusRegular.displayName = 'LotusRegular';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { LotusRegular, LotusRegular as LotusRegularIcon, LotusRegular as SiLotusRegular };
 export default LotusRegular;
 export type { LotusRegularProps };

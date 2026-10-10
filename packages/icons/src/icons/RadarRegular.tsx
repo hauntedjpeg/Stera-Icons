@@ -14,7 +14,7 @@ const RadarRegular = memo(
 
 RadarRegular.displayName = 'RadarRegular';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { RadarRegular, RadarRegular as RadarRegularIcon, RadarRegular as SiRadarRegular };
 export default RadarRegular;
 export type { RadarRegularProps };

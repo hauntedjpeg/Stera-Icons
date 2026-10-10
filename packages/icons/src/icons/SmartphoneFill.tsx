@@ -14,7 +14,7 @@ const SmartphoneFill = memo(
 
 SmartphoneFill.displayName = 'SmartphoneFill';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { SmartphoneFill, SmartphoneFill as SmartphoneFillIcon, SmartphoneFill as SiSmartphoneFill };
 export default SmartphoneFill;
 export type { SmartphoneFillProps };

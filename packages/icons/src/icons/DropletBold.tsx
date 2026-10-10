@@ -14,7 +14,7 @@ const DropletBold = memo(
 
 DropletBold.displayName = 'DropletBold';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { DropletBold, DropletBold as DropletBoldIcon, DropletBold as SiDropletBold };
 export default DropletBold;
 export type { DropletBoldProps };

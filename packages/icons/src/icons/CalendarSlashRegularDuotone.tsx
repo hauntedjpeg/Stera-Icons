@@ -15,7 +15,7 @@ const CalendarSlashRegularDuotone = memo(
 
 CalendarSlashRegularDuotone.displayName = 'CalendarSlashRegularDuotone';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { CalendarSlashRegularDuotone, CalendarSlashRegularDuotone as CalendarSlashRegularDuotoneIcon, CalendarSlashRegularDuotone as SiCalendarSlashRegularDuotone };
 export default CalendarSlashRegularDuotone;
 export type { CalendarSlashRegularDuotoneProps };

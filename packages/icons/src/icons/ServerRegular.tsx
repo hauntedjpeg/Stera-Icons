@@ -17,7 +17,7 @@ const ServerRegular = memo(
 
 ServerRegular.displayName = 'ServerRegular';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { ServerRegular, ServerRegular as ServerRegularIcon, ServerRegular as SiServerRegular };
 export default ServerRegular;
 export type { ServerRegularProps };

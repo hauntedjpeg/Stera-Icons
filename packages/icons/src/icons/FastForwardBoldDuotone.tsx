@@ -15,7 +15,7 @@ const FastForwardBoldDuotone = memo(
 
 FastForwardBoldDuotone.displayName = 'FastForwardBoldDuotone';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { FastForwardBoldDuotone, FastForwardBoldDuotone as FastForwardBoldDuotoneIcon, FastForwardBoldDuotone as SiFastForwardBoldDuotone };
 export default FastForwardBoldDuotone;
 export type { FastForwardBoldDuotoneProps };

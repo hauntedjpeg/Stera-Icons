@@ -18,10 +18,10 @@ export interface GitBranchProps extends IconProps {
  * For smaller bundle size, import specific variants directly:
  * import { GitBranchRegular } from 'stera-icons/icons/GitBranchRegular';
  */
-const GitBranch = memo(forwardRef<SVGSVGElement, GitBranchProps>(({ 
+const GitBranch = memo(forwardRef<SVGSVGElement, GitBranchProps>(({
   weight = 'regular',
   duotone = false,
-  ...rest 
+  ...rest
 }, ref) => {
   if (weight === 'bold' && duotone) return <GitBranchBoldDuotone ref={ref} {...rest} />;
   if (weight === 'bold') return <GitBranchBold ref={ref} {...rest} />;
@@ -33,6 +33,6 @@ const GitBranch = memo(forwardRef<SVGSVGElement, GitBranchProps>(({
 
 GitBranch.displayName = 'GitBranch';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { GitBranch, GitBranch as GitBranchIcon, GitBranch as SiGitBranch };
 export default GitBranch;

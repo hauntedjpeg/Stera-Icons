@@ -15,7 +15,7 @@ const DatabaseFill = memo(
 
 DatabaseFill.displayName = 'DatabaseFill';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { DatabaseFill, DatabaseFill as DatabaseFillIcon, DatabaseFill as SiDatabaseFill };
 export default DatabaseFill;
 export type { DatabaseFillProps };

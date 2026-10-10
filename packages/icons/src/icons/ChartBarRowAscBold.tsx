@@ -14,7 +14,7 @@ const ChartBarRowAscBold = memo(
 
 ChartBarRowAscBold.displayName = 'ChartBarRowAscBold';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { ChartBarRowAscBold, ChartBarRowAscBold as ChartBarRowAscBoldIcon, ChartBarRowAscBold as SiChartBarRowAscBold };
 export default ChartBarRowAscBold;
 export type { ChartBarRowAscBoldProps };

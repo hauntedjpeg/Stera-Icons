@@ -16,7 +16,7 @@ const DrinkCanFillDuotone = memo(
 
 DrinkCanFillDuotone.displayName = 'DrinkCanFillDuotone';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { DrinkCanFillDuotone, DrinkCanFillDuotone as DrinkCanFillDuotoneIcon, DrinkCanFillDuotone as SiDrinkCanFillDuotone };
 export default DrinkCanFillDuotone;
 export type { DrinkCanFillDuotoneProps };

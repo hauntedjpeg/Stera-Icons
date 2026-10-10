@@ -14,7 +14,7 @@ const FlowMergeRegular = memo(
 
 FlowMergeRegular.displayName = 'FlowMergeRegular';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { FlowMergeRegular, FlowMergeRegular as FlowMergeRegularIcon, FlowMergeRegular as SiFlowMergeRegular };
 export default FlowMergeRegular;
 export type { FlowMergeRegularProps };

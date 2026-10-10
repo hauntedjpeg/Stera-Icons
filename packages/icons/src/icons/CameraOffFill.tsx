@@ -15,7 +15,7 @@ const CameraOffFill = memo(
 
 CameraOffFill.displayName = 'CameraOffFill';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { CameraOffFill, CameraOffFill as CameraOffFillIcon, CameraOffFill as SiCameraOffFill };
 export default CameraOffFill;
 export type { CameraOffFillProps };

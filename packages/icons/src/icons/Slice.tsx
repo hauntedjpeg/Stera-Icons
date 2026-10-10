@@ -18,10 +18,10 @@ export interface SliceProps extends IconProps {
  * For smaller bundle size, import specific variants directly:
  * import { SliceRegular } from 'stera-icons/icons/SliceRegular';
  */
-const Slice = memo(forwardRef<SVGSVGElement, SliceProps>(({ 
+const Slice = memo(forwardRef<SVGSVGElement, SliceProps>(({
   weight = 'regular',
   duotone = false,
-  ...rest 
+  ...rest
 }, ref) => {
   if (weight === 'bold' && duotone) return <SliceBoldDuotone ref={ref} {...rest} />;
   if (weight === 'bold') return <SliceBold ref={ref} {...rest} />;
@@ -33,6 +33,6 @@ const Slice = memo(forwardRef<SVGSVGElement, SliceProps>(({
 
 Slice.displayName = 'Slice';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { Slice, Slice as SliceIcon, Slice as SiSlice };
 export default Slice;

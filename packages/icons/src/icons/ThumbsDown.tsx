@@ -18,10 +18,10 @@ export interface ThumbsDownProps extends IconProps {
  * For smaller bundle size, import specific variants directly:
  * import { ThumbsDownRegular } from 'stera-icons/icons/ThumbsDownRegular';
  */
-const ThumbsDown = memo(forwardRef<SVGSVGElement, ThumbsDownProps>(({ 
+const ThumbsDown = memo(forwardRef<SVGSVGElement, ThumbsDownProps>(({
   weight = 'regular',
   duotone = false,
-  ...rest 
+  ...rest
 }, ref) => {
   if (weight === 'bold' && duotone) return <ThumbsDownBoldDuotone ref={ref} {...rest} />;
   if (weight === 'bold') return <ThumbsDownBold ref={ref} {...rest} />;
@@ -33,6 +33,6 @@ const ThumbsDown = memo(forwardRef<SVGSVGElement, ThumbsDownProps>(({
 
 ThumbsDown.displayName = 'ThumbsDown';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { ThumbsDown, ThumbsDown as ThumbsDownIcon, ThumbsDown as SiThumbsDown };
 export default ThumbsDown;

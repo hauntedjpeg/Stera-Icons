@@ -18,10 +18,10 @@ export interface PlusProps extends IconProps {
  * For smaller bundle size, import specific variants directly:
  * import { PlusRegular } from 'stera-icons/icons/PlusRegular';
  */
-const Plus = memo(forwardRef<SVGSVGElement, PlusProps>(({ 
+const Plus = memo(forwardRef<SVGSVGElement, PlusProps>(({
   weight = 'regular',
   duotone = false,
-  ...rest 
+  ...rest
 }, ref) => {
   if (weight === 'bold' && duotone) return <PlusBoldDuotone ref={ref} {...rest} />;
   if (weight === 'bold') return <PlusBold ref={ref} {...rest} />;
@@ -33,6 +33,6 @@ const Plus = memo(forwardRef<SVGSVGElement, PlusProps>(({
 
 Plus.displayName = 'Plus';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { Plus, Plus as PlusIcon, Plus as SiPlus };
 export default Plus;

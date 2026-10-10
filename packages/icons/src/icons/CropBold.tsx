@@ -14,7 +14,7 @@ const CropBold = memo(
 
 CropBold.displayName = 'CropBold';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { CropBold, CropBold as CropBoldIcon, CropBold as SiCropBold };
 export default CropBold;
 export type { CropBoldProps };

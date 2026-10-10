@@ -15,7 +15,7 @@ const MoonCrescentFillDuotone = memo(
 
 MoonCrescentFillDuotone.displayName = 'MoonCrescentFillDuotone';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { MoonCrescentFillDuotone, MoonCrescentFillDuotone as MoonCrescentFillDuotoneIcon, MoonCrescentFillDuotone as SiMoonCrescentFillDuotone };
 export default MoonCrescentFillDuotone;
 export type { MoonCrescentFillDuotoneProps };

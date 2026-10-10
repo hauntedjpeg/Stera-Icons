@@ -14,7 +14,7 @@ const FlameFill = memo(
 
 FlameFill.displayName = 'FlameFill';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { FlameFill, FlameFill as FlameFillIcon, FlameFill as SiFlameFill };
 export default FlameFill;
 export type { FlameFillProps };

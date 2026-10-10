@@ -18,10 +18,10 @@ export interface BracketsSquareCircleProps extends IconProps {
  * For smaller bundle size, import specific variants directly:
  * import { BracketsSquareCircleRegular } from 'stera-icons/icons/BracketsSquareCircleRegular';
  */
-const BracketsSquareCircle = memo(forwardRef<SVGSVGElement, BracketsSquareCircleProps>(({ 
+const BracketsSquareCircle = memo(forwardRef<SVGSVGElement, BracketsSquareCircleProps>(({
   weight = 'regular',
   duotone = false,
-  ...rest 
+  ...rest
 }, ref) => {
   if (weight === 'bold' && duotone) return <BracketsSquareCircleBoldDuotone ref={ref} {...rest} />;
   if (weight === 'bold') return <BracketsSquareCircleBold ref={ref} {...rest} />;
@@ -33,6 +33,6 @@ const BracketsSquareCircle = memo(forwardRef<SVGSVGElement, BracketsSquareCircle
 
 BracketsSquareCircle.displayName = 'BracketsSquareCircle';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { BracketsSquareCircle, BracketsSquareCircle as BracketsSquareCircleIcon, BracketsSquareCircle as SiBracketsSquareCircle };
 export default BracketsSquareCircle;

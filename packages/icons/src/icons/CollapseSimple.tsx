@@ -18,10 +18,10 @@ export interface CollapseSimpleProps extends IconProps {
  * For smaller bundle size, import specific variants directly:
  * import { CollapseSimpleRegular } from 'stera-icons/icons/CollapseSimpleRegular';
  */
-const CollapseSimple = memo(forwardRef<SVGSVGElement, CollapseSimpleProps>(({ 
+const CollapseSimple = memo(forwardRef<SVGSVGElement, CollapseSimpleProps>(({
   weight = 'regular',
   duotone = false,
-  ...rest 
+  ...rest
 }, ref) => {
   if (weight === 'bold' && duotone) return <CollapseSimpleBoldDuotone ref={ref} {...rest} />;
   if (weight === 'bold') return <CollapseSimpleBold ref={ref} {...rest} />;
@@ -33,6 +33,6 @@ const CollapseSimple = memo(forwardRef<SVGSVGElement, CollapseSimpleProps>(({
 
 CollapseSimple.displayName = 'CollapseSimple';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { CollapseSimple, CollapseSimple as CollapseSimpleIcon, CollapseSimple as SiCollapseSimple };
 export default CollapseSimple;

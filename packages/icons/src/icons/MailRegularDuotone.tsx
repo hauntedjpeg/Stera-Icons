@@ -15,7 +15,7 @@ const MailRegularDuotone = memo(
 
 MailRegularDuotone.displayName = 'MailRegularDuotone';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { MailRegularDuotone, MailRegularDuotone as MailRegularDuotoneIcon, MailRegularDuotone as SiMailRegularDuotone };
 export default MailRegularDuotone;
 export type { MailRegularDuotoneProps };

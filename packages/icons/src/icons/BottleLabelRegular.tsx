@@ -14,7 +14,7 @@ const BottleLabelRegular = memo(
 
 BottleLabelRegular.displayName = 'BottleLabelRegular';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { BottleLabelRegular, BottleLabelRegular as BottleLabelRegularIcon, BottleLabelRegular as SiBottleLabelRegular };
 export default BottleLabelRegular;
 export type { BottleLabelRegularProps };

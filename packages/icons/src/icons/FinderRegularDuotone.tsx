@@ -16,7 +16,7 @@ const FinderRegularDuotone = memo(
 
 FinderRegularDuotone.displayName = 'FinderRegularDuotone';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { FinderRegularDuotone, FinderRegularDuotone as FinderRegularDuotoneIcon, FinderRegularDuotone as SiFinderRegularDuotone };
 export default FinderRegularDuotone;
 export type { FinderRegularDuotoneProps };

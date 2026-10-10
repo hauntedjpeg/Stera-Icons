@@ -14,7 +14,7 @@ const ThumbsDownFill = memo(
 
 ThumbsDownFill.displayName = 'ThumbsDownFill';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { ThumbsDownFill, ThumbsDownFill as ThumbsDownFillIcon, ThumbsDownFill as SiThumbsDownFill };
 export default ThumbsDownFill;
 export type { ThumbsDownFillProps };

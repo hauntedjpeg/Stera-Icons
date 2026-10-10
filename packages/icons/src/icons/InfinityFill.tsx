@@ -14,7 +14,7 @@ const InfinityFill = memo(
 
 InfinityFill.displayName = 'InfinityFill';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { InfinityFill, InfinityFill as InfinityFillIcon, InfinityFill as SiInfinityFill };
 export default InfinityFill;
 export type { InfinityFillProps };

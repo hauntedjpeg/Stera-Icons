@@ -15,7 +15,7 @@ const ChevronsLeftRightEllipsisRegularDuotone = memo(
 
 ChevronsLeftRightEllipsisRegularDuotone.displayName = 'ChevronsLeftRightEllipsisRegularDuotone';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { ChevronsLeftRightEllipsisRegularDuotone, ChevronsLeftRightEllipsisRegularDuotone as ChevronsLeftRightEllipsisRegularDuotoneIcon, ChevronsLeftRightEllipsisRegularDuotone as SiChevronsLeftRightEllipsisRegularDuotone };
 export default ChevronsLeftRightEllipsisRegularDuotone;
 export type { ChevronsLeftRightEllipsisRegularDuotoneProps };

@@ -15,7 +15,7 @@ const GitDiffFillDuotone = memo(
 
 GitDiffFillDuotone.displayName = 'GitDiffFillDuotone';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { GitDiffFillDuotone, GitDiffFillDuotone as GitDiffFillDuotoneIcon, GitDiffFillDuotone as SiGitDiffFillDuotone };
 export default GitDiffFillDuotone;
 export type { GitDiffFillDuotoneProps };

@@ -15,7 +15,7 @@ const LineSegmentVFillDuotone = memo(
 
 LineSegmentVFillDuotone.displayName = 'LineSegmentVFillDuotone';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { LineSegmentVFillDuotone, LineSegmentVFillDuotone as LineSegmentVFillDuotoneIcon, LineSegmentVFillDuotone as SiLineSegmentVFillDuotone };
 export default LineSegmentVFillDuotone;
 export type { LineSegmentVFillDuotoneProps };

@@ -14,7 +14,7 @@ const TabletFill = memo(
 
 TabletFill.displayName = 'TabletFill';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { TabletFill, TabletFill as TabletFillIcon, TabletFill as SiTabletFill };
 export default TabletFill;
 export type { TabletFillProps };

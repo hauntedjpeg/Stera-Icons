@@ -15,7 +15,7 @@ const MailMinusBold = memo(
 
 MailMinusBold.displayName = 'MailMinusBold';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { MailMinusBold, MailMinusBold as MailMinusBoldIcon, MailMinusBold as SiMailMinusBold };
 export default MailMinusBold;
 export type { MailMinusBoldProps };

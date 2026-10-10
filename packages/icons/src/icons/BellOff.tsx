@@ -18,10 +18,10 @@ export interface BellOffProps extends IconProps {
  * For smaller bundle size, import specific variants directly:
  * import { BellOffRegular } from 'stera-icons/icons/BellOffRegular';
  */
-const BellOff = memo(forwardRef<SVGSVGElement, BellOffProps>(({ 
+const BellOff = memo(forwardRef<SVGSVGElement, BellOffProps>(({
   weight = 'regular',
   duotone = false,
-  ...rest 
+  ...rest
 }, ref) => {
   if (weight === 'bold' && duotone) return <BellOffBoldDuotone ref={ref} {...rest} />;
   if (weight === 'bold') return <BellOffBold ref={ref} {...rest} />;
@@ -33,6 +33,6 @@ const BellOff = memo(forwardRef<SVGSVGElement, BellOffProps>(({
 
 BellOff.displayName = 'BellOff';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { BellOff, BellOff as BellOffIcon, BellOff as SiBellOff };
 export default BellOff;

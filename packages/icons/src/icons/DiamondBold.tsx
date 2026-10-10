@@ -14,7 +14,7 @@ const DiamondBold = memo(
 
 DiamondBold.displayName = 'DiamondBold';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { DiamondBold, DiamondBold as DiamondBoldIcon, DiamondBold as SiDiamondBold };
 export default DiamondBold;
 export type { DiamondBoldProps };

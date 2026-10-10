@@ -18,10 +18,10 @@ export interface GiftProps extends IconProps {
  * For smaller bundle size, import specific variants directly:
  * import { GiftRegular } from 'stera-icons/icons/GiftRegular';
  */
-const Gift = memo(forwardRef<SVGSVGElement, GiftProps>(({ 
+const Gift = memo(forwardRef<SVGSVGElement, GiftProps>(({
   weight = 'regular',
   duotone = false,
-  ...rest 
+  ...rest
 }, ref) => {
   if (weight === 'bold' && duotone) return <GiftBoldDuotone ref={ref} {...rest} />;
   if (weight === 'bold') return <GiftBold ref={ref} {...rest} />;
@@ -33,6 +33,6 @@ const Gift = memo(forwardRef<SVGSVGElement, GiftProps>(({
 
 Gift.displayName = 'Gift';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { Gift, Gift as GiftIcon, Gift as SiGift };
 export default Gift;

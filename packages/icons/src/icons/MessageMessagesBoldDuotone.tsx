@@ -15,7 +15,7 @@ const MessageMessagesBoldDuotone = memo(
 
 MessageMessagesBoldDuotone.displayName = 'MessageMessagesBoldDuotone';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { MessageMessagesBoldDuotone, MessageMessagesBoldDuotone as MessageMessagesBoldDuotoneIcon, MessageMessagesBoldDuotone as SiMessageMessagesBoldDuotone };
 export default MessageMessagesBoldDuotone;
 export type { MessageMessagesBoldDuotoneProps };

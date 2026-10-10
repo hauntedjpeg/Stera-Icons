@@ -15,7 +15,7 @@ const TextAlignJustifyBoldDuotone = memo(
 
 TextAlignJustifyBoldDuotone.displayName = 'TextAlignJustifyBoldDuotone';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { TextAlignJustifyBoldDuotone, TextAlignJustifyBoldDuotone as TextAlignJustifyBoldDuotoneIcon, TextAlignJustifyBoldDuotone as SiTextAlignJustifyBoldDuotone };
 export default TextAlignJustifyBoldDuotone;
 export type { TextAlignJustifyBoldDuotoneProps };

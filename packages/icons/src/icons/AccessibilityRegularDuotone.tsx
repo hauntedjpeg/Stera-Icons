@@ -15,7 +15,7 @@ const AccessibilityRegularDuotone = memo(
 
 AccessibilityRegularDuotone.displayName = 'AccessibilityRegularDuotone';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { AccessibilityRegularDuotone, AccessibilityRegularDuotone as AccessibilityRegularDuotoneIcon, AccessibilityRegularDuotone as SiAccessibilityRegularDuotone };
 export default AccessibilityRegularDuotone;
 export type { AccessibilityRegularDuotoneProps };

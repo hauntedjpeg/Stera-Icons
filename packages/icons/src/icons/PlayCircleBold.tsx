@@ -15,7 +15,7 @@ const PlayCircleBold = memo(
 
 PlayCircleBold.displayName = 'PlayCircleBold';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { PlayCircleBold, PlayCircleBold as PlayCircleBoldIcon, PlayCircleBold as SiPlayCircleBold };
 export default PlayCircleBold;
 export type { PlayCircleBoldProps };

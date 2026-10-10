@@ -18,10 +18,10 @@ export interface YinYangProps extends IconProps {
  * For smaller bundle size, import specific variants directly:
  * import { YinYangRegular } from 'stera-icons/icons/YinYangRegular';
  */
-const YinYang = memo(forwardRef<SVGSVGElement, YinYangProps>(({ 
+const YinYang = memo(forwardRef<SVGSVGElement, YinYangProps>(({
   weight = 'regular',
   duotone = false,
-  ...rest 
+  ...rest
 }, ref) => {
   if (weight === 'bold' && duotone) return <YinYangBoldDuotone ref={ref} {...rest} />;
   if (weight === 'bold') return <YinYangBold ref={ref} {...rest} />;
@@ -33,6 +33,6 @@ const YinYang = memo(forwardRef<SVGSVGElement, YinYangProps>(({
 
 YinYang.displayName = 'YinYang';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { YinYang, YinYang as YinYangIcon, YinYang as SiYinYang };
 export default YinYang;

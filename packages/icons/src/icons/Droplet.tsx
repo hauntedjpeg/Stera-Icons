@@ -18,10 +18,10 @@ export interface DropletProps extends IconProps {
  * For smaller bundle size, import specific variants directly:
  * import { DropletRegular } from 'stera-icons/icons/DropletRegular';
  */
-const Droplet = memo(forwardRef<SVGSVGElement, DropletProps>(({ 
+const Droplet = memo(forwardRef<SVGSVGElement, DropletProps>(({
   weight = 'regular',
   duotone = false,
-  ...rest 
+  ...rest
 }, ref) => {
   if (weight === 'bold' && duotone) return <DropletBoldDuotone ref={ref} {...rest} />;
   if (weight === 'bold') return <DropletBold ref={ref} {...rest} />;
@@ -33,6 +33,6 @@ const Droplet = memo(forwardRef<SVGSVGElement, DropletProps>(({
 
 Droplet.displayName = 'Droplet';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { Droplet, Droplet as DropletIcon, Droplet as SiDroplet };
 export default Droplet;

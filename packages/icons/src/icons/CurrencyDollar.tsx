@@ -18,10 +18,10 @@ export interface CurrencyDollarProps extends IconProps {
  * For smaller bundle size, import specific variants directly:
  * import { CurrencyDollarRegular } from 'stera-icons/icons/CurrencyDollarRegular';
  */
-const CurrencyDollar = memo(forwardRef<SVGSVGElement, CurrencyDollarProps>(({ 
+const CurrencyDollar = memo(forwardRef<SVGSVGElement, CurrencyDollarProps>(({
   weight = 'regular',
   duotone = false,
-  ...rest 
+  ...rest
 }, ref) => {
   if (weight === 'bold' && duotone) return <CurrencyDollarBoldDuotone ref={ref} {...rest} />;
   if (weight === 'bold') return <CurrencyDollarBold ref={ref} {...rest} />;
@@ -33,6 +33,6 @@ const CurrencyDollar = memo(forwardRef<SVGSVGElement, CurrencyDollarProps>(({
 
 CurrencyDollar.displayName = 'CurrencyDollar';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { CurrencyDollar, CurrencyDollar as CurrencyDollarIcon, CurrencyDollar as SiCurrencyDollar };
 export default CurrencyDollar;

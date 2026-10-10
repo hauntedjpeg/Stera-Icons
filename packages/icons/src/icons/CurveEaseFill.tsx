@@ -16,7 +16,7 @@ const CurveEaseFill = memo(
 
 CurveEaseFill.displayName = 'CurveEaseFill';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { CurveEaseFill, CurveEaseFill as CurveEaseFillIcon, CurveEaseFill as SiCurveEaseFill };
 export default CurveEaseFill;
 export type { CurveEaseFillProps };

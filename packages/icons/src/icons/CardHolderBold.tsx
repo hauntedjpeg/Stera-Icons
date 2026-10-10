@@ -14,7 +14,7 @@ const CardHolderBold = memo(
 
 CardHolderBold.displayName = 'CardHolderBold';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { CardHolderBold, CardHolderBold as CardHolderBoldIcon, CardHolderBold as SiCardHolderBold };
 export default CardHolderBold;
 export type { CardHolderBoldProps };

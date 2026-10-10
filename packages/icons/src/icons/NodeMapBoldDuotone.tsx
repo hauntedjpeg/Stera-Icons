@@ -15,7 +15,7 @@ const NodeMapBoldDuotone = memo(
 
 NodeMapBoldDuotone.displayName = 'NodeMapBoldDuotone';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { NodeMapBoldDuotone, NodeMapBoldDuotone as NodeMapBoldDuotoneIcon, NodeMapBoldDuotone as SiNodeMapBoldDuotone };
 export default NodeMapBoldDuotone;
 export type { NodeMapBoldDuotoneProps };

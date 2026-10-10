@@ -18,10 +18,10 @@ export interface UserRefreshProps extends IconProps {
  * For smaller bundle size, import specific variants directly:
  * import { UserRefreshRegular } from 'stera-icons/icons/UserRefreshRegular';
  */
-const UserRefresh = memo(forwardRef<SVGSVGElement, UserRefreshProps>(({ 
+const UserRefresh = memo(forwardRef<SVGSVGElement, UserRefreshProps>(({
   weight = 'regular',
   duotone = false,
-  ...rest 
+  ...rest
 }, ref) => {
   if (weight === 'bold' && duotone) return <UserRefreshBoldDuotone ref={ref} {...rest} />;
   if (weight === 'bold') return <UserRefreshBold ref={ref} {...rest} />;
@@ -33,6 +33,6 @@ const UserRefresh = memo(forwardRef<SVGSVGElement, UserRefreshProps>(({
 
 UserRefresh.displayName = 'UserRefresh';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { UserRefresh, UserRefresh as UserRefreshIcon, UserRefresh as SiUserRefresh };
 export default UserRefresh;

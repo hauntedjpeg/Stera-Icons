@@ -16,7 +16,7 @@ const SoccerFieldBoldDuotone = memo(
 
 SoccerFieldBoldDuotone.displayName = 'SoccerFieldBoldDuotone';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { SoccerFieldBoldDuotone, SoccerFieldBoldDuotone as SoccerFieldBoldDuotoneIcon, SoccerFieldBoldDuotone as SiSoccerFieldBoldDuotone };
 export default SoccerFieldBoldDuotone;
 export type { SoccerFieldBoldDuotoneProps };

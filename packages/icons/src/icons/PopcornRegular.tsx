@@ -14,7 +14,7 @@ const PopcornRegular = memo(
 
 PopcornRegular.displayName = 'PopcornRegular';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { PopcornRegular, PopcornRegular as PopcornRegularIcon, PopcornRegular as SiPopcornRegular };
 export default PopcornRegular;
 export type { PopcornRegularProps };

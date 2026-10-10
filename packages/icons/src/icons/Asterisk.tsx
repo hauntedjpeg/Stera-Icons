@@ -18,10 +18,10 @@ export interface AsteriskProps extends IconProps {
  * For smaller bundle size, import specific variants directly:
  * import { AsteriskRegular } from 'stera-icons/icons/AsteriskRegular';
  */
-const Asterisk = memo(forwardRef<SVGSVGElement, AsteriskProps>(({ 
+const Asterisk = memo(forwardRef<SVGSVGElement, AsteriskProps>(({
   weight = 'regular',
   duotone = false,
-  ...rest 
+  ...rest
 }, ref) => {
   if (weight === 'bold' && duotone) return <AsteriskBoldDuotone ref={ref} {...rest} />;
   if (weight === 'bold') return <AsteriskBold ref={ref} {...rest} />;
@@ -33,6 +33,6 @@ const Asterisk = memo(forwardRef<SVGSVGElement, AsteriskProps>(({
 
 Asterisk.displayName = 'Asterisk';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { Asterisk, Asterisk as AsteriskIcon, Asterisk as SiAsterisk };
 export default Asterisk;

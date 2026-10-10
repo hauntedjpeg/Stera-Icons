@@ -14,7 +14,7 @@ const StarFill = memo(
 
 StarFill.displayName = 'StarFill';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { StarFill, StarFill as StarFillIcon, StarFill as SiStarFill };
 export default StarFill;
 export type { StarFillProps };

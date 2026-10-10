@@ -18,10 +18,10 @@ export interface SaveProps extends IconProps {
  * For smaller bundle size, import specific variants directly:
  * import { SaveRegular } from 'stera-icons/icons/SaveRegular';
  */
-const Save = memo(forwardRef<SVGSVGElement, SaveProps>(({ 
+const Save = memo(forwardRef<SVGSVGElement, SaveProps>(({
   weight = 'regular',
   duotone = false,
-  ...rest 
+  ...rest
 }, ref) => {
   if (weight === 'bold' && duotone) return <SaveBoldDuotone ref={ref} {...rest} />;
   if (weight === 'bold') return <SaveBold ref={ref} {...rest} />;
@@ -33,6 +33,6 @@ const Save = memo(forwardRef<SVGSVGElement, SaveProps>(({
 
 Save.displayName = 'Save';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { Save, Save as SaveIcon, Save as SiSave };
 export default Save;

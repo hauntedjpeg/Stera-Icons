@@ -18,10 +18,10 @@ export interface AsteriskAltProps extends IconProps {
  * For smaller bundle size, import specific variants directly:
  * import { AsteriskAltRegular } from 'stera-icons/icons/AsteriskAltRegular';
  */
-const AsteriskAlt = memo(forwardRef<SVGSVGElement, AsteriskAltProps>(({ 
+const AsteriskAlt = memo(forwardRef<SVGSVGElement, AsteriskAltProps>(({
   weight = 'regular',
   duotone = false,
-  ...rest 
+  ...rest
 }, ref) => {
   if (weight === 'bold' && duotone) return <AsteriskAltBoldDuotone ref={ref} {...rest} />;
   if (weight === 'bold') return <AsteriskAltBold ref={ref} {...rest} />;
@@ -33,6 +33,6 @@ const AsteriskAlt = memo(forwardRef<SVGSVGElement, AsteriskAltProps>(({
 
 AsteriskAlt.displayName = 'AsteriskAlt';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { AsteriskAlt, AsteriskAlt as AsteriskAltIcon, AsteriskAlt as SiAsteriskAlt };
 export default AsteriskAlt;

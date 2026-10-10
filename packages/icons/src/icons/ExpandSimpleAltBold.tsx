@@ -14,7 +14,7 @@ const ExpandSimpleAltBold = memo(
 
 ExpandSimpleAltBold.displayName = 'ExpandSimpleAltBold';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { ExpandSimpleAltBold, ExpandSimpleAltBold as ExpandSimpleAltBoldIcon, ExpandSimpleAltBold as SiExpandSimpleAltBold };
 export default ExpandSimpleAltBold;
 export type { ExpandSimpleAltBoldProps };

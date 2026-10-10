@@ -18,10 +18,10 @@ export interface CrownProps extends IconProps {
  * For smaller bundle size, import specific variants directly:
  * import { CrownRegular } from 'stera-icons/icons/CrownRegular';
  */
-const Crown = memo(forwardRef<SVGSVGElement, CrownProps>(({ 
+const Crown = memo(forwardRef<SVGSVGElement, CrownProps>(({
   weight = 'regular',
   duotone = false,
-  ...rest 
+  ...rest
 }, ref) => {
   if (weight === 'bold' && duotone) return <CrownBoldDuotone ref={ref} {...rest} />;
   if (weight === 'bold') return <CrownBold ref={ref} {...rest} />;
@@ -33,6 +33,6 @@ const Crown = memo(forwardRef<SVGSVGElement, CrownProps>(({
 
 Crown.displayName = 'Crown';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { Crown, Crown as CrownIcon, Crown as SiCrown };
 export default Crown;

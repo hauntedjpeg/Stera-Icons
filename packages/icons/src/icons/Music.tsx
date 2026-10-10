@@ -18,10 +18,10 @@ export interface MusicProps extends IconProps {
  * For smaller bundle size, import specific variants directly:
  * import { MusicRegular } from 'stera-icons/icons/MusicRegular';
  */
-const Music = memo(forwardRef<SVGSVGElement, MusicProps>(({ 
+const Music = memo(forwardRef<SVGSVGElement, MusicProps>(({
   weight = 'regular',
   duotone = false,
-  ...rest 
+  ...rest
 }, ref) => {
   if (weight === 'bold' && duotone) return <MusicBoldDuotone ref={ref} {...rest} />;
   if (weight === 'bold') return <MusicBold ref={ref} {...rest} />;
@@ -33,6 +33,6 @@ const Music = memo(forwardRef<SVGSVGElement, MusicProps>(({
 
 Music.displayName = 'Music';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { Music, Music as MusicIcon, Music as SiMusic };
 export default Music;

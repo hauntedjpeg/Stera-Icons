@@ -15,7 +15,7 @@ const AudioBarsRegularDuotone = memo(
 
 AudioBarsRegularDuotone.displayName = 'AudioBarsRegularDuotone';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { AudioBarsRegularDuotone, AudioBarsRegularDuotone as AudioBarsRegularDuotoneIcon, AudioBarsRegularDuotone as SiAudioBarsRegularDuotone };
 export default AudioBarsRegularDuotone;
 export type { AudioBarsRegularDuotoneProps };

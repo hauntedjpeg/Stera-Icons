@@ -15,7 +15,7 @@ const BaseballBold = memo(
 
 BaseballBold.displayName = 'BaseballBold';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { BaseballBold, BaseballBold as BaseballBoldIcon, BaseballBold as SiBaseballBold };
 export default BaseballBold;
 export type { BaseballBoldProps };

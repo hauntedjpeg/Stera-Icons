@@ -18,10 +18,10 @@ export interface ContrastCircleProps extends IconProps {
  * For smaller bundle size, import specific variants directly:
  * import { ContrastCircleRegular } from 'stera-icons/icons/ContrastCircleRegular';
  */
-const ContrastCircle = memo(forwardRef<SVGSVGElement, ContrastCircleProps>(({ 
+const ContrastCircle = memo(forwardRef<SVGSVGElement, ContrastCircleProps>(({
   weight = 'regular',
   duotone = false,
-  ...rest 
+  ...rest
 }, ref) => {
   if (weight === 'bold' && duotone) return <ContrastCircleBoldDuotone ref={ref} {...rest} />;
   if (weight === 'bold') return <ContrastCircleBold ref={ref} {...rest} />;
@@ -33,6 +33,6 @@ const ContrastCircle = memo(forwardRef<SVGSVGElement, ContrastCircleProps>(({
 
 ContrastCircle.displayName = 'ContrastCircle';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { ContrastCircle, ContrastCircle as ContrastCircleIcon, ContrastCircle as SiContrastCircle };
 export default ContrastCircle;

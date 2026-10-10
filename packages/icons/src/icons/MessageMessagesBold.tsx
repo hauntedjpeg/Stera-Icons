@@ -15,7 +15,7 @@ const MessageMessagesBold = memo(
 
 MessageMessagesBold.displayName = 'MessageMessagesBold';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { MessageMessagesBold, MessageMessagesBold as MessageMessagesBoldIcon, MessageMessagesBold as SiMessageMessagesBold };
 export default MessageMessagesBold;
 export type { MessageMessagesBoldProps };

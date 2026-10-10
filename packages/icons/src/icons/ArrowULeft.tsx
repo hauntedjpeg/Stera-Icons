@@ -18,10 +18,10 @@ export interface ArrowULeftProps extends IconProps {
  * For smaller bundle size, import specific variants directly:
  * import { ArrowULeftRegular } from 'stera-icons/icons/ArrowULeftRegular';
  */
-const ArrowULeft = memo(forwardRef<SVGSVGElement, ArrowULeftProps>(({ 
+const ArrowULeft = memo(forwardRef<SVGSVGElement, ArrowULeftProps>(({
   weight = 'regular',
   duotone = false,
-  ...rest 
+  ...rest
 }, ref) => {
   if (weight === 'bold' && duotone) return <ArrowULeftBoldDuotone ref={ref} {...rest} />;
   if (weight === 'bold') return <ArrowULeftBold ref={ref} {...rest} />;
@@ -33,6 +33,6 @@ const ArrowULeft = memo(forwardRef<SVGSVGElement, ArrowULeftProps>(({
 
 ArrowULeft.displayName = 'ArrowULeft';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { ArrowULeft, ArrowULeft as ArrowULeftIcon, ArrowULeft as SiArrowULeft };
 export default ArrowULeft;

@@ -14,7 +14,7 @@ const ScribbleRegular = memo(
 
 ScribbleRegular.displayName = 'ScribbleRegular';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { ScribbleRegular, ScribbleRegular as ScribbleRegularIcon, ScribbleRegular as SiScribbleRegular };
 export default ScribbleRegular;
 export type { ScribbleRegularProps };

@@ -18,10 +18,10 @@ export interface GavelProps extends IconProps {
  * For smaller bundle size, import specific variants directly:
  * import { GavelRegular } from 'stera-icons/icons/GavelRegular';
  */
-const Gavel = memo(forwardRef<SVGSVGElement, GavelProps>(({ 
+const Gavel = memo(forwardRef<SVGSVGElement, GavelProps>(({
   weight = 'regular',
   duotone = false,
-  ...rest 
+  ...rest
 }, ref) => {
   if (weight === 'bold' && duotone) return <GavelBoldDuotone ref={ref} {...rest} />;
   if (weight === 'bold') return <GavelBold ref={ref} {...rest} />;
@@ -33,6 +33,6 @@ const Gavel = memo(forwardRef<SVGSVGElement, GavelProps>(({
 
 Gavel.displayName = 'Gavel';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { Gavel, Gavel as GavelIcon, Gavel as SiGavel };
 export default Gavel;

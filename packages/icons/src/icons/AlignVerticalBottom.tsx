@@ -18,10 +18,10 @@ export interface AlignVerticalBottomProps extends IconProps {
  * For smaller bundle size, import specific variants directly:
  * import { AlignVerticalBottomRegular } from 'stera-icons/icons/AlignVerticalBottomRegular';
  */
-const AlignVerticalBottom = memo(forwardRef<SVGSVGElement, AlignVerticalBottomProps>(({ 
+const AlignVerticalBottom = memo(forwardRef<SVGSVGElement, AlignVerticalBottomProps>(({
   weight = 'regular',
   duotone = false,
-  ...rest 
+  ...rest
 }, ref) => {
   if (weight === 'bold' && duotone) return <AlignVerticalBottomBoldDuotone ref={ref} {...rest} />;
   if (weight === 'bold') return <AlignVerticalBottomBold ref={ref} {...rest} />;
@@ -33,6 +33,6 @@ const AlignVerticalBottom = memo(forwardRef<SVGSVGElement, AlignVerticalBottomPr
 
 AlignVerticalBottom.displayName = 'AlignVerticalBottom';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { AlignVerticalBottom, AlignVerticalBottom as AlignVerticalBottomIcon, AlignVerticalBottom as SiAlignVerticalBottom };
 export default AlignVerticalBottom;

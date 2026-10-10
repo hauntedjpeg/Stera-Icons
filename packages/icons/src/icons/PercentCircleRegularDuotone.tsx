@@ -15,7 +15,7 @@ const PercentCircleRegularDuotone = memo(
 
 PercentCircleRegularDuotone.displayName = 'PercentCircleRegularDuotone';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { PercentCircleRegularDuotone, PercentCircleRegularDuotone as PercentCircleRegularDuotoneIcon, PercentCircleRegularDuotone as SiPercentCircleRegularDuotone };
 export default PercentCircleRegularDuotone;
 export type { PercentCircleRegularDuotoneProps };

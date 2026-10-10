@@ -14,7 +14,7 @@ const ScribbleFill = memo(
 
 ScribbleFill.displayName = 'ScribbleFill';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { ScribbleFill, ScribbleFill as ScribbleFillIcon, ScribbleFill as SiScribbleFill };
 export default ScribbleFill;
 export type { ScribbleFillProps };

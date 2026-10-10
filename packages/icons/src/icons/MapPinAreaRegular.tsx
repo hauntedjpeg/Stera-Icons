@@ -16,7 +16,7 @@ const MapPinAreaRegular = memo(
 
 MapPinAreaRegular.displayName = 'MapPinAreaRegular';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { MapPinAreaRegular, MapPinAreaRegular as MapPinAreaRegularIcon, MapPinAreaRegular as SiMapPinAreaRegular };
 export default MapPinAreaRegular;
 export type { MapPinAreaRegularProps };

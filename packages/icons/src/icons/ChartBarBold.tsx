@@ -14,7 +14,7 @@ const ChartBarBold = memo(
 
 ChartBarBold.displayName = 'ChartBarBold';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { ChartBarBold, ChartBarBold as ChartBarBoldIcon, ChartBarBold as SiChartBarBold };
 export default ChartBarBold;
 export type { ChartBarBoldProps };

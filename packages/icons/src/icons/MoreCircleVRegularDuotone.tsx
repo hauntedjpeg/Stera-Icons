@@ -15,7 +15,7 @@ const MoreCircleVRegularDuotone = memo(
 
 MoreCircleVRegularDuotone.displayName = 'MoreCircleVRegularDuotone';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { MoreCircleVRegularDuotone, MoreCircleVRegularDuotone as MoreCircleVRegularDuotoneIcon, MoreCircleVRegularDuotone as SiMoreCircleVRegularDuotone };
 export default MoreCircleVRegularDuotone;
 export type { MoreCircleVRegularDuotoneProps };

@@ -18,10 +18,10 @@ export interface XSquareProps extends IconProps {
  * For smaller bundle size, import specific variants directly:
  * import { XSquareRegular } from 'stera-icons/icons/XSquareRegular';
  */
-const XSquare = memo(forwardRef<SVGSVGElement, XSquareProps>(({ 
+const XSquare = memo(forwardRef<SVGSVGElement, XSquareProps>(({
   weight = 'regular',
   duotone = false,
-  ...rest 
+  ...rest
 }, ref) => {
   if (weight === 'bold' && duotone) return <XSquareBoldDuotone ref={ref} {...rest} />;
   if (weight === 'bold') return <XSquareBold ref={ref} {...rest} />;
@@ -33,6 +33,6 @@ const XSquare = memo(forwardRef<SVGSVGElement, XSquareProps>(({
 
 XSquare.displayName = 'XSquare';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { XSquare, XSquare as XSquareIcon, XSquare as SiXSquare };
 export default XSquare;

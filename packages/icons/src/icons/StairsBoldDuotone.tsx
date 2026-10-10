@@ -15,7 +15,7 @@ const StairsBoldDuotone = memo(
 
 StairsBoldDuotone.displayName = 'StairsBoldDuotone';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { StairsBoldDuotone, StairsBoldDuotone as StairsBoldDuotoneIcon, StairsBoldDuotone as SiStairsBoldDuotone };
 export default StairsBoldDuotone;
 export type { StairsBoldDuotoneProps };

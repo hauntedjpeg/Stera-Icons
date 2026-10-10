@@ -15,7 +15,7 @@ const SelectFieldBold = memo(
 
 SelectFieldBold.displayName = 'SelectFieldBold';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { SelectFieldBold, SelectFieldBold as SelectFieldBoldIcon, SelectFieldBold as SiSelectFieldBold };
 export default SelectFieldBold;
 export type { SelectFieldBoldProps };

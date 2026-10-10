@@ -18,10 +18,10 @@ export interface DocumentCopyProps extends IconProps {
  * For smaller bundle size, import specific variants directly:
  * import { DocumentCopyRegular } from 'stera-icons/icons/DocumentCopyRegular';
  */
-const DocumentCopy = memo(forwardRef<SVGSVGElement, DocumentCopyProps>(({ 
+const DocumentCopy = memo(forwardRef<SVGSVGElement, DocumentCopyProps>(({
   weight = 'regular',
   duotone = false,
-  ...rest 
+  ...rest
 }, ref) => {
   if (weight === 'bold' && duotone) return <DocumentCopyBoldDuotone ref={ref} {...rest} />;
   if (weight === 'bold') return <DocumentCopyBold ref={ref} {...rest} />;
@@ -33,6 +33,6 @@ const DocumentCopy = memo(forwardRef<SVGSVGElement, DocumentCopyProps>(({
 
 DocumentCopy.displayName = 'DocumentCopy';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { DocumentCopy, DocumentCopy as DocumentCopyIcon, DocumentCopy as SiDocumentCopy };
 export default DocumentCopy;

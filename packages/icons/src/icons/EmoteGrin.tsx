@@ -18,10 +18,10 @@ export interface EmoteGrinProps extends IconProps {
  * For smaller bundle size, import specific variants directly:
  * import { EmoteGrinRegular } from 'stera-icons/icons/EmoteGrinRegular';
  */
-const EmoteGrin = memo(forwardRef<SVGSVGElement, EmoteGrinProps>(({ 
+const EmoteGrin = memo(forwardRef<SVGSVGElement, EmoteGrinProps>(({
   weight = 'regular',
   duotone = false,
-  ...rest 
+  ...rest
 }, ref) => {
   if (weight === 'bold' && duotone) return <EmoteGrinBoldDuotone ref={ref} {...rest} />;
   if (weight === 'bold') return <EmoteGrinBold ref={ref} {...rest} />;
@@ -33,6 +33,6 @@ const EmoteGrin = memo(forwardRef<SVGSVGElement, EmoteGrinProps>(({
 
 EmoteGrin.displayName = 'EmoteGrin';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { EmoteGrin, EmoteGrin as EmoteGrinIcon, EmoteGrin as SiEmoteGrin };
 export default EmoteGrin;

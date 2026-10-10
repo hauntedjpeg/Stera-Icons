@@ -18,10 +18,10 @@ export interface LayoutPanelLeftProps extends IconProps {
  * For smaller bundle size, import specific variants directly:
  * import { LayoutPanelLeftRegular } from 'stera-icons/icons/LayoutPanelLeftRegular';
  */
-const LayoutPanelLeft = memo(forwardRef<SVGSVGElement, LayoutPanelLeftProps>(({ 
+const LayoutPanelLeft = memo(forwardRef<SVGSVGElement, LayoutPanelLeftProps>(({
   weight = 'regular',
   duotone = false,
-  ...rest 
+  ...rest
 }, ref) => {
   if (weight === 'bold' && duotone) return <LayoutPanelLeftBoldDuotone ref={ref} {...rest} />;
   if (weight === 'bold') return <LayoutPanelLeftBold ref={ref} {...rest} />;
@@ -33,6 +33,6 @@ const LayoutPanelLeft = memo(forwardRef<SVGSVGElement, LayoutPanelLeftProps>(({
 
 LayoutPanelLeft.displayName = 'LayoutPanelLeft';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { LayoutPanelLeft, LayoutPanelLeft as LayoutPanelLeftIcon, LayoutPanelLeft as SiLayoutPanelLeft };
 export default LayoutPanelLeft;

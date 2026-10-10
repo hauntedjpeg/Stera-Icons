@@ -18,10 +18,10 @@ export interface PipetteProps extends IconProps {
  * For smaller bundle size, import specific variants directly:
  * import { PipetteRegular } from 'stera-icons/icons/PipetteRegular';
  */
-const Pipette = memo(forwardRef<SVGSVGElement, PipetteProps>(({ 
+const Pipette = memo(forwardRef<SVGSVGElement, PipetteProps>(({
   weight = 'regular',
   duotone = false,
-  ...rest 
+  ...rest
 }, ref) => {
   if (weight === 'bold' && duotone) return <PipetteBoldDuotone ref={ref} {...rest} />;
   if (weight === 'bold') return <PipetteBold ref={ref} {...rest} />;
@@ -33,6 +33,6 @@ const Pipette = memo(forwardRef<SVGSVGElement, PipetteProps>(({
 
 Pipette.displayName = 'Pipette';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { Pipette, Pipette as PipetteIcon, Pipette as SiPipette };
 export default Pipette;

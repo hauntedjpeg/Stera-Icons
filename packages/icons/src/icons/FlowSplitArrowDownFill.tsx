@@ -14,7 +14,7 @@ const FlowSplitArrowDownFill = memo(
 
 FlowSplitArrowDownFill.displayName = 'FlowSplitArrowDownFill';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { FlowSplitArrowDownFill, FlowSplitArrowDownFill as FlowSplitArrowDownFillIcon, FlowSplitArrowDownFill as SiFlowSplitArrowDownFill };
 export default FlowSplitArrowDownFill;
 export type { FlowSplitArrowDownFillProps };

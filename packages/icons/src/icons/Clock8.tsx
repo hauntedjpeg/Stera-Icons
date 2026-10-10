@@ -18,10 +18,10 @@ export interface Clock8Props extends IconProps {
  * For smaller bundle size, import specific variants directly:
  * import { Clock8Regular } from 'stera-icons/icons/Clock8Regular';
  */
-const Clock8 = memo(forwardRef<SVGSVGElement, Clock8Props>(({ 
+const Clock8 = memo(forwardRef<SVGSVGElement, Clock8Props>(({
   weight = 'regular',
   duotone = false,
-  ...rest 
+  ...rest
 }, ref) => {
   if (weight === 'bold' && duotone) return <Clock8BoldDuotone ref={ref} {...rest} />;
   if (weight === 'bold') return <Clock8Bold ref={ref} {...rest} />;
@@ -33,6 +33,6 @@ const Clock8 = memo(forwardRef<SVGSVGElement, Clock8Props>(({
 
 Clock8.displayName = 'Clock8';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { Clock8, Clock8 as Clock8Icon, Clock8 as SiClock8 };
 export default Clock8;

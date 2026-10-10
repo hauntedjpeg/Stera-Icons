@@ -18,10 +18,10 @@ export interface PenNibProps extends IconProps {
  * For smaller bundle size, import specific variants directly:
  * import { PenNibRegular } from 'stera-icons/icons/PenNibRegular';
  */
-const PenNib = memo(forwardRef<SVGSVGElement, PenNibProps>(({ 
+const PenNib = memo(forwardRef<SVGSVGElement, PenNibProps>(({
   weight = 'regular',
   duotone = false,
-  ...rest 
+  ...rest
 }, ref) => {
   if (weight === 'bold' && duotone) return <PenNibBoldDuotone ref={ref} {...rest} />;
   if (weight === 'bold') return <PenNibBold ref={ref} {...rest} />;
@@ -33,6 +33,6 @@ const PenNib = memo(forwardRef<SVGSVGElement, PenNibProps>(({
 
 PenNib.displayName = 'PenNib';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { PenNib, PenNib as PenNibIcon, PenNib as SiPenNib };
 export default PenNib;

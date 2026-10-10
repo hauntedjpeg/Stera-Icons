@@ -16,7 +16,7 @@ const ConnectionAltRegular = memo(
 
 ConnectionAltRegular.displayName = 'ConnectionAltRegular';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { ConnectionAltRegular, ConnectionAltRegular as ConnectionAltRegularIcon, ConnectionAltRegular as SiConnectionAltRegular };
 export default ConnectionAltRegular;
 export type { ConnectionAltRegularProps };

@@ -15,7 +15,7 @@ const DocumentDetailBold = memo(
 
 DocumentDetailBold.displayName = 'DocumentDetailBold';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { DocumentDetailBold, DocumentDetailBold as DocumentDetailBoldIcon, DocumentDetailBold as SiDocumentDetailBold };
 export default DocumentDetailBold;
 export type { DocumentDetailBoldProps };

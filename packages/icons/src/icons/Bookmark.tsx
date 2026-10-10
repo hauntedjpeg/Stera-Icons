@@ -18,10 +18,10 @@ export interface BookmarkProps extends IconProps {
  * For smaller bundle size, import specific variants directly:
  * import { BookmarkRegular } from 'stera-icons/icons/BookmarkRegular';
  */
-const Bookmark = memo(forwardRef<SVGSVGElement, BookmarkProps>(({ 
+const Bookmark = memo(forwardRef<SVGSVGElement, BookmarkProps>(({
   weight = 'regular',
   duotone = false,
-  ...rest 
+  ...rest
 }, ref) => {
   if (weight === 'bold' && duotone) return <BookmarkBoldDuotone ref={ref} {...rest} />;
   if (weight === 'bold') return <BookmarkBold ref={ref} {...rest} />;
@@ -33,6 +33,6 @@ const Bookmark = memo(forwardRef<SVGSVGElement, BookmarkProps>(({
 
 Bookmark.displayName = 'Bookmark';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { Bookmark, Bookmark as BookmarkIcon, Bookmark as SiBookmark };
 export default Bookmark;

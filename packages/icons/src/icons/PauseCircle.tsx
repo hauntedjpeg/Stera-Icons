@@ -18,10 +18,10 @@ export interface PauseCircleProps extends IconProps {
  * For smaller bundle size, import specific variants directly:
  * import { PauseCircleRegular } from 'stera-icons/icons/PauseCircleRegular';
  */
-const PauseCircle = memo(forwardRef<SVGSVGElement, PauseCircleProps>(({ 
+const PauseCircle = memo(forwardRef<SVGSVGElement, PauseCircleProps>(({
   weight = 'regular',
   duotone = false,
-  ...rest 
+  ...rest
 }, ref) => {
   if (weight === 'bold' && duotone) return <PauseCircleBoldDuotone ref={ref} {...rest} />;
   if (weight === 'bold') return <PauseCircleBold ref={ref} {...rest} />;
@@ -33,6 +33,6 @@ const PauseCircle = memo(forwardRef<SVGSVGElement, PauseCircleProps>(({
 
 PauseCircle.displayName = 'PauseCircle';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { PauseCircle, PauseCircle as PauseCircleIcon, PauseCircle as SiPauseCircle };
 export default PauseCircle;

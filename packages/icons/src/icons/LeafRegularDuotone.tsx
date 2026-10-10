@@ -15,7 +15,7 @@ const LeafRegularDuotone = memo(
 
 LeafRegularDuotone.displayName = 'LeafRegularDuotone';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { LeafRegularDuotone, LeafRegularDuotone as LeafRegularDuotoneIcon, LeafRegularDuotone as SiLeafRegularDuotone };
 export default LeafRegularDuotone;
 export type { LeafRegularDuotoneProps };

@@ -15,7 +15,7 @@ const ChartBarDescRegularDuotone = memo(
 
 ChartBarDescRegularDuotone.displayName = 'ChartBarDescRegularDuotone';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { ChartBarDescRegularDuotone, ChartBarDescRegularDuotone as ChartBarDescRegularDuotoneIcon, ChartBarDescRegularDuotone as SiChartBarDescRegularDuotone };
 export default ChartBarDescRegularDuotone;
 export type { ChartBarDescRegularDuotoneProps };

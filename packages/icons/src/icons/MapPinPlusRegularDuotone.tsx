@@ -15,7 +15,7 @@ const MapPinPlusRegularDuotone = memo(
 
 MapPinPlusRegularDuotone.displayName = 'MapPinPlusRegularDuotone';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { MapPinPlusRegularDuotone, MapPinPlusRegularDuotone as MapPinPlusRegularDuotoneIcon, MapPinPlusRegularDuotone as SiMapPinPlusRegularDuotone };
 export default MapPinPlusRegularDuotone;
 export type { MapPinPlusRegularDuotoneProps };

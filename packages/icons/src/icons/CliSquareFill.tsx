@@ -14,7 +14,7 @@ const CliSquareFill = memo(
 
 CliSquareFill.displayName = 'CliSquareFill';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { CliSquareFill, CliSquareFill as CliSquareFillIcon, CliSquareFill as SiCliSquareFill };
 export default CliSquareFill;
 export type { CliSquareFillProps };

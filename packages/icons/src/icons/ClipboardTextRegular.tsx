@@ -15,7 +15,7 @@ const ClipboardTextRegular = memo(
 
 ClipboardTextRegular.displayName = 'ClipboardTextRegular';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { ClipboardTextRegular, ClipboardTextRegular as ClipboardTextRegularIcon, ClipboardTextRegular as SiClipboardTextRegular };
 export default ClipboardTextRegular;
 export type { ClipboardTextRegularProps };

@@ -16,7 +16,7 @@ const LayersAltRegular = memo(
 
 LayersAltRegular.displayName = 'LayersAltRegular';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { LayersAltRegular, LayersAltRegular as LayersAltRegularIcon, LayersAltRegular as SiLayersAltRegular };
 export default LayersAltRegular;
 export type { LayersAltRegularProps };

@@ -15,7 +15,7 @@ const AtomOrbitFillDuotone = memo(
 
 AtomOrbitFillDuotone.displayName = 'AtomOrbitFillDuotone';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { AtomOrbitFillDuotone, AtomOrbitFillDuotone as AtomOrbitFillDuotoneIcon, AtomOrbitFillDuotone as SiAtomOrbitFillDuotone };
 export default AtomOrbitFillDuotone;
 export type { AtomOrbitFillDuotoneProps };

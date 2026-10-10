@@ -18,10 +18,10 @@ export interface ReceiptAltProps extends IconProps {
  * For smaller bundle size, import specific variants directly:
  * import { ReceiptAltRegular } from 'stera-icons/icons/ReceiptAltRegular';
  */
-const ReceiptAlt = memo(forwardRef<SVGSVGElement, ReceiptAltProps>(({ 
+const ReceiptAlt = memo(forwardRef<SVGSVGElement, ReceiptAltProps>(({
   weight = 'regular',
   duotone = false,
-  ...rest 
+  ...rest
 }, ref) => {
   if (weight === 'bold' && duotone) return <ReceiptAltBoldDuotone ref={ref} {...rest} />;
   if (weight === 'bold') return <ReceiptAltBold ref={ref} {...rest} />;
@@ -33,6 +33,6 @@ const ReceiptAlt = memo(forwardRef<SVGSVGElement, ReceiptAltProps>(({
 
 ReceiptAlt.displayName = 'ReceiptAlt';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { ReceiptAlt, ReceiptAlt as ReceiptAltIcon, ReceiptAlt as SiReceiptAlt };
 export default ReceiptAlt;

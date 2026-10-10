@@ -14,7 +14,7 @@ const AlignHorizontalCenterFill = memo(
 
 AlignHorizontalCenterFill.displayName = 'AlignHorizontalCenterFill';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { AlignHorizontalCenterFill, AlignHorizontalCenterFill as AlignHorizontalCenterFillIcon, AlignHorizontalCenterFill as SiAlignHorizontalCenterFill };
 export default AlignHorizontalCenterFill;
 export type { AlignHorizontalCenterFillProps };

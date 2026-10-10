@@ -15,7 +15,7 @@ const FootballBoldDuotone = memo(
 
 FootballBoldDuotone.displayName = 'FootballBoldDuotone';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { FootballBoldDuotone, FootballBoldDuotone as FootballBoldDuotoneIcon, FootballBoldDuotone as SiFootballBoldDuotone };
 export default FootballBoldDuotone;
 export type { FootballBoldDuotoneProps };

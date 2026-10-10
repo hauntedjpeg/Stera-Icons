@@ -18,10 +18,10 @@ export interface ShieldProps extends IconProps {
  * For smaller bundle size, import specific variants directly:
  * import { ShieldRegular } from 'stera-icons/icons/ShieldRegular';
  */
-const Shield = memo(forwardRef<SVGSVGElement, ShieldProps>(({ 
+const Shield = memo(forwardRef<SVGSVGElement, ShieldProps>(({
   weight = 'regular',
   duotone = false,
-  ...rest 
+  ...rest
 }, ref) => {
   if (weight === 'bold' && duotone) return <ShieldBoldDuotone ref={ref} {...rest} />;
   if (weight === 'bold') return <ShieldBold ref={ref} {...rest} />;
@@ -33,6 +33,6 @@ const Shield = memo(forwardRef<SVGSVGElement, ShieldProps>(({
 
 Shield.displayName = 'Shield';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { Shield, Shield as ShieldIcon, Shield as SiShield };
 export default Shield;

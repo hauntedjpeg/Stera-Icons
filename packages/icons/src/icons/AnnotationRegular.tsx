@@ -16,7 +16,7 @@ const AnnotationRegular = memo(
 
 AnnotationRegular.displayName = 'AnnotationRegular';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { AnnotationRegular, AnnotationRegular as AnnotationRegularIcon, AnnotationRegular as SiAnnotationRegular };
 export default AnnotationRegular;
 export type { AnnotationRegularProps };

@@ -15,7 +15,7 @@ const MailPlusFill = memo(
 
 MailPlusFill.displayName = 'MailPlusFill';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { MailPlusFill, MailPlusFill as MailPlusFillIcon, MailPlusFill as SiMailPlusFill };
 export default MailPlusFill;
 export type { MailPlusFillProps };

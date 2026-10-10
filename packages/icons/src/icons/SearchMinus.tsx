@@ -18,10 +18,10 @@ export interface SearchMinusProps extends IconProps {
  * For smaller bundle size, import specific variants directly:
  * import { SearchMinusRegular } from 'stera-icons/icons/SearchMinusRegular';
  */
-const SearchMinus = memo(forwardRef<SVGSVGElement, SearchMinusProps>(({ 
+const SearchMinus = memo(forwardRef<SVGSVGElement, SearchMinusProps>(({
   weight = 'regular',
   duotone = false,
-  ...rest 
+  ...rest
 }, ref) => {
   if (weight === 'bold' && duotone) return <SearchMinusBoldDuotone ref={ref} {...rest} />;
   if (weight === 'bold') return <SearchMinusBold ref={ref} {...rest} />;
@@ -33,6 +33,6 @@ const SearchMinus = memo(forwardRef<SVGSVGElement, SearchMinusProps>(({
 
 SearchMinus.displayName = 'SearchMinus';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { SearchMinus, SearchMinus as SearchMinusIcon, SearchMinus as SiSearchMinus };
 export default SearchMinus;

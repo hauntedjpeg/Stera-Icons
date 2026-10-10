@@ -16,7 +16,7 @@ const ScissorsRegularDuotone = memo(
 
 ScissorsRegularDuotone.displayName = 'ScissorsRegularDuotone';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { ScissorsRegularDuotone, ScissorsRegularDuotone as ScissorsRegularDuotoneIcon, ScissorsRegularDuotone as SiScissorsRegularDuotone };
 export default ScissorsRegularDuotone;
 export type { ScissorsRegularDuotoneProps };

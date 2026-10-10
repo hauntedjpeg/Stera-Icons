@@ -14,7 +14,7 @@ const TextItalicBold = memo(
 
 TextItalicBold.displayName = 'TextItalicBold';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { TextItalicBold, TextItalicBold as TextItalicBoldIcon, TextItalicBold as SiTextItalicBold };
 export default TextItalicBold;
 export type { TextItalicBoldProps };

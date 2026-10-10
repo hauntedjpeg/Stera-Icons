@@ -14,7 +14,7 @@ const KunaiFill = memo(
 
 KunaiFill.displayName = 'KunaiFill';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { KunaiFill, KunaiFill as KunaiFillIcon, KunaiFill as SiKunaiFill };
 export default KunaiFill;
 export type { KunaiFillProps };

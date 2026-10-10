@@ -15,7 +15,7 @@ const BinaryBoldDuotone = memo(
 
 BinaryBoldDuotone.displayName = 'BinaryBoldDuotone';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { BinaryBoldDuotone, BinaryBoldDuotone as BinaryBoldDuotoneIcon, BinaryBoldDuotone as SiBinaryBoldDuotone };
 export default BinaryBoldDuotone;
 export type { BinaryBoldDuotoneProps };

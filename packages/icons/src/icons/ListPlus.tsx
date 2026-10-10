@@ -18,10 +18,10 @@ export interface ListPlusProps extends IconProps {
  * For smaller bundle size, import specific variants directly:
  * import { ListPlusRegular } from 'stera-icons/icons/ListPlusRegular';
  */
-const ListPlus = memo(forwardRef<SVGSVGElement, ListPlusProps>(({ 
+const ListPlus = memo(forwardRef<SVGSVGElement, ListPlusProps>(({
   weight = 'regular',
   duotone = false,
-  ...rest 
+  ...rest
 }, ref) => {
   if (weight === 'bold' && duotone) return <ListPlusBoldDuotone ref={ref} {...rest} />;
   if (weight === 'bold') return <ListPlusBold ref={ref} {...rest} />;
@@ -33,6 +33,6 @@ const ListPlus = memo(forwardRef<SVGSVGElement, ListPlusProps>(({
 
 ListPlus.displayName = 'ListPlus';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { ListPlus, ListPlus as ListPlusIcon, ListPlus as SiListPlus };
 export default ListPlus;

@@ -18,10 +18,10 @@ export interface MicroscopeProps extends IconProps {
  * For smaller bundle size, import specific variants directly:
  * import { MicroscopeRegular } from 'stera-icons/icons/MicroscopeRegular';
  */
-const Microscope = memo(forwardRef<SVGSVGElement, MicroscopeProps>(({ 
+const Microscope = memo(forwardRef<SVGSVGElement, MicroscopeProps>(({
   weight = 'regular',
   duotone = false,
-  ...rest 
+  ...rest
 }, ref) => {
   if (weight === 'bold' && duotone) return <MicroscopeBoldDuotone ref={ref} {...rest} />;
   if (weight === 'bold') return <MicroscopeBold ref={ref} {...rest} />;
@@ -33,6 +33,6 @@ const Microscope = memo(forwardRef<SVGSVGElement, MicroscopeProps>(({
 
 Microscope.displayName = 'Microscope';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { Microscope, Microscope as MicroscopeIcon, Microscope as SiMicroscope };
 export default Microscope;

@@ -18,10 +18,10 @@ export interface SparkleProps extends IconProps {
  * For smaller bundle size, import specific variants directly:
  * import { SparkleRegular } from 'stera-icons/icons/SparkleRegular';
  */
-const Sparkle = memo(forwardRef<SVGSVGElement, SparkleProps>(({ 
+const Sparkle = memo(forwardRef<SVGSVGElement, SparkleProps>(({
   weight = 'regular',
   duotone = false,
-  ...rest 
+  ...rest
 }, ref) => {
   if (weight === 'bold' && duotone) return <SparkleBoldDuotone ref={ref} {...rest} />;
   if (weight === 'bold') return <SparkleBold ref={ref} {...rest} />;
@@ -33,6 +33,6 @@ const Sparkle = memo(forwardRef<SVGSVGElement, SparkleProps>(({
 
 Sparkle.displayName = 'Sparkle';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { Sparkle, Sparkle as SparkleIcon, Sparkle as SiSparkle };
 export default Sparkle;

@@ -18,10 +18,10 @@ export interface MacWindowProps extends IconProps {
  * For smaller bundle size, import specific variants directly:
  * import { MacWindowRegular } from 'stera-icons/icons/MacWindowRegular';
  */
-const MacWindow = memo(forwardRef<SVGSVGElement, MacWindowProps>(({ 
+const MacWindow = memo(forwardRef<SVGSVGElement, MacWindowProps>(({
   weight = 'regular',
   duotone = false,
-  ...rest 
+  ...rest
 }, ref) => {
   if (weight === 'bold' && duotone) return <MacWindowBoldDuotone ref={ref} {...rest} />;
   if (weight === 'bold') return <MacWindowBold ref={ref} {...rest} />;
@@ -33,6 +33,6 @@ const MacWindow = memo(forwardRef<SVGSVGElement, MacWindowProps>(({
 
 MacWindow.displayName = 'MacWindow';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { MacWindow, MacWindow as MacWindowIcon, MacWindow as SiMacWindow };
 export default MacWindow;

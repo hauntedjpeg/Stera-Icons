@@ -15,7 +15,7 @@ const UserXBold = memo(
 
 UserXBold.displayName = 'UserXBold';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { UserXBold, UserXBold as UserXBoldIcon, UserXBold as SiUserXBold };
 export default UserXBold;
 export type { UserXBoldProps };

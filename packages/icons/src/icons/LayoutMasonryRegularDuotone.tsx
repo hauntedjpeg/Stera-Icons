@@ -15,7 +15,7 @@ const LayoutMasonryRegularDuotone = memo(
 
 LayoutMasonryRegularDuotone.displayName = 'LayoutMasonryRegularDuotone';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { LayoutMasonryRegularDuotone, LayoutMasonryRegularDuotone as LayoutMasonryRegularDuotoneIcon, LayoutMasonryRegularDuotone as SiLayoutMasonryRegularDuotone };
 export default LayoutMasonryRegularDuotone;
 export type { LayoutMasonryRegularDuotoneProps };

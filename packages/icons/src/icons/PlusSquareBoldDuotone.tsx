@@ -15,7 +15,7 @@ const PlusSquareBoldDuotone = memo(
 
 PlusSquareBoldDuotone.displayName = 'PlusSquareBoldDuotone';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { PlusSquareBoldDuotone, PlusSquareBoldDuotone as PlusSquareBoldDuotoneIcon, PlusSquareBoldDuotone as SiPlusSquareBoldDuotone };
 export default PlusSquareBoldDuotone;
 export type { PlusSquareBoldDuotoneProps };

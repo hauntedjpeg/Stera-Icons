@@ -15,7 +15,7 @@ const ConnectionAltBoldDuotone = memo(
 
 ConnectionAltBoldDuotone.displayName = 'ConnectionAltBoldDuotone';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { ConnectionAltBoldDuotone, ConnectionAltBoldDuotone as ConnectionAltBoldDuotoneIcon, ConnectionAltBoldDuotone as SiConnectionAltBoldDuotone };
 export default ConnectionAltBoldDuotone;
 export type { ConnectionAltBoldDuotoneProps };

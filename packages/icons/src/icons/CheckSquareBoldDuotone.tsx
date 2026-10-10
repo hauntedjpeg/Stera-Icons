@@ -15,7 +15,7 @@ const CheckSquareBoldDuotone = memo(
 
 CheckSquareBoldDuotone.displayName = 'CheckSquareBoldDuotone';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { CheckSquareBoldDuotone, CheckSquareBoldDuotone as CheckSquareBoldDuotoneIcon, CheckSquareBoldDuotone as SiCheckSquareBoldDuotone };
 export default CheckSquareBoldDuotone;
 export type { CheckSquareBoldDuotoneProps };

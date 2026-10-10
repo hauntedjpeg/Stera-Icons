@@ -15,7 +15,7 @@ const KeyboardRegular = memo(
 
 KeyboardRegular.displayName = 'KeyboardRegular';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { KeyboardRegular, KeyboardRegular as KeyboardRegularIcon, KeyboardRegular as SiKeyboardRegular };
 export default KeyboardRegular;
 export type { KeyboardRegularProps };

@@ -18,10 +18,10 @@ export interface SpiralProps extends IconProps {
  * For smaller bundle size, import specific variants directly:
  * import { SpiralRegular } from 'stera-icons/icons/SpiralRegular';
  */
-const Spiral = memo(forwardRef<SVGSVGElement, SpiralProps>(({ 
+const Spiral = memo(forwardRef<SVGSVGElement, SpiralProps>(({
   weight = 'regular',
   duotone = false,
-  ...rest 
+  ...rest
 }, ref) => {
   if (weight === 'bold' && duotone) return <SpiralBoldDuotone ref={ref} {...rest} />;
   if (weight === 'bold') return <SpiralBold ref={ref} {...rest} />;
@@ -33,6 +33,6 @@ const Spiral = memo(forwardRef<SVGSVGElement, SpiralProps>(({
 
 Spiral.displayName = 'Spiral';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { Spiral, Spiral as SpiralIcon, Spiral as SiSpiral };
 export default Spiral;

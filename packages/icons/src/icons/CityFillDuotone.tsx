@@ -15,7 +15,7 @@ const CityFillDuotone = memo(
 
 CityFillDuotone.displayName = 'CityFillDuotone';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { CityFillDuotone, CityFillDuotone as CityFillDuotoneIcon, CityFillDuotone as SiCityFillDuotone };
 export default CityFillDuotone;
 export type { CityFillDuotoneProps };

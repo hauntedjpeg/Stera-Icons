@@ -16,7 +16,7 @@ const CameraOffRegularDuotone = memo(
 
 CameraOffRegularDuotone.displayName = 'CameraOffRegularDuotone';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { CameraOffRegularDuotone, CameraOffRegularDuotone as CameraOffRegularDuotoneIcon, CameraOffRegularDuotone as SiCameraOffRegularDuotone };
 export default CameraOffRegularDuotone;
 export type { CameraOffRegularDuotoneProps };

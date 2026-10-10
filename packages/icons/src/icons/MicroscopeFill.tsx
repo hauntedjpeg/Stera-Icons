@@ -15,7 +15,7 @@ const MicroscopeFill = memo(
 
 MicroscopeFill.displayName = 'MicroscopeFill';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { MicroscopeFill, MicroscopeFill as MicroscopeFillIcon, MicroscopeFill as SiMicroscopeFill };
 export default MicroscopeFill;
 export type { MicroscopeFillProps };

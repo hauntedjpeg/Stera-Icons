@@ -15,7 +15,7 @@ const LassoDashBoldDuotone = memo(
 
 LassoDashBoldDuotone.displayName = 'LassoDashBoldDuotone';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { LassoDashBoldDuotone, LassoDashBoldDuotone as LassoDashBoldDuotoneIcon, LassoDashBoldDuotone as SiLassoDashBoldDuotone };
 export default LassoDashBoldDuotone;
 export type { LassoDashBoldDuotoneProps };

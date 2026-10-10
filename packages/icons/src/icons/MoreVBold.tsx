@@ -14,7 +14,7 @@ const MoreVBold = memo(
 
 MoreVBold.displayName = 'MoreVBold';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { MoreVBold, MoreVBold as MoreVBoldIcon, MoreVBold as SiMoreVBold };
 export default MoreVBold;
 export type { MoreVBoldProps };

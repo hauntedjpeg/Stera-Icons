@@ -18,10 +18,10 @@ export interface DuplicateProps extends IconProps {
  * For smaller bundle size, import specific variants directly:
  * import { DuplicateRegular } from 'stera-icons/icons/DuplicateRegular';
  */
-const Duplicate = memo(forwardRef<SVGSVGElement, DuplicateProps>(({ 
+const Duplicate = memo(forwardRef<SVGSVGElement, DuplicateProps>(({
   weight = 'regular',
   duotone = false,
-  ...rest 
+  ...rest
 }, ref) => {
   if (weight === 'bold' && duotone) return <DuplicateBoldDuotone ref={ref} {...rest} />;
   if (weight === 'bold') return <DuplicateBold ref={ref} {...rest} />;
@@ -33,6 +33,6 @@ const Duplicate = memo(forwardRef<SVGSVGElement, DuplicateProps>(({
 
 Duplicate.displayName = 'Duplicate';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { Duplicate, Duplicate as DuplicateIcon, Duplicate as SiDuplicate };
 export default Duplicate;

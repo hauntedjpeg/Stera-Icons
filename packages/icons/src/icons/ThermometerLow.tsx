@@ -18,10 +18,10 @@ export interface ThermometerLowProps extends IconProps {
  * For smaller bundle size, import specific variants directly:
  * import { ThermometerLowRegular } from 'stera-icons/icons/ThermometerLowRegular';
  */
-const ThermometerLow = memo(forwardRef<SVGSVGElement, ThermometerLowProps>(({ 
+const ThermometerLow = memo(forwardRef<SVGSVGElement, ThermometerLowProps>(({
   weight = 'regular',
   duotone = false,
-  ...rest 
+  ...rest
 }, ref) => {
   if (weight === 'bold' && duotone) return <ThermometerLowBoldDuotone ref={ref} {...rest} />;
   if (weight === 'bold') return <ThermometerLowBold ref={ref} {...rest} />;
@@ -33,6 +33,6 @@ const ThermometerLow = memo(forwardRef<SVGSVGElement, ThermometerLowProps>(({
 
 ThermometerLow.displayName = 'ThermometerLow';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { ThermometerLow, ThermometerLow as ThermometerLowIcon, ThermometerLow as SiThermometerLow };
 export default ThermometerLow;

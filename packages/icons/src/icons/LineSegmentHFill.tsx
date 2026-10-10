@@ -14,7 +14,7 @@ const LineSegmentHFill = memo(
 
 LineSegmentHFill.displayName = 'LineSegmentHFill';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { LineSegmentHFill, LineSegmentHFill as LineSegmentHFillIcon, LineSegmentHFill as SiLineSegmentHFill };
 export default LineSegmentHFill;
 export type { LineSegmentHFillProps };

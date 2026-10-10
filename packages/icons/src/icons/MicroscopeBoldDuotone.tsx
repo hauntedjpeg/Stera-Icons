@@ -16,7 +16,7 @@ const MicroscopeBoldDuotone = memo(
 
 MicroscopeBoldDuotone.displayName = 'MicroscopeBoldDuotone';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { MicroscopeBoldDuotone, MicroscopeBoldDuotone as MicroscopeBoldDuotoneIcon, MicroscopeBoldDuotone as SiMicroscopeBoldDuotone };
 export default MicroscopeBoldDuotone;
 export type { MicroscopeBoldDuotoneProps };

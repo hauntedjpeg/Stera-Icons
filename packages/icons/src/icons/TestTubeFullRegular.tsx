@@ -14,7 +14,7 @@ const TestTubeFullRegular = memo(
 
 TestTubeFullRegular.displayName = 'TestTubeFullRegular';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { TestTubeFullRegular, TestTubeFullRegular as TestTubeFullRegularIcon, TestTubeFullRegular as SiTestTubeFullRegular };
 export default TestTubeFullRegular;
 export type { TestTubeFullRegularProps };

@@ -15,7 +15,7 @@ const CursorTextSquareBold = memo(
 
 CursorTextSquareBold.displayName = 'CursorTextSquareBold';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { CursorTextSquareBold, CursorTextSquareBold as CursorTextSquareBoldIcon, CursorTextSquareBold as SiCursorTextSquareBold };
 export default CursorTextSquareBold;
 export type { CursorTextSquareBoldProps };

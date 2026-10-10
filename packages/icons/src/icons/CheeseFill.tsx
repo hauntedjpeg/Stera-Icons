@@ -14,7 +14,7 @@ const CheeseFill = memo(
 
 CheeseFill.displayName = 'CheeseFill';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { CheeseFill, CheeseFill as CheeseFillIcon, CheeseFill as SiCheeseFill };
 export default CheeseFill;
 export type { CheeseFillProps };

@@ -15,7 +15,7 @@ const AtomAiBoldDuotone = memo(
 
 AtomAiBoldDuotone.displayName = 'AtomAiBoldDuotone';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { AtomAiBoldDuotone, AtomAiBoldDuotone as AtomAiBoldDuotoneIcon, AtomAiBoldDuotone as SiAtomAiBoldDuotone };
 export default AtomAiBoldDuotone;
 export type { AtomAiBoldDuotoneProps };

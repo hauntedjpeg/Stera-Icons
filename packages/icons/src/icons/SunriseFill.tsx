@@ -14,7 +14,7 @@ const SunriseFill = memo(
 
 SunriseFill.displayName = 'SunriseFill';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { SunriseFill, SunriseFill as SunriseFillIcon, SunriseFill as SiSunriseFill };
 export default SunriseFill;
 export type { SunriseFillProps };

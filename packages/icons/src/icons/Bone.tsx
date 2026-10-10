@@ -18,10 +18,10 @@ export interface BoneProps extends IconProps {
  * For smaller bundle size, import specific variants directly:
  * import { BoneRegular } from 'stera-icons/icons/BoneRegular';
  */
-const Bone = memo(forwardRef<SVGSVGElement, BoneProps>(({ 
+const Bone = memo(forwardRef<SVGSVGElement, BoneProps>(({
   weight = 'regular',
   duotone = false,
-  ...rest 
+  ...rest
 }, ref) => {
   if (weight === 'bold' && duotone) return <BoneBoldDuotone ref={ref} {...rest} />;
   if (weight === 'bold') return <BoneBold ref={ref} {...rest} />;
@@ -33,6 +33,6 @@ const Bone = memo(forwardRef<SVGSVGElement, BoneProps>(({
 
 Bone.displayName = 'Bone';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { Bone, Bone as BoneIcon, Bone as SiBone };
 export default Bone;

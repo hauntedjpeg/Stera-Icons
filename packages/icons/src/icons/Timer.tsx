@@ -18,10 +18,10 @@ export interface TimerProps extends IconProps {
  * For smaller bundle size, import specific variants directly:
  * import { TimerRegular } from 'stera-icons/icons/TimerRegular';
  */
-const Timer = memo(forwardRef<SVGSVGElement, TimerProps>(({ 
+const Timer = memo(forwardRef<SVGSVGElement, TimerProps>(({
   weight = 'regular',
   duotone = false,
-  ...rest 
+  ...rest
 }, ref) => {
   if (weight === 'bold' && duotone) return <TimerBoldDuotone ref={ref} {...rest} />;
   if (weight === 'bold') return <TimerBold ref={ref} {...rest} />;
@@ -33,6 +33,6 @@ const Timer = memo(forwardRef<SVGSVGElement, TimerProps>(({
 
 Timer.displayName = 'Timer';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { Timer, Timer as TimerIcon, Timer as SiTimer };
 export default Timer;

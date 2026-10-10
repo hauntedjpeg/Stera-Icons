@@ -15,7 +15,7 @@ const SettingsRegular = memo(
 
 SettingsRegular.displayName = 'SettingsRegular';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { SettingsRegular, SettingsRegular as SettingsRegularIcon, SettingsRegular as SiSettingsRegular };
 export default SettingsRegular;
 export type { SettingsRegularProps };

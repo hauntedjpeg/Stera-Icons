@@ -15,7 +15,7 @@ const TrophyBoldDuotone = memo(
 
 TrophyBoldDuotone.displayName = 'TrophyBoldDuotone';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { TrophyBoldDuotone, TrophyBoldDuotone as TrophyBoldDuotoneIcon, TrophyBoldDuotone as SiTrophyBoldDuotone };
 export default TrophyBoldDuotone;
 export type { TrophyBoldDuotoneProps };

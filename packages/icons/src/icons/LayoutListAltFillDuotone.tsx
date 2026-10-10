@@ -15,7 +15,7 @@ const LayoutListAltFillDuotone = memo(
 
 LayoutListAltFillDuotone.displayName = 'LayoutListAltFillDuotone';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { LayoutListAltFillDuotone, LayoutListAltFillDuotone as LayoutListAltFillDuotoneIcon, LayoutListAltFillDuotone as SiLayoutListAltFillDuotone };
 export default LayoutListAltFillDuotone;
 export type { LayoutListAltFillDuotoneProps };

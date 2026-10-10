@@ -14,7 +14,7 @@ const ShieldAlertFill = memo(
 
 ShieldAlertFill.displayName = 'ShieldAlertFill';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { ShieldAlertFill, ShieldAlertFill as ShieldAlertFillIcon, ShieldAlertFill as SiShieldAlertFill };
 export default ShieldAlertFill;
 export type { ShieldAlertFillProps };

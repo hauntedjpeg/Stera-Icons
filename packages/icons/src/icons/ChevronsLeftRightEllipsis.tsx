@@ -18,10 +18,10 @@ export interface ChevronsLeftRightEllipsisProps extends IconProps {
  * For smaller bundle size, import specific variants directly:
  * import { ChevronsLeftRightEllipsisRegular } from 'stera-icons/icons/ChevronsLeftRightEllipsisRegular';
  */
-const ChevronsLeftRightEllipsis = memo(forwardRef<SVGSVGElement, ChevronsLeftRightEllipsisProps>(({ 
+const ChevronsLeftRightEllipsis = memo(forwardRef<SVGSVGElement, ChevronsLeftRightEllipsisProps>(({
   weight = 'regular',
   duotone = false,
-  ...rest 
+  ...rest
 }, ref) => {
   if (weight === 'bold' && duotone) return <ChevronsLeftRightEllipsisBoldDuotone ref={ref} {...rest} />;
   if (weight === 'bold') return <ChevronsLeftRightEllipsisBold ref={ref} {...rest} />;
@@ -33,6 +33,6 @@ const ChevronsLeftRightEllipsis = memo(forwardRef<SVGSVGElement, ChevronsLeftRig
 
 ChevronsLeftRightEllipsis.displayName = 'ChevronsLeftRightEllipsis';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { ChevronsLeftRightEllipsis, ChevronsLeftRightEllipsis as ChevronsLeftRightEllipsisIcon, ChevronsLeftRightEllipsis as SiChevronsLeftRightEllipsis };
 export default ChevronsLeftRightEllipsis;

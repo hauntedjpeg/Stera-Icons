@@ -18,10 +18,10 @@ export interface TriangleProps extends IconProps {
  * For smaller bundle size, import specific variants directly:
  * import { TriangleRegular } from 'stera-icons/icons/TriangleRegular';
  */
-const Triangle = memo(forwardRef<SVGSVGElement, TriangleProps>(({ 
+const Triangle = memo(forwardRef<SVGSVGElement, TriangleProps>(({
   weight = 'regular',
   duotone = false,
-  ...rest 
+  ...rest
 }, ref) => {
   if (weight === 'bold' && duotone) return <TriangleBoldDuotone ref={ref} {...rest} />;
   if (weight === 'bold') return <TriangleBold ref={ref} {...rest} />;
@@ -33,6 +33,6 @@ const Triangle = memo(forwardRef<SVGSVGElement, TriangleProps>(({
 
 Triangle.displayName = 'Triangle';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { Triangle, Triangle as TriangleIcon, Triangle as SiTriangle };
 export default Triangle;

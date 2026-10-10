@@ -18,10 +18,10 @@ export interface SpeakerLowProps extends IconProps {
  * For smaller bundle size, import specific variants directly:
  * import { SpeakerLowRegular } from 'stera-icons/icons/SpeakerLowRegular';
  */
-const SpeakerLow = memo(forwardRef<SVGSVGElement, SpeakerLowProps>(({ 
+const SpeakerLow = memo(forwardRef<SVGSVGElement, SpeakerLowProps>(({
   weight = 'regular',
   duotone = false,
-  ...rest 
+  ...rest
 }, ref) => {
   if (weight === 'bold' && duotone) return <SpeakerLowBoldDuotone ref={ref} {...rest} />;
   if (weight === 'bold') return <SpeakerLowBold ref={ref} {...rest} />;
@@ -33,6 +33,6 @@ const SpeakerLow = memo(forwardRef<SVGSVGElement, SpeakerLowProps>(({
 
 SpeakerLow.displayName = 'SpeakerLow';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { SpeakerLow, SpeakerLow as SpeakerLowIcon, SpeakerLow as SiSpeakerLow };
 export default SpeakerLow;

@@ -18,10 +18,10 @@ export interface PyramidProps extends IconProps {
  * For smaller bundle size, import specific variants directly:
  * import { PyramidRegular } from 'stera-icons/icons/PyramidRegular';
  */
-const Pyramid = memo(forwardRef<SVGSVGElement, PyramidProps>(({ 
+const Pyramid = memo(forwardRef<SVGSVGElement, PyramidProps>(({
   weight = 'regular',
   duotone = false,
-  ...rest 
+  ...rest
 }, ref) => {
   if (weight === 'bold' && duotone) return <PyramidBoldDuotone ref={ref} {...rest} />;
   if (weight === 'bold') return <PyramidBold ref={ref} {...rest} />;
@@ -33,6 +33,6 @@ const Pyramid = memo(forwardRef<SVGSVGElement, PyramidProps>(({
 
 Pyramid.displayName = 'Pyramid';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { Pyramid, Pyramid as PyramidIcon, Pyramid as SiPyramid };
 export default Pyramid;

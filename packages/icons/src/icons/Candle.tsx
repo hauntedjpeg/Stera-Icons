@@ -18,10 +18,10 @@ export interface CandleProps extends IconProps {
  * For smaller bundle size, import specific variants directly:
  * import { CandleRegular } from 'stera-icons/icons/CandleRegular';
  */
-const Candle = memo(forwardRef<SVGSVGElement, CandleProps>(({ 
+const Candle = memo(forwardRef<SVGSVGElement, CandleProps>(({
   weight = 'regular',
   duotone = false,
-  ...rest 
+  ...rest
 }, ref) => {
   if (weight === 'bold' && duotone) return <CandleBoldDuotone ref={ref} {...rest} />;
   if (weight === 'bold') return <CandleBold ref={ref} {...rest} />;
@@ -33,6 +33,6 @@ const Candle = memo(forwardRef<SVGSVGElement, CandleProps>(({
 
 Candle.displayName = 'Candle';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { Candle, Candle as CandleIcon, Candle as SiCandle };
 export default Candle;

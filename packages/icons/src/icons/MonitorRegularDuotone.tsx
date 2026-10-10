@@ -15,7 +15,7 @@ const MonitorRegularDuotone = memo(
 
 MonitorRegularDuotone.displayName = 'MonitorRegularDuotone';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { MonitorRegularDuotone, MonitorRegularDuotone as MonitorRegularDuotoneIcon, MonitorRegularDuotone as SiMonitorRegularDuotone };
 export default MonitorRegularDuotone;
 export type { MonitorRegularDuotoneProps };

@@ -14,7 +14,7 @@ const XBold = memo(
 
 XBold.displayName = 'XBold';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { XBold, XBold as XBoldIcon, XBold as SiXBold };
 export default XBold;
 export type { XBoldProps };

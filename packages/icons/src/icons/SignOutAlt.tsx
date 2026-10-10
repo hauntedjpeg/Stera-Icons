@@ -18,10 +18,10 @@ export interface SignOutAltProps extends IconProps {
  * For smaller bundle size, import specific variants directly:
  * import { SignOutAltRegular } from 'stera-icons/icons/SignOutAltRegular';
  */
-const SignOutAlt = memo(forwardRef<SVGSVGElement, SignOutAltProps>(({ 
+const SignOutAlt = memo(forwardRef<SVGSVGElement, SignOutAltProps>(({
   weight = 'regular',
   duotone = false,
-  ...rest 
+  ...rest
 }, ref) => {
   if (weight === 'bold' && duotone) return <SignOutAltBoldDuotone ref={ref} {...rest} />;
   if (weight === 'bold') return <SignOutAltBold ref={ref} {...rest} />;
@@ -33,6 +33,6 @@ const SignOutAlt = memo(forwardRef<SVGSVGElement, SignOutAltProps>(({
 
 SignOutAlt.displayName = 'SignOutAlt';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { SignOutAlt, SignOutAlt as SignOutAltIcon, SignOutAlt as SiSignOutAlt };
 export default SignOutAlt;

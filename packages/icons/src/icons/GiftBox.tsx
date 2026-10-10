@@ -18,10 +18,10 @@ export interface GiftBoxProps extends IconProps {
  * For smaller bundle size, import specific variants directly:
  * import { GiftBoxRegular } from 'stera-icons/icons/GiftBoxRegular';
  */
-const GiftBox = memo(forwardRef<SVGSVGElement, GiftBoxProps>(({ 
+const GiftBox = memo(forwardRef<SVGSVGElement, GiftBoxProps>(({
   weight = 'regular',
   duotone = false,
-  ...rest 
+  ...rest
 }, ref) => {
   if (weight === 'bold' && duotone) return <GiftBoxBoldDuotone ref={ref} {...rest} />;
   if (weight === 'bold') return <GiftBoxBold ref={ref} {...rest} />;
@@ -33,6 +33,6 @@ const GiftBox = memo(forwardRef<SVGSVGElement, GiftBoxProps>(({
 
 GiftBox.displayName = 'GiftBox';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { GiftBox, GiftBox as GiftBoxIcon, GiftBox as SiGiftBox };
 export default GiftBox;

@@ -18,10 +18,10 @@ export interface RadarProps extends IconProps {
  * For smaller bundle size, import specific variants directly:
  * import { RadarRegular } from 'stera-icons/icons/RadarRegular';
  */
-const Radar = memo(forwardRef<SVGSVGElement, RadarProps>(({ 
+const Radar = memo(forwardRef<SVGSVGElement, RadarProps>(({
   weight = 'regular',
   duotone = false,
-  ...rest 
+  ...rest
 }, ref) => {
   if (weight === 'bold' && duotone) return <RadarBoldDuotone ref={ref} {...rest} />;
   if (weight === 'bold') return <RadarBold ref={ref} {...rest} />;
@@ -33,6 +33,6 @@ const Radar = memo(forwardRef<SVGSVGElement, RadarProps>(({
 
 Radar.displayName = 'Radar';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { Radar, Radar as RadarIcon, Radar as SiRadar };
 export default Radar;

@@ -18,10 +18,10 @@ export interface UserSquareProps extends IconProps {
  * For smaller bundle size, import specific variants directly:
  * import { UserSquareRegular } from 'stera-icons/icons/UserSquareRegular';
  */
-const UserSquare = memo(forwardRef<SVGSVGElement, UserSquareProps>(({ 
+const UserSquare = memo(forwardRef<SVGSVGElement, UserSquareProps>(({
   weight = 'regular',
   duotone = false,
-  ...rest 
+  ...rest
 }, ref) => {
   if (weight === 'bold' && duotone) return <UserSquareBoldDuotone ref={ref} {...rest} />;
   if (weight === 'bold') return <UserSquareBold ref={ref} {...rest} />;
@@ -33,6 +33,6 @@ const UserSquare = memo(forwardRef<SVGSVGElement, UserSquareProps>(({
 
 UserSquare.displayName = 'UserSquare';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { UserSquare, UserSquare as UserSquareIcon, UserSquare as SiUserSquare };
 export default UserSquare;

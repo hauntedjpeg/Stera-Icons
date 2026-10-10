@@ -15,7 +15,7 @@ const CloudCliFillDuotone = memo(
 
 CloudCliFillDuotone.displayName = 'CloudCliFillDuotone';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { CloudCliFillDuotone, CloudCliFillDuotone as CloudCliFillDuotoneIcon, CloudCliFillDuotone as SiCloudCliFillDuotone };
 export default CloudCliFillDuotone;
 export type { CloudCliFillDuotoneProps };

@@ -18,10 +18,10 @@ export interface AtomOrbitProps extends IconProps {
  * For smaller bundle size, import specific variants directly:
  * import { AtomOrbitRegular } from 'stera-icons/icons/AtomOrbitRegular';
  */
-const AtomOrbit = memo(forwardRef<SVGSVGElement, AtomOrbitProps>(({ 
+const AtomOrbit = memo(forwardRef<SVGSVGElement, AtomOrbitProps>(({
   weight = 'regular',
   duotone = false,
-  ...rest 
+  ...rest
 }, ref) => {
   if (weight === 'bold' && duotone) return <AtomOrbitBoldDuotone ref={ref} {...rest} />;
   if (weight === 'bold') return <AtomOrbitBold ref={ref} {...rest} />;
@@ -33,6 +33,6 @@ const AtomOrbit = memo(forwardRef<SVGSVGElement, AtomOrbitProps>(({
 
 AtomOrbit.displayName = 'AtomOrbit';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { AtomOrbit, AtomOrbit as AtomOrbitIcon, AtomOrbit as SiAtomOrbit };
 export default AtomOrbit;

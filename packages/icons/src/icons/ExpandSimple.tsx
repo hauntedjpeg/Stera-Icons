@@ -18,10 +18,10 @@ export interface ExpandSimpleProps extends IconProps {
  * For smaller bundle size, import specific variants directly:
  * import { ExpandSimpleRegular } from 'stera-icons/icons/ExpandSimpleRegular';
  */
-const ExpandSimple = memo(forwardRef<SVGSVGElement, ExpandSimpleProps>(({ 
+const ExpandSimple = memo(forwardRef<SVGSVGElement, ExpandSimpleProps>(({
   weight = 'regular',
   duotone = false,
-  ...rest 
+  ...rest
 }, ref) => {
   if (weight === 'bold' && duotone) return <ExpandSimpleBoldDuotone ref={ref} {...rest} />;
   if (weight === 'bold') return <ExpandSimpleBold ref={ref} {...rest} />;
@@ -33,6 +33,6 @@ const ExpandSimple = memo(forwardRef<SVGSVGElement, ExpandSimpleProps>(({
 
 ExpandSimple.displayName = 'ExpandSimple';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { ExpandSimple, ExpandSimple as ExpandSimpleIcon, ExpandSimple as SiExpandSimple };
 export default ExpandSimple;

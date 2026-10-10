@@ -14,7 +14,7 @@ const ListBulletSimpleRegular = memo(
 
 ListBulletSimpleRegular.displayName = 'ListBulletSimpleRegular';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { ListBulletSimpleRegular, ListBulletSimpleRegular as ListBulletSimpleRegularIcon, ListBulletSimpleRegular as SiListBulletSimpleRegular };
 export default ListBulletSimpleRegular;
 export type { ListBulletSimpleRegularProps };

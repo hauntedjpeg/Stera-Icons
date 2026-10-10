@@ -18,10 +18,10 @@ export interface CursorNavigationProps extends IconProps {
  * For smaller bundle size, import specific variants directly:
  * import { CursorNavigationRegular } from 'stera-icons/icons/CursorNavigationRegular';
  */
-const CursorNavigation = memo(forwardRef<SVGSVGElement, CursorNavigationProps>(({ 
+const CursorNavigation = memo(forwardRef<SVGSVGElement, CursorNavigationProps>(({
   weight = 'regular',
   duotone = false,
-  ...rest 
+  ...rest
 }, ref) => {
   if (weight === 'bold' && duotone) return <CursorNavigationBoldDuotone ref={ref} {...rest} />;
   if (weight === 'bold') return <CursorNavigationBold ref={ref} {...rest} />;
@@ -33,6 +33,6 @@ const CursorNavigation = memo(forwardRef<SVGSVGElement, CursorNavigationProps>((
 
 CursorNavigation.displayName = 'CursorNavigation';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { CursorNavigation, CursorNavigation as CursorNavigationIcon, CursorNavigation as SiCursorNavigation };
 export default CursorNavigation;

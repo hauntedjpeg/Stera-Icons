@@ -18,10 +18,10 @@ export interface MessageSquareSparkleProps extends IconProps {
  * For smaller bundle size, import specific variants directly:
  * import { MessageSquareSparkleRegular } from 'stera-icons/icons/MessageSquareSparkleRegular';
  */
-const MessageSquareSparkle = memo(forwardRef<SVGSVGElement, MessageSquareSparkleProps>(({ 
+const MessageSquareSparkle = memo(forwardRef<SVGSVGElement, MessageSquareSparkleProps>(({
   weight = 'regular',
   duotone = false,
-  ...rest 
+  ...rest
 }, ref) => {
   if (weight === 'bold' && duotone) return <MessageSquareSparkleBoldDuotone ref={ref} {...rest} />;
   if (weight === 'bold') return <MessageSquareSparkleBold ref={ref} {...rest} />;
@@ -33,6 +33,6 @@ const MessageSquareSparkle = memo(forwardRef<SVGSVGElement, MessageSquareSparkle
 
 MessageSquareSparkle.displayName = 'MessageSquareSparkle';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { MessageSquareSparkle, MessageSquareSparkle as MessageSquareSparkleIcon, MessageSquareSparkle as SiMessageSquareSparkle };
 export default MessageSquareSparkle;

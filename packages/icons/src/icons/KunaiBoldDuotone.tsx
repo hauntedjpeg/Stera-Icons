@@ -17,7 +17,7 @@ const KunaiBoldDuotone = memo(
 
 KunaiBoldDuotone.displayName = 'KunaiBoldDuotone';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { KunaiBoldDuotone, KunaiBoldDuotone as KunaiBoldDuotoneIcon, KunaiBoldDuotone as SiKunaiBoldDuotone };
 export default KunaiBoldDuotone;
 export type { KunaiBoldDuotoneProps };

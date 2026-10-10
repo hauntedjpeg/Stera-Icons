@@ -18,10 +18,10 @@ export interface SquareDashedProps extends IconProps {
  * For smaller bundle size, import specific variants directly:
  * import { SquareDashedRegular } from 'stera-icons/icons/SquareDashedRegular';
  */
-const SquareDashed = memo(forwardRef<SVGSVGElement, SquareDashedProps>(({ 
+const SquareDashed = memo(forwardRef<SVGSVGElement, SquareDashedProps>(({
   weight = 'regular',
   duotone = false,
-  ...rest 
+  ...rest
 }, ref) => {
   if (weight === 'bold' && duotone) return <SquareDashedBoldDuotone ref={ref} {...rest} />;
   if (weight === 'bold') return <SquareDashedBold ref={ref} {...rest} />;
@@ -33,6 +33,6 @@ const SquareDashed = memo(forwardRef<SVGSVGElement, SquareDashedProps>(({
 
 SquareDashed.displayName = 'SquareDashed';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { SquareDashed, SquareDashed as SquareDashedIcon, SquareDashed as SiSquareDashed };
 export default SquareDashed;

@@ -14,7 +14,7 @@ const FilterRegular = memo(
 
 FilterRegular.displayName = 'FilterRegular';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { FilterRegular, FilterRegular as FilterRegularIcon, FilterRegular as SiFilterRegular };
 export default FilterRegular;
 export type { FilterRegularProps };

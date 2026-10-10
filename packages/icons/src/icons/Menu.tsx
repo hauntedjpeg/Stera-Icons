@@ -18,10 +18,10 @@ export interface MenuProps extends IconProps {
  * For smaller bundle size, import specific variants directly:
  * import { MenuRegular } from 'stera-icons/icons/MenuRegular';
  */
-const Menu = memo(forwardRef<SVGSVGElement, MenuProps>(({ 
+const Menu = memo(forwardRef<SVGSVGElement, MenuProps>(({
   weight = 'regular',
   duotone = false,
-  ...rest 
+  ...rest
 }, ref) => {
   if (weight === 'bold' && duotone) return <MenuBoldDuotone ref={ref} {...rest} />;
   if (weight === 'bold') return <MenuBold ref={ref} {...rest} />;
@@ -33,6 +33,6 @@ const Menu = memo(forwardRef<SVGSVGElement, MenuProps>(({
 
 Menu.displayName = 'Menu';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { Menu, Menu as MenuIcon, Menu as SiMenu };
 export default Menu;

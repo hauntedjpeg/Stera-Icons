@@ -14,7 +14,7 @@ const FilmStripBold = memo(
 
 FilmStripBold.displayName = 'FilmStripBold';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { FilmStripBold, FilmStripBold as FilmStripBoldIcon, FilmStripBold as SiFilmStripBold };
 export default FilmStripBold;
 export type { FilmStripBoldProps };

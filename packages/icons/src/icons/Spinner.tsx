@@ -18,10 +18,10 @@ export interface SpinnerProps extends IconProps {
  * For smaller bundle size, import specific variants directly:
  * import { SpinnerRegular } from 'stera-icons/icons/SpinnerRegular';
  */
-const Spinner = memo(forwardRef<SVGSVGElement, SpinnerProps>(({ 
+const Spinner = memo(forwardRef<SVGSVGElement, SpinnerProps>(({
   weight = 'regular',
   duotone = false,
-  ...rest 
+  ...rest
 }, ref) => {
   if (weight === 'bold' && duotone) return <SpinnerBoldDuotone ref={ref} {...rest} />;
   if (weight === 'bold') return <SpinnerBold ref={ref} {...rest} />;
@@ -33,6 +33,6 @@ const Spinner = memo(forwardRef<SVGSVGElement, SpinnerProps>(({
 
 Spinner.displayName = 'Spinner';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { Spinner, Spinner as SpinnerIcon, Spinner as SiSpinner };
 export default Spinner;

@@ -18,10 +18,10 @@ export interface HomePlusProps extends IconProps {
  * For smaller bundle size, import specific variants directly:
  * import { HomePlusRegular } from 'stera-icons/icons/HomePlusRegular';
  */
-const HomePlus = memo(forwardRef<SVGSVGElement, HomePlusProps>(({ 
+const HomePlus = memo(forwardRef<SVGSVGElement, HomePlusProps>(({
   weight = 'regular',
   duotone = false,
-  ...rest 
+  ...rest
 }, ref) => {
   if (weight === 'bold' && duotone) return <HomePlusBoldDuotone ref={ref} {...rest} />;
   if (weight === 'bold') return <HomePlusBold ref={ref} {...rest} />;
@@ -33,6 +33,6 @@ const HomePlus = memo(forwardRef<SVGSVGElement, HomePlusProps>(({
 
 HomePlus.displayName = 'HomePlus';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { HomePlus, HomePlus as HomePlusIcon, HomePlus as SiHomePlus };
 export default HomePlus;

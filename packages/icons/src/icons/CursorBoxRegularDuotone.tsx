@@ -15,7 +15,7 @@ const CursorBoxRegularDuotone = memo(
 
 CursorBoxRegularDuotone.displayName = 'CursorBoxRegularDuotone';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { CursorBoxRegularDuotone, CursorBoxRegularDuotone as CursorBoxRegularDuotoneIcon, CursorBoxRegularDuotone as SiCursorBoxRegularDuotone };
 export default CursorBoxRegularDuotone;
 export type { CursorBoxRegularDuotoneProps };

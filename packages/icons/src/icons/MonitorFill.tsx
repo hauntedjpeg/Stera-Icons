@@ -14,7 +14,7 @@ const MonitorFill = memo(
 
 MonitorFill.displayName = 'MonitorFill';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { MonitorFill, MonitorFill as MonitorFillIcon, MonitorFill as SiMonitorFill };
 export default MonitorFill;
 export type { MonitorFillProps };

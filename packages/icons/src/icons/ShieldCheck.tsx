@@ -18,10 +18,10 @@ export interface ShieldCheckProps extends IconProps {
  * For smaller bundle size, import specific variants directly:
  * import { ShieldCheckRegular } from 'stera-icons/icons/ShieldCheckRegular';
  */
-const ShieldCheck = memo(forwardRef<SVGSVGElement, ShieldCheckProps>(({ 
+const ShieldCheck = memo(forwardRef<SVGSVGElement, ShieldCheckProps>(({
   weight = 'regular',
   duotone = false,
-  ...rest 
+  ...rest
 }, ref) => {
   if (weight === 'bold' && duotone) return <ShieldCheckBoldDuotone ref={ref} {...rest} />;
   if (weight === 'bold') return <ShieldCheckBold ref={ref} {...rest} />;
@@ -33,6 +33,6 @@ const ShieldCheck = memo(forwardRef<SVGSVGElement, ShieldCheckProps>(({
 
 ShieldCheck.displayName = 'ShieldCheck';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { ShieldCheck, ShieldCheck as ShieldCheckIcon, ShieldCheck as SiShieldCheck };
 export default ShieldCheck;

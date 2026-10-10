@@ -15,7 +15,7 @@ const PowerBold = memo(
 
 PowerBold.displayName = 'PowerBold';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { PowerBold, PowerBold as PowerBoldIcon, PowerBold as SiPowerBold };
 export default PowerBold;
 export type { PowerBoldProps };

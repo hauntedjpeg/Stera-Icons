@@ -18,10 +18,10 @@ export interface RepeatProps extends IconProps {
  * For smaller bundle size, import specific variants directly:
  * import { RepeatRegular } from 'stera-icons/icons/RepeatRegular';
  */
-const Repeat = memo(forwardRef<SVGSVGElement, RepeatProps>(({ 
+const Repeat = memo(forwardRef<SVGSVGElement, RepeatProps>(({
   weight = 'regular',
   duotone = false,
-  ...rest 
+  ...rest
 }, ref) => {
   if (weight === 'bold' && duotone) return <RepeatBoldDuotone ref={ref} {...rest} />;
   if (weight === 'bold') return <RepeatBold ref={ref} {...rest} />;
@@ -33,6 +33,6 @@ const Repeat = memo(forwardRef<SVGSVGElement, RepeatProps>(({
 
 Repeat.displayName = 'Repeat';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { Repeat, Repeat as RepeatIcon, Repeat as SiRepeat };
 export default Repeat;

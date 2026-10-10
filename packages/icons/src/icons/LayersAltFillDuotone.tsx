@@ -16,7 +16,7 @@ const LayersAltFillDuotone = memo(
 
 LayersAltFillDuotone.displayName = 'LayersAltFillDuotone';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { LayersAltFillDuotone, LayersAltFillDuotone as LayersAltFillDuotoneIcon, LayersAltFillDuotone as SiLayersAltFillDuotone };
 export default LayersAltFillDuotone;
 export type { LayersAltFillDuotoneProps };

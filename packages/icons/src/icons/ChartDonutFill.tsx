@@ -15,7 +15,7 @@ const ChartDonutFill = memo(
 
 ChartDonutFill.displayName = 'ChartDonutFill';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { ChartDonutFill, ChartDonutFill as ChartDonutFillIcon, ChartDonutFill as SiChartDonutFill };
 export default ChartDonutFill;
 export type { ChartDonutFillProps };

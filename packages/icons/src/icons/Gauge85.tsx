@@ -18,10 +18,10 @@ export interface Gauge85Props extends IconProps {
  * For smaller bundle size, import specific variants directly:
  * import { Gauge85Regular } from 'stera-icons/icons/Gauge85Regular';
  */
-const Gauge85 = memo(forwardRef<SVGSVGElement, Gauge85Props>(({ 
+const Gauge85 = memo(forwardRef<SVGSVGElement, Gauge85Props>(({
   weight = 'regular',
   duotone = false,
-  ...rest 
+  ...rest
 }, ref) => {
   if (weight === 'bold' && duotone) return <Gauge85BoldDuotone ref={ref} {...rest} />;
   if (weight === 'bold') return <Gauge85Bold ref={ref} {...rest} />;
@@ -33,6 +33,6 @@ const Gauge85 = memo(forwardRef<SVGSVGElement, Gauge85Props>(({
 
 Gauge85.displayName = 'Gauge85';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { Gauge85, Gauge85 as Gauge85Icon, Gauge85 as SiGauge85 };
 export default Gauge85;

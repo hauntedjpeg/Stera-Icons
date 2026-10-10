@@ -14,7 +14,7 @@ const BookOpenFoldFill = memo(
 
 BookOpenFoldFill.displayName = 'BookOpenFoldFill';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { BookOpenFoldFill, BookOpenFoldFill as BookOpenFoldFillIcon, BookOpenFoldFill as SiBookOpenFoldFill };
 export default BookOpenFoldFill;
 export type { BookOpenFoldFillProps };

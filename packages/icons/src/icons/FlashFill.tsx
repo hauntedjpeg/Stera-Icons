@@ -14,7 +14,7 @@ const FlashFill = memo(
 
 FlashFill.displayName = 'FlashFill';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { FlashFill, FlashFill as FlashFillIcon, FlashFill as SiFlashFill };
 export default FlashFill;
 export type { FlashFillProps };

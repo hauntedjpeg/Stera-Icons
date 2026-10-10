@@ -15,7 +15,7 @@ const SignInBold = memo(
 
 SignInBold.displayName = 'SignInBold';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { SignInBold, SignInBold as SignInBoldIcon, SignInBold as SiSignInBold };
 export default SignInBold;
 export type { SignInBoldProps };

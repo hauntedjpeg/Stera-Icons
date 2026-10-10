@@ -18,10 +18,10 @@ export interface WrenchProps extends IconProps {
  * For smaller bundle size, import specific variants directly:
  * import { WrenchRegular } from 'stera-icons/icons/WrenchRegular';
  */
-const Wrench = memo(forwardRef<SVGSVGElement, WrenchProps>(({ 
+const Wrench = memo(forwardRef<SVGSVGElement, WrenchProps>(({
   weight = 'regular',
   duotone = false,
-  ...rest 
+  ...rest
 }, ref) => {
   if (weight === 'bold' && duotone) return <WrenchBoldDuotone ref={ref} {...rest} />;
   if (weight === 'bold') return <WrenchBold ref={ref} {...rest} />;
@@ -33,6 +33,6 @@ const Wrench = memo(forwardRef<SVGSVGElement, WrenchProps>(({
 
 Wrench.displayName = 'Wrench';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { Wrench, Wrench as WrenchIcon, Wrench as SiWrench };
 export default Wrench;

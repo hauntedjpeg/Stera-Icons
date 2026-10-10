@@ -14,7 +14,7 @@ const CakeFill = memo(
 
 CakeFill.displayName = 'CakeFill';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { CakeFill, CakeFill as CakeFillIcon, CakeFill as SiCakeFill };
 export default CakeFill;
 export type { CakeFillProps };

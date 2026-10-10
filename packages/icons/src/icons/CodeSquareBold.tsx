@@ -15,7 +15,7 @@ const CodeSquareBold = memo(
 
 CodeSquareBold.displayName = 'CodeSquareBold';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { CodeSquareBold, CodeSquareBold as CodeSquareBoldIcon, CodeSquareBold as SiCodeSquareBold };
 export default CodeSquareBold;
 export type { CodeSquareBoldProps };

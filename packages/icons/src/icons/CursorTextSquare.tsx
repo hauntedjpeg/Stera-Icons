@@ -18,10 +18,10 @@ export interface CursorTextSquareProps extends IconProps {
  * For smaller bundle size, import specific variants directly:
  * import { CursorTextSquareRegular } from 'stera-icons/icons/CursorTextSquareRegular';
  */
-const CursorTextSquare = memo(forwardRef<SVGSVGElement, CursorTextSquareProps>(({ 
+const CursorTextSquare = memo(forwardRef<SVGSVGElement, CursorTextSquareProps>(({
   weight = 'regular',
   duotone = false,
-  ...rest 
+  ...rest
 }, ref) => {
   if (weight === 'bold' && duotone) return <CursorTextSquareBoldDuotone ref={ref} {...rest} />;
   if (weight === 'bold') return <CursorTextSquareBold ref={ref} {...rest} />;
@@ -33,6 +33,6 @@ const CursorTextSquare = memo(forwardRef<SVGSVGElement, CursorTextSquareProps>((
 
 CursorTextSquare.displayName = 'CursorTextSquare';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { CursorTextSquare, CursorTextSquare as CursorTextSquareIcon, CursorTextSquare as SiCursorTextSquare };
 export default CursorTextSquare;

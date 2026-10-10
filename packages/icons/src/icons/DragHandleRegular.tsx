@@ -14,7 +14,7 @@ const DragHandleRegular = memo(
 
 DragHandleRegular.displayName = 'DragHandleRegular';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { DragHandleRegular, DragHandleRegular as DragHandleRegularIcon, DragHandleRegular as SiDragHandleRegular };
 export default DragHandleRegular;
 export type { DragHandleRegularProps };

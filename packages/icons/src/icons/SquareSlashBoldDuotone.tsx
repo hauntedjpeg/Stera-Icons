@@ -15,7 +15,7 @@ const SquareSlashBoldDuotone = memo(
 
 SquareSlashBoldDuotone.displayName = 'SquareSlashBoldDuotone';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { SquareSlashBoldDuotone, SquareSlashBoldDuotone as SquareSlashBoldDuotoneIcon, SquareSlashBoldDuotone as SiSquareSlashBoldDuotone };
 export default SquareSlashBoldDuotone;
 export type { SquareSlashBoldDuotoneProps };

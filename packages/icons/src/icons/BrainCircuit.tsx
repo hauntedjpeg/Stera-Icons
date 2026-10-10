@@ -18,10 +18,10 @@ export interface BrainCircuitProps extends IconProps {
  * For smaller bundle size, import specific variants directly:
  * import { BrainCircuitRegular } from 'stera-icons/icons/BrainCircuitRegular';
  */
-const BrainCircuit = memo(forwardRef<SVGSVGElement, BrainCircuitProps>(({ 
+const BrainCircuit = memo(forwardRef<SVGSVGElement, BrainCircuitProps>(({
   weight = 'regular',
   duotone = false,
-  ...rest 
+  ...rest
 }, ref) => {
   if (weight === 'bold' && duotone) return <BrainCircuitBoldDuotone ref={ref} {...rest} />;
   if (weight === 'bold') return <BrainCircuitBold ref={ref} {...rest} />;
@@ -33,6 +33,6 @@ const BrainCircuit = memo(forwardRef<SVGSVGElement, BrainCircuitProps>(({
 
 BrainCircuit.displayName = 'BrainCircuit';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { BrainCircuit, BrainCircuit as BrainCircuitIcon, BrainCircuit as SiBrainCircuit };
 export default BrainCircuit;

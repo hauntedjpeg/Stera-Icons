@@ -18,10 +18,10 @@ export interface HourglassEmptyProps extends IconProps {
  * For smaller bundle size, import specific variants directly:
  * import { HourglassEmptyRegular } from 'stera-icons/icons/HourglassEmptyRegular';
  */
-const HourglassEmpty = memo(forwardRef<SVGSVGElement, HourglassEmptyProps>(({ 
+const HourglassEmpty = memo(forwardRef<SVGSVGElement, HourglassEmptyProps>(({
   weight = 'regular',
   duotone = false,
-  ...rest 
+  ...rest
 }, ref) => {
   if (weight === 'bold' && duotone) return <HourglassEmptyBoldDuotone ref={ref} {...rest} />;
   if (weight === 'bold') return <HourglassEmptyBold ref={ref} {...rest} />;
@@ -33,6 +33,6 @@ const HourglassEmpty = memo(forwardRef<SVGSVGElement, HourglassEmptyProps>(({
 
 HourglassEmpty.displayName = 'HourglassEmpty';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { HourglassEmpty, HourglassEmpty as HourglassEmptyIcon, HourglassEmpty as SiHourglassEmpty };
 export default HourglassEmpty;

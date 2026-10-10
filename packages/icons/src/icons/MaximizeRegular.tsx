@@ -14,7 +14,7 @@ const MaximizeRegular = memo(
 
 MaximizeRegular.displayName = 'MaximizeRegular';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { MaximizeRegular, MaximizeRegular as MaximizeRegularIcon, MaximizeRegular as SiMaximizeRegular };
 export default MaximizeRegular;
 export type { MaximizeRegularProps };

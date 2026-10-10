@@ -18,10 +18,10 @@ export interface FlaskProps extends IconProps {
  * For smaller bundle size, import specific variants directly:
  * import { FlaskRegular } from 'stera-icons/icons/FlaskRegular';
  */
-const Flask = memo(forwardRef<SVGSVGElement, FlaskProps>(({ 
+const Flask = memo(forwardRef<SVGSVGElement, FlaskProps>(({
   weight = 'regular',
   duotone = false,
-  ...rest 
+  ...rest
 }, ref) => {
   if (weight === 'bold' && duotone) return <FlaskBoldDuotone ref={ref} {...rest} />;
   if (weight === 'bold') return <FlaskBold ref={ref} {...rest} />;
@@ -33,6 +33,6 @@ const Flask = memo(forwardRef<SVGSVGElement, FlaskProps>(({
 
 Flask.displayName = 'Flask';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { Flask, Flask as FlaskIcon, Flask as SiFlask };
 export default Flask;

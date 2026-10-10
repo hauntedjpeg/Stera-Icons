@@ -18,10 +18,10 @@ export interface TargetProps extends IconProps {
  * For smaller bundle size, import specific variants directly:
  * import { TargetRegular } from 'stera-icons/icons/TargetRegular';
  */
-const Target = memo(forwardRef<SVGSVGElement, TargetProps>(({ 
+const Target = memo(forwardRef<SVGSVGElement, TargetProps>(({
   weight = 'regular',
   duotone = false,
-  ...rest 
+  ...rest
 }, ref) => {
   if (weight === 'bold' && duotone) return <TargetBoldDuotone ref={ref} {...rest} />;
   if (weight === 'bold') return <TargetBold ref={ref} {...rest} />;
@@ -33,6 +33,6 @@ const Target = memo(forwardRef<SVGSVGElement, TargetProps>(({
 
 Target.displayName = 'Target';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { Target, Target as TargetIcon, Target as SiTarget };
 export default Target;

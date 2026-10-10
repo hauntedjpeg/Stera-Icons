@@ -18,10 +18,10 @@ export interface PepperProps extends IconProps {
  * For smaller bundle size, import specific variants directly:
  * import { PepperRegular } from 'stera-icons/icons/PepperRegular';
  */
-const Pepper = memo(forwardRef<SVGSVGElement, PepperProps>(({ 
+const Pepper = memo(forwardRef<SVGSVGElement, PepperProps>(({
   weight = 'regular',
   duotone = false,
-  ...rest 
+  ...rest
 }, ref) => {
   if (weight === 'bold' && duotone) return <PepperBoldDuotone ref={ref} {...rest} />;
   if (weight === 'bold') return <PepperBold ref={ref} {...rest} />;
@@ -33,6 +33,6 @@ const Pepper = memo(forwardRef<SVGSVGElement, PepperProps>(({
 
 Pepper.displayName = 'Pepper';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { Pepper, Pepper as PepperIcon, Pepper as SiPepper };
 export default Pepper;

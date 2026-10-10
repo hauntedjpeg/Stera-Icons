@@ -14,7 +14,7 @@ const BluetoothBold = memo(
 
 BluetoothBold.displayName = 'BluetoothBold';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { BluetoothBold, BluetoothBold as BluetoothBoldIcon, BluetoothBold as SiBluetoothBold };
 export default BluetoothBold;
 export type { BluetoothBoldProps };

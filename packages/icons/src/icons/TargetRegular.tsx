@@ -16,7 +16,7 @@ const TargetRegular = memo(
 
 TargetRegular.displayName = 'TargetRegular';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { TargetRegular, TargetRegular as TargetRegularIcon, TargetRegular as SiTargetRegular };
 export default TargetRegular;
 export type { TargetRegularProps };

@@ -18,10 +18,10 @@ export interface PlayRectangleProps extends IconProps {
  * For smaller bundle size, import specific variants directly:
  * import { PlayRectangleRegular } from 'stera-icons/icons/PlayRectangleRegular';
  */
-const PlayRectangle = memo(forwardRef<SVGSVGElement, PlayRectangleProps>(({ 
+const PlayRectangle = memo(forwardRef<SVGSVGElement, PlayRectangleProps>(({
   weight = 'regular',
   duotone = false,
-  ...rest 
+  ...rest
 }, ref) => {
   if (weight === 'bold' && duotone) return <PlayRectangleBoldDuotone ref={ref} {...rest} />;
   if (weight === 'bold') return <PlayRectangleBold ref={ref} {...rest} />;
@@ -33,6 +33,6 @@ const PlayRectangle = memo(forwardRef<SVGSVGElement, PlayRectangleProps>(({
 
 PlayRectangle.displayName = 'PlayRectangle';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { PlayRectangle, PlayRectangle as PlayRectangleIcon, PlayRectangle as SiPlayRectangle };
 export default PlayRectangle;

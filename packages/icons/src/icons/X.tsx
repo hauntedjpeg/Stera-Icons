@@ -18,10 +18,10 @@ export interface XProps extends IconProps {
  * For smaller bundle size, import specific variants directly:
  * import { XRegular } from 'stera-icons/icons/XRegular';
  */
-const X = memo(forwardRef<SVGSVGElement, XProps>(({ 
+const X = memo(forwardRef<SVGSVGElement, XProps>(({
   weight = 'regular',
   duotone = false,
-  ...rest 
+  ...rest
 }, ref) => {
   if (weight === 'bold' && duotone) return <XBoldDuotone ref={ref} {...rest} />;
   if (weight === 'bold') return <XBold ref={ref} {...rest} />;
@@ -33,6 +33,6 @@ const X = memo(forwardRef<SVGSVGElement, XProps>(({
 
 X.displayName = 'X';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { X, X as XIcon, X as SiX };
 export default X;

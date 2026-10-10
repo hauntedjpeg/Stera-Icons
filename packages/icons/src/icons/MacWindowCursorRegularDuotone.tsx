@@ -16,7 +16,7 @@ const MacWindowCursorRegularDuotone = memo(
 
 MacWindowCursorRegularDuotone.displayName = 'MacWindowCursorRegularDuotone';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { MacWindowCursorRegularDuotone, MacWindowCursorRegularDuotone as MacWindowCursorRegularDuotoneIcon, MacWindowCursorRegularDuotone as SiMacWindowCursorRegularDuotone };
 export default MacWindowCursorRegularDuotone;
 export type { MacWindowCursorRegularDuotoneProps };

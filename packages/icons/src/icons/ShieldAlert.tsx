@@ -18,10 +18,10 @@ export interface ShieldAlertProps extends IconProps {
  * For smaller bundle size, import specific variants directly:
  * import { ShieldAlertRegular } from 'stera-icons/icons/ShieldAlertRegular';
  */
-const ShieldAlert = memo(forwardRef<SVGSVGElement, ShieldAlertProps>(({ 
+const ShieldAlert = memo(forwardRef<SVGSVGElement, ShieldAlertProps>(({
   weight = 'regular',
   duotone = false,
-  ...rest 
+  ...rest
 }, ref) => {
   if (weight === 'bold' && duotone) return <ShieldAlertBoldDuotone ref={ref} {...rest} />;
   if (weight === 'bold') return <ShieldAlertBold ref={ref} {...rest} />;
@@ -33,6 +33,6 @@ const ShieldAlert = memo(forwardRef<SVGSVGElement, ShieldAlertProps>(({
 
 ShieldAlert.displayName = 'ShieldAlert';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { ShieldAlert, ShieldAlert as ShieldAlertIcon, ShieldAlert as SiShieldAlert };
 export default ShieldAlert;

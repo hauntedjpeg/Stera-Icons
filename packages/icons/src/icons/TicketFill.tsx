@@ -14,7 +14,7 @@ const TicketFill = memo(
 
 TicketFill.displayName = 'TicketFill';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { TicketFill, TicketFill as TicketFillIcon, TicketFill as SiTicketFill };
 export default TicketFill;
 export type { TicketFillProps };

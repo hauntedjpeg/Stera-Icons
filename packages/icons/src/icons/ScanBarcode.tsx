@@ -18,10 +18,10 @@ export interface ScanBarcodeProps extends IconProps {
  * For smaller bundle size, import specific variants directly:
  * import { ScanBarcodeRegular } from 'stera-icons/icons/ScanBarcodeRegular';
  */
-const ScanBarcode = memo(forwardRef<SVGSVGElement, ScanBarcodeProps>(({ 
+const ScanBarcode = memo(forwardRef<SVGSVGElement, ScanBarcodeProps>(({
   weight = 'regular',
   duotone = false,
-  ...rest 
+  ...rest
 }, ref) => {
   if (weight === 'bold' && duotone) return <ScanBarcodeBoldDuotone ref={ref} {...rest} />;
   if (weight === 'bold') return <ScanBarcodeBold ref={ref} {...rest} />;
@@ -33,6 +33,6 @@ const ScanBarcode = memo(forwardRef<SVGSVGElement, ScanBarcodeProps>(({
 
 ScanBarcode.displayName = 'ScanBarcode';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { ScanBarcode, ScanBarcode as ScanBarcodeIcon, ScanBarcode as SiScanBarcode };
 export default ScanBarcode;

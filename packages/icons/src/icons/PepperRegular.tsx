@@ -14,7 +14,7 @@ const PepperRegular = memo(
 
 PepperRegular.displayName = 'PepperRegular';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { PepperRegular, PepperRegular as PepperRegularIcon, PepperRegular as SiPepperRegular };
 export default PepperRegular;
 export type { PepperRegularProps };

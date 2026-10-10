@@ -15,7 +15,7 @@ const DotFillDuotone = memo(
 
 DotFillDuotone.displayName = 'DotFillDuotone';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { DotFillDuotone, DotFillDuotone as DotFillDuotoneIcon, DotFillDuotone as SiDotFillDuotone };
 export default DotFillDuotone;
 export type { DotFillDuotoneProps };

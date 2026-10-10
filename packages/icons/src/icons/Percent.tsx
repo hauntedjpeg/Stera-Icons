@@ -18,10 +18,10 @@ export interface PercentProps extends IconProps {
  * For smaller bundle size, import specific variants directly:
  * import { PercentRegular } from 'stera-icons/icons/PercentRegular';
  */
-const Percent = memo(forwardRef<SVGSVGElement, PercentProps>(({ 
+const Percent = memo(forwardRef<SVGSVGElement, PercentProps>(({
   weight = 'regular',
   duotone = false,
-  ...rest 
+  ...rest
 }, ref) => {
   if (weight === 'bold' && duotone) return <PercentBoldDuotone ref={ref} {...rest} />;
   if (weight === 'bold') return <PercentBold ref={ref} {...rest} />;
@@ -33,6 +33,6 @@ const Percent = memo(forwardRef<SVGSVGElement, PercentProps>(({
 
 Percent.displayName = 'Percent';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { Percent, Percent as PercentIcon, Percent as SiPercent };
 export default Percent;

@@ -15,7 +15,7 @@ const HistoryRegular = memo(
 
 HistoryRegular.displayName = 'HistoryRegular';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { HistoryRegular, HistoryRegular as HistoryRegularIcon, HistoryRegular as SiHistoryRegular };
 export default HistoryRegular;
 export type { HistoryRegularProps };

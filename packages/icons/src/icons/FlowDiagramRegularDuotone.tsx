@@ -15,7 +15,7 @@ const FlowDiagramRegularDuotone = memo(
 
 FlowDiagramRegularDuotone.displayName = 'FlowDiagramRegularDuotone';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { FlowDiagramRegularDuotone, FlowDiagramRegularDuotone as FlowDiagramRegularDuotoneIcon, FlowDiagramRegularDuotone as SiFlowDiagramRegularDuotone };
 export default FlowDiagramRegularDuotone;
 export type { FlowDiagramRegularDuotoneProps };

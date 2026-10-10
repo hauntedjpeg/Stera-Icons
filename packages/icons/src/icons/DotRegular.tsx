@@ -14,7 +14,7 @@ const DotRegular = memo(
 
 DotRegular.displayName = 'DotRegular';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { DotRegular, DotRegular as DotRegularIcon, DotRegular as SiDotRegular };
 export default DotRegular;
 export type { DotRegularProps };

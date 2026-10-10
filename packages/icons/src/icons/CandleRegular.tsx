@@ -14,7 +14,7 @@ const CandleRegular = memo(
 
 CandleRegular.displayName = 'CandleRegular';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { CandleRegular, CandleRegular as CandleRegularIcon, CandleRegular as SiCandleRegular };
 export default CandleRegular;
 export type { CandleRegularProps };

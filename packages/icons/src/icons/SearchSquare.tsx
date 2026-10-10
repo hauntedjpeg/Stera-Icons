@@ -18,10 +18,10 @@ export interface SearchSquareProps extends IconProps {
  * For smaller bundle size, import specific variants directly:
  * import { SearchSquareRegular } from 'stera-icons/icons/SearchSquareRegular';
  */
-const SearchSquare = memo(forwardRef<SVGSVGElement, SearchSquareProps>(({ 
+const SearchSquare = memo(forwardRef<SVGSVGElement, SearchSquareProps>(({
   weight = 'regular',
   duotone = false,
-  ...rest 
+  ...rest
 }, ref) => {
   if (weight === 'bold' && duotone) return <SearchSquareBoldDuotone ref={ref} {...rest} />;
   if (weight === 'bold') return <SearchSquareBold ref={ref} {...rest} />;
@@ -33,6 +33,6 @@ const SearchSquare = memo(forwardRef<SVGSVGElement, SearchSquareProps>(({
 
 SearchSquare.displayName = 'SearchSquare';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { SearchSquare, SearchSquare as SearchSquareIcon, SearchSquare as SiSearchSquare };
 export default SearchSquare;

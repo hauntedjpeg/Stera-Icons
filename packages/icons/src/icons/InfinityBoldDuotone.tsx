@@ -15,7 +15,7 @@ const InfinityBoldDuotone = memo(
 
 InfinityBoldDuotone.displayName = 'InfinityBoldDuotone';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { InfinityBoldDuotone, InfinityBoldDuotone as InfinityBoldDuotoneIcon, InfinityBoldDuotone as SiInfinityBoldDuotone };
 export default InfinityBoldDuotone;
 export type { InfinityBoldDuotoneProps };

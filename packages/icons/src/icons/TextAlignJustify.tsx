@@ -18,10 +18,10 @@ export interface TextAlignJustifyProps extends IconProps {
  * For smaller bundle size, import specific variants directly:
  * import { TextAlignJustifyRegular } from 'stera-icons/icons/TextAlignJustifyRegular';
  */
-const TextAlignJustify = memo(forwardRef<SVGSVGElement, TextAlignJustifyProps>(({ 
+const TextAlignJustify = memo(forwardRef<SVGSVGElement, TextAlignJustifyProps>(({
   weight = 'regular',
   duotone = false,
-  ...rest 
+  ...rest
 }, ref) => {
   if (weight === 'bold' && duotone) return <TextAlignJustifyBoldDuotone ref={ref} {...rest} />;
   if (weight === 'bold') return <TextAlignJustifyBold ref={ref} {...rest} />;
@@ -33,6 +33,6 @@ const TextAlignJustify = memo(forwardRef<SVGSVGElement, TextAlignJustifyProps>((
 
 TextAlignJustify.displayName = 'TextAlignJustify';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { TextAlignJustify, TextAlignJustify as TextAlignJustifyIcon, TextAlignJustify as SiTextAlignJustify };
 export default TextAlignJustify;

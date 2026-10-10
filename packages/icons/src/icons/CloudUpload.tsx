@@ -18,10 +18,10 @@ export interface CloudUploadProps extends IconProps {
  * For smaller bundle size, import specific variants directly:
  * import { CloudUploadRegular } from 'stera-icons/icons/CloudUploadRegular';
  */
-const CloudUpload = memo(forwardRef<SVGSVGElement, CloudUploadProps>(({ 
+const CloudUpload = memo(forwardRef<SVGSVGElement, CloudUploadProps>(({
   weight = 'regular',
   duotone = false,
-  ...rest 
+  ...rest
 }, ref) => {
   if (weight === 'bold' && duotone) return <CloudUploadBoldDuotone ref={ref} {...rest} />;
   if (weight === 'bold') return <CloudUploadBold ref={ref} {...rest} />;
@@ -33,6 +33,6 @@ const CloudUpload = memo(forwardRef<SVGSVGElement, CloudUploadProps>(({
 
 CloudUpload.displayName = 'CloudUpload';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { CloudUpload, CloudUpload as CloudUploadIcon, CloudUpload as SiCloudUpload };
 export default CloudUpload;

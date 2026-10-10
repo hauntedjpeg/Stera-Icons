@@ -18,10 +18,10 @@ export interface CubicGraphProps extends IconProps {
  * For smaller bundle size, import specific variants directly:
  * import { CubicGraphRegular } from 'stera-icons/icons/CubicGraphRegular';
  */
-const CubicGraph = memo(forwardRef<SVGSVGElement, CubicGraphProps>(({ 
+const CubicGraph = memo(forwardRef<SVGSVGElement, CubicGraphProps>(({
   weight = 'regular',
   duotone = false,
-  ...rest 
+  ...rest
 }, ref) => {
   if (weight === 'bold' && duotone) return <CubicGraphBoldDuotone ref={ref} {...rest} />;
   if (weight === 'bold') return <CubicGraphBold ref={ref} {...rest} />;
@@ -33,6 +33,6 @@ const CubicGraph = memo(forwardRef<SVGSVGElement, CubicGraphProps>(({
 
 CubicGraph.displayName = 'CubicGraph';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { CubicGraph, CubicGraph as CubicGraphIcon, CubicGraph as SiCubicGraph };
 export default CubicGraph;

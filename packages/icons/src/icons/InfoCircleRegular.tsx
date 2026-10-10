@@ -15,7 +15,7 @@ const InfoCircleRegular = memo(
 
 InfoCircleRegular.displayName = 'InfoCircleRegular';
 
-// Triple export pattern (lucide-react style)
+// Triple export pattern
 export { InfoCircleRegular, InfoCircleRegular as InfoCircleRegularIcon, InfoCircleRegular as SiInfoCircleRegular };
 export default InfoCircleRegular;
 export type { InfoCircleRegularProps };
