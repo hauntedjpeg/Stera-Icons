@@ -7,7 +7,7 @@ type SendFillProps = Omit<IconBaseProps, 'children'>;
 const SendFill = memo(
   forwardRef<SVGSVGElement, SendFillProps>((props, ref) => (
     <IconBase ref={ref} {...props}>
-      <path d="M19.22 2.23c1.57-.53 3.08.98 2.55 2.55L16.53 20.5c-.62 1.88-3.3 1.83-3.85-.06l-1.79-6.09 5.73-5.72c.34-.34.34-.9 0-1.24s-.9-.34-1.24 0L9.65 13.1l-6.08-1.8c-1.9-.55-1.94-3.22-.07-3.84z" />
+      <path d="M17.42 4.34c1.38-.46 2.7.86 2.24 2.24L15 20.54c-.54 1.64-2.88 1.6-3.37-.06l-1.6-5.45 5-5c.3-.3.3-.77 0-1.06s-.77-.3-1.06 0l-5 5-5.45-1.6c-1.66-.5-1.7-2.82-.06-3.37z" />
     </IconBase>
   ))
 );

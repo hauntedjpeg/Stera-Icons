@@ -1144,6 +1144,8 @@ export { MinusSquareRegular as MinusSquare, MinusSquareRegular as MinusSquareIco
 export { MinusSquareRegularDuotone as MinusSquareDuotone, MinusSquareRegularDuotone as MinusSquareDuotoneIcon, MinusSquareRegularDuotone as SiMinusSquareDuotone } from './icons/MinusSquareRegularDuotone';
 export { MonitorRegular as Monitor, MonitorRegular as MonitorIcon, MonitorRegular as SiMonitor } from './icons/MonitorRegular';
 export { MonitorRegularDuotone as MonitorDuotone, MonitorRegularDuotone as MonitorDuotoneIcon, MonitorRegularDuotone as SiMonitorDuotone } from './icons/MonitorRegularDuotone';
+export { MonitorSmartphoneRegular as MonitorSmartphone, MonitorSmartphoneRegular as MonitorSmartphoneIcon, MonitorSmartphoneRegular as SiMonitorSmartphone } from './icons/MonitorSmartphoneRegular';
+export { MonitorSmartphoneRegularDuotone as MonitorSmartphoneDuotone, MonitorSmartphoneRegularDuotone as MonitorSmartphoneDuotoneIcon, MonitorSmartphoneRegularDuotone as SiMonitorSmartphoneDuotone } from './icons/MonitorSmartphoneRegularDuotone';
 export { MoonCrescentRegular as MoonCrescent, MoonCrescentRegular as MoonCrescentIcon, MoonCrescentRegular as SiMoonCrescent } from './icons/MoonCrescentRegular';
 export { MoonCrescentRegularDuotone as MoonCrescentDuotone, MoonCrescentRegularDuotone as MoonCrescentDuotoneIcon, MoonCrescentRegularDuotone as SiMoonCrescentDuotone } from './icons/MoonCrescentRegularDuotone';
 export { MoonStarRegular as MoonStar, MoonStarRegular as MoonStarIcon, MoonStarRegular as SiMoonStar } from './icons/MoonStarRegular';
@@ -1364,6 +1366,8 @@ export { ScanSearchRegular as ScanSearch, ScanSearchRegular as ScanSearchIcon, S
 export { ScanSearchRegularDuotone as ScanSearchDuotone, ScanSearchRegularDuotone as ScanSearchDuotoneIcon, ScanSearchRegularDuotone as SiScanSearchDuotone } from './icons/ScanSearchRegularDuotone';
 export { ScanTextRegular as ScanText, ScanTextRegular as ScanTextIcon, ScanTextRegular as SiScanText } from './icons/ScanTextRegular';
 export { ScanTextRegularDuotone as ScanTextDuotone, ScanTextRegularDuotone as ScanTextDuotoneIcon, ScanTextRegularDuotone as SiScanTextDuotone } from './icons/ScanTextRegularDuotone';
+export { ScanXRegular as ScanX, ScanXRegular as ScanXIcon, ScanXRegular as SiScanX } from './icons/ScanXRegular';
+export { ScanXRegularDuotone as ScanXDuotone, ScanXRegularDuotone as ScanXDuotoneIcon, ScanXRegularDuotone as SiScanXDuotone } from './icons/ScanXRegularDuotone';
 export { ScissorsRegular as Scissors, ScissorsRegular as ScissorsIcon, ScissorsRegular as SiScissors } from './icons/ScissorsRegular';
 export { ScissorsRegularDuotone as ScissorsDuotone, ScissorsRegularDuotone as ScissorsDuotoneIcon, ScissorsRegularDuotone as SiScissorsDuotone } from './icons/ScissorsRegularDuotone';
 export { ScrewdriverRegular as Screwdriver, ScrewdriverRegular as ScrewdriverIcon, ScrewdriverRegular as SiScrewdriver } from './icons/ScrewdriverRegular';
@@ -5054,6 +5058,12 @@ export { MonitorBold, MonitorBoldIcon, SiMonitorBold } from './icons/MonitorBold
 export { MonitorBoldDuotone, MonitorBoldDuotoneIcon, SiMonitorBoldDuotone } from './icons/MonitorBoldDuotone';
 export { MonitorFill, MonitorFillIcon, SiMonitorFill } from './icons/MonitorFill';
 export { MonitorFillDuotone, MonitorFillDuotoneIcon, SiMonitorFillDuotone } from './icons/MonitorFillDuotone';
+export { MonitorSmartphoneRegular, MonitorSmartphoneRegularIcon, SiMonitorSmartphoneRegular } from './icons/MonitorSmartphoneRegular';
+export { MonitorSmartphoneRegularDuotone, MonitorSmartphoneRegularDuotoneIcon, SiMonitorSmartphoneRegularDuotone } from './icons/MonitorSmartphoneRegularDuotone';
+export { MonitorSmartphoneBold, MonitorSmartphoneBoldIcon, SiMonitorSmartphoneBold } from './icons/MonitorSmartphoneBold';
+export { MonitorSmartphoneBoldDuotone, MonitorSmartphoneBoldDuotoneIcon, SiMonitorSmartphoneBoldDuotone } from './icons/MonitorSmartphoneBoldDuotone';
+export { MonitorSmartphoneFill, MonitorSmartphoneFillIcon, SiMonitorSmartphoneFill } from './icons/MonitorSmartphoneFill';
+export { MonitorSmartphoneFillDuotone, MonitorSmartphoneFillDuotoneIcon, SiMonitorSmartphoneFillDuotone } from './icons/MonitorSmartphoneFillDuotone';
 export { MoonCrescentRegular, MoonCrescentRegularIcon, SiMoonCrescentRegular } from './icons/MoonCrescentRegular';
 export { MoonCrescentRegularDuotone, MoonCrescentRegularDuotoneIcon, SiMoonCrescentRegularDuotone } from './icons/MoonCrescentRegularDuotone';
 export { MoonCrescentBold, MoonCrescentBoldIcon, SiMoonCrescentBold } from './icons/MoonCrescentBold';
@@ -5714,6 +5724,12 @@ export { ScanTextBold, ScanTextBoldIcon, SiScanTextBold } from './icons/ScanText
 export { ScanTextBoldDuotone, ScanTextBoldDuotoneIcon, SiScanTextBoldDuotone } from './icons/ScanTextBoldDuotone';
 export { ScanTextFill, ScanTextFillIcon, SiScanTextFill } from './icons/ScanTextFill';
 export { ScanTextFillDuotone, ScanTextFillDuotoneIcon, SiScanTextFillDuotone } from './icons/ScanTextFillDuotone';
+export { ScanXRegular, ScanXRegularIcon, SiScanXRegular } from './icons/ScanXRegular';
+export { ScanXRegularDuotone, ScanXRegularDuotoneIcon, SiScanXRegularDuotone } from './icons/ScanXRegularDuotone';
+export { ScanXBold, ScanXBoldIcon, SiScanXBold } from './icons/ScanXBold';
+export { ScanXBoldDuotone, ScanXBoldDuotoneIcon, SiScanXBoldDuotone } from './icons/ScanXBoldDuotone';
+export { ScanXFill, ScanXFillIcon, SiScanXFill } from './icons/ScanXFill';
+export { ScanXFillDuotone, ScanXFillDuotoneIcon, SiScanXFillDuotone } from './icons/ScanXFillDuotone';
 export { ScissorsRegular, ScissorsRegularIcon, SiScissorsRegular } from './icons/ScissorsRegular';
 export { ScissorsRegularDuotone, ScissorsRegularDuotoneIcon, SiScissorsRegularDuotone } from './icons/ScissorsRegularDuotone';
 export { ScissorsBold, ScissorsBoldIcon, SiScissorsBold } from './icons/ScissorsBold';

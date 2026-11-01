@@ -7,7 +7,7 @@ type SendRegularProps = Omit<IconBaseProps, 'children'>;
 const SendRegular = memo(
   forwardRef<SVGSVGElement, SendRegularProps>((props, ref) => (
     <IconBase ref={ref} {...props}>
-      <path fillRule="evenodd" d="M19.26 2.35c1.48-.5 2.88.91 2.4 2.4l-5.25 15.7c-.58 1.76-3.08 1.72-3.6-.06l-2.1-7.1-7.1-2.1c-1.78-.51-1.82-3.02-.06-3.6zm.97 1.92c.1-.3-.2-.6-.5-.5L4.02 9.01c-.37.12-.36.64.01.75l7.07 2.08 4.37-4.37c.3-.3.77-.3 1.06 0s.3.77 0 1.06l-4.37 4.37 2.08 7.07c.11.37.63.38.75.01z" clipRule="evenodd" />
+      <path fillRule="evenodd" d="M17.42 4.34c1.38-.46 2.7.86 2.24 2.24L15 20.54c-.54 1.64-2.88 1.6-3.37-.06L9.8 14.21l-6.27-1.84c-1.66-.5-1.7-2.83-.06-3.37zm.48 1.43L3.93 10.42c-.24.08-.24.44.01.5l6.24 1.84 3.85-3.85c.29-.29.76-.29 1.06 0 .29.3.29.77 0 1.06l-3.85 3.85 1.83 6.24c.08.25.43.26.5 0L18.24 6.1c.07-.2-.12-.4-.33-.33" clipRule="evenodd" />
     </IconBase>
   ))
 );
