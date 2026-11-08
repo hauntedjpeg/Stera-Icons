@@ -1,5 +1,12 @@
 # stera-icons
 
+## 8.12.2
+
+### Patch Changes
+
+- b004be9: Document bundler setup in the README and llms.txt: add `stera-icons` to Next.js `experimental.optimizePackageImports`, and prefer subpath imports in large Vite apps, since the root entry re-exports every icon and the dev server pre-bundles all of it.
+- 63ee32c: Keep stale files out of the published package: the icon build now empties `dist/esm/icons` before compiling, so removed or renamed icons no longer leave old files behind, and source maps written by the development build are excluded from the npm package.
+
 ## 8.12.1
 
 ### Patch Changes
