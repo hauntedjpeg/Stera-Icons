@@ -10,7 +10,14 @@
  * - dist/types.d.ts - Core type definitions
  * - dist/IconBase.d.ts - IconBase component declaration
  * - dist/base.d.ts - Separate entry point for IconBase (advanced usage)
- * - dist/esm/index.d.ts - Main entry re-exporting all icons
+ * - dist/esm/index.d.ts - Main entry, with every icon declared inline
+ * - dist/esm/dynamic-variants.d.ts - Variant wrappers, declared inline
+ *
+ * The entry points declare their icons inline instead of re-exporting the
+ * per-icon declaration files in dist/esm/icons/. A re-export barrel makes
+ * TypeScript open every per-icon file (thousands of them) to type a single
+ * import; an inline declaration costs one file. The per-icon files are still
+ * written by build-icons.js for deep imports (stera-icons/icons/<Name>).
  */
 
 import { readFileSync, writeFileSync, existsSync, mkdirSync } from 'fs';
@@ -29,27 +36,111 @@ const DIST_DIR = join(PACKAGE_DIR, 'dist', 'esm');
 const DEPRECATED_EXPORTS = getDeprecatedExports(loadAliases(PACKAGE_DIR));
 
 /**
+ * Split the specifiers of a re-export line into { source, name } pairs.
+ * e.g. "LaptopBold as DeviceLaptopBold, LaptopBold as SiDeviceLaptopBold"
+ * → [{ source: 'LaptopBold', name: 'DeviceLaptopBold' }, { source: 'LaptopBold', name: 'SiDeviceLaptopBold' }]
+ * @param {string} exportNames
+ * @returns {Array<{source: string, name: string}>}
+ */
+function parseSpecifiers(exportNames) {
+  return exportNames
+    .split(',')
+    .map(specifier => specifier.trim())
+    .filter(Boolean)
+    .map(specifier => {
+      const [source, name = source] = specifier.split(/\s+as\s+/);
+      return { source, name };
+    });
+}
+
+/**
+ * Does a re-export line export any old name of a renamed icon?
+ * @param {string} exportNames
+ * @returns {boolean}
+ */
+function exportsDeprecatedName(exportNames) {
+  return parseSpecifiers(exportNames).some(({ name }) => DEPRECATED_EXPORTS.has(name));
+}
+
+/**
  * Declare the exports of a re-export line as @deprecated constants.
  * A plain re-export cannot carry a deprecation, so each name is declared separately.
+ * The alias is typed from the icon's own declaration in the same file when there
+ * is one, so TypeScript does not have to open the per-icon file.
  * e.g. "LaptopBold as DeviceLaptopBold, ..." from "./icons/LaptopBold"
  * @param {string} exportNames
  * @param {string} importPath
- * @returns {string[]|null} - Declaration lines, or null if the line exports no deprecated name
+ * @param {Set<string>} declaredNames - Names declared inline in the file being generated
+ * @returns {string[]} - Declaration lines
  */
-function generateDeprecatedDeclarations(exportNames, importPath) {
-  const specifiers = exportNames.split(',').map(specifier => specifier.trim().split(/\s+as\s+/));
-  if (!specifiers.some(([source, name]) => DEPRECATED_EXPORTS.has(name || source))) {
-    return null;
-  }
-
+function generateDeprecatedDeclarations(exportNames, importPath, declaredNames) {
   const lines = [];
-  for (const [source, name = source] of specifiers) {
+  for (const { source, name } of parseSpecifiers(exportNames)) {
     const { replacement, removeIn } = DEPRECATED_EXPORTS.get(name);
+    const target = declaredNames.has(source) ? source : `import('${importPath}').${source}`;
     lines.push(`/** @deprecated ${deprecationMessage(replacement, removeIn)} */`);
-    lines.push(`export declare const ${name}: typeof import('${importPath}').${source};`);
+    lines.push(`export declare const ${name}: typeof ${target};`);
   }
   return lines;
 }
+
+/**
+ * Declare the exports of a re-export line inline.
+ * The first name is declared with the JSDoc; the other names are aliases of it,
+ * so hover and go-to-definition on any of them land on the same declaration.
+ * e.g. "SearchRegular as Search, SearchRegular as SearchIcon, SearchRegular as SiSearch"
+ * → export declare const Search: IconComponent;
+ *   export { Search as SearchIcon, Search as SiSearch };
+ * @param {string} exportNames
+ * @param {string} componentType - Type of the declared constant
+ * @param {string[]} jsdocLines - JSDoc block to put above the declaration
+ * @returns {string[]} - Declaration lines
+ */
+function generateInlineDeclarations(exportNames, componentType, jsdocLines) {
+  const [primary, ...aliases] = parseSpecifiers(exportNames).map(({ name }) => name);
+  const lines = [...jsdocLines, `export declare const ${primary}: ${componentType};`];
+  if (aliases.length > 0) {
+    lines.push(`export { ${aliases.map(alias => `${primary} as ${alias}`).join(', ')} };`);
+  }
+  return lines;
+}
+
+/**
+ * JSDoc block with @component and @tags, for icon discoverability in editors and by LLMs
+ * @param {string|null} siAlias - The Si-prefixed name of the export
+ * @param {string[]|undefined} tags
+ * @returns {string[]} - JSDoc lines, empty if there is nothing to document
+ */
+function buildTagsJSDoc(siAlias, tags) {
+  if (!tags || tags.length === 0 || !siAlias) return [];
+  return ['/**', ` * @component ${siAlias}`, ` * @tags ${tags.join(', ')}`, ' */'];
+}
+
+/**
+ * Names declared inline by the icon re-export lines of a source file:
+ * the first export of every line that is not a deprecated alias.
+ * @param {string[]} lines - Lines of the source file
+ * @returns {Set<string>}
+ */
+function collectDeclaredNames(lines) {
+  const declared = new Set();
+  for (const line of lines) {
+    const match = line.trim().match(RE_EXPORT);
+    if (!match || !match[2].startsWith('./icons/') || exportsDeprecatedName(match[1])) continue;
+    declared.add(parseSpecifiers(match[1])[0].name);
+  }
+  return declared;
+}
+
+// export { X as Y, ... } from './path';
+const RE_EXPORT = /^export\s*\{\s*([^}]+)\s*\}\s*from\s*['"]([^'"]+)['"]\s*;?$/;
+
+// The component type every icon in the main entry has (matches TYPE_DEFS.variant)
+const ICON_COMPONENT_TYPE = `type IconComponent = MemoExoticComponent<ForwardRefExoticComponent<Omit<IconBaseProps, 'children'> & RefAttributes<SVGSVGElement>>>;`;
+
+// The component type every wrapper in dynamic-variants has (matches TYPE_DEFS.wrapper;
+// IconProps already carries the optional weight and duotone props)
+const VARIANT_COMPONENT_TYPE = `type VariantIconComponent = MemoExoticComponent<ForwardRefExoticComponent<IconProps & RefAttributes<SVGSVGElement>>>;`;
 
 /**
  * Generate types.d.ts from src/types.ts (enhanced with new types)
@@ -246,7 +337,8 @@ export default dynamicIconImports;
 }
 
 /**
- * Generate dynamic-variants.d.ts - wrapper components with weight/duotone props
+ * Generate dynamic-variants.d.ts - wrapper components with weight/duotone props.
+ * Every wrapper is declared inline (see the header comment of this file).
  */
 function generateDynamicVariantsDeclaration() {
   const dynamicVariantsPath = join(SRC_DIR, 'dynamic-variants.ts');
@@ -264,14 +356,21 @@ function generateDynamicVariantsDeclaration() {
   }
   
   const dynamicVariantsContent = readFileSync(dynamicVariantsPath, 'utf8');
+  const { byComponent: tagsMap } = loadTagsMaps();
   
   const lines = dynamicVariantsContent.split('\n');
+  const declaredNames = collectDeclaredNames(lines);
   const declarationLines = [];
   
   // Add header comment
   declarationLines.push('// Auto-generated TypeScript declarations for dynamic variant wrappers');
   declarationLines.push('// Generated by scripts/generate-declarations.js');
   declarationLines.push('// Use these when you need to switch icon weight/duotone at runtime');
+  declarationLines.push('');
+  declarationLines.push(`import type { IconProps } from './types.js';`);
+  declarationLines.push(`import type { MemoExoticComponent, ForwardRefExoticComponent, RefAttributes } from 'react';`);
+  declarationLines.push('');
+  declarationLines.push(VARIANT_COMPONENT_TYPE);
   declarationLines.push('');
   
   for (const line of lines) {
@@ -283,15 +382,20 @@ function generateDynamicVariantsDeclaration() {
     }
     
     // Handle re-exports: export { X, XIcon, SiX } from './path';
-    const reExportMatch = trimmedLine.match(/^export\s*\{\s*([^}]+)\s*\}\s*from\s*['"]([^'"]+)['"]\s*;?$/);
+    const reExportMatch = trimmedLine.match(RE_EXPORT);
     if (reExportMatch) {
       const [, exportNames, importPath] = reExportMatch;
-      const deprecatedDeclarations = generateDeprecatedDeclarations(exportNames, importPath);
-      if (deprecatedDeclarations) {
-        declarationLines.push(...deprecatedDeclarations);
+      if (exportsDeprecatedName(exportNames)) {
+        declarationLines.push(...generateDeprecatedDeclarations(exportNames, importPath, declaredNames));
         continue;
       }
-      declarationLines.push(`export { ${exportNames} } from '${importPath}';`);
+      if (!importPath.startsWith('./icons/')) {
+        declarationLines.push(`export { ${exportNames} } from '${importPath}';`);
+        continue;
+      }
+      const tags = tagsMap.get(extractComponentFromPath(importPath));
+      const jsdoc = buildTagsJSDoc(extractSiAlias(exportNames), tags);
+      declarationLines.push(...generateInlineDeclarations(exportNames, 'VariantIconComponent', jsdoc));
     }
   }
   
@@ -299,18 +403,21 @@ function generateDynamicVariantsDeclaration() {
 }
 
 /**
- * Load icons.meta.json and build a lookup map of variantComponentName → tags.
- * @returns {Map<string, string[]>}
+ * Load icons.meta.json and build lookup maps of tags:
+ * by variantComponentName (SearchRegular) and by componentName (Search).
+ * @returns {{byVariant: Map<string, string[]>, byComponent: Map<string, string[]>}}
  */
-function loadTagsMap() {
+function loadTagsMaps() {
+  const byVariant = new Map();
+  const byComponent = new Map();
   const metaPath = join(PACKAGE_DIR, 'dist', 'icons.meta.json');
-  if (!existsSync(metaPath)) return new Map();
+  if (!existsSync(metaPath)) return { byVariant, byComponent };
   const metadata = JSON.parse(readFileSync(metaPath, 'utf8'));
-  const tagsMap = new Map();
   for (const entry of metadata) {
-    tagsMap.set(entry.variantComponentName, entry.tags);
+    byVariant.set(entry.variantComponentName, entry.tags);
+    if (!byComponent.has(entry.componentName)) byComponent.set(entry.componentName, entry.tags);
   }
-  return tagsMap;
+  return { byVariant, byComponent };
 }
 
 /**
@@ -336,14 +443,16 @@ function extractComponentFromPath(importPath) {
 }
 
 /**
- * Parse src/index.ts and generate index.d.ts with JSDoc tags for LLM discoverability.
+ * Parse src/index.ts and generate index.d.ts, with every icon declared inline
+ * and JSDoc tags for LLM discoverability.
  */
 function generateIndexDeclaration() {
   const indexPath = join(SRC_DIR, 'index.ts');
   const indexContent = readFileSync(indexPath, 'utf8');
-  const tagsMap = loadTagsMap();
+  const { byVariant: tagsMap } = loadTagsMaps();
 
   const lines = indexContent.split('\n');
+  const declaredNames = collectDeclaredNames(lines);
   const declarationLines = [];
 
   // Add header comment
@@ -351,6 +460,11 @@ function generateIndexDeclaration() {
   declarationLines.push('// Auto-generated TypeScript declarations');
   declarationLines.push('// Generated by scripts/generate-declarations.js');
   declarationLines.push('// Triple-aliased exports: Base, Icon suffix, Si prefix');
+  declarationLines.push('');
+  declarationLines.push(`import type { IconBaseProps } from './base.js';`);
+  declarationLines.push(`import type { MemoExoticComponent, ForwardRefExoticComponent, RefAttributes } from 'react';`);
+  declarationLines.push('');
+  declarationLines.push(ICON_COMPONENT_TYPE);
   declarationLines.push('');
 
   let inMultilineExport = false;
@@ -389,30 +503,25 @@ function generateIndexDeclaration() {
 
     // Handle re-exports: export { X } from './path';
     // Now also handles triple exports: export { X, XIcon, SiX } from './path';
-    const reExportMatch = trimmedLine.match(/^export\s*\{\s*([^}]+)\s*\}\s*from\s*['"]([^'"]+)['"]\s*;?$/);
+    const reExportMatch = trimmedLine.match(RE_EXPORT);
     if (reExportMatch) {
       const [, exportNames, importPath] = reExportMatch;
 
       // Old names of renamed icons are declared as @deprecated
-      const deprecatedDeclarations = generateDeprecatedDeclarations(exportNames, importPath);
-      if (deprecatedDeclarations) {
-        declarationLines.push(...deprecatedDeclarations);
+      if (exportsDeprecatedName(exportNames)) {
+        declarationLines.push(...generateDeprecatedDeclarations(exportNames, importPath, declaredNames));
         continue;
       }
 
-      // Add JSDoc with @component and @tags for icon exports
+      // Icons are declared inline, with JSDoc @component and @tags
       if (importPath.startsWith('./icons/')) {
-        const sourceComponent = extractComponentFromPath(importPath);
-        const tags = tagsMap.get(sourceComponent);
-        const siAlias = extractSiAlias(exportNames);
-        if (tags && tags.length > 0 && siAlias) {
-          declarationLines.push(`/**`);
-          declarationLines.push(` * @component ${siAlias}`);
-          declarationLines.push(` * @tags ${tags.join(', ')}`);
-          declarationLines.push(` */`);
-        }
+        const tags = tagsMap.get(extractComponentFromPath(importPath));
+        const jsdoc = buildTagsJSDoc(extractSiAlias(exportNames), tags);
+        declarationLines.push(...generateInlineDeclarations(exportNames, 'IconComponent', jsdoc));
+        continue;
       }
 
+      // Anything else (utils) stays a re-export
       declarationLines.push(`export { ${exportNames} } from '${importPath}';`);
       continue;
     }
@@ -475,9 +584,9 @@ function main() {
   writeFileSync(join(DIST_DIR, 'index.d.ts'), indexDeclaration);
 
   // Count exports
-  const exportCount = (indexDeclaration.match(/^export\s*\{/gm) || []).length;
+  const exportCount = (indexDeclaration.match(/^export declare const /gm) || []).length;
   const typeExportCount = (indexDeclaration.match(/^export\s+type\s*\{/gm) || []).length;
-  console.log(`  ✅ Generated dist/esm/index.d.ts (${exportCount} component exports, ${typeExportCount} type exports)`);
+  console.log(`  ✅ Generated dist/esm/index.d.ts (${exportCount} component declarations, ${typeExportCount} type exports)`);
   
   console.log('✨ Declaration generation complete!');
 }
