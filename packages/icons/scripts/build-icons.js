@@ -808,9 +808,12 @@ export const iconNames = getIconNames(dynamicIconImports);
   console.log('\n📦 Preparing icon components for compilation...');
   const distEsmIconsDir = join(distDir, 'esm', 'icons');
   
-  if (!existsSync(distEsmIconsDir)) {
-    mkdirSync(distEsmIconsDir, { recursive: true });
+  // Start from an empty directory, like src/icons above. Otherwise removed or
+  // renamed icons leave stale compiled files behind that would be published.
+  if (existsSync(distEsmIconsDir)) {
+    rmSync(distEsmIconsDir, { recursive: true, force: true });
   }
+  mkdirSync(distEsmIconsDir, { recursive: true });
   
   const packageJsonPath = join(__dirname, '..', 'package.json');
   const packageJson = JSON.parse(readFileSync(packageJsonPath, 'utf8'));
