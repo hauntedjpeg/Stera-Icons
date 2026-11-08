@@ -124,6 +124,20 @@ Measured with esbuild, minified, React external:
 - Wrapper (dynamic-variants): about 1.1 KB gzipped for the first icon, then about 0.7 KB gzipped for each additional icon.
 - DynamicIcon (stera-icons/dynamic): about 68 KB gzipped up front for the import map, plus one small lazy-loaded chunk per icon rendered.
 
+## Bundlers
+
+Production bundles are tree-shaken by esbuild, Rollup and webpack, so a root import costs the same as a subpath import. The root entry re-exports every icon (5,000+ modules), which gives development tooling more to do:
+
+- Next.js: add stera-icons to experimental.optimizePackageImports in next.config so root imports are rewritten to subpath imports at compile time. Next does this by default for lucide-react and @tabler/icons-react, not for stera-icons.
+
+```ts
+// next.config.ts
+const nextConfig = { experimental: { optimizePackageImports: ['stera-icons'] } };
+export default nextConfig;
+```
+
+- Vite: the dev server pre-bundles the whole root entry on first import (about 6 MB unminified, served once and cached). In large apps use subpath imports, e.g. import { SiSearchBold } from 'stera-icons/icons/SearchBold', to keep it to a few KB.
+
 ## Finding Icons
 
 - Online: https://stera.sh/llms-full.txt lists every icon as `kebab-name | component | tags`.

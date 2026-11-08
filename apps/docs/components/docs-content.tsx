@@ -194,11 +194,34 @@ export function App() {
 
       <section>
         <h2 className="st-heading-md text-text mb-4">Tree Shaking</h2>
-        <p className="st-body-md text-text-subtle">
+        <p className="st-body-md text-text-subtle mb-4">
           Stera Icons supports tree shaking out of the box. Only the icons you
           import will be included in your final bundle. Each icon is individually
-          exported, so your bundler can eliminate unused icons automatically.
+          exported, so your bundler can eliminate unused icons automatically, and
+          an import from the package root costs the same as a subpath import.
         </p>
+        <p className="st-body-md text-text-subtle mb-4">
+          The root entry re-exports every icon (5,000+ modules), which gives
+          development tooling more to do. In Next.js, add stera-icons to
+          optimizePackageImports so root imports are rewritten to subpath imports
+          at compile time. Next does this by default for lucide-react and
+          @tabler/icons-react, but not for stera-icons.
+        </p>
+        <CodeBlock
+          code={`// next.config.ts
+const nextConfig = { experimental: { optimizePackageImports: ["stera-icons"] } };
+export default nextConfig;`}
+          language="ts"
+        />
+        <p className="st-body-md text-text-subtle mt-4 mb-4">
+          Vite pre-bundles the whole root entry the first time the dev server sees
+          it (about 6 MB unminified, served once and cached). In large apps, use
+          subpath imports to keep that to a few KB:
+        </p>
+        <CodeBlock
+          code={`import { SiSearchBold } from "stera-icons/icons/SearchBold";`}
+          language="tsx"
+        />
       </section>
     </>
   );
