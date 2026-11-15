@@ -7,7 +7,7 @@ type MinusBoldProps = Omit<IconBaseProps, 'children'>;
 const MinusBold = memo(
   forwardRef<SVGSVGElement, MinusBoldProps>((props, ref) => (
     <IconBase ref={ref} {...props}>
-      <path d="M21 11c.55 0 1 .45 1 1s-.45 1-1 1H3c-.55 0-1-.45-1-1s.45-1 1-1z" />
+      <path d="M20 11c.55 0 1 .45 1 1s-.45 1-1 1H4c-.55 0-1-.45-1-1s.45-1 1-1z" />
     </IconBase>
   ))
 );

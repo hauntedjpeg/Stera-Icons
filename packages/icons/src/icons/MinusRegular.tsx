@@ -7,7 +7,7 @@ type MinusRegularProps = Omit<IconBaseProps, 'children'>;
 const MinusRegular = memo(
   forwardRef<SVGSVGElement, MinusRegularProps>((props, ref) => (
     <IconBase ref={ref} {...props}>
-      <path d="M21 11.25c.41 0 .75.34.75.75s-.34.75-.75.75H3c-.41 0-.75-.34-.75-.75s.34-.75.75-.75z" />
+      <path d="M20 11.25c.41 0 .75.34.75.75s-.34.75-.75.75H4c-.41 0-.75-.34-.75-.75s.34-.75.75-.75z" />
     </IconBase>
   ))
 );

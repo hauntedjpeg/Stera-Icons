@@ -7,7 +7,7 @@ type SignalZeroBoldProps = Omit<IconBaseProps, 'children'>;
 const SignalZeroBold = memo(
   forwardRef<SVGSVGElement, SignalZeroBoldProps>((props, ref) => (
     <IconBase ref={ref} {...props}>
-      <path d="M3.5 17.13c.76 0 1.38.61 1.38 1.37v1c0 .76-.62 1.38-1.38 1.38h-1c-.76 0-1.37-.62-1.37-1.38v-1c0-.76.61-1.37 1.37-1.37z" />
+      <path d="M3.5 14.63c.76 0 1.38.61 1.38 1.37v3.5c0 .76-.62 1.38-1.38 1.38h-1c-.76 0-1.37-.62-1.37-1.38V16c0-.76.61-1.37 1.37-1.37z" />
     </IconBase>
   ))
 );
